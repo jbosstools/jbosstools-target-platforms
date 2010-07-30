@@ -39,7 +39,8 @@
 </location>
 <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 <unit id="javax.wsdl" version="1.6.2.v201005080631"/>
-<repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20100519200754/updateSite/"/>
+<unit id="org.apache.oro" version="2.0.8.v201005080400"/>
+<repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20100519200754/repository/"/>
 </location>
 <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 <unit id="org.eclipse.birt.feature.group" version="2.6.0.v20100531-9gF727DGKb0yl9AwWxpmbo35PwQ_"/>
