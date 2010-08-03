@@ -48,12 +48,16 @@
 <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 <repository location="http://download.eclipse.org/modeling/emf/emf/updates/2.6/"/>
 </location>
+<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+<repository location="http://download.eclipse.org/webtools/downloads/drops/R3.2.0/R-3.2.0-20100615235519/repository/"/>
+</location>
 </locations>
 <includeBundles>
 <plugin id="org.hamcrest.generator" />
+<plugin id="org.eclipse.wst.common.emfworkbench.integration" />
 <plugin id="org.eclipse.tptp.platform.profile.server.core" />
 <plugin id="org.eclipse.platform.ide" />
-<plugin id="org.eclipse.core.runtime"/>
+<plugin id="org.eclipse.core.runtime" />
 <plugin id="org.easymock" />
 <plugin id="javax.wsdl" />
 <plugin id="com.thoughtworks.qdox" />
