@@ -43,8 +43,8 @@
 <repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20100519200754/repository/"/>
 </location>
 <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-<unit id="org.mozilla.xulrunner.feature" version="1.9.2"/>
-<unit id="org.mozilla.xpcom.feature" version="1.9.2"/>
+<unit id="org.mozilla.xulrunner.feature.feature.group" version="1.9.2"/>
+<unit id="org.mozilla.xpcom.feature.feature.group" version="1.9.2"/>
 <repository location="http://download.jboss.org/jbosstools/updates/xulrunner-1.9.2/"/>
 </location>
 <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
