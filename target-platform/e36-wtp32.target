@@ -20,15 +20,25 @@
 <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 <repository location="http://download.eclipse.org/technology/subversive/0.7/update-site/"/>
 </location>
-<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+<!-- <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 <unit id="javax.wsdl" version="1.6.2.v201005080631"/>
 <unit id="org.apache.oro" version="2.0.8.v201005080400"/>
 <repository location="http://download.jboss.org/jbosstools/updates/orbit/R20100519200754/"/>
-</location>
+</location> -->
 <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+<unit id="javax.wsdl" version="1.6.2.v201005080631"/>
+<unit id="org.apache.oro" version="2.0.8.v201005080400"/>
+<repository location="http://download.jboss.org/jbosstools/updates/thirdparty/"/>
+</location>
+<!-- <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 <unit id="org.mozilla.xulrunner.feature.feature.group" version="1.9.2"/>
 <unit id="org.mozilla.xpcom.feature.feature.group" version="1.9.2"/>
 <repository location="http://download.jboss.org/jbosstools/updates/xulrunner-1.9.2/"/>
+</location> -->
+<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+<unit id="org.mozilla.xulrunner.feature.feature.group" version="1.9.1.2"/>
+<unit id="org.mozilla.xpcom.feature.feature.group" version="1.9.1.2a"/>
+<repository location="http://download.jboss.org/jbosstools/updates/xulrunner-1.9.1.2/"/>
 </location>
 <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 <repository location="http://download.eclipse.org/rt/ecf/3.2/3.6/site.p2"/>
