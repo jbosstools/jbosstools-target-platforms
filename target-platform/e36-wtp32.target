@@ -23,22 +23,22 @@
 <!-- <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 <unit id="javax.wsdl" version="1.6.2.v201005080631"/>
 <unit id="org.apache.oro" version="2.0.8.v201005080400"/>
-<repository location="http://download.jboss.org/jbosstools/updates/orbit/R20100519200754/"/>
+<repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/R20100519200754/"/>
 </location> -->
 <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 <unit id="javax.wsdl" version="1.6.2.v201005080631"/>
 <unit id="org.apache.oro" version="2.0.8.v201005080400"/>
-<repository location="http://download.jboss.org/jbosstools/updates/thirdparty/"/>
+<repository location="http://download.jboss.org/jbosstools/updates/requirements/thirdparty/"/>
 </location>
 <!-- <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 <unit id="org.mozilla.xulrunner.feature.feature.group" version="1.9.2"/>
 <unit id="org.mozilla.xpcom.feature.feature.group" version="1.9.2"/>
-<repository location="http://download.jboss.org/jbosstools/updates/xulrunner-1.9.2/"/>
+<repository location="http://download.jboss.org/jbosstools/updates/requirements/xulrunner-1.9.2/"/>
 </location> -->
 <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 <unit id="org.mozilla.xulrunner.feature.feature.group" version="1.9.1.2"/>
 <unit id="org.mozilla.xpcom.feature.feature.group" version="1.9.1.2a"/>
-<repository location="http://download.jboss.org/jbosstools/updates/xulrunner-1.9.1.2/"/>
+<repository location="http://download.jboss.org/jbosstools/updates/requirements/xulrunner-1.9.1.2/"/>
 </location>
 <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 <repository location="http://download.eclipse.org/rt/ecf/3.2/3.6/site.p2"/>
@@ -120,7 +120,7 @@
 <unit id="org.eclipse.draw2d.feature.group" version="3.6.0.v20100519-2050-45-7w3121163602336"/>
 <unit id="org.eclipse.gef.feature.group" version="3.6.0.v20100519-2050-777B-81A2Bz-69793A8B83447"/>
 <unit id="org.eclipse.zest.feature.group" version="1.2.0.v20100519-2050-678-8yE4F-8HAH4DFEF3447"/>
-<repository location="http://download.jboss.org/jbosstools/updates/helios/"/>
+<repository location="http://download.jboss.org/jbosstools/updates/requirements/helios/"/>
 </location>
 <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 <unit id="org.eclipse.jst.jee" version="1.0.300.v201005191301"/>
@@ -160,7 +160,8 @@
 <unit id="org.eclipse.wst.web_core.feature.feature.group" version="3.2.0.v201005241510-7E7AFHkAJrn5NL_6wTQDqKL5RwiQ"/>
 <unit id="org.eclipse.wst.ws_ui.feature.feature.group" version="3.2.0.v201005241510-7I78FXbEtEoKvbtBtJ4fGNrH2oBH"/>
 <unit id="org.eclipse.wst.xml_core.feature.feature.group" version="3.2.0.v201005241510-7C7OFXTF7RZHQHHxO4IuKe"/>
-<repository location="http://download.eclipse.org/webtools/downloads/drops/R3.2.0/R-3.2.0-20100615235519/repository/"/>
+<!--repository location="http://download.eclipse.org/webtools/downloads/drops/R3.2.0/R-3.2.0-20100615235519/repository/"/ -->
+<repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools-3.2.0/"/>
 </location>
 </locations>
 <targetJRE path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
