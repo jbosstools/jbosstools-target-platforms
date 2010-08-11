@@ -66,7 +66,8 @@
 <unit id="org.eclipse.swtbot.ide.feature.group" version="2.0.0.595-dev-e36"/>
 <unit id="org.eclipse.swtbot.eclipse.test.junit4.feature.group" version="2.0.0.595-dev-e36"/>
 <unit id="org.eclipse.swtbot.feature.group" version="2.0.0.595-dev-e36"/>
-<repository location="http://download.eclipse.org/technology/swtbot/helios/dev-build/update-site/"/>
+<!--repository location="http://download.eclipse.org/technology/swtbot/helios/dev-build/update-site/"/-->
+<repository location="http://download.jboss.org/jbosstools/updates/requirements/swtbot-helios/"/>
 </location>
 <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 <unit id="org.eclipse.birt.osgi.runtime.sdk.feature.group" version="2.6.0.v20100617-57B-85wFdAHP-Cf8kRo1_ft1IUwD"/>
