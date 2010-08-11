@@ -109,7 +109,7 @@
 <unit id="org.eclipse.equinox.p2.ui.admin.rcp.product" version="1.1.0.I20100608-0911"/>
 <unit id="org.eclipse.equinox.server.servletbridge.feature.group" version="1.0.0.v20100510-42A79oB5855K5E"/>
 <unit id="org.eclipse.equinox.server.simple.feature.group" version="1.0.0.v20100510-44DF8s734C48662444"/>
-<repository location="http://download.eclipse.org/eclipse/updates/3.6"/>
+<repository location="http://download.eclipse.org/eclipse/updates/3.6/"/>
 </location>
 <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 <unit id="org.eclipse.birt.feature.group" version="2.6.0.v20100617-9gF727DGKb0yl9AwWxpmbo35PwQ_"/>
