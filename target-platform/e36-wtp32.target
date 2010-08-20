@@ -164,6 +164,14 @@
 <!--repository location="http://download.eclipse.org/webtools/downloads/drops/R3.2.0/R-3.2.0-20100615235519/repository/"/ -->
 <repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools-3.2/"/>
 </location>
+<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+<repository location="http://download.jboss.org/jbosstools/builds/nightly/3.2.helios/jbosstools-drools/all/repo/"/>
+</location>
 </locations>
+<includeBundles>
+<feature id="org.drools.eclipse.feature" />
+<feature id="org.drools.eclipse.task.feature" />
+<feature id="org.guvnor.tools.feature" />
+</includeBundles>
 <targetJRE path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 </target>
