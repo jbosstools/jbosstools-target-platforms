@@ -21,14 +21,12 @@
 <repository location="http://download.eclipse.org/technology/subversive/0.7/update-site/"/>
 </location>
 <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-<unit id="javax.wsdl" version="1.6.2.v201005080631"/>
-<unit id="org.apache.oro" version="2.0.8.v201005080400"/>
-<unit id="org.jdom" version="1.0.0.v201005080400"/>
 <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/R20100519200754/"/>
 </location>
 <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-<unit id="javax.wsdl" version="1.6.2.v201005080631"/>
-<unit id="org.apache.oro" version="2.0.8.v201005080400"/>
+<unit id="javax.wsdl.feature.feature.group" version="1.6.2.v201005080631"/>
+<unit id="org.apache.oro.feature.feature.group" version="2.0.8.v201005080400"/>
+<unit id="org.jdom.feature.feature.group" version="1.0.0.v201005080400"/>
 <repository location="http://download.jboss.org/jbosstools/updates/requirements/thirdparty/"/>
 </location>
 <!-- <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
@@ -48,7 +46,7 @@
 <repository location="http://download.eclipse.org/tptp/4.7.0/TPTP-4.7.0/repo/"/>
 </location>
 <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-<unit id="org.eclipse.emf.ecore" version="2.6.0.v20100614-1136"/>
+<unit id="org.eclipse.emf.ecore.feature.group" version="2.6.0.v20100614-1136"/>
 <unit id="org.eclipse.emf.feature.group" version="2.6.0.v20100614-1136"/>
 <unit id="org.eclipse.emf.codegen.feature.group" version="2.6.0.v20100614-1136"/>
 <unit id="org.eclipse.emf.common.feature.group" version="2.6.0.v20100614-1136"/>
@@ -73,7 +71,7 @@
 <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 <unit id="org.eclipse.birt.osgi.runtime.sdk.feature.group" version="2.6.0.v20100617-57B-85wFdAHP-Cf8kRo1_ft1IUwD"/>
 <unit id="org.eclipse.birt.feature.group" version="2.6.0.v20100617-9gF727DGKb0yl9AwWxpmbo35PwQ_"/>
-<unit id="org.eclipse.birt.integration.wtp.ui" version="2.6.0.v20100617-1315"/>
+<unit id="org.eclipse.birt.integration.wtp.feature.group" version="2.6.0.v20100617-1315-35-7w3121172802426"/>
 <repository location="http://download.eclipse.org/birt/update-site/2.6/"/>
 </location>
 <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
@@ -174,9 +172,6 @@
 <feature id="org.drools.eclipse.feature" />
 <feature id="org.drools.eclipse.task.feature" />
 <feature id="org.guvnor.tools.feature" />
-<plugin id="javax.wsdl"/>
-<plugin id="org.apache.oro"/>
-<plugin id="org.jdom"/>
 </includeBundles>
 <targetJRE path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 </target>
