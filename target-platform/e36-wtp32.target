@@ -138,7 +138,7 @@
 <unit id="org.eclipse.wst.web_ui.feature.feature.group" version="3.2.0.v201005241510-7O7CFb3EMf84nP-FHuc10NTz--M3"/>
 <unit id="org.eclipse.wst.xml_ui.feature.feature.group" version="3.2.0.v201005241510-7H7AFUIDxumQGOb7ocjUR2Pvz-28"/>
 <unit id="org.eclipse.wst.xsl.feature.feature.group" version="1.1.0.v201005241600-7S7WFAKFIpS---NRIS1pbfYBUIQ"/>
-<unit id="org.eclipse.jst.jsf.tests.feature.feature.group" version="3.2.0.v20100524-7E7W1FBBoPbPQIiTa3454"/>
+<!-- <unit id="org.eclipse.jst.jsf.tests.feature.feature.group" version="3.2.0.v20100524-7E7W1FBBoPbPQIiTa3454"/> -->
 <unit id="org.eclipse.wst.jsdt.feature.feature.group" version="1.2.0.v201005270528-7C78FGDF9JgLWLMBWz-Ose6"/>
 <unit id="org.eclipse.jsf.feature.feature.group" version="3.2.0.v20100526-7E7I-F9JgLWLMBYy3114"/>
 <unit id="org.eclipse.jst.ws.jaxws.dom.feature.feature.group" version="1.0.0.v201005241530-5--AkF7B77NBZBgBg"/>
