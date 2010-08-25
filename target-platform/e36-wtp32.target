@@ -167,6 +167,10 @@
 <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 <repository location="http://download.jboss.org/jbosstools/builds/nightly/3.2.helios/jbosstools-drools/all/repo/"/>
 </location>
+<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+<unit id="com.google.gdt.eclipse.suite.e36.feature.feature.group" version="1.3.3.v201006111317"/>
+<repository location="http://dl.google.com/eclipse/plugin/3.6/"/>
+</location>
 </locations>
 <includeBundles>
 <feature id="org.drools.eclipse.feature" />
