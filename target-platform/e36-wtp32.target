@@ -35,8 +35,8 @@
 <repository location="http://download.jboss.org/jbosstools/updates/requirements/xulrunner-1.9.2/"/>
 </location> -->
 <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-<unit id="org.mozilla.xulrunner.feature.feature.group" version="1.9.1.2"/>
-<unit id="org.mozilla.xpcom.feature.feature.group" version="1.9.1.2a"/>
+<unit id="org.mozilla.xulrunner.feature.feature.group" version="1.9.12"/>
+<unit id="org.mozilla.xpcom.feature.feature.group" version="1.9.12"/>
 <repository location="http://download.jboss.org/jbosstools/updates/requirements/xulrunner-1.9.1.2/"/>
 </location>
 <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
@@ -176,6 +176,8 @@
 <feature id="org.drools.eclipse.feature" />
 <feature id="org.drools.eclipse.task.feature" />
 <feature id="org.guvnor.tools.feature" />
+<feature id="org.mozilla.xulrunner.feature" />
+<feature id="org.mozilla.xpcom.feature" />
 </includeBundles>
 <targetJRE path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 </target>
