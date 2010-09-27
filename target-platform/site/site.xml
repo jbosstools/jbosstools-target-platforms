@@ -1,337 +1,337 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-<description>JBoss Tools Target Platform Update Site / p2 Repo</description>
-<category-def name="TargetPlatform" label="TargetPlatform">
-<description>JBoss Tools Target Platform</description>
-</category-def>
-<feature url="features/org.maven.ide.eclipse.feature_0.0.0.jar" id="org.maven.ide.eclipse.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.maven.ide.eclipse.wtp.feature_0.0.0.jar" id="org.maven.ide.eclipse.wtp.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/javax.wsdl.feature_0.0.0.jar" id="javax.wsdl.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.apache.oro.feature_0.0.0.jar" id="org.apache.oro.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.jdom.feature_0.0.0.jar" id="org.jdom.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.mozilla.xulrunner.feature_0.0.0.jar" id="org.mozilla.xulrunner.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.mozilla.xpcom.feature_0.0.0.jar" id="org.mozilla.xpcom.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.emf.ecore_0.0.0.jar" id="org.eclipse.emf.ecore" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.emf_0.0.0.jar" id="org.eclipse.emf" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.emf.codegen_0.0.0.jar" id="org.eclipse.emf.codegen" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.emf.common_0.0.0.jar" id="org.eclipse.emf.common" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.emf.databinding_0.0.0.jar" id="org.eclipse.emf.databinding" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.emf.codegen.ecore_0.0.0.jar" id="org.eclipse.emf.codegen.ecore" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.emf.ecore.edit_0.0.0.jar" id="org.eclipse.emf.ecore.edit" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.emf.ecore.editor_0.0.0.jar" id="org.eclipse.emf.ecore.editor" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.emf.ecore_0.0.0.jar" id="org.eclipse.emf.ecore" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.emf.edit_0.0.0.jar" id="org.eclipse.emf.edit" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.xsd_0.0.0.jar" id="org.eclipse.xsd" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.swtbot.eclipse_0.0.0.jar" id="org.eclipse.swtbot.eclipse" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.swtbot.eclipse.gef_0.0.0.jar" id="org.eclipse.swtbot.eclipse.gef" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.swtbot.ide_0.0.0.jar" id="org.eclipse.swtbot.ide" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.swtbot.eclipse.test.junit4_0.0.0.jar" id="org.eclipse.swtbot.eclipse.test.junit4" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.swtbot_0.0.0.jar" id="org.eclipse.swtbot" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.birt.osgi.runtime.sdk_0.0.0.jar" id="org.eclipse.birt.osgi.runtime.sdk" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.birt_0.0.0.jar" id="org.eclipse.birt" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.birt.integration.wtp_0.0.0.jar" id="org.eclipse.birt.integration.wtp" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/com.ibm.icu.base_0.0.0.jar" id="com.ibm.icu.base" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.equinox.server.core_0.0.0.jar" id="org.eclipse.equinox.server.core" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.cvs_0.0.0.jar" id="org.eclipse.cvs" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.help_0.0.0.jar" id="org.eclipse.help" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.jdt_0.0.0.jar" id="org.eclipse.jdt" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.platform_0.0.0.jar" id="org.eclipse.platform" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<bundle url="plugins/org.eclipse.platform.ide_0.0.0.jar" id="org.eclipse.platform.ide" version="0.0.0">
-<category name="TargetPlatform"/>
-</bundle>
-<feature url="features/org.eclipse.equinox.executable_0.0.0.jar" id="org.eclipse.equinox.executable" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<bundle url="plugins/org.eclipse.equinox.executable_0.0.0.jar" id="org.eclipse.equinox.executable" version="0.0.0">
-<category name="TargetPlatform"/>
-</bundle>
-<bundle url="plugins/org.eclipse.platform.sdk_0.0.0.jar" id="org.eclipse.platform.sdk" version="0.0.0">
-<category name="TargetPlatform"/>
-</bundle>
-<feature url="features/org.eclipse.pde_0.0.0.jar" id="org.eclipse.pde" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.sdk_0.0.0.jar" id="org.eclipse.sdk" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.rcp_0.0.0.jar" id="org.eclipse.rcp" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<bundle url="plugins/org.eclipse.rcp.id_0.0.0.jar" id="org.eclipse.rcp.id" version="0.0.0">
-<category name="TargetPlatform"/>
-</bundle>
-<bundle url="plugins/org.eclipse.rcp.sdk.id_0.0.0.jar" id="org.eclipse.rcp.sdk.id" version="0.0.0">
-<category name="TargetPlatform"/>
-</bundle>
-<feature url="features/org.eclipse.releng.tools_0.0.0.jar" id="org.eclipse.releng.tools" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<bundle url="plugins/org.eclipse.sdk.ide_0.0.0.jar" id="org.eclipse.sdk.ide" version="0.0.0">
-<category name="TargetPlatform"/>
-</bundle>
-<feature url="features/org.eclipse.sdk.examples_0.0.0.jar" id="org.eclipse.sdk.examples" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.sdk.examples.source_0.0.0.jar" id="org.eclipse.sdk.examples.source" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.equinox.compendium.sdk_0.0.0.jar" id="org.eclipse.equinox.compendium.sdk" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.equinox.core.sdk_0.0.0.jar" id="org.eclipse.equinox.core.sdk" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.equinox.p2.discovery.feature_0.0.0.jar" id="org.eclipse.equinox.p2.discovery.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.equinox.p2.user.ui_0.0.0.jar" id="org.eclipse.equinox.p2.user.ui" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.equinox.p2.sdk_0.0.0.jar" id="org.eclipse.equinox.p2.sdk" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.equinox.serverside.sdk_0.0.0.jar" id="org.eclipse.equinox.serverside.sdk" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.equinox.sdk_0.0.0.jar" id="org.eclipse.equinox.sdk" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.equinox.weaving.sdk_0.0.0.jar" id="org.eclipse.equinox.weaving.sdk" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.equinox.server.jetty_0.0.0.jar" id="org.eclipse.equinox.server.jetty" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.equinox.server.p2_0.0.0.jar" id="org.eclipse.equinox.server.p2" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.pde.api.tools.ee.fragments_0.0.0.jar" id="org.eclipse.pde.api.tools.ee.fragments" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<bundle url="plugins/org.eclipse.equinox.p2.ui.admin.rcp.product_0.0.0.jar" id="org.eclipse.equinox.p2.ui.admin.rcp.product" version="0.0.0">
-<category name="TargetPlatform"/>
-</bundle>
-<feature url="features/org.eclipse.equinox.server.servletbridge_0.0.0.jar" id="org.eclipse.equinox.server.servletbridge" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.equinox.server.simple_0.0.0.jar" id="org.eclipse.equinox.server.simple" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.birt_0.0.0.jar" id="org.eclipse.birt" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.datatools.connectivity.feature_0.0.0.jar" id="org.eclipse.datatools.connectivity.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.datatools.enablement.feature_0.0.0.jar" id="org.eclipse.datatools.enablement.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.datatools.sdk.feature_0.0.0.jar" id="org.eclipse.datatools.sdk.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.datatools.enablement.jdt.feature_0.0.0.jar" id="org.eclipse.datatools.enablement.jdt.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.datatools.modelbase.feature_0.0.0.jar" id="org.eclipse.datatools.modelbase.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.draw2d_0.0.0.jar" id="org.eclipse.draw2d" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.gef_0.0.0.jar" id="org.eclipse.gef" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.zest_0.0.0.jar" id="org.eclipse.zest" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.uml2_0.0.0.jar" id="org.eclipse.uml2" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<bundle url="plugins/org.eclipse.jst.jee_0.0.0.jar" id="org.eclipse.jst.jee" version="0.0.0">
-<category name="TargetPlatform"/>
-</bundle>
-<bundle url="plugins/org.eclipse.wst.common.frameworks_0.0.0.jar" id="org.eclipse.wst.common.frameworks" version="0.0.0">
-<category name="TargetPlatform"/>
-</bundle>
-<bundle url="plugins/org.eclipse.wst.common.project.facet.ui_0.0.0.jar" id="org.eclipse.wst.common.project.facet.ui" version="0.0.0">
-<category name="TargetPlatform"/>
-</bundle>
-<bundle url="plugins/org.eclipse.jst.jee.web_0.0.0.jar" id="org.eclipse.jst.jee.web" version="0.0.0">
-<category name="TargetPlatform"/>
-</bundle>
-<feature url="features/org.eclipse.jst.common.fproj.enablement.jdt_0.0.0.jar" id="org.eclipse.jst.common.fproj.enablement.jdt" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.jst.ws.axis2tools.feature_0.0.0.jar" id="org.eclipse.jst.ws.axis2tools.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.jst.ws.cxf.feature_0.0.0.jar" id="org.eclipse.jst.ws.cxf.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.jpt.feature_0.0.0.jar" id="org.eclipse.jpt.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.wst.common.fproj_0.0.0.jar" id="org.eclipse.wst.common.fproj" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.jst.enterprise_ui.feature_0.0.0.jar" id="org.eclipse.jst.enterprise_ui.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.wst.web_ui.feature_0.0.0.jar" id="org.eclipse.wst.web_ui.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.wst.xml_ui.feature_0.0.0.jar" id="org.eclipse.wst.xml_ui.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.wst.xsl.feature_0.0.0.jar" id="org.eclipse.wst.xsl.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.wst.jsdt.feature_0.0.0.jar" id="org.eclipse.wst.jsdt.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.jsf.feature_0.0.0.jar" id="org.eclipse.jsf.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.jst.ws.jaxws.dom.feature_0.0.0.jar" id="org.eclipse.jst.ws.jaxws.dom.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.jst.ws.jaxws.feature_0.0.0.jar" id="org.eclipse.jst.ws.jaxws.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.jst.enterprise_core.feature_0.0.0.jar" id="org.eclipse.jst.enterprise_core.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.jst.server_adapters.ext.feature_0.0.0.jar" id="org.eclipse.jst.server_adapters.ext.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.jst.server_adapters.feature_0.0.0.jar" id="org.eclipse.jst.server_adapters.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.jst.server_core.feature_0.0.0.jar" id="org.eclipse.jst.server_core.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.jst.server_ui.feature_0.0.0.jar" id="org.eclipse.jst.server_ui.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.jst.web_ui.feature_0.0.0.jar" id="org.eclipse.jst.web_ui.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.jsf.feature.source_0.0.0.jar" id="org.eclipse.jsf.feature.source" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.wst.xml.xpath2.processor.feature_0.0.0.jar" id="org.eclipse.wst.xml.xpath2.processor.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.jst.webpageeditor.feature_0.0.0.jar" id="org.eclipse.jst.webpageeditor.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.wst.ws_wsdl15.feature_0.0.0.jar" id="org.eclipse.wst.ws_wsdl15.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.wst.common_core.feature_0.0.0.jar" id="org.eclipse.wst.common_core.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.wst.common_ui.feature_0.0.0.jar" id="org.eclipse.wst.common_ui.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.wst.server_adapters.feature_0.0.0.jar" id="org.eclipse.wst.server_adapters.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.wst.server_core.feature_0.0.0.jar" id="org.eclipse.wst.server_core.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.wst.server_ui.feature_0.0.0.jar" id="org.eclipse.wst.server_ui.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.wst.web_core.feature_0.0.0.jar" id="org.eclipse.wst.web_core.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.wst.ws_ui.feature_0.0.0.jar" id="org.eclipse.wst.ws_ui.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.eclipse.wst.xml_core.feature_0.0.0.jar" id="org.eclipse.wst.xml_core.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/com.google.gdt.eclipse.suite.e36.feature_0.0.0.jar" id="com.google.gdt.eclipse.suite.e36.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.drools.eclipse.feature_0.0.0.jar" id="org.drools.eclipse.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.drools.eclipse.task.feature_0.0.0.jar" id="org.drools.eclipse.task.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.guvnor.tools.feature_0.0.0.jar" id="org.guvnor.tools.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.mozilla.xulrunner.feature_0.0.0.jar" id="org.mozilla.xulrunner.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
-<feature url="features/org.mozilla.xpcom.feature_0.0.0.jar" id="org.mozilla.xpcom.feature" version="0.0.0">
-<category name="TargetPlatform"/>
-</feature>
+	<description>JBoss Tools Target Platform Update Site / p2 Repo</description>
+	<category-def name="TargetPlatform" label="TargetPlatform">
+		<description>JBoss Tools Target Platform</description>
+	</category-def>
+	<feature url="features/org.maven.ide.eclipse.feature_0.0.0.jar" id="org.maven.ide.eclipse.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.maven.ide.eclipse.wtp.feature_0.0.0.jar" id="org.maven.ide.eclipse.wtp.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/javax.wsdl.feature_0.0.0.jar" id="javax.wsdl.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.apache.oro.feature_0.0.0.jar" id="org.apache.oro.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.jdom.feature_0.0.0.jar" id="org.jdom.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.mozilla.xulrunner.feature_0.0.0.jar" id="org.mozilla.xulrunner.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.mozilla.xpcom.feature_0.0.0.jar" id="org.mozilla.xpcom.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.emf.ecore_0.0.0.jar" id="org.eclipse.emf.ecore" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.emf_0.0.0.jar" id="org.eclipse.emf" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.emf.codegen_0.0.0.jar" id="org.eclipse.emf.codegen" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.emf.common_0.0.0.jar" id="org.eclipse.emf.common" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.emf.databinding_0.0.0.jar" id="org.eclipse.emf.databinding" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.emf.codegen.ecore_0.0.0.jar" id="org.eclipse.emf.codegen.ecore" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.emf.ecore.edit_0.0.0.jar" id="org.eclipse.emf.ecore.edit" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.emf.ecore.editor_0.0.0.jar" id="org.eclipse.emf.ecore.editor" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.emf.ecore_0.0.0.jar" id="org.eclipse.emf.ecore" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.emf.edit_0.0.0.jar" id="org.eclipse.emf.edit" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.xsd_0.0.0.jar" id="org.eclipse.xsd" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.swtbot.eclipse_0.0.0.jar" id="org.eclipse.swtbot.eclipse" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.swtbot.eclipse.gef_0.0.0.jar" id="org.eclipse.swtbot.eclipse.gef" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.swtbot.ide_0.0.0.jar" id="org.eclipse.swtbot.ide" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.swtbot.eclipse.test.junit4_0.0.0.jar" id="org.eclipse.swtbot.eclipse.test.junit4" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.swtbot_0.0.0.jar" id="org.eclipse.swtbot" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.birt.osgi.runtime.sdk_0.0.0.jar" id="org.eclipse.birt.osgi.runtime.sdk" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.birt_0.0.0.jar" id="org.eclipse.birt" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.birt.integration.wtp_0.0.0.jar" id="org.eclipse.birt.integration.wtp" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/com.ibm.icu.base_0.0.0.jar" id="com.ibm.icu.base" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.equinox.server.core_0.0.0.jar" id="org.eclipse.equinox.server.core" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.cvs_0.0.0.jar" id="org.eclipse.cvs" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.help_0.0.0.jar" id="org.eclipse.help" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.jdt_0.0.0.jar" id="org.eclipse.jdt" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.platform_0.0.0.jar" id="org.eclipse.platform" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<bundle url="plugins/org.eclipse.platform.ide_0.0.0.jar" id="org.eclipse.platform.ide" version="0.0.0">
+		<category name="TargetPlatform" />
+	</bundle>
+	<feature url="features/org.eclipse.equinox.executable_0.0.0.jar" id="org.eclipse.equinox.executable" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<bundle url="plugins/org.eclipse.equinox.executable_0.0.0.jar" id="org.eclipse.equinox.executable" version="0.0.0">
+		<category name="TargetPlatform" />
+	</bundle>
+	<bundle url="plugins/org.eclipse.platform.sdk_0.0.0.jar" id="org.eclipse.platform.sdk" version="0.0.0">
+		<category name="TargetPlatform" />
+	</bundle>
+	<feature url="features/org.eclipse.pde_0.0.0.jar" id="org.eclipse.pde" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.sdk_0.0.0.jar" id="org.eclipse.sdk" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.rcp_0.0.0.jar" id="org.eclipse.rcp" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<bundle url="plugins/org.eclipse.rcp.id_0.0.0.jar" id="org.eclipse.rcp.id" version="0.0.0">
+		<category name="TargetPlatform" />
+	</bundle>
+	<bundle url="plugins/org.eclipse.rcp.sdk.id_0.0.0.jar" id="org.eclipse.rcp.sdk.id" version="0.0.0">
+		<category name="TargetPlatform" />
+	</bundle>
+	<feature url="features/org.eclipse.releng.tools_0.0.0.jar" id="org.eclipse.releng.tools" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<bundle url="plugins/org.eclipse.sdk.ide_0.0.0.jar" id="org.eclipse.sdk.ide" version="0.0.0">
+		<category name="TargetPlatform" />
+	</bundle>
+	<feature url="features/org.eclipse.sdk.examples_0.0.0.jar" id="org.eclipse.sdk.examples" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.sdk.examples.source_0.0.0.jar" id="org.eclipse.sdk.examples.source" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.equinox.compendium.sdk_0.0.0.jar" id="org.eclipse.equinox.compendium.sdk" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.equinox.core.sdk_0.0.0.jar" id="org.eclipse.equinox.core.sdk" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.equinox.p2.discovery.feature_0.0.0.jar" id="org.eclipse.equinox.p2.discovery.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.equinox.p2.user.ui_0.0.0.jar" id="org.eclipse.equinox.p2.user.ui" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.equinox.p2.sdk_0.0.0.jar" id="org.eclipse.equinox.p2.sdk" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.equinox.serverside.sdk_0.0.0.jar" id="org.eclipse.equinox.serverside.sdk" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.equinox.sdk_0.0.0.jar" id="org.eclipse.equinox.sdk" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.equinox.weaving.sdk_0.0.0.jar" id="org.eclipse.equinox.weaving.sdk" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.equinox.server.jetty_0.0.0.jar" id="org.eclipse.equinox.server.jetty" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.equinox.server.p2_0.0.0.jar" id="org.eclipse.equinox.server.p2" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.pde.api.tools.ee.fragments_0.0.0.jar" id="org.eclipse.pde.api.tools.ee.fragments" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<bundle url="plugins/org.eclipse.equinox.p2.ui.admin.rcp.product_0.0.0.jar" id="org.eclipse.equinox.p2.ui.admin.rcp.product" version="0.0.0">
+		<category name="TargetPlatform" />
+	</bundle>
+	<feature url="features/org.eclipse.equinox.server.servletbridge_0.0.0.jar" id="org.eclipse.equinox.server.servletbridge" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.equinox.server.simple_0.0.0.jar" id="org.eclipse.equinox.server.simple" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.birt_0.0.0.jar" id="org.eclipse.birt" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.datatools.connectivity.feature_0.0.0.jar" id="org.eclipse.datatools.connectivity.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.datatools.enablement.feature_0.0.0.jar" id="org.eclipse.datatools.enablement.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.datatools.sdk.feature_0.0.0.jar" id="org.eclipse.datatools.sdk.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.datatools.enablement.jdt.feature_0.0.0.jar" id="org.eclipse.datatools.enablement.jdt.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.datatools.modelbase.feature_0.0.0.jar" id="org.eclipse.datatools.modelbase.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.draw2d_0.0.0.jar" id="org.eclipse.draw2d" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.gef_0.0.0.jar" id="org.eclipse.gef" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.zest_0.0.0.jar" id="org.eclipse.zest" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.uml2_0.0.0.jar" id="org.eclipse.uml2" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<bundle url="plugins/org.eclipse.jst.jee_0.0.0.jar" id="org.eclipse.jst.jee" version="0.0.0">
+		<category name="TargetPlatform" />
+	</bundle>
+	<bundle url="plugins/org.eclipse.wst.common.frameworks_0.0.0.jar" id="org.eclipse.wst.common.frameworks" version="0.0.0">
+		<category name="TargetPlatform" />
+	</bundle>
+	<bundle url="plugins/org.eclipse.wst.common.project.facet.ui_0.0.0.jar" id="org.eclipse.wst.common.project.facet.ui" version="0.0.0">
+		<category name="TargetPlatform" />
+	</bundle>
+	<bundle url="plugins/org.eclipse.jst.jee.web_0.0.0.jar" id="org.eclipse.jst.jee.web" version="0.0.0">
+		<category name="TargetPlatform" />
+	</bundle>
+	<feature url="features/org.eclipse.jst.common.fproj.enablement.jdt_0.0.0.jar" id="org.eclipse.jst.common.fproj.enablement.jdt" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.jst.ws.axis2tools.feature_0.0.0.jar" id="org.eclipse.jst.ws.axis2tools.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.jst.ws.cxf.feature_0.0.0.jar" id="org.eclipse.jst.ws.cxf.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.jpt.feature_0.0.0.jar" id="org.eclipse.jpt.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.wst.common.fproj_0.0.0.jar" id="org.eclipse.wst.common.fproj" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.jst.enterprise_ui.feature_0.0.0.jar" id="org.eclipse.jst.enterprise_ui.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.wst.web_ui.feature_0.0.0.jar" id="org.eclipse.wst.web_ui.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.wst.xml_ui.feature_0.0.0.jar" id="org.eclipse.wst.xml_ui.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.wst.xsl.feature_0.0.0.jar" id="org.eclipse.wst.xsl.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.wst.jsdt.feature_0.0.0.jar" id="org.eclipse.wst.jsdt.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.jsf.feature_0.0.0.jar" id="org.eclipse.jsf.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.jst.ws.jaxws.dom.feature_0.0.0.jar" id="org.eclipse.jst.ws.jaxws.dom.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.jst.ws.jaxws.feature_0.0.0.jar" id="org.eclipse.jst.ws.jaxws.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.jst.enterprise_core.feature_0.0.0.jar" id="org.eclipse.jst.enterprise_core.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.jst.server_adapters.ext.feature_0.0.0.jar" id="org.eclipse.jst.server_adapters.ext.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.jst.server_adapters.feature_0.0.0.jar" id="org.eclipse.jst.server_adapters.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.jst.server_core.feature_0.0.0.jar" id="org.eclipse.jst.server_core.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.jst.server_ui.feature_0.0.0.jar" id="org.eclipse.jst.server_ui.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.jst.web_ui.feature_0.0.0.jar" id="org.eclipse.jst.web_ui.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.jsf.feature.source_0.0.0.jar" id="org.eclipse.jsf.feature.source" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.wst.xml.xpath2.processor.feature_0.0.0.jar" id="org.eclipse.wst.xml.xpath2.processor.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.jst.webpageeditor.feature_0.0.0.jar" id="org.eclipse.jst.webpageeditor.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.wst.ws_wsdl15.feature_0.0.0.jar" id="org.eclipse.wst.ws_wsdl15.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.wst.common_core.feature_0.0.0.jar" id="org.eclipse.wst.common_core.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.wst.common_ui.feature_0.0.0.jar" id="org.eclipse.wst.common_ui.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.wst.server_adapters.feature_0.0.0.jar" id="org.eclipse.wst.server_adapters.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.wst.server_core.feature_0.0.0.jar" id="org.eclipse.wst.server_core.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.wst.server_ui.feature_0.0.0.jar" id="org.eclipse.wst.server_ui.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.wst.web_core.feature_0.0.0.jar" id="org.eclipse.wst.web_core.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.wst.ws_ui.feature_0.0.0.jar" id="org.eclipse.wst.ws_ui.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.eclipse.wst.xml_core.feature_0.0.0.jar" id="org.eclipse.wst.xml_core.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/com.google.gdt.eclipse.suite.e36.feature_0.0.0.jar" id="com.google.gdt.eclipse.suite.e36.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.drools.eclipse.feature_0.0.0.jar" id="org.drools.eclipse.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.drools.eclipse.task.feature_0.0.0.jar" id="org.drools.eclipse.task.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.guvnor.tools.feature_0.0.0.jar" id="org.guvnor.tools.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.mozilla.xulrunner.feature_0.0.0.jar" id="org.mozilla.xulrunner.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
+	<feature url="features/org.mozilla.xpcom.feature_0.0.0.jar" id="org.mozilla.xpcom.feature" version="0.0.0">
+		<category name="TargetPlatform" />
+	</feature>
 </site>
