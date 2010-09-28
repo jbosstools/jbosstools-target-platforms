@@ -28,17 +28,16 @@
 
 					To run this script:
 
-					/path/to/eclipse -vm /opt/jdk1.6.0/bin/java -nosplash
-					-data \
+					/abs/path/to/eclipse -vm /opt/jdk1.6.0/bin/java -nosplash -data \
 					/tmp/workspace -consolelog -application \
 					org.eclipse.ant.core.antRunner -f out.xml \
 					-Ddebug=true \
-					-DfollowStrict=false \
-					-Drepo.dir=./REPO/
+					-DfollowStrict=true \
+					-Drepo.dir=/tmp/REPO/
 </echo>
 			</target>
 			<target name="init" unless="repo.dir">
-				<fail>Must set -Drepo.dir=/path/to/download/artifacts/</fail>
+				<fail>Must set -Drepo.dir=/abs/path/to/download/artifacts/</fail>
 			</target>
 			<target name="download.target.platform" depends="init"
 				description="Download from target platform definition" if="repo.dir">
