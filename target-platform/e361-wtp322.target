@@ -49,7 +49,7 @@
 <repository location="http://download.eclipse.org/rt/ecf/3.2/3.6/site.p2"/>
 </location>
 <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-<repository location="http://download.eclipse.org/tptp/4.7.0/TPTP-4.7.0/repo/"/>
+<repository location="http://download.eclipse.org/tptp/4.7.1/TPTP-4.7.1/repo/"/>
 </location>
 <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 <unit id="org.eclipse.emf.ecore.feature.group" version="2.6.0.v20100614-1136"/>
@@ -63,7 +63,7 @@
 <unit id="org.eclipse.emf.ecore.feature.group" version="2.6.0.v20100614-1136"/>
 <unit id="org.eclipse.emf.edit.feature.group" version="2.6.0.v20100614-1136"/>
 <unit id="org.eclipse.xsd.feature.group" version="2.6.0.v20100614-1136"/>
-<repository location="http://download.eclipse.org/modeling/emf/emf/updates/2.6/R201006141136/"/>
+<repository location="http://download.eclipse.org/modeling/emf/emf/updates/2.6/"/>
 </location>
 <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 <unit id="org.eclipse.swtbot.eclipse.feature.group" version="2.0.0.595-dev-e36"/>
@@ -166,7 +166,7 @@
 <unit id="org.eclipse.wst.web_core.feature.feature.group" version="3.2.0.v201005241510-7E7AFHkAJrn5NL_6wTQDqKL5RwiQ"/>
 <unit id="org.eclipse.wst.ws_ui.feature.feature.group" version="3.2.0.v201005241510-7I78FXbEtEoKvbtBtJ4fGNrH2oBH"/>
 <unit id="org.eclipse.wst.xml_core.feature.feature.group" version="3.2.0.v201005241510-7C7OFXTF7RZHQHHxO4IuKe"/>
-<repository location="http://download.eclipse.org/webtools/downloads/drops/R3.2.2/R-3.2.2-20100915173744/repository/"/>
+<repository location="http://download.eclipse.org/webtools/repository/helios/"/>
 <!-- repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools-3.2/"/ -->
 </location>
 <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">

@@ -6,6 +6,10 @@
 	<xsl:decimal-format decimal-separator="."
 		grouping-separator="," />
 
+	<!-- should we include {@version} for specific ver, or 0.0.0 for latest 
+		avail? -->
+	<xsl:param name="useLatest" select="'true'" />
+
 	<xsl:param name="verbose" select="'${verbose}'" />
 	<xsl:param name="followStrict" select="'${followStrict}'" />
 	<xsl:param name="destination" select="'file:${repo.dir}'" />
@@ -24,13 +28,13 @@
 
 					To run this script:
 
-					./eclipse -vm /opt/jdk1.6.0/bin/java -nosplash
+					/path/to/eclipse -vm /opt/jdk1.6.0/bin/java -nosplash
 					-data \
 					/tmp/workspace -consolelog -application \
 					org.eclipse.ant.core.antRunner -f out.xml \
 					-Ddebug=true \
 					-DfollowStrict=false \
-					-Drepo.dir=/tmp/REPO/
+					-Drepo.dir=./REPO/
 </echo>
 			</target>
 			<target name="init" unless="repo.dir">
@@ -60,7 +64,14 @@
 	</xsl:template>
 
 	<xsl:template match="//unit">
-		<iu id="{@id}" version="{@version}" />
+		<xsl:choose>
+			<xsl:when test="$useLatest='true'">
+				<iu id="{@id}" version="" />
+			</xsl:when>
+			<xsl:otherwise>
+				<iu id="{@id}" version="{@version}" />
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 
 	<xsl:template match="//plugin">
