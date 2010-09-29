@@ -45,7 +45,8 @@
 				<property name="followStrict" value="false" />
 				<echo level="info">Download features/plugins into ${repo.dir}</echo>
 				<p2.mirror destination="{$destination}" verbose="{$verbose}">
-					<slicingOptions includeFeatures="true" followStrict="{$followStrict}" latestVersionOnly="true" />
+					<!-- should we add latestVersionOnly="true" to <slicingOptions> ? -->
+					<slicingOptions includeFeatures="true" followStrict="{$followStrict}"/>
 					<source>
 						<xsl:apply-templates select="//repository" />
 					</source>
