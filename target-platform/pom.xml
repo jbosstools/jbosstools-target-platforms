@@ -49,9 +49,9 @@
 						<phase>validate</phase>
 						<configuration>
 							<tasks>
-								<!--  generate a pom.xml and site.xml for subsequent generation of a target as update site -->
+								<!--  generate a p2mirror.xml for subsequent generation of a target as update site -->
 								<property name="targetFile" value="${targetFile}" />
-								<ant antfile="target2site.xml"/>
+								<ant antfile="target2p2mirror.xml"/>
 							</tasks>
 						</configuration>
 						<goals>
