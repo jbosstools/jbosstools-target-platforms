@@ -13,7 +13,7 @@
 	<xsl:param name="verbose" select="'${verbose}'" />
 	<xsl:param name="followStrict" select="'${followStrict}'" />
 	<xsl:param name="destination" select="'file:${repo.dir}'" />
-
+	
 	<xsl:variable name="platformFilter"
 		select="concat(/target/environment/os/text(), ',', /target/environment/ws/text(), ',', /target/environment/arch/text())" />
 
@@ -30,7 +30,7 @@
 
 					/abs/path/to/eclipse -vm /opt/jdk1.6.0/bin/java -nosplash -data \
 					/tmp/workspace -consolelog -application \
-					org.eclipse.ant.core.antRunner -f out.xml \
+					org.eclipse.ant.core.antRunner -f *.target.p2mirror.xml \
 					-Ddebug=true \
 					-DfollowStrict=true \
 					-Drepo.dir=/tmp/REPO/
