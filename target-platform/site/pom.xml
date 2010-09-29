@@ -65,30 +65,8 @@
 					</releases>
 				</repository>
 				<repository>
-					<id>download.eclipse.org_technology_subversive_0.7_update-site_</id>
-					<url>http://download.eclipse.org/technology/subversive/0.7/update-site/</url>
-					<layout>p2</layout>
-					<snapshots>
-						<enabled>true</enabled>
-					</snapshots>
-					<releases>
-						<enabled>true</enabled>
-					</releases>
-				</repository>
-				<repository>
 					<id>download.eclipse.org_technology_subversive_0.7_weekly-site_</id>
 					<url>http://download.eclipse.org/technology/subversive/0.7/weekly-site/</url>
-					<layout>p2</layout>
-					<snapshots>
-						<enabled>true</enabled>
-					</snapshots>
-					<releases>
-						<enabled>true</enabled>
-					</releases>
-				</repository>
-				<repository>
-					<id>download.eclipse.org_technology_subversive_0.7_headless-update-site_</id>
-					<url>http://download.eclipse.org/technology/subversive/0.7/headless-update-site/</url>
 					<layout>p2</layout>
 					<snapshots>
 						<enabled>true</enabled>
@@ -142,8 +120,8 @@
 					</releases>
 				</repository>
 				<repository>
-					<id>download.eclipse.org_tptp_4.7.0_TPTP-4.7.0_repo_</id>
-					<url>http://download.eclipse.org/tptp/4.7.0/TPTP-4.7.0/repo/</url>
+					<id>download.eclipse.org_tptp_updates_</id>
+					<url>http://download.eclipse.org/tptp/updates/</url>
 					<layout>p2</layout>
 					<snapshots>
 						<enabled>true</enabled>
@@ -153,8 +131,8 @@
 					</releases>
 				</repository>
 				<repository>
-					<id>download.eclipse.org_modeling_emf_emf_updates_2.6_R201006141136_</id>
-					<url>http://download.eclipse.org/modeling/emf/emf/updates/2.6/R201006141136/</url>
+					<id>download.eclipse.org_modeling_emf_emf_updates_2.6_R201009141218_</id>
+					<url>http://download.eclipse.org/modeling/emf/emf/updates/2.6/R201009141218/</url>
 					<layout>p2</layout>
 					<snapshots>
 						<enabled>true</enabled>
@@ -208,8 +186,8 @@
 					</releases>
 				</repository>
 				<repository>
-					<id>download.eclipse.org_webtools_downloads_drops_R3.2.2_R-3.2.2-20100915173744_repository_</id>
-					<url>http://download.eclipse.org/webtools/downloads/drops/R3.2.2/R-3.2.2-20100915173744/repository/</url>
+					<id>download.eclipse.org_webtools_repository_helios_</id>
+					<url>http://download.eclipse.org/webtools/repository/helios/</url>
 					<layout>p2</layout>
 					<snapshots>
 						<enabled>true</enabled>
