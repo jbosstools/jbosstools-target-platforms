@@ -1,0 +1,13 @@
+<project default="custom.build" name="jbosstools target platform p2.mirror generator">
+	<property name="targetFile" value="e361-wtp322.target" />
+
+	<target name="custom.build" depends="gen.p2mirror.script, run.p2mirror.script" />
+
+	<target name="gen.p2mirror.script" description="use XSLT to generate a p2.mirror script from .target">
+		<echo level="verbose">Generate ${targetFile}.p2mirror.xml from ${targetFile}</echo>
+		<xslt style="target2p2mirrorXml.xsl" in="${targetFile}" out="${targetFile}.p2mirror.xml" processor="trax" />
+	</target>
+
+	<target name="run.p2mirror.script" />
+
+</project>
