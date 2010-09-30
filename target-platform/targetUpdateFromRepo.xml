@@ -1,0 +1,49 @@
+<project default="custom.build" name="jbosstools target platform pom.xml + site.xml generator">
+	<property name="tmpDir" value="${java.io.tmpdir}/targetUpdateFromRepo" />
+	<property name="targetFile" value="e361-wtp322.target" />
+	<property name="repoDir" value="./REPO_SR1" />
+	<property name="outputDir" value="${basedir}" />
+	<!-- <property name="outputDir" value="${tmpDir}" /> -->
+
+	<target name="custom.build" depends="check.content.xml, get.content.xml, copy.content.xml, contentXml2artifactVersions.xsl, target2targetTemplate.xsl, updateTargetFile, cleanup" />
+
+	<target name="check.content.xml" description="if content.jar, unpack to get content.xml">
+		<condition property="content.xml.exists" value="true">
+			<available file="${repoDir}/content.xml" />
+		</condition>
+	</target>
+	<target name="get.content.xml" unless="content.xml.exists">
+		<echo level="verbose">Unzip ${tmpDir}/content.xml</echo>
+		<unzip src="${repoDir}/content.jar" dest="${tmpDir}" />
+	</target>
+	<target name="copy.content.xml" if="content.xml.exists">
+		<echo level="verbose">Copy ${tmpDir}/content.xml</echo>
+		<copy file="${repoDir}/content.xml" todir="${tmpDir}" />
+	</target>
+
+	<target name="contentXml2artifactVersions.xsl">
+		<echo level="verbose">Generate ${tmpDir}/artifactVersions.properties</echo>
+		<xslt style="contentXml2artifactVersions.xsl" in="${tmpDir}/content.xml" out="${tmpDir}/artifactVersions.properties" processor="trax" />
+	</target>
+
+	<target name="target2targetTemplate.xsl" description="run target2targetTemplate.xsl to templatize .target file">
+		<echo level="verbose">Generate ${tmpDir}/${targetFile}.template</echo>
+		<xslt style="target2targetTemplate.xsl" in="${targetFile}" out="${tmpDir}/${targetFile}.template" processor="trax" />
+	</target>
+
+	<target name="updateTargetFile">
+		<property file="${tmpDir}/artifactVersions.properties" />
+		<copy todir="${outputDir}" overwrite="true">
+			<fileset file="${tmpDir}/${targetFile}.template" />
+			<mapper type="merge" to="${targetFile}" />
+			<filterchain>
+				<expandproperties />
+			</filterchain>
+		</copy>
+	</target>
+
+	<target name="cleanup">
+		<delete dir="${tmpDir}" includeemptydirs="true" quiet="true" />
+	</target>
+
+</project>
