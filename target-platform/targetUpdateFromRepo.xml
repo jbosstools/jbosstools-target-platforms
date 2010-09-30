@@ -3,7 +3,9 @@
 	<property name="targetFile" value="e361-wtp322.target" />
 	<property name="repoDir" value="./REPO_SR1" />
 	<property name="outputDir" value="${basedir}" />
-	<!-- <property name="outputDir" value="${tmpDir}" /> -->
+	<!-- Instead of overwriting, can also create a new .target file in a different outputDir
+		<property name="outputDir" value="${tmpDir}" /> 
+	-->
 
 	<target name="custom.build" depends="check.content.xml, get.content.xml, copy.content.xml, contentXml2artifactVersions.xsl, target2targetTemplate.xsl, updateTargetFile, cleanup" />
 
@@ -31,7 +33,7 @@
 		<xslt style="target2targetTemplate.xsl" in="${targetFile}" out="${tmpDir}/${targetFile}.template" processor="trax" />
 	</target>
 
-	<target name="updateTargetFile">
+	<target name="updateTargetFile" description="load generated properties and resolve them in the template to create a new .target file">
 		<property file="${tmpDir}/artifactVersions.properties" />
 		<copy todir="${outputDir}" overwrite="true">
 			<fileset file="${tmpDir}/${targetFile}.template" />
@@ -42,7 +44,7 @@
 		</copy>
 	</target>
 
-	<target name="cleanup">
+	<target name="cleanup" description="purge temporary dir">
 		<delete dir="${tmpDir}" includeemptydirs="true" quiet="true" />
 	</target>
 
