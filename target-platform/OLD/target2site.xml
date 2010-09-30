@@ -1,5 +1,5 @@
 <project default="custom.build" name="jbosstools target platform pom.xml + site.xml generator">
-	<property name="targetFile" value="e36-wtp32.target" />
+	<property name="targetFile" value="e361-wtp322.target" />
 
 	<target name="custom.build" depends="pom.xml, site.xml" />
 
