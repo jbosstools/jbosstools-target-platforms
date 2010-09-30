@@ -16,7 +16,27 @@
 3. Resulting repo can be added to Eclipse and from there, *uncategorized* features can be installed.
 
 
-== Updating an existing .target file from newer versions of IUs in a repo ==
+== HOWTO: Publish local p2 repo (generated from .target) to download.jboss.org ==
+
+1. Zip the repo
+
+	cd /tmp/REPO; zip -9r e361-wtp322.target.zip *
+	
+2. Push to qa01
+
+	rsync e361-wtp322.target.zip nboldt@qa01:~/
+
+3. Ssh to qa01; sudo to hudson; unpack and push contents + zip to download.jboss.org 
+
+	sudo su - hudson
+	unzip /home/nboldt/e361-wtp322.target.zip -d /tmp/e361-wtp322.target
+	rsync -aPrz --rsh=ssh /tmp/e361-wtp322.target/* \ 
+		tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform/latest/
+	rsync -aPrz --rsh=ssh /home/nboldt/e361-wtp322.target.zip \
+		tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform
+
+
+== HOWTO: Update an existing .target file from newer versions of IUs in a repo ==
 
 1. Run targetUpdateFromRepo.xml against a given repo folder on disk, eg.
 
@@ -26,7 +46,7 @@ ant -v -f targetUpdateFromRepo.xml -DtargetFile=e361-wtp322.target -DrepoDir=./R
    repo's content.xml file.
 
 
-== Installing the contents of a repo into Eclipse (via script) ==
+== HOWTO: Install the contents of a repo into Eclipse (via script) ==
 
 1. See ../installation/README.txt
 
