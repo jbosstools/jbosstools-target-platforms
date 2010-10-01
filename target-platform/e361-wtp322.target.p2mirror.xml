@@ -42,13 +42,16 @@
 <repository location="http://download.eclipse.org/rt/ecf/3.2/3.6/site.p2"/>
 <repository location="http://download.eclipse.org/tptp/updates/"/>
 <repository location="http://download.eclipse.org/modeling/emf/emf/updates/2.6/R201009141218/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/requirements/swtbot-helios/"/>
+<repository location="http://download.eclipse.org/technology/swtbot/helios/dev-build/update-site/"/>
 <repository location="http://download.eclipse.org/birt/update-site/2.6/"/>
 <repository location="http://download.eclipse.org/eclipse/updates/3.6.x/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/requirements/helios/"/>
+<repository location="http://download.eclipse.org/releases/helios/"/>
 <repository location="http://download.eclipse.org/webtools/repository/helios/"/>
 <repository location="http://download.jboss.org/jbosstools/builds/staging/jbosstools-drools/all/repo/"/>
 <repository location="http://dl.google.com/eclipse/plugin/3.6/"/>
+<repository location="http://download.jboss.org/jbosstools/updates/requirements/swtbot-helios/"/>
+<repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools-3.2/"/>
+<repository location="http://download.jboss.org/jbosstools/updates/requirements/helios/"/>
 </source>
 <iu version="" id="org.maven.ide.eclipse.feature.feature.group"/>
 <iu version="" id="org.maven.ide.eclipse.wtp.feature.feature.group"/>
@@ -115,10 +118,12 @@
 <iu version="" id="org.eclipse.datatools.sdk.feature.feature.group"/>
 <iu version="" id="org.eclipse.datatools.enablement.jdt.feature.feature.group"/>
 <iu version="" id="org.eclipse.datatools.modelbase.feature.feature.group"/>
+<iu version="" id="org.eclipse.datatools.enablement.apache.derby.feature.feature.group"/>
 <iu version="" id="org.eclipse.draw2d.feature.group"/>
 <iu version="" id="org.eclipse.gef.feature.group"/>
 <iu version="" id="org.eclipse.zest.feature.group"/>
 <iu version="" id="org.eclipse.uml2.feature.group"/>
+<iu version="" id="org.eclipse.rse.feature.group"/>
 <iu version="" id="org.eclipse.jst.jee"/>
 <iu version="" id="org.eclipse.wst.common.frameworks"/>
 <iu version="" id="org.eclipse.wst.common.project.facet.ui"/>
