@@ -7,8 +7,10 @@
 
 	<property name="tmpdir" value="${java.io.tmpdir}/target-platform-build" />
 
-	<!-- assume this is run from /WORKSPACE/sources/ == /trunk/build/ -->
-	<property name="WORKSPACE" value="${basedir}" />
+	<condition property="WORKINGDIR" value="/home/hudson/static_build_env/jbds/tools/sources" else="${basedir}">
+		<available file="/home/hudson/static_build_env/jbds" type="dir" />
+	</condition>
+	<mkdir dir="${WORKINGDIR}" />
 
 	<condition property="COMMON_TOOLS" value="/home/hudson/static_build_env/jbds/tools" else="${java.io.tmpdir}">
 		<available file="/home/hudson/static_build_env/jbds" type="dir" />
