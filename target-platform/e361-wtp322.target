@@ -126,7 +126,7 @@
 			<unit id="org.eclipse.gef.feature.group" version="3.6.0.v20100519-2050-777B-81A2Bz-69793A8B83447"/>
 			<unit id="org.eclipse.zest.feature.group" version="1.2.0.v20100519-2050-678-8yE4F-8HAH4DFEF3447"/>
 			<unit id="org.eclipse.uml2.feature.group" version="3.1.0.v201006071150"/>
-			<unit id="org.eclipse.rse.feature.group" version="3.2.1.v201008191400-7L78FA-8wqbPcNk4qa8R0eVlyGvo"/>
+			<unit id="org.eclipse.rse.feature.group" version="3.2.1.v201008191400-7L78FA-8wqbPcNj4qa8R0eViy7vZ"/>
 			<repository location="http://download.eclipse.org/releases/helios/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
