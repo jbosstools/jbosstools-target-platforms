@@ -20,20 +20,20 @@
 
 1. Zip the repo
 
-	cd /tmp/REPO; zip -9r e361-wtp322.target.zip *
+	cd /tmp/REPO; zip -9r e361-wtp322.target.zip * &
 	
 2. Push to qa01
 
-	rsync -aPrz e361-wtp322.target.zip nboldt@qa01:~/
+	rsync -aPrz e361-wtp322.target.zip nboldt@qa01:~/ &
 
 3. Ssh to qa01; sudo to hudson; unpack and push contents + zip to download.jboss.org 
 
 	sudo su - hudson
-	unzip /home/nboldt/e361-wtp322.target.zip -d /tmp/e361-wtp322.target
+	unzip /home/nboldt/e361-wtp322.target.zip -d /tmp/e361-wtp322.target &
 	rsync -aPrz --delete --rsh=ssh /tmp/e361-wtp322.target/* \ 
-		tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform/latest/
+		tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform/latest/ &
 	rsync -aPrz --rsh=ssh /home/nboldt/e361-wtp322.target.zip \
-		tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform
+		tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform &
 
 
 == HOWTO: Publish local p2 repo (generated from .target) to shared location in Hudson for use in builds ==
@@ -45,14 +45,14 @@
    file://home/hudson/static_build_env/jbds/target-platform/e36-wtp322.target/
 
 	rsync -aPrz --delete /tmp/e361-wtp322.target/* \
-		/home/hudson/static_build_env/jbds/target-platform/e36-wtp322.target/
+		/home/hudson/static_build_env/jbds/target-platform/e36-wtp322.target/ &
 
 
 == HOWTO: Update an existing .target file from newer versions of IUs in a repo ==
 
 1. Run targetUpdateFromRepo.xml against a given repo folder on disk, eg.
 
-ant -v -f targetUpdateFromRepo.xml -DtargetFile=e361-wtp322.target -DrepoDir=./REPO_SR1
+	ant -v -f targetUpdateFromRepo.xml -DtargetFile=e361-wtp322.target -DrepoDir=./REPO_SR1
 
 2. Resulting targetFile will be overwritten with updated version values from what was found in the 
    repo's content.xml file.
