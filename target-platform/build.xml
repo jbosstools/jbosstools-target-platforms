@@ -77,14 +77,14 @@
 
 		<if>
 			<not>
-				<available file="${WORKSPACE}/${eclipse.file}" type="file" />
+				<available file="${WORKINGDIR}/${eclipse.file}" type="file" />
 			</not>
 			<then>
-				<get src="${eclipse.URL}/${eclipse.file}" dest="${WORKSPACE}/${eclipse.file}" />
+				<get src="${eclipse.URL}/${eclipse.file}" dest="${WORKINGDIR}/${eclipse.file}" />
 			</then>
 		</if>
-		<untar compression="gzip" dest="${WORKSPACE}" src="${WORKSPACE}/${eclipse.file}" overwrite="true" />
-		<chmod perm="+x" file="${WORKSPACE}/eclipse/eclipse" />
+		<untar compression="gzip" dest="${WORKINGDIR}" src="${WORKINGDIR}/${eclipse.file}" overwrite="true" />
+		<chmod perm="+x" file="${WORKINGDIR}/eclipse/eclipse" />
 	</target>
 
 	<target name="gen.p2mirror.script" description="use XSLT to generate a p2.mirror script from .target">
@@ -94,9 +94,9 @@
 	<!-- /abs/path/to/eclipse -vm /opt/jdk1.6.0/bin/java -nosplash -data /tmp/workspace -consolelog -application 
 			org.eclipse.ant.core.antRunner -f *.target.p2mirror.xml -Ddebug=true -DfollowStrict=true -Drepo.dir=/tmp/REPO/ -->
 	<target name="run.p2mirror.script" description="build target update site using p2.mirror">
-		<exec executable="${WORKSPACE}/eclipse/eclipse" dir="${basedir}">
+		<exec executable="${WORKINGDIR}/eclipse/eclipse" dir="${basedir}">
 			<arg line=" -nosplash -data ${tmpdir}/workspace -consolelog -application org.eclipse.ant.core.antRunner" />
-			<arg line=" -f ${targetFile}.p2mirror.xml -DfollowStrict=true -Drepo.dir=${WORKSPACE}/REPO/" />
+			<arg line=" -f ${targetFile}.p2mirror.xml -DfollowStrict=true -Drepo.dir=${WORKINGDIR}/REPO/" />
 			<arg line=" -Ddebug=true" />
 		</exec>
 	</target>
