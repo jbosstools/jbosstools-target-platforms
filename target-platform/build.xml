@@ -1,0 +1,107 @@
+<project default="custom.hudson.build" name="jbosstools target platform p2.mirror generator - ant script for Hudson">
+	<property name="targetFile" value="e361-wtp322.target" />
+
+	<!-- if useLatest = true, omit versions from p2.mirror script to fetch latest version available; 
+		 if useLatest = false, include versions and fetch specific versions requested. -->
+	<property name="useLatest" value="true" />
+
+	<property name="tmpdir" value="${java.io.tmpdir}/target-platform-build" />
+
+	<!-- assume this is run from /WORKSPACE/sources/ == /trunk/build/ -->
+	<property name="WORKSPACE" value="${basedir}" />
+
+	<condition property="COMMON_TOOLS" value="/home/hudson/static_build_env/jbds/tools" else="${java.io.tmpdir}">
+		<available file="/home/hudson/static_build_env/jbds" type="dir" />
+	</condition>
+	<mkdir dir="${COMMON_TOOLS}" />
+
+	<condition property="build.xml" value="/home/hudson/static_build_env/jbds/tools/sources/build/build.xml">
+		<available file="/home/hudson/static_build_env/jbds/tools/sources/build/build.xml" type="file" />
+	</condition>
+	<condition property="build.xml" value="${basedir}/../../build/build.xml">
+		<available file="${basedir}/../../build/build.xml" type="file" />
+	</condition>
+	<condition property="build.xml" value="${basedir}/../../build.xml">
+		<available file="${basedir}/../../build.xml" type="file" />
+	</condition>
+	<condition property="build.xml" value="${basedir}/../../sources/build.xml">
+		<available file="${basedir}/../../sources/build.xml" type="file" />
+	</condition>
+	<condition property="build.xml" value="${basedir}/../build.xml">
+		<available file="${basedir}/../build.xml" type="file" />
+	</condition>
+	<!-- if can't calculate where build/build.xml is located, must pass in path from parent when calling this script -->
+
+	<target name="custom.hudson.build" depends="init, get.arch, get.eclipse, gen.p2mirror.script, run.p2mirror.script, cleanup" />
+
+	<target name="init">
+		<ant antfile="${build.xml}" target="init" />
+		<taskdef resource="net/sf/antcontrib/antlib.xml">
+			<classpath>
+				<pathelement location="${COMMON_TOOLS}/ant-contrib.jar" />
+			</classpath>
+		</taskdef>
+	</target>
+
+	<target name="get.arch">
+		<if>
+			<os family="unix" />
+			<then>
+				<!-- Ant thinks that ${os.arch} == i386 for ${arch}, so use `uname` instead -->
+				<exec executable="bash" outputproperty="arch">
+					<arg line="getArch.sh" />
+				</exec>
+			</then>
+			<else>
+				<echo level="error">This script is only tested to work on Linux 32- and 64-bit Hudson slaves.</echo>
+				<condition property="arch" value="${arch}" else="">
+					<os arch="amd64" />
+				</condition>
+			</else>
+		</if>
+	</target>
+
+	<!-- only meant to work with linux 32- and 64-bit slaves -->
+	<target name="get.eclipse">
+		<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/R-3.6.1-201009090800" />
+		<property name="eclipse.version" value="eclipse-SDK-3.6.1" />
+		<if>
+			<equals arg1="${arch}" arg2="x86" />
+			<then>
+				<property name="eclipse.file" value="${eclipse.version}-linux-gtk.tar.gz" />
+			</then>
+			<else>
+				<property name="eclipse.file" value="${eclipse.version}-linux-gtk-${arch}.tar.gz" />
+			</else>
+		</if>
+
+		<if>
+			<not>
+				<available file="${WORKSPACE}/${eclipse.file}" type="file" />
+			</not>
+			<then>
+				<get src="${eclipse.URL}/${eclipse.file}" dest="${WORKSPACE}/${eclipse.file}" />
+			</then>
+		</if>
+		<untar compression="gzip" dest="${WORKSPACE}" src="${WORKSPACE}/${eclipse.file}" overwrite="true" />
+		<chmod perm="+x" file="${WORKSPACE}/eclipse/eclipse" />
+	</target>
+
+	<target name="gen.p2mirror.script" description="use XSLT to generate a p2.mirror script from .target">
+		<ant antfile="target2p2mirror.xml" />
+	</target>
+
+	<!-- /abs/path/to/eclipse -vm /opt/jdk1.6.0/bin/java -nosplash -data /tmp/workspace -consolelog -application 
+			org.eclipse.ant.core.antRunner -f *.target.p2mirror.xml -Ddebug=true -DfollowStrict=true -Drepo.dir=/tmp/REPO/ -->
+	<target name="run.p2mirror.script" description="build target update site using p2.mirror">
+		<exec executable="${WORKSPACE}/eclipse/eclipse" dir="${basedir}">
+			<arg line=" -nosplash -data ${tmpdir}/workspace -consolelog -application org.eclipse.ant.core.antRunner" />
+			<arg line=" -f ${targetFile}.p2mirror.xml -DfollowStrict=true -Drepo.dir=${WORKSPACE}/REPO/" />
+			<arg line=" -Ddebug=true" />
+		</exec>
+	</target>
+
+	<target name="cleanup">
+		<delete dir="${tmpdir}" quiet="true" includeemptydirs="true" />
+	</target>
+</project>
