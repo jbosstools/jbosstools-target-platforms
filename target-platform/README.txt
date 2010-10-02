@@ -35,6 +35,8 @@
 	rsync -aPrz --rsh=ssh /home/nboldt/e361-wtp322.target.zip \
 		tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform &
 
+4. Alternatively, see publish.sh for when repo is built in JBoss Hudson.
+
 
 == HOWTO: Publish local p2 repo (generated from .target) to shared location in Hudson for use in builds ==
 
@@ -42,10 +44,12 @@
    but a local path reference is faster.
 
 2. So, continuing from previous HOWTO, copy from /tmp/e361-wtp322.target into 
-   file://home/hudson/static_build_env/jbds/target-platform/e36-wtp322.target/
+   file://home/hudson/static_build_env/jbds/target-platform/e361-wtp322.target/
 
 	rsync -aPrz --delete /tmp/e361-wtp322.target/* \
-		/home/hudson/static_build_env/jbds/target-platform/e36-wtp322.target/ &
+		/home/hudson/static_build_env/jbds/target-platform/e361-wtp322.target/ &
+
+3. Alternatively, see publish.sh for when repo is built in JBoss Hudson.
 
 
 == HOWTO: Update an existing .target file from newer versions of IUs in a repo ==
