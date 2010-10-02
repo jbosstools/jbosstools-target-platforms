@@ -24,7 +24,7 @@
 	
 2. Push to qa01
 
-	rsync e361-wtp322.target.zip nboldt@qa01:~/
+	rsync -aPrz e361-wtp322.target.zip nboldt@qa01:~/
 
 3. Ssh to qa01; sudo to hudson; unpack and push contents + zip to download.jboss.org 
 
