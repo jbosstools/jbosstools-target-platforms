@@ -30,10 +30,22 @@
 
 	sudo su - hudson
 	unzip /home/nboldt/e361-wtp322.target.zip -d /tmp/e361-wtp322.target
-	rsync -aPrz --rsh=ssh /tmp/e361-wtp322.target/* \ 
+	rsync -aPrz --delete --rsh=ssh /tmp/e361-wtp322.target/* \ 
 		tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform/latest/
 	rsync -aPrz --rsh=ssh /home/nboldt/e361-wtp322.target.zip \
 		tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform
+
+
+== HOWTO: Publish local p2 repo (generated from .target) to shared location in Hudson for use in builds ==
+
+1. You can reference http://download.jboss.org/jbosstools/updates/target-platform/latest/, 
+   but a local path reference is faster.
+
+2. So, continuing from previous HOWTO, copy from /tmp/e361-wtp322.target into 
+   file://home/hudson/static_build_env/jbds/target-platform/e36-wtp322.target/
+
+	rsync -aPrz --delete /tmp/e361-wtp322.target/* \
+		/home/hudson/static_build_env/jbds/target-platform/e36-wtp322.target/
 
 
 == HOWTO: Update an existing .target file from newer versions of IUs in a repo ==
