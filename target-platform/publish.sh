@@ -11,16 +11,15 @@ if [[ -d ${repoPath} ]]; then
 	du -sh ${repoPath}
 
 	# copy/update into central place for reuse by local downstream build jobs
-	rsync -aPrz --delete ${repoPath}/* ${destinationPath}/${targetFile}/
-	du -sh ${destinationPath}/${targetFile} 
+	date; rsync -arzq --delete ${repoPath}/* ${destinationPath}/${targetFile}/ &
 
 	# upload to http://download.jboss.org/jbossotools/updates/target-platform/latest/ for public use
-	rsync -aPrz --delete --rsh=ssh ${repoPath}/* ${DESTINATION}/latest/ &
+	date; rsync -arzq --delete --rsh=ssh ${repoPath}/* ${DESTINATION}/latest/ &
 
 	# create zip, then upload to http://download.jboss.org/jbossotools/updates/target-platform/${targetFile}.zip for public use
-	cd ${repoPath} && \
-	zip -q -r9 /tmp/${targetFile}.zip * && \
-	du -sh /tmp/${targetFile}.zip && \
-	rsync -aPrz --delete --rsh=ssh /tmp/${targetFile}.zip ${DESTINATION}/ && \
+	cd ${repoPath}
+	zip -q -r9 /tmp/${targetFile}.zip *
+	du -sh /tmp/${targetFile}.zip
+	date; rsync -arzq --delete --rsh=ssh /tmp/${targetFile}.zip ${DESTINATION}/ 
 	rm -f /tmp/${targetFile}.zip
 fi
