@@ -15,17 +15,17 @@
 					/abs/path/to/eclipse -vm /opt/jdk1.6.0/bin/java \
 					-nosplash -data /tmp/workspace -consolelog -application \
 					org.eclipse.ant.core.antRunner -f *.target.p2mirror.xml \
-					-Ddebug=true -DfollowStrict=true -Drepo.dir=`pwd`/REPO/
+					-Ddebug=true -DfollowStrict=true -DrepoDir=`pwd`/REPO/
 </echo>
 </target>
-<target unless="repo.dir" name="init">
-<fail>Must set -Drepo.dir=/abs/path/to/download/artifacts/</fail>
+<target unless="repoDir" name="init">
+<fail>Must set -DrepoDir=/abs/path/to/download/artifacts/</fail>
 </target>
-<target if="repo.dir" description="Download from target platform definition" depends="init" name="download.target.platform">
+<target if="repoDir" description="Download from target platform definition" depends="init" name="download.target.platform">
 <property value="false" name="verbose"/>
 <property value="false" name="followStrict"/>
-<echo level="info">Download features/plugins into ${repo.dir}</echo>
-<p2.mirror verbose="${verbose}" destination="file:${repo.dir}">
+<echo level="info">Download features/plugins into ${repoDir}</echo>
+<p2.mirror verbose="${verbose}" destination="file:${repoDir}">
 <slicingOptions followStrict="${followStrict}" includeFeatures="true"/>
 <source>
 <repository location="http://m2eclipse.sonatype.org/sites/m2e/"/>
