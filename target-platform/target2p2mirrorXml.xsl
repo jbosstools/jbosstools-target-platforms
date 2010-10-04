@@ -13,7 +13,7 @@
 
 	<xsl:param name="verbose" select="'${verbose}'" as="xs:string"/>
 	<xsl:param name="followStrict" select="'${followStrict}'" as="xs:string"/>
-	<xsl:param name="destination" select="'file:${repo.dir}'" as="xs:string"/>
+	<xsl:param name="destination" select="'file:${repoDir}'" as="xs:string"/>
 	
 	<xsl:template match="target">
 		<project name="Download target platform" default="download.target.platform">
@@ -32,17 +32,17 @@
 					/abs/path/to/eclipse -vm /opt/jdk1.6.0/bin/java \
 					-nosplash -data /tmp/workspace -consolelog -application \
 					org.eclipse.ant.core.antRunner -f *.target.p2mirror.xml \
-					-Ddebug=true -DfollowStrict=true -Drepo.dir=`pwd`/REPO/
+					-Ddebug=true -DfollowStrict=true -DrepoDir=`pwd`/REPO/
 </echo>
 			</target>
-			<target name="init" unless="repo.dir">
-				<fail>Must set -Drepo.dir=/abs/path/to/download/artifacts/</fail>
+			<target name="init" unless="repoDir">
+				<fail>Must set -DrepoDir=/abs/path/to/download/artifacts/</fail>
 			</target>
 			<target name="download.target.platform" depends="init"
-				description="Download from target platform definition" if="repo.dir">
+				description="Download from target platform definition" if="repoDir">
 				<property name="verbose" value="false" />
 				<property name="followStrict" value="false" />
-				<echo level="info">Download features/plugins into ${repo.dir}</echo>
+				<echo level="info">Download features/plugins into ${repoDir}</echo>
 				<p2.mirror destination="{$destination}" verbose="{$verbose}">
 					<!-- should we add latestVersionOnly="true" to <slicingOptions> ? -->
 					<slicingOptions includeFeatures="true" followStrict="{$followStrict}"/>
