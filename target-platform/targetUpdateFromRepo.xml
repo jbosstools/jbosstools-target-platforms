@@ -1,11 +1,21 @@
-<project default="custom.build" name="jbosstools target platform pom.xml + site.xml generator">
-	<property name="tmpDir" value="${java.io.tmpdir}/targetUpdateFromRepo" />
+<project default="custom.build" name="jbosstools target platform updater">
+
+	<!-- must set these commandline if not using defaults -->
 	<property name="targetFile" value="e361-wtp322.target" />
-	<property name="repoDir" value="./REPO_SR1" />
+	<property name="repoDir" value="./REPO" />
+
+	<property name="tmpDir" value="${java.io.tmpdir}/targetUpdateFromRepo" />
 	<property name="outputDir" value="${basedir}" />
 	<!-- Instead of overwriting, can also create a new .target file in a different outputDir
 		<property name="outputDir" value="${tmpDir}" /> 
 	-->
+
+	<target name="help">
+		<echo>Must set these properties (or use defaults shown):
+			
+	ant -f targetUpdateFromRepo.xml -DrepoDir=${repoDir} \
+		-DtargetFile=${targetFile}</echo>
+	</target>
 
 	<target name="custom.build" depends="check.content.xml, get.content.xml, copy.content.xml, contentXml2artifactVersions.xsl, target2targetTemplate.xsl, updateTargetFile, cleanup" />
 
