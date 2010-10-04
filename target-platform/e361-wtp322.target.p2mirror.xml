@@ -70,6 +70,7 @@
 <iu version="" id="org.eclipse.emf.ecore.editor.feature.group"/>
 <iu version="" id="org.eclipse.emf.ecore.feature.group"/>
 <iu version="" id="org.eclipse.emf.edit.feature.group"/>
+<iu version="" id="org.eclipse.xsd.edit.feature.group"/>
 <iu version="" id="org.eclipse.xsd.feature.group"/>
 <iu version="" id="org.eclipse.swtbot.eclipse.feature.group"/>
 <iu version="" id="org.eclipse.swtbot.eclipse.gef.feature.group"/>

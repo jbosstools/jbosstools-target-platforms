@@ -61,6 +61,7 @@
 			<unit id="org.eclipse.emf.ecore.editor.feature.group" version="2.6.0.v20100914-1218"/>
 			<unit id="org.eclipse.emf.ecore.feature.group" version="2.6.1.v20100914-1218"/>
 			<unit id="org.eclipse.emf.edit.feature.group" version="2.6.0.v20100914-1218"/>
+			<unit id="org.eclipse.xsd.edit.feature.group" version="2.6.0.v20100914-1218"/>
 			<unit id="org.eclipse.xsd.feature.group" version="2.6.0.v20100914-1218"/>
 			<repository location="http://download.eclipse.org/modeling/emf/emf/updates/2.6/R201009141218/"/>
 		</location>
