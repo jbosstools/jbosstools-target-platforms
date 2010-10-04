@@ -8,17 +8,14 @@
 					
 					Use followStrict="true" to prevent downloading all
 					requirements not included in the target platform
-					or
-					followStrict="false" to fetch everything
+					or followStrict="false" to fetch everything
 
 					To run this script:
 
-					/abs/path/to/eclipse -vm /opt/jdk1.6.0/bin/java -nosplash -data \
-					/tmp/workspace -consolelog -application \
+					/abs/path/to/eclipse -vm /opt/jdk1.6.0/bin/java \
+					-nosplash -data /tmp/workspace -consolelog -application \
 					org.eclipse.ant.core.antRunner -f *.target.p2mirror.xml \
-					-Ddebug=true \
-					-DfollowStrict=true \
-					-Drepo.dir=/tmp/REPO/
+					-Ddebug=true -DfollowStrict=true -Drepo.dir=`pwd`/REPO/
 </echo>
 </target>
 <target unless="repo.dir" name="init">
