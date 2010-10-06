@@ -110,6 +110,7 @@
 <iu version="" id="org.eclipse.equinox.p2.ui.admin.rcp.product"/>
 <iu version="" id="org.eclipse.equinox.server.servletbridge.feature.group"/>
 <iu version="" id="org.eclipse.equinox.server.simple.feature.group"/>
+<iu version="" id="org.eclipse.rcp.feature.group"/>
 <iu version="" id="org.eclipse.birt.feature.group"/>
 <iu version="" id="org.eclipse.datatools.connectivity.feature.feature.group"/>
 <iu version="" id="org.eclipse.datatools.enablement.feature.feature.group"/>
