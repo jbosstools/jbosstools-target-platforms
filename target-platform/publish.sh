@@ -13,16 +13,16 @@ if [[ -d ${repoPath} ]]; then
 	du -sh ${repoPath} ${destinationPath}/${targetFile}
 
 	# copy/update into central place for reuse by local downstream build jobs
-	date; rsync -arzq --delete --exclude '.blobstore' * ${destinationPath}/${targetFile}/
+	date; rsync -arzqc --delete-after --delete-excluded --delay-updates --rsh=ssh --exclude '.blobstore' * ${destinationPath}/${targetFile}/
 
 	du -sh ${repoPath} ${destinationPath}/${targetFile}
 
 	# upload to http://download.jboss.org/jbossotools/updates/target-platform/latest/ for public use
-	date; rsync -arzq --delete --rsh=ssh --exclude '.blobstore' * ${DESTINATION}/latest/
+	date; rsync -arzqc --delete-after --delete-excluded --delay-updates --rsh=ssh --exclude '.blobstore' * ${DESTINATION}/latest/
 
 	# create zip, then upload to http://download.jboss.org/jbossotools/updates/target-platform/${targetFile}.zip for public use
 	zip -q -r9 /tmp/${targetFile}.zip *
 	du -sh /tmp/${targetFile}.zip
-	date; rsync -arzq --delete --rsh=ssh /tmp/${targetFile}.zip ${DESTINATION}/ 
+	date; rsync -arzq --rsh=ssh /tmp/${targetFile}.zip ${DESTINATION}/ 
 	rm -f /tmp/${targetFile}.zip
 fi
