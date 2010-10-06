@@ -81,18 +81,18 @@
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit version="1.1.0.v20090119-79318s73533B57" id="com.ibm.icu.base.feature.group"/>
 			<unit version="1.0.0.v20100510-7K7QErDzbb9z-yqHb55T7I" id="org.eclipse.equinox.server.core.feature.group"/>
-			<unit version="1.2.0.v20100427-7B77FKt90GE5h0SDT5FV9A01911" id="org.eclipse.cvs.feature.group"/>
-			<unit version="1.2.0.v20100427-7e7jEQFEp4jsWcbqLU9l93" id="org.eclipse.help.feature.group"/>
-			<unit version="3.6.1.r361_v20100714-0800-7z8XFUUFLFlmgLc91IWQa85LVkHD" id="org.eclipse.jdt.feature.group"/>
+			<unit version="1.2.0.v20100427-7B77FKt90GE5h0SBT5FV9A01911" id="org.eclipse.cvs.feature.group"/>
+			<unit version="1.2.0.v20100427-7e7jEQFEp4jsWcboLU9l93" id="org.eclipse.help.feature.group"/>
+			<unit version="3.6.1.r361_v20100714-0800-7z8XFUSFLFlmgLc5z-Bvrt8-HVkH" id="org.eclipse.jdt.feature.group"/>
 			<unit version="3.6.1.r361_v20100910-9gF78GroFrD9Uh-LhvxMFCV2hCz01p6896L" id="org.eclipse.platform.feature.group"/>
 			<unit version="3.6.1.M20100929-0800" id="org.eclipse.platform.ide"/>
 			<unit version="3.4.1.R36x_v20100823-7M7K7JF90dnJ-WLf3cf4yi" id="org.eclipse.equinox.executable.feature.group"/>
 			<unit version="3.4.1.R36x_v20100823-7M7K7JF90dnJ-WLf3cf4yi" id="org.eclipse.equinox.executable"/>
-			<unit version="3.6.1.M20100929-0800" id="org.eclipse.platform.sdk"/>
-			<unit version="3.6.1.r361_v20100727-7b7mFL-FET3dhESDiE5_bkJ" id="org.eclipse.pde.feature.group"/>
+			<unit version="3.6.1.M20100909-0800" id="org.eclipse.platform.sdk"/>
+			<unit version="3.6.1.r361_v20100727-7b7mFL-FET3dhESDgE5_bkJ" id="org.eclipse.pde.feature.group"/>
 			<unit version="3.6.1.r361_v20100714-0800-7Q7m6DDaKf5o53L9dz-d8n-yz-tWdHTE5xVLpsrf4c764" id="org.eclipse.sdk.feature.group"/>
-			<unit version="3.6.1.r361_v20100827-9OArFLdFjY-ThSQXoKvKz0_T" id="org.eclipse.rcp.feature.group"/>
-			<unit version="3.6.0.M20100929-0800" id="org.eclipse.rcp.id"/>
+			<unit version="3.6.1.r361_v20100827-9OArFLdFjY-ThSQXmKvKz0_T" id="org.eclipse.rcp.feature.group"/>
+			<unit version="3.6.0.M20100909-0800" id="org.eclipse.rcp.id"/>
 			<unit version="3.6.0.M20100929-0800" id="org.eclipse.rcp.sdk.id"/>
 			<unit version="3.3.0.v20100427-44A77w31211642" id="org.eclipse.releng.tools.feature.group"/>
 			<unit version="3.6.1.M20100929-0800" id="org.eclipse.sdk.ide"/>
@@ -112,7 +112,7 @@
 			<unit version="1.1.0.M20100929-0800" id="org.eclipse.equinox.p2.ui.admin.rcp.product"/>
 			<unit version="1.0.0.v20100510-42A79oB5855K5E" id="org.eclipse.equinox.server.servletbridge.feature.group"/>
 			<unit version="1.0.0.v20100510-44DF8s734C48662444" id="org.eclipse.equinox.server.simple.feature.group"/>
-			<unit id="org.eclipse.rcp.feature.group" version="3.6.1.r361_v20100827-9OArFLdFjY-ThSQXmKvKz0_T"/>
+			<unit version="3.6.1.r361_v20100827-9OArFLdFjY-ThSQXmKvKz0_T" id="org.eclipse.rcp.feature.group"/>
 			<repository location="http://download.eclipse.org/eclipse/updates/3.6.x/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
