@@ -1,4 +1,4 @@
-<project default="custom.hudson.build" name="jbosstools target platform p2.mirror generator - ant script for Hudson">
+<project default="build.local.target.platform.repo" name="jbosstools target platform p2.mirror generator - ant script for Hudson">
 	<property name="targetFile" value="e361-wtp322.target" />
 
 	<!-- if useLatest = true, omit versions from p2.mirror script to fetch latest version available; 
@@ -34,7 +34,9 @@
 	</condition>
 	<!-- if can't calculate where build/build.xml is located, must pass in path from parent when calling this script -->
 
-	<target name="custom.hudson.build" depends="init, get.arch, get.eclipse, gen.p2mirror.script, run.p2mirror.script, cleanup" />
+	<target name="all" depends="build.local.target.platform.repo, test.local.target.platform.repo"/>
+
+	<target name="build.local.target.platform.repo" depends="init, get.arch, get.eclipse, gen.p2mirror.script, run.p2mirror.script, cleanup" />
 
 	<target name="init">
 		<ant antfile="${build.xml}" target="init" />
@@ -105,5 +107,11 @@
 
 	<target name="cleanup">
 		<delete dir="${tmpdir}" quiet="true" includeemptydirs="true" />
+	</target>
+
+	<target name="test.local.target.platform.repo" description="test target platform completeness by running a build against it">
+		<exec executable="/opt/maven3/bin/mvn" dir="${WORKINGDIR}">
+			<arg line=" -f ../pom.xml clean install -B -U -fae -e -P helios-local-target,!helios -Dmaven.test.skip"/>
+		</exec>
 	</target>
 </project>
