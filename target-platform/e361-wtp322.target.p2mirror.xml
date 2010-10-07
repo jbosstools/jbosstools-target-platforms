@@ -37,7 +37,7 @@
 <repository location="http://download.jboss.org/jbosstools/updates/requirements/thirdparty/"/>
 <repository location="http://download.jboss.org/jbosstools/updates/requirements/xulrunner-1.9.1.2/"/>
 <repository location="http://download.eclipse.org/rt/ecf/3.2/3.6/site.p2"/>
-<repository location="http://download.eclipse.org/tptp/updates/"/>
+<repository location="http://download.eclipse.org/tptp/updates/helios/"/>
 <repository location="http://download.eclipse.org/modeling/emf/emf/updates/2.6/R201009141218/"/>
 <repository location="http://download.eclipse.org/technology/swtbot/helios/dev-build/update-site/"/>
 <repository location="http://download.eclipse.org/birt/update-site/2.6/"/>
@@ -58,6 +58,10 @@
 <iu version="" id="org.mozilla.xulrunner.feature.feature.group"/>
 <iu version="" id="org.mozilla.xpcom.feature.feature.group"/>
 <iu version="" id="org.eclipse.tptp.platform.profile.server.feature.group"/>
+<iu version="" id="org.eclipse.tptp.platform.instrumentation.ui.feature.group"/>
+<iu version="" id="org.eclipse.tptp.platform.core.feature.group"/>
+<iu version="" id="org.eclipse.tptp.platform.jvmti.feature.group"/>
+<iu version="" id="org.eclipse.tptp.platform.trace.feature.group"/>
 <iu version="" id="org.eclipse.emf.ecore.feature.group"/>
 <iu version="" id="org.eclipse.emf.feature.group"/>
 <iu version="" id="org.eclipse.emf.codegen.feature.group"/>

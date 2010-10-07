@@ -34,6 +34,8 @@
 	</condition>
 	<!-- if can't calculate where build/build.xml is located, must pass in path from parent when calling this script -->
 
+	<property name="repoDir" value="${WORKINGDIR}/REPO"/>
+
 	<target name="all" depends="build.local.target.platform.repo, test.local.target.platform.repo"/>
 
 	<target name="build.local.target.platform.repo" depends="init, get.arch, get.eclipse, gen.p2mirror.script, run.p2mirror.script, cleanup" />
@@ -100,7 +102,7 @@
 	<target name="run.p2mirror.script" description="build target update site using p2.mirror">
 		<exec executable="${WORKINGDIR}/eclipse/eclipse" dir="${basedir}">
 			<arg line=" -nosplash -data ${tmpdir}/workspace -consolelog -application org.eclipse.ant.core.antRunner" />
-			<arg line=" -f ${targetFile}.p2mirror.xml -DfollowStrict=true -DrepoDir=${WORKINGDIR}/REPO/" />
+			<arg line=" -f ${targetFile}.p2mirror.xml -DfollowStrict=true -DrepoDir=${repoDir}" />
 			<arg line=" -Ddebug=true" />
 		</exec>
 	</target>
@@ -111,7 +113,10 @@
 
 	<target name="test.local.target.platform.repo" description="test target platform completeness by running a build against it">
 		<exec executable="/opt/maven3/bin/mvn" dir="${WORKINGDIR}">
-			<arg line=" -f ../pom.xml clean install -B -U -fae -e -P helios-local-target,!helios -Dmaven.test.skip"/>
+			<arg line=" -f ../parent/pom.xml clean install -B -U -fae -e -P helios-local-target,!helios -Dmaven.test.skip -Dtarget.platorm.URL=file:/${repoDir}"/>
+		</exec>
+		<exec executable="/opt/maven3/bin/mvn" dir="${WORKINGDIR}">
+			<arg line=" -f ../pom.xml clean install -B -U -fae -e -P helios-local-target,!helios -Dmaven.test.skip -Dtarget.platorm.URL=file:/${repoDir}"/>
 		</exec>
 	</target>
 </project>

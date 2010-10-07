@@ -48,7 +48,11 @@
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit version="4.5.1.v201009092123-7H7F2AkF7B77c7dEGDG" id="org.eclipse.tptp.platform.profile.server.feature.group"/>
-			<repository location="http://download.eclipse.org/tptp/updates/"/>
+			<unit version="4.3.1.v201009092123-797908s73533D4H6D56" id="org.eclipse.tptp.platform.instrumentation.ui.feature.group"/>
+			<unit version="4.7.1.v201009092123-8X8ZFXUFLWUl6knOxRCm9t" id="org.eclipse.tptp.platform.core.feature.group"/>
+			<unit version="4.5.1.v201009092123-797A18s73533L4F6D6D" id="org.eclipse.tptp.platform.jvmti.feature.group"/>
+			<unit version="4.5.1.v201009092123-7L7O8bBgJ9E99jAfGWEM" id="org.eclipse.tptp.platform.trace.feature.group"/>
+			<repository location="http://download.eclipse.org/tptp/updates/helios/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit version="2.6.1.v20100914-1218" id="org.eclipse.emf.ecore.feature.group"/>
