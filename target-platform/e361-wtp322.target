@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><?pde version="3.6"?>
 <target includeMode="feature" name="e36-wtp32">
+	<!-- Pro tip: to convert 
+	     	from org.eclipse.tptp.platform.xerces_4.6.0.v201005032111-777K4AkF7B77R7c7N77.jar
+		  to <unit version="4.6.0.v201005032111-777K4AkF7B77R7c7N77" id="org.eclipse.tptp.platform.xerces.feature.group"/>
+	     using vi, apply this transform:
+		:%s/\t\t\(org.\+\)_\(\d\+.\+\)\.jar/\t\t<unit version="\2" id="\1.feature.group"\/>/g
+	-->
 	<locations>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit version="0.10.2.20100623-1649" id="org.maven.ide.eclipse.feature.feature.group"/>
@@ -52,6 +58,8 @@
 			<unit version="4.7.1.v201009092123-8X8ZFXUFLWUl6knOxRCm9t" id="org.eclipse.tptp.platform.core.feature.group"/>
 			<unit version="4.5.1.v201009092123-797A18s73533L4F6D6D" id="org.eclipse.tptp.platform.jvmti.feature.group"/>
 			<unit version="4.5.1.v201009092123-7L7O8bBgJ9E99jAfGWEM" id="org.eclipse.tptp.platform.trace.feature.group"/>
+			<unit version="4.6.0.v201005032111-777K4AkF7B77R7c7N77" id="org.eclipse.tptp.platform.xerces.feature.group"/>
+
 			<repository location="http://download.eclipse.org/tptp/updates/helios/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
