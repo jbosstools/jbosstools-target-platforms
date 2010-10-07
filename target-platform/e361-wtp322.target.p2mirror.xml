@@ -77,6 +77,7 @@
 <iu version="" id="org.eclipse.birt.osgi.runtime.sdk.feature.group"/>
 <iu version="" id="org.eclipse.birt.feature.group"/>
 <iu version="" id="org.eclipse.birt.integration.wtp.feature.group"/>
+<iu version="" id="org.eclipse.birt.chart.feature.group"/>
 <iu version="" id="com.ibm.icu.base.feature.group"/>
 <iu version="" id="org.eclipse.equinox.server.core.feature.group"/>
 <iu version="" id="org.eclipse.cvs.feature.group"/>

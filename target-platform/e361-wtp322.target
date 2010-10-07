@@ -76,6 +76,7 @@
 			<unit version="2.6.1.v20100617a-57B185wFfAqPz0Ef8mBsMkG-0hfS" id="org.eclipse.birt.osgi.runtime.sdk.feature.group"/>
 			<unit version="2.6.1.v20100709a-9iF7A8FGLY4z0pxX3ORrsdrp6JXb" id="org.eclipse.birt.feature.group"/>
 			<unit version="2.6.1.v20100915-1750-35-7w31211A2602861" id="org.eclipse.birt.integration.wtp.feature.group"/>
+			<unit version="2.6.1.v20100709-7f9T7DFQCnv8nz0gRMa6NG1" id="org.eclipse.birt.chart.feature.group"/>
 			<repository location="http://download.eclipse.org/birt/update-site/2.6/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
