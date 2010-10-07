@@ -47,6 +47,7 @@
 			<repository location="http://download.eclipse.org/rt/ecf/3.2/3.6/site.p2"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+			<unit version="4.5.1.v201009092123-7H7F2AkF7B77c7dEGDG" id="org.eclipse.tptp.platform.profile.server.feature.group"/>
 			<repository location="http://download.eclipse.org/tptp/updates/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
