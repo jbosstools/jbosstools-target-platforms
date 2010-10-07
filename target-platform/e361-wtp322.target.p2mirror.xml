@@ -57,6 +57,7 @@
 <iu version="" id="org.jdom.feature.feature.group"/>
 <iu version="" id="org.mozilla.xulrunner.feature.feature.group"/>
 <iu version="" id="org.mozilla.xpcom.feature.feature.group"/>
+<iu version="" id="org.eclipse.tptp.platform.profile.server.feature.group"/>
 <iu version="" id="org.eclipse.emf.ecore.feature.group"/>
 <iu version="" id="org.eclipse.emf.feature.group"/>
 <iu version="" id="org.eclipse.emf.codegen.feature.group"/>
@@ -78,6 +79,7 @@
 <iu version="" id="org.eclipse.birt.feature.group"/>
 <iu version="" id="org.eclipse.birt.integration.wtp.feature.group"/>
 <iu version="" id="org.eclipse.birt.chart.feature.group"/>
+<iu version="" id="org.eclipse.birt.chart.integration.wtp.feature.group"/>
 <iu version="" id="com.ibm.icu.base.feature.group"/>
 <iu version="" id="org.eclipse.equinox.server.core.feature.group"/>
 <iu version="" id="org.eclipse.cvs.feature.group"/>
