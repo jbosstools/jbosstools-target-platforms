@@ -171,6 +171,7 @@
 <iu version="" id="org.eclipse.wst.ws_ui.feature.feature.group"/>
 <iu version="" id="org.eclipse.wst.xml_core.feature.feature.group"/>
 <iu version="" id="com.google.gdt.eclipse.suite.e36.feature.feature.group"/>
+<iu version="" id="com.google.gwt.eclipse.sdkbundle.e36.feature.2.0.4.feature.group"/>
 <iu version="" id="org.drools.eclipse.feature.feature.group"/>
 <iu version="" id="org.drools.eclipse.task.feature.feature.group"/>
 <iu version="" id="org.guvnor.tools.feature.feature.group"/>

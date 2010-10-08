@@ -192,6 +192,7 @@
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit version="1.3.3.v201006111317" id="com.google.gdt.eclipse.suite.e36.feature.feature.group"/>
+			<unit version="2.0.4.v201006301309" id="com.google.gwt.eclipse.sdkbundle.e36.feature.2.0.4.feature.group"/>
 			<repository location="http://dl.google.com/eclipse/plugin/3.6/"/>
 		</location>
 
