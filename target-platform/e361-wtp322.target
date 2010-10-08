@@ -62,6 +62,7 @@
 			<unit version="4.3.1.v201009092123-797908s73533D4H6D56" id="org.eclipse.tptp.platform.instrumentation.ui.feature.group"/>
 			<unit version="4.5.1.v201009092123-7H7BF8PAkF7B77ZARCNEK" id="org.eclipse.tptp.platform.probekit.feature.group"/>
 			<unit version="4.5.0.v201005032111-2-37w312116191612" id="org.eclipse.tptp.platform.commons.logging.feature.group"/>
+			<unit version="4.5.0.v201005032111-217E7w312116191611" id="org.eclipse.tptp.platform.jakarta.log4j.feature.group"/>
 			<repository location="http://download.eclipse.org/tptp/updates/helios/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
