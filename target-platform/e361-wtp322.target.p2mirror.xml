@@ -64,6 +64,7 @@
 <iu version="" id="org.eclipse.tptp.platform.trace.feature.group"/>
 <iu version="" id="org.eclipse.tptp.platform.xerces.feature.group"/>
 <iu version="" id="org.eclipse.tptp.platform.instrumentation.ui.feature.group"/>
+<iu version="" id="org.eclipse.tptp.platform.probekit.feature.group"/>
 <iu version="" id="org.eclipse.emf.ecore.feature.group"/>
 <iu version="" id="org.eclipse.emf.feature.group"/>
 <iu version="" id="org.eclipse.emf.codegen.feature.group"/>
