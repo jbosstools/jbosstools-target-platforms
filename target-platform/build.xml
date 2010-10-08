@@ -34,9 +34,10 @@
 	</condition>
 	<!-- if can't calculate where build/build.xml is located, must pass in path from parent when calling this script -->
 
-	<property name="repoDir" value="${WORKINGDIR}/REPO"/>
+	<property name="repoDir" value="${WORKINGDIR}/REPO" />
 
-	<target name="all" depends="build.local.target.platform.repo, test.local.target.platform.repo"/>
+	<target name="all" depends="build.local.target.platform.repo, test.local.target.platform.repo, install.local.target.platform.repo" />
+	<target name="install" depends="build.local.target.platform.repo, install.local.target.platform.repo" />
 
 	<target name="build.local.target.platform.repo" depends="init, get.arch, get.eclipse, gen.p2mirror.script, run.p2mirror.script, cleanup" />
 
@@ -113,10 +114,89 @@
 
 	<target name="test.local.target.platform.repo" description="test target platform completeness by running a build against it">
 		<exec executable="/opt/maven3/bin/mvn" dir="${WORKINGDIR}">
-			<arg line=" -f ../parent/pom.xml clean install -B -U -fae -e -P helios-local-target,!helios -Dmaven.test.skip -Dtarget.platorm.URL=file:/${repoDir}"/>
+			<arg line=" -f ../parent/pom.xml clean install -B -U -fae -e -P helios-local-target,!helios -Dmaven.test.skip -Dtarget.platorm.URL=file:/${repoDir}" />
 		</exec>
 		<exec executable="/opt/maven3/bin/mvn" dir="${WORKINGDIR}">
-			<arg line=" -f ../pom.xml clean install -B -U -fae -e -P helios-local-target,!helios -Dmaven.test.skip -Dtarget.platorm.URL=file:/${repoDir}"/>
+			<arg line=" -f ../pom.xml clean install -B -U -fae -e -P helios-local-target,!helios -Dmaven.test.skip -Dtarget.platorm.URL=file:/${repoDir}" />
+		</exec>
+	</target>
+
+	<target name="install.local.target.platform.repo" description="use p2.director to install target platform into local eclipse">
+		<!-- collect features to install -->
+		<var name="install" value="" />
+		<for param="featureJar">
+			<path>
+				<fileset dir="${repoDir}/features" includes="*.jar" />
+			</path>
+			<sequential>
+				<var name="feature.jarfile" unset="true" />
+				<var name="feature.id" unset="true" />
+				<propertyregex property="feature.jarfile"
+				               defaultvalue="@{featureJar}"
+				               input="@{featureJar}"
+				               regexp=".+/features/([^/]+\.jar)"
+				               replace="\1"
+				               override="true" />
+				<propertyregex property="feature.id"
+				               defaultvalue="${feature.jarfile}"
+				               input="${feature.jarfile}"
+				               regexp="([^_]+)_(\d+\.\d+\.\d+\..+)\.jar"
+				               replace="\1"
+				               override="true" />
+				<propertyregex property="feature.id"
+				               defaultvalue="${feature.id}"
+				               input="${feature.id}"
+				               regexp="([^_]+)_(\d+\.\d+\.\d+)\.jar"
+				               replace="\1"
+				               override="true" />
+				<var name="install" value="${install},${feature.id}.feature.group" />
+				<var name="feature.jarfile" unset="true" />
+				<var name="feature.id" unset="true" />
+			</sequential>
+		</for>
+		<!-- trim prefix "," -->
+		<propertyregex property="install" input="${install}" defaultvalue="${install}" regexp=",(.+)" replace="\1" override="true" />
+
+		<!-- do install -->
+		<antcall target="run.director">
+			<param name="p2.director.installIU" value="${install}" />
+			<param name="p2.director.install.path" value="${WORKINGDIR}/eclipse" />
+			<param name="p2.director.input.repo" value="file:/${repoDir}/" />
+		</antcall>
+	</target>
+
+	<target name="run.director">
+		<property name="p2.director.extraArgs" value="" />
+		<property name="p2.director.installIU" value="${install}" />
+		<property name="p2.director.install.path" value="${targetDir}" />
+		<property name="p2.director.input.repo" value="jar:file:${sourceZip}!/" />
+		<echo>
+Source Repo(s): ${p2.director.input.repo}
+Install Path: ${p2.director.install.path}
+Feature(s) or Plugin(s) to Install:
+${install}
+ </echo>
+
+		<mkdir dir="${p2.director.install.path}" />
+		<chmod perm="ugo+rwx" file="${p2.director.install.path}/eclipse" />
+		<exec executable="${p2.director.install.path}/eclipse" failonerror="true" dir="${p2.director.install.path}" timeout="900000" taskname="p2.dir">
+			<!-- deprecated application for Eclipse 3.4: org.eclipse.equinox.p2.director.app.application -->
+			<arg line=" -application org.eclipse.equinox.p2.director" />
+			<arg line=" -nosplash" />
+			<arg line=" --launcher.suppressErrors" />
+			<arg line=" -consoleLog" />
+			<arg line=" -flavor tooling" />
+			<arg line=" -roaming" />
+			<arg line=" -profile SDKProfile" />
+			<arg line=" -destination ${p2.director.install.path}" />
+			<arg line=" -bundlepool ${p2.director.install.path}" />
+			<arg line=" -installIU ${p2.director.installIU}" />
+			<arg line=" -metadataRepository ${p2.director.input.repo},file:${p2.director.install.path}/p2/org.eclipse.equinox.p2.engine/profileRegistry/SDKProfile.profile" />
+			<arg line=" -artifactRepository ${p2.director.input.repo},file:${p2.director.install.path}" />
+			<arg line=" -profileProperties org.eclipse.update.install.features=true" />
+			<arg line=" -vmargs" />
+			<arg line=" -Declipse.p2.data.area=${p2.director.install.path}/p2" />
+			<arg line=" -Declipse.p2.MD5Check=false" />
 		</exec>
 	</target>
 </project>
