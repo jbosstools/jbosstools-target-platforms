@@ -70,15 +70,18 @@
 
 	<!-- only meant to work with linux 32- and 64-bit slaves -->
 	<target name="get.eclipse">
-		<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/R-3.6.1-201009090800" />
-		<property name="eclipse.version" value="eclipse-SDK-3.6.1" />
+		<!-- NOTE: must use same platform (50M) or SDK (103M - 168M) version as feature version on target platform, or will get install/update conflicts -->
+		<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/M20101006-0936" />
+		<property name="eclipse.version" value="M20101006-0936" />
+		<!--<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/R-3.6.1-201009090800" />
+		<property name="eclipse.version" value="eclipse-SDK-3.6.1" /> -->
 		<if>
 			<equals arg1="${arch}" arg2="x86" />
 			<then>
-				<property name="eclipse.file" value="${eclipse.version}-linux-gtk.tar.gz" />
+				<property name="eclipse.file" value="eclipse-platform-${eclipse.version}-linux-gtk.tar.gz" />
 			</then>
 			<else>
-				<property name="eclipse.file" value="${eclipse.version}-linux-gtk-${arch}.tar.gz" />
+				<property name="eclipse.file" value="eclipse-platform-${eclipse.version}-linux-gtk-${arch}.tar.gz" />
 			</else>
 		</if>
 
@@ -91,7 +94,22 @@
 			</then>
 		</if>
 		<untar compression="gzip" dest="${WORKINGDIR}" src="${WORKINGDIR}/${eclipse.file}" overwrite="true" />
+
+		<!-- add 70M delta pack, eg. http://download.eclipse.org/eclipse/downloads/drops/M20101006-0936/download.php?dropFile=eclipse-M20101006-0936-delta-pack.zip -->
+		<property name="deltapack.file" value="eclipse-${eclipse.version}-delta-pack.zip"/>
+		<if>
+			<not>
+				<available file="${WORKINGDIR}/${deltapack.file}" type="file" />
+			</not>
+			<then>
+				<get src="${eclipse.URL}/${deltapack.file}" dest="${WORKINGDIR}/${deltapack.file}" />
+			</then>
+		</if>
+		<unzip src="${deltapack.file}" dest="${WORKINGDIR}" overwrite="true"/>
+
+		<!-- make eclipse executable -->
 		<chmod perm="+x" file="${WORKINGDIR}/eclipse/eclipse" />
+
 	</target>
 
 	<target name="gen.p2mirror.script" description="use XSLT to generate a p2.mirror script from .target">
@@ -178,9 +196,8 @@ ${install}
  </echo>
 
 		<mkdir dir="${p2.director.install.path}" />
-		<chmod perm="ugo+rwx" file="${p2.director.install.path}/eclipse" />
+		<chmod perm="+x" file="${p2.director.install.path}/eclipse" />
 		<exec executable="${p2.director.install.path}/eclipse" failonerror="true" dir="${p2.director.install.path}" timeout="900000" taskname="p2.dir">
-			<!-- deprecated application for Eclipse 3.4: org.eclipse.equinox.p2.director.app.application -->
 			<arg line=" -application org.eclipse.equinox.p2.director" />
 			<arg line=" -nosplash" />
 			<arg line=" --launcher.suppressErrors" />
