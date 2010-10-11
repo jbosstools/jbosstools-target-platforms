@@ -1,4 +1,4 @@
-<project default="build.local.target.platform.repo" name="jbosstools target platform p2.mirror generator - ant script for Hudson">
+<project default="install" name="jbosstools target platform p2.mirror generator - ant script for Hudson">
 	<property name="targetFile" value="e361-wtp322.target" />
 
 	<!-- if useLatest = true, omit versions from p2.mirror script to fetch latest version available; 
@@ -36,10 +36,20 @@
 
 	<property name="repoDir" value="${WORKINGDIR}/REPO" />
 
-	<target name="all" depends="build.local.target.platform.repo, test.local.target.platform.repo, install.local.target.platform.repo" />
+	<!-- ********************************************************************************** -->
+
+	<!-- do everything but tests -->
+	<target name="all" depends="install"/>
+
+	<!-- test target platform first by building against the target platform repo, then against the p2.dir-installed base -->
+	<target name="tests" depends="install, test.local.target.platform.repo, test.local.target.platform.installed.base"/>
+
+	<!-- to install from the target platform repo, first build the repo, then install using p2.director -->
 	<target name="install" depends="build.local.target.platform.repo, install.local.target.platform.repo" />
 
-	<target name="build.local.target.platform.repo" depends="init, get.arch, get.eclipse, gen.p2mirror.script, run.p2mirror.script, cleanup" />
+	<target name="build.local.target.platform.repo" depends="init, get.arch, get.eclipse, gen.p2mirror.script, run.p2mirror.script, update.target.file, cleanup" />
+
+        <!-- ********************************************************************************** -->
 
 	<target name="init">
 		<ant antfile="${build.xml}" target="init" />
@@ -68,7 +78,7 @@
 		</if>
 	</target>
 
-	<!-- only meant to work with linux 32- and 64-bit slaves -->
+	<!-- TODO: make this work on Mac and Windows? Currently only meant to work with linux 32- and 64-bit slaves -->
 	<target name="get.eclipse">
 		<!-- NOTE: must use same platform (50M) or SDK (103M - 168M) version as feature version on target platform, or will get install/update conflicts -->
 		<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/M20101006-0936" />
@@ -126,16 +136,29 @@
 		</exec>
 	</target>
 
+	<target name="update.target.file" description="use XSLT to update .target file from contents of local repo">
+		<ant antfile="targetUpdateFromRepo.xml" />
+	</target>
+
 	<target name="cleanup">
 		<delete dir="${tmpdir}" quiet="true" includeemptydirs="true" />
 	</target>
 
-	<target name="test.local.target.platform.repo" description="test target platform completeness by running a build against it">
+	<target name="test.local.target.platform.repo" description="test target platform completeness by running a build against its update site">
 		<exec executable="/opt/maven3/bin/mvn" dir="${WORKINGDIR}">
 			<arg line=" -f ../parent/pom.xml clean install -B -U -fae -e -P helios-local-target,!helios -Dmaven.test.skip -Dtarget.platorm.URL=file:/${repoDir}" />
 		</exec>
 		<exec executable="/opt/maven3/bin/mvn" dir="${WORKINGDIR}">
 			<arg line=" -f ../pom.xml clean install -B -U -fae -e -P helios-local-target,!helios -Dmaven.test.skip -Dtarget.platorm.URL=file:/${repoDir}" />
+		</exec>
+	</target>
+
+	<target name="test.local.target.platform.installed.base" description="test target platform completeness by running a build against its installed eclipse base">
+		<exec executable="/opt/maven3/bin/mvn" dir="${WORKINGDIR}">
+			<arg line=" -f ../parent/pom.xml clean install -B -U -fae -e -P helios-local-target,!helios -Dmaven.test.skip -Dtarget.platorm.URL=file:/${repoDir}" />
+		</exec>
+		<exec executable="/opt/maven3/bin/mvn" dir="${WORKINGDIR}">
+			<arg line=" -f ../pom.xml clean install -B -U -fae -e -Dmaven.test.skip -Dtycho.targetPlatform=${WORKINGDIR}/eclipse" />
 		</exec>
 	</target>
 
