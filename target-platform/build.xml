@@ -115,7 +115,7 @@
 				<get src="${eclipse.URL}/${deltapack.file}" dest="${WORKINGDIR}/${deltapack.file}" />
 			</then>
 		</if>
-		<unzip src="${deltapack.file}" dest="${WORKINGDIR}" overwrite="true"/>
+		<unzip src="${WORKINGDIR}/${deltapack.file}" dest="${WORKINGDIR}" overwrite="true"/>
 
 		<!-- make eclipse executable -->
 		<chmod perm="+x" file="${WORKINGDIR}/eclipse/eclipse" />
