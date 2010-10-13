@@ -81,8 +81,8 @@
 	<!-- TODO: make this work on Mac and Windows? Currently only meant to work with linux 32- and 64-bit slaves -->
 	<target name="get.eclipse">
 		<!-- NOTE: must use same platform (50M) or SDK (103M - 168M) version as feature version on target platform, or will get install/update conflicts -->
-		<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/M20101006-0936" />
-		<property name="eclipse.version" value="M20101006-0936" />
+		<property name="eclipse.version" value="M20101013-0800" />
+		<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/${eclipse.version}" />
 		<!--<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/R-3.6.1-201009090800" />
 		<property name="eclipse.version" value="eclipse-SDK-3.6.1" /> -->
 		<if>
