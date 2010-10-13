@@ -162,7 +162,7 @@
 		</exec>
 	</target>
 
-	<target name="install.local.target.platform.repo" description="use p2.director to install target platform into local eclipse">
+	<target name="install.local.target.platform.repo" depends="init" description="use p2.director to install target platform into local eclipse">
 		<!-- collect features to install -->
 		<var name="install" value="" />
 		<for param="featureJar">
