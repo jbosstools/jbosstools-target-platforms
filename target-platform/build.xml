@@ -103,6 +103,10 @@
 				<get src="${eclipse.URL}/${eclipse.file}" dest="${WORKINGDIR}/${eclipse.file}" />
 			</then>
 		</if>
+
+		<!-- purge previous eclipse install to avoid conflicts w/ Eclipse feature versions -->
+		<delete dir="${WORKINGDIR}/eclipse" includeemptydirs="true" quiet="true" />
+
 		<untar compression="gzip" dest="${WORKINGDIR}" src="${WORKINGDIR}/${eclipse.file}" overwrite="true" />
 
 		<!-- add 70M delta pack, eg. http://download.eclipse.org/eclipse/downloads/drops/M20101006-0936/download.php?dropFile=eclipse-M20101006-0936-delta-pack.zip -->
