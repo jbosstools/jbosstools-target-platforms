@@ -137,6 +137,10 @@
 <iu version="" id="org.eclipse.uml2.feature.group"/>
 <iu version="" id="org.eclipse.rse.feature.group"/>
 <iu version="" id="org.eclipse.stp.bpmn.feature.feature.group"/>
+<iu version="" id="org.eclipse.gmf.runtime.notation.feature.group"/>
+<iu version="" id="org.eclipse.gmf.feature.group"/>
+<iu version="" id="org.eclipse.gmf.tooling.feature.group"/>
+<iu version="" id="org.eclipse.gmf.runtime.thirdparty.feature.group"/>
 <iu version="" id="org.eclipse.jst.jee"/>
 <iu version="" id="org.eclipse.wst.common.frameworks"/>
 <iu version="" id="org.eclipse.wst.common.project.facet.ui"/>
