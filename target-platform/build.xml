@@ -1,4 +1,4 @@
-<project default="install" name="jbosstools target platform p2.mirror generator - ant script for Hudson">
+<project default="build.local.target.platform.repo" name="jbosstools target platform p2.mirror generator - ant script for Hudson">
 	<property name="targetFile" value="e361-wtp322.target" />
 
 	<!-- if useLatest = true, omit versions from p2.mirror script to fetch latest version available; 
@@ -37,6 +37,27 @@
 	<property name="repoDir" value="${WORKINGDIR}/REPO" />
 
 	<!-- ********************************************************************************** -->
+
+	<target name="help">
+		<echo>Default target is:
+
+	* build.local.target.platform.repo
+
+Can also attempt to:
+
+	* install.local.target.platform.repo
+
+There are also integration tests (will build JBT using platform repo or platform installed base):
+
+	* test.local.target.platform.repo
+	* test.local.target.platform.installed.base
+
+Thus, run script like this:
+
+	$ ant -DtargetFile=e361-wtp322.target build.local.target.platform.repo
+</echo>
+	</target>
+
 
 	<!-- do everything but tests -->
 	<target name="all" depends="install"/>
