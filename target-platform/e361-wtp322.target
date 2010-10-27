@@ -101,27 +101,27 @@
 			<unit version="1.0.0.v20100510-7K7QErDzbb9z-yqHb55T7I" id="org.eclipse.equinox.server.core.feature.group"/>
 			<unit version="1.2.0.v20100427-7B77FKt90GE5h0SBT5FV9A01911" id="org.eclipse.cvs.feature.group"/>
 			<unit version="1.2.0.v20100427-7e7jEQFEp4jsWdToIUAoF3" id="org.eclipse.help.feature.group"/>
-			<unit version="3.6.2.r362_v20100929-7z8XFUUFLFlmgNd0-FWRdE5LVkHD" id="org.eclipse.jdt.feature.group"/>
-			<unit version="3.6.1.r361_v20100910-9gF78GroFrD9Uh-LhvxMFCV2hCz01p6896L" id="org.eclipse.platform.feature.group"/>
+			<unit version="3.6.2.r362_v20100929-7z8XFUUFLFlmgNd019WRcD5LVkHD" id="org.eclipse.jdt.feature.group"/>
+			<unit version="3.6.2.r362_v20100929-9gF78GrqFrD9Uh-OltlT9H_z0p1mnhRBz-PPmGWk" id="org.eclipse.platform.feature.group"/>
 			<unit version="3.6.1.M20100929-0800" id="org.eclipse.platform.ide"/>
 			<unit version="3.4.1.R36x_v20100823-7M7K7JF90dnJ-WLf3cf4yi" id="org.eclipse.equinox.executable.feature.group"/>
 			<unit version="3.4.1.R36x_v20100823-7M7K7JF90dnJ-WLf3cf4yi" id="org.eclipse.equinox.executable"/>
-			<unit version="3.6.1.M20100909-0800" id="org.eclipse.platform.sdk"/>
-			<unit version="3.6.1.r361_v20100727-7b7mFL-FET3dhESDgE5_bkJ" id="org.eclipse.pde.feature.group"/>
-			<unit version="3.6.2.r362_v20100929-7Q7m7ADDaKh5oy2I9f2lQXpSyL-9CiqLvldnOHsKdlXb4" id="org.eclipse.sdk.feature.group"/>
+			<unit version="3.6.1.M20100929-0800" id="org.eclipse.platform.sdk"/>
+			<unit version="3.6.1.r361_v20100727-7b7mFL-FET3dhET4i55adpJ" id="org.eclipse.pde.feature.group"/>
+			<unit version="3.6.1.r361_v20100714-0800-7Q7m6DDaKf5o2z-L9LxPSe6ygafz-KKIqk1rr_3j4dn7J" id="org.eclipse.sdk.feature.group"/>
 			<unit version="3.6.2.r362_v20100929-9OArFLdFjY-Th_BOmHvM1fT" id="org.eclipse.rcp.feature.group"/>
 			<unit version="3.6.0.M20100909-0800" id="org.eclipse.rcp.id"/>
-			<unit version="3.6.0.M20100929-0800" id="org.eclipse.rcp.sdk.id"/>
+			<unit version="3.6.0.M20100909-0800" id="org.eclipse.rcp.sdk.id"/>
 			<unit version="3.3.0.v20100427-44A77w31211642" id="org.eclipse.releng.tools.feature.group"/>
 			<unit version="3.6.1.M20100929-0800" id="org.eclipse.sdk.ide"/>
-			<unit version="3.3.0.v20100527-817fFcfFEdcVcUWlgyBRcVX" id="org.eclipse.sdk.examples.feature.group"/>
+			<unit version="3.3.1.r362_v20101014-817fFcgFE_dae7CiesDUeYc" id="org.eclipse.sdk.examples.feature.group"/>
 			<unit version="3.3.0.v20100527" id="org.eclipse.sdk.examples.source.feature.group"/>
-			<unit version="3.6.0.v20100421-7V7RFiwFLSgEt4Pctn77c7J" id="org.eclipse.equinox.compendium.sdk.feature.group"/>
-			<unit version="3.6.0.v20100603-7sF99FsHFTw8HQBta4g33J3F" id="org.eclipse.equinox.core.sdk.feature.group"/>
+			<unit version="3.6.1.R36x_v20101014-7V7RFiwFLSgEt4Pctn77c7J" id="org.eclipse.equinox.compendium.sdk.feature.group"/>
+			<unit version="3.6.1.R36x_v20101007-7sF99FsHFTw8HQBta4g33J3F" id="org.eclipse.equinox.core.sdk.feature.group"/>
 			<unit version="1.0.0.v20100510-4--9oB5855K7P" id="org.eclipse.equinox.p2.discovery.feature.feature.group"/>
 			<unit version="2.0.1.r361_v20100903-897HFZGFYxvZ7cEJrRz0-9_0" id="org.eclipse.equinox.p2.user.ui.feature.group"/>
 			<unit version="3.6.0.v20100503-9I7VGAgG7w-PNFWurwLPmgB" id="org.eclipse.equinox.p2.sdk.feature.group"/>
-			<unit version="3.6.0.v20100421-7u7NFVgFN5JdPKPhDHd_6Yqc54uw" id="org.eclipse.equinox.serverside.sdk.feature.group"/>
+			<unit version="3.6.1.R36x_v20101014-7u7NFViFN5JdPKPhDHd_6Yqc54uw" id="org.eclipse.equinox.serverside.sdk.feature.group"/>
 			<unit version="3.6.1.r361_v20100903-7H7R07v8rtOZz0Yax3hIIyrhnXLc" id="org.eclipse.equinox.sdk.feature.group"/>
 			<unit version="1.0.0.v20100421-79--EVVFNFFsFc" id="org.eclipse.equinox.weaving.sdk.feature.group"/>
 			<unit version="1.0.0.v20100510-7I777iBgJ9DIARGH8IIQ" id="org.eclipse.equinox.server.jetty.feature.group"/>
@@ -138,6 +138,7 @@
 			<unit version="1.8.1.v20100618-7C7b8hEt1ZvtiLkdlO7BVoL_wm6" id="org.eclipse.datatools.connectivity.feature.feature.group"/>
 			<unit version="1.8.1.v20100618-7J8x7FBWwUL6z-2z-fcrYC2s55KI" id="org.eclipse.datatools.enablement.feature.feature.group"/>
 			<unit version="1.8.1.v20100618-7P9i7KFDxNYrp4cjPjqnPaRKxeyT" id="org.eclipse.datatools.sdk.feature.feature.group"/>
+			<unit version="1.8.1.v20100618-7I977GFE9JfhdnBJPmBCYCq6w5-t" id="org.eclipse.datatools.enablement.sdk.feature.feature.group"/>
 			<unit version="1.8.1.v20100618-2-07w31211518181A" id="org.eclipse.datatools.enablement.jdt.feature.feature.group"/>
 			<unit version="1.8.1.v20100618-77078CcNBGKBZI_FcRd" id="org.eclipse.datatools.modelbase.feature.feature.group"/>
 			<unit version="1.8.1.v20100618-77778eBmKDNOMgJvJ8Of7QBR" id="org.eclipse.datatools.enablement.apache.derby.feature.feature.group"/>
@@ -146,6 +147,7 @@
 			<unit version="1.2.0.v20100519-2050-67808yE5F-8HAH4HECF4242" id="org.eclipse.zest.feature.group"/>
 			<unit version="3.1.1.v201008191505" id="org.eclipse.uml2.feature.group"/>
 			<unit version="3.2.1.v201008191400-7L78FA-8wqbPcNj4qa8R0eViy7vZ" id="org.eclipse.rse.feature.group"/>
+			<unit version="1.2.0.201006151053" id="org.eclipse.stp.bpmn.feature.feature.group"/>
 			<repository location="http://download.eclipse.org/releases/helios/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">

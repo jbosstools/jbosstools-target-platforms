@@ -127,6 +127,7 @@
 <iu version="" id="org.eclipse.datatools.connectivity.feature.feature.group"/>
 <iu version="" id="org.eclipse.datatools.enablement.feature.feature.group"/>
 <iu version="" id="org.eclipse.datatools.sdk.feature.feature.group"/>
+<iu version="" id="org.eclipse.datatools.enablement.sdk.feature.feature.group"/>
 <iu version="" id="org.eclipse.datatools.enablement.jdt.feature.feature.group"/>
 <iu version="" id="org.eclipse.datatools.modelbase.feature.feature.group"/>
 <iu version="" id="org.eclipse.datatools.enablement.apache.derby.feature.feature.group"/>
@@ -135,6 +136,7 @@
 <iu version="" id="org.eclipse.zest.feature.group"/>
 <iu version="" id="org.eclipse.uml2.feature.group"/>
 <iu version="" id="org.eclipse.rse.feature.group"/>
+<iu version="" id="org.eclipse.stp.bpmn.feature.feature.group"/>
 <iu version="" id="org.eclipse.jst.jee"/>
 <iu version="" id="org.eclipse.wst.common.frameworks"/>
 <iu version="" id="org.eclipse.wst.common.project.facet.ui"/>
