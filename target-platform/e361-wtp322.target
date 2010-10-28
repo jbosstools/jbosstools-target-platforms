@@ -157,6 +157,7 @@
 			<unit version="1.4.0.v20100428-2315-377-8s734C3E7D15D6B" id="org.eclipse.emf.transaction.feature.group"/>
 			<unit version="3.0.1.R30x_v201008251030-79-7I8qD6z-DtD7E6BP9D5393" id="org.eclipse.ocl.feature.group"/>
 			<unit version="1.0.0.v20100831" id="org.eclipse.pde.junit.runtime.standalone.feature.group"/>
+			<unit version="2.1.0.v20100606-1530-7908_AkF7AG8KEM3CMFA" id="org.eclipse.m2m.qvt.oml.common.feature.group"/>
 			<repository location="http://download.eclipse.org/releases/helios/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
