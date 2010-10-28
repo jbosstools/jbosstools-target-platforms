@@ -141,6 +141,11 @@
 <iu version="" id="org.eclipse.gmf.feature.group"/>
 <iu version="" id="org.eclipse.gmf.tooling.feature.group"/>
 <iu version="" id="org.eclipse.gmf.runtime.thirdparty.feature.group"/>
+<iu version="" id="org.eclipse.m2m.qvt.oml.feature.group"/>
+<iu version="" id="org.eclipse.emf.workspace.feature.group"/>
+<iu version="" id="org.eclipse.emf.transaction.feature.group"/>
+<iu version="" id="org.eclipse.ocl.feature.group"/>
+<iu version="" id="org.eclipse.pde.junit.runtime.standalone.feature.group"/>
 <iu version="" id="org.eclipse.jst.jee"/>
 <iu version="" id="org.eclipse.wst.common.frameworks"/>
 <iu version="" id="org.eclipse.wst.common.project.facet.ui"/>
