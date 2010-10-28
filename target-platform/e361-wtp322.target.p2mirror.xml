@@ -41,7 +41,7 @@
 <repository location="http://download.eclipse.org/modeling/emf/emf/updates/2.6/R201009141218/"/>
 <repository location="http://download.eclipse.org/technology/swtbot/helios/dev-build/update-site/"/>
 <repository location="http://download.eclipse.org/birt/update-site/2.6/"/>
-<repository location="http://download.eclipse.org/eclipse/updates/3.6.x/"/>
+<repository location="http://download.eclipse.org/eclipse/updates/3.6/"/>
 <repository location="http://download.eclipse.org/releases/helios/"/>
 <repository location="http://download.eclipse.org/webtools/repository/helios/"/>
 <repository location="http://download.jboss.org/jbosstools/builds/staging/jbosstools-drools/all/repo/"/>
@@ -147,6 +147,9 @@
 <iu version="" id="org.eclipse.ocl.feature.group"/>
 <iu version="" id="org.eclipse.pde.junit.runtime.standalone.feature.group"/>
 <iu version="" id="org.eclipse.m2m.qvt.oml.common.feature.group"/>
+<iu version="" id="org.eclipse.emf.validation.feature.group"/>
+<iu version="" id="org.eclipse.emf.validation.ocl.feature.group"/>
+<iu version="" id="org.eclipse.m2m.qvt.oml.runtime.feature.group"/>
 <iu version="" id="org.eclipse.jst.jee"/>
 <iu version="" id="org.eclipse.wst.common.frameworks"/>
 <iu version="" id="org.eclipse.wst.common.project.facet.ui"/>
