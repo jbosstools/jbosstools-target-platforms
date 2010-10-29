@@ -147,7 +147,6 @@
 <iu version="" id="org.eclipse.emf.validation.feature.group"/>
 <iu version="" id="org.eclipse.emf.validation.ocl.feature.group"/>
 <iu version="" id="org.eclipse.m2m.qvt.oml.runtime.feature.group"/>
-<iu version="" id="org.eclipse.rap.runtime.sdk.feature.group"/>
 <iu version="" id="org.eclipse.jst.jee"/>
 <iu version="" id="org.eclipse.wst.common.frameworks"/>
 <iu version="" id="org.eclipse.wst.common.project.facet.ui"/>
