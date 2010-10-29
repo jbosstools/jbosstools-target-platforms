@@ -12,7 +12,7 @@
 			<repository location="http://m2eclipse.sonatype.org/sites/m2e/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<unit version="0.10.0.20100209-0800" id="org.maven.ide.eclipse.wtp.feature.feature.group"/>
+			<unit version="0.11.0.20101024-0955" id="org.maven.ide.eclipse.wtp.feature.feature.group"/>
 			<repository location="http://m2eclipse.sonatype.org/sites/m2e-extras/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
@@ -105,7 +105,6 @@
 			<unit version="3.6.1.r361_v20100909-9gF78GrkFqw7GrsZnvz0JWNTeb6fue6896L" id="org.eclipse.platform.feature.group"/>
 			<unit version="3.6.1.M20100909-0800" id="org.eclipse.platform.ide"/>
 			<unit version="3.4.1.R36x_v20100823-7M7K7JF90dnJ-WLf3cf4yi" id="org.eclipse.equinox.executable.feature.group"/>
-			<unit version="3.4.1.R36x_v20100823-7M7K7JF90dnJ-WLf3cf4yi" id="org.eclipse.equinox.executable"/>
 			<unit version="3.6.1.M20100909-0800" id="org.eclipse.platform.sdk"/>
 			<unit version="3.6.1.r361_v20100727-7b7mFL-FET3dhESDgE5_bkJ" id="org.eclipse.pde.feature.group"/>
 			<unit version="3.6.1.r361_v20100714-0800-7Q7m6DDaKf5o2z-L9LxPSe6ygafz-KKIqk1rr_3j4dn7J" id="org.eclipse.sdk.feature.group"/>
@@ -146,7 +145,7 @@
 			<unit version="1.2.0.v20100519-2050-67808yE5F-8HAH4HECF4242" id="org.eclipse.zest.feature.group"/>
 			<unit version="3.1.1.v201008191505" id="org.eclipse.uml2.feature.group"/>
 			<unit version="3.2.1.v201008191400-7L78FA-8wqbPcNj4qa8R0eViy7vZ" id="org.eclipse.rse.feature.group"/>
-			<unit version="1.2.0.201006151053" id="org.eclipse.stp.bpmn.feature.feature.group"/>
+			<!-- <unit version="1.2.0.201006151053" id="org.eclipse.stp.bpmn.feature.feature.group"/> -->
 			<unit version="1.4.1.v20100909-1000-37708s73533F5C1479I" id="org.eclipse.gmf.runtime.notation.feature.group"/>
 			<unit version="1.4.1.v20100909-1300-7d9A78FYnmMD7VBZOqOghp2tsgXc" id="org.eclipse.gmf.feature.group"/>
 			<unit version="2.3.0.v20100421-2359-7c7MFO2FLWUl0im8BjQMa9f" id="org.eclipse.gmf.tooling.feature.group"/>
@@ -160,7 +159,7 @@
 			<unit version="1.4.0.v20100428-2315-479-9oB56N5BBR6LCA6" id="org.eclipse.emf.validation.feature.group"/>
 			<unit version="1.4.0.v20100428-2315-23-7w3121133502768" id="org.eclipse.emf.validation.ocl.feature.group"/>
 			<unit version="2.1.0.v20100606-1530-7A2-AkF7AG8PBU3BRLA" id="org.eclipse.m2m.qvt.oml.runtime.feature.group"/>
-			<unit version="${org.eclipse.rap.runtime.sdk.feature.group.version}" id="org.eclipse.rap.runtime.sdk.feature.group"/>
+			<unit version="1.3.1.20100915-2301" id="org.eclipse.rap.runtime.sdk.feature.group"/>
 			<repository location="http://download.eclipse.org/releases/helios/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
@@ -207,7 +206,7 @@
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit version="1.3.3.v201006111317" id="com.google.gdt.eclipse.suite.e36.feature.feature.group"/>
-			<unit version="2.0.4.v201006301309" id="com.google.gwt.eclipse.sdkbundle.e36.feature.2.0.4.feature.group"/>
+			<unit version="2.1.0.v201010280102" id="com.google.gwt.eclipse.sdkbundle.e36.feature.2.1.0.feature.group"/>
 			<repository location="http://dl.google.com/eclipse/plugin/3.6/"/>
 		</location>
 

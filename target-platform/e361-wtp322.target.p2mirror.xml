@@ -97,11 +97,9 @@
 <iu version="" id="org.eclipse.platform.feature.group"/>
 <iu version="" id="org.eclipse.platform.ide"/>
 <iu version="" id="org.eclipse.equinox.executable.feature.group"/>
-<iu version="" id="org.eclipse.equinox.executable"/>
 <iu version="" id="org.eclipse.platform.sdk"/>
 <iu version="" id="org.eclipse.pde.feature.group"/>
 <iu version="" id="org.eclipse.sdk.feature.group"/>
-<iu version="" id="org.eclipse.rcp.feature.group"/>
 <iu version="" id="org.eclipse.rcp.id"/>
 <iu version="" id="org.eclipse.rcp.sdk.id"/>
 <iu version="" id="org.eclipse.releng.tools.feature.group"/>
@@ -136,7 +134,6 @@
 <iu version="" id="org.eclipse.zest.feature.group"/>
 <iu version="" id="org.eclipse.uml2.feature.group"/>
 <iu version="" id="org.eclipse.rse.feature.group"/>
-<iu version="" id="org.eclipse.stp.bpmn.feature.feature.group"/>
 <iu version="" id="org.eclipse.gmf.runtime.notation.feature.group"/>
 <iu version="" id="org.eclipse.gmf.feature.group"/>
 <iu version="" id="org.eclipse.gmf.tooling.feature.group"/>
@@ -150,6 +147,7 @@
 <iu version="" id="org.eclipse.emf.validation.feature.group"/>
 <iu version="" id="org.eclipse.emf.validation.ocl.feature.group"/>
 <iu version="" id="org.eclipse.m2m.qvt.oml.runtime.feature.group"/>
+<iu version="" id="org.eclipse.rap.runtime.sdk.feature.group"/>
 <iu version="" id="org.eclipse.jst.jee"/>
 <iu version="" id="org.eclipse.wst.common.frameworks"/>
 <iu version="" id="org.eclipse.wst.common.project.facet.ui"/>
@@ -186,7 +184,7 @@
 <iu version="" id="org.eclipse.wst.ws_ui.feature.feature.group"/>
 <iu version="" id="org.eclipse.wst.xml_core.feature.feature.group"/>
 <iu version="" id="com.google.gdt.eclipse.suite.e36.feature.feature.group"/>
-<iu version="" id="com.google.gwt.eclipse.sdkbundle.e36.feature.2.0.4.feature.group"/>
+<iu version="" id="com.google.gwt.eclipse.sdkbundle.e36.feature.2.1.0.feature.group"/>
 <iu version="" id="org.drools.eclipse.feature.feature.group"/>
 <iu version="" id="org.drools.eclipse.task.feature.feature.group"/>
 <iu version="" id="org.guvnor.tools.feature.feature.group"/>
