@@ -50,7 +50,7 @@ Can also attempt to:
 There are also integration tests (will build JBT using platform repo or platform installed base):
 
 	* test.local.target.platform.repo
-	* test.local.target.platform.installed.base
+	* test.local.target.platform.installed.base (deprecated)
 
 Thus, run script like this:
 
@@ -63,7 +63,8 @@ Thus, run script like this:
 	<target name="all" depends="install"/>
 
 	<!-- test target platform first by building against the target platform repo, then against the p2.dir-installed base -->
-	<target name="tests" depends="install, test.local.target.platform.repo, test.local.target.platform.installed.base"/>
+	<!-- target name="tests" depends="install, test.local.target.platform.repo, test.local.target.platform.installed.base" -->
+	<target name="tests" depends="install, test.local.target.platform.repo"/>
 
 	<!-- to install from the target platform repo, first build the repo, then install using p2.director -->
 	<target name="install" depends="build.local.target.platform.repo, install.local.target.platform.repo" />
@@ -131,6 +132,7 @@ Thus, run script like this:
 		<untar compression="gzip" dest="${WORKINGDIR}" src="${WORKINGDIR}/${eclipse.file}" overwrite="true" />
 
 		<!-- add 70M delta pack, eg. http://download.eclipse.org/eclipse/downloads/drops/M20101006-0936/download.php?dropFile=eclipse-M20101006-0936-delta-pack.zip -->
+		<!-- ONLY need deltapack if using -Dtycho.targetPlatform, which is now depredated
 		<property name="deltapack.file" value="eclipse-${eclipse.version}-delta-pack.zip"/>
 		<if>
 			<not>
@@ -141,6 +143,7 @@ Thus, run script like this:
 			</then>
 		</if>
 		<unzip src="${WORKINGDIR}/${deltapack.file}" dest="${WORKINGDIR}" overwrite="true"/>
+		-->
 
 		<!-- make eclipse executable -->
 		<chmod perm="+x" file="${WORKINGDIR}/eclipse/eclipse" />
@@ -178,13 +181,15 @@ Thus, run script like this:
 		</exec>
 	</target>
 
-	<target name="test.local.target.platform.installed.base" description="test target platform completeness by running a build against its installed eclipse base">
+	<target name="test.local.target.platform.installed.base" description="test target platform completeness by running a build against its installed eclipse base - Dtycho.targetPlatform to be removed in Tycho 0.11 so this test is deprecated">
+		<!-- 
 		<exec executable="/opt/maven3/bin/mvn" dir="${WORKINGDIR}">
 			<arg line=" -f ../parent/pom.xml clean install -B -U -fae -e -P helios-local-target,!helios -Dmaven.test.skip -Dtarget.platorm.URL=file:/${repoDir}" />
 		</exec>
 		<exec executable="/opt/maven3/bin/mvn" dir="${WORKINGDIR}">
 			<arg line=" -f ../pom.xml clean install -B -U -fae -e -Dmaven.test.skip -Dtycho.targetPlatform=${WORKINGDIR}/eclipse" />
 		</exec>
+		-->
 	</target>
 
 	<target name="install.local.target.platform.repo" depends="init" description="use p2.director to install target platform into local eclipse">
