@@ -9,17 +9,17 @@
 	<locations>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit version="0.10.2.20100623-1649" id="org.maven.ide.eclipse.feature.feature.group"/>
-			<repository location="http://m2eclipse.sonatype.org/sites/m2e/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit version="0.11.0.20101024-0955" id="org.maven.ide.eclipse.wtp.feature.feature.group"/>
-			<repository location="http://m2eclipse.sonatype.org/sites/m2e-extras/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<repository location="http://eclipse.svnkit.com/1.3.x/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<repository location="http://www.polarion.org/projects/subversive/download/eclipse/2.0/update-site/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 		<!-- <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 <repository location="http://download.eclipse.org/technology/subversive/0.7/update-site/"/>
@@ -28,16 +28,16 @@
 <repository location="http://download.eclipse.org/technology/subversive/0.7/headless-update-site/"/>
 </location> -->
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<repository location="http://download.eclipse.org/technology/subversive/0.7/weekly-site/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/R20100519200754/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit version="1.6.2.v201005080631" id="javax.wsdl.feature.feature.group"/>
 			<unit version="2.0.8.v201005080400" id="org.apache.oro.feature.feature.group"/>
 			<unit version="1.0.0.v201005080400" id="org.jdom.feature.feature.group"/>
-			<repository location="http://download.jboss.org/jbosstools/updates/requirements/thirdparty/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 		<!-- <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 <unit id="org.mozilla.xulrunner.feature.feature.group" version="1.9.2"/>
@@ -47,10 +47,10 @@
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit version="1.9.12.v20100909-1551-H34-M2" id="org.mozilla.xulrunner.feature.feature.group"/>
 			<unit version="1.9.12.v20100909-1551-H34-M2" id="org.mozilla.xpcom.feature.feature.group"/>
-			<repository location="http://download.jboss.org/jbosstools/updates/requirements/xulrunner-1.9.1.2/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<repository location="http://download.eclipse.org/rt/ecf/3.2/3.6/site.p2"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit version="4.5.1.v201009092123-7H7F2AkF7B77c7dEGDG" id="org.eclipse.tptp.platform.profile.server.feature.group"/>
@@ -63,7 +63,7 @@
 			<unit version="4.5.1.v201009092123-7H7BF8PAkF7B77ZARCNEK" id="org.eclipse.tptp.platform.probekit.feature.group"/>
 			<unit version="4.5.0.v201005032111-2-37w312116191612" id="org.eclipse.tptp.platform.commons.logging.feature.group"/>
 			<unit version="4.5.0.v201005032111-217E7w312116191611" id="org.eclipse.tptp.platform.jakarta.log4j.feature.group"/>
-			<repository location="http://download.eclipse.org/tptp/updates/helios/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit version="2.6.1.v20100914-1218" id="org.eclipse.emf.ecore.feature.group"/>
@@ -78,7 +78,7 @@
 			<unit version="2.6.0.v20100914-1218" id="org.eclipse.emf.edit.feature.group"/>
 			<unit version="2.6.0.v20100914-1218" id="org.eclipse.xsd.edit.feature.group"/>
 			<unit version="2.6.0.v20100914-1218" id="org.eclipse.xsd.feature.group"/>
-			<repository location="http://download.eclipse.org/modeling/emf/emf/updates/2.6/R201009141218/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit version="2.0.0.595-dev-e36" id="org.eclipse.swtbot.eclipse.feature.group"/>
@@ -86,7 +86,7 @@
 			<unit version="2.0.0.595-dev-e36" id="org.eclipse.swtbot.ide.feature.group"/>
 			<unit version="2.0.0.595-dev-e36" id="org.eclipse.swtbot.eclipse.test.junit4.feature.group"/>
 			<unit version="2.0.0.595-dev-e36" id="org.eclipse.swtbot.feature.group"/>
-			<repository location="http://download.eclipse.org/technology/swtbot/helios/dev-build/update-site/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit version="2.6.1.v20100617a-57B185wFfAqPz0Ef8mBsMkG-0hfS" id="org.eclipse.birt.osgi.runtime.sdk.feature.group"/>
@@ -94,7 +94,7 @@
 			<unit version="2.6.1.v20100915-1750-35-7w31211A2602861" id="org.eclipse.birt.integration.wtp.feature.group"/>
 			<unit version="2.6.1.v20100709-7f9T7DFQCnv8nz0gRMa6NG1" id="org.eclipse.birt.chart.feature.group"/>
 			<unit version="2.6.1.v20100915-1750-3507w31211A2602861" id="org.eclipse.birt.chart.integration.wtp.feature.group"/>
-			<repository location="http://download.eclipse.org/birt/update-site/2.6/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit version="1.1.0.v20090119-79318s73533B57" id="com.ibm.icu.base.feature.group"/>
@@ -129,7 +129,7 @@
 			<unit version="1.0.0.v20100510-42A79oB5855K5E" id="org.eclipse.equinox.server.servletbridge.feature.group"/>
 			<unit version="1.0.0.v20100510-44DF8s734C48662444" id="org.eclipse.equinox.server.simple.feature.group"/>
 			<unit version="3.6.1.r361_v20100827-9OArFLdFjY-ThSQXmKvKz0_T" id="org.eclipse.rcp.feature.group"/>
-			<repository location="http://download.eclipse.org/eclipse/updates/3.6/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit version="2.6.1.v20100709a-9iF7A8FGLY4z0pxX3ORrsdrp6JXb" id="org.eclipse.birt.feature.group"/>
@@ -160,7 +160,7 @@
 			<unit version="1.4.0.v20100428-2315-479-9oB56N5BBR6LCA6" id="org.eclipse.emf.validation.feature.group"/>
 			<unit version="1.4.0.v20100428-2315-23-7w3121133502768" id="org.eclipse.emf.validation.ocl.feature.group"/>
 			<unit version="2.1.0.v20100606-1530-7A2-AkF7AG8PBU3BRLA" id="org.eclipse.m2m.qvt.oml.runtime.feature.group"/> -->
-			<repository location="http://download.eclipse.org/releases/helios/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit version="1.0.301.v201007151900" id="org.eclipse.jst.jee"/>
@@ -199,26 +199,26 @@
 			<unit version="3.2.2.v201008100100-7E7AFHwAJrn5PM15pUYBwJLkSG8j" id="org.eclipse.wst.web_core.feature.feature.group"/>
 			<unit version="3.2.2.v201008211705-7I78FZFEtEoO2c5BlJ4jPNvNC-yS" id="org.eclipse.wst.ws_ui.feature.feature.group"/>
 			<unit version="3.2.2.v201008170029-7C7OFXYF7RZHQHI5PyJwPT" id="org.eclipse.wst.xml_core.feature.feature.group"/>
-			<repository location="http://download.eclipse.org/webtools/repository/helios/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<repository location="http://download.jboss.org/jbosstools/builds/staging/jbosstools-drools/all/repo/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit version="1.3.3.v201006111317" id="com.google.gdt.eclipse.suite.e36.feature.feature.group"/>
 			<unit version="2.1.0.v201010280102" id="com.google.gwt.eclipse.sdkbundle.e36.feature.2.1.0.feature.group"/>
-			<repository location="http://dl.google.com/eclipse/plugin/3.6/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 
 		<!-- additional JBoss.org mirrors -->
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<repository location="http://download.jboss.org/jbosstools/updates/requirements/swtbot-helios/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools-3.2/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<repository location="http://download.jboss.org/jbosstools/updates/requirements/helios/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 	</locations>
 	<includeBundles>

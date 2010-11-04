@@ -4,6 +4,11 @@
 	<property name="targetFile" value="e361-wtp322.target" />
 	<property name="repoDir" value="./REPO" />
 
+	<!-- create a second .target file which replaces all URLs with a single static PUBLISHED one
+		(eg., for jbosstools target platform site), set these properties too -->
+	<property name="published.targetFile" value="latest.target" />
+	<property name="published.URL" value="http://download.jboss.org/jbosstools/updates/target-platform/latest/" />
+	
 	<property name="tmpDir" value="${java.io.tmpdir}/targetUpdateFromRepo" />
 	<property name="outputDir" value="${basedir}" />
 	<!-- Instead of overwriting, can also create a new .target file in a different outputDir
@@ -14,10 +19,13 @@
 		<echo>Must set these properties (or use defaults shown):
 			
 	ant -f targetUpdateFromRepo.xml -DrepoDir=${repoDir} \
-		-DtargetFile=${targetFile}</echo>
+		-DtargetFile=${targetFile} \
+		-Dpublished.targetFile=${published.targetFile} \
+		-Dpublished.URL=${published.URL}</echo>
 	</target>
 
-	<target name="custom.build" depends="check.content.xml, get.content.xml, copy.content.xml, contentXml2artifactVersions.xsl, target2targetTemplate.xsl, updateTargetFile, cleanup" />
+	<target name="custom.build"
+	        depends="check.content.xml, get.content.xml, copy.content.xml, contentXml2artifactVersions.xsl, target2targetTemplate.xsl, updateTargetFile, cleanup" />
 
 	<target name="check.content.xml" description="if content.jar, unpack to get content.xml">
 		<condition property="content.xml.exists" value="true">
@@ -41,6 +49,10 @@
 	<target name="target2targetTemplate.xsl" description="run target2targetTemplate.xsl to templatize .target file">
 		<echo level="verbose">Generate ${tmpDir}/${targetFile}.template</echo>
 		<xslt style="target2targetTemplate.xsl" in="${targetFile}" out="${tmpDir}/${targetFile}.template" processor="trax" />
+		<echo level="verbose">Generate ${tmpDir}/${published.targetFile}.template</echo>
+		<xslt style="target2targetTemplate.xsl" in="${targetFile}" out="${tmpDir}/${published.targetFile}.template" processor="trax">
+			<param name="published.URL" expression="${published.URL}" />
+		</xslt>
 	</target>
 
 	<target name="updateTargetFile" description="load generated properties and resolve them in the template to create a new .target file">
@@ -48,6 +60,13 @@
 		<copy todir="${outputDir}" overwrite="true">
 			<fileset file="${tmpDir}/${targetFile}.template" />
 			<mapper type="merge" to="${targetFile}" />
+			<filterchain>
+				<expandproperties />
+			</filterchain>
+		</copy>
+		<copy todir="${outputDir}" overwrite="true">
+			<fileset file="${tmpDir}/${published.targetFile}.template" />
+			<mapper type="merge" to="${published.targetFile}" />
 			<filterchain>
 				<expandproperties />
 			</filterchain>

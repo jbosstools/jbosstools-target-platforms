@@ -5,11 +5,28 @@
 	CAUTION: do not auto-format this file or line breaks will appear where they should not be!
 -->
 
+<xsl:param name="published.URL"/>
+
 <!-- Copy unit nodes and templatize their version attributes -->
 <xsl:template match="unit">
 <unit id="{@id}" version="${{{@id}.version}}">
 <xsl:apply-templates/>
 </unit>
+</xsl:template>
+
+<xsl:template match="repository">
+<xsl:choose>
+<xsl:when test="$published.URL">
+<repository location="{$published.URL}">
+<xsl:apply-templates/>
+</repository>
+</xsl:when>
+<xsl:otherwise>
+<repository location="{@location}">
+<xsl:apply-templates/>
+</repository>
+</xsl:otherwise>
+</xsl:choose>
 </xsl:template>
 
 <!-- Copy everything else unchanged -->
