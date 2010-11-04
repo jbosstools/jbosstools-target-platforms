@@ -145,7 +145,8 @@
 			<unit version="1.2.0.v20100519-2050-67808yE5F-8HAH4HECF4242" id="org.eclipse.zest.feature.group"/>
 			<unit version="3.1.1.v201008191505" id="org.eclipse.uml2.feature.group"/>
 			<unit version="3.2.1.v201008191400-7L78FA-8wqbPcNj4qa8R0eViy7vZ" id="org.eclipse.rse.feature.group"/>
-			<!-- <unit version="1.2.0.201006151053" id="org.eclipse.stp.bpmn.feature.feature.group"/> -->
+			<!-- SAVARA dependencies -->
+			<!-- <unit version="1.2.0.201006151053" id="org.eclipse.stp.bpmn.feature.feature.group"/>
 			<unit version="1.4.1.v20100909-1000-37708s73533F5C1479I" id="org.eclipse.gmf.runtime.notation.feature.group"/>
 			<unit version="1.4.1.v20100909-1300-7d9A78FYnmMD7VBZOqOghp2tsgXc" id="org.eclipse.gmf.feature.group"/>
 			<unit version="2.3.0.v20100421-2359-7c7MFO2FLWUl0im8BjQMa9f" id="org.eclipse.gmf.tooling.feature.group"/>
@@ -158,7 +159,7 @@
 			<unit version="2.1.0.v20100606-1530-7908_AkF7AG8KEM3CMFA" id="org.eclipse.m2m.qvt.oml.common.feature.group"/>
 			<unit version="1.4.0.v20100428-2315-479-9oB56N5BBR6LCA6" id="org.eclipse.emf.validation.feature.group"/>
 			<unit version="1.4.0.v20100428-2315-23-7w3121133502768" id="org.eclipse.emf.validation.ocl.feature.group"/>
-			<unit version="2.1.0.v20100606-1530-7A2-AkF7AG8PBU3BRLA" id="org.eclipse.m2m.qvt.oml.runtime.feature.group"/>
+			<unit version="2.1.0.v20100606-1530-7A2-AkF7AG8PBU3BRLA" id="org.eclipse.m2m.qvt.oml.runtime.feature.group"/> -->
 			<repository location="http://download.eclipse.org/releases/helios/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
