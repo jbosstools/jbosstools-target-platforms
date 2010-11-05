@@ -96,37 +96,46 @@ Thus, run script like this:
 	</target>
 
 	<target name="get.arch">
+		<condition property="ext" value="tar.gz" else="zip">
+			<os family="unix" />
+		</condition>
+		<condition property="os1" value="linux-gtk" else="win32">
+			<os family="unix" />
+		</condition>
+		<condition property="os" value="macosx-cocoa" else="${os1}">
+			<os family="mac" />
+		</condition>
 		<if>
 			<os family="unix" />
 			<then>
-				<!-- Ant thinks that ${os.arch} == i386 for ${arch}, so use `uname` instead -->
+				<!-- Ant thinks that ${os.arch} == i386 for x86_64, so use `uname` instead -->
 				<exec executable="bash" outputproperty="arch">
 					<arg line="getArch.sh" />
 				</exec>
 			</then>
 			<else>
-				<echo level="error">This script is only tested to work on Linux 32- and 64-bit Hudson slaves.</echo>
-				<condition property="arch" value="${arch}" else="">
+				<condition property="arch" value="x86_64" else="">
 					<os arch="amd64" />
 				</condition>
 			</else>
 		</if>
 	</target>
 
-	<!-- TODO: make this work on Mac and Windows? Currently only meant to work with linux 32- and 64-bit slaves -->
+	<!-- should work on osx-cocoa32, win32, lin32, lin64 -->
 	<target name="get.eclipse">
 		<!-- NOTE: must use same platform (50M) or SDK (103M - 168M) version as feature version on target platform, or will get install/update conflicts -->
 		<property name="eclipse.version" value="3.6.1" />
 		<property name="eclipse.version" value="M20101013-0800" />
 		<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/R-3.6.1-201009090800" />
 		<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/${eclipse.version}" />
+
 		<if>
 			<equals arg1="${arch}" arg2="x86" />
 			<then>
-				<property name="eclipse.file" value="eclipse-platform-${eclipse.version}-linux-gtk.tar.gz" />
+				<property name="eclipse.file" value="eclipse-platform-${eclipse.version}-${os}.${ext}" />
 			</then>
 			<else>
-				<property name="eclipse.file" value="eclipse-platform-${eclipse.version}-linux-gtk-${arch}.tar.gz" />
+				<property name="eclipse.file" value="eclipse-platform-${eclipse.version}-${os}-${arch}.${ext}" />
 			</else>
 		</if>
 
