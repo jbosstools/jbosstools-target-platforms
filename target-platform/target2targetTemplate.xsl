@@ -6,14 +6,25 @@
 -->
 
 <xsl:param name="replacement.URL"/>
+<xsl:param name="replace.versions"/>
 
-<!-- Copy unit nodes and templatize their version attributes -->
+<!-- Copy unit nodes and optionally (if we ran contentXml2artifactVersions.xsl transform and have artifactVersions.properties file) templatize their version attributes -->
 <xsl:template match="unit">
+<xsl:choose>
+<xsl:when test="$replace.versions">
 <unit id="{@id}" version="${{{@id}.version}}">
 <xsl:apply-templates/>
 </unit>
+</xsl:when>
+<xsl:otherwise>
+<unit id="{@id}" version="{@version}">
+<xsl:apply-templates/>
+</unit>
+</xsl:otherwise>
+</xsl:choose>
 </xsl:template>
 
+<!-- Copy repository nodes and optionally replace their location attributes (if replacement.URL is set) -->
 <xsl:template match="repository">
 <xsl:choose>
 <xsl:when test="$replacement.URL">
