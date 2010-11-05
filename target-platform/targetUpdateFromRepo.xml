@@ -1,19 +1,22 @@
 <project default="custom.build" name="jbosstools target platform updater">
 
+	<property name="outputDir" value="${basedir}" />
+	<!-- Instead of overwriting, can also create a new .target file in a different outputDir
+		<property name="outputDir" value="${tmpDir}" /> 
+	-->
+
 	<!-- must set these commandline if not using defaults -->
 	<property name="targetFile" value="multiple.target" />
-	<property name="repoDir" value="./REPO" />
+	<property name="repoDir" value="${outputDir}/REPO/" />
 
 	<!-- create a second .target file which replaces all URLs with a single static PUBLISHED one
 		(eg., for jbosstools target platform site), set these properties too -->
 	<property name="published.targetFile" value="unified.target" />
 	<property name="published.URL" value="http://download.jboss.org/jbosstools/updates/target-platform/latest/" />
-	
+	<property name="local.targetFile" value="local.target" />
+	<property name="local.URL" value="file:/${repoDir}" />
+
 	<property name="tmpDir" value="${java.io.tmpdir}/targetUpdateFromRepo" />
-	<property name="outputDir" value="${basedir}" />
-	<!-- Instead of overwriting, can also create a new .target file in a different outputDir
-		<property name="outputDir" value="${tmpDir}" /> 
-	-->
 
 	<target name="help">
 		<echo>Must set these properties (or use defaults shown):
@@ -21,7 +24,9 @@
 	ant -f targetUpdateFromRepo.xml -DrepoDir=${repoDir} \
 		-DtargetFile=${targetFile} \
 		-Dpublished.targetFile=${published.targetFile} \
-		-Dpublished.URL=${published.URL}</echo>
+		-Dpublished.URL=${published.URL} \
+		-Dlocal.targetFile=${local.targetFile} \
+		-Dlocal.URL=${local.URL}</echo>
 	</target>
 
 	<target name="custom.build"
@@ -51,7 +56,11 @@
 		<xslt style="target2targetTemplate.xsl" in="${targetFile}" out="${tmpDir}/${targetFile}.template" processor="trax" />
 		<echo level="verbose">Generate ${tmpDir}/${published.targetFile}.template</echo>
 		<xslt style="target2targetTemplate.xsl" in="${targetFile}" out="${tmpDir}/${published.targetFile}.template" processor="trax">
-			<param name="published.URL" expression="${published.URL}" />
+			<param name="replacement.URL" expression="${published.URL}" />
+		</xslt>
+		<echo level="verbose">Generate ${tmpDir}/${local.targetFile}.template</echo>
+		<xslt style="target2targetTemplate.xsl" in="${targetFile}" out="${tmpDir}/${local.targetFile}.template" processor="trax">
+			<param name="replacement.URL" expression="${local.URL}" />
 		</xslt>
 	</target>
 
@@ -67,6 +76,13 @@
 		<copy todir="${outputDir}" overwrite="true">
 			<fileset file="${tmpDir}/${published.targetFile}.template" />
 			<mapper type="merge" to="${published.targetFile}" />
+			<filterchain>
+				<expandproperties />
+			</filterchain>
+		</copy>
+		<copy todir="${outputDir}" overwrite="true">
+			<fileset file="${tmpDir}/${local.targetFile}.template" />
+			<mapper type="merge" to="${local.targetFile}" />
 			<filterchain>
 				<expandproperties />
 			</filterchain>

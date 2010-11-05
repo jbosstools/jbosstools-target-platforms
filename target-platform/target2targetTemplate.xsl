@@ -5,7 +5,7 @@
 	CAUTION: do not auto-format this file or line breaks will appear where they should not be!
 -->
 
-<xsl:param name="published.URL"/>
+<xsl:param name="replacement.URL"/>
 
 <!-- Copy unit nodes and templatize their version attributes -->
 <xsl:template match="unit">
@@ -16,8 +16,8 @@
 
 <xsl:template match="repository">
 <xsl:choose>
-<xsl:when test="$published.URL">
-<repository location="{$published.URL}">
+<xsl:when test="$replacement.URL">
+<repository location="{$replacement.URL}">
 <xsl:apply-templates/>
 </repository>
 </xsl:when>
