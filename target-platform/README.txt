@@ -62,6 +62,17 @@
    repo's content.xml file.
 
 
+== HOWTO: Generate a local.target file from an existing multiple.target file ==
+
+1. Run targetUpdateFromRepo.xml against a given repo folder on disk, eg.
+
+	ant -f targetUpdateFromRepo.xml -DrepoDir=/path/to/my/REPO local.target
+
+2. Resulting local.target file will be created (or overwritten) with a new local file:// URL for all 
+   the listed update sites, pointing at your local repo. It will otherwise be identical to the 
+   multiple.target file
+
+
 == HOWTO: Install the contents of a repo into Eclipse (via script) ==
 
 1. See ../installation/README.txt
