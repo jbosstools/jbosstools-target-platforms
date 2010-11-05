@@ -60,18 +60,17 @@ Thus, run script like this:
 
 
 	<!-- do everything but tests -->
-	<target name="all" depends="install"/>
+	<target name="all" depends="install" />
 
-	<!-- test target platform first by building against the target platform repo, then against the p2.dir-installed base -->
-	<!-- target name="tests" depends="install, test.local.target.platform.repo, test.local.target.platform.installed.base" -->
-	<target name="tests" depends="install, test.local.target.platform.repo"/>
+	<target name="tests" depends="install, test.local.target.platform.repo" />
 
 	<!-- to install from the target platform repo, first build the repo, then install using p2.director -->
 	<target name="install" depends="build.local.target.platform.repo, install.local.target.platform.repo" />
 
-	<target name="build.local.target.platform.repo" depends="init, get.arch, get.eclipse, gen.p2mirror.script, run.p2mirror.script, update.target.file, cleanup" />
+	<target name="build.local.target.platform.repo"
+	        depends="init, get.arch, get.eclipse, gen.p2mirror.script, run.p2mirror.script, update.target.file, cleanup" />
 
-        <!-- ********************************************************************************** -->
+	<!-- ********************************************************************************** -->
 
 	<target name="init">
 		<ant antfile="${build.xml}" target="init" />
@@ -181,7 +180,8 @@ Thus, run script like this:
 		</exec>
 	</target>
 
-	<target name="test.local.target.platform.installed.base" description="test target platform completeness by running a build against its installed eclipse base - Dtycho.targetPlatform to be removed in Tycho 0.11 so this test is deprecated">
+	<target name="test.local.target.platform.installed.base"
+	        description="test target platform completeness by running a build against its installed eclipse base - Dtycho.targetPlatform to be removed in Tycho 0.11 so this test is deprecated">
 		<!-- 
 		<exec executable="/opt/maven3/bin/mvn" dir="${WORKINGDIR}">
 			<arg line=" -f ../parent/pom.xml clean install -B -U -fae -e -P helios-local-target,!helios -Dmaven.test.skip -Dtarget.platorm.URL=file:/${repoDir}" />
