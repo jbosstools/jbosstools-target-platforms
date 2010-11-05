@@ -39,7 +39,21 @@
 	<!-- ********************************************************************************** -->
 
 	<target name="help">
-		<echo>Default target is:
+		<echo>This script, if run in its entirety, will:
+			
+	a) download features, plugins, binaries, and metadata from the site(s) specified
+		in a given target platform, and create a local p2 repo
+	b) generate a local.target file, which points at the generated local p2 repo
+
+After running this script, publish this pom and *.target files to your local ~/.m2 repo:
+	mvn clean install -f .../target-platform/pom.xml -P use.local.target
+			
+Then you can then refer to it in downstream builds using:
+		mvn install -P local.target
+
+------------------
+			
+Default target is:
 
 	* build.local.target.platform.repo
 
@@ -73,15 +87,6 @@ Thus, run script like this:
 	<!-- ********************************************************************************** -->
 
 	<target name="init">
-		<echo>This script, if run in its entirety, will:
-			
-	a) download features, plugins, binaries, and metadata from the site(s) specified in a given 
-		target platform, and create a local p2 repo
-	b) generate a local.target file, which points at the generated local p2 repo
-
-After running this script you need to 'mvn clean install -f /path/to/target-platform/pom.xml -P local`,
-in order to 			
-</echo> 
 		<ant antfile="${build.xml}" target="init" />
 		<taskdef resource="net/sf/antcontrib/antlib.xml">
 			<classpath>
