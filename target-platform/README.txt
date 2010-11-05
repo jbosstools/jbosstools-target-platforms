@@ -2,13 +2,13 @@
 
 1. Run target2p2mirror.xml at a target file, eg.
 
-	ant -f target2p2mirror.xml -DtargetFile=e361-wtp322.target
+	ant -f target2p2mirror.xml -DtargetFile=mutiple.target
 
-2. Run the resulting *.p2mirror.xml, eg., e361-wtp322.target.p2mirror.xml
+2. Run the resulting *.p2mirror.xml, eg., mutiple.target.p2mirror.xml
 
 	/abs/path/to/eclipse -vm /opt/jdk1.6.0/bin/java -nosplash -data \
 		/tmp/workspace -consolelog -application \
-		org.eclipse.ant.core.antRunner -f e361-wtp322.target.p2mirror.xml \
+		org.eclipse.ant.core.antRunner -f mutiple.target.p2mirror.xml \
 		-Ddebug=true \
 		-DfollowStrict=true \
 		-Drepo.dir=/tmp/REPO/
@@ -20,19 +20,19 @@
 
 1. Zip the repo
 
-	cd /tmp/REPO; zip -9r e361-wtp322.target.zip * &
+	cd /tmp/REPO; zip -9r mutiple.target.zip * &
 	
 2. Push to qa01
 
-	rsync -aPrz e361-wtp322.target.zip nboldt@qa01:~/ &
+	rsync -aPrz mutiple.target.zip nboldt@qa01:~/ &
 
 3. Ssh to qa01; sudo to hudson; unpack and push contents + zip to download.jboss.org 
 
 	sudo su - hudson
-	unzip /home/nboldt/e361-wtp322.target.zip -d /tmp/e361-wtp322.target &
-	rsync -aPrz --delete --rsh=ssh /tmp/e361-wtp322.target/* \ 
+	unzip /home/nboldt/mutiple.target.zip -d /tmp/mutiple.target &
+	rsync -aPrz --delete --rsh=ssh /tmp/mutiple.target/* \ 
 		tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform/latest/ &
-	rsync -aPrz --rsh=ssh /home/nboldt/e361-wtp322.target.zip \
+	rsync -aPrz --rsh=ssh /home/nboldt/mutiple.target.zip \
 		tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform &
 
 4. Alternatively, see publish.sh for when repo is built in JBoss Hudson.
@@ -43,11 +43,11 @@
 1. You can reference http://download.jboss.org/jbosstools/updates/target-platform/latest/, 
    but a local path reference is faster.
 
-2. So, continuing from previous HOWTO, copy from /tmp/e361-wtp322.target into 
-   file://home/hudson/static_build_env/jbds/target-platform/e361-wtp322.target/
+2. So, continuing from previous HOWTO, copy from /tmp/mutiple.target into 
+   file://home/hudson/static_build_env/jbds/target-platform/mutiple.target/
 
-	rsync -aPrz --delete /tmp/e361-wtp322.target/* \
-		/home/hudson/static_build_env/jbds/target-platform/e361-wtp322.target/ &
+	rsync -aPrz --delete /tmp/mutiple.target/* \
+		/home/hudson/static_build_env/jbds/target-platform/mutiple.target/ &
 
 3. Alternatively, see publish.sh for when repo is built in JBoss Hudson.
 
@@ -56,7 +56,7 @@
 
 1. Run targetUpdateFromRepo.xml against a given repo folder on disk, eg.
 
-	ant -v -f targetUpdateFromRepo.xml -DtargetFile=e361-wtp322.target -DrepoDir=./REPO_SR1
+	ant -v -f targetUpdateFromRepo.xml -DtargetFile=mutiple.target -DrepoDir=./REPO
 
 2. Resulting targetFile will be overwritten with updated version values from what was found in the 
    repo's content.xml file.

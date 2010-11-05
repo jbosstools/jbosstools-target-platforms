@@ -11,7 +11,8 @@
 	<packaging>pom</packaging>
 	
 	<properties>
-	 <targetFile>e361-wtp322.target</targetFile>
+	 <target.platform.file.multiple>multiple.target</target.platform.file.multiple>
+	 <target.platform.file.unified>unified.target</target.platform.file.unified>
 	</properties>
 
 	<build>
@@ -31,9 +32,14 @@
 							<artifacts>
 								<!-- add more artifacts if want more target platforms -->
 								<artifact>
-									<file>${targetFile}</file>
+									<file>${target.platform.file.multiple}</file>
 									<type>target</type>
-									<classifier>e36-wtp32</classifier>
+									<classifier>${target.platform.file.multiple}</classifier>
+								</artifact>
+								<artifact>
+									<file>${target.platform.file.unified}</file>
+									<type>target</type>
+									<classifier>${target.platform.file.unified}</classifier>
 								</artifact>
 							</artifacts>
 						</configuration>

@@ -1,12 +1,12 @@
 <project default="custom.build" name="jbosstools target platform updater">
 
 	<!-- must set these commandline if not using defaults -->
-	<property name="targetFile" value="e361-wtp322.target" />
+	<property name="targetFile" value="multiple.target" />
 	<property name="repoDir" value="./REPO" />
 
 	<!-- create a second .target file which replaces all URLs with a single static PUBLISHED one
 		(eg., for jbosstools target platform site), set these properties too -->
-	<property name="published.targetFile" value="latest.target" />
+	<property name="published.targetFile" value="unified.target" />
 	<property name="published.URL" value="http://download.jboss.org/jbosstools/updates/target-platform/latest/" />
 	
 	<property name="tmpDir" value="${java.io.tmpdir}/targetUpdateFromRepo" />
