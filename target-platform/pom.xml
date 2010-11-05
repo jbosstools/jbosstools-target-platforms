@@ -9,10 +9,11 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>JBoss Tools Target Platform Definition</name>
 	<packaging>pom</packaging>
-	
+
 	<properties>
-	 <target.platform.file.multiple>multiple.target</target.platform.file.multiple>
-	 <target.platform.file.unified>unified.target</target.platform.file.unified>
+		<target.platform.classifier.multiple.name>multiple</target.platform.classifier.multiple.name>
+		<target.platform.classifier.unified.name>unified</target.platform.classifier.unified.name>
+		<target.platform.classifier.local.name>local</target.platform.classifier.local.name>
 	</properties>
 
 	<build>
@@ -32,14 +33,19 @@
 							<artifacts>
 								<!-- add more artifacts if want more target platforms -->
 								<artifact>
-									<file>${target.platform.file.multiple}</file>
+									<file>${target.platform.classifier.multiple.name}.target</file>
 									<type>target</type>
-									<classifier>${target.platform.file.multiple}</classifier>
+									<classifier>${target.platform.classifier.multiple.name}</classifier>
 								</artifact>
 								<artifact>
-									<file>${target.platform.file.unified}</file>
+									<file>${target.platform.classifier.unified.name}.target</file>
 									<type>target</type>
-									<classifier>${target.platform.file.unified}</classifier>
+									<classifier>${target.platform.classifier.unified.name}</classifier>
+								</artifact>
+								<artifact>
+									<file>${target.platform.classifier.local.name}.target</file>
+									<type>target</type>
+									<classifier>${target.platform.classifier.local.name}</classifier>
 								</artifact>
 							</artifacts>
 						</configuration>
