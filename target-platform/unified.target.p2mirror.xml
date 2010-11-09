@@ -125,7 +125,6 @@
 <iu id="org.eclipse.datatools.connectivity.feature.feature.group" version=""/>
 <iu id="org.eclipse.datatools.enablement.feature.feature.group" version=""/>
 <iu id="org.eclipse.datatools.sdk.feature.feature.group" version=""/>
-<iu id="org.eclipse.datatools.enablement.sdk.feature.feature.group" version=""/>
 <iu id="org.eclipse.datatools.enablement.jdt.feature.feature.group" version=""/>
 <iu id="org.eclipse.datatools.modelbase.feature.feature.group" version=""/>
 <iu id="org.eclipse.datatools.enablement.apache.derby.feature.feature.group" version=""/>
