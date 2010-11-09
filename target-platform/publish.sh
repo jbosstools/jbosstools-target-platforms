@@ -19,7 +19,7 @@ while [ "$#" -gt 0 ]; do
 		repoPath=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO
 		destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform
 		DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform
-		;;
+		shift 1;;
 	esac
 done
 
