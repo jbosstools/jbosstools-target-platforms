@@ -26,7 +26,10 @@ done
 if [[ -d ${repoPath} ]]; then
 	cd ${repoPath}
 
-	du -sh ${repoPath}; if [[ -d ${destinationPath}/${targetFile} ]]; then du -sh ${destinationPath}/${targetFile}; fi
+	if [[ ! -d ${destinationPath}/${targetFile} ]]; then 
+		mkdir -p ${destinationPath}/${targetFile}
+	fi
+	du -sh ${repoPath} ${destinationPath}/${targetFile}
 
 	# copy/update into central place for reuse by local downstream build jobs
 	date; rsync -arzqc --delete-after --delete-excluded --rsh=ssh --exclude '.blobstore' * ${destinationPath}/${targetFile}/
