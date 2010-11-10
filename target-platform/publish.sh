@@ -37,6 +37,10 @@ if [[ -d ${repoPath} ]]; then
 	du -sh ${repoPath} ${destinationPath}/${targetFile}
 
 	# upload to http://download.jboss.org/jbossotools/updates/target-platform/latest/ for public use
+	if [[ ${DESTINATION/@/} == ${DESTINATION} ]]; then # local path, no user@server
+		mkdir -p ${DESTINATION}/
+	fi
+	# if the following line fails, make sure that ${DESTINATION} is already created on target server
 	date; rsync -arzqc --delete-after --delete-excluded --rsh=ssh --exclude '.blobstore' * ${DESTINATION}/latest/
 
 	# create zip, then upload to http://download.jboss.org/jbossotools/updates/target-platform/${targetFile}.zip for public use
