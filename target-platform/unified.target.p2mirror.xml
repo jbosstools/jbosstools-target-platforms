@@ -25,7 +25,7 @@
 <property name="verbose" value="false"/>
 <property name="followStrict" value="false"/>
 <echo level="info">Download features/plugins into ${repoDir}</echo>
-<p2.mirror destination="file:${repoDir}" verbose="${verbose}">
+<p2.mirror destination="file://${repoDir}" verbose="${verbose}">
 <slicingOptions includeFeatures="true" followStrict="${followStrict}"/>
 <source>
 <repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
