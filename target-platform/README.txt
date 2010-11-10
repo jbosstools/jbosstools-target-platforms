@@ -44,7 +44,7 @@
    but a local path reference is faster.
 
 2. So, continuing from previous HOWTO, copy from /tmp/mutiple.target into 
-   file://home/hudson/static_build_env/jbds/target-platform/mutiple.target/
+   file:///home/hudson/static_build_env/jbds/target-platform/mutiple.target/
 
 	rsync -aPrz --delete /tmp/mutiple.target/* \
 		/home/hudson/static_build_env/jbds/target-platform/mutiple.target/ &

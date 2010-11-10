@@ -13,7 +13,7 @@
 
 	<xsl:param name="verbose" select="'${verbose}'" as="xs:string"/>
 	<xsl:param name="followStrict" select="'${followStrict}'" as="xs:string"/>
-	<xsl:param name="destination" select="'file:${repoDir}'" as="xs:string"/>
+	<xsl:param name="destination" select="'file://${repoDir}'" as="xs:string"/>
 	
 	<xsl:template match="target">
 		<project name="Download target platform" default="download.target.platform">

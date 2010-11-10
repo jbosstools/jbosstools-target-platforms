@@ -14,7 +14,7 @@
 	<property name="unified.targetFile" value="unified.target" />
 	<property name="unified.URL" value="http://download.jboss.org/jbosstools/updates/target-platform/latest/" />
 	<property name="local.targetFile" value="local.target" />
-	<property name="local.URL" value="file:/${repoDir}" />
+	<property name="local.URL" value="file://${repoDir}" />
 
 	<property name="tmpDir" value="${java.io.tmpdir}/targetUpdateFromRepo" />
 

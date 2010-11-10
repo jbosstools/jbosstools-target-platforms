@@ -25,7 +25,7 @@
 <property value="false" name="verbose"/>
 <property value="false" name="followStrict"/>
 <echo level="info">Download features/plugins into ${repoDir}</echo>
-<p2.mirror verbose="${verbose}" destination="file:${repoDir}">
+<p2.mirror verbose="${verbose}" destination="file://${repoDir}">
 <slicingOptions followStrict="${followStrict}" includeFeatures="true"/>
 <source>
 <repository location="http://m2eclipse.sonatype.org/sites/m2e/"/>

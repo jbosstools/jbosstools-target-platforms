@@ -196,10 +196,10 @@ Thus, run script like this:
 
 	<target name="test.local.target.platform.repo" description="test target platform completeness by running a build against its update site">
 		<exec executable="/opt/maven3/bin/mvn" dir="${WORKINGDIR}">
-			<arg line=" -f ../parent/pom.xml clean install -B -U -fae -e -P helios-local-target,!helios -Dmaven.test.skip -Dtarget.platorm.URL=file:/${repoDir}" />
+			<arg line=" -f ../parent/pom.xml clean install -B -U -fae -e -P helios-local-target,!helios -Dmaven.test.skip -Dtarget.platorm.URL=file://${repoDir}" />
 		</exec>
 		<exec executable="/opt/maven3/bin/mvn" dir="${WORKINGDIR}">
-			<arg line=" -f ../pom.xml clean install -B -U -fae -e -P helios-local-target,!helios -Dmaven.test.skip -Dtarget.platorm.URL=file:/${repoDir}" />
+			<arg line=" -f ../pom.xml clean install -B -U -fae -e -P helios-local-target,!helios -Dmaven.test.skip -Dtarget.platorm.URL=file://${repoDir}" />
 		</exec>
 	</target>
 
@@ -207,7 +207,7 @@ Thus, run script like this:
 	        description="test target platform completeness by running a build against its installed eclipse base - Dtycho.targetPlatform to be removed in Tycho 0.11 so this test is deprecated">
 		<!-- 
 		<exec executable="/opt/maven3/bin/mvn" dir="${WORKINGDIR}">
-			<arg line=" -f ../parent/pom.xml clean install -B -U -fae -e -P helios-local-target,!helios -Dmaven.test.skip -Dtarget.platorm.URL=file:/${repoDir}" />
+			<arg line=" -f ../parent/pom.xml clean install -B -U -fae -e -P helios-local-target,!helios -Dmaven.test.skip -Dtarget.platorm.URL=file://${repoDir}" />
 		</exec>
 		<exec executable="/opt/maven3/bin/mvn" dir="${WORKINGDIR}">
 			<arg line=" -f ../pom.xml clean install -B -U -fae -e -Dmaven.test.skip -Dtycho.targetPlatform=${WORKINGDIR}/eclipse" />
@@ -255,7 +255,7 @@ Thus, run script like this:
 		<antcall target="run.director">
 			<param name="p2.director.installIU" value="${install}" />
 			<param name="p2.director.install.path" value="${WORKINGDIR}/eclipse" />
-			<param name="p2.director.input.repo" value="file:/${repoDir}/" />
+			<param name="p2.director.input.repo" value="file://${repoDir}/" />
 		</antcall>
 	</target>
 
@@ -263,7 +263,7 @@ Thus, run script like this:
 		<property name="p2.director.extraArgs" value="" />
 		<property name="p2.director.installIU" value="${install}" />
 		<property name="p2.director.install.path" value="${targetDir}" />
-		<property name="p2.director.input.repo" value="jar:file:${sourceZip}!/" />
+		<property name="p2.director.input.repo" value="jar:file://${sourceZip}!/" />
 		<echo>
 Source Repo(s): ${p2.director.input.repo}
 Install Path: ${p2.director.install.path}
@@ -284,8 +284,8 @@ ${install}
 			<arg line=" -destination ${p2.director.install.path}" />
 			<arg line=" -bundlepool ${p2.director.install.path}" />
 			<arg line=" -installIU ${p2.director.installIU}" />
-			<arg line=" -metadataRepository ${p2.director.input.repo},file:${p2.director.install.path}/p2/org.eclipse.equinox.p2.engine/profileRegistry/SDKProfile.profile" />
-			<arg line=" -artifactRepository ${p2.director.input.repo},file:${p2.director.install.path}" />
+			<arg line=" -metadataRepository ${p2.director.input.repo},file://${p2.director.install.path}/p2/org.eclipse.equinox.p2.engine/profileRegistry/SDKProfile.profile" />
+			<arg line=" -artifactRepository ${p2.director.input.repo},file://${p2.director.install.path}" />
 			<arg line=" -profileProperties org.eclipse.update.install.features=true" />
 			<arg line=" -vmargs" />
 			<arg line=" -Declipse.p2.data.area=${p2.director.install.path}/p2" />
