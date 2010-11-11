@@ -185,7 +185,7 @@
 		<snapshotRepository>
 			<id>jboss-snapshots-repository</id>
 			<name>JBoss Snapshot Repository</name>
-			<uniqueVersion>true</uniqueVersion>
+			<uniqueVersion>false</uniqueVersion>
 			<url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
 			<layout>default</layout>
 		</snapshotRepository>
