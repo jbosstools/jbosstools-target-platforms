@@ -33,8 +33,7 @@ To simply generate a local.target file from the multiple.target file, use:
 	ant -f targetUpdateFromRepo.xml local.target</echo>
 	</target>
 
-	<target name="custom.build"
-	        depends="check.content.xml, get.content.xml, copy.content.xml, contentXml2artifactVersions.xsl, multiple.target, unified.target, local.target" />
+	<target name="custom.build" depends="check.content.xml, get.content.xml, copy.content.xml, contentXml2artifactVersions.xsl, multiple.target, unified.target, local.target, cleanup" />
 
 	<target name="check.content.xml" description="if content.jar, unpack to get content.xml">
 		<condition property="content.xml.exists" value="true">
@@ -53,44 +52,42 @@ To simply generate a local.target file from the multiple.target file, use:
 	<target name="contentXml2artifactVersions.xsl">
 		<echo level="verbose">Generate ${tmpDir}/artifactVersions.properties</echo>
 		<xslt style="contentXml2artifactVersions.xsl" in="${tmpDir}/content.xml" out="${tmpDir}/artifactVersions.properties" processor="trax" />
-		<property name="replace.versions" value="true"/>
 	</target>
 
-	<target name="target2targetTemplate.xsl" description="run target2targetTemplate.xsl to templatize .target file">
-		<property name="outputFile" value="${tmpDir}/${targetFile}.template"/>
-		<property name="replacement.URL" value=""/>
+	<target name="target2targetTemplate" description="run target2targetTemplate.xsl to templatize .target file">
+		<property name="outputFile" value="${tmpDir}/${targetFile}.template" />
+		<property name="replacement.URL" value="" />
 		<echo level="verbose">Generate ${outputFile}</echo>
 		<xslt style="target2targetTemplate.xsl" in="${targetFile}" out="${outputFile}" processor="trax">
 			<param name="replacement.URL" expression="${replacement.URL}" />
+			<!-- if replace.versions is set, will update from versions in repo; if not set, will only update URLs, not IU versions -->
+			<param name="replace.versions" expression="1" />
 		</xslt>
 	</target>
 
 	<target name="multiple.target" description="update the multiple.target file based on new content in the local repo">
-		<antcall target="target2targetTemplate.xsl"/>
-		<antcall target="updateTargetFile"/>
-		<antcall target="cleanup" />
+		<antcall target="target2targetTemplate" />
+		<antcall target="updateTargetFile" />
 	</target>
 
 	<target name="unified.target" description="update the unified.target file based on new content in the local repo and replace URLs w/ single unified one">
-		<antcall target="target2targetTemplate.xsl">
-			<param name="outputFile" value="${tmpDir}/${unified.targetFile}.template"/>
-			<param name="replacement.URL" value="${unified.URL}"/>
+		<antcall target="target2targetTemplate">
+			<param name="outputFile" value="${tmpDir}/${unified.targetFile}.template" />
+			<param name="replacement.URL" value="${unified.URL}" />
 		</antcall>
 		<antcall target="updateTargetFile">
-			<param name="targetFile" value="${unified.targetFile}"/>
+			<param name="targetFile" value="${unified.targetFile}" />
 		</antcall>
-		<antcall target="cleanup" />
 	</target>
 
 	<target name="local.target" description="create a local.target file (based on new content in the local repo if available) and replace URLs w/ single local one">
-		<antcall target="target2targetTemplate.xsl">
-			<param name="outputFile" value="${tmpDir}/${local.targetFile}.template"/>
-			<param name="replacement.URL" value="${local.URL}"/>
+		<antcall target="target2targetTemplate">
+			<param name="outputFile" value="${tmpDir}/${local.targetFile}.template" />
+			<param name="replacement.URL" value="${local.URL}" />
 		</antcall>
 		<antcall target="updateTargetFile">
-			<param name="targetFile" value="${local.targetFile}"/>
+			<param name="targetFile" value="${local.targetFile}" />
 		</antcall>
-		<antcall target="cleanup" />
 	</target>
 
 	<target name="updateTargetFile" description="load generated properties and resolve them in the template to create a new .target file">
@@ -106,6 +103,41 @@ To simply generate a local.target file from the multiple.target file, use:
 
 	<target name="cleanup" description="purge temporary dir">
 		<delete dir="${tmpDir}" includeemptydirs="true" quiet="true" />
+	</target>
+
+	<target name="test.updateTargetFile" depends="check.content.xml, get.content.xml, copy.content.xml, contentXml2artifactVersions.xsl">
+		<echo>Load *swtbot* properties from ${tmpDir}/artifactVersions.properties</echo>
+		<loadfile srcfile="${tmpDir}/artifactVersions.properties" property="artifactVersionsPropertiesContents">
+			<filterchain>
+				<linecontains>
+					<contains value="swtbot" />
+					<contains value="feature.group" />
+				</linecontains>
+			</filterchain>
+		</loadfile>
+		<echo>${artifactVersionsPropertiesContents}</echo>
+
+		<antcall target="target2targetTemplate">
+			<param name="outputFile" value="${tmpDir}/${unified.targetFile}.template" />
+			<param name="replacement.URL" value="${unified.URL}" />
+		</antcall>
+		<echo>Generated ${tmpDir}/${unified.targetFile}.template: </echo>
+		<exec executable="egrep">
+			<arg line="&quot;swtbot&quot; ${tmpDir}/${unified.targetFile}.template" />
+		</exec>
+
+		<antcall target="updateTargetFile">
+			<param name="targetFile" value="${unified.targetFile}" />
+		</antcall>
+		<echo>--
+If loaded version values (in artifactVersions.properties) do not match  
+output below, an error has occurred or replace.versions is undefined.
+--</echo>
+		<exec executable="egrep">
+			<arg line="&quot;swtbot.*feature.group&quot; ${unified.targetFile}" />
+		</exec>
+
+
 	</target>
 
 </project>
