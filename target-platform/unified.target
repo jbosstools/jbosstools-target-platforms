@@ -8,11 +8,11 @@
 	-->
 	<locations>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<unit id="org.maven.ide.eclipse.feature.feature.group" version="0.10.2.20100623-1649"/>
+			<unit id="org.maven.ide.eclipse.feature.feature.group" version="0.12.0.20101115-1102"/>
 			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<unit id="org.maven.ide.eclipse.wtp.feature.feature.group" version="0.11.0.20101024-0955"/>
+			<unit id="org.maven.ide.eclipse.wtp.feature.feature.group" version="0.11.1.20101108-1810"/>
 			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
