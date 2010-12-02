@@ -6,8 +6,8 @@
 			<unit version="1.2.0.v20100427-7B77FKt90GE5h0SBT5FV9A01911" id="org.eclipse.cvs.feature.group"/>
 
 			<!-- DTP -->
-			<unit version="" id="org.eclipse.datatools.enablement.sdk.feature.feature.group"/>
-			<unit version="" id="org.eclipse.datatools.sdk.feature.feature.group"/>
+			<unit version="1.8.1.v20100618-7I977GFE9JfhdnBJPmBCYCq6w5-t" id="org.eclipse.datatools.enablement.sdk.feature.feature.group"/>
+			<unit version="1.8.1.v20100618-7P9i7KFDxNYrp4cjPjqnPaRKxeyT" id="org.eclipse.datatools.sdk.feature.feature.group"/>
 			<unit version="1.8.1.v20100618-77078CcNBGKBZI_FcRd" id="org.eclipse.datatools.modelbase.feature.feature.group"/>
 			<unit version="1.8.1.v20100618-7C7b8hEt1ZvtiLkdlO7BVoL_wm6" id="org.eclipse.datatools.connectivity.feature.feature.group"/>
 			<unit version="1.8.1.v20100618-7H7C7ACcNBHBBkHeGSMd" id="org.eclipse.datatools.connectivity.oda.feature.feature.group"/>
