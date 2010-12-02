@@ -66,9 +66,13 @@ There are also integration tests (will build JBT using platform repo or platform
 	* test.local.target.platform.repo
 	* test.local.target.platform.installed.base (deprecated)
 
-Thus, run script like this:
+Thus, default operation is this (if run w/ these options or NO options):
 
 	$ ant -DtargetFile=multiple.target build.local.target.platform.repo
+
+To run for JBDS target file instead of JBT target files, pass in alternate target file and resulting repo path:
+
+	$ ant -DtargetFile=jbds.target -DrepoDir=/tmp/JBDS_REPO/ 
 </echo>
 	</target>
 
