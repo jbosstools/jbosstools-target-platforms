@@ -44,7 +44,7 @@
 <repository location="http://download.eclipse.org/eclipse/updates/3.6/"/>
 <repository location="http://download.eclipse.org/releases/helios/"/>
 <repository location="http://download.eclipse.org/webtools/repository/helios/"/>
-<repository location="http://download.jboss.org/jbosstools/builds/staging/jbosstools-drools/all/repo/"/>
+<repository location="http://download.jboss.org/jbosstools/builds/staging/_composite_/trunk/"/>
 <repository location="http://dl.google.com/eclipse/plugin/3.6/"/>
 <repository location="http://download.jboss.org/jbosstools/updates/requirements/swtbot-helios/"/>
 <repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools-3.2/"/>
@@ -133,6 +133,11 @@
 <iu id="org.eclipse.zest.feature.group" version=""/>
 <iu id="org.eclipse.uml2.feature.group" version=""/>
 <iu id="org.eclipse.rse.feature.group" version=""/>
+<iu id="org.eclipse.rse.useractions.feature.group" version=""/>
+<iu id="org.eclipse.tm.terminal.feature.group" version=""/>
+<iu id="org.eclipse.tm.terminal.view.feature.group" version=""/>
+<iu id="org.eclipse.tm.terminal.telnet.feature.group" version=""/>
+<iu id="org.eclipse.tm.terminal.ssh.feature.group" version=""/>
 <iu id="org.eclipse.jst.jee" version=""/>
 <iu id="org.eclipse.wst.common.frameworks" version=""/>
 <iu id="org.eclipse.wst.common.project.facet.ui" version=""/>
