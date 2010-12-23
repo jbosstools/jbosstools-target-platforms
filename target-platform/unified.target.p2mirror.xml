@@ -133,6 +133,11 @@
 <iu id="org.eclipse.zest.feature.group" version=""/>
 <iu id="org.eclipse.uml2.feature.group" version=""/>
 <iu id="org.eclipse.rse.feature.group" version=""/>
+<iu id="org.eclipse.rse.useractions.feature.group" version=""/>
+<iu id="org.eclipse.tm.terminal.feature.group" version=""/>
+<iu id="org.eclipse.tm.terminal.view.feature.group" version=""/>
+<iu id="org.eclipse.tm.terminal.telnet.feature.group" version=""/>
+<iu id="org.eclipse.tm.terminal.ssh.feature.group" version=""/>
 <iu id="org.eclipse.jst.jee" version=""/>
 <iu id="org.eclipse.wst.common.frameworks" version=""/>
 <iu id="org.eclipse.wst.common.project.facet.ui" version=""/>
@@ -169,7 +174,7 @@
 <iu id="org.eclipse.wst.ws_ui.feature.feature.group" version=""/>
 <iu id="org.eclipse.wst.xml_core.feature.feature.group" version=""/>
 <iu id="com.google.gdt.eclipse.suite.e36.feature.feature.group" version=""/>
-<iu id="com.google.gwt.eclipse.sdkbundle.e36.feature.2.1.0.feature.group" version=""/>
+<iu id="com.google.gwt.eclipse.sdkbundle.e36.feature.2.1.1.feature.group" version=""/>
 <iu id="org.drools.eclipse.feature.feature.group" version=""/>
 <iu id="org.drools.eclipse.task.feature.feature.group" version=""/>
 <iu id="org.guvnor.tools.feature.feature.group" version=""/>
