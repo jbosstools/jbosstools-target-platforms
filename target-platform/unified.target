@@ -8,7 +8,8 @@
 	-->
 	<locations>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<unit id="org.maven.ide.eclipse.feature.feature.group" version="0.12.0.20101115-1102"/>
+                        <!-- NOT <unit id="org.maven.ide.eclipse.feature.feature.group" version="0.10.2.20100623-1649"/> -->
+                        <unit id="org.maven.ide.eclipse.feature.feature.group" version="0.12.0.20101115-1102"/>
 			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
@@ -211,7 +212,7 @@
 			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<unit id="com.google.gdt.eclipse.suite.e36.feature.feature.group" version="1.4.1.v201012170127"/>
+			<unit id="com.google.gdt.eclipse.suite.e36.feature.feature.group" version="1.4.2.v201012211742"/>
 			<unit id="com.google.gwt.eclipse.sdkbundle.e36.feature.2.1.1.feature.group" version="2.1.1.v201012170127"/>
 			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
