@@ -52,7 +52,7 @@ if [[ -d ${repoPath} ]]; then
 	targetZip=/tmp/${targetFile}.zip
 
 	# create zip, then upload to http://download.jboss.org/jbossotools/updates/target-platform/${targetFile}.zip for public use
-	zip -q -r9 ${targetZip} *
+	zip -q -r9 ${targetZip} ${include}
 	du -sh ${targetZip}
 
 	# generate MD5 sum for zip (file contains only the hash, not the hash + filename)
