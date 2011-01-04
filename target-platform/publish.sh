@@ -6,6 +6,7 @@ targetFile=e361-wtp322.target
 repoPath=/home/hudson/static_build_env/jbds/tools/sources/REPO
 destinationPath=/home/hudson/static_build_env/jbds/target-platform
 DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform
+include="*"
 exclude="--exclude '.blobstore'" # exclude the .blobstore
 
 while [ "$#" -gt 0 ]; do
@@ -14,13 +15,16 @@ while [ "$#" -gt 0 ]; do
 		'-repoPath') repoPath="$2"; shift 2;;
 		'-destinationPath') destinationPath="$2"; shift 2;;
 		'-DESTINATION') DESTINATION="$2"; shift 2;;
+		'-include') include="$2"; shift 2;;
+		'-exclude') exclude="$2"; shift 2;;
 		'-jbds') 
 		# defaults for JBDS
 		targetFile=jbds400-e361-wtp322.target
 		repoPath=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO
 		destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform
 		DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform
-		exclude="'.blobstore'" # include the .blobstore
+		include=".blobstore *" # include the .blobstore
+		exclude="" 
 		shift 1;;
 	esac
 done
@@ -34,7 +38,7 @@ if [[ -d ${repoPath} ]]; then
 	du -sh ${repoPath} ${destinationPath}/${targetFile}
 
 	# copy/update into central place for reuse by local downstream build jobs
-	date; rsync -arzqc --delete-after --delete-excluded --rsh=ssh ${exclude} * ${destinationPath}/${targetFile}/
+	date; rsync -arzqc --delete-after --delete-excluded --rsh=ssh ${exclude} ${include} ${destinationPath}/${targetFile}/
 
 	du -sh ${repoPath} ${destinationPath}/${targetFile}
 
@@ -43,7 +47,7 @@ if [[ -d ${repoPath} ]]; then
 		mkdir -p ${DESTINATION}/
 	fi
 	# if the following line fails, make sure that ${DESTINATION} is already created on target server
-	date; rsync -arzqc --delete-after --delete-excluded --rsh=ssh ${exclude} * ${DESTINATION}/latest/
+	date; rsync -arzqc --delete-after --delete-excluded --rsh=ssh ${exclude} ${include} ${DESTINATION}/latest/
 
 	targetZip=/tmp/${targetFile}.zip
 
