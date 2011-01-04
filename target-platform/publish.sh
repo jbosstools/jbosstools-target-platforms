@@ -6,6 +6,7 @@ targetFile=e361-wtp322.target
 repoPath=/home/hudson/static_build_env/jbds/tools/sources/REPO
 destinationPath=/home/hudson/static_build_env/jbds/target-platform
 DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform
+exclude=""
 
 while [ "$#" -gt 0 ]; do
 	case $1 in
@@ -19,6 +20,7 @@ while [ "$#" -gt 0 ]; do
 		repoPath=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO
 		destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform
 		DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform
+		exclude="--exclude '.blobstore'"
 		shift 1;;
 	esac
 done
@@ -32,7 +34,7 @@ if [[ -d ${repoPath} ]]; then
 	du -sh ${repoPath} ${destinationPath}/${targetFile}
 
 	# copy/update into central place for reuse by local downstream build jobs
-	date; rsync -arzqc --delete-after --delete-excluded --rsh=ssh --exclude '.blobstore' * ${destinationPath}/${targetFile}/
+	date; rsync -arzqc --delete-after --delete-excluded --rsh=ssh ${exclude} * ${destinationPath}/${targetFile}/
 
 	du -sh ${repoPath} ${destinationPath}/${targetFile}
 
@@ -41,11 +43,17 @@ if [[ -d ${repoPath} ]]; then
 		mkdir -p ${DESTINATION}/
 	fi
 	# if the following line fails, make sure that ${DESTINATION} is already created on target server
-	date; rsync -arzqc --delete-after --delete-excluded --rsh=ssh --exclude '.blobstore' * ${DESTINATION}/latest/
+	date; rsync -arzqc --delete-after --delete-excluded --rsh=ssh ${exclude} * ${DESTINATION}/latest/
+
+	targetZip=/tmp/${targetFile}.zip
 
 	# create zip, then upload to http://download.jboss.org/jbossotools/updates/target-platform/${targetFile}.zip for public use
-	zip -q -r9 /tmp/${targetFile}.zip *
-	du -sh /tmp/${targetFile}.zip
-	date; rsync -arzq --rsh=ssh /tmp/${targetFile}.zip ${DESTINATION}/ 
-	rm -f /tmp/${targetFile}.zip
+	zip -q -r9 ${targetZip} *
+	du -sh ${targetZip}
+
+	# generate MD5 sum for zip (file contains only the hash, not the hash + filename)
+	for m in $(md5sum ${targetZip}); do if [[ $m != ${targetZip} ]]; then echo $m > ${targetZip}.MD5; fi; done
+
+	date; rsync -arzq --rsh=ssh ${targetZip} ${targetZip}.MD5 ${DESTINATION}/ 
+	rm -f ${targetZip} ${targetZip}.MD5
 fi
