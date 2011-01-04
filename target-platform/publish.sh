@@ -6,7 +6,7 @@ targetFile=e361-wtp322.target
 repoPath=/home/hudson/static_build_env/jbds/tools/sources/REPO
 destinationPath=/home/hudson/static_build_env/jbds/target-platform
 DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform
-exclude="--exclude '.blobstore'"
+exclude="--exclude '.blobstore'" # exclude the .blobstore
 
 while [ "$#" -gt 0 ]; do
 	case $1 in
@@ -20,7 +20,7 @@ while [ "$#" -gt 0 ]; do
 		repoPath=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO
 		destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform
 		DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform
-		exclude=""
+		exclude="'.blobstore'" # include the .blobstore
 		shift 1;;
 	esac
 done
