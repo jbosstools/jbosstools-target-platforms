@@ -9,7 +9,7 @@
 	<locations>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<!-- NOT <unit id="org.maven.ide.eclipse.feature.feature.group" version="0.10.2.20100623-1649"/> -->
-			<unit id="org.maven.ide.eclipse.feature.feature.group" version="0.12.0.20101115-1102"/>
+			<unit id="org.maven.ide.eclipse.feature.feature.group" version="0.10.2.20100623-1649"/>
 			<repository location="http://m2eclipse.sonatype.org/sites/m2e/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
@@ -46,7 +46,7 @@
 <repository location="http://download.jboss.org/jbosstools/updates/requirements/xulrunner-1.9.2/"/>
 </location> -->
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<unit id="org.mozilla.xulrunner.feature.feature.group" version="1.9.12.v20100909-1551-H34-M2"/>
+			<unit id="org.mozilla.xulrunner.feature.feature.group" version="1.9.12.v20110103-1617-H35-CR1"/>
 			<unit id="org.mozilla.xpcom.feature.feature.group" version="1.9.12.v20100909-1551-H34-M2"/>
 			<repository location="http://download.jboss.org/jbosstools/updates/requirements/xulrunner-1.9.1.2/"/>
 		</location>
@@ -145,12 +145,21 @@
 			<unit id="org.eclipse.zest.feature.group" version="1.2.0.v20100519-2050-67808yE5F-8HAH4HECF4242"/>
 			<unit id="org.eclipse.uml2.feature.group" version="3.1.1.v201008191505"/>
 
-                        <unit id="org.eclipse.rse.feature.group" version="3.2.1.v201008191400-7L78FA-8wqbPcNj4qa8R0eViy7vZ"/>
-                        <unit id="org.eclipse.rse.useractions.feature.group" version="1.1.200.v201005221100-31A78s733L3D7H7933"/>
-                        <unit id="org.eclipse.tm.terminal.feature.group" version="3.0.201.v201008191400-4-8_7w3121192A2511"/>
-                        <unit id="org.eclipse.tm.terminal.view.feature.group" version="2.1.0.v201006030830-30-7w312117152351"/>
-                        <unit id="org.eclipse.tm.terminal.telnet.feature.group" version="2.0.200.v201005032000-3-8_7w311A1A271116"/>
-                        <unit id="org.eclipse.tm.terminal.ssh.feature.group" version="2.0.200.v201005271030-3-A77w312116382141"/>
+			<unit id="org.eclipse.rse.feature.group" version="3.2.1.v201008191400-7L78FA-8wqbPcNj4qa8R0eViy7vZ"/>
+			<unit id="org.eclipse.rse.ssh.feature.group" version="3.0.100.v201005221100-7A2BhAkF77g7VEYDG7C"/>
+			<unit id="org.eclipse.rse.terminals.feature.group" version="1.0.101.v201008191400-77-DH9uCFiO1U8MBKTDB3622"/>
+			<unit id="org.eclipse.rse.telnet.feature.group" version="2.2.100.v201005221100-7730AkF77g7UDXELEF"/>
+			<unit id="org.eclipse.rse.ftp.feature.group" version="3.0.200.v201005221100-780Bg9oB56N5J9QBADD"/>
+			<unit id="org.eclipse.rse.local.feature.group" version="2.1.201.v201009071110-7B4F8PBgJ9Ai9dIaHNA9"/>
+			<unit id="org.eclipse.rse.useractions.feature.group" version="1.1.200.v201005221100-31A78s733L3D7H7933"/>
+
+			<unit id="org.eclipse.tm.terminal.feature.group" version="3.0.201.v201008191400-4-8_7w3121192A2511"/>
+			<unit id="org.eclipse.tm.terminal.view.feature.group" version="2.1.0.v201006030830-30-7w312117152351"/>
+			<unit id="org.eclipse.tm.terminal.telnet.feature.group" version="2.0.200.v201005032000-3-8_7w311A1A271116"/>
+			<unit id="org.eclipse.tm.terminal.local.feature.group" version="0.1.0.v201006041240-10-7w312117152433"/>
+			<unit id="org.eclipse.tm.terminal.serial.feature.group" version="2.0.200.v201005032000-3-8Z7w311A16383411"/>
+			<unit id="org.eclipse.tm.terminal.feature.group" version="3.0.201.v201008191400-4-8_7w3121192A2511"/>
+			<unit id="org.eclipse.tm.terminal.ssh.feature.group" version="2.0.200.v201005271030-3-A77w312116382141"/>
 
 			<!-- SAVARA dependencies -->
 			<!-- <unit version="1.2.0.201006151053" id="org.eclipse.stp.bpmn.feature.feature.group"/>
