@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><?pde version="3.6"?>
 <target includeMode="feature" name="jbds">
-<locations>
-<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+	<locations>
+		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+	        <!-- Pro tip: to convert 
+        	     from org.eclipse.tptp.platform.xerces_4.6.0.v201005032111-777K4AkF7B77R7c7N77.jar
+	             to <unit version="4.6.0.v201005032111-777K4AkF7B77R7c7N77" id="org.eclipse.tptp.platform.xerces.feature.group"/>
+        	     using vi, apply this transform:
+	             :%s/.\+\/\(org.\+\)_\(\d\+.\+\)\.jar/\t\t\t<unit version="\2" id="\1.feature.group"\/>/g
+        	-->
+
 			<!-- CVS -->
 			<unit version="1.2.0.v20100427-7B77FKt90GE5h0SBT5FV9A01911" id="org.eclipse.cvs.feature.group"/>
 
@@ -123,11 +130,16 @@
 			<unit version="3.6.1.r361_v20100727-7b7mFL-FET3dhESDgE5_bkJ" id="org.eclipse.pde.feature.group"/>
 
 			<!-- TPTP -->
-			<unit version="4.3.1.v201009092123-797908s73533D4H6D56" id="org.eclipse.tptp.platform.instrumentation.ui.feature.group"/>
-			<unit version="4.7.1.v201009092123-8X8ZFXUFLWUl6knOxRCm9t" id="org.eclipse.tptp.platform.core.feature.group"/>
-			<unit version="4.5.1.v201009092123-797A18s73533L4F6D6D" id="org.eclipse.tptp.platform.jvmti.feature.group"/>
-			<unit version="4.5.1.v201009092123-7H7F2AkF7B77c7dEGDG" id="org.eclipse.tptp.platform.profile.server.feature.group"/>
 			<unit version="4.3.1.v201009092123-794F9x8s73533H3I6A56" id="org.eclipse.tptp.trace.feature.group"/>
+			<unit version="4.5.0.v201005032111-2-37w312116191612" id="org.eclipse.tptp.platform.commons.logging.feature.group"/>
+			<unit version="4.7.1.v201009092123-8X8ZFXUFLWUl6knOxRCm9t" id="org.eclipse.tptp.platform.core.feature.group"/>
+			<unit version="4.3.1.v201009092123-797908s73533D4H6D56" id="org.eclipse.tptp.platform.instrumentation.ui.feature.group"/>
+			<unit version="4.5.0.v201005032111-217E7w312116191611" id="org.eclipse.tptp.platform.jakarta.log4j.feature.group"/>
+			<unit version="4.5.1.v201009092123-797A18s73533L4F6D6D" id="org.eclipse.tptp.platform.jvmti.feature.group"/>
+			<unit version="4.5.1.v201009092123-7H7BF8PAkF7B77ZARCNEK" id="org.eclipse.tptp.platform.probekit.feature.group"/>
+			<unit version="4.5.1.v201009092123-7H7F2AkF7B77c7dEGDG" id="org.eclipse.tptp.platform.profile.server.feature.group"/>
+			<unit version="4.5.1.v201009092123-7L7O8bBgJ9E99jAfGWEM" id="org.eclipse.tptp.platform.trace.feature.group"/>
+			<unit version="4.6.0.v201005032111-777K4AkF7B77R7c7N77" id="org.eclipse.tptp.platform.xerces.feature.group"/>
 
 			<!-- RSE SDK 3.2.1 -->
 			<unit version="3.2.1.v201008191400-7L78FA-8wqbPcNj4qa8R0eViy7vZ" id="org.eclipse.rse.feature.group"/>
@@ -137,7 +149,7 @@
 			<unit version="2.0.200.v201005032000-3-8_7w311A1A271116" id="org.eclipse.tm.terminal.telnet.feature.group"/>
 			<unit version="2.0.200.v201005271030-3-A77w312116382141" id="org.eclipse.tm.terminal.ssh.feature.group"/>
 
-	<repository location="http://download.eclipse.org/releases/helios/"/>
-</location>
-</locations>
+			<repository location="http://download.eclipse.org/releases/helios/"/>
+		</location>
+	</locations>
 </target>
