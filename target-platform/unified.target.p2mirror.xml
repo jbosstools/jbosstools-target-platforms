@@ -57,7 +57,6 @@
 <iu id="org.jdom.feature.feature.group" version=""/>
 <iu id="org.mozilla.xulrunner.feature.feature.group" version=""/>
 <iu id="org.mozilla.xpcom.feature.feature.group" version=""/>
-<iu id="org.eclipse.tptp.trace.feature.group" version=""/>
 <iu id="org.eclipse.tptp.platform.profile.server.feature.group" version=""/>
 <iu id="org.eclipse.tptp.platform.instrumentation.ui.feature.group" version=""/>
 <iu id="org.eclipse.tptp.platform.core.feature.group" version=""/>

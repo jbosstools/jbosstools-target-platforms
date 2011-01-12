@@ -54,7 +54,6 @@
 			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-		        <unit id="org.eclipse.tptp.trace.feature.group" version="4.3.1.v201009092123-794F9x8s73533H3I6A56"/>
 			<unit id="org.eclipse.tptp.platform.profile.server.feature.group" version="4.5.1.v201009092123-7H7F2AkF7B77c7dEGDG"/>
 			<unit id="org.eclipse.tptp.platform.instrumentation.ui.feature.group" version="4.3.1.v201009092123-797908s73533D4H6D56"/>
 			<unit id="org.eclipse.tptp.platform.core.feature.group" version="4.7.1.v201009092123-8X8ZFXUFLWUl6knOxRCm9t"/>
