@@ -17,8 +17,17 @@ while [ "$#" -gt 0 ]; do
 		'-DESTINATION') DESTINATION="$2"; shift 2;;
 		'-include') include="$2"; shift 2;;
 		'-exclude') exclude="$2"; shift 2;;
+		'-jbds_trunk') 
+		# defaults for JBDS (trunk)
+		targetFile=jbds400-e361-wtp322.target
+		repoPath=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO_trunk
+		destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform_trunk
+		DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform_trunk
+		include=".blobstore *" # include the .blobstore
+		exclude="" 
+		shift 1;;
 		'-jbds') 
-		# defaults for JBDS
+		# defaults for JBDS (stable branch)
 		targetFile=jbds400-e361-wtp322.target
 		repoPath=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO
 		destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform
