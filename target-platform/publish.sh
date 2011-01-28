@@ -2,7 +2,7 @@
 # Hudson creates a repo in ${repoDir}; copy it into other places for access by downstream jobs and users
 
 # defaults for JBoss Tools
-targetFile=e361-wtp322.target
+targetZipFile=e361-wtp322.target
 repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO
 destinationPath=/home/hudson/static_build_env/jbds/target-platform
 DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform
@@ -11,8 +11,9 @@ exclude="--exclude '.blobstore'" # exclude the .blobstore
 
 while [ "$#" -gt 0 ]; do
 	case $1 in
-		'-targetFile') targetFile="$2"; shift 2;;
-		'-repoPath') repoDir="$2"; shift 2;; # old flag name
+		'-targetFile') targetZipFile="$2"; shift 2;; # old flag name (collision with build.xml's ${targetFile}, which points to a .target file)
+		'-targetZipFile') targetZipFile="$2"; shift 2;;
+		'-repoPath') repoDir="$2"; shift 2;; # old flag name (refactored to match build.xml's ${repoDir})
 		'-repoDir') repoDir="$2"; shift 2;;
 		'-destinationPath') destinationPath="$2"; shift 2;;
 		'-DESTINATION') DESTINATION="$2"; shift 2;;
@@ -20,7 +21,7 @@ while [ "$#" -gt 0 ]; do
 		'-exclude') exclude="$2"; shift 2;;
 		'-jbt_trunk') 
 		# defaults for JBT (trunk)
-		targetFile=e361-wtp322.target
+		targetZipFile=e361-wtp322.target
 		repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO_trunk
 		destinationPath=/home/hudson/static_build_env/jbds/target-platform_trunk
 		DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform_trunk
@@ -29,7 +30,7 @@ while [ "$#" -gt 0 ]; do
 		shift 1;;
 		'-jbt') 
 		# defaults for JBT (stable branch)
-		targetFile=e361-wtp322.target
+		targetZipFile=e361-wtp322.target
 		repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO
 		destinationPath=/home/hudson/static_build_env/jbds/target-platform
 		DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform
@@ -38,7 +39,7 @@ while [ "$#" -gt 0 ]; do
 		shift 1;;
 		'-jbds_trunk') 
 		# defaults for JBDS (trunk)
-		targetFile=jbds400-e361-wtp322.target
+		targetZipFile=jbds400-e361-wtp322.target
 		repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO_trunk
 		destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform_trunk
 		DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform_trunk
@@ -47,7 +48,7 @@ while [ "$#" -gt 0 ]; do
 		shift 1;;
 		'-jbds') 
 		# defaults for JBDS (stable branch)
-		targetFile=jbds400-e361-wtp322.target
+		targetZipFile=jbds400-e361-wtp322.target
 		repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO
 		destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform
 		DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform
@@ -60,15 +61,15 @@ done
 if [[ -d ${repoDir} ]]; then
 	cd ${repoDir}
 
-	if [[ ! -d ${destinationPath}/${targetFile} ]]; then 
-		mkdir -p ${destinationPath}/${targetFile}
+	if [[ ! -d ${destinationPath}/${targetZipFile} ]]; then 
+		mkdir -p ${destinationPath}/${targetZipFile}
 	fi
-	du -sh ${repoDir} ${destinationPath}/${targetFile}
+	du -sh ${repoDir} ${destinationPath}/${targetZipFile}
 
 	# copy/update into central place for reuse by local downstream build jobs
-	date; rsync -arzqc --delete-after --delete-excluded --rsh=ssh ${exclude} ${include} ${destinationPath}/${targetFile}/
+	date; rsync -arzqc --delete-after --delete-excluded --rsh=ssh ${exclude} ${include} ${destinationPath}/${targetZipFile}/
 
-	du -sh ${repoDir} ${destinationPath}/${targetFile}
+	du -sh ${repoDir} ${destinationPath}/${targetZipFile}
 
 	# upload to http://download.jboss.org/jbossotools/updates/target-platform/latest/ for public use
 	if [[ ${DESTINATION/@/} == ${DESTINATION} ]]; then # local path, no user@server
@@ -77,9 +78,9 @@ if [[ -d ${repoDir} ]]; then
 	# if the following line fails, make sure that ${DESTINATION} is already created on target server
 	date; rsync -arzqc --delete-after --delete-excluded --rsh=ssh ${exclude} ${include} ${DESTINATION}/latest/
 
-	targetZip=/tmp/${targetFile}.zip
+	targetZip=/tmp/${targetZipFile}.zip
 
-	# create zip, then upload to http://download.jboss.org/jbossotools/updates/target-platform/${targetFile}.zip for public use
+	# create zip, then upload to http://download.jboss.org/jbossotools/updates/target-platform/${targetZipFile}.zip for public use
 	zip -q -r9 ${targetZip} ${include}
 	du -sh ${targetZip}
 
