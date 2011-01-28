@@ -1,9 +1,9 @@
 #!/bin/bash
-# Hudson creates a repo in ${repoPath}; copy it into other places for access by downstream jobs and users
+# Hudson creates a repo in ${repoDir}; copy it into other places for access by downstream jobs and users
 
 # defaults for JBoss Tools
 targetFile=e361-wtp322.target
-repoPath=/home/hudson/static_build_env/jbds/tools/sources/REPO
+repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO
 destinationPath=/home/hudson/static_build_env/jbds/target-platform
 DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform
 include="*"
@@ -12,7 +12,8 @@ exclude="--exclude '.blobstore'" # exclude the .blobstore
 while [ "$#" -gt 0 ]; do
 	case $1 in
 		'-targetFile') targetFile="$2"; shift 2;;
-		'-repoPath') repoPath="$2"; shift 2;;
+		'-repoPath') repoDir="$2"; shift 2;; # old flag name
+		'-repoDir') repoDir="$2"; shift 2;;
 		'-destinationPath') destinationPath="$2"; shift 2;;
 		'-DESTINATION') DESTINATION="$2"; shift 2;;
 		'-include') include="$2"; shift 2;;
@@ -20,7 +21,7 @@ while [ "$#" -gt 0 ]; do
 		'-jbt_trunk') 
 		# defaults for JBT (trunk)
 		targetFile=e361-wtp322.target
-		repoPath=/home/hudson/static_build_env/jbds/tools/sources/REPO_trunk
+		repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO_trunk
 		destinationPath=/home/hudson/static_build_env/jbds/target-platform_trunk
 		DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform_trunk
 		include="*"
@@ -29,7 +30,7 @@ while [ "$#" -gt 0 ]; do
 		'-jbt') 
 		# defaults for JBT (stable branch)
 		targetFile=e361-wtp322.target
-		repoPath=/home/hudson/static_build_env/jbds/tools/sources/REPO
+		repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO
 		destinationPath=/home/hudson/static_build_env/jbds/target-platform
 		DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform
 		include="*"
@@ -38,7 +39,7 @@ while [ "$#" -gt 0 ]; do
 		'-jbds_trunk') 
 		# defaults for JBDS (trunk)
 		targetFile=jbds400-e361-wtp322.target
-		repoPath=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO_trunk
+		repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO_trunk
 		destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform_trunk
 		DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform_trunk
 		include=".blobstore *" # include the .blobstore
@@ -47,7 +48,7 @@ while [ "$#" -gt 0 ]; do
 		'-jbds') 
 		# defaults for JBDS (stable branch)
 		targetFile=jbds400-e361-wtp322.target
-		repoPath=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO
+		repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO
 		destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform
 		DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform
 		include=".blobstore *" # include the .blobstore
@@ -56,18 +57,18 @@ while [ "$#" -gt 0 ]; do
 	esac
 done
 
-if [[ -d ${repoPath} ]]; then
-	cd ${repoPath}
+if [[ -d ${repoDir} ]]; then
+	cd ${repoDir}
 
 	if [[ ! -d ${destinationPath}/${targetFile} ]]; then 
 		mkdir -p ${destinationPath}/${targetFile}
 	fi
-	du -sh ${repoPath} ${destinationPath}/${targetFile}
+	du -sh ${repoDir} ${destinationPath}/${targetFile}
 
 	# copy/update into central place for reuse by local downstream build jobs
 	date; rsync -arzqc --delete-after --delete-excluded --rsh=ssh ${exclude} ${include} ${destinationPath}/${targetFile}/
 
-	du -sh ${repoPath} ${destinationPath}/${targetFile}
+	du -sh ${repoDir} ${destinationPath}/${targetFile}
 
 	# upload to http://download.jboss.org/jbossotools/updates/target-platform/latest/ for public use
 	if [[ ${DESTINATION/@/} == ${DESTINATION} ]]; then # local path, no user@server
