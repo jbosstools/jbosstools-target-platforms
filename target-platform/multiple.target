@@ -157,10 +157,13 @@
 			<unit id="org.eclipse.tm.terminal.feature.group" version="3.0.201.v201008191400-4-8_7w3121192A2511"/>
 			<unit id="org.eclipse.tm.terminal.view.feature.group" version="2.1.0.v201006030830-30-7w312117152351"/>
 			<unit id="org.eclipse.tm.terminal.telnet.feature.group" version="2.0.200.v201005032000-3-8_7w311A1A271116"/>
-			<unit id="org.eclipse.tm.terminal.local.feature.group" version="0.1.0.v201006041240-10-7w312117152433"/>
 			<unit id="org.eclipse.tm.terminal.serial.feature.group" version="2.0.200.v201005032000-3-8Z7w311A16383411"/>
 			<unit id="org.eclipse.tm.terminal.feature.group" version="3.0.201.v201008191400-4-8_7w3121192A2511"/>
 			<unit id="org.eclipse.tm.terminal.ssh.feature.group" version="2.0.200.v201005271030-3-A77w312116382141"/>
+
+			<!-- tm.terminal.local requires cdt.platform 7 -->
+			<unit id="org.eclipse.tm.terminal.local.feature.group" version="0.1.0.v201006041240-10-7w312117152433"/>
+			<unit id="org.eclipse.cdt.platform.feature.group" version="7.0.1.201009141542"/>
 
 			<!-- SAVARA dependencies -->
 			<!-- <unit version="1.2.0.201006151053" id="org.eclipse.stp.bpmn.feature.feature.group"/>
