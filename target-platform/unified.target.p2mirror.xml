@@ -145,8 +145,6 @@
 <iu id="org.eclipse.tm.terminal.serial.feature.group" version=""/>
 <iu id="org.eclipse.tm.terminal.feature.group" version=""/>
 <iu id="org.eclipse.tm.terminal.ssh.feature.group" version=""/>
-<iu id="org.eclipse.tm.terminal.local.feature.group" version=""/>
-<iu id="org.eclipse.cdt.platform.feature.group" version=""/>
 <iu id="org.eclipse.jst.jee" version=""/>
 <iu id="org.eclipse.wst.common.frameworks" version=""/>
 <iu id="org.eclipse.wst.common.project.facet.ui" version=""/>
