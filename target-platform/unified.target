@@ -137,7 +137,6 @@
 			<unit id="org.eclipse.birt.feature.group" version="2.6.1.v20100709a-9iF7A8FGLY4z0pxX3ORrsdrp6JXb"/>
 			<unit id="org.eclipse.datatools.connectivity.feature.feature.group" version="1.8.1.v20100618-7C7b8hEt1ZvtiLkdlO7BVoL_wm6"/>
 			<unit id="org.eclipse.datatools.enablement.feature.feature.group" version="1.8.1.v20100618-7J8x7FBWwUL6z-2z-fcrYC2s55KI"/>
-			<unit id="org.eclipse.datatools.sdk.feature.feature.group" version="1.8.1.v20100618-7P9i7KFDxNYrp4cjPjqnPaRKxeyT"/>
 			<unit id="org.eclipse.datatools.enablement.jdt.feature.feature.group" version="1.8.1.v20100618-2-07w31211518181A"/>
 			<unit id="org.eclipse.datatools.modelbase.feature.feature.group" version="1.8.1.v20100618-77078CcNBGKBZI_FcRd"/>
 			<unit id="org.eclipse.datatools.enablement.apache.derby.feature.feature.group" version="1.8.1.v20100618-77778eBmKDNOMgJvJ8Of7QBR"/>
