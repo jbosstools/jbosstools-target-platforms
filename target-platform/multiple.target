@@ -220,8 +220,8 @@
 			<repository location="http://download.jboss.org/jbosstools/builds/staging/_composite_/trunk/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<unit id="com.google.gdt.eclipse.suite.e36.feature.feature.group" version="1.4.2.v201012211742"/>
-			<unit id="com.google.gwt.eclipse.sdkbundle.e36.feature.2.1.1.feature.group" version="2.1.1.v201012170127"/>
+			<unit version="2.2.0.v201102111811" id="com.google.gdt.eclipse.suite.e36.feature.feature.group"/>
+			<unit version="2.2.0.v201102111811" id="com.google.gwt.eclipse.sdkbundle.e36.feature.2.2.0.feature.group"/>
 			<repository location="http://dl.google.com/eclipse/plugin/3.6/"/>
 		</location>
 
