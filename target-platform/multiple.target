@@ -130,8 +130,7 @@
 			<unit id="org.eclipse.equinox.server.servletbridge.feature.group" version="1.0.0.v20100510-42A79oB5855K5E"/>
 			<unit id="org.eclipse.equinox.server.simple.feature.group" version="1.0.0.v20100510-44DF8s734C48662444"/>
 			<unit id="org.eclipse.rcp.feature.group" version="3.6.2.r362_v20101104-9SAxFLyFkSAqhRGvl2z-fCfimiBL"/>
-			<repository location="http://download.eclipse.org/eclipse/updates/3.6.x/M20110105-0951/"/>
-			<!-- <repository location="http://download.eclipse.org/eclipse/updates/3.6/"/> -->
+			<repository location="http://download.eclipse.org/eclipse/updates/3.6/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit id="org.eclipse.birt.feature.group" version="2.6.1.v20100709a-9iF7A8FGLY4z0pxX3ORrsdrp6JXb"/>

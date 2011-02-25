@@ -41,7 +41,7 @@
 <repository location="http://download.eclipse.org/modeling/emf/emf/updates/2.6/R201009141218/"/>
 <repository location="http://download.eclipse.org/technology/swtbot/helios/dev-build/update-site/"/>
 <repository location="http://download.eclipse.org/birt/update-site/2.6/"/>
-<repository location="http://download.eclipse.org/eclipse/updates/3.6.x/M20110105-0951/"/>
+<repository location="http://download.eclipse.org/eclipse/updates/3.6/"/>
 <repository location="http://download.eclipse.org/releases/helios/"/>
 <repository location="http://download.eclipse.org/webtools/repository/helios/"/>
 <repository location="http://download.jboss.org/jbosstools/builds/staging/_composite_/trunk/"/>
