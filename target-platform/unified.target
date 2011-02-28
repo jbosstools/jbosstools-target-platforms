@@ -201,7 +201,7 @@
 			<unit id="org.eclipse.jst.server_core.feature.feature.group" version="3.2.0.v201005241530-31FA28s73533C66"/>
 			<unit id="org.eclipse.jst.server_ui.feature.feature.group" version="3.2.2.v20100908-7A5FEi9xFc7RCJMToAIOJC43A"/>
 			<unit id="org.eclipse.jst.web_ui.feature.feature.group" version="3.2.3.v201101262333-7F77FJ_C25TkfyypjhqQuxNYsMrJ"/>
-			<unit id="org.eclipse.jsf.feature.source.feature.group" version="3.2.2.v201008231400-7E7I6F9JgLWLMUW3"/>
+			<unit id="org.eclipse.jsf.feature.source.feature.group" version="3.2.1.v20100713-7E7I1F9JgLWLMD_w3114"/>
 			<unit id="org.eclipse.wst.xml.xpath2.processor.feature.feature.group" version="1.1.5.v201009091745-67K2BgJ9DIAXCbBWJO"/>
 			<unit id="org.eclipse.jst.webpageeditor.feature.feature.group" version="2.3.1.v20100906-4609oB5855L6N"/>
 			<unit id="org.eclipse.wst.ws_wsdl15.feature.feature.group" version="1.5.300.v201005241450-2407w312116191741"/>
