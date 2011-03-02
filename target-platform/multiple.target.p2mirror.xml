@@ -39,15 +39,14 @@
 <repository location="http://download.eclipse.org/rt/ecf/3.2/3.6/site.p2"/>
 <repository location="http://download.eclipse.org/tptp/updates/helios/"/>
 <repository location="http://download.eclipse.org/modeling/emf/emf/updates/2.6/R201009141218/"/>
-<repository location="http://download.eclipse.org/technology/swtbot/helios/dev-build/update-site/"/>
 <repository location="http://download.eclipse.org/birt/update-site/2.6/"/>
 <repository location="http://download.eclipse.org/eclipse/updates/3.6/"/>
 <repository location="http://download.eclipse.org/releases/helios/"/>
 <repository location="http://download.eclipse.org/webtools/repository/helios/"/>
 <repository location="http://download.jboss.org/jbosstools/builds/staging/_composite_/trunk/"/>
 <repository location="http://download.jboss.org/jbosstools/updates/requirements/gwt/201012211742/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/requirements/swtbot-helios/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools-3.2/"/>
+<repository location="http://download.jboss.org/jbosstools/updates/requirements/swtbot/2.0.3/"/>
+<repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools/3.2/"/>
 <repository location="http://download.jboss.org/jbosstools/updates/requirements/helios/"/>
 </source>
 <iu id="org.maven.ide.eclipse.feature.feature.group" version=""/>

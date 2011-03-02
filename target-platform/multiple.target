@@ -32,19 +32,11 @@
 			<repository location="http://download.eclipse.org/technology/subversive/0.7/weekly-site/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/R20100519200754/"/>
-		</location>
-		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit id="javax.wsdl.feature.feature.group" version="1.6.2.v201005080631"/>
 			<unit id="org.apache.oro.feature.feature.group" version="2.0.8.v201005080400"/>
 			<unit id="org.jdom.feature.feature.group" version="1.0.0.v201005080400"/>
-			<repository location="http://download.jboss.org/jbosstools/updates/requirements/thirdparty/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/R20100519200754/"/>
 		</location>
-		<!-- <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-<unit id="org.mozilla.xulrunner.feature.feature.group" version="1.9.2"/>
-<unit id="org.mozilla.xpcom.feature.feature.group" version="1.9.2"/>
-<repository location="http://download.jboss.org/jbosstools/updates/requirements/xulrunner-1.9.2/"/>
-</location> -->
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit id="org.mozilla.xulrunner.feature.feature.group" version="1.9.12.v20110120-2050-H36-CR1"/>
 			<unit id="org.mozilla.xpcom.feature.feature.group" version="1.9.12.v20110120-2050-H36-CR1"/>
@@ -87,7 +79,7 @@
 			<unit id="org.eclipse.swtbot.ide.feature.group" version="2.0.2.20110117_1743-b492ddb-dev-e36"/>
 			<unit id="org.eclipse.swtbot.eclipse.test.junit4.feature.group" version="2.0.2.20110117_1743-b492ddb-dev-e36"/>
 			<unit id="org.eclipse.swtbot.feature.group" version="2.0.3.20110219_0655-4d933cf-dev-e36"/>
-			<repository location="http://download.eclipse.org/technology/swtbot/helios/dev-build/update-site/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/requirements/swtbot/2.0.3/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit id="org.eclipse.birt.osgi.runtime.sdk.feature.group" version="2.6.2.r262_v20101008-57B381wLglLKxfjdt881PQeMU42p"/>
@@ -95,7 +87,7 @@
 			<unit id="org.eclipse.birt.integration.wtp.feature.group" version="2.6.1.v20100915-1750-35-7w31211A2602861"/>
 			<unit id="org.eclipse.birt.chart.feature.group" version="2.6.1.v20100709-7f9T7DFQCnv8nz0gRMa6NG1"/>
 			<unit id="org.eclipse.birt.chart.integration.wtp.feature.group" version="2.6.1.v20100915-1750-3507w31211A2602861"/>
-			<repository location="http://download.eclipse.org/birt/update-site/2.6/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/requirements/birt/2.6/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit id="com.ibm.icu.base.feature.group" version="1.1.0.v20090119-79318s73533B57"/>
@@ -174,7 +166,7 @@
 			<unit version="1.4.0.v20100428-2315-479-9oB56N5BBR6LCA6" id="org.eclipse.emf.validation.feature.group"/>
 			<unit version="1.4.0.v20100428-2315-23-7w3121133502768" id="org.eclipse.emf.validation.ocl.feature.group"/>
 			<unit version="2.1.0.v20100606-1530-7A2-AkF7AG8PBU3BRLA" id="org.eclipse.m2m.qvt.oml.runtime.feature.group"/> -->
-			<repository location="http://download.eclipse.org/releases/helios/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/requirements/helios/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit id="org.eclipse.jst.jee" version="1.0.301.v201007151900"/>
@@ -213,7 +205,7 @@
 			<unit id="org.eclipse.wst.web_core.feature.feature.group" version="3.2.3.v201102160541-7E7AFI3AJrn5TN32vSJ8nRIWLD7_"/>
 			<unit id="org.eclipse.wst.ws_ui.feature.feature.group" version="3.2.3.v201102160541-7I78FZIEtEoO2d7AsK6jSNqC-8jj"/>
 			<unit id="org.eclipse.wst.xml_core.feature.feature.group" version="3.2.2.v201008170029-7C7OFXYF7RZHQHI5PyJwPT"/>
-			<repository location="http://download.eclipse.org/webtools/repository/helios/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools/3.2/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<repository location="http://download.jboss.org/jbosstools/builds/staging/_composite_/trunk/"/>
@@ -223,17 +215,6 @@
 			<unit id="com.google.gwt.eclipse.sdkbundle.e36.feature.2.1.1.feature.group" version="2.1.1.v201012170127"/>
 			<!-- <repository location="http://dl.google.com/eclipse/plugin/3.6/"/> -->
 			<repository location="http://download.jboss.org/jbosstools/updates/requirements/gwt/201012211742/"/>
-		</location>
-
-		<!-- additional JBoss.org mirrors -->
-		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<repository location="http://download.jboss.org/jbosstools/updates/requirements/swtbot-helios/"/>
-		</location>
-		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools-3.2/"/>
-		</location>
-		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<repository location="http://download.jboss.org/jbosstools/updates/requirements/helios/"/>
 		</location>
 	</locations>
 	<includeBundles>
