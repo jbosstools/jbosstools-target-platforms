@@ -155,9 +155,9 @@ To run for JBDS target file instead of JBT target files, pass in alternate targe
 		</if>
 
 		<!-- purge previous eclipse install to avoid conflicts w/ Eclipse feature versions -->
-		<delete dir="${WORKINGDIR}/eclipse" includeemptydirs="true" quiet="true" />
+		<delete dir="${WORKINGDIR}/eclipse-${eclipse.version}" includeemptydirs="true" quiet="true" />
 
-		<untar compression="gzip" dest="${WORKINGDIR}" src="${WORKINGDIR}/${eclipse.file}" overwrite="true" />
+		<untar compression="gzip" dest="${WORKINGDIR}/eclipse-${eclipse.version}" src="${WORKINGDIR}/${eclipse.file}" overwrite="true" />
 
 		<!-- add 70M delta pack, eg. http://download.eclipse.org/eclipse/downloads/drops/M20101006-0936/download.php?dropFile=eclipse-M20101006-0936-delta-pack.zip -->
 		<!-- ONLY need deltapack if using -Dtycho.targetPlatform, which is now depredated
@@ -174,7 +174,7 @@ To run for JBDS target file instead of JBT target files, pass in alternate targe
 		-->
 
 		<!-- make eclipse executable -->
-		<chmod perm="+x" file="${WORKINGDIR}/eclipse/eclipse" />
+		<chmod perm="+x" file="${WORKINGDIR}/eclipse-${eclipse.version}/eclipse/eclipse" />
 
 	</target>
 
@@ -185,7 +185,7 @@ To run for JBDS target file instead of JBT target files, pass in alternate targe
 	<!-- /abs/path/to/eclipse -vm /opt/jdk1.6.0/bin/java -nosplash -data /tmp/workspace -consolelog -application 
 			org.eclipse.ant.core.antRunner -f *.target.p2mirror.xml -Ddebug=true -DfollowStrict=true -DrepoDir=/tmp/REPO/ -->
 	<target name="run.p2mirror.script" description="build target update site using p2.mirror">
-		<exec executable="${WORKINGDIR}/eclipse/eclipse" dir="${basedir}">
+		<exec executable="${WORKINGDIR}/eclipse-${eclipse.version}/eclipse/eclipse" dir="${basedir}">
 			<arg line=" -nosplash -data ${tmpdir}/workspace -consolelog -application org.eclipse.ant.core.antRunner" />
 			<arg line=" -f ${targetFile}.p2mirror.xml -DfollowStrict=true -DrepoDir=${repoDir}" />
 			<arg line=" -Ddebug=true" />
