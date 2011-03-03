@@ -35,9 +35,9 @@
 			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<unit id="javax.wsdl.feature.feature.group" version="1.6.2.v201005080631"/>
-			<unit id="org.apache.oro.feature.feature.group" version="2.0.8.v201005080400"/>
-			<unit id="org.jdom.feature.feature.group" version="1.0.0.v201005080400"/>
+			<unit id="javax.wsdl" version="1.6.2.v201005080631"/>
+			<unit id="org.apache.oro" version="2.0.8.v201005080400"/>
+			<unit id="org.jdom" version="1.0.0.v201005080400"/>
 			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 		<!-- <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">

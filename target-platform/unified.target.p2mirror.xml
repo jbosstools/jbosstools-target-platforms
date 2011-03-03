@@ -52,9 +52,9 @@
 </source>
 <iu id="org.maven.ide.eclipse.feature.feature.group" version=""/>
 <iu id="org.maven.ide.eclipse.wtp.feature.feature.group" version=""/>
-<iu id="javax.wsdl.feature.feature.group" version=""/>
-<iu id="org.apache.oro.feature.feature.group" version=""/>
-<iu id="org.jdom.feature.feature.group" version=""/>
+<iu id="javax.wsdl" version=""/>
+<iu id="org.apache.oro" version=""/>
+<iu id="org.jdom" version=""/>
 <iu id="org.mozilla.xulrunner.feature.feature.group" version=""/>
 <iu id="org.mozilla.xpcom.feature.feature.group" version=""/>
 <iu id="org.eclipse.tptp.platform.profile.server.feature.group" version=""/>
