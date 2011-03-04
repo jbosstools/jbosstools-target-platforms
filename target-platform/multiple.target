@@ -22,12 +22,6 @@
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<repository location="http://www.polarion.org/projects/subversive/download/eclipse/2.0/update-site/"/>
 		</location>
-		<!-- <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-<repository location="http://download.eclipse.org/technology/subversive/0.7/update-site/"/>
-</location>
-<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-<repository location="http://download.eclipse.org/technology/subversive/0.7/headless-update-site/"/>
-</location> -->
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<repository location="http://download.eclipse.org/technology/subversive/0.7/weekly-site/"/>
 		</location>
@@ -46,17 +40,17 @@
 			<repository location="http://download.eclipse.org/rt/ecf/3.2/3.6/site.p2"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<unit id="org.eclipse.tptp.platform.profile.server.feature.group" version="4.5.1.v201009092123-7H7F3AkF7B79N8WCTEH"/>
+			<unit id="org.eclipse.tptp.platform.profile.server.feature.group" version="4.5.2.v201101261720-7H7F4AkF7B88MAQCKJH"/>
 			<unit id="org.eclipse.tptp.platform.instrumentation.ui.feature.group" version="4.3.2.v201101261720-797918s735435695C83"/>
 			<unit id="org.eclipse.tptp.platform.core.feature.group" version="4.7.2.v201101261720-8X8ZFXoFLWUl6wn5veAISx"/>
-			<unit id="org.eclipse.tptp.platform.jvmti.feature.group" version="4.5.1.v201009092123-797A38s7354466855B7"/>
+			<unit id="org.eclipse.tptp.platform.jvmti.feature.group" version="4.5.2.v201101261720-797A48s735536585A93"/>
 			<unit id="org.eclipse.tptp.platform.trace.feature.group" version="4.5.2.v201101261720-7L7O8fBgJ9EC9NDREaF9"/>
 			<unit id="org.eclipse.tptp.platform.xerces.feature.group" version="4.6.0.v201005032111-777K4AkF7B77R7c7N77"/>
 			<unit id="org.eclipse.tptp.platform.instrumentation.ui.feature.group" version="4.3.2.v201101261720-797918s735435695C83"/>
 			<unit id="org.eclipse.tptp.platform.probekit.feature.group" version="4.5.2.v201101271120-7H7BF8QAkF7B87RBVCFFD"/>
 			<unit id="org.eclipse.tptp.platform.commons.logging.feature.group" version="4.5.0.v201005032111-2-37w312116191612"/>
 			<unit id="org.eclipse.tptp.platform.jakarta.log4j.feature.group" version="4.5.0.v201005032111-217E7w312116191611"/>
-			<repository location="http://download.eclipse.org/tptp/updates/helios/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/helios/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit id="org.eclipse.emf.ecore.feature.group" version="2.6.1.v20100914-1218"/>
@@ -74,46 +68,46 @@
 			<repository location="http://download.eclipse.org/modeling/emf/emf/updates/2.6/R201009141218/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<unit id="org.eclipse.swtbot.eclipse.feature.group" version="2.0.2.20110117_1743-b492ddb-dev-e36"/>
+			<unit id="org.eclipse.swtbot.eclipse.feature.group" version="2.0.3.20110219_0655-4d933cf-dev-e36"/>
 			<unit id="org.eclipse.swtbot.eclipse.gef.feature.group" version="2.0.3.20110219_0655-4d933cf-dev-e36"/>
-			<unit id="org.eclipse.swtbot.ide.feature.group" version="2.0.2.20110117_1743-b492ddb-dev-e36"/>
-			<unit id="org.eclipse.swtbot.eclipse.test.junit4.feature.group" version="2.0.2.20110117_1743-b492ddb-dev-e36"/>
+			<unit id="org.eclipse.swtbot.ide.feature.group" version="2.0.3.20110219_0655-4d933cf-dev-e36"/>
+			<unit id="org.eclipse.swtbot.eclipse.test.junit4.feature.group" version="2.0.3.20110219_0655-4d933cf-dev-e36"/>
 			<unit id="org.eclipse.swtbot.feature.group" version="2.0.3.20110219_0655-4d933cf-dev-e36"/>
 			<repository location="http://download.jboss.org/jbosstools/updates/requirements/swtbot/2.0.3/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit id="org.eclipse.birt.osgi.runtime.sdk.feature.group" version="2.6.2.r262_v20101008-57B381wLglLKxfjdt881PQeMU42p"/>
-			<unit id="org.eclipse.birt.feature.group" version="2.6.1.v20100709a-9iF7A8FGLY4z0pxX3ORrsdrp6JXb"/>
-			<unit id="org.eclipse.birt.integration.wtp.feature.group" version="2.6.1.v20100915-1750-35-7w31211A2602861"/>
-			<unit id="org.eclipse.birt.chart.feature.group" version="2.6.1.v20100709-7f9T7DFQCnv8nz0gRMa6NG1"/>
-			<unit id="org.eclipse.birt.chart.integration.wtp.feature.group" version="2.6.1.v20100915-1750-3507w31211A2602861"/>
+			<unit id="org.eclipse.birt.feature.group" version="2.6.2.r262_v20101008-9iF7A9JGHMBCRz-R8tbxRel8kQrI"/>
+			<unit id="org.eclipse.birt.integration.wtp.feature.group" version="2.6.2.v20110215-1647-3517w3122132602758"/>
+			<unit id="org.eclipse.birt.chart.feature.group" version="2.6.2.r262_v20101008-7f9T7OFPWowQ1naKt1Wwu4"/>
+			<unit id="org.eclipse.birt.chart.integration.wtp.feature.group" version="2.6.2.v20110215-1647-3517w3122132602758"/>
 			<repository location="http://download.jboss.org/jbosstools/updates/requirements/birt/2.6/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit id="com.ibm.icu.base.feature.group" version="1.1.0.v20090119-79318s73533B57"/>
-			<unit id="org.eclipse.equinox.server.core.feature.group" version="1.0.1.R36x_v20101007-7K7QEtDVci4YrnH_79P9K"/>
-			<unit id="org.eclipse.cvs.feature.group" version="1.2.0.v20100427-7B77FKt90GE5h0SBT5FV9A01911"/>
-			<unit id="org.eclipse.help.feature.group" version="1.2.1.r362_v20101111-7e7jEVFDr6xg-LRkH_6-2D"/>
+			<unit id="org.eclipse.equinox.server.core.feature.group" version="1.0.1.R36x_v20101007-7K7QEtDVci4YrnH_88QAH"/>
+			<unit id="org.eclipse.cvs.feature.group" version="1.2.1.r362_v20101111-7B77FKv99HL0GvIAF99I8H14B7E"/>
+			<unit id="org.eclipse.help.feature.group" version="1.2.1.r362_v20101111-7e7jEVFDr6xg-LSlC_z0w1D"/>
 			<unit id="org.eclipse.jdt.feature.group" version="3.6.2.r362_v20101117-0800-7z8XFW6FLFlmjJcvz03jyeFBLS_F"/>
 			<unit id="org.eclipse.platform.feature.group" version="3.6.2.r362_v20110210-9gF78Gs1FrIGnHDHWkEcopoN8AmxeZflGDGKQi"/>
-			<unit id="org.eclipse.platform.ide" version="3.6.2.M20110105-0951"/>
-			<unit id="org.eclipse.equinox.executable.feature.group" version="3.4.1.R36x_v20100823-7M7K7JF90dnJ-WLf3cf4yi"/>
-			<unit id="org.eclipse.platform.sdk" version="3.6.2.M20110105-0951"/>
-			<unit id="org.eclipse.pde.feature.group" version="3.6.1.r361_v20100727-7b7mFL1FET3dhFTug95aglL"/>
+			<unit id="org.eclipse.platform.ide" version="3.6.2.M20110210-1200"/>
+			<unit id="org.eclipse.equinox.executable.feature.group" version="3.4.2.R36x_v20110125-7N7K7bF8zk1BAKMh0iz0t94miBLY"/>
+			<unit id="org.eclipse.platform.sdk" version="3.6.2.M20110210-1200"/>
+			<unit id="org.eclipse.pde.feature.group" version="3.6.2.r362_v20110203-7b7mFL2FET3dhHalh1iNZtL"/>
 			<unit id="org.eclipse.sdk.feature.group" version="3.6.2.r362_v20100929-7Q7m7HD5cWlFgdCBHllpZMd2M468sbnm2RJvUWIbiJnWC"/>
-			<unit id="org.eclipse.rcp.id" version="3.6.0.M20100909-0800"/>
-			<unit id="org.eclipse.rcp.sdk.id" version="3.6.0.M20100909-0800"/>
+			<unit id="org.eclipse.rcp.id" version="3.6.0.M20110210-1200"/>
+			<unit id="org.eclipse.rcp.sdk.id" version="3.6.0.M20110210-1200"/>
 			<unit id="org.eclipse.releng.tools.feature.group" version="3.3.0.v20100427-44A77w31211642"/>
-			<unit id="org.eclipse.sdk.ide" version="3.6.1.M20100909-0800"/>
+			<unit id="org.eclipse.sdk.ide" version="3.6.2.M20110210-1200"/>
 			<unit id="org.eclipse.sdk.examples.feature.group" version="3.3.1.r362_v20101014-817fFcgFE_daeVKiesDUeYc"/>
-			<unit id="org.eclipse.sdk.examples.source.feature.group" version="3.3.0.v20100527"/>
+			<unit id="org.eclipse.sdk.examples.source.feature.group" version="3.3.1.r362_v20101014"/>
 			<unit id="org.eclipse.equinox.compendium.sdk.feature.group" version="3.6.1.R36x_v20101014-7V7RFiwFLSgEt4Pctn77c7J"/>
 			<unit id="org.eclipse.equinox.core.sdk.feature.group" version="3.6.1.r36x_v20110210-7sF99FsNFS-Ci4TSP4RDFHLIA5B3"/>
-			<unit id="org.eclipse.equinox.p2.discovery.feature.feature.group" version="1.0.0.v20100510-4--9oB5855K7P"/>
-			<unit id="org.eclipse.equinox.p2.user.ui.feature.group" version="2.0.1.r361_v20100903-897HFZFFZRuSD2LMtVxyz0Vr"/>
-			<unit id="org.eclipse.equinox.p2.sdk.feature.group" version="3.6.0.v20100503-9I7VGAeG8tz-BY6jz0w2HLRYr"/>
-			<unit id="org.eclipse.equinox.serverside.sdk.feature.group" version="3.6.1.R36x_v20101014-7u7NFVmFL9O33b-_gENgz0SvfGYz"/>
-			<unit id="org.eclipse.equinox.sdk.feature.group" version="3.6.1.r361_v20100903-7H7R07v8rtOZyYbv1I6aZgou5z07"/>
+			<unit id="org.eclipse.equinox.p2.discovery.feature.feature.group" version="1.0.1.R36x_v20110210-4-09oB5865H6L02434"/>
+			<unit id="org.eclipse.equinox.p2.user.ui.feature.group" version="2.0.1.r361_v20100903-897HFa-FX0z-z-ntoaavz0JPX628"/>
+			<unit id="org.eclipse.equinox.p2.sdk.feature.group" version="3.6.2.R36x_v20110120-9I7VGEAG438GhnfSLuLz0FXP9NYJ"/>
+			<unit id="org.eclipse.equinox.serverside.sdk.feature.group" version="3.6.1.R36x_v20101014-7u7NFVmFL9O33b1CgDPjCI2jWYYn"/>
+			<unit id="org.eclipse.equinox.sdk.feature.group" version="3.6.2.r362_v20110210b-7H7R67v9rtOv_dTCawtb0WQnN92B"/>
 			<unit id="org.eclipse.equinox.weaving.sdk.feature.group" version="1.0.0.v20100421-79--EVVFNFFsFc"/>
 			<unit id="org.eclipse.equinox.server.jetty.feature.group" version="1.0.0.v20100510-7I777iBgJ9DIARGH8IIQ"/>
 			<unit id="org.eclipse.equinox.server.p2.feature.group" version="1.0.1.R36x_v20101007-7x7IFI3FOf7yk63X6z0kz-Z2T158"/>
@@ -125,18 +119,18 @@
 			<repository location="http://download.eclipse.org/eclipse/updates/3.6/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<unit id="org.eclipse.birt.feature.group" version="2.6.1.v20100709a-9iF7A8FGLY4z0pxX3ORrsdrp6JXb"/>
-			<unit id="org.eclipse.datatools.connectivity.feature.feature.group" version="1.8.1.v20100618-7C7b8hEt1ZvtiLkdlO7BVoL_wm6"/>
-			<unit id="org.eclipse.datatools.enablement.feature.feature.group" version="1.8.1.v20100618-7J8x7FBWwUL6z-2z-fcrYC2s55KI"/>
+			<unit id="org.eclipse.birt.feature.group" version="2.6.2.r262_v20101008-9iF7A9JGHMBCRz-R8tbxRel8kQrI"/>
+			<unit id="org.eclipse.datatools.connectivity.feature.feature.group" version="1.8.2.v201010181125-7C7b8mEt1Zwkn9kfkUHHsoP_3to"/>
+			<unit id="org.eclipse.datatools.enablement.feature.feature.group" version="1.8.2.v201010181125-7J8x7UBWwUN6z02z-fiI_w4x4uLf"/>
 			<unit id="org.eclipse.datatools.enablement.jdt.feature.feature.group" version="1.8.2.v201010181125-2-07w31211518181A"/>
 			<unit id="org.eclipse.datatools.modelbase.feature.feature.group" version="1.8.2.v201010181125-77078CcNBGKBZI_FcRd"/>
 			<unit id="org.eclipse.datatools.enablement.apache.derby.feature.feature.group" version="1.8.2.v201010181125-77778fBmKDNOMgJvJ8Of7QBR"/>
 			<unit id="org.eclipse.draw2d.feature.group" version="3.6.2.v20110128-0100-4517w3122123901211"/>
-			<unit id="org.eclipse.gef.feature.group" version="3.6.1.v20100908-1100-777B181A3Bz-6B663E7974242"/>
-			<unit id="org.eclipse.zest.feature.group" version="1.2.0.v20100519-2050-67808yE5F-8HAH4HECF4242"/>
+			<unit id="org.eclipse.gef.feature.group" version="3.6.2.v20110128-0100-777B381A4Bz06565376E32322"/>
+			<unit id="org.eclipse.zest.feature.group" version="1.2.0.v20100519-2050-67818yE6F-AA7P4B8I52322"/>
 			<unit id="org.eclipse.uml2.feature.group" version="3.1.2.v201010261927"/>
 
-			<unit id="org.eclipse.rse.feature.group" version="3.2.1.v201008191400-7L78FA-8wqbPcNj4qa8R0eViy7vZ"/>
+			<unit id="org.eclipse.rse.feature.group" version="3.2.2.R32x_v201102130925-7L78FA58SreKCHr_JG7UA8bra19p"/>
 			<unit id="org.eclipse.rse.ssh.feature.group" version="3.0.100.v201005221100-7A2BhAkF77g7VEYDG7C"/>
 			<unit id="org.eclipse.rse.terminals.feature.group" version="1.0.102.R32x_v201102011435-77-DI9uCFjNZVBGlDNC332423365"/>
 			<unit id="org.eclipse.rse.telnet.feature.group" version="2.2.100.v201005221100-7730AkF77g7UDXELEF"/>
@@ -166,10 +160,10 @@
 			<unit version="1.4.0.v20100428-2315-479-9oB56N5BBR6LCA6" id="org.eclipse.emf.validation.feature.group"/>
 			<unit version="1.4.0.v20100428-2315-23-7w3121133502768" id="org.eclipse.emf.validation.ocl.feature.group"/>
 			<unit version="2.1.0.v20100606-1530-7A2-AkF7AG8PBU3BRLA" id="org.eclipse.m2m.qvt.oml.runtime.feature.group"/> -->
-			<repository location="http://download.jboss.org/jbosstools/updates/requirements/helios/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/helios/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<unit id="org.eclipse.jst.jee" version="1.0.301.v201007151900"/>
+			<unit id="org.eclipse.jst.jee" version="1.0.302.v201101122300"/>
 			<unit id="org.eclipse.wst.common.frameworks" version="1.2.0.v201003040800"/>
 			<unit id="org.eclipse.wst.common.project.facet.ui" version="1.4.103.v201101271715"/>
 			<unit id="org.eclipse.jst.jee.web" version="1.0.301.v201007070907"/>
@@ -177,41 +171,41 @@
 
 			<unit id="org.eclipse.jst.ws.axis2tools.feature.feature.group" version="1.1.100.v201005241530-78-FF0DZRDKDDePSKwHj"/>
 			<unit id="org.eclipse.jst.ws.cxf.feature.feature.group" version="1.0.2.v201008232129-7H777DFAKlRiOX8lGdRoz0878J"/>
-			<unit id="org.eclipse.jpt.feature.feature.group" version="2.3.2.v201008242310-7N7UF75FD3wTgbUpoff0aT"/>
-			<unit id="org.eclipse.wst.common.fproj.feature.group" version="3.2.2.v201008170019-377AB8s73533J5H335L"/>
-			<unit id="org.eclipse.jst.enterprise_ui.feature.feature.group" version="3.2.2.v201008190400-7b7GHf2FSK2WBLQ2D-mrubYEOrRh"/>
+			<unit id="org.eclipse.jpt.feature.feature.group" version="2.3.3.v201010220000-7N7UF77FD3wTgcVbmmf0cT"/>
+			<unit id="org.eclipse.wst.common.fproj.feature.group" version="3.2.3.v201101121727-377AC8s73543C6H4A5H"/>
+			<unit id="org.eclipse.jst.enterprise_ui.feature.feature.group" version="3.2.3.v201011031800-7b7GHfIFSK2WBRT6E1mcyFXGPnSh"/>
 			<unit id="org.eclipse.wst.web_ui.feature.feature.group" version="3.2.3.v201102160541-7O7CFbWEMf84qYjGDyP3DNEwcgFU"/>
-			<unit id="org.eclipse.wst.xml_ui.feature.feature.group" version="3.2.2.v201008170029-7H7AFUQDxumQGOpBqffOY2f1qxDZ"/>
-			<unit id="org.eclipse.wst.xsl.feature.feature.group" version="1.1.2.v201009091745-7S7WFAPFIpS-1-NbCE6tnacCXKP"/>
-			<unit id="org.eclipse.wst.jsdt.feature.feature.group" version="1.2.2.v201008170101-7C78FGMF9JgLWLMUUEMtXc"/>
-			<unit id="org.eclipse.jsf.feature.feature.group" version="3.2.2.v201008231400-7E7I6F9JgLWLMUW3"/>
+			<unit id="org.eclipse.wst.xml_ui.feature.feature.group" version="3.2.3.v201102160550-7H7AFUWDxumQJOi9ghcTb5YgkwEZ"/>
+			<unit id="org.eclipse.wst.xsl.feature.feature.group" version="1.1.3.v201102102045-7S7WFASFIpS-21NUD58xfPVDTLR"/>
+			<unit id="org.eclipse.wst.jsdt.feature.feature.group" version="1.2.3.v201102160540-7C78FGUF9JgLWNO2UCNqfa"/>
+			<unit id="org.eclipse.jsf.feature.feature.group" version="3.2.3.v201101112207-7E7I7BF9JgLWPMz0VyDEHH"/>
 			<unit id="org.eclipse.jst.ws.jaxws.dom.feature.feature.group" version="1.0.0.v201005241530-5--AkF7B77NBZBgBg"/>
 			<unit id="org.eclipse.jst.ws.jaxws.feature.feature.group" version="1.0.1.v201008232129-7E777CF8NcJSSK-UBTwXn"/>
-			<unit id="org.eclipse.jst.enterprise_core.feature.feature.group" version="3.2.1.v201007070821-52FMTAkF7B77UBR7W98"/>
-			<unit id="org.eclipse.jst.server_adapters.ext.feature.feature.group" version="3.2.2.v20100818b-777HFGRCcNBDiBjIbhBA8"/>
+			<unit id="org.eclipse.jst.enterprise_core.feature.feature.group" version="3.2.3.v201102071500-52FMUAkF7B87PAT8SA8"/>
+			<unit id="org.eclipse.jst.server_adapters.ext.feature.feature.group" version="3.2.3.v20110111-777HFGSCcNBDjBdHV4BA8"/>
 			<unit id="org.eclipse.jst.server_adapters.feature.feature.group" version="3.2.0.v201005241530-208Z7w31211419"/>
 			<unit id="org.eclipse.jst.server_core.feature.feature.group" version="3.2.0.v201005241530-31FA28s73533C66"/>
 			<unit id="org.eclipse.jst.server_ui.feature.feature.group" version="3.2.2.v20100908-7A5FEi9xFc7RCJMToAIOJC43A"/>
 			<unit id="org.eclipse.jst.web_ui.feature.feature.group" version="3.2.3.v201101262333-7F77FJ_C25TkfyypjhqQuxNYsMrJ"/>
-			<unit id="org.eclipse.jsf.feature.source.feature.group" version="3.2.2.v201008231400-7E7I6F9JgLWLMUW3"/>
-			<unit id="org.eclipse.wst.xml.xpath2.processor.feature.feature.group" version="1.1.5.v201009091745-67K2BgJ9DIAXCbBWJO"/>
-			<unit id="org.eclipse.jst.webpageeditor.feature.feature.group" version="2.3.1.v20100906-4609oB5855L6N"/>
+			<unit id="org.eclipse.jsf.feature.source.feature.group" version="3.2.3.v201101112207-7E7I7BF9JgLWPMz0VyDEHH"/>
+			<unit id="org.eclipse.wst.xml.xpath2.processor.feature.feature.group" version="1.1.6.v201101212357-67K3BgJ9DJAPEUCSKQ"/>
+			<unit id="org.eclipse.jst.webpageeditor.feature.feature.group" version="2.3.2.v201101112207-4619oB5865D8I2331"/>
 			<unit id="org.eclipse.wst.ws_wsdl15.feature.feature.group" version="1.5.300.v201005241450-2407w312116191741"/>
 			<unit id="org.eclipse.wst.common_core.feature.feature.group" version="3.2.3.v201011031800-7B7DFEsF7RZHOaLfS0KpNJ"/>
 			<unit id="org.eclipse.wst.common_ui.feature.feature.group" version="3.2.3.v201011031800-7C78FPlEdhO_oXWe4k_elbMgT1Lq"/>
 			<unit id="org.eclipse.wst.server_adapters.feature.feature.group" version="3.2.0.v201005241510-51EoAkF77g8HBSc"/>
-			<unit id="org.eclipse.wst.server_core.feature.feature.group" version="3.2.2.v20100908-30F8V8s734C3I3K"/>
+			<unit id="org.eclipse.wst.server_core.feature.feature.group" version="3.2.3.v20101104-30F8X8s734D3A4C"/>
 			<unit id="org.eclipse.wst.server_ui.feature.feature.group" version="3.2.3.v20101104-7B4FBuAtJb1qEKLnCKHHHI347"/>
 			<unit id="org.eclipse.wst.web_core.feature.feature.group" version="3.2.3.v201102160541-7E7AFI3AJrn5TN32vSJ8nRIWLD7_"/>
 			<unit id="org.eclipse.wst.ws_ui.feature.feature.group" version="3.2.3.v201102160541-7I78FZIEtEoO2d7AsK6jSNqC-8jj"/>
-			<unit id="org.eclipse.wst.xml_core.feature.feature.group" version="3.2.2.v201008170029-7C7OFXYF7RZHQHI5PyJwPT"/>
+			<unit id="org.eclipse.wst.xml_core.feature.feature.group" version="3.2.3.v201102160550-7C7OFXcF7RZHQKIkMxMsW_"/>
 			<repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools/3.2/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<repository location="http://download.jboss.org/jbosstools/builds/staging/_composite_/trunk/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<unit id="com.google.gdt.eclipse.suite.e36.feature.feature.group" version="2.2.0.v201102111811"/>
+			<unit id="com.google.gdt.eclipse.suite.e36.feature.feature.group" version="1.4.2.v201012211742"/>
 			<unit id="com.google.gwt.eclipse.sdkbundle.e36.feature.2.1.1.feature.group" version="2.1.1.v201012170127"/>
 			<!-- <repository location="http://dl.google.com/eclipse/plugin/3.6/"/> -->
 			<repository location="http://download.jboss.org/jbosstools/updates/requirements/gwt/201012211742/"/>
