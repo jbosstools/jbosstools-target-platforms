@@ -1,5 +1,5 @@
 <project default="custom.build" name="jbosstools target platform p2.mirror generator">
-	<property name="targetFile" value="e361-wtp322.target" />
+	<property name="targetFile" value="e362-wtp323.target" />
 
 	<!-- if useLatest = true, omit versions from p2.mirror script to fetch latest version available; 
 		 if useLatest = false, include versions and fetch specific versions requested. -->
