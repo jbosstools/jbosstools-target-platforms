@@ -45,10 +45,6 @@
 <repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 <repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 <repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 </source>
 <iu id="org.maven.ide.eclipse.feature.feature.group" version=""/>
 <iu id="org.maven.ide.eclipse.wtp.feature.feature.group" version=""/>
@@ -127,6 +123,7 @@
 <iu id="org.eclipse.datatools.enablement.jdt.feature.feature.group" version=""/>
 <iu id="org.eclipse.datatools.modelbase.feature.feature.group" version=""/>
 <iu id="org.eclipse.datatools.enablement.apache.derby.feature.feature.group" version=""/>
+<iu id="org.eclipse.datatools.sqldevtools.sqlbuilder.feature.feature.group" version=""/>
 <iu id="org.eclipse.draw2d.feature.group" version=""/>
 <iu id="org.eclipse.gef.feature.group" version=""/>
 <iu id="org.eclipse.zest.feature.group" version=""/>

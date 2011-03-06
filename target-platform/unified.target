@@ -26,6 +26,9 @@
 			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+			<!-- want the latest, 1.6.2.v201005080631, not 1.5.1.v201005080630 -->
+			<!-- <unit id="javax.wsdl" version="1.6.2.v201005080631"/>
+			<unit id="javax.wsdl" version="1.5.1.v201005080630"/> -->
 			<unit id="javax.wsdl" version="1.6.2.v201005080631"/>
 			<unit id="org.apache.oro" version="2.0.8.v201005080400"/>
 			<unit id="org.jdom" version="1.0.0.v201005080400"/>
@@ -125,6 +128,8 @@
 			<unit id="org.eclipse.datatools.enablement.jdt.feature.feature.group" version="1.8.2.v201010181125-2-07w31211518181A"/>
 			<unit id="org.eclipse.datatools.modelbase.feature.feature.group" version="1.8.2.v201010181125-77078CcNBGKBZI_FcRd"/>
 			<unit id="org.eclipse.datatools.enablement.apache.derby.feature.feature.group" version="1.8.2.v201010181125-77778fBmKDNOMgJvJ8Of7QBR"/>
+			<unit id="org.eclipse.datatools.sqldevtools.sqlbuilder.feature.feature.group" version="1.8.2.v201010181125-79-4EVVFJoFwKcN-L_"/>
+
 			<unit id="org.eclipse.draw2d.feature.group" version="3.6.2.v20110128-0100-4517w3122123901211"/>
 			<unit id="org.eclipse.gef.feature.group" version="3.6.2.v20110128-0100-777B381A4Bz06565376E32322"/>
 			<unit id="org.eclipse.zest.feature.group" version="1.2.0.v20100519-2050-67818yE6F-AA7P4B8I52322"/>
