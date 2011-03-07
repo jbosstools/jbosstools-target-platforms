@@ -206,7 +206,7 @@
 			<unit id="org.eclipse.wst.web_core.feature.feature.group" version="3.2.3.v201102160541-7E7AFI3AJrn5TN32vSJ8nRIWLD7_"/>
 			<unit id="org.eclipse.wst.ws_ui.feature.feature.group" version="3.2.3.v201102160541-7I78FZIEtEoO2d7AsK6jSNqC-8jj"/>
 			<unit id="org.eclipse.wst.xml_core.feature.feature.group" version="3.2.3.v201102160550-7C7OFXcF7RZHQKIkMxMsW_"/>
-			<repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools/3.2/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools/3.2.3/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<repository location="http://download.jboss.org/jbosstools/builds/staging/_composite_/trunk/"/>

@@ -42,7 +42,7 @@
 <repository location="http://download.jboss.org/jbosstools/updates/requirements/birt/2.6.2/"/>
 <repository location="http://download.eclipse.org/eclipse/updates/3.6/"/>
 <repository location="http://download.jboss.org/jbosstools/updates/helios/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools/3.2/"/>
+<repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools/3.2.3/"/>
 <repository location="http://download.jboss.org/jbosstools/builds/staging/_composite_/trunk/"/>
 <repository location="http://download.jboss.org/jbosstools/updates/requirements/gwt/201012211742/"/>
 </source>
