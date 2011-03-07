@@ -39,7 +39,7 @@
 <repository location="http://download.jboss.org/jbosstools/updates/helios/"/>
 <repository location="http://download.eclipse.org/modeling/emf/emf/updates/2.6/R201009141218/"/>
 <repository location="http://download.jboss.org/jbosstools/updates/requirements/swtbot/2.0.3/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/requirements/birt/2.6/"/>
+<repository location="http://download.jboss.org/jbosstools/updates/requirements/birt/2.6.2/"/>
 <repository location="http://download.eclipse.org/eclipse/updates/3.6/"/>
 <repository location="http://download.jboss.org/jbosstools/updates/helios/"/>
 <repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools/3.2/"/>

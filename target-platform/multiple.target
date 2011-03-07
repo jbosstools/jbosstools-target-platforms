@@ -29,7 +29,7 @@
 			<!-- want the latest, 1.6.2.v201005080631, not 1.5.1.v201005080630 -->
 			<!-- <unit id="javax.wsdl" version="1.6.2.v201005080631"/>
 			<unit id="javax.wsdl" version="1.5.1.v201005080630"/> -->
-			<unit id="javax.wsdl" version="1.6.2.v201005080631"/>
+			<unit id="javax.wsdl" version="1.5.1.v201005080630"/>
 			<unit id="org.apache.oro" version="2.0.8.v201005080400"/>
 			<unit id="org.jdom" version="1.0.0.v201005080400"/>
 			<repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/R20100519200754/"/>
@@ -84,7 +84,7 @@
 			<unit id="org.eclipse.birt.integration.wtp.feature.group" version="2.6.2.v20110215-1647-3517w3122132602758"/>
 			<unit id="org.eclipse.birt.chart.feature.group" version="2.6.2.r262_v20101008-7f9T7OFPWowQ1naKt1Wwu4"/>
 			<unit id="org.eclipse.birt.chart.integration.wtp.feature.group" version="2.6.2.v20110215-1647-3517w3122132602758"/>
-			<repository location="http://download.jboss.org/jbosstools/updates/requirements/birt/2.6/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/requirements/birt/2.6.2/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit id="com.ibm.icu.base.feature.group" version="1.1.0.v20090119-79318s73533B57"/>
@@ -129,8 +129,8 @@
 			<unit id="org.eclipse.datatools.modelbase.feature.feature.group" version="1.8.2.v201010181125-77078CcNBGKBZI_FcRd"/>
 			<unit id="org.eclipse.datatools.enablement.apache.derby.feature.feature.group" version="1.8.2.v201010181125-77778fBmKDNOMgJvJ8Of7QBR"/>
 			<unit id="org.eclipse.datatools.sqldevtools.sqlbuilder.feature.feature.group" version="1.8.2.v201010181125-79-4EVVFJoFwKcN-L_"/>
-			<unit id="org.eclipse.datatools.sqldevtools.results.feature.feature.group" version="1.8.0.v201005280400-42-9oB57E5L9K7LAD"/>
-			<unit id="org.eclipse.datatools.sqldevtools.feature.feature.group" version="1.0.0.200612201"/>
+			<unit id="org.eclipse.datatools.sqldevtools.results.feature.feature.group" version="${org.eclipse.datatools.sqldevtools.results.feature.feature.group.version}"/>
+			<unit id="org.eclipse.datatools.sqldevtools.feature.feature.group" version="${org.eclipse.datatools.sqldevtools.feature.feature.group.version}"/>
 
 			<unit id="org.eclipse.draw2d.feature.group" version="3.6.2.v20110128-0100-4517w3122123901211"/>
 			<unit id="org.eclipse.gef.feature.group" version="3.6.2.v20110128-0100-777B381A4Bz06565376E32322"/>
