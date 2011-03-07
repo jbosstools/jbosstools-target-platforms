@@ -127,6 +127,7 @@
 <iu id="org.eclipse.datatools.sqldevtools.parsers.feature.feature.group" version=""/>
 <iu id="org.eclipse.datatools.sqldevtools.results.feature.feature.group" version=""/>
 <iu id="org.eclipse.datatools.sqldevtools.feature.feature.group" version=""/>
+<iu id="org.eclipse.datatools.enablement.oda.designer.feature.feature.group" version=""/>
 <iu id="org.eclipse.draw2d.feature.group" version=""/>
 <iu id="org.eclipse.gef.feature.group" version=""/>
 <iu id="org.eclipse.zest.feature.group" version=""/>
