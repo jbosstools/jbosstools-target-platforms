@@ -29,7 +29,7 @@
 			<!-- want the latest, 1.6.2.v201005080631, not 1.5.1.v201005080630 -->
 			<!-- <unit id="javax.wsdl" version="1.6.2.v201005080631"/>
 			<unit id="javax.wsdl" version="1.5.1.v201005080630"/> -->
-			<unit id="javax.wsdl" version="1.6.2.v201005080631"/>
+			<unit id="javax.wsdl" version="1.5.1.v201005080630"/>
 			<unit id="org.apache.oro" version="2.0.8.v201005080400"/>
 			<unit id="org.jdom" version="1.0.0.v201005080400"/>
 			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
@@ -129,8 +129,9 @@
 			<unit id="org.eclipse.datatools.modelbase.feature.feature.group" version="1.8.2.v201010181125-77078CcNBGKBZI_FcRd"/>
 			<unit id="org.eclipse.datatools.enablement.apache.derby.feature.feature.group" version="1.8.2.v201010181125-77778fBmKDNOMgJvJ8Of7QBR"/>
 			<unit id="org.eclipse.datatools.sqldevtools.sqlbuilder.feature.feature.group" version="1.8.2.v201010181125-79-4EVVFJoFwKcN-L_"/>
-			<unit id="org.eclipse.datatools.sqldevtools.results.feature.feature.group" version="${org.eclipse.datatools.sqldevtools.results.feature.feature.group.version}"/>
-			<unit id="org.eclipse.datatools.sqldevtools.feature.feature.group" version="${org.eclipse.datatools.sqldevtools.feature.feature.group.version}"/>
+			<unit id="org.eclipse.datatools.sqldevtools.parsers.feature.feature.group" version="1.8.2.v201010181125-622BgJ9CR9XFcEWLP"/>
+			<unit id="org.eclipse.datatools.sqldevtools.results.feature.feature.group" version="1.8.2.v201010181125-4219oB57E6G9F7KDB"/>
+			<unit id="org.eclipse.datatools.sqldevtools.feature.feature.group" version="1.8.2.v201010181125-7N7y7JFDrhqbGIFUNhcFodMMD2J0"/>
 
 			<unit id="org.eclipse.draw2d.feature.group" version="3.6.2.v20110128-0100-4517w3122123901211"/>
 			<unit id="org.eclipse.gef.feature.group" version="3.6.2.v20110128-0100-777B381A4Bz06565376E32322"/>
