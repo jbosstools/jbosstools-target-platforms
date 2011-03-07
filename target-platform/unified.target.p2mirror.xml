@@ -117,7 +117,6 @@
 <iu id="org.eclipse.equinox.server.servletbridge.feature.group" version=""/>
 <iu id="org.eclipse.equinox.server.simple.feature.group" version=""/>
 <iu id="org.eclipse.rcp.feature.group" version=""/>
-<iu id="org.eclipse.birt.feature.group" version=""/>
 <iu id="org.eclipse.datatools.connectivity.feature.feature.group" version=""/>
 <iu id="org.eclipse.datatools.enablement.feature.feature.group" version=""/>
 <iu id="org.eclipse.datatools.enablement.jdt.feature.feature.group" version=""/>

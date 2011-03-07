@@ -122,7 +122,6 @@
 			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<unit id="org.eclipse.birt.feature.group" version="2.6.2.r262_v20101008-9iF7A9JGHMBCRz-R8tbxRel8kQrI"/>
 			<unit id="org.eclipse.datatools.connectivity.feature.feature.group" version="1.8.2.v201010181125-7C7b8mEt1Zwkn9kfkUHHsoP_3to"/>
 			<unit id="org.eclipse.datatools.enablement.feature.feature.group" version="1.8.2.v201010181125-7J8x7UBWwUN6z02z-fiI_w4x4uLf"/>
 			<unit id="org.eclipse.datatools.enablement.jdt.feature.feature.group" version="1.8.2.v201010181125-2-07w31211518181A"/>
