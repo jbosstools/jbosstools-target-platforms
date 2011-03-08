@@ -73,6 +73,10 @@ Thus, default operation is this (if run w/ these options or NO options):
 To run for JBDS target file instead of JBT target files, pass in alternate target file and resulting repo path:
 
 	$ ant -DtargetFile=jbds.target -DrepoDir=${WORKINGDIR}/JBDS_REPO/
+
+Or, simply call the jbds target, to use the defaults in the previous example:
+
+	$ ant jbds
 </echo>
 	</target>
 
@@ -85,8 +89,15 @@ To run for JBDS target file instead of JBT target files, pass in alternate targe
 	<!-- to install from the target platform repo, first build the repo, then install using p2.director -->
 	<target name="install" depends="build.local.target.platform.repo, install.local.target.platform.repo" />
 
-	<target name="build.local.target.platform.repo"
-	        depends="init, get.arch, get.eclipse, gen.p2mirror.script, run.p2mirror.script, update.target.file, cleanup" />
+	<target name="jbds" description="default local build of jbds.target in ./JBDS_REPO/" depends="init">
+		<var name="targetFile" unset="true" />
+		<var name="targetFile" value="jbds.target" />
+		<var name="repoDir" unset="true" />
+		<var name="repoDir" value="${WORKINGDIR}/JBDS_REPO" />
+		<antcall target="build.local.target.platform.repo" />
+	</target>
+
+	<target name="build.local.target.platform.repo" depends="init, get.arch, get.eclipse, gen.p2mirror.script, run.p2mirror.script, update.target.file, cleanup" />
 
 	<!-- ********************************************************************************** -->
 
@@ -209,8 +220,7 @@ To run for JBDS target file instead of JBT target files, pass in alternate targe
 		</exec>
 	</target>
 
-	<target name="test.local.target.platform.installed.base"
-	        description="test target platform completeness by running a build against its installed eclipse base - Dtycho.targetPlatform to be removed in Tycho 0.11 so this test is deprecated">
+	<target name="test.local.target.platform.installed.base" description="test target platform completeness by running a build against its installed eclipse base - Dtycho.targetPlatform to be removed in Tycho 0.11 so this test is deprecated">
 		<!-- 
 		<exec executable="/opt/maven3/bin/mvn" dir="${WORKINGDIR}">
 			<arg line=" -f ../parent/pom.xml clean install -B -U -fae -e -P helios-local-target,!helios -Dmaven.test.skip -Dtarget.platorm.URL=file://${repoDir}" />
@@ -231,24 +241,9 @@ To run for JBDS target file instead of JBT target files, pass in alternate targe
 			<sequential>
 				<var name="feature.jarfile" unset="true" />
 				<var name="feature.id" unset="true" />
-				<propertyregex property="feature.jarfile"
-				               defaultvalue="@{featureJar}"
-				               input="@{featureJar}"
-				               regexp=".+/features/([^/]+\.jar)"
-				               replace="\1"
-				               override="true" />
-				<propertyregex property="feature.id"
-				               defaultvalue="${feature.jarfile}"
-				               input="${feature.jarfile}"
-				               regexp="([^_]+)_(\d+\.\d+\.\d+\..+)\.jar"
-				               replace="\1"
-				               override="true" />
-				<propertyregex property="feature.id"
-				               defaultvalue="${feature.id}"
-				               input="${feature.id}"
-				               regexp="([^_]+)_(\d+\.\d+\.\d+)\.jar"
-				               replace="\1"
-				               override="true" />
+				<propertyregex property="feature.jarfile" defaultvalue="@{featureJar}" input="@{featureJar}" regexp=".+/features/([^/]+\.jar)" replace="\1" override="true" />
+				<propertyregex property="feature.id" defaultvalue="${feature.jarfile}" input="${feature.jarfile}" regexp="([^_]+)_(\d+\.\d+\.\d+\..+)\.jar" replace="\1" override="true" />
+				<propertyregex property="feature.id" defaultvalue="${feature.id}" input="${feature.id}" regexp="([^_]+)_(\d+\.\d+\.\d+)\.jar" replace="\1" override="true" />
 				<var name="install" value="${install},${feature.id}.feature.group" />
 				<var name="feature.jarfile" unset="true" />
 				<var name="feature.id" unset="true" />
