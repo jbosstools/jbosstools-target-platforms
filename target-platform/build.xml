@@ -72,7 +72,7 @@ Thus, default operation is this (if run w/ these options or NO options):
 
 To run for JBDS target file instead of JBT target files, pass in alternate target file and resulting repo path:
 
-	$ ant -DtargetFile=jbds.target -DrepoDir=/tmp/JBDS_REPO/ 
+	$ ant -DtargetFile=jbds.target -DrepoDir=${WORKINGDIR}/JBDS_REPO/
 </echo>
 	</target>
 
