@@ -8,41 +8,22 @@
 	-->
 	<locations>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<!-- NOT <unit id="org.maven.ide.eclipse.feature.feature.group" version="0.10.2.20100623-1649"/> -->
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
+
 			<unit id="org.maven.ide.eclipse.feature.feature.group" version="0.12.1.20110112-1712"/>
-			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-		</location>
-		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<unit id="org.maven.ide.eclipse.wtp.feature.feature.group" version="0.11.1.20101108-1810"/>
-			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-		</location>
-		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-		</location>
-		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-		</location>
-		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-		</location>
-		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+		
 			<!-- want the latest, 1.6.2.v201005080631, not 1.5.1.v201005080630 -->
-			<!-- <unit id="javax.wsdl" version="1.6.2.v201005080631"/>
-			<unit id="javax.wsdl" version="1.5.1.v201005080630"/> -->
-			<unit id="javax.wsdl" version="1.5.1.v201005080630"/>
+			<!-- 
+			<unit id="javax.wsdl" version="1.6.2.v201005080631"/>
+			-->
+			<unit id="javax.wsdl" version="1.6.2.v201012040545"/>
 			<unit id="org.apache.oro" version="2.0.8.v201005080400"/>
 			<unit id="org.jdom" version="1.0.0.v201005080400"/>
-			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-		</location>
-		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+
 			<unit id="org.mozilla.xulrunner.feature.feature.group" version="1.9.12.v20110120-2050-H36-CR1"/>
 			<unit id="org.mozilla.xpcom.feature.feature.group" version="1.9.12.v20110120-2050-H36-CR1"/>
-			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-		</location>
-		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-		</location>
-		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+
 			<unit id="org.eclipse.tptp.platform.profile.server.feature.group" version="4.5.2.v201101261720-7H7F4AkF7B88MAQCKJH"/>
 			<unit id="org.eclipse.tptp.platform.instrumentation.ui.feature.group" version="4.3.2.v201101261720-797918s735435695C83"/>
 			<unit id="org.eclipse.tptp.platform.core.feature.group" version="4.7.2.v201101261720-8X8ZFXoFLWUl6wn5veAISx"/>
@@ -53,9 +34,7 @@
 			<unit id="org.eclipse.tptp.platform.probekit.feature.group" version="4.5.2.v201101271120-7H7BF8QAkF7B87RBVCFFD"/>
 			<unit id="org.eclipse.tptp.platform.commons.logging.feature.group" version="4.5.0.v201005032111-2-37w312116191612"/>
 			<unit id="org.eclipse.tptp.platform.jakarta.log4j.feature.group" version="4.5.0.v201005032111-217E7w312116191611"/>
-			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-		</location>
-		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+
 			<unit id="org.eclipse.emf.ecore.feature.group" version="2.6.1.v20100914-1218"/>
 			<unit id="org.eclipse.emf.feature.group" version="2.6.1.v20100914-1218"/>
 			<unit id="org.eclipse.emf.codegen.feature.group" version="2.6.0.v20100914-1218"/>
@@ -68,25 +47,19 @@
 			<unit id="org.eclipse.emf.edit.feature.group" version="2.6.0.v20100914-1218"/>
 			<unit id="org.eclipse.xsd.edit.feature.group" version="2.6.0.v20100914-1218"/>
 			<unit id="org.eclipse.xsd.feature.group" version="2.6.0.v20100914-1218"/>
-			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-		</location>
-		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+
 			<unit id="org.eclipse.swtbot.eclipse.feature.group" version="2.0.3.20110219_0655-4d933cf-dev-e36"/>
 			<unit id="org.eclipse.swtbot.eclipse.gef.feature.group" version="2.0.3.20110219_0655-4d933cf-dev-e36"/>
 			<unit id="org.eclipse.swtbot.ide.feature.group" version="2.0.3.20110219_0655-4d933cf-dev-e36"/>
 			<unit id="org.eclipse.swtbot.eclipse.test.junit4.feature.group" version="2.0.3.20110219_0655-4d933cf-dev-e36"/>
 			<unit id="org.eclipse.swtbot.feature.group" version="2.0.3.20110219_0655-4d933cf-dev-e36"/>
-			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-		</location>
-		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+
 			<unit id="org.eclipse.birt.osgi.runtime.sdk.feature.group" version="2.6.2.r262_v20101008-57B381wLglLKxfjdt881PQeMU42p"/>
 			<unit id="org.eclipse.birt.feature.group" version="2.6.2.r262_v20101008-9iF7A9JGHMBCRz-R8tbxRel8kQrI"/>
 			<unit id="org.eclipse.birt.integration.wtp.feature.group" version="2.6.2.v20110215-1647-3517w3122132602758"/>
 			<unit id="org.eclipse.birt.chart.feature.group" version="2.6.2.r262_v20101008-7f9T7OFPWowQ1naKt1Wwu4"/>
 			<unit id="org.eclipse.birt.chart.integration.wtp.feature.group" version="2.6.2.v20110215-1647-3517w3122132602758"/>
-			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-		</location>
-		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+
 			<unit id="com.ibm.icu.base.feature.group" version="1.1.0.v20090119-79318s73533B57"/>
 			<unit id="org.eclipse.equinox.server.core.feature.group" version="1.0.1.R36x_v20101007-7K7QEtDVci4YrnH_88QAH"/>
 			<unit id="org.eclipse.cvs.feature.group" version="1.2.1.r362_v20101111-7B77FKv99HL0GvIAF99I8H14B7E"/>
@@ -119,9 +92,7 @@
 			<unit id="org.eclipse.equinox.server.servletbridge.feature.group" version="1.0.0.v20100510-42A79oB5855K5E"/>
 			<unit id="org.eclipse.equinox.server.simple.feature.group" version="1.0.0.v20100510-44DF8s734C48662444"/>
 			<unit id="org.eclipse.rcp.feature.group" version="3.6.2.r362_v20101104-9SAxFMKFkSAqi8axkv1ZjegmiBLY"/>
-			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-		</location>
-		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+
 			<unit id="org.eclipse.datatools.connectivity.feature.feature.group" version="1.8.2.v201010181125-7C7b8mEt1Zwkn9kfkUHHsoP_3to"/>
 			<unit id="org.eclipse.datatools.enablement.feature.feature.group" version="1.8.2.v201010181125-7J8x7UBWwUN6z02z-fiI_w4x4uLf"/>
 			<unit id="org.eclipse.datatools.enablement.jdt.feature.feature.group" version="1.8.2.v201010181125-2-07w31211518181A"/>
@@ -168,9 +139,7 @@
 			<unit version="1.4.0.v20100428-2315-479-9oB56N5BBR6LCA6" id="org.eclipse.emf.validation.feature.group"/>
 			<unit version="1.4.0.v20100428-2315-23-7w3121133502768" id="org.eclipse.emf.validation.ocl.feature.group"/>
 			<unit version="2.1.0.v20100606-1530-7A2-AkF7AG8PBU3BRLA" id="org.eclipse.m2m.qvt.oml.runtime.feature.group"/> -->
-			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-		</location>
-		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+
 			<unit id="org.eclipse.jst.jee" version="1.0.302.v201101122300"/>
 			<unit id="org.eclipse.wst.common.frameworks" version="1.2.0.v201003040800"/>
 			<unit id="org.eclipse.wst.common.project.facet.ui" version="1.4.103.v201101271715"/>
@@ -207,15 +176,11 @@
 			<unit id="org.eclipse.wst.web_core.feature.feature.group" version="3.2.3.v201102160541-7E7AFI3AJrn5TN32vSJ8nRIWLD7_"/>
 			<unit id="org.eclipse.wst.ws_ui.feature.feature.group" version="3.2.3.v201102160541-7I78FZIEtEoO2d7AsK6jSNqC-8jj"/>
 			<unit id="org.eclipse.wst.xml_core.feature.feature.group" version="3.2.3.v201102160550-7C7OFXcF7RZHQKIkMxMsW_"/>
-			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-		</location>
-		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-		</location>
-		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+
 			<unit id="com.google.gdt.eclipse.suite.e36.feature.feature.group" version="1.4.2.v201012211742"/>
 			<unit id="com.google.gwt.eclipse.sdkbundle.e36.feature.2.1.1.feature.group" version="2.1.1.v201012170127"/>
-			<!-- <repository location="http://dl.google.com/eclipse/plugin/3.6/"/> -->
+		</location>
+		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 		</location>
 	</locations>

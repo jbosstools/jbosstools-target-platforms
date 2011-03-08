@@ -30,21 +30,6 @@
 <source>
 <repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 <repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
 </source>
 <iu id="org.maven.ide.eclipse.feature.feature.group" version=""/>
 <iu id="org.maven.ide.eclipse.wtp.feature.feature.group" version=""/>
