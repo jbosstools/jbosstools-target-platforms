@@ -185,7 +185,7 @@ To run for JBDS target file instead of JBT target files, pass in alternate targe
 	<!-- /abs/path/to/eclipse -vm /opt/jdk1.6.0/bin/java -nosplash -data /tmp/workspace -consolelog -application 
 			org.eclipse.ant.core.antRunner -f *.target.p2mirror.xml -Ddebug=true -DfollowStrict=true -DrepoDir=/tmp/REPO/ -->
 	<target name="run.p2mirror.script" description="build target update site using p2.mirror">
-		<exec executable="${WORKINGDIR}/eclipse-${eclipse.version}/eclipse/eclipse" dir="${basedir}">
+		<exec executable="${WORKINGDIR}/eclipse-${eclipse.version}/eclipse/eclipse" dir="${basedir}" failonerror="true">
 			<arg line=" -nosplash -data ${tmpdir}/workspace -consolelog -application org.eclipse.ant.core.antRunner" />
 			<arg line=" -f ${targetFile}.p2mirror.xml -DfollowStrict=true -DrepoDir=${repoDir}" />
 			<arg line=" -Ddebug=true" />
