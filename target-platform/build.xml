@@ -199,7 +199,7 @@ Or, simply call the jbds target, to use the defaults in the previous example:
 		<exec executable="${WORKINGDIR}/eclipse-${eclipse.version}/eclipse/eclipse" dir="${basedir}" failonerror="true">
 			<arg line=" -nosplash -data ${tmpdir}/workspace -consolelog -application org.eclipse.ant.core.antRunner" />
 			<arg line=" -f ${targetFile}.p2mirror.xml -DfollowStrict=true -DrepoDir=${repoDir}" />
-			<arg line=" -Ddebug=true" />
+			<arg line=" -Ddebug=true -vmargs -Dosgi.locking=none" />
 		</exec>
 	</target>
 
