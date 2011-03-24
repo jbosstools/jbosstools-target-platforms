@@ -28,8 +28,8 @@
 <p2.mirror destination="file://${repoDir}" verbose="${verbose}">
 <slicingOptions includeFeatures="true" followStrict="${followStrict}"/>
 <source>
-<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
+<repository location="http://download.jboss.org/jbosstools/updates/target-platform_trunk/latest/"/>
+<repository location="http://download.jboss.org/jbosstools/updates/target-platform_trunk/latest/"/>
 </source>
 <iu id="org.maven.ide.eclipse.feature.feature.group" version=""/>
 <iu id="org.maven.ide.eclipse.wtp.feature.feature.group" version=""/>

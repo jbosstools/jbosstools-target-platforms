@@ -8,7 +8,7 @@
 	-->
 	<locations>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform_trunk/latest/"/>
 
 			<unit id="org.maven.ide.eclipse.feature.feature.group" version="0.12.1.20110112-1712"/>
 			<unit id="org.maven.ide.eclipse.wtp.feature.feature.group" version="0.11.1.20101108-1810"/>
