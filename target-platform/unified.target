@@ -207,7 +207,7 @@
 			<unit id="com.google.gwt.eclipse.sdkbundle.e36.feature.2.1.1.feature.group" version="2.1.1.v201012170127"/>
 		</location>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<repository location="http://download.jboss.org/jbosstools/updates/target-platform/latest/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform_trunk/latest/"/>
 		</location>
 	</locations>
 	<includeBundles>

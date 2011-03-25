@@ -8,6 +8,9 @@
 	-->
 	<locations>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+			<repository location="http://download.jboss.org/jbosstools/builds/staging/_composite_/trunk/"/>
+		</location>
+		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<repository location="http://download.jboss.org/jbosstools/updates/helios/"/>
 
 			<unit id="org.maven.ide.eclipse.feature.feature.group" version="0.12.1.20110112-1712"/>
@@ -205,9 +208,6 @@
 
 			<unit id="com.google.gdt.eclipse.suite.e36.feature.feature.group" version="1.4.2.v201012211742"/>
 			<unit id="com.google.gwt.eclipse.sdkbundle.e36.feature.2.1.1.feature.group" version="2.1.1.v201012170127"/>
-		</location>
-		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<repository location="http://download.jboss.org/jbosstools/builds/staging/_composite_/trunk/"/>
 		</location>
 	</locations>
 	<includeBundles>

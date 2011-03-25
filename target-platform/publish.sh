@@ -71,7 +71,7 @@ if [[ -d ${repoDir} ]]; then
 
 	du -sh ${repoDir} ${destinationPath}/${targetZipFile}
 
-	# upload to http://download.jboss.org/jbossotools/updates/target-platform/latest/ for public use
+	# upload to http://download.jboss.org/jbossotools/updates/target-platform_trunk/latest/ for public use
 	if [[ ${DESTINATION/@/} == ${DESTINATION} ]]; then # local path, no user@server
 		mkdir -p ${DESTINATION}/
 	fi
@@ -80,7 +80,7 @@ if [[ -d ${repoDir} ]]; then
 
 	targetZip=/tmp/${targetZipFile}.zip
 
-	# create zip, then upload to http://download.jboss.org/jbossotools/updates/target-platform/${targetZipFile}.zip for public use
+	# create zip, then upload to http://download.jboss.org/jbossotools/updates/target-platform_trunk/${targetZipFile}.zip for public use
 	zip -q -r9 ${targetZip} ${include}
 	du -sh ${targetZip}
 
