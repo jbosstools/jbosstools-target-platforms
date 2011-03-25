@@ -28,7 +28,7 @@
 <p2.mirror destination="file://${repoDir}" verbose="${verbose}">
 <slicingOptions includeFeatures="true" followStrict="${followStrict}"/>
 <source>
-<repository location="http://download.eclipse.org/releases/helios/"/>
+<repository location="http://download.jboss.org/jbosstools/updates/indigo/"/>
 </source>
 <iu id="org.eclipse.cvs.feature.group" version=""/>
 <iu id="org.eclipse.datatools.enablement.sdk.feature.feature.group" version=""/>
@@ -128,21 +128,21 @@
 <iu id="org.eclipse.uml2.feature.group" version=""/>
 <iu id="org.eclipse.uml2.doc.feature.group" version=""/>
 <iu id="org.eclipse.pde.feature.group" version=""/>
-<iu id="org.eclipse.tptp.platform.commons.logging.feature.group" version=""/>
-<iu id="org.eclipse.tptp.platform.core.feature.group" version=""/>
-<iu id="org.eclipse.tptp.platform.instrumentation.ui.feature.group" version=""/>
-<iu id="org.eclipse.tptp.platform.jakarta.log4j.feature.group" version=""/>
-<iu id="org.eclipse.tptp.platform.jvmti.feature.group" version=""/>
-<iu id="org.eclipse.tptp.platform.probekit.feature.group" version=""/>
-<iu id="org.eclipse.tptp.platform.profile.server.feature.group" version=""/>
-<iu id="org.eclipse.tptp.platform.trace.feature.group" version=""/>
-<iu id="org.eclipse.tptp.platform.xerces.feature.group" version=""/>
 <iu id="org.eclipse.rse.feature.group" version=""/>
 <iu id="org.eclipse.rse.useractions.feature.group" version=""/>
 <iu id="org.eclipse.tm.terminal.feature.group" version=""/>
 <iu id="org.eclipse.tm.terminal.view.feature.group" version=""/>
 <iu id="org.eclipse.tm.terminal.telnet.feature.group" version=""/>
 <iu id="org.eclipse.tm.terminal.ssh.feature.group" version=""/>
+<iu id="org.eclipse.tptp.platform.profile.server.feature.group" version=""/>
+<iu id="org.eclipse.tptp.platform.instrumentation.ui.feature.group" version=""/>
+<iu id="org.eclipse.tptp.platform.core.feature.group" version=""/>
+<iu id="org.eclipse.tptp.platform.jvmti.feature.group" version=""/>
+<iu id="org.eclipse.tptp.platform.trace.feature.group" version=""/>
+<iu id="org.eclipse.tptp.platform.xerces.feature.group" version=""/>
+<iu id="org.eclipse.tptp.platform.probekit.feature.group" version=""/>
+<iu id="org.eclipse.tptp.platform.commons.logging.feature.group" version=""/>
+<iu id="org.eclipse.tptp.platform.jakarta.log4j.feature.group" version=""/>
 </p2.mirror>
 </target>
 </project>

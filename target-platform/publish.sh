@@ -2,7 +2,7 @@
 # Hudson creates a repo in ${repoDir}; copy it into other places for access by downstream jobs and users
 
 # defaults for JBoss Tools
-targetZipFile=e362-wtp323.target
+targetZipFile=e37M5-wtp33M5.target
 repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO
 destinationPath=/home/hudson/static_build_env/jbds/target-platform
 DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform
@@ -19,36 +19,36 @@ while [ "$#" -gt 0 ]; do
 		'-DESTINATION') DESTINATION="$2"; shift 2;;
 		'-include') include="$2"; shift 2;;
 		'-exclude') exclude="$2"; shift 2;;
-		'-jbt_trunk') 
+		'-jbt_3.3.indigo') 
 		# defaults for JBT (trunk)
-		targetZipFile=e362-wtp323.target
-		repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO_trunk
-		destinationPath=/home/hudson/static_build_env/jbds/target-platform_trunk
-		DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform_trunk
+		targetZipFile=e37M5-wtp33M5.target
+		repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO_3.3.indigo
+		destinationPath=/home/hudson/static_build_env/jbds/target-platform_3.3.indigo
+		DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform_3.3.indigo
 		include="*"
 		exclude="--exclude '.blobstore'" # exclude the .blobstore
 		shift 1;;
 		'-jbt') 
 		# defaults for JBT (stable branch)
-		targetZipFile=e362-wtp323.target
+		targetZipFile=e37M5-wtp33M5.target
 		repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO
 		destinationPath=/home/hudson/static_build_env/jbds/target-platform
 		DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform
 		include="*"
 		exclude="--exclude '.blobstore'" # exclude the .blobstore
 		shift 1;;
-		'-jbds_trunk') 
+		'-jbds_3.3.indigo') 
 		# defaults for JBDS (trunk)
-		targetZipFile=jbds400-e362-wtp323.target
-		repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO_trunk
-		destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform_trunk
-		DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform_trunk
+		targetZipFile=jbds500-e37M5-wtp33M5.target
+		repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO_3.3.indigo
+		destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform_3.3.indigo
+		DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform_3.3.indigo
 		include=".blobstore *" # include the .blobstore
 		exclude="" 
 		shift 1;;
 		'-jbds') 
 		# defaults for JBDS (stable branch)
-		targetZipFile=jbds400-e362-wtp323.target
+		targetZipFile=jbds500-e37M5-wtp33M5.target
 		repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO
 		destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform
 		DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform
@@ -71,7 +71,7 @@ if [[ -d ${repoDir} ]]; then
 
 	du -sh ${repoDir} ${destinationPath}/${targetZipFile}
 
-	# upload to http://download.jboss.org/jbossotools/updates/target-platform_trunk/latest/ for public use
+	# upload to http://download.jboss.org/jbossotools/updates/target-platform_3.3.indigo/latest/ for public use
 	if [[ ${DESTINATION/@/} == ${DESTINATION} ]]; then # local path, no user@server
 		mkdir -p ${DESTINATION}/
 	fi
@@ -80,7 +80,7 @@ if [[ -d ${repoDir} ]]; then
 
 	targetZip=/tmp/${targetZipFile}.zip
 
-	# create zip, then upload to http://download.jboss.org/jbossotools/updates/target-platform_trunk/${targetZipFile}.zip for public use
+	# create zip, then upload to http://download.jboss.org/jbossotools/updates/target-platform_3.3.indigo/${targetZipFile}.zip for public use
 	zip -q -r9 ${targetZip} ${include}
 	du -sh ${targetZip}
 

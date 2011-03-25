@@ -31,23 +31,23 @@
 	sudo su - hudson
 	unzip /home/nboldt/mutiple.target.zip -d /tmp/mutiple.target &
 	rsync -aPrz --delete --rsh=ssh /tmp/mutiple.target/* \ 
-		tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform_trunk/latest/ &
+		tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform_3.3.indigo/latest/ &
 	rsync -aPrz --rsh=ssh /home/nboldt/mutiple.target.zip \
-		tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform_trunk/ &
+		tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform_3.3.indigo/ &
 
 4. Alternatively, see publish.sh for when repo is built in JBoss Hudson.
 
 
 == HOWTO: Publish local p2 repo (generated from .target) to shared location in Hudson for use in builds ==
 
-1. You can reference http://download.jboss.org/jbosstools/updates/target-platform_trunk/latest/, 
+1. You can reference http://download.jboss.org/jbosstools/updates/target-platform_3.3.indigo/latest/, 
    but a local path reference is faster.
 
 2. So, continuing from previous HOWTO, copy from /tmp/mutiple.target into 
-   file:///home/hudson/static_build_env/jbds/target-platform_trunk/mutiple.target/
+   file:///home/hudson/static_build_env/jbds/target-platform_3.3.indigo/mutiple.target/
 
 	rsync -aPrz --delete /tmp/mutiple.target/* \
-		/home/hudson/static_build_env/jbds/target-platform_trunk/mutiple.target/ &
+		/home/hudson/static_build_env/jbds/target-platform_3.3.indigo/mutiple.target/ &
 
 3. Alternatively, see publish.sh for when repo is built in JBoss Hudson.
 
