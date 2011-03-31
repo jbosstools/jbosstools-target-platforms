@@ -38,15 +38,6 @@
 <iu id="org.jdom" version=""/>
 <iu id="org.mozilla.xulrunner.feature.feature.group" version=""/>
 <iu id="org.mozilla.xpcom.feature.feature.group" version=""/>
-<iu id="org.eclipse.tptp.platform.profile.server.feature.group" version=""/>
-<iu id="org.eclipse.tptp.platform.instrumentation.ui.feature.group" version=""/>
-<iu id="org.eclipse.tptp.platform.core.feature.group" version=""/>
-<iu id="org.eclipse.tptp.platform.jvmti.feature.group" version=""/>
-<iu id="org.eclipse.tptp.platform.trace.feature.group" version=""/>
-<iu id="org.eclipse.tptp.platform.xerces.feature.group" version=""/>
-<iu id="org.eclipse.tptp.platform.probekit.feature.group" version=""/>
-<iu id="org.eclipse.tptp.platform.commons.logging.feature.group" version=""/>
-<iu id="org.eclipse.tptp.platform.jakarta.log4j.feature.group" version=""/>
 <iu id="org.eclipse.emf.ecore.feature.group" version=""/>
 <iu id="org.eclipse.emf.feature.group" version=""/>
 <iu id="org.eclipse.emf.codegen.feature.group" version=""/>

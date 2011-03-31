@@ -3,8 +3,8 @@
 	<locations>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 	        <!-- Pro tip: to convert 
-        	     from org.eclipse.tptp.platform.xerces_4.6.0.v201005032111-777K4AkF7B77R7c7N77.jar
-	             to <unit version="4.6.0.v201005032111-777K4AkF7B77R7c7N77" id="org.eclipse.tptp.platform.xerces.feature.group"/>
+        	     from org.eclipse.foo_4.6.0.v201005032111-777K4AkF7B77R7c7N77.jar
+	             to <unit version="4.6.0.v201005032111-777K4AkF7B77R7c7N77" id="org.eclipse.foo.feature.group"/>
         	     using vi, apply this transform:
 	             :%s/.\+\/\(org.\+\)_\(\d\+.\+\)\.jar/\t\t\t<unit version="\2" id="\1.feature.group"\/>/g
         	-->
@@ -136,17 +136,6 @@
 			<unit id="org.eclipse.tm.terminal.view.feature.group" version="2.2.0.v201101042155-31-7w312212362832"/>
 			<unit id="org.eclipse.tm.terminal.telnet.feature.group" version="2.1.0.v201101042155-30-7w312213121A22"/>
 			<unit id="org.eclipse.tm.terminal.ssh.feature.group" version="2.1.0.v201101042155-30-7w312212153266"/>
-
-			<!-- TPTP 4.7.2 is EOL; can only get bits from Helios, not Indigo -->
-			<unit id="org.eclipse.tptp.platform.profile.server.feature.group" version="4.5.2.v201101261720-7H7F4AkF7B88MAQCKJH"/>
-			<unit id="org.eclipse.tptp.platform.instrumentation.ui.feature.group" version="4.3.2.v201101261720-797918s735435695C83"/>
-			<unit id="org.eclipse.tptp.platform.core.feature.group" version="4.7.2.v201101261720-8X8ZFXoFLWUl6wn5veAISx"/>
-			<unit id="org.eclipse.tptp.platform.jvmti.feature.group" version="4.5.2.v201101261720-797A48s735536585A93"/>
-			<unit id="org.eclipse.tptp.platform.trace.feature.group" version="4.5.2.v201101261720-7L7O8fBgJ9EC9NDREaF9"/>
-			<unit id="org.eclipse.tptp.platform.xerces.feature.group" version="4.6.0.v201005032111-777K4AkF7B77R7c7N77"/>
-			<unit id="org.eclipse.tptp.platform.probekit.feature.group" version="4.5.2.v201101271120-7H7BF8QAkF7B87RBVCFFD"/>
-			<unit id="org.eclipse.tptp.platform.commons.logging.feature.group" version="4.5.0.v201005032111-2-37w312116191612"/>
-			<unit id="org.eclipse.tptp.platform.jakarta.log4j.feature.group" version="4.5.0.v201005032111-217E7w312116191611"/>
 
 			<repository location="http://download.jboss.org/jbosstools/updates/indigo/"/>
 		</location>
