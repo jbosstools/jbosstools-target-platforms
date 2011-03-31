@@ -14,8 +14,9 @@
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<repository location="http://download.jboss.org/jbosstools/updates/indigo/"/>
 
-			<unit id="org.maven.ide.eclipse.feature.feature.group" version="0.12.1.20110112-1712"/>
-			<unit id="org.maven.ide.eclipse.wtp.feature.feature.group" version="0.11.1.20101108-1810"/>
+			<!-- m2e -->
+			<unit version="0.13.0.201103291237" id="org.eclipse.m2e.feature.feature.group"/>
+			<unit version="0.13.0.201103231111" id="org.maven.ide.eclipse.wtp.feature.feature.group"/>
 
 			<unit id="javax.wsdl" version="1.6.2.v201012040545"/>
 			<unit id="org.apache.oro" version="2.0.8.v201005080400"/>
