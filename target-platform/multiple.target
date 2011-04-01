@@ -194,9 +194,9 @@
 			<unit id="org.eclipse.wst.ws_ui.feature.feature.group" version="3.3.0.v201010270400-7I7AFbIEtEoVBjgCmL1mrYpBplar"/>
 			<unit id="org.eclipse.wst.xml_core.feature.feature.group" version="3.3.0.v201010070622-7C7OFchF7RZHQLIePtMmWd"/>
 
-			<unit id="com.google.gdt.eclipse.suite.e36.feature.feature.group" version="1.4.2.v201012211742"/>
+			<!-- <unit id="com.google.gdt.eclipse.suite.e36.feature.feature.group" version="1.4.2.v201012211742"/>
 			<unit id="com.google.gwt.eclipse.sdkbundle.e36.feature.2.2.0.feature.group" version="2.2.0.v201102111811"/>
-			<unit id="com.google.gdt.eclipse.suite.e36.feature.feature.group" version="2.2.0.v201102111811"/>
+			<unit id="com.google.gdt.eclipse.suite.e36.feature.feature.group" version="2.2.0.v201102111811"/> -->
 		</location>
 
 	</locations>
