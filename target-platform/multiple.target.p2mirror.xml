@@ -33,6 +33,7 @@
 </source>
 <iu id="org.eclipse.m2e.feature.feature.group" version=""/>
 <iu id="org.maven.ide.eclipse.wtp.feature.feature.group" version=""/>
+<iu id="org.slf4j.api" version=""/>
 <iu id="javax.wsdl" version=""/>
 <iu id="org.apache.oro" version=""/>
 <iu id="org.jdom" version=""/>
