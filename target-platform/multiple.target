@@ -23,8 +23,8 @@
 			<unit id="org.apache.oro" version="2.0.8.v201005080400"/>
 			<unit id="org.jdom" version="1.0.0.v201005080400"/>
 
-			<unit id="org.mozilla.xulrunner.feature.feature.group" version="1.9.12.v20110120-2050-H36-CR1"/>
-			<unit id="org.mozilla.xpcom.feature.feature.group" version="1.9.12.v20110120-2050-H36-CR1"/>
+			<!-- <unit id="org.mozilla.xulrunner.feature.feature.group" version="1.9.12.v20110120-2050-H36-CR1"/>
+			<unit id="org.mozilla.xpcom.feature.feature.group" version="1.9.12.v20110120-2050-H36-CR1"/> -->
 
 			<unit id="org.eclipse.emf.ecore.feature.group" version="2.7.0.v20110128-1409"/>
 			<unit id="org.eclipse.emf.feature.group" version="2.7.0.v20110128-1446"/>
