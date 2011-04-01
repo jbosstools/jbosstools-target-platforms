@@ -196,6 +196,7 @@
 
 			<unit id="com.google.gdt.eclipse.suite.e36.feature.feature.group" version="1.4.2.v201012211742"/>
 			<unit id="com.google.gwt.eclipse.sdkbundle.e36.feature.2.2.0.feature.group" version="2.2.0.v201102111811"/>
+			<unit id="com.google.gdt.eclipse.suite.e36.feature.feature.group" version="2.2.0.v201102111811"/>
 		</location>
 
 	</locations>
