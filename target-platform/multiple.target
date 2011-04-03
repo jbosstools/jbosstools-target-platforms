@@ -14,10 +14,27 @@
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<repository location="http://download.jboss.org/jbosstools/updates/indigo/"/>
 
-			<!-- m2e -->
+			<!-- m2e 0.13 + deps -->
 			<unit id="org.eclipse.m2e.feature.feature.group" version="0.13.0.201103291237"/>
+			<!-- should be 0.13.0.201103231111, not 0.11 -->
 			<unit id="org.maven.ide.eclipse.wtp.feature.feature.group" version="0.13.0.201103231111"/>
 			<unit id="org.slf4j.api" version="1.6.1.v20100831-0715"/>
+			<unit id="ch.qos.logback.classic" version="0.9.27.v20110224-1110"/>
+			<unit id="ch.qos.logback.core" version="0.9.27.v20110224-1110"/>
+			<unit id="ch.qos.logback.slf4j" version="0.9.27.v20110224-1110"/>
+			<unit id="org.slf4j.api" version="1.6.1.v20100831-0715"/>
+			<unit id="com.ning.async-http-client" version="1.6.3.20110315-1708"/>
+			<unit id="org.jboss.netty" version="3.2.4.Final"/>
+			<unit id="org.eclipse.epp.mpc.core" version="1.0.0.v20100826-2143"/>
+			<unit id="org.eclipse.epp.mpc.help.ui" version="1.0.0.v20100826-2143"/>
+			<unit id="org.eclipse.epp.mpc.ui" version="1.0.1.v20100826-2143"/>
+			<unit id="org.eclipse.epp.usagedata.gathering" version="1.3.0.R201005261100"/>
+			<unit id="org.eclipse.epp.usagedata.recording" version="1.3.0.R201005261100"/>
+			<unit id="org.eclipse.epp.usagedata.ui" version="1.3.0.R201005261100"/>
+			<unit id="org.eclipse.equinox.p2.discovery.compatibility" version="1.0.1.v20110118-1616"/>
+			<unit id="org.eclipse.equinox.p2.discovery" version="1.0.100.v20100920"/>
+			<unit id="org.eclipse.equinox.p2.ui.discovery" version="1.0.0.v20100920"/>
+			<unit id="org.eclipse.net4j.jms.api" version="3.0.0.v20110128-1111"/>
 
 			<unit id="javax.wsdl" version="1.6.2.v201012040545"/>
 			<unit id="org.apache.oro" version="2.0.8.v201005080400"/>
