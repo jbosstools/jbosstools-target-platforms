@@ -31,8 +31,6 @@
 <repository location="http://download.jboss.org/jbosstools/updates/indigo/"/>
 </source>
 <iu id="org.eclipse.cvs.feature.group" version=""/>
-<iu id="org.eclipse.datatools.enablement.sdk.feature.feature.group" version=""/>
-<iu id="org.eclipse.datatools.sdk.feature.feature.group" version=""/>
 <iu id="org.eclipse.datatools.modelbase.feature.feature.group" version=""/>
 <iu id="org.eclipse.datatools.connectivity.feature.feature.group" version=""/>
 <iu id="org.eclipse.datatools.connectivity.oda.feature.feature.group" version=""/>

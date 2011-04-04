@@ -6,24 +6,23 @@
         	     from org.eclipse.foo_4.6.0.v201005032111-777K4AkF7B77R7c7N77.jar
 	             to <unit version="4.6.0.v201005032111-777K4AkF7B77R7c7N77" id="org.eclipse.foo.feature.group"/>
         	     using vi, apply this transform:
-	             :%s/.\+\/\(org.\+\)_\(\d\+.\+\)\.jar/\t\t\t<unit version="\2" id="\1.feature.group"\/>/g
+	             :%s/.\+\/\(org.\+\)_\(\d\+.\+\)\.jar/\t\t\t<unit id="\1.feature.group" version="\2"\/>/g
         	-->
 
 			<!-- CVS -->
 			<unit id="org.eclipse.cvs.feature.group" version="1.3.100.v20110121-7B77FO-8sF7BA7FFU67UJ5"/>
 
 			<!-- DTP 1.9 -->
-			<unit id="org.eclipse.datatools.enablement.sdk.feature.feature.group" version="1.9.0.v201010181130-7I9O-FE9JfxXy1iz06uC_FrlImH-"/>
-			<unit id="org.eclipse.datatools.sdk.feature.feature.group" version="1.9.0.v201010181130-7PA3-FEPPYupCWLDHfffcc2LJx83"/>
 			<unit id="org.eclipse.datatools.modelbase.feature.feature.group" version="1.9.0.v201010181130-77078CcNBGKBZI_FcRd"/>
-			<!-- should be 0.13.0.201103231111, not 0.11
+			<!-- should be newer M6 versions
 			     :%s/<unit id="org.eclipse.datatools.connectivity.feature.feature.group" version="1.9.0.v201010181130-7C7e8gEt1Zwkp9kfkUGJsrNYJ73"\/>  /<unit id="org.eclipse.datatools.connectivity.feature.feature.group" version="1.9.0.v201010181130-7C7e8gEt1Zwkr9kfkUKFumX_-ou"\/>  /g
 			-->
 			<unit id="org.eclipse.datatools.connectivity.feature.feature.group" version="1.9.0.v201010181130-7C7e8gEt1Zwkr9kfkUKFumX_-ou"/>  
 			<unit id="org.eclipse.datatools.connectivity.oda.feature.feature.group" version="1.9.0.v201010181130-7H7C7FCcNBHFCQGgERLX"/>
 			<unit id="org.eclipse.datatools.connectivity.oda.designer.feature.feature.group" version="1.9.0.v201010181130-4107w3121151A1A53"/>
-			<unit id="org.eclipse.datatools.connectivity.oda.designer.core.feature.feature.group" version="1.9.0.v201010181130-7B7C7ACcNBGLEOIeD_WM"/>
-			<unit id="org.eclipse.datatools.enablement.feature.feature.group" version="1.9.0.v201010181130-7J9B0BWwVM6y2z-fiIax-vy-Mg9L"/>
+			<!-- next two updated in M6 -->
+			<unit id="org.eclipse.datatools.connectivity.oda.designer.core.feature.feature.group" version="1.9.0.v201010181130-7B7C7BCcNBGMDPHiDYRL"/>
+			<unit id="org.eclipse.datatools.enablement.feature.feature.group" version="1.9.0.v201010181130-7J9B0BWwVM6y2z-fiIbw0xx-Qi9L"/>
 			<unit id="org.eclipse.datatools.enablement.apache.derby.feature.feature.group" version="1.9.0.v201010181130-77788dBmKDNOMgJvJ8Of7QBR"/>
 			<unit id="org.eclipse.datatools.enablement.hsqldb.feature.feature.group" version="1.9.0.v201010181130-67D0AqGBJVKbHlH1GU7QBR"/>
 			<unit id="org.eclipse.datatools.enablement.ibm.feature.feature.group" version="1.9.0.v201010181130-7F47SFC7sRbrSZope9vW"/>
@@ -31,7 +30,8 @@
 			<unit id="org.eclipse.datatools.enablement.jdt.feature.feature.group" version="1.9.0.v201010181130-2-07w31211518181A"/>
 			<unit id="org.eclipse.datatools.enablement.msft.feature.feature.group" version="1.9.0.v201010181130-542AkF79P7QCP9SDB"/>
 			<unit id="org.eclipse.datatools.enablement.mysql.feature.feature.group" version="1.9.0.v201010181130-546AkF78Y7R9PAX77"/>
-			<unit id="org.eclipse.datatools.enablement.oda.feature.feature.group" version="1.9.0.v201010181130-7A7T78DZRDKEGXFmGfNW"/>
+			<!-- next one updated in M6 -->
+			<unit id="org.eclipse.datatools.enablement.oda.feature.feature.group" version="1.9.0.v201010181130-7A7T78DZRDKFFYHlGjPW"/>
 			<unit id="org.eclipse.datatools.enablement.oda.designer.feature.feature.group" version="1.9.0.v201010181130-3328s735357795A8D"/>
 			<unit id="org.eclipse.datatools.enablement.oracle.feature.feature.group" version="1.9.0.v201010181130-548dAkF79Q7RAN9UFJ"/>
 			<unit id="org.eclipse.datatools.enablement.postgresql.feature.feature.group" version="1.9.0.v201010181130-542AkF77g7V9N9e77"/>
@@ -40,7 +40,7 @@
 			<unit id="org.eclipse.datatools.enablement.ingres.feature.feature.group" version="1.9.0.v201010181130-540AkF78Y7VCOCQDB"/>
 			<unit id="org.eclipse.datatools.enablement.sqlite.feature.feature.group" version="1.9.0.v201010181130-541AkF79P7N8NAQ77"/>
 			<unit id="org.eclipse.datatools.sqldevtools.feature.feature.group" version="1.9.0.v201010181130-7N845FDsn0TdrPUJuQMtjCYJTJ0T"/>
-			
+
 			<unit id="org.eclipse.datatools.sqldevtools.results.feature.feature.group" version="1.9.0.v201101201115-57B3AkF7AI8FDDAOCP"/>
 			<unit id="org.eclipse.datatools.sqldevtools.ddlgen.feature.feature.group" version="1.9.0.v201010181130-7A-3F7RZHLz-Hz-OlPz0Qf"/>
 			<unit id="org.eclipse.datatools.sqldevtools.ddl.feature.feature.group" version="1.9.0.v201010181130-278-78B04G8S_IMz00Iz00PmQz01"/>
@@ -54,6 +54,11 @@
 			<unit id="org.eclipse.datatools.common.doc.user.feature.group" version="1.9.0.v201010181130-26-311A16321A3557"/>
 			<unit id="org.eclipse.datatools.connectivity.doc.user.feature.group" version="1.9.0.v201010181130-37D-7733L3D753L7BBF"/>
 			<unit id="org.eclipse.datatools.sqltools.doc.user.feature.group" version="1.9.0.v201010181130-37D-7733L3D753L7BBF"/>
+
+			<!-- remove SDK features
+			<unit id="org.eclipse.datatools.enablement.sdk.feature.feature.group" version="1.9.0.v201010181130-7I9O-FE9JfxXy1iz06uC_FrlImH-"/>
+			<unit id="org.eclipse.datatools.sdk.feature.feature.group" version="1.9.0.v201010181130-7PA3-FEPPYupCWLDHfffcc2LJx83"/>
+			-->
 
 			<!-- XSD 2.7 -->
 			<unit id="org.eclipse.xsd.ecore.converter.feature.group" version="2.6.0.v20110310-1804"/>
