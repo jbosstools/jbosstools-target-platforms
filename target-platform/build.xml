@@ -139,8 +139,8 @@ Or, simply call the jbds target, to use the defaults in the previous example:
 	<!-- should work on osx-cocoa32, win32, lin32, lin64 -->
 	<target name="get.eclipse">
 		<!-- NOTE: must use same platform (50M) or SDK (103M - 168M) version as feature version on target platform, or will get install/update conflicts -->
-		<property name="eclipse.version" value="3.7M5" />
-		<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/S-3.7M5-201101272034"/>
+		<property name="eclipse.version" value="3.7M6" />
+		<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/S-3.7M6-201103101119"/>
 		<!--
 		<property name="eclipse.version" value="M20110105-0951" />
 		<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/${eclipse.version}" />
