@@ -2,7 +2,7 @@
 # Hudson creates a repo in ${repoDir}; copy it into other places for access by downstream jobs and users
 
 # defaults for JBoss Tools
-targetZipFile=e37M5-wtp33M5.target
+targetZipFile=e37M6-wtp33M6.target
 repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO
 destinationPath=/home/hudson/static_build_env/jbds/target-platform
 DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform
@@ -21,7 +21,7 @@ while [ "$#" -gt 0 ]; do
 		'-exclude') exclude="$2"; shift 2;;
 		'-jbt_3.3.indigo') 
 		# defaults for JBT (trunk)
-		targetZipFile=e37M5-wtp33M5.target
+		targetZipFile=e37M6-wtp33M6.target
 		repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO_3.3.indigo
 		destinationPath=/home/hudson/static_build_env/jbds/target-platform_3.3.indigo
 		DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform_3.3.indigo
@@ -30,7 +30,7 @@ while [ "$#" -gt 0 ]; do
 		shift 1;;
 		'-jbt') 
 		# defaults for JBT (stable branch)
-		targetZipFile=e37M5-wtp33M5.target
+		targetZipFile=e37M6-wtp33M6.target
 		repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO
 		destinationPath=/home/hudson/static_build_env/jbds/target-platform
 		DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform
@@ -39,7 +39,7 @@ while [ "$#" -gt 0 ]; do
 		shift 1;;
 		'-jbds_3.3.indigo') 
 		# defaults for JBDS (trunk)
-		targetZipFile=jbds500-e37M5-wtp33M5.target
+		targetZipFile=jbds500-e37M6-wtp33M6.target
 		repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO_3.3.indigo
 		destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform_3.3.indigo
 		DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform_3.3.indigo
@@ -48,7 +48,7 @@ while [ "$#" -gt 0 ]; do
 		shift 1;;
 		'-jbds') 
 		# defaults for JBDS (stable branch)
-		targetZipFile=jbds500-e37M5-wtp33M5.target
+		targetZipFile=jbds500-e37M6-wtp33M6.target
 		repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO
 		destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform
 		DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform
