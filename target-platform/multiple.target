@@ -61,10 +61,10 @@
 			<unit id="org.eclipse.xsd.feature.group" version="2.7.0.v20110128-1446"/>
 
 			<unit id="org.eclipse.swtbot.eclipse.feature.group" version="2.0.3.20110219_0655-4d933cf-dev-e36"/>
-			<unit id="org.eclipse.swtbot.eclipse.gef.feature.group" version="2.0.3.20110219_0655-4d933cf-dev-e36"/>
-			<unit id="org.eclipse.swtbot.ide.feature.group" version="2.0.3.20110219_0655-4d933cf-dev-e36"/>
-			<unit id="org.eclipse.swtbot.eclipse.test.junit4.feature.group" version="2.0.3.20110219_0655-4d933cf-dev-e36"/>
-			<unit id="org.eclipse.swtbot.feature.group" version="2.0.3.20110219_0655-4d933cf-dev-e36"/>
+			<unit id="org.eclipse.swtbot.eclipse.gef.feature.group" version="2.0.4.20110304_0338-e5aff47-dev-e36"/>
+			<unit id="org.eclipse.swtbot.ide.feature.group" version="2.0.4.20110304_0338-e5aff47-dev-e36"/>
+			<unit id="org.eclipse.swtbot.eclipse.test.junit4.feature.group" version="2.0.4.20110304_0338-e5aff47-dev-e36"/>
+			<unit id="org.eclipse.swtbot.feature.group" version="2.0.4.20110304_0338-e5aff47-dev-e36"/>
 
 			<unit id="org.eclipse.birt.osgi.runtime.sdk.feature.group" version="4.0.0.v20101008-79--87aC-AFJ6i5OwkX7DtDlQnz-"/>
 			<unit id="org.eclipse.birt.feature.group" version="4.0.0.v20101013-CJ8h7AGS7-BwX_RBv07XxGDko6kN"/>
@@ -189,7 +189,7 @@
 			<!-- avail in 3.3M5, not in M6; assume refactored to jpt.jpa
 			<unit id="org.eclipse.jpt.feature.feature.group" version="2.4.0.v201010040000-7L7_DNFBBoPabR8dYRjSP"/>
 			-->
-			<unit version="3.0.0.v201103020003-7T7F77FD3wTgkUOWfVnWb" id="org.eclipse.jpt.jpa.feature.feature.group"/>
+			<unit id="org.eclipse.jpt.jpa.feature.feature.group" version="3.0.0.v201103020003-7T7F77FD3wTgkUOWfVnWb"/>
 			<unit id="org.eclipse.wst.common.fproj.feature.group" version="3.3.0.v201008101723-377DF8s73543C674AAA"/>
 			<unit id="org.eclipse.jst.enterprise_ui.feature.feature.group" version="3.3.0.v201008062100-7b7IHsyFSK2WCyUz0B1kvyUYCPoM"/>
 			<unit id="org.eclipse.wst.web_ui.feature.feature.group" version="3.3.0.v201102200555-7O7IFhJEMi9DwZ0CPsbmPPpz-VRW"/>

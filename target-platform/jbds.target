@@ -16,7 +16,7 @@
 			<unit id="org.eclipse.datatools.enablement.sdk.feature.feature.group" version="1.9.0.v201010181130-7I9O-FE9JfxXy1iz06uC_FrlImH-"/>
 			<unit id="org.eclipse.datatools.sdk.feature.feature.group" version="1.9.0.v201010181130-7PA3-FEPPYupCWLDHfffcc2LJx83"/>
 			<unit id="org.eclipse.datatools.modelbase.feature.feature.group" version="1.9.0.v201010181130-77078CcNBGKBZI_FcRd"/>
-			<unit id="org.eclipse.datatools.connectivity.feature.feature.group" version="1.9.0.v201010181130-7C7e8gEt1Zwkp9kfkUGJsrNYJ73"/>
+			<unit version="1.9.0.v201010181130-7C7e8gEt1Zwkr9kfkUKFumX_-ou" id="org.eclipse.datatools.connectivity.feature.feature.group"/>
 			<unit id="org.eclipse.datatools.connectivity.oda.feature.feature.group" version="1.9.0.v201010181130-7H7C7FCcNBHFCQGgERLX"/>
 			<unit id="org.eclipse.datatools.connectivity.oda.designer.feature.feature.group" version="1.9.0.v201010181130-4107w3121151A1A53"/>
 			<unit id="org.eclipse.datatools.connectivity.oda.designer.core.feature.feature.group" version="1.9.0.v201010181130-7B7C7ACcNBGLEOIeD_WM"/>
