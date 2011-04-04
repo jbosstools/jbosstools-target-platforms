@@ -186,7 +186,10 @@
 			<unit id="org.eclipse.jst.common.fproj.enablement.jdt.feature.group" version="3.3.0.v201102200555-377DF8s73543C6F6AAD"/>
 			<unit id="org.eclipse.jst.ws.axis2tools.feature.feature.group" version="1.1.100.v201005241530-78-FF0DZRDKDDePSKwHj"/>
 			<unit id="org.eclipse.jst.ws.cxf.feature.feature.group" version="1.0.100.v201009051717-7H78AKFAKlZgiH3jFfA3z0E6I6I"/>
+			<!-- avail in 3.3M5, not in M6; assume refactored to jpt.jpa
 			<unit id="org.eclipse.jpt.feature.feature.group" version="2.4.0.v201010040000-7L7_DNFBBoPabR8dYRjSP"/>
+			-->
+			<unit version="3.0.0.v201103020003-7T7F77FD3wTgkUOWfVnWb" id="org.eclipse.jpt.jpa.feature.feature.group"/>
 			<unit id="org.eclipse.wst.common.fproj.feature.group" version="3.3.0.v201008101723-377DF8s73543C674AAA"/>
 			<unit id="org.eclipse.jst.enterprise_ui.feature.feature.group" version="3.3.0.v201008062100-7b7IHsyFSK2WCyUz0B1kvyUYCPoM"/>
 			<unit id="org.eclipse.wst.web_ui.feature.feature.group" version="3.3.0.v201102200555-7O7IFhJEMi9DwZ0CPsbmPPpz-VRW"/>
