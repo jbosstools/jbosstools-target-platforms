@@ -47,6 +47,7 @@
 <iu id="javax.wsdl" version=""/>
 <iu id="org.apache.oro" version=""/>
 <iu id="org.jdom" version=""/>
+<iu id="org.apache.commons.codec" version=""/>
 <iu id="org.eclipse.emf.ecore.feature.group" version=""/>
 <iu id="org.eclipse.emf.feature.group" version=""/>
 <iu id="org.eclipse.emf.codegen.feature.group" version=""/>

@@ -30,6 +30,10 @@
 <source>
 <repository location="http://download.jboss.org/jbosstools/updates/indigo/"/>
 </source>
+<iu id="javax.wsdl" version=""/>
+<iu id="org.apache.oro" version=""/>
+<iu id="org.jdom" version=""/>
+<iu id="org.apache.commons.codec" version=""/>
 <iu id="org.eclipse.cvs.feature.group" version=""/>
 <iu id="org.eclipse.datatools.modelbase.feature.feature.group" version=""/>
 <iu id="org.eclipse.datatools.connectivity.feature.feature.group" version=""/>
