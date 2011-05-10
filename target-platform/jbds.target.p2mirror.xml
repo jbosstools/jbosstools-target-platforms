@@ -28,7 +28,7 @@
 <p2.mirror destination="file://${repoDir}" verbose="${verbose}">
 <slicingOptions includeFeatures="true" followStrict="${followStrict}"/>
 <source>
-<repository location="http://download.jboss.org/jbosstools/updates/indigo/"/>
+<repository location="http://download.jboss.org/jbosstools/updates/indigo/M6/"/>
 </source>
 <iu id="javax.wsdl" version=""/>
 <iu id="org.apache.oro" version=""/>
@@ -76,6 +76,8 @@
 <iu id="org.eclipse.xsd.mapping.feature.group" version=""/>
 <iu id="org.eclipse.xsd.feature.group" version=""/>
 <iu id="org.eclipse.emf.feature.group" version=""/>
+<iu id="org.eclipse.graphiti.feature.feature.group" version=""/>
+<iu id="org.eclipse.emf.workspace.feature.group" version=""/>
 <iu id="org.eclipse.draw2d.feature.group" version=""/>
 <iu id="org.eclipse.gef.feature.group" version=""/>
 <iu id="org.eclipse.zest.feature.group" version=""/>

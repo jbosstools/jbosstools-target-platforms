@@ -12,7 +12,7 @@
 		</location>
 
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<repository location="http://download.jboss.org/jbosstools/updates/indigo/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/indigo/M6/"/>
 
 			<!-- m2e 0.13 + deps -->
 			<unit id="org.eclipse.m2e.feature.feature.group" version="0.13.0.201103291237"/>
@@ -49,6 +49,8 @@
 			<!-- <unit id="org.mozilla.xulrunner.feature.feature.group" version="1.9.12.v20110120-2050-H36-CR1"/>
 			<unit id="org.mozilla.xpcom.feature.feature.group" version="1.9.12.v20110120-2050-H36-CR1"/> -->
 
+			<unit id="org.eclipse.graphiti.feature.feature.group" version="0.8.0.v20110429-1110"/>
+			<unit id="org.eclipse.emf.workspace.feature.group" version="1.5.0.v20110502-1600-36-8s734C367E3CBC7"/>
 			<unit id="org.eclipse.emf.ecore.feature.group" version="2.7.0.v20110128-1409"/>
 			<unit id="org.eclipse.emf.feature.group" version="2.7.0.v20110128-1446"/>
 			<unit id="org.eclipse.emf.codegen.feature.group" version="2.6.0.v20110310-1804"/>
