@@ -72,11 +72,11 @@
 			<unit id="org.eclipse.swtbot.eclipse.test.junit4.feature.group" version="2.0.4.20110304_0338-e5aff47-dev-e36"/>
 			<unit id="org.eclipse.swtbot.feature.group" version="2.0.4.20110304_0338-e5aff47-dev-e36"/>
 
-			<unit id="org.eclipse.birt.osgi.runtime.sdk.feature.group" version="4.0.0.v20101008-79--87aC-AFJ6i5OwkX7DtDlQnz-"/>
-			<unit id="org.eclipse.birt.feature.group" version="4.0.0.v20101013-CJ8h7AGS7-BwX_RBv07XxGDko6kN"/>
-			<unit id="org.eclipse.birt.integration.wtp.feature.group" version="4.0.0.v20110130-1818-5--7w3122124102929"/>
-			<unit id="org.eclipse.birt.chart.feature.group" version="4.0.0.v20101008-828L1FQCnvKA7YW2lWF7"/>
-			<unit id="org.eclipse.birt.chart.integration.wtp.feature.group" version="4.0.0.v20110130-1818-5--7w3122124102929"/>
+			<unit id="org.eclipse.birt.osgi.runtime.sdk.feature.group" version="3.7.0.v20110329-777D-86sH1BEM7o5ODXaD2G4lQnz"/>
+			<unit id="org.eclipse.birt.feature.group" version="3.7.0.v20110329-B7F907AGS6mD_gblju07XxVERRSk"/>
+			<unit id="org.eclipse.birt.integration.wtp.feature.group" version="3.7.0.v20110503-1408-46-7w3122161402519"/>
+			<unit id="org.eclipse.birt.chart.feature.group" version="3.7.0.v20110329-7r9e1FQCnvKM70EhlWF7"/>
+			<unit id="org.eclipse.birt.chart.integration.wtp.feature.group" version="3.7.0.v20110503-1408-46-7w3122161402519"/>
 
 			<unit id="com.ibm.icu.base.feature.group" version="1.1.0.v20090119-79318s73533B57"/>
 			<unit id="org.eclipse.equinox.server.core.feature.group" version="1.1.0.v20110124-7K7TF9wF7RZHQLKaPb13J93"/>
