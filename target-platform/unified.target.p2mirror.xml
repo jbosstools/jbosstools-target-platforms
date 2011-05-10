@@ -50,6 +50,8 @@
 <iu id="org.apache.commons.codec" version=""/>
 <iu id="org.eclipse.graphiti.feature.feature.group" version=""/>
 <iu id="org.eclipse.emf.workspace.feature.group" version=""/>
+<iu id="org.eclipse.emf.validation.feature.group" version=""/>
+<iu id="org.eclipse.emf.transaction.feature.group" version=""/>
 <iu id="org.eclipse.emf.ecore.feature.group" version=""/>
 <iu id="org.eclipse.emf.feature.group" version=""/>
 <iu id="org.eclipse.emf.codegen.feature.group" version=""/>

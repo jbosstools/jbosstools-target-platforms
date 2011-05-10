@@ -75,9 +75,11 @@
 <iu id="org.eclipse.xsd.mapping.editor.feature.group" version=""/>
 <iu id="org.eclipse.xsd.mapping.feature.group" version=""/>
 <iu id="org.eclipse.xsd.feature.group" version=""/>
-<iu id="org.eclipse.emf.feature.group" version=""/>
 <iu id="org.eclipse.graphiti.feature.feature.group" version=""/>
+<iu id="org.eclipse.emf.feature.group" version=""/>
 <iu id="org.eclipse.emf.workspace.feature.group" version=""/>
+<iu id="org.eclipse.emf.validation.feature.group" version=""/>
+<iu id="org.eclipse.emf.transaction.feature.group" version=""/>
 <iu id="org.eclipse.draw2d.feature.group" version=""/>
 <iu id="org.eclipse.gef.feature.group" version=""/>
 <iu id="org.eclipse.zest.feature.group" version=""/>
