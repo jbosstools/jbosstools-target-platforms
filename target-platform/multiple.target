@@ -46,9 +46,6 @@
 			<unit id="org.jdom" version="1.0.0.v201005080400"/>
 			<unit id="org.apache.commons.codec" version="1.3.0.v201101211617"/>
 
-			<!-- <unit id="org.mozilla.xulrunner.feature.feature.group" version="1.9.12.v20110120-2050-H36-CR1"/>
-			<unit id="org.mozilla.xpcom.feature.feature.group" version="1.9.12.v20110120-2050-H36-CR1"/> -->
-
 			<unit id="org.eclipse.graphiti.feature.feature.group" version="0.8.0.v20110201-1429"/>
 			<unit id="org.eclipse.emf.workspace.feature.group" version="1.4.0.v20100428-2315-36-8s734C367E3CBC7"/>
 			<unit id="org.eclipse.emf.validation.feature.group" version="1.4.0.v20100428-2315-479-9oB56N5BBR6LCA6"/>
