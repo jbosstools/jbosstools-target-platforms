@@ -12,7 +12,7 @@
 		</location>
 
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<repository location="http://download.jboss.org/jbosstools/updates/indigo/M6/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/indigo/M7/"/>
 
 			<!-- m2e 0.13 + deps -->
 			<unit id="org.eclipse.m2e.feature.feature.group" version="0.13.0.201103291237"/>

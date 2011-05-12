@@ -28,7 +28,7 @@
 <p2.mirror destination="file://${repoDir}" verbose="${verbose}">
 <slicingOptions includeFeatures="true" followStrict="${followStrict}"/>
 <source>
-<repository location="http://download.jboss.org/jbosstools/updates/indigo/M6/"/>
+<repository location="http://download.jboss.org/jbosstools/updates/indigo/M7/"/>
 </source>
 <iu id="javax.wsdl" version=""/>
 <iu id="org.apache.oro" version=""/>

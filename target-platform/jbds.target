@@ -160,7 +160,7 @@
 			<unit id="org.eclipse.tm.terminal.telnet.feature.group" version="2.1.0.v201103142315-30-7w312213121A22"/>
 			<unit id="org.eclipse.tm.terminal.ssh.feature.group" version="2.1.0.v201103142315-30-7w312212153266"/>
 
-			<repository location="http://download.jboss.org/jbosstools/updates/indigo/M6/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/indigo/M7/"/>
 		</location>
 	</locations>
 </target>
