@@ -29,6 +29,8 @@
 <slicingOptions includeFeatures="true" followStrict="${followStrict}"/>
 <source>
 <repository location="http://download.jboss.org/jbosstools/builds/staging/_composite_/3.3.indigo/"/>
+<!-- don't forget to increment these files when moving up a version:
+     build.xml, *.target*, publish.sh, target2p2mirror.xml -->
 <repository location="http://download.jboss.org/jbosstools/updates/indigo/M7/"/>
 </source>
 <iu id="org.eclipse.m2e.feature.feature.group" version=""/>

@@ -1,4 +1,6 @@
 <project default="custom.build" name="jbosstools target platform p2.mirror generator">
+	<!-- don't forget to increment these files when moving up a version:
+	     build.xml, *.target*, publish.sh, target2p2mirror.xml -->
 	<property name="targetFile" value="e37M7-wtp33M7.target" />
 
 	<!-- if useLatest = true, omit versions from p2.mirror script to fetch latest version available; 

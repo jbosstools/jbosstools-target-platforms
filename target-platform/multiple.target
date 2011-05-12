@@ -12,6 +12,8 @@
 		</location>
 
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+			<!-- don't forget to increment these files when moving up a version:
+			     build.xml, *.target*, publish.sh, target2p2mirror.xml -->
 			<repository location="http://download.jboss.org/jbosstools/updates/indigo/M7/"/>
 
 			<!-- m2e 0.13 + deps -->

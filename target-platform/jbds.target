@@ -9,6 +9,10 @@
 	             :%s/.\+\/\(org.\+\)_\(\d\+.\+\)\.jar/\t\t\t<unit id="\1.feature.group" version="\2"\/>/g
         	-->
 
+			<!-- don't forget to increment these files when moving up a version:
+			     build.xml, *.target*, publish.sh, target2p2mirror.xml -->
+ 			<repository location="http://download.jboss.org/jbosstools/updates/indigo/M7/"/>
+
 			 <!-- Orbit bundles -->
 			<unit id="javax.wsdl" version="1.6.2.v201012040545"/>
 			<unit id="org.apache.oro" version="2.0.8.v201005080400"/>
@@ -159,8 +163,6 @@
 			<unit id="org.eclipse.tm.terminal.view.feature.group" version="2.2.0.v201103142315-31-7w312214253426"/>
 			<unit id="org.eclipse.tm.terminal.telnet.feature.group" version="2.1.0.v201103142315-30-7w312213121A22"/>
 			<unit id="org.eclipse.tm.terminal.ssh.feature.group" version="2.1.0.v201103142315-30-7w312212153266"/>
-
-			<repository location="http://download.jboss.org/jbosstools/updates/indigo/M7/"/>
 		</location>
 	</locations>
 </target>

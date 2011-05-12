@@ -2,6 +2,8 @@
 # Hudson creates a repo in ${repoDir}; copy it into other places for access by downstream jobs and users
 
 # defaults for JBoss Tools
+# don't forget to increment these files when moving up a version:
+# build.xml, *.target*, publish.sh, target2p2mirror.xml
 targetZipFile=e37M7-wtp33M7.target
 repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO
 destinationPath=/home/hudson/static_build_env/jbds/target-platform
