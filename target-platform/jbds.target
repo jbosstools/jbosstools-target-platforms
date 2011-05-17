@@ -96,10 +96,9 @@
 			<unit id="org.eclipse.jdt.feature.group" version="3.7.0.v20110331-7z8gFchFMTfEWNqyrZIsXph9B15B"/>
 
 			<!-- WTP SDK 3.3 -->
-			<!-- refactored to new feature name? 
-			<unit id="org.eclipse.jpt.eclipselink.feature.feature.group" version="2.4.0.v201010040000-67BBgAkF7B97KES7777"/>
-			<unit id="org.eclipse.jpt.feature.feature.group" version="2.4.0.v201010040000-7L7_DNFBBoPabR8dYRjSP"/>
-			-->
+                        <unit id="org.eclipse.jpt.common.feature.feature.group" version="1.0.0.v201104050000-6--AkF7BB7NCS7779"/>
+			<unit id="org.eclipse.jpt.common.eclipselink.feature.feature.group" version="1.0.0.v201104050000-3--8s73553B5F3333"/>
+
 			<unit id="org.eclipse.jpt.jpa.eclipselink.feature.feature.group" version="3.0.0.v201104180000-7J7F2F7RZHQPIlWAHbvaRg"/>
 			<unit id="org.eclipse.jpt.jpa.feature.feature.group" version="3.0.0.v201104050000-7Q7F77FBBoPaeQKbWRZaW6A"/>
 

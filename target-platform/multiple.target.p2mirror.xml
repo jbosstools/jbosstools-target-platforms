@@ -164,6 +164,8 @@
 <iu id="org.eclipse.jst.common.fproj.enablement.jdt.feature.group" version=""/>
 <iu id="org.eclipse.jst.ws.axis2tools.feature.feature.group" version=""/>
 <iu id="org.eclipse.jst.ws.cxf.feature.feature.group" version=""/>
+<iu id="org.eclipse.jpt.common.feature.feature.group" version=""/>
+<iu id="org.eclipse.jpt.common.eclipselink.feature.feature.group" version=""/>
 <iu id="org.eclipse.jpt.jpa.feature.feature.group" version=""/>
 <iu id="org.eclipse.wst.common.fproj.feature.group" version=""/>
 <iu id="org.eclipse.jst.enterprise_ui.feature.feature.group" version=""/>

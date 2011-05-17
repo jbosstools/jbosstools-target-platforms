@@ -84,6 +84,8 @@
 <iu id="org.eclipse.gef.feature.group" version=""/>
 <iu id="org.eclipse.zest.feature.group" version=""/>
 <iu id="org.eclipse.jdt.feature.group" version=""/>
+<iu id="org.eclipse.jpt.common.feature.feature.group" version=""/>
+<iu id="org.eclipse.jpt.common.eclipselink.feature.feature.group" version=""/>
 <iu id="org.eclipse.jpt.jpa.eclipselink.feature.feature.group" version=""/>
 <iu id="org.eclipse.jpt.jpa.feature.feature.group" version=""/>
 <iu id="org.eclipse.jsf.feature.feature.group" version=""/>
