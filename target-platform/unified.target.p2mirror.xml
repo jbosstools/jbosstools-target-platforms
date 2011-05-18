@@ -167,6 +167,7 @@
 <iu id="org.eclipse.jpt.common.feature.feature.group" version=""/>
 <iu id="org.eclipse.jpt.common.eclipselink.feature.feature.group" version=""/>
 <iu id="org.eclipse.jpt.jpa.feature.feature.group" version=""/>
+<iu id="org.eclipse.persistence.jpa.feature.group" version=""/>
 <iu id="org.eclipse.wst.common.fproj.feature.group" version=""/>
 <iu id="org.eclipse.jst.enterprise_ui.feature.feature.group" version=""/>
 <iu id="org.eclipse.wst.web_ui.feature.feature.group" version=""/>
