@@ -199,6 +199,7 @@
 			<unit id="org.eclipse.jpt.common.feature.feature.group" version="1.0.0.v201104050000-6--AkF7BB7NCS7779"/>
                         <unit id="org.eclipse.jpt.common.eclipselink.feature.feature.group" version="1.0.0.v201104050000-3--8s73553B5F3333"/>
 			<unit id="org.eclipse.jpt.jpa.feature.feature.group" version="3.0.0.v201104050000-7Q7F77FBBoPaeQKbWRZaW6A"/>
+			<unit id="org.eclipse.persistence.jpa.feature.group" version="2.3.0.v20110429-r9282"/>
 			<unit id="org.eclipse.wst.common.fproj.feature.group" version="3.3.0.v201102150115-377DF8s7355397B4B9B"/>
 			<unit id="org.eclipse.jst.enterprise_ui.feature.feature.group" version="3.3.0.v201102200555-7b7IHxjFSK2WH7RH8SoSvIZz0TrSn"/>
 			<unit id="org.eclipse.wst.web_ui.feature.feature.group" version="3.3.0.v201102200555-7O7IFhJEMi9DyJcFJu7OrFtCGlwfv20b2SPz-ndB"/>

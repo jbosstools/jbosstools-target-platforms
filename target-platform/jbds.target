@@ -101,7 +101,7 @@
 
 			<unit id="org.eclipse.jpt.jpa.eclipselink.feature.feature.group" version="3.0.0.v201104180000-7J7F2F7RZHQPIlWAHbvaRg"/>
 			<unit id="org.eclipse.jpt.jpa.feature.feature.group" version="3.0.0.v201104050000-7Q7F77FBBoPaeQKbWRZaW6A"/>
-
+			<unit id="org.eclipse.persistence.jpa.feature.group" version="2.3.0.v20110429-r9282"/>
 			<unit id="org.eclipse.jsf.feature.feature.group" version="3.3.0.v201103022146-7E7IBtF9JgLWTM6WDPfRm"/>
 			<unit id="org.eclipse.jst.common.fproj.enablement.jdt.feature.group" version="3.3.0.v201102200555-377DF8s73543E5I5768"/>
 			<unit id="org.eclipse.jst.enterprise_core.feature.feature.group" version="3.3.0.v201102200555-52FO2AkF7B87QBM7X98"/>

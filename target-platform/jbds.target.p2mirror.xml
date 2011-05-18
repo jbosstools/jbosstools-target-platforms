@@ -88,6 +88,7 @@
 <iu id="org.eclipse.jpt.common.eclipselink.feature.feature.group" version=""/>
 <iu id="org.eclipse.jpt.jpa.eclipselink.feature.feature.group" version=""/>
 <iu id="org.eclipse.jpt.jpa.feature.feature.group" version=""/>
+<iu id="org.eclipse.persistence.jpa.feature.group" version=""/>
 <iu id="org.eclipse.jsf.feature.feature.group" version=""/>
 <iu id="org.eclipse.jst.common.fproj.enablement.jdt.feature.group" version=""/>
 <iu id="org.eclipse.jst.enterprise_core.feature.feature.group" version=""/>
