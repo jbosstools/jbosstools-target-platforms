@@ -77,6 +77,10 @@ To run for JBDS target file instead of JBT target files, pass in alternate targe
 Or, simply call the jbds target, to use the defaults in the previous example:
 
 	$ ant jbds
+
+To run for JBDS target file WHILE JBT target file is being run:
+
+	$ ant jbds -DWORKINGDIR=${basedir}
 </echo>
 	</target>
 
