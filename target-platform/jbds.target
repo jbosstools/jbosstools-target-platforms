@@ -11,9 +11,9 @@
 
 			<!-- don't forget to increment these files when moving up a version:
 			     build.xml, *.target*, publish.sh, target2p2mirror.xml -->
- 			<repository location="http://download.jboss.org/jbosstools/updates/indigo/M7/"/>
- 			<!-- <repository location="file:///qa/services/http/binaries/RHDS/updates/indigo/M7/"/> -->
- 			<!-- <repository location="http://www.qa.jboss.com/binaries/RHDS/updates/indigo/M7/"/> -->
+ 			<repository location="http://download.jboss.org/jbosstools/updates/indigo/RC2/"/>
+ 			<!-- <repository location="file:///qa/services/http/binaries/RHDS/updates/indigo/RC2/"/> -->
+ 			<!-- <repository location="http://www.qa.jboss.com/binaries/RHDS/updates/indigo/RC2/"/> -->
 
 			 <!-- Orbit bundles -->
 			<unit id="javax.wsdl" version="1.6.2.v201012040545"/>
