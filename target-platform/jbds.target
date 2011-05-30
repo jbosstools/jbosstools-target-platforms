@@ -75,16 +75,16 @@
 			-->
 
 			<!-- XSD 2.7 -->
-			<unit id="org.eclipse.xsd.ecore.converter.feature.group" version="2.7.0.v20110523-0846"/>
-			<unit id="org.eclipse.xsd.edit.feature.group" version="2.7.0.v20110523-0846"/>
-			<unit id="org.eclipse.xsd.editor.feature.group" version="2.7.0.v20110523-0846"/>
-			<unit id="org.eclipse.xsd.mapping.editor.feature.group" version="2.7.0.v20110523-0846"/>
-			<unit id="org.eclipse.xsd.mapping.feature.group" version="2.7.0.v20110523-0846"/>
-			<unit id="org.eclipse.xsd.feature.group" version="2.7.0.v20110523-0846"/>
+			<unit id="org.eclipse.xsd.ecore.converter.feature.group" version="2.7.0.v20110530-1010"/>
+			<unit id="org.eclipse.xsd.edit.feature.group" version="2.7.0.v20110530-1010"/>
+			<unit id="org.eclipse.xsd.editor.feature.group" version="2.7.0.v20110530-1010"/>
+			<unit id="org.eclipse.xsd.mapping.editor.feature.group" version="2.7.0.v20110530-1010"/>
+			<unit id="org.eclipse.xsd.mapping.feature.group" version="2.7.0.v20110530-1010"/>
+			<unit id="org.eclipse.xsd.feature.group" version="2.7.0.v20110530-1010"/>
 
 			<!-- EMF 2.7 + others -->
 			<unit id="org.eclipse.graphiti.feature.feature.group" version="0.8.0.v20110524-0815"/>
-			<unit id="org.eclipse.emf.feature.group" version="2.7.0.v20110523-0846"/>
+			<unit id="org.eclipse.emf.feature.group" version="2.7.0.v20110530-1010"/>
 			<unit id="org.eclipse.emf.workspace.feature.group" version="1.5.0.v20110502-1600-36-8s734C367E3CBC7"/>
 			<unit id="org.eclipse.emf.validation.feature.group" version="1.5.0.v20110502-1600-479-9oB56N5BBR6LCA6"/>
 			<unit id="org.eclipse.emf.transaction.feature.group" version="1.5.0.v20110502-1600-377-8s734C3E7D15D6B"/>
