@@ -88,8 +88,6 @@
 <iu id="org.eclipse.platform.sdk" version=""/>
 <iu id="org.eclipse.pde.feature.group" version=""/>
 <iu id="org.eclipse.sdk.feature.group" version=""/>
-<iu id="org.eclipse.rcp.id" version=""/>
-<iu id="org.eclipse.rcp.sdk.id" version=""/>
 <iu id="org.eclipse.releng.tools.feature.group" version=""/>
 <iu id="org.eclipse.sdk.ide" version=""/>
 <iu id="org.eclipse.sdk.examples.feature.group" version=""/>
@@ -105,7 +103,6 @@
 <iu id="org.eclipse.equinox.server.jetty.feature.group" version=""/>
 <iu id="org.eclipse.equinox.server.p2.feature.group" version=""/>
 <iu id="org.eclipse.pde.api.tools.ee.fragments.feature.group" version=""/>
-<iu id="org.eclipse.equinox.p2.ui.admin.rcp.product" version=""/>
 <iu id="org.eclipse.equinox.server.servletbridge.feature.group" version=""/>
 <iu id="org.eclipse.equinox.server.simple.feature.group" version=""/>
 <iu id="org.eclipse.rcp.feature.group" version=""/>
