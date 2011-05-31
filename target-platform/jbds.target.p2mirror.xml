@@ -36,6 +36,9 @@
 <iu id="org.apache.commons.codec" version=""/>
 <iu id="org.hamcrest" version=""/>
 <iu id="org.hamcrest.core" version=""/>
+<iu id="org.hamcrest.text" version=""/>
+<iu id="org.hamcrest.library" version=""/>
+<iu id="org.hamcrest.integration" version=""/>
 <iu id="org.eclipse.cvs.feature.group" version=""/>
 <iu id="org.eclipse.datatools.modelbase.feature.feature.group" version=""/>
 <iu id="org.eclipse.datatools.connectivity.feature.feature.group" version=""/>
