@@ -105,39 +105,60 @@ To simply generate a local.target file from the multiple.target file, use:
 		<delete dir="${tmpDir}" includeemptydirs="true" quiet="true" />
 	</target>
 
+	<!-- test examples:
+	     	cd ~/32x/build/target-platform
+		ant -f targetUpdateFromRepo.xml test.updateTargetFile -Dtest.pattern=swtbot
+		ant -f targetUpdateFromRepo.xml test.updateTargetFile -Dtest.pattern=js -DtargetFile=jbds.target -DrepoDir=`pwd`/JBDS_REPO/
+	-->
 	<target name="test.updateTargetFile" depends="check.content.xml, get.content.xml, copy.content.xml, contentXml2artifactVersions.xsl">
-		<echo>Load *swtbot* properties from ${tmpDir}/artifactVersions.properties</echo>
+		<!-- properties to set commandline: -->
+		<property name="test.pattern" value="swtbot"/>
+		<property name="test.targetFile" value="${targetFile}"/>
+
+		<property name="tmpfile" value="${tmpDir}/test.updateTargetFile.tmp"/>
+		<property name="tmpfile2" value="${tmpDir}/test.updateTargetFile.tmpsed"/>
+		<echo level="info">Load /${test.pattern}/ properties from ${tmpDir}/artifactVersions.properties</echo>
 		<loadfile srcfile="${tmpDir}/artifactVersions.properties" property="artifactVersionsPropertiesContents">
 			<filterchain>
 				<linecontains>
-					<contains value="swtbot" />
+					<contains value="${test.pattern}" />
 					<contains value="feature.group" />
 				</linecontains>
 			</filterchain>
 		</loadfile>
-		<echo>${artifactVersionsPropertiesContents}</echo>
+		<echo file="${tmpfile}">${artifactVersionsPropertiesContents}</echo>
 
 		<antcall target="target2targetTemplate">
-			<param name="outputFile" value="${tmpDir}/${unified.targetFile}.template" />
+			<param name="outputFile" value="${tmpDir}/${test.targetFile}.template" />
 			<param name="replacement.URL" value="${unified.URL}" />
 		</antcall>
-		<echo>Generated ${tmpDir}/${unified.targetFile}.template: </echo>
-		<exec executable="egrep">
-			<arg line="&quot;swtbot&quot; ${tmpDir}/${unified.targetFile}.template" />
-		</exec>
+		<!-- <echo level="info">Generated ${tmpDir}/${unified.targetFile}.template: </echo>
+	<exec executable="egrep">
+			<arg line="&quot;${test.pattern}&quot; ${tmpDir}/${test.targetFile}.template" />
+		</exec> -->
 
 		<antcall target="updateTargetFile">
-			<param name="targetFile" value="${unified.targetFile}" />
+			<param name="targetFile" value="${test.targetFile}" />
 		</antcall>
-		<echo>--
+		<echo level="info">--
 If loaded version values (in artifactVersions.properties) do not match  
-output below, an error has occurred or replace.versions is undefined.
+output below (values from repo), an error has occurred or replace.versions is undefined.
+It is also possible that the complete list of features in the repo is greater than those 
+in the target. If so, clean the repo and regenerate to remove extraneous content.
 --</echo>
-		<exec executable="egrep">
-			<arg line="&quot;swtbot.*feature.group&quot; ${unified.targetFile}" />
+		<!-- $ sed -n -e '/swtbot.*feature.group/ p' unified.target | sed -e 's/\t\t\t<unit id="\|"\/>//g' -->
+		<exec executable="sed" output="${tmpfile2}">
+			<arg line=" -n -e '/${test.pattern}.*feature.group/ p' ${test.targetFile}" />
 		</exec>
-
-
+		<exec executable="sed" output="${tmpfile}.2">
+			<arg line=" -e 's/\t\t\t&lt;unit id=&quot;\|&quot;\/&gt;//g' ${tmpfile2} -e 's/&quot; version=&quot;/.version=/g'" />
+		</exec>
+		<exec executable="sort" output="${tmpfile}.sorted"><arg line="${tmpfile}"/></exec>
+		<exec executable="sort" output="${tmpfile}.2.sorted"><arg line="${tmpfile}.2"/></exec>
+		<exec executable="diff" outputproperty="diffout">
+			<arg line="${tmpfile}.sorted ${tmpfile}.2.sorted"/>
+		</exec>
+		<echo>${diffout}</echo>
+		<antcall target="cleanup"/>
 	</target>
-
 </project>
