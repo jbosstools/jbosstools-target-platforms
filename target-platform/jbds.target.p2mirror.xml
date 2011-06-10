@@ -31,9 +31,10 @@
 <repository location="http://download.jboss.org/jbosstools/updates/indigo/RC2/"/>
 </source>
 <iu id="javax.wsdl" version=""/>
-<iu id="org.apache.oro" version=""/>
 <iu id="org.jdom" version=""/>
+<iu id="org.apache.oro" version=""/>
 <iu id="org.apache.commons.codec" version=""/>
+<iu id="org.apache.commons.httpclient" version=""/>
 <iu id="org.hamcrest" version=""/>
 <iu id="org.hamcrest.core" version=""/>
 <iu id="org.hamcrest.text" version=""/>

@@ -46,9 +46,10 @@
 <iu id="org.eclipse.equinox.p2.ui.discovery" version=""/>
 <iu id="org.eclipse.net4j.jms.api" version=""/>
 <iu id="javax.wsdl" version=""/>
-<iu id="org.apache.oro" version=""/>
 <iu id="org.jdom" version=""/>
+<iu id="org.apache.oro" version=""/>
 <iu id="org.apache.commons.codec" version=""/>
+<iu id="org.apache.commons.httpclient" version=""/>
 <iu id="org.hamcrest" version=""/>
 <iu id="org.hamcrest.core" version=""/>
 <iu id="org.hamcrest.text" version=""/>
