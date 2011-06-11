@@ -180,6 +180,10 @@
 			<unit id="org.slf4j.api" version="1.6.1.v20100831-0715"/>
 			<unit id="com.ning.async-http-client" version="1.6.3.201106052308"/>
 			<unit id="org.jboss.netty" version="3.2.4.Final-201106052308"/>
+			<unit id="org.eclipse.equinox.p2.discovery.compatibility" version="1.0.1.v20110502-1955"/>
+			<unit id="org.eclipse.equinox.p2.discovery" version="1.0.100.v20110502-1955"/>
+			<unit id="org.eclipse.equinox.p2.ui.discovery" version="1.0.0.v20110502-1955"/>
+			<unit id="org.eclipse.net4j.jms.api" version="3.0.0.v20110516-1727"/>
 		</location>
 	</locations>
 </target>

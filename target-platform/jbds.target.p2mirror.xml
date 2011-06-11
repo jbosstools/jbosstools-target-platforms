@@ -157,6 +157,10 @@
 <iu id="org.slf4j.api" version=""/>
 <iu id="com.ning.async-http-client" version=""/>
 <iu id="org.jboss.netty" version=""/>
+<iu id="org.eclipse.equinox.p2.discovery.compatibility" version=""/>
+<iu id="org.eclipse.equinox.p2.discovery" version=""/>
+<iu id="org.eclipse.equinox.p2.ui.discovery" version=""/>
+<iu id="org.eclipse.net4j.jms.api" version=""/>
 </p2.mirror>
 </target>
 </project>
