@@ -149,6 +149,14 @@
 <iu id="org.eclipse.tm.terminal.view.feature.group" version=""/>
 <iu id="org.eclipse.tm.terminal.telnet.feature.group" version=""/>
 <iu id="org.eclipse.tm.terminal.ssh.feature.group" version=""/>
+<iu id="org.eclipse.m2e.feature.feature.group" version=""/>
+<iu id="org.maven.ide.eclipse.wtp.feature.feature.group" version=""/>
+<iu id="ch.qos.logback.classic" version=""/>
+<iu id="ch.qos.logback.core" version=""/>
+<iu id="ch.qos.logback.slf4j" version=""/>
+<iu id="org.slf4j.api" version=""/>
+<iu id="com.ning.async-http-client" version=""/>
+<iu id="org.jboss.netty" version=""/>
 </p2.mirror>
 </target>
 </project>
