@@ -105,13 +105,9 @@
 
 			<!-- DTP 1.9 -->
 			<unit id="org.eclipse.datatools.modelbase.feature.feature.group" version="1.9.0.v201010181130-77078CcNBHCBYKYEbNV"/>
-			<!-- should be newer M6 versions
-			     :%s/<unit id="org.eclipse.datatools.connectivity.feature.feature.group" version="1.9.0.v201010181130-7C7e8gEt1Zwkp9kfkUGJsrNYJ73"\/>  /<unit id="org.eclipse.datatools.connectivity.feature.feature.group" version="1.9.0.v201010181130-7C7e8gEt1Zwkr9kfkUKFumX_-ou"\/>  /g
-			-->
 			<unit id="org.eclipse.datatools.connectivity.feature.feature.group" version="1.9.0.v201010181130-7C7e8hEt1ZwmrIjglSM8CoR_Bu4"/>  
 			<unit id="org.eclipse.datatools.connectivity.oda.feature.feature.group" version="1.9.0.v201010181130-7H7C7GCcNBHHBcIeEcQb"/>
 			<unit id="org.eclipse.datatools.connectivity.oda.designer.feature.feature.group" version="1.9.0.v201010181130-4107w3121151A1A53"/>
-			<!-- next two updated in M6 -->
 			<unit id="org.eclipse.datatools.connectivity.oda.designer.core.feature.feature.group" version="1.9.0.v201010181130-7B7C7CCcNBGNCWHeDYRS"/>
 			<unit id="org.eclipse.datatools.enablement.feature.feature.group" version="1.9.0.v201010181130-7J9B0BWwVM6z-2z-hgOTs0y-rHcC"/>
 			<unit id="org.eclipse.datatools.enablement.apache.derby.feature.feature.group" version="1.9.0.v201010181130-77788eBmKDOGMeK0J2Ok7QBR"/>
@@ -121,7 +117,6 @@
 			<unit id="org.eclipse.datatools.enablement.jdt.feature.feature.group" version="1.9.0.v201010181130-2-07w31211518181A"/>
 			<unit id="org.eclipse.datatools.enablement.msft.feature.feature.group" version="1.9.0.v201010181130-542AkF79P7QCP9SDB"/>
 			<unit id="org.eclipse.datatools.enablement.mysql.feature.feature.group" version="1.9.0.v201010181130-546AkF78Y7R9PAX77"/>
-			<!-- next one updated in M6 -->
 			<unit id="org.eclipse.datatools.enablement.oda.feature.feature.group" version="1.9.0.v201010181130-7A7T78DZRDKFF_GlGgJU"/>
 			<unit id="org.eclipse.datatools.enablement.oda.designer.feature.feature.group" version="1.9.0.v201010181130-3328s73553C655B63"/>
 			<unit id="org.eclipse.datatools.enablement.oracle.feature.feature.group" version="1.9.0.v201010181130-548dAkF79Q7RAN9UFJ"/>
