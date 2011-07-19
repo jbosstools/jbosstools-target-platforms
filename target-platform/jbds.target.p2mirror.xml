@@ -28,7 +28,7 @@
 <p2.mirror destination="file://${repoDir}" verbose="${verbose}">
 <slicingOptions includeFeatures="true" followStrict="${followStrict}"/>
 <source>
-<repository location="http://download.jboss.org/jbosstools/updates/indigo/RC2/"/>
+<repository location="http://download.jboss.org/jbosstools/updates/indigo/SR0/"/>
 </source>
 <iu id="javax.wsdl" version=""/>
 <iu id="org.jdom" version=""/>

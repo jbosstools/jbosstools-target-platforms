@@ -4,7 +4,7 @@
 # defaults for JBoss Tools
 # don't forget to increment these files when moving up a version:
 # build.xml, *.target*, publish.sh, target2p2mirror.xml
-targetZipFile=e37RC2-wtp33RC2.target
+targetZipFile=e370-wtp330.target
 repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO
 destinationPath=/home/hudson/static_build_env/jbds/target-platform
 DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform
@@ -23,7 +23,7 @@ while [ "$#" -gt 0 ]; do
 		'-exclude') exclude="$2"; shift 2;;
 		'-jbt_3.3.indigo') 
 		# defaults for JBT (trunk)
-		targetZipFile=e37RC2-wtp33RC2.target
+		targetZipFile=e370-wtp330.target
 		repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO_3.3.indigo
 		destinationPath=/home/hudson/static_build_env/jbds/target-platform_3.3.indigo
 		DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform_3.3.indigo
@@ -32,7 +32,7 @@ while [ "$#" -gt 0 ]; do
 		shift 1;;
 		'-jbt') 
 		# defaults for JBT (stable branch)
-		targetZipFile=e37RC2-wtp33RC2.target
+		targetZipFile=e370-wtp330.target
 		repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO
 		destinationPath=/home/hudson/static_build_env/jbds/target-platform
 		DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform
@@ -41,7 +41,7 @@ while [ "$#" -gt 0 ]; do
 		shift 1;;
 		'-jbds_3.3.indigo') 
 		# defaults for JBDS (trunk)
-		targetZipFile=jbds500-e37RC2-wtp33RC2.target
+		targetZipFile=jbds500-e370-wtp330.target
 		repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO_3.3.indigo
 		destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform_3.3.indigo
 		DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform_3.3.indigo
@@ -50,7 +50,7 @@ while [ "$#" -gt 0 ]; do
 		shift 1;;
 		'-jbds') 
 		# defaults for JBDS (stable branch)
-		targetZipFile=jbds500-e37RC2-wtp33RC2.target
+		targetZipFile=jbds500-e370-wtp330.target
 		repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO
 		destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform
 		DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform
