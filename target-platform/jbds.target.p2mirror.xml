@@ -33,6 +33,7 @@
 <iu id="org.eclipse.m2e.sdk.feature.feature.group" version=""/>
 <iu id="org.eclipse.m2e.feature.feature.group" version=""/>
 <iu id="org.maven.ide.eclipse.wtp.feature.feature.group" version=""/>
+<iu id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version=""/>
 <iu id="ch.qos.logback.classic" version=""/>
 <iu id="ch.qos.logback.core" version=""/>
 <iu id="ch.qos.logback.slf4j" version=""/>
