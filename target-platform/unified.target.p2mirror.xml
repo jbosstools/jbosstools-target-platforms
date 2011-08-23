@@ -199,8 +199,11 @@
 <iu id="org.eclipse.wst.web_core.feature.feature.group" version=""/>
 <iu id="org.eclipse.wst.ws_ui.feature.feature.group" version=""/>
 <iu id="org.eclipse.wst.xml_core.feature.feature.group" version=""/>
-<iu id="org.eclipse.egit.feature.group" version=""/>
+<iu id="org.eclipse.jsch.ui" version=""/>
+<iu id="org.eclipse.jsch.core" version=""/>
+<iu id="com.jcraft.jsch" version=""/>
 <iu id="org.eclipse.jgit.feature.group" version=""/>
+<iu id="org.eclipse.egit.feature.group" version=""/>
 <iu id="org.drools.eclipse.feature.feature.group" version=""/>
 <iu id="org.drools.eclipse.task.feature.feature.group" version=""/>
 <iu id="org.guvnor.tools.feature.feature.group" version=""/>

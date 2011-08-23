@@ -221,11 +221,13 @@
 			<unit id="com.google.gwt.eclipse.sdkbundle.e36.feature.2.2.0.feature.group" version="2.2.0.v201102111811"/>
 			<unit id="com.google.gdt.eclipse.suite.e36.feature.feature.group" version="2.2.0.v201102111811"/> -->
 
-			<!-- JBIDE-9549 add egit/jgit to TP -->
-			<unit id="org.eclipse.egit.feature.group" version="1.0.0"/>
-			<unit id="org.eclipse.jgit.feature.group" version="1.0.0"/>
+			<!-- JBIDE-9549 add egit/jgit to TP, including dependent plugins -->
+			<unit id="org.eclipse.jsch.ui" version="1.1.300.I20110511-0800"/>
+			<unit id="org.eclipse.jsch.core" version="1.1.300.I20110514-0800"/>
+			<unit id="com.jcraft.jsch" version="0.1.41.v201101211617"/>
+			<unit id="org.eclipse.jgit.feature.group" version="1.0.0.201106090707-r"/>
+			<unit id="org.eclipse.egit.feature.group" version="1.0.0.201106090707-r"/>
 		</location>
-
 	</locations>
 	<includeBundles>
 		<feature id="org.drools.eclipse.feature"/>
