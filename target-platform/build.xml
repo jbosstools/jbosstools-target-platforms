@@ -145,8 +145,8 @@ To run for JBDS target file WHILE JBT target file is being run:
 		<!-- NOTE: must use same platform (50M) or SDK (103M - 168M) version as feature version on target platform, or will get install/update conflicts -->
 		<!-- don't forget to increment these files when moving up a version:
 		     build.xml, *.target*, publish.sh, target2p2mirror.xml -->
-		<property name="eclipse.version" value="I20110613-1736" />
-		<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/I20110613-1736"/>
+		<property name="eclipse.version" value="M20110831-1030" />
+		<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/M20110831-1030"/>
 
 		<if>
 			<equals arg1="${arch}" arg2="x86" />
