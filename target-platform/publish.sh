@@ -69,7 +69,7 @@ if [[ -d ${repoDir} ]]; then
 	du -sh ${repoDir} ${destinationPath}/${targetZipFile}
 
 	# copy/update into central place for reuse by local downstream build jobs
-	date; rsync -arzqc --delete-after --delete-excluded --rsh=ssh ${exclude} ${include} ${destinationPath}/${targetZipFile}/
+	date; rsync -arzqc --protocol=28 --delete-after --delete-excluded --rsh=ssh ${exclude} ${include} ${destinationPath}/${targetZipFile}/
 
 	du -sh ${repoDir} ${destinationPath}/${targetZipFile}
 
@@ -78,7 +78,7 @@ if [[ -d ${repoDir} ]]; then
 		mkdir -p ${DESTINATION}/
 	fi
 	# if the following line fails, make sure that ${DESTINATION} is already created on target server
-	date; rsync -arzqc --delete-after --delete-excluded --rsh=ssh ${exclude} ${include} ${DESTINATION}/latest/
+	date; rsync -arzqc --protocol=28 --delete-after --delete-excluded --rsh=ssh ${exclude} ${include} ${DESTINATION}/latest/
 
 	targetZip=/tmp/${targetZipFile}.zip
 
@@ -89,6 +89,6 @@ if [[ -d ${repoDir} ]]; then
 	# generate MD5 sum for zip (file contains only the hash, not the hash + filename)
 	for m in $(md5sum ${targetZip}); do if [[ $m != ${targetZip} ]]; then echo $m > ${targetZip}.MD5; fi; done
 
-	date; rsync -arzq --rsh=ssh ${targetZip} ${targetZip}.MD5 ${DESTINATION}/ 
+	date; rsync -arzq --protocol=28 --rsh=ssh ${targetZip} ${targetZip}.MD5 ${DESTINATION}/ 
 	rm -f ${targetZip} ${targetZip}.MD5
 fi
