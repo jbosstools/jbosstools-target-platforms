@@ -52,9 +52,15 @@
 <iu id="org.apache.commons.httpclient" version=""/>
 <iu id="org.hamcrest" version=""/>
 <iu id="org.hamcrest.core" version=""/>
+<iu id="org.hamcrest.text" version=""/>
 <iu id="org.hamcrest.library" version=""/>
 <iu id="org.hamcrest.integration" version=""/>
-<iu id="org.eclipse.cvs.feature.group" version=""/>
+<iu id="org.apache.lucene.highlighter" version=""/>
+<iu id="org.apache.lucene.memory" version=""/>
+<iu id="org.apache.lucene.misc" version=""/>
+<iu id="org.apache.lucene.queries" version=""/>
+<iu id="org.apache.lucene.snowball" version=""/>
+<iu id="org.apache.lucene.spellchecker" version=""/>
 <iu id="org.eclipse.graphiti.feature.feature.group" version=""/>
 <iu id="org.eclipse.emf.workspace.feature.group" version=""/>
 <iu id="org.eclipse.emf.validation.feature.group" version=""/>
