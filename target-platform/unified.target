@@ -47,10 +47,10 @@
 				    
 			<!-- needed for JBoss Central -->
 			<unit id="com.sun.syndication" version="0.9.0.v200803061811"/>
-			<unit id="org.eclipse.mylyn.commons.core" version="3.6.0"/>
-			<unit id="org.eclipse.mylyn.discovery.ui" version="3.6.0"/>
-			<unit id="org.eclipse.mylyn.discovery.core" version="3.6.0"/>
-			<unit id="org.eclipse.mylyn.commons.ui" version="3.6.0"/>
+                        <unit id="org.eclipse.mylyn.commons.core" version="3.6.0.I20110523-2039"/>
+                        <unit id="org.eclipse.mylyn.discovery.ui" version="3.6.0.I20110523-2039"/>
+                        <unit id="org.eclipse.mylyn.discovery.core" version="3.6.0.I20110523-2039"/>
+                        <unit id="org.eclipse.mylyn.commons.ui" version="3.6.0.I20110523-2039"/>
 
 			<!-- Orbit bundles needed for Eclipse Checkstyle (eclipse-cs) -->
 			<unit id="org.apache.lucene.highlighter" version="2.9.1.v20100421-0704"/>
