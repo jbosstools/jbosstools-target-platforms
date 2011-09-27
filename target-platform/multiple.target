@@ -51,6 +51,9 @@
                         <unit id="org.eclipse.mylyn.discovery.ui" version="3.6.0.I20110523-2039"/>
                         <unit id="org.eclipse.mylyn.discovery.core" version="3.6.0.I20110523-2039"/>
                         <unit id="org.eclipse.mylyn.commons.ui" version="3.6.0.I20110523-2039"/>
+                        <unit id="org.eclipse.mylyn.commons.net" version="3.6.0.I20110523-2039"/>
+                        <unit id="org.eclipse.mylyn.commons.screenshots" version="3.6.0.I20110523-2039"/>
+                        <unit id="org.apache.commons.lang" version="2.4.0.v201005080502"/>
 
 			<!-- Orbit bundles needed for Eclipse Checkstyle (eclipse-cs) -->
 			<unit id="org.apache.lucene.highlighter" version="2.9.1.v20100421-0704"/>

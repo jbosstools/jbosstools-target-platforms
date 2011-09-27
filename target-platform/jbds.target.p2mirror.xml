@@ -59,6 +59,9 @@
 <iu id="org.eclipse.mylyn.discovery.ui" version=""/>
 <iu id="org.eclipse.mylyn.discovery.core" version=""/>
 <iu id="org.eclipse.mylyn.commons.ui" version=""/>
+<iu id="org.eclipse.mylyn.commons.net" version=""/>
+<iu id="org.eclipse.mylyn.commons.screenshots" version=""/>
+<iu id="org.apache.commons.lang" version=""/>
 <iu id="org.apache.lucene.highlighter" version=""/>
 <iu id="org.apache.lucene.memory" version=""/>
 <iu id="org.apache.lucene.misc" version=""/>
