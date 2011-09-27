@@ -54,6 +54,7 @@
 <iu id="org.hamcrest.text" version=""/>
 <iu id="org.hamcrest.library" version=""/>
 <iu id="org.hamcrest.integration" version=""/>
+<iu id="com.sun.syndication" version=""/>
 <iu id="org.apache.lucene.highlighter" version=""/>
 <iu id="org.apache.lucene.memory" version=""/>
 <iu id="org.apache.lucene.misc" version=""/>
