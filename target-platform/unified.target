@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><?pde version="3.6"?>
 <target includeMode="feature" name="e37-wtp33">
 	<!-- Pro tip: to convert 
-	     	from org.eclipse.foo_4.6.0.v201005032111-777K4AkF7B77R7c7N77.jar
+			from org.eclipse.foo_4.6.0.v201005032111-777K4AkF7B77R7c7N77.jar
 		  to <unit version="4.6.0.v201005032111-777K4AkF7B77R7c7N77" id="org.eclipse.foo.feature.group"/>
-	     using vi, apply this transform:
+		using vi, apply this transform:
 		:%s/.\+\/\(org.\+\)_\(\d\+.\+\)\.jar/\t\t\t<unit id="\1.feature.group" version="\2"\/>/g
 	-->
 	<locations>
@@ -14,7 +14,7 @@
 
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<!-- don't forget to increment these files when moving up a version:
-			     build.xml, *.target*, publish.sh, target2p2mirror.xml -->
+				build.xml, *.target*, publish.sh, target2p2mirror.xml -->
 			<repository location="http://download.jboss.org/jbosstools/updates/target-platform_3.3.indigo/latest/"/>
 
 			<!-- m2e 1.0 / m2e-wtp 0.13.1.20110718-1012 + deps -->
@@ -44,7 +44,13 @@
 			<unit id="org.hamcrest.text" version="1.1.0.v20090501071000"/>
 			<unit id="org.hamcrest.library" version="1.1.0.v20090501071000"/>
 			<unit id="org.hamcrest.integration" version="1.1.0.v20090501071000"/>
+				    
+			<!-- needed for JBoss Central -->
 			<unit id="com.sun.syndication" version="0.9.0.v200803061811"/>
+			<unit id="org.eclipse.mylyn.commons.core" version="3.6.0"/>
+			<unit id="org.eclipse.mylyn.discovery.ui" version="3.6.0"/>
+			<unit id="org.eclipse.mylyn.discovery.core" version="3.6.0"/>
+			<unit id="org.eclipse.mylyn.commons.ui" version="3.6.0"/>
 
 			<!-- Orbit bundles needed for Eclipse Checkstyle (eclipse-cs) -->
 			<unit id="org.apache.lucene.highlighter" version="2.9.1.v20100421-0704"/>
@@ -195,7 +201,7 @@
 			<unit id="org.eclipse.jst.ws.axis2tools.feature.feature.group" version="1.1.100.v201005241530-78-FF0DZRDKDDePSKwHj"/>
 			<unit id="org.eclipse.jst.ws.cxf.feature.feature.group" version="1.0.100.v201102200555-7H78AKFAKlZgiH3jFfA3z0E6I6I"/>
 			<unit id="org.eclipse.jpt.common.feature.feature.group" version="1.0.1.v201108080010-6-0AkF7BB7S9N7788"/>
-                        <unit id="org.eclipse.jpt.common.eclipselink.feature.feature.group" version="1.0.1.v201108080010-3-08s73553F3G3343"/>
+			<unit id="org.eclipse.jpt.common.eclipselink.feature.feature.group" version="1.0.1.v201108080010-3-08s73553F3G3343"/>
 			<unit id="org.eclipse.jpt.jpa.feature.feature.group" version="3.0.0.v201103020003-7T7F77FD3wTgkUOWfVnWb"/>
 			<unit id="org.eclipse.persistence.jpa.feature.group" version="2.3.0.v20110521-r9438"/>
 			<unit id="org.eclipse.wst.common.fproj.feature.group" version="3.3.0.v201102150115-377DF8s7355397B4B9B"/>
