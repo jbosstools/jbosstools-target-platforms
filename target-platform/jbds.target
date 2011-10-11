@@ -54,6 +54,11 @@
                         <unit id="org.eclipse.mylyn.commons.screenshots" version="3.6.0.v20110608-1400"/>
                         <unit id="org.apache.commons.lang" version="2.4.0.v201005080502"/>
 
+			<!-- Eclipse BPEL features -->
+			<unit id="org.eclipse.bpel.jboss.riftsaw.runtime.feature.feature.group" version="0.5.0.v20110915-1141-H87-CI"/>
+			<unit id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version="0.5.0.v20110915-1141-H87-CI"/>
+			<unit id="org.eclipse.bpel.feature.feature.group" version="0.5.0.v20110915-1141-H87-CI"/>
+
 			<!-- Orbit bundles needed for Eclipse Checkstyle (eclipse-cs) -->
 			<unit id="org.apache.lucene.highlighter" version="2.9.1.v20100421-0704"/>
 			<unit id="org.apache.lucene.memory" version="2.9.1.v20100421-0704"/>

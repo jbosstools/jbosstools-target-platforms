@@ -64,6 +64,11 @@
 			<unit id="org.apache.lucene.snowball" version="2.9.1.v20100421-0704"/>
 			<unit id="org.apache.lucene.spellchecker" version="2.9.1.v20100421-0704"/>
 
+			<!-- Eclipse BPEL features -->
+			<unit id="org.eclipse.bpel.jboss.riftsaw.runtime.feature.feature.group" version="0.5.0.v20110915-1141-H87-CI"/>
+			<unit id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version="0.5.0.v20110915-1141-H87-CI"/>
+			<unit id="org.eclipse.bpel.feature.feature.group" version="0.5.0.v20110915-1141-H87-CI"/>
+
 			<unit id="org.eclipse.graphiti.feature.feature.group" version="0.8.0.v20110607-1252"/>
 			<unit id="org.eclipse.emf.workspace.feature.group" version="1.5.0.v20110502-1600-36-8s734C367E3CBC7"/>
 			<unit id="org.eclipse.emf.validation.feature.group" version="1.5.0.v20110502-1600-479-9oB56N5BBR6LCA6"/>
