@@ -63,6 +63,9 @@
 <iu id="org.eclipse.mylyn.commons.net" version=""/>
 <iu id="org.eclipse.mylyn.commons.screenshots" version=""/>
 <iu id="org.apache.commons.lang" version=""/>
+<iu id="org.eclipse.bpel.jboss.riftsaw.runtime.feature.feature.group" version=""/>
+<iu id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version=""/>
+<iu id="org.eclipse.bpel.feature.feature.group" version=""/>
 <iu id="org.apache.lucene.highlighter" version=""/>
 <iu id="org.apache.lucene.memory" version=""/>
 <iu id="org.apache.lucene.misc" version=""/>
@@ -110,9 +113,6 @@
 <iu id="org.eclipse.xsd.mapping.editor.feature.group" version=""/>
 <iu id="org.eclipse.xsd.mapping.feature.group" version=""/>
 <iu id="org.eclipse.xsd.feature.group" version=""/>
-<iu id="org.eclipse.bpel.jboss.riftsaw.runtime.feature.feature.group" version=""/>
-<iu id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version=""/>
-<iu id="org.eclipse.bpel.feature.feature.group" version=""/>
 <iu id="org.eclipse.graphiti.feature.feature.group" version=""/>
 <iu id="org.eclipse.emf.feature.group" version=""/>
 <iu id="org.eclipse.emf.workspace.feature.group" version=""/>
