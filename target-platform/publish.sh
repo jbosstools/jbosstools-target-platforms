@@ -3,7 +3,7 @@
 
 # defaults for JBoss Tools
 # don't forget to increment these files when moving up a version:
-# build.xml, *.target*, publish.sh, target2p2mirror.xml
+# build.xml, *.target*, publish.sh, target2p2mirror.xml; also jbds/trunk/releng/org.jboss.ide.eclipse.releng/requirements/jbds-target-platform/build.properties
 targetZipFile=e371-wtp331.target
 repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO
 destinationPath=/home/hudson/static_build_env/jbds/target-platform
