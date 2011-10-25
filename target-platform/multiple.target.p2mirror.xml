@@ -48,6 +48,7 @@
 <iu id="javax.wsdl" version=""/>
 <iu id="org.jdom" version=""/>
 <iu id="org.apache.oro" version=""/>
+<iu id="org.apache.commons.io" version=""/>
 <iu id="org.apache.commons.codec" version=""/>
 <iu id="org.apache.commons.httpclient" version=""/>
 <iu id="org.hamcrest" version=""/>
