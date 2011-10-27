@@ -45,17 +45,31 @@
 			<unit id="org.hamcrest.text" version="1.1.0.v20090501071000"/>
 			<unit id="org.hamcrest.library" version="1.1.0.v20090501071000"/>
 			<unit id="org.hamcrest.integration" version="1.1.0.v20090501071000"/>
-				    
+
 			<!-- needed for JBoss Central -->
-                        <unit id="org.eclipse.mylyn_feature.feature.group" version="3.6.2.v20110908-0706"/>
+			<unit id="org.eclipse.mylyn_feature.feature.group" version="3.6.2.v20110908-0706"/>
 			<unit id="com.sun.syndication" version="0.9.0.v200803061811"/>
-                        <unit id="org.eclipse.mylyn.commons.core" version="3.6.0.I20110523-2039"/>
-                        <unit id="org.eclipse.mylyn.discovery.ui" version="3.6.1.v20110819-0100"/>
-                        <unit id="org.eclipse.mylyn.discovery.core" version="3.6.1.v20110817-0100"/>
-                        <unit id="org.eclipse.mylyn.commons.ui" version="3.6.0.I20110523-2039"/>
-                        <unit id="org.eclipse.mylyn.commons.net" version="3.6.0.I20110523-2039"/>
-                        <unit id="org.eclipse.mylyn.commons.screenshots" version="3.6.0.v20110608-1400"/>
-                        <unit id="org.apache.commons.lang" version="2.4.0.v201005080502"/>
+			<unit id="org.eclipse.mylyn.commons.core" version="3.6.0.I20110523-2039"/>
+			<unit id="org.eclipse.mylyn.discovery.ui" version="3.6.1.v20110819-0100"/>
+			<unit id="org.eclipse.mylyn.discovery.core" version="3.6.1.v20110817-0100"/>
+			<unit id="org.eclipse.mylyn.commons.ui" version="3.6.0.I20110523-2039"/>
+			<unit id="org.eclipse.mylyn.commons.net" version="3.6.0.I20110523-2039"/>
+			<unit id="org.eclipse.mylyn.commons.screenshots" version="3.6.0.v20110608-1400"/>
+			<unit id="org.apache.commons.lang" version="2.4.0.v201005080502"/>
+
+			<!-- JBDS-1904 :: mylyn -->
+			<unit id="org.eclipse.mylyn.bugzilla_feature.feature.group" version="3.6.2.v20110908-0706"/>
+			<unit id="org.eclipse.mylyn.ide_feature.feature.group" version="3.6.2.v20110908-0706"/>
+			<unit id="org.eclipse.mylyn.commons.feature.group" version="3.6.2.v20110908-0706"/>
+			<unit id="org.eclipse.mylyn.java_feature.feature.group" version="3.6.2.v20110908-0706"/>
+			<unit id="org.eclipse.mylyn.context_feature.feature.group" version="3.6.2.v20110908-0706"/>
+			<unit id="org.eclipse.mylyn.pde_feature.feature.group" version="3.6.2.v20110908-0706"/>
+			<unit id="org.eclipse.mylyn.cvs.feature.group" version="0.8.2.v20110908-0706"/>
+			<unit id="org.eclipse.mylyn.team_feature.feature.group" version="3.6.2.v20110908-0706"/>
+			<unit id="org.eclipse.mylyn_feature.feature.group" version="3.6.2.v20110908-0706"/>
+			<unit id="org.eclipse.mylyn.versions.feature.group" version="0.8.2.v20110908-0706"/>
+			<unit id="org.eclipse.mylyn.git.feature.group" version="0.8.2.v20110908-0706"/>
+			<unit id="org.eclipse.mylyn.wikitext_feature.feature.group" version="1.5.2.v20110908-0706"/>
 
 			<!-- Orbit bundles needed for Eclipse Checkstyle (eclipse-cs) -->
 			<unit id="org.apache.lucene.highlighter" version="2.9.1.v20100421-0704"/>
@@ -131,7 +145,7 @@
 
 			<!-- DTP 1.9 -->
 			<unit id="org.eclipse.datatools.modelbase.feature.feature.group" version="1.9.0.v201010181130-77078CcNBHCBYKYEbNV"/>
-			<unit id="org.eclipse.datatools.connectivity.feature.feature.group" version="1.9.1.v201108301820-7C7e8mEt1_wmuQjYnXQ6Zj5dM17"/>  
+			<unit id="org.eclipse.datatools.connectivity.feature.feature.group" version="1.9.1.v201108301820-7C7e8mEt1_wmuQjYnXQ6Zj5dM17"/>
 			<unit id="org.eclipse.datatools.connectivity.oda.feature.feature.group" version="1.9.0.v201010181130-7H7C7FCcNBHFCQGgERLX"/>
 			<unit id="org.eclipse.datatools.connectivity.oda.designer.feature.feature.group" version="1.9.0.v201010181130-4107w3121151A1A53"/>
 			<unit id="org.eclipse.datatools.connectivity.oda.designer.core.feature.feature.group" version="1.9.0.v201010181130-7B7C7ACcNBGLEOIeD_WM"/>

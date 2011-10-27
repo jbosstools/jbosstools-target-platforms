@@ -56,7 +56,6 @@
 <iu id="org.hamcrest.text" version=""/>
 <iu id="org.hamcrest.library" version=""/>
 <iu id="org.hamcrest.integration" version=""/>
-<iu id="org.eclipse.mylyn_feature.feature.group" version=""/>
 <iu id="com.sun.syndication" version=""/>
 <iu id="org.eclipse.mylyn.commons.core" version=""/>
 <iu id="org.eclipse.mylyn.discovery.ui" version=""/>
@@ -64,6 +63,19 @@
 <iu id="org.eclipse.mylyn.commons.ui" version=""/>
 <iu id="org.eclipse.mylyn.commons.net" version=""/>
 <iu id="org.eclipse.mylyn.commons.screenshots" version=""/>
+<iu id="org.apache.commons.lang" version=""/>
+<iu id="org.eclipse.mylyn.bugzilla_feature.feature.group" version=""/>
+<iu id="org.eclipse.mylyn.ide_feature.feature.group" version=""/>
+<iu id="org.eclipse.mylyn.commons.feature.group" version=""/>
+<iu id="org.eclipse.mylyn.java_feature.feature.group" version=""/>
+<iu id="org.eclipse.mylyn.context_feature.feature.group" version=""/>
+<iu id="org.eclipse.mylyn.pde_feature.feature.group" version=""/>
+<iu id="org.eclipse.mylyn.cvs.feature.group" version=""/>
+<iu id="org.eclipse.mylyn.team_feature.feature.group" version=""/>
+<iu id="org.eclipse.mylyn_feature.feature.group" version=""/>
+<iu id="org.eclipse.mylyn.versions.feature.group" version=""/>
+<iu id="org.eclipse.mylyn.git.feature.group" version=""/>
+<iu id="org.eclipse.mylyn.wikitext_feature.feature.group" version=""/>
 <iu id="org.apache.lucene.highlighter" version=""/>
 <iu id="org.apache.lucene.memory" version=""/>
 <iu id="org.apache.lucene.misc" version=""/>
