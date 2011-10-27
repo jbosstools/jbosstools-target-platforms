@@ -55,7 +55,6 @@
 <iu id="org.hamcrest.text" version=""/>
 <iu id="org.hamcrest.library" version=""/>
 <iu id="org.hamcrest.integration" version=""/>
-<iu id="org.eclipse.mylyn_feature.feature.group" version=""/>
 <iu id="com.sun.syndication" version=""/>
 <iu id="org.eclipse.mylyn.commons.core" version=""/>
 <iu id="org.eclipse.mylyn.discovery.ui" version=""/>
