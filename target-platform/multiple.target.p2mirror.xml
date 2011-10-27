@@ -223,6 +223,8 @@
 <iu id="com.jcraft.jsch" version=""/>
 <iu id="org.eclipse.jgit.feature.group" version=""/>
 <iu id="org.eclipse.egit.feature.group" version=""/>
+<iu id="org.eclipse.egit.mylyn.feature.group" version=""/>
+<iu id="org.eclipse.mylyn.github.feature.feature.group" version=""/>
 <iu id="org.drools.eclipse.feature.feature.group" version=""/>
 <iu id="org.drools.eclipse.task.feature.feature.group" version=""/>
 <iu id="org.guvnor.tools.feature.feature.group" version=""/>

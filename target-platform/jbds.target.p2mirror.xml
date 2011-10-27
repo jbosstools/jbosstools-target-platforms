@@ -182,6 +182,13 @@
 <iu id="org.eclipse.tm.terminal.view.feature.group" version=""/>
 <iu id="org.eclipse.tm.terminal.telnet.feature.group" version=""/>
 <iu id="org.eclipse.tm.terminal.ssh.feature.group" version=""/>
+<iu id="org.eclipse.jsch.ui" version=""/>
+<iu id="org.eclipse.jsch.core" version=""/>
+<iu id="com.jcraft.jsch" version=""/>
+<iu id="org.eclipse.jgit.feature.group" version=""/>
+<iu id="org.eclipse.egit.feature.group" version=""/>
+<iu id="org.eclipse.egit.mylyn.feature.group" version=""/>
+<iu id="org.eclipse.mylyn.github.feature.feature.group" version=""/>
 </p2.mirror>
 </target>
 </project>

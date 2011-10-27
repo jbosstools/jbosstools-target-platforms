@@ -201,6 +201,14 @@
 			<unit id="org.eclipse.tm.terminal.telnet.feature.group" version="2.1.0.v201103142315-30-7w312213121A22"/>
 			<unit id="org.eclipse.tm.terminal.ssh.feature.group" version="2.1.0.v201103142315-30-7w312212153266"/>
 
+			<!-- JBIDE-9549, JBDS-1904 add egit/jgit and mylyn support to TP, including dependent plugins -->
+			<unit id="org.eclipse.jsch.ui" version="1.1.300.I20110511-0800"/>
+			<unit id="org.eclipse.jsch.core" version="1.1.300.I20110514-0800"/>
+			<unit id="com.jcraft.jsch" version="0.1.41.v201101211617"/>
+			<unit id="org.eclipse.jgit.feature.group" version="1.1.0.201109151100-r"/>
+			<unit id="org.eclipse.egit.feature.group" version="1.1.0.201109151100-r"/>
+			<unit id="org.eclipse.egit.mylyn.feature.group" version="1.1.0.201109151100-r"/>
+			<unit id="org.eclipse.mylyn.github.feature.feature.group" version="1.1.0.201109151100-r"/>
 		</location>
 	</locations>
 </target>
