@@ -1,4 +1,4 @@
-<?xml version=""?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project name="Download target platform" default="download.target.platform" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 <target name="help">
 <echo>
