@@ -54,7 +54,7 @@
 
 			<!-- Eclipse BPEL -->
 			<unit id="org.eclipse.bpel.jboss.riftsaw.runtime.feature.feature.group" version="0.8.0.v20111120-0746-H98-CI"/>
-			<unit id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version="0.5.0.v20110915-1141-H87-CI"/>
+			<unit id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version="0.8.0.v20111120-0746-H98-CI"/>
 			<unit id="org.eclipse.bpel.feature.feature.group" version="0.8.0.v20111120-0746-H98-CI"/>
 
 			<!-- EMF, XSD -->
