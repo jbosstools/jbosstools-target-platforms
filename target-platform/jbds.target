@@ -53,9 +53,9 @@
 			<unit id="org.apache.lucene.spellchecker" version="2.9.1.v20100421-0704"/>
 
 			<!-- Eclipse BPEL -->
-			<unit id="org.eclipse.bpel.jboss.riftsaw.runtime.feature.feature.group" version="0.5.0.v20110915-1141-H87-CI"/>
+			<unit id="org.eclipse.bpel.jboss.riftsaw.runtime.feature.feature.group" version="0.8.0.v20111120-0746-H98-CI"/>
 			<unit id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version="0.5.0.v20110915-1141-H87-CI"/>
-			<unit id="org.eclipse.bpel.feature.feature.group" version="0.5.0.v20110915-1141-H87-CI"/>
+			<unit id="org.eclipse.bpel.feature.feature.group" version="0.8.0.v20111120-0746-H98-CI"/>
 
 			<!-- EMF, XSD -->
 			<unit id="org.eclipse.emf.feature.group" version="2.7.1.v20111003-1135"/>
