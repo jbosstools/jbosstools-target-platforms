@@ -96,6 +96,7 @@
 <iu id="org.eclipse.sdk.examples.source.feature.group" version=""/>
 <iu id="org.eclipse.cvs.feature.group" version=""/>
 <iu id="org.eclipse.jdt.feature.group" version=""/>
+<iu id="org.eclipse.objectteams.otdt.core.patch.feature.group" version=""/>
 <iu id="org.eclipse.equinox.server.core.feature.group" version=""/>
 <iu id="org.eclipse.equinox.executable.feature.group" version=""/>
 <iu id="org.eclipse.equinox.compendium.sdk.feature.group" version=""/>

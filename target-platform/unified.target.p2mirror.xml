@@ -116,6 +116,7 @@
 <iu id="org.eclipse.cvs.feature.group" version=""/>
 <iu id="org.eclipse.help.feature.group" version=""/>
 <iu id="org.eclipse.jdt.feature.group" version=""/>
+<iu id="org.eclipse.objectteams.otdt.core.patch.feature.group" version=""/>
 <iu id="org.eclipse.platform.feature.group" version=""/>
 <iu id="org.eclipse.platform.ide" version=""/>
 <iu id="org.eclipse.equinox.executable.feature.group" version=""/>
