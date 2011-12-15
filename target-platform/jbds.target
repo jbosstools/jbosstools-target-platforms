@@ -11,9 +11,9 @@
 
 			<!-- don't forget to increment these files when moving up a version:
 			 build.xml, *.target*, publish.sh, target2p2mirror.xml -->
-			<repository location="http://download.jboss.org/jbosstools/updates/indigo/SR1/"/>
-			<!-- <repository location="file:///qa/services/http/binaries/RHDS/updates/indigo/SR1/"/> -->
-			<!-- <repository location="http://www.qa.jboss.com/binaries/RHDS/updates/indigo/SR1/"/> -->
+			<repository location="http://download.jboss.org/jbosstools/updates/indigo/SR1-M/"/>
+			<!-- <repository location="file:///qa/services/http/binaries/RHDS/updates/indigo/SR1-M/"/> -->
+			<!-- <repository location="http://www.qa.jboss.com/binaries/RHDS/updates/indigo/SR1-M/"/> -->
 
 			<!-- m2e, m2e-wtp + deps -->
 			<unit id="org.eclipse.m2e.sdk.feature.feature.group" version="1.0.0.201106061504"/>

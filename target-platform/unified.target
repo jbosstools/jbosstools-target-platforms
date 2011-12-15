@@ -9,13 +9,13 @@
 	<locations>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<!-- for trunk use _composite_/trunk; for 3.3_stable_branch, use _composite_/3.3.indigo -->
-			<repository location="http://download.jboss.org/jbosstools/updates/target-platform_3.3.indigo/latest/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform_3.3.indigo.SR1-M/latest/"/>
 		</location>
 
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<!-- don't forget to increment these files when moving up a version:
 				build.xml, *.target*, publish.sh, target2p2mirror.xml -->
-			<repository location="http://download.jboss.org/jbosstools/updates/target-platform_3.3.indigo/latest/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform_3.3.indigo.SR1-M/latest/"/>
 
 			<!-- m2e, m2e-wtp + deps -->
 			<unit id="org.eclipse.m2e.sdk.feature.feature.group" version="1.0.0.201106061504"/>
