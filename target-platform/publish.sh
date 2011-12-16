@@ -76,8 +76,14 @@ if [[ -d ${repoDir} ]]; then
 	du -sh ${repoDir} ${destinationPath}/${targetZipFile}
 
 	# upload to http://download.jboss.org/jbossotools/updates/target-platform_3.3.indigo/latest/ for public use
-	if [[ ${DESTINATION/@/} == ${DESTINATION} ]]; then # local path, no user@server
+	if [[ ${DESTINATION/:/} == ${DESTINATION} ]]; then # local path, no user@server:/path
 		mkdir -p ${DESTINATION}/
+	else
+		DESTPARENT=${DESTINATION%/*}; NEWFOLDER=${DESTINATION##*/}
+		if [[ $(echo "ls" | sftp ${DESTPARENT} 2>&1 | grep ${NEWFOLDER}) == "" ]]; then
+			# DESTHOST=${DESTINATION%:*}; DESTFOLD=${DESTINATION#*:}; echo "mkdir ${DESTFOLD}" | sftp ${DESTHOST}; # alternate approach
+			echo "mkdir ${NEWFOLDER}" | sftp ${DESTPARENT}
+		fi
 	fi
 	# if the following line fails, make sure that ${DESTINATION} is already created on target server
 	date; rsync -arzqc --protocol=28 --delete-after --delete-excluded --rsh=ssh ${exclude} ${include} ${DESTINATION}/latest/
