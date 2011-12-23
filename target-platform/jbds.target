@@ -85,9 +85,9 @@
 			<unit id="org.eclipse.jdt.feature.group" version="3.7.1.r371_v20110810-0800-7z8gFcrFML8IX_Scz0ZMIXuTADB7"/>
 			<unit id="org.eclipse.equinox.executable.feature.group" version="3.5.1.R37x_v20111117-1330-7P7NFUFFIbaUcR7JrhHHBBe5HZTZ"/>
 			<unit id="org.eclipse.equinox.p2.user.ui.feature.group" version="2.1.2.R37x_v20110815-1155-6-Bk8pYWZz0pz-UdWr1z0jQHRlY7"/>
-			<unit id="org.eclipse.rcp.feature.group" version="3.7.1.r37x_v20110729-9DB5FmQFp7LSV-BR-oRkFtx15C44"/>
+			<unit id="org.eclipse.rcp.feature.group" version="3.7.1.r37x_v20110729-9DB5FmQFpbKK_SJR0vPkGu102722"/>
 			<unit id="org.eclipse.pde.feature.group" version="3.7.1.r37x_v20110810-0800-7b7qFVvFEt3dpKXiolsY319"/>
-			<unit id="org.eclipse.help.feature.group" version="1.3.0.v20110327-7i7uFFmFFl8nvpcDp7rPz-2"/>
+			<unit id="org.eclipse.help.feature.group" version="1.3.0.v20110327-7i7uFFmFFl8nvpcDqArPw1"/>
 
 			<!-- DTP -->
 			<unit id="org.eclipse.datatools.modelbase.feature.feature.group" version="1.9.1.v201108301820-77078CcNBHCBYKYEbNV"/>
@@ -244,7 +244,7 @@
 			<unit id="org.eclipse.ui.ide" version="3.7.0.v20110928-1505"/>
 			<unit id="org.eclipse.ui.workbench.texteditor" version="3.7.0.v20110928-1504"/>
 			<unit id="org.eclipse.jface.text" version="3.7.2.v20111213-1208"/>
-			<unit id="org.eclipse.osgi" version="3.7.2.R37x_v20111121-1300"/>
+			<unit id="org.eclipse.osgi" version="3.7.2.v20111205-1537"/>
 			<unit id="org.eclipse.core.filesystem" version="1.3.100.v20110423-0524"/>
 			<unit id="org.eclipse.ui.forms" version="3.5.101.v20111011-1919"/>
 			<unit id="org.eclipse.ui.editors" version="3.7.0.v20110928-1504"/>
