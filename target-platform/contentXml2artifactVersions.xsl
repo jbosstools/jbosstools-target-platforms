@@ -8,7 +8,7 @@
 <xsl:template match="repository">
 <xsl:apply-templates select="//unit" />
 </xsl:template>
-<xsl:template match="//unit"><xsl:value-of select="@id" />.version=<xsl:value-of select="@version" />
+<xsl:template match="//unit"><xsl:for-each select="."><xsl:sort select="@version" order="descending" case-order="lower-first" data-type="qname"/><xsl:value-of select="@id" />.version=<xsl:value-of select="@version" />
 #
-</xsl:template>
+</xsl:for-each></xsl:template>
 </xsl:stylesheet>
