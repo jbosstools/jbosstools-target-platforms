@@ -150,8 +150,8 @@
 			<unit id="org.eclipse.jst.server_core.feature.feature.group" version="3.3.0.v201102200555-31FD58s7354495L"/>
 			<unit id="org.eclipse.jst.server_ui.feature.feature.group" version="3.3.0.v201102200555-7A6FHr9xFcAVCFLZBBJLIR43A"/>
 			<unit id="org.eclipse.jst.server_userdoc.feature.feature.group" version="3.3.100.v20110303-2-Eo7w3121162A3329"/>
-			<unit id="org.eclipse.jst.web_core.feature.feature.group" version="3.3.1.v201108102009-7Q7DGL7FE9LeACIaxj_z-Kmuitz01z01sRxi3877"/>
-			<unit id="org.eclipse.jst.webpageeditor.feature.feature.group" version="2.3.5.v201109051528-46AA9oB5875L5K4I77"/>
+			<unit id="org.eclipse.jst.web_core.feature.feature.group" version="3.3.2.v201112072049-7Q7DGL7FE9LeAEG_yf_vMmuitz01z01sRxi3877"/>
+			<unit id="org.eclipse.jst.webpageeditor.feature.feature.group" version="2.3.5.v201109051528-46AA9oB5885D5M5G66"/>
 			<unit id="org.eclipse.jst.web_ui.feature.feature.group" version="3.3.1.v201108102009-7F7AFO4C25TohIbnlgy_0z-Hn73eiw4W7mpuYjlq"/>
 			<unit id="org.eclipse.jst.web_userdoc.feature.feature.group" version="3.3.1.v201108102009-2107w31211938"/>
 			<unit id="org.eclipse.jst.ws.axis2tools.feature.feature.group" version="1.1.200.v201103022333-78-FF0DZRDKDDePSKwHj"/>
@@ -160,8 +160,8 @@
 			<unit id="org.eclipse.jst.ws.jaxws.feature.feature.group" version="1.1.0.v201105171845-7E78BsF8NcJSWKvN1Rjcv"/>
 			<unit id="org.eclipse.jst.ws.jaxws_userdoc.feature.feature.group" version="1.0.100.v201102200555-3-A78s73533L3D5H5H"/>
 			<unit id="org.eclipse.wst.common_core.feature.feature.group" version="3.3.2.v201111030500-7B7DFO8F7RZHOeKpPz0Oz-NJ"/>
-			<unit id="org.eclipse.wst.common.fproj.feature.group" version="3.3.0.v201102150115-377DF8s7355533F3C7C"/>
-			<unit id="org.eclipse.wst.common_ui.feature.feature.group" version="3.3.2.v201111030500-7C79FVrEdhO_qgug4nWekfLqQz01Pz00OK"/>
+			<unit id="org.eclipse.wst.common.fproj.feature.group" version="3.3.2.v201201121600-377DH8s735735535DD9"/>
+			<unit id="org.eclipse.wst.common_ui.feature.feature.group" version="3.3.2.v201111030500-7C79FVrEdhO_rfug6nUekgKqRz-PxOK"/>
 			<unit id="org.eclipse.wst.jsdt.feature.feature.group" version="1.3.2.v201111090634-7F78FXSFBBoPbXSIbLewwz0"/>
 			<unit id="org.eclipse.wst.server_adapters.feature.feature.group" version="3.2.100.v20110303-51EoAkF77g8HBSc"/>
 			<unit id="org.eclipse.wst.server_core.feature.feature.group" version="3.3.2.v20111026_1748-30FBd8s7355476Ia2859"/>
@@ -171,10 +171,10 @@
 			<unit id="org.eclipse.wst.web_ui.feature.feature.group" version="3.3.2.v201111030500-7O7IFj4EMiB5wRKYse0-f8Yl5tgfNIObauH0Gi5L"/>
 			<unit id="org.eclipse.wst.web_userdoc.feature.feature.group" version="3.3.0.v201102200555-31Eo8s734B3E4H7799"/>
 			<unit id="org.eclipse.wst.ws_core.feature.feature.group" version="3.3.1.v201108230355-7L7RFi8FGtGd-thsz0z0rQwh2766"/>
-			<unit id="org.eclipse.wst.ws_ui.feature.feature.group" version="3.3.1.v201108102025-7I7AFg0EtEoVFjy98J1itihC0uuVeln_oKQjBMNs"/>
+			<unit id="org.eclipse.wst.ws_ui.feature.feature.group" version="3.3.2.v201112142348-7I7AFg1EtEoVFjz-98J1iuhgBz-uuWblmZqMOnEL"/>
 			<unit id="org.eclipse.wst.ws_userdoc.feature.feature.group" version="3.1.300.v201102200555-44FR79oB5855Q8IBD7G"/>
 			<unit id="org.eclipse.wst.ws_wsdl15.feature.feature.group" version="1.5.301.v201102200555-2407w312123151655"/>
-			<unit id="org.eclipse.wst.xml_core.feature.feature.group" version="3.3.1.v201108102009-7C7OFeMF7RZHQNJtN8NuOe"/>
+			<unit id="org.eclipse.wst.xml_core.feature.feature.group" version="3.3.2.v201112072049-7C7OFeMF7RZHQOIsNANyRc"/>
 			<unit id="org.eclipse.wst.xml_ui.feature.feature.group" version="3.3.1.v201108102009-7H7EFZ6DxumTlde4nhcRmIprjAHaALMrRz012Qz0"/>
 			<unit id="org.eclipse.wst.xml_userdoc.feature.feature.group" version="3.3.0.v201102071641-50FYwAkF7B77UBZFDBL"/>
 			<unit id="org.eclipse.wst.xml.xpath2.processor.feature.feature.group" version="2.0.0.v201103310043-7A7J-CcNBGOCUIWFYMf"/>

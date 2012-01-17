@@ -180,8 +180,8 @@
 			<unit id="org.eclipse.jpt.jpa.feature.feature.group" version="3.0.2.v201110193010-7S7B7GFC7sRdiX8afbQZR79F"/>
 			<unit id="org.eclipse.persistence.jpa.feature.group" version="2.3.1.v20110908-r10021"/>
 			<unit id="org.eclipse.wst.common.fproj.feature.group" version="3.3.0.v201102150115-377DF8s7355533F3C7C"/>
-			<unit id="org.eclipse.jst.enterprise_ui.feature.feature.group" version="3.3.2.v201111030500-7b7II1TFSK2WIoRmHKjP-IV4RxTn"/>
-			<unit id="org.eclipse.wst.web_ui.feature.feature.group" version="3.3.2.v201111030500-7O7IFj4EMiB5wRKYse0-f8Yl5tgfNIObauH0Gi5L"/>
+			<unit id="org.eclipse.jst.enterprise_ui.feature.feature.group" version="3.3.2.v201111030500-7b7II1TFSK2WIpQlIFkRz0HVz0RvTn"/>
+			<unit id="org.eclipse.wst.web_ui.feature.feature.group" version="3.3.2.v201111030500-7O7IFj6EMjB7yNyXo_9z0lKyQU0ygHAVcLO_CPgY"/>
 			<unit id="org.eclipse.wst.xml_ui.feature.feature.group" version="3.3.1.v201108102009-7H7EFZ6DxumTlde4nhcRmIprjAHaALMrRz012Qz0"/>
 			<unit id="org.eclipse.wst.xsl.feature.feature.group" version="1.3.1.v201109012200-7T7YFRTFIqUoIrvbEtBlSIJXGZNg"/>
 			<unit id="org.eclipse.wst.jsdt.feature.feature.group" version="1.3.2.v201111090634-7F78FXSFBBoPbXSIbLewwz0"/>
@@ -196,15 +196,15 @@
 			<unit id="org.eclipse.jst.web_ui.feature.feature.group" version="3.3.1.v201108102009-7F7AFO4C25TohIbnlgy_0z-Hn73eiw4W7mpuYjlq"/>
 			<unit id="org.eclipse.jsf.feature.source.feature.group" version="3.3.1.v201109030441-7E7IDUF9JgLWUM6WBSgXp"/>
 			<unit id="org.eclipse.wst.xml.xpath2.processor.feature.feature.group" version="2.0.0.v201103310043-7A7J-CcNBGOCUIWFYMf"/>
-			<unit id="org.eclipse.jst.webpageeditor.feature.feature.group" version="2.3.5.v201109051528-46AA9oB5875L5K4I77"/>
+			<unit id="org.eclipse.jst.webpageeditor.feature.feature.group" version="2.3.5.v201109051528-46AA9oB5885D5M5G66"/>
 			<unit id="org.eclipse.wst.ws_wsdl15.feature.feature.group" version="1.5.301.v201102200555-2407w312123151655"/>
 			<unit id="org.eclipse.wst.common_core.feature.feature.group" version="3.3.2.v201111030500-7B7DFO8F7RZHOeKpPz0Oz-NJ"/>
-			<unit id="org.eclipse.wst.common_ui.feature.feature.group" version="3.3.2.v201111030500-7C79FVrEdhO_qgug4nWekfLqQz01Pz00OK"/>
+			<unit id="org.eclipse.wst.common_ui.feature.feature.group" version="3.3.2.v201111030500-7C79FVrEdhO_rfug6nUekgKqRz-PxOK"/>
 			<unit id="org.eclipse.wst.server_adapters.feature.feature.group" version="3.2.100.v20110303-51EoAkF77g8HBSc"/>
 			<unit id="org.eclipse.wst.server_core.feature.feature.group" version="3.3.2.v20111026_1748-30FBd8s7355476Ia2859"/>
-			<unit id="org.eclipse.wst.server_ui.feature.feature.group" version="3.3.2.v20111026_1748-7B77FGRAtJcez-FNOnPIXRONjBF6A"/>
+			<unit id="org.eclipse.wst.server_ui.feature.feature.group" version="3.3.2.v20111026_1748-7B79FBdAtJcez0ENNePJROIPmEH6A"/>
 			<unit id="org.eclipse.wst.web_core.feature.feature.group" version="3.3.2.v201111030500-7E7EFMaAJun8av44z-PFIqjTeVfDSLfQK"/>
-			<unit id="org.eclipse.wst.ws_ui.feature.feature.group" version="3.3.1.v201108102025-7I7AFg0EtEoVFjy98J1itihC0uuVeln_oKQjBMNs"/>
+			<unit id="org.eclipse.wst.ws_ui.feature.feature.group" version="3.3.2.v201112142348-7I7AFg1EtEoVFjz-98J1iuhgBz-uuWblmZqMOnEL"/>
 			<unit id="org.eclipse.wst.xml_core.feature.feature.group" version="3.3.1.v201108102009-7C7OFeMF7RZHQNJtN8NuOe"/>
 
 			<!-- JBIDE-9549, JBDS-1904 add egit/jgit and mylyn support to TP, including dependent plugins -->
