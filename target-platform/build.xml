@@ -17,23 +17,6 @@
 	</condition>
 	<mkdir dir="${COMMON_TOOLS}" />
 
-	<condition property="build.xml" value="/home/hudson/static_build_env/jbds/tools/sources/build/build.xml">
-		<available file="/home/hudson/static_build_env/jbds/tools/sources/build/build.xml" type="file" />
-	</condition>
-	<condition property="build.xml" value="${basedir}/../../build/build.xml">
-		<available file="${basedir}/../../build/build.xml" type="file" />
-	</condition>
-	<condition property="build.xml" value="${basedir}/../../build.xml">
-		<available file="${basedir}/../../build.xml" type="file" />
-	</condition>
-	<condition property="build.xml" value="${basedir}/../../sources/build.xml">
-		<available file="${basedir}/../../sources/build.xml" type="file" />
-	</condition>
-	<condition property="build.xml" value="${basedir}/../build.xml">
-		<available file="${basedir}/../build.xml" type="file" />
-	</condition>
-	<!-- if can't calculate where build/build.xml is located, must pass in path from parent when calling this script -->
-
 	<property name="repoDir" value="${WORKINGDIR}/REPO" />
 
 	<!-- ********************************************************************************** -->
@@ -106,12 +89,24 @@ To run for JBDS target file WHILE JBT target file is being run:
 	<!-- ********************************************************************************** -->
 
 	<target name="init">
-		<ant antfile="${build.xml}" target="init" />
+		<available file="${COMMON_TOOLS}/ant-contrib.jar" type="file" property="ant-contrib.jar.exists" />
+		<antcall target="get.ant-contrib" />
 		<taskdef resource="net/sf/antcontrib/antlib.xml">
 			<classpath>
 				<pathelement location="${COMMON_TOOLS}/ant-contrib.jar" />
 			</classpath>
 		</taskdef>
+	</target>
+
+
+	<target name="get.ant-contrib" unless="ant-contrib.jar.exists">
+		<property name="ANTCONTRIB_MIRROR" value="http://downloads.sourceforge.net/ant-contrib/" />
+		<get usetimestamp="true" dest="${COMMON_TOOLS}/ant-contrib-1.0b2-bin.zip" src="${ANTCONTRIB_MIRROR}/ant-contrib-1.0b2-bin.zip" />
+		<touch file="${COMMON_TOOLS}/ant-contrib-1.0b2-bin.zip" />
+		<mkdir dir="${java.io.tmpdir}/ant-contrib-1.0b2-bin.zip_" />
+		<unzip src="${COMMON_TOOLS}/ant-contrib-1.0b2-bin.zip" dest="${java.io.tmpdir}/ant-contrib-1.0b2-bin.zip_" overwrite="true" />
+		<copy file="${java.io.tmpdir}/ant-contrib-1.0b2-bin.zip_/ant-contrib/lib/ant-contrib.jar" tofile="${COMMON_TOOLS}/ant-contrib.jar" failonerror="true" />
+		<delete dir="${java.io.tmpdir}/ant-contrib-1.0b2-bin.zip_" includeemptydirs="true" quiet="true" />
 	</target>
 
 	<target name="get.arch">
