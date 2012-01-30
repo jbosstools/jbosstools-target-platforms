@@ -309,8 +309,9 @@
 			<unit id="org.eclipse.birt.chart.feature.group" version="3.7.1.v20110905-7r9e7DFQCnvKN75--lXE5"/>
 			<unit id="org.eclipse.birt.chart.integration.wtp.feature.group" version="3.7.1.v20110905-1820-4607w31221A1602931"/>
 
-			<!-- GPE dependencies (include only those which are EPL licensed!) -->
-			<unit id="com.google.gdt.eclipse.suite.e37.feature.feature.group" version="2.5.0.v201112160242-rel-r37"/>
+			<!-- GWT/GPE dependencies (include only those which are EPL or other OSS licensed!) -->
+			<unit id="com.google.gdt.eclipse.suite.e37.feature.feature.group" version="2.5.0.v201201120043-rel-r37"/>
+			<unit id="com.google.gwt.eclipse.sdkbundle.e37.feature.feature.group" version="2.4.0.v201201120043-rel-r37"/>
 
 			<!-- SAVARA dependencies -->
 			<!-- <unit version="1.2.0.201006151053" id="org.eclipse.stp.bpmn.feature.feature.group"/>

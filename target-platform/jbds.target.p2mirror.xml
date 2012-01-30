@@ -256,6 +256,7 @@
 <iu id="javax.xml.rpc" version=""/>
 <iu id="javax.el" version=""/>
 <iu id="com.google.gdt.eclipse.suite.e37.feature.feature.group" version=""/>
+<iu id="com.google.gwt.eclipse.sdkbundle.e37.feature.feature.group" version=""/>
 </p2.mirror>
 </target>
 </project>
