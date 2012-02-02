@@ -269,7 +269,7 @@
 			<unit id="javax.el" version="2.2.0.v201105051105"/>
 
 			<!-- GWT/GPE dependencies (include only those which are EPL or other OSS licensed!) -->
-			<unit id="com.google.gdt.eclipse.suite.e37.feature.feature.group" version="2.5.0.v201201120043-rel-r37"/>
+			<unit id="com.google.gdt.eclipse.suite.e37.feature.feature.group" version="2.5.1.v201201120043-rel-r37"/>
 			<unit id="com.google.gwt.eclipse.sdkbundle.e37.feature.feature.group" version="2.4.0.v201201120043-rel-r37"/>
 		</location>
 	</locations>
