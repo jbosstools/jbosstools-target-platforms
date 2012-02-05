@@ -111,7 +111,6 @@
 <iu id="org.eclipse.equinox.server.servletbridge.feature.group" version=""/>
 <iu id="org.eclipse.equinox.server.simple.feature.group" version=""/>
 <iu id="org.eclipse.rcp.feature.group" version=""/>
-<iu id="org.eclipse.pde.api.tools.ee.fragments.feature.group" version=""/>
 <iu id="org.eclipse.pde.feature.group" version=""/>
 <iu id="org.eclipse.help.feature.group" version=""/>
 <iu id="org.eclipse.datatools.modelbase.feature.feature.group" version=""/>
