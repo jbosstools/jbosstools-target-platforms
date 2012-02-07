@@ -53,10 +53,11 @@
 			<unit id="org.apache.lucene.spellchecker" version="2.9.1.v20100421-0704"/>
 
 			<!-- Eclipse BPEL -->
-			<unit id="org.eclipse.bpel.jboss.riftsaw.runtime.feature.feature.group" version="0.8.0.v20111120-0746-H98-CI"/>
+			<unit id="org.eclipse.bpel.common.feature.feature.group" version="0.8.0.v20120202-0453-H135-CI"/>
+			<unit id="org.eclipse.bpel.jboss.riftsaw.runtime.feature.feature.group" version="0.8.0.v20120202-0453-H135-CI"/>
 			<unit id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version="0.8.0.v20120202-0453-H135-CI"/>
-			<unit id="org.eclipse.bpel.feature.feature.group" version="0.8.0.v20111120-0746-H98-CI"/>
-
+			<unit id="org.eclipse.bpel.feature.feature.group" version="0.8.0.v20120202-0453-H135-CI"/>
+			
 			<!-- EMF, XSD -->
 			<unit id="org.eclipse.emf.feature.group" version="2.7.2.v20111031-1121"/>
 			<unit id="org.eclipse.emf.workspace.feature.group" version="1.5.1.v20110823-1800-37708s734D3C7D3CCC1"/>

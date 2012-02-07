@@ -61,6 +61,7 @@
 <iu id="org.apache.lucene.queries" version=""/>
 <iu id="org.apache.lucene.snowball" version=""/>
 <iu id="org.apache.lucene.spellchecker" version=""/>
+<iu id="org.eclipse.bpel.common.feature.feature.group" version=""/>
 <iu id="org.eclipse.bpel.jboss.riftsaw.runtime.feature.feature.group" version=""/>
 <iu id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version=""/>
 <iu id="org.eclipse.bpel.feature.feature.group" version=""/>
