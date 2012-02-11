@@ -18,7 +18,7 @@
 			<!-- m2e, m2e-wtp + deps -->
 			<unit id="org.eclipse.m2e.sdk.feature.feature.group" version="1.0.100.20110804-1717"/>
 			<unit id="org.eclipse.m2e.feature.feature.group" version="1.0.100.20110804-1717"/>
-			<unit id="org.maven.ide.eclipse.wtp.feature.feature.group" version="0.14.0.20110928-2045"/>
+			<unit id="org.maven.ide.eclipse.wtp.feature.feature.group" version="0.15.1.20120208-1300"/>
 			<unit id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version="0.15.0.201109290002"/>
 			<unit id="ch.qos.logback.classic" version="0.9.27.v20110224-1110"/>
 			<unit id="ch.qos.logback.core" version="0.9.27.v20110224-1110"/>
@@ -54,9 +54,9 @@
 
 			<!-- Eclipse BPEL -->
 			<unit id="org.eclipse.bpel.common.feature.feature.group" version="0.8.0.v20120202-0453-H135-CI"/>
-			<unit id="org.eclipse.bpel.jboss.riftsaw.runtime.feature.feature.group" version="0.8.0.v20120202-0453-H135-CI"/>
-			<unit id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version="0.8.0.v20120202-0453-H135-CI"/>
-			<unit id="org.eclipse.bpel.feature.feature.group" version="0.8.0.v20120202-0453-H135-CI"/>
+                       <unit id="org.eclipse.bpel.jboss.riftsaw.runtime.feature.feature.group" version="0.8.0.v20120202-0453-H135-CI"/>
+                       <unit id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version="0.8.0.v20120202-0453-H135-CI"/>
+                       <unit id="org.eclipse.bpel.feature.feature.group" version="0.8.0.v20120202-0453-H135-CI"/>
 			
 			<!-- EMF, XSD -->
 			<unit id="org.eclipse.emf.feature.group" version="2.7.2.v20111031-1121"/>

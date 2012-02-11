@@ -20,7 +20,7 @@
 			<!-- m2e, m2e-wtp + deps -->
 			<unit id="org.eclipse.m2e.sdk.feature.feature.group" version="1.0.100.20110804-1717"/>
 			<unit id="org.eclipse.m2e.feature.feature.group" version="1.0.100.20110804-1717"/>
-			<unit id="org.maven.ide.eclipse.wtp.feature.feature.group" version="0.14.0.20110928-2045"/>
+			<unit id="org.maven.ide.eclipse.wtp.feature.feature.group" version="0.15.1.20120208-1300"/>
 			<unit id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version="0.15.0.201109290002"/>
 			<unit id="ch.qos.logback.classic" version="0.9.27.v20110224-1110"/>
 			<unit id="ch.qos.logback.core" version="0.9.27.v20110224-1110"/>
@@ -56,9 +56,9 @@
 
 			<!-- Eclipse BPEL -->
 			<unit id="org.eclipse.bpel.common.feature.feature.group" version="0.8.0.v20120202-0453-H135-CI"/>
-			<unit id="org.eclipse.bpel.jboss.riftsaw.runtime.feature.feature.group" version="0.8.0.v20120202-0453-H135-CI"/>
-			<unit id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version="0.8.0.v20120202-0453-H135-CI"/>
-			<unit id="org.eclipse.bpel.feature.feature.group" version="0.8.0.v20120202-0453-H135-CI"/>
+                       <unit id="org.eclipse.bpel.jboss.riftsaw.runtime.feature.feature.group" version="0.8.0.v20111120-0746-H98-CI"/>
+                       <unit id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version="0.8.0.v20111120-0746-H98-CI"/>
+                       <unit id="org.eclipse.bpel.feature.feature.group" version="0.8.0.v20111120-0746-H98-CI"/>
 
 			<!-- EMF, XSD -->
 			<unit id="org.eclipse.emf.workspace.feature.group" version="1.5.1.v20110823-1800-37708s734D3C7D3CCC1"/>
@@ -306,9 +306,9 @@
 			<!-- BIRT -->
 			<unit id="org.eclipse.birt.osgi.runtime.sdk.feature.group" version="3.7.0.v20110905-777D186vH9ByS6g9QJbm7yp7gZp-"/>
 			<unit id="org.eclipse.birt.feature.group" version="3.7.1.v20110905-BDF9E8OGTzuHfoz-Au7-CWvXDn6N"/>
-			<unit id="org.eclipse.birt.integration.wtp.feature.group" version="3.7.1.v20110905-1820-4607w31221A1602931"/>
+			<unit id="org.eclipse.birt.integration.wtp.feature.group" version="3.7.2.v20120206-1857-4617w3123131702968"/>
 			<unit id="org.eclipse.birt.chart.feature.group" version="3.7.1.v20110905-7r9e7DFQCnvKN75--lXE5"/>
-			<unit id="org.eclipse.birt.chart.integration.wtp.feature.group" version="3.7.1.v20110905-1820-4607w31221A1602931"/>
+			<unit id="org.eclipse.birt.chart.integration.wtp.feature.group" version="3.7.2.v20120206-1857-4617w3123131702968"/>
 
 			<!-- GWT/GPE dependencies (include only those which are EPL or other OSS licensed!) -->
 			<unit id="com.google.gdt.eclipse.suite.e37.feature.feature.group" version="2.5.1.v201201120043-rel-r37"/>
