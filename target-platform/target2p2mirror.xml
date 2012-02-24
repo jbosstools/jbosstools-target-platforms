@@ -1,6 +1,8 @@
 <project default="custom.build" name="jbosstools target platform p2.mirror generator">
 	<!-- don't forget to increment these files when moving up a version:
-	     build.xml, *.target*, publish.sh, target2p2mirror.xml; also jbds/trunk/releng/org.jboss.ide.eclipse.releng/requirements/jbds-target-platform/build.properties -->
+	     build.xml, *.target*, publish.sh, target2p2mirror.xml; also jbds/trunk/releng/org.jboss.ide.eclipse.releng/requirements/jbds-target-platform/build.properties;
+	     also all devstudio-5.0_*.updatesite jobs (4) need to be pointed at the new Target Platform URL -->
+
 	<property name="targetFile" value="e372M-wtp332M.target" />
 
 	<!-- if useLatest = true, omit versions from p2.mirror script to fetch latest version available; 
