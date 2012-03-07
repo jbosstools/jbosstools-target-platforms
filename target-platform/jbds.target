@@ -18,7 +18,7 @@
 			<!-- m2e, m2e-wtp + deps -->
 			<unit id="org.eclipse.m2e.sdk.feature.feature.group" version="1.0.100.20110804-1717"/>
 			<unit id="org.eclipse.m2e.feature.feature.group" version="1.0.200.20111228-1245"/>
-			<unit id="org.maven.ide.eclipse.wtp.feature.feature.group" version="0.15.1.20120208-1300"/>
+			<unit id="org.maven.ide.eclipse.wtp.feature.feature.group" version="0.15.2.20120306-2040"/>
 			<unit id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version="0.15.0.201109290002"/>
 			<unit id="ch.qos.logback.classic" version="0.9.27.v20110224-1110"/>
 			<unit id="ch.qos.logback.core" version="0.9.27.v20110224-1110"/>
