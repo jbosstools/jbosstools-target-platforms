@@ -100,8 +100,8 @@ To run for JBDS target file WHILE JBT target file is being run:
 
 
 	<target name="get.ant-contrib" unless="ant-contrib.jar.exists">
-		<property name="ANTCONTRIB_MIRROR" value="http://downloads.sourceforge.net/ant-contrib/" />
-		<get usetimestamp="true" dest="${COMMON_TOOLS}/ant-contrib-1.0b2-bin.zip" src="${ANTCONTRIB_MIRROR}/ant-contrib-1.0b2-bin.zip" />
+		<property name="ANTCONTRIB_MIRROR" value="http://sourceforge.net/projects/ant-contrib/files/ant-contrib/ant-contrib-1.0b2/" />
+		<get usetimestamp="true" dest="${COMMON_TOOLS}/ant-contrib-1.0b2-bin.zip" src="${ANTCONTRIB_MIRROR}/ant-contrib-1.0b2-bin.zip/download" />
 		<touch file="${COMMON_TOOLS}/ant-contrib-1.0b2-bin.zip" />
 		<mkdir dir="${java.io.tmpdir}/ant-contrib-1.0b2-bin.zip_" />
 		<unzip src="${COMMON_TOOLS}/ant-contrib-1.0b2-bin.zip" dest="${java.io.tmpdir}/ant-contrib-1.0b2-bin.zip_" overwrite="true" />
