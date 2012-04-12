@@ -42,6 +42,26 @@ while [ "$#" -gt 0 ]; do
 		include=".blobstore *" # include the .blobstore
 		exclude="" 
 		shift 1;;
+		
+		'-jbt_3.3.juno.M6') 
+		# defaults for JBT (trunk)
+		targetZipFile=e42M6-wtp34M6.target
+		repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO_3.3.juno.M6
+		destinationPath=/home/hudson/static_build_env/jbds/target-platform_3.3.juno.M6
+		DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform_3.3.juno.M6
+		include="*"
+		exclude="--exclude '.blobstore'" # exclude the .blobstore
+		shift 1;;
+
+		'-jbds_3.3.juno.M6') 
+		# defaults for JBDS (trunk)
+		targetZipFile=jbds500-e42M6-wtp34M6.target
+		repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO_3.3.juno.M6
+		destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform_3.3.juno.M6
+		DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform_3.3.juno.M6
+		include=".blobstore *" # include the .blobstore
+		exclude="" 
+		shift 1;;		
 	esac
 done
 

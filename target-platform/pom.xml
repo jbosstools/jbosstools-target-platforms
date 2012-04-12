@@ -14,6 +14,10 @@
 		<target.platform.classifier.multiple.name>multiple</target.platform.classifier.multiple.name>
 		<target.platform.classifier.unified.name>unified</target.platform.classifier.unified.name>
 		<target.platform.classifier.local.name>local</target.platform.classifier.local.name>
+		<unified.URL>http://download.jboss.org/jbosstools/updates/target-platform_3.3.indigo.SR2/latest/</unified.URL>
+		<eclipse.version>3.7.2</eclipse.version>
+		<eclipse.type>platform</eclipse.type>
+		<eclipse.URL>http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/R-3.7.2-201202080800/</eclipse.URL>
 	</properties>
 
 	<build>
@@ -108,6 +112,10 @@
 										<!-- build the local.target file -->
 										<ant antfile="build.xml">
 											<property name="targetFile" value="multiple.target" />
+											<property name="unified.URL" value="${unified.URL}"/>
+											<property name="eclipse.version" value="${eclipse.version}" />
+											<property name="eclipse.type" value="${eclipse.type}" />
+											<property name="eclipse.URL" value="${eclipse.URL}"/>
 											<!-- <property name="repoDir" value="/path/to/where/to/provision/repo"/> -->
 										</ant>
 									</tasks>
