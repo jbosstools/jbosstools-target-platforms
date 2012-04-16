@@ -29,7 +29,6 @@
 <slicingOptions includeFeatures="true" followStrict="${followStrict}"/>
 <source>
 <repository location="http://download.jboss.org/jbosstools/updates/target-platform_3.3.indigo.SR2/latest/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/target-platform_3.3.indigo.SR2/latest/"/>
 </source>
 <iu id="org.eclipse.m2e.sdk.feature.feature.group" version=""/>
 <iu id="org.eclipse.m2e.feature.feature.group" version=""/>
@@ -289,9 +288,6 @@
 <iu id="org.eclipse.birt.chart.integration.wtp.feature.group" version=""/>
 <iu id="com.google.gdt.eclipse.suite.e37.feature.feature.group" version=""/>
 <iu id="com.google.gwt.eclipse.sdkbundle.e37.feature.feature.group" version=""/>
-<iu id="org.drools.eclipse.feature.feature.group" version=""/>
-<iu id="org.drools.eclipse.task.feature.feature.group" version=""/>
-<iu id="org.guvnor.tools.feature.feature.group" version=""/>
 <iu id="org.mozilla.xulrunner.feature.feature.group" version=""/>
 <iu id="org.mozilla.xpcom.feature.feature.group" version=""/>
 </p2.mirror>
