@@ -333,9 +333,6 @@
 		</location>
 	</locations>
 	<includeBundles>
-		<feature id="org.drools.eclipse.feature"/>
-		<feature id="org.drools.eclipse.task.feature"/>
-		<feature id="org.guvnor.tools.feature"/>
 		<feature id="org.mozilla.xulrunner.feature"/>
 		<feature id="org.mozilla.xpcom.feature"/>
 	</includeBundles>
