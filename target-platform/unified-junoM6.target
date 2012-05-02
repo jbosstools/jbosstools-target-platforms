@@ -7,7 +7,7 @@
 		:%s/.\+\/\(org.\+\)_\(\d\+.\+\)\.jar/\t\t\t<unit id="\1.feature.group" version="\2"\/>/g
 	-->
 	<locations>
-		<!-- for trunk use _composite_/trunk; for 3.3_stable_branch, use _composite_/3.3.indigo -->
+		<!-- for trunk use _composite_/core/trunk; for 3.3_stable_branch, use _composite_/core/3.3.indigo -->
 		<!-- <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<repository location="http://download.jboss.org/jbosstools/updates/target-platform_3.3.juno.M6/latest/"/>
 		</location> -->

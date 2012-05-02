@@ -28,7 +28,7 @@
 <p2.mirror destination="file://${repoDir}" verbose="${verbose}">
 <slicingOptions includeFeatures="true" followStrict="${followStrict}"/>
 <source>
-<repository location="http://download.jboss.org/jbosstools/builds/staging/_composite_/trunk/"/>
+<repository location="http://download.jboss.org/jbosstools/builds/staging/_composite_/core/trunk/"/>
 <repository location="http://download.jboss.org/jbosstools/updates/indigo/SR2/"/>
 </source>
 <iu id="org.eclipse.m2e.sdk.feature.feature.group" version=""/>

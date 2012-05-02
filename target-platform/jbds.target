@@ -16,15 +16,15 @@
 			<!-- <repository location="http://www.qa.jboss.com/binaries/RHDS/updates/indigo/SR2/"/> -->
 
 			<!-- m2e, m2e-wtp + deps -->
-			<unit id="org.eclipse.m2e.sdk.feature.feature.group" version="1.0.100.20110804-1717"/>
-			<unit id="org.eclipse.m2e.feature.feature.group" version="1.0.200.20111228-1245"/>
+			<unit id="org.eclipse.m2e.sdk.feature.feature.group" version="1.1.0.20120320-0058"/>
+			<unit id="org.eclipse.m2e.feature.feature.group" version="1.1.0.20120320-0058"/>
 			<unit id="org.maven.ide.eclipse.wtp.feature.feature.group" version="0.15.2.20120306-2040"/>
 			<unit id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version="0.15.0.201109290002"/>
-			<unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.0.0"/>
+			<unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.0.0.201204280012"/>
 			<unit id="ch.qos.logback.classic" version="0.9.27.v20110224-1110"/>
-			<unit id="ch.qos.logback.core" version="0.9.27.v20110224-1110"/>
+			<unit id="ch.qos.logback.core" version="1.0.0.v20111214-2030"/>
 			<unit id="ch.qos.logback.slf4j" version="0.9.27.v20110224-1110"/>
-			<unit id="org.slf4j.api" version="1.6.1.v20100831-0715"/>
+			<unit id="org.slf4j.api" version="1.6.4.v20120130-2120"/>
 			<unit id="com.ning.async-http-client" version="1.6.3.201112281337"/>
 			<unit id="org.jboss.netty" version="3.2.4.Final-201112281337"/>
 			<unit id="org.eclipse.equinox.p2.discovery.compatibility" version="1.0.1.v20110502-1955"/>
