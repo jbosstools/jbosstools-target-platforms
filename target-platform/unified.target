@@ -8,7 +8,7 @@
 	-->
 	<locations>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<!-- for trunk use _composite_/core/trunk; for 3.3_stable_branch, use _composite_/core/3.3.indigo -->
+			<!-- for trunk use _composite_/trunk; for 3.3_stable_branch, use _composite_/3.3.indigo -->
 			<repository location="http://download.jboss.org/jbosstools/updates/target-platform_3.3.indigo.SR2/latest/"/>
 		</location>
 

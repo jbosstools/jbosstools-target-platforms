@@ -265,7 +265,7 @@
 			<unit id="org.mortbay.jetty.util" version="6.1.23.v201012071420"/>
 			<unit id="org.apache.jasper" version="5.5.17.v201101211617"/>
 			<unit id="org.joda.time" version="1.6.0.v20081202-0100"/>
-			<unit id="javax.servlet" version="3.0.0.v201103241727"/>
+			<unit id="javax.servlet" version="2.5.0.v201103041518"/>
 			<unit id="javax.servlet.jsp" version="2.0.0.v201101211617"/>
 			<unit id="javax.xml.rpc" version="1.1.0.v201005080400"/>
 			<unit id="javax.el" version="2.2.0.v201105051105"/>
