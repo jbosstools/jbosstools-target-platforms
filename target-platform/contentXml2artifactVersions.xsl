@@ -8,7 +8,12 @@
 <xsl:template match="repository">
 <xsl:apply-templates select="//unit" />
 </xsl:template>
-<xsl:template match="//unit"><xsl:for-each select="."><xsl:sort select="@version" order="descending" case-order="lower-first" data-type="qname"/><xsl:value-of select="@id" />.version=<xsl:value-of select="@version" />
+<xsl:template match="/"><xsl:for-each select="//unit">
+<xsl:sort select="@id" order="ascending" case-order="lower-first"/><xsl:sort select="@version" order="descending" case-order="lower-first" data-type="qname"/><xsl:value-of select="@id" />.version=<xsl:value-of select="@version" />
+<xsl:variable name="thisID" select="@id"/>
+<xsl:if test="count(//unit[@id = $thisID]) &gt; 1">
+# Warning: <xsl:value-of select="count(//unit[@id = $thisID])"/> versions found for <xsl:value-of select="@id" />:<xsl:for-each select="//unit[@id = $thisID]"><xsl:sort select="@id" order="ascending" case-order="lower-first"/><xsl:sort select="@version" order="descending" case-order="lower-first" data-type="qname"/>
+# <xsl:value-of select="@id" />.version=<xsl:value-of select="@version" /></xsl:for-each></xsl:if>
 #
 </xsl:for-each></xsl:template>
 </xsl:stylesheet>
