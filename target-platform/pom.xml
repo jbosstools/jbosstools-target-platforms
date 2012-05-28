@@ -6,7 +6,7 @@
 		<version>0.0.1-SNAPSHOT</version> </parent> -->
 	<groupId>org.jboss.tools</groupId>
 	<artifactId>org.jboss.tools.target.platform</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>3.4.0-SNAPSHOT</version>
 	<name>JBoss Tools Target Platform Definition</name>
 	<packaging>pom</packaging>
 
@@ -14,10 +14,10 @@
 		<target.platform.classifier.multiple.name>multiple</target.platform.classifier.multiple.name>
 		<target.platform.classifier.unified.name>unified</target.platform.classifier.unified.name>
 		<target.platform.classifier.local.name>local</target.platform.classifier.local.name>
-		<unified.URL>http://download.jboss.org/jbosstools/updates/target-platform_3.3.indigo.SR2/latest/</unified.URL>
-		<eclipse.version>3.7.2</eclipse.version>
+		<unified.URL>http://download.jboss.org/jbosstools/updates/target-platform_3.4.juno.M6/latest/</unified.URL>
+		<eclipse.version>4.2M6</eclipse.version>
 		<eclipse.type>platform</eclipse.type>
-		<eclipse.URL>http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/R-3.7.2-201202080800/</eclipse.URL>
+		<eclipse.URL>http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops4/S-4.2M6-201203151300/</eclipse.URL>
 	</properties>
 
 	<build>

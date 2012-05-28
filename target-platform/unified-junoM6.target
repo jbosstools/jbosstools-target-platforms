@@ -7,15 +7,15 @@
 		:%s/.\+\/\(org.\+\)_\(\d\+.\+\)\.jar/\t\t\t<unit id="\1.feature.group" version="\2"\/>/g
 	-->
 	<locations>
-		<!-- for trunk use _composite_/core/trunk; for 3.3_stable_branch, use _composite_/core/3.3.indigo -->
+		<!-- for trunk use _composite_/core/trunk; for 3.4_stable_branch, use _composite_/core/3.4.juno -->
 		<!-- <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-			<repository location="http://download.jboss.org/jbosstools/updates/target-platform_3.3.juno.M6/latest/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform_3.4.juno.M6/latest/"/>
 		</location> -->
 
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<!-- don't forget to increment these files when moving up a version:
 				build.xml, *.target*, publish.sh, target2p2mirror.xml -->
-			<repository location="http://download.jboss.org/jbosstools/updates/target-platform_3.3.juno.M6/latest/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform_3.4.juno.M6/latest/"/>
 
 			<!-- m2e, m2e-wtp + deps -->
 			<unit id="org.eclipse.m2e.sdk.feature.feature.group" version="1.1.0.20120320-0058"/>
@@ -328,9 +328,6 @@
 		</location>
 	</locations>
 	<includeBundles>
-		<!--<feature id="org.drools.eclipse.feature"/>
-		<feature id="org.drools.eclipse.task.feature"/>
-		<feature id="org.guvnor.tools.feature"/> -->
 		<feature id="org.mozilla.xulrunner.feature"/>
 		<feature id="org.mozilla.xpcom.feature"/>
 	</includeBundles>

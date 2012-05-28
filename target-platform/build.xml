@@ -67,7 +67,7 @@ To run for JBDS target file WHILE JBT target file is being run:
 
 To build an alternate target platform (eg., Juno) for JBT:
 
-	$ ant -DtargetFile=multiple-junoM6.target -DrepoDir=${WORKINGDIR}/JBT_REPO/ -Declipse.version=4.2M6 -Declipse.type=SDK -Declipse.URL=http://www.eclipse.org/downloads/download.php?r=1\&amp;file=/eclipse/downloads/drops4/S-4.2M6-201203151300/ -Dunified.URL=http://download.jboss.org/jbosstools/updates/target-platform_3.3.juno.M6/latest/
+	$ ant -DtargetFile=multiple-junoM6.target -DrepoDir=${WORKINGDIR}/JBT_REPO/ -Declipse.version=4.2M6 -Declipse.type=SDK -Declipse.URL=http://www.eclipse.org/downloads/download.php?r=1\&amp;file=/eclipse/downloads/drops4/S-4.2M6-201203151300/ -Dunified.URL=http://download.jboss.org/jbosstools/updates/target-platform_3.4.juno.M6/latest/
 
 To build an alternate target platform (eg., Juno) for JBDS:
 

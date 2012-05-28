@@ -5,10 +5,10 @@
 # don't forget to increment these files when moving up a version:
 # build.xml, *.target*, publish.sh, target2p2mirror.xml; also jbds/trunk/releng/org.jboss.ide.eclipse.releng/requirements/jbds-target-platform/build.properties;
 # also all devstudio-5.0_*.updatesite jobs (4) need to be pointed at the new Target Platform URL
-targetZipFile=e372M-wtp332M.target
-repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO_3.3.indigo.SR2
-destinationPath=/home/hudson/static_build_env/jbds/target-platform_3.3.indigo.SR2
-DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform_3.3.indigo.SR2
+targetZipFile=e42M6-wtp34M6.target
+repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO_3.4.juno.M6
+destinationPath=/home/hudson/static_build_env/jbds/target-platform_3.4.juno.M6
+DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform_3.4.juno.M6
 include="*"
 exclude="--exclude '.blobstore'" # exclude the .blobstore
 
@@ -23,42 +23,22 @@ while [ "$#" -gt 0 ]; do
 		'-include') include="$2"; shift 2;;
 		'-exclude') exclude="$2"; shift 2;;
 
-		'-jbt_3.3.indigo.SR2') 
-		# defaults for JBT (trunk)
-		targetZipFile=e372M-wtp332M.target
-		repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO_3.3.indigo.SR2
-		destinationPath=/home/hudson/static_build_env/jbds/target-platform_3.3.indigo.SR2
-		DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform_3.3.indigo.SR2
-		include="*"
-		exclude="--exclude '.blobstore'" # exclude the .blobstore
-		shift 1;;
-
-		'-jbds_3.3.indigo.SR2') 
-		# defaults for JBDS (trunk)
-		targetZipFile=jbds500-e372M-wtp332M.target
-		repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO_3.3.indigo.SR2
-		destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform_3.3.indigo.SR2
-		DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform_3.3.indigo.SR2
-		include=".blobstore *" # include the .blobstore
-		exclude="" 
-		shift 1;;
-		
-		'-jbt_3.3.juno.M6') 
+		'-jbt_3.4.juno.M6') 
 		# defaults for JBT (trunk)
 		targetZipFile=e42M6-wtp34M6.target
-		repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO_3.3.juno.M6
-		destinationPath=/home/hudson/static_build_env/jbds/target-platform_3.3.juno.M6
-		DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform_3.3.juno.M6
+		repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO_3.4.juno.M6
+		destinationPath=/home/hudson/static_build_env/jbds/target-platform_3.4.juno.M6
+		DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform_3.4.juno.M6
 		include="*"
 		exclude="--exclude '.blobstore'" # exclude the .blobstore
 		shift 1;;
 
-		'-jbds_3.3.juno.M6') 
+		'-jbds_3.4.juno.M6') 
 		# defaults for JBDS (trunk)
 		targetZipFile=jbds500-e42M6-wtp34M6.target
-		repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO_3.3.juno.M6
-		destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform_3.3.juno.M6
-		DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform_3.3.juno.M6
+		repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO_3.4.juno.M6
+		destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform_3.4.juno.M6
+		DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform_3.4.juno.M6
 		include=".blobstore *" # include the .blobstore
 		exclude="" 
 		shift 1;;		

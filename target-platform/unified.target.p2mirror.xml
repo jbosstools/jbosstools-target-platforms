@@ -28,8 +28,7 @@
 <p2.mirror destination="file://${repoDir}" verbose="${verbose}">
 <slicingOptions includeFeatures="true" followStrict="${followStrict}"/>
 <source>
-<repository location="http://download.jboss.org/jbosstools/updates/target-platform_3.3.indigo.SR2/latest/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/target-platform_3.3.indigo.SR2/latest/"/>
+<repository location="http://download.jboss.org/jbosstools/updates/target-platform_3.4.juno.M6/latest/"/>
 </source>
 <iu id="org.eclipse.m2e.sdk.feature.feature.group" version=""/>
 <iu id="org.eclipse.m2e.feature.feature.group" version=""/>
@@ -82,15 +81,12 @@
 <iu id="org.eclipse.gef.feature.group" version=""/>
 <iu id="org.eclipse.zest.feature.group" version=""/>
 <iu id="org.eclipse.uml2.feature.group" version=""/>
-<iu id="com.ibm.icu.base.feature.group" version=""/>
+<iu id="com.ibm.icu.base" version=""/>
 <iu id="org.eclipse.platform.feature.group" version=""/>
 <iu id="org.eclipse.platform.ide" version=""/>
 <iu id="org.eclipse.platform.sdk" version=""/>
 <iu id="org.eclipse.sdk.feature.group" version=""/>
-<iu id="org.eclipse.releng.tools.feature.group" version=""/>
 <iu id="org.eclipse.sdk.ide" version=""/>
-<iu id="org.eclipse.sdk.examples.feature.group" version=""/>
-<iu id="org.eclipse.sdk.examples.source.feature.group" version=""/>
 <iu id="org.eclipse.cvs.feature.group" version=""/>
 <iu id="org.eclipse.jdt.feature.group" version=""/>
 <iu id="org.eclipse.equinox.server.core.feature.group" version=""/>
@@ -106,7 +102,6 @@
 <iu id="org.eclipse.equinox.server.jetty.feature.group" version=""/>
 <iu id="org.eclipse.equinox.server.p2.feature.group" version=""/>
 <iu id="org.eclipse.equinox.server.servletbridge.feature.group" version=""/>
-<iu id="org.eclipse.equinox.server.simple.feature.group" version=""/>
 <iu id="org.eclipse.rcp.feature.group" version=""/>
 <iu id="org.eclipse.pde.feature.group" version=""/>
 <iu id="org.eclipse.help.feature.group" version=""/>
