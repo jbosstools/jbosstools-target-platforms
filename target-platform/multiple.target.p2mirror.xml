@@ -29,7 +29,7 @@
 <slicingOptions includeFeatures="true" followStrict="${followStrict}"/>
 <source>
 <repository location="http://download.jboss.org/jbosstools/builds/staging/_composite_/trunk/"/>
-<repository location="http://download.jboss.org/jbosstools/updates/indigo/SR2/"/>
+<repository location="http://download.jboss.org/jbosstools/updates/juno/M6/"/>
 </source>
 <iu id="org.eclipse.m2e.sdk.feature.feature.group" version=""/>
 <iu id="org.eclipse.m2e.feature.feature.group" version=""/>
