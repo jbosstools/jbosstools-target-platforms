@@ -67,11 +67,11 @@ To run for JBDS target file WHILE JBT target file is being run:
 
 To build an alternate target platform (eg., Juno) for JBT:
 
-	$ ant -DtargetFile=multiple.target -DrepoDir=${WORKINGDIR}/JBT_REPO/ -Declipse.version=4.2 -Declipse.type=SDK -Declipse.URL=http://www.eclipse.org/downloads/download.php?r=1\&amp;file=/eclipse/downloads/drops4/R-4.2-201206081400/ -Dunified.URL=http://download.jboss.org/jbosstools/updates/target-platform_3.4.juno.SR0/latest/
+	$ ant -DtargetFile=multiple.target -DrepoDir=${WORKINGDIR}/JBT_REPO/ -Declipse.version=4.2 -Declipse.type=platform -Declipse.URL=http://www.eclipse.org/downloads/download.php?r=1\&amp;file=/eclipse/downloads/drops4/R-4.2-201206081400/ -Dunified.URL=http://download.jboss.org/jbosstools/updates/target-platform_3.4.juno.SR0/latest/
 
 To build an alternate target platform (eg., Juno) for JBDS:
 
-	$ ant -DtargetFile=jbds.target -DrepoDir=${WORKINGDIR}/JBDS_REPO/ -Declipse.version=4.2 -Declipse.type=SDK -Declipse.URL=http://www.eclipse.org/downloads/download.php?r=1\&amp;file=/eclipse/downloads/drops4/R-4.2-201206081400/
+	$ ant -DtargetFile=jbds.target -DrepoDir=${WORKINGDIR}/JBDS_REPO/ -Declipse.version=4.2 -Declipse.type=platform -Declipse.URL=http://www.eclipse.org/downloads/download.php?r=1\&amp;file=/eclipse/downloads/drops4/R-4.2-201206081400/
 
 </echo>
 	</target>
