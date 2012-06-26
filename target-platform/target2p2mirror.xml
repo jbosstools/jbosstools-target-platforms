@@ -3,7 +3,7 @@
 	     build.xml, *.target*, publish.sh, target2p2mirror.xml; also jbds/trunk/releng/org.jboss.ide.eclipse.releng/requirements/jbds-target-platform/build.properties;
 	     also all devstudio-5.0_*.updatesite jobs (4) need to be pointed at the new Target Platform URL -->
 
-	<property name="targetFile" value="e42M6-wtp34M6.target" />
+	<property name="targetFile" value="e420-wtp340.target" />
 
 	<!-- if useLatest = true, omit versions from p2.mirror script to fetch latest version available; 
 		 if useLatest = false, include versions and fetch specific versions requested. -->
