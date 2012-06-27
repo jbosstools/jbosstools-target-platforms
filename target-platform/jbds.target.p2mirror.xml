@@ -45,6 +45,7 @@
 <iu id="org.eclipse.equinox.p2.ui.discovery" version=""/>
 <iu id="javax.wsdl" version=""/>
 <iu id="org.jdom" version=""/>
+<iu id="org.apache.commons.lang" version=""/>
 <iu id="org.apache.oro" version=""/>
 <iu id="org.apache.commons.io" version=""/>
 <iu id="org.apache.commons.codec" version=""/>
@@ -60,12 +61,12 @@
 <iu id="org.apache.lucene.queries" version=""/>
 <iu id="org.apache.lucene.snowball" version=""/>
 <iu id="org.apache.lucene.spellchecker" version=""/>
-<iu id="org.eclipse.emf.feature.group" version=""/>
 <iu id="org.eclipse.emf.workspace.feature.group" version=""/>
 <iu id="org.eclipse.emf.validation.feature.group" version=""/>
 <iu id="org.eclipse.emf.transaction.feature.group" version=""/>
-<iu id="org.eclipse.xsd.ecore.converter.feature.group" version=""/>
+<iu id="org.eclipse.emf.feature.group" version=""/>
 <iu id="org.eclipse.xsd.edit.feature.group" version=""/>
+<iu id="org.eclipse.xsd.ecore.converter.feature.group" version=""/>
 <iu id="org.eclipse.xsd.editor.feature.group" version=""/>
 <iu id="org.eclipse.xsd.mapping.editor.feature.group" version=""/>
 <iu id="org.eclipse.xsd.mapping.feature.group" version=""/>
@@ -183,7 +184,6 @@
 <iu id="org.eclipse.mylyn.commons.ui" version=""/>
 <iu id="org.eclipse.mylyn.commons.net" version=""/>
 <iu id="org.eclipse.mylyn.commons.screenshots" version=""/>
-<iu id="org.apache.commons.lang" version=""/>
 <iu id="org.eclipse.mylyn_feature.feature.group" version=""/>
 <iu id="org.eclipse.mylyn.ide_feature.feature.group" version=""/>
 <iu id="org.eclipse.mylyn.commons.feature.group" version=""/>
@@ -240,7 +240,6 @@
 <iu id="org.apache.commons.logging" version=""/>
 <iu id="org.apache.commons.io" version=""/>
 <iu id="org.apache.commons.httpclient" version=""/>
-<iu id="org.apache.commons.lang" version=""/>
 <iu id="org.apache.commons.codec" version=""/>
 <iu id="org.jdom_jaxen" version=""/>
 <iu id="org.mortbay.jetty.server" version=""/>
