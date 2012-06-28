@@ -196,6 +196,7 @@
 <iu id="org.eclipse.mylyn.bugzilla_feature.feature.group" version=""/>
 <iu id="org.eclipse.mylyn.discovery.feature.group" version=""/>
 <iu id="org.eclipse.mylyn.java_feature.feature.group" version=""/>
+<iu id="org.eclipse.mylyn.monitor.feature.group" version=""/>
 <iu id="org.eclipse.mylyn.pde_feature.feature.group" version=""/>
 <iu id="org.eclipse.mylyn.team_feature.feature.group" version=""/>
 <iu id="org.eclipse.mylyn.wikitext_feature.feature.group" version=""/>
