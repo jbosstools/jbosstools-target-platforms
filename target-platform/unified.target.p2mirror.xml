@@ -208,6 +208,7 @@
 <iu id="org.eclipse.mylyn.ide_feature.feature.group" version=""/>
 <iu id="org.eclipse.mylyn.commons.feature.group" version=""/>
 <iu id="org.eclipse.mylyn.commons.compatibility.feature.group" version=""/>
+<iu id="org.eclipse.mylyn.commons.identity.feature.group" version=""/>
 <iu id="org.eclipse.mylyn.commons.repositories.feature.group" version=""/>
 <iu id="org.eclipse.mylyn.commons.repositories.http.feature.group" version=""/>
 <iu id="org.eclipse.mylyn.context_feature.feature.group" version=""/>
