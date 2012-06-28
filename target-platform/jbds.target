@@ -196,6 +196,7 @@
 			<unit id="org.eclipse.mylyn.commons.feature.group" version="3.8.0.v20120612-0600"/>
 			<unit id="org.eclipse.mylyn.commons.compatibility.feature.group" version="3.8.0.v20120612-0600"/>
 			<unit id="org.eclipse.mylyn.commons.identity.feature.group" version="1.0.0.v20120612-0600"/>
+			<unit id="org.eclipse.mylyn.commons.notifications.feature.group" version="1.0.0.v20120612-0600"/>
 			<unit id="org.eclipse.mylyn.commons.repositories.feature.group" version="1.0.0.v20120612-0600"/>
 			<unit id="org.eclipse.mylyn.commons.repositories.http.feature.group" version="1.0.0.v20120612-0600"/>
 			<unit id="org.eclipse.mylyn.context_feature.feature.group" version="3.8.0.v20120612-0600"/>
