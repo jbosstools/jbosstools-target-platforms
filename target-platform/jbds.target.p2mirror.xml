@@ -204,7 +204,7 @@
 <iu id="org.eclipse.mylyn.cvs.feature.group" version=""/>
 <iu id="org.eclipse.mylyn.git.feature.group" version=""/>
 <iu id="org.eclipse.mylyn.versions.feature.group" version=""/>
-<iu id="org.eclipse.mylyn.commons.xmlrpc" version=""/>
+<iu id="org.eclipse.mylyn.commons.sdk.feature.group" version=""/>
 <iu id="org.eclipse.mylyn.tasks.ui" version=""/>
 <iu id="org.eclipse.mylyn.tasks.core" version=""/>
 <iu id="org.eclipse.mylyn.tasks.bugs" version=""/>
