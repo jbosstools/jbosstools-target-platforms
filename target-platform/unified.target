@@ -101,6 +101,7 @@
 			<unit id="org.eclipse.rcp.feature.group" version="4.2.0.v20120528-1648-7IAPA7BrHQicRpNdOz-Obz-rlRCA"/>
 			<unit id="org.eclipse.pde.feature.group" version="3.8.0.v20120525-1249-7c7vFitFFt6Zr5a12MM4IKMFZ"/>
 			<unit id="org.eclipse.help.feature.group" version="1.4.0.v20120608-133537-8P7vFOTFK_Qj4JmDIQXL8Tn"/>
+			<unit id="org.eclipse.update.core" version="3.2.600.v20120530-1204"/>
 
 			<!-- DTP -->
 			<unit id="org.eclipse.datatools.modelbase.feature.feature.group" version="1.10.0.v201201161512-7707DCcNBHJDWIYG_Ni"/>
@@ -231,7 +232,7 @@
 			<unit id="org.eclipse.mylyn.cvs.feature.group" version="1.0.0.v20120612-0600"/>
 			<unit id="org.eclipse.mylyn.git.feature.group" version="1.0.0.v20120612-0600"/>
 			<unit id="org.eclipse.mylyn.versions.feature.group" version="1.0.0.v20120612-0600"/>
-			<unit id="org.eclipse.mylyn.commons.sdk.feature.group" version="3.8.0.v20120612-0600"/>
+			<unit id="org.eclipse.mylyn.commons.xmlrpc" version="3.8.0.v20120612-0600"/>
 			<unit id="org.eclipse.mylyn.tasks.ui" version="3.8.0.v20120612-0600"/>
 			<unit id="org.eclipse.mylyn.tasks.core" version="3.8.0.v20120612-0600"/>
 			<unit id="org.eclipse.mylyn.tasks.bugs" version="3.8.0.v20120612-0600"/>
