@@ -55,6 +55,7 @@
 <iu id="org.hamcrest.text" version=""/>
 <iu id="org.hamcrest.library" version=""/>
 <iu id="org.hamcrest.integration" version=""/>
+<iu id="org.apache.lucene.core" version=""/>
 <iu id="org.apache.lucene.highlighter" version=""/>
 <iu id="org.apache.lucene.memory" version=""/>
 <iu id="org.apache.lucene.misc" version=""/>
@@ -207,6 +208,7 @@
 <iu id="org.eclipse.mylyn.commons.screenshots" version=""/>
 <iu id="org.eclipse.mylyn_feature.feature.group" version=""/>
 <iu id="org.eclipse.mylyn.ide_feature.feature.group" version=""/>
+<iu id="org.eclipse.mylyn.tasks.ide.feature.group" version=""/>
 <iu id="org.eclipse.mylyn.commons.feature.group" version=""/>
 <iu id="org.eclipse.mylyn.commons.compatibility.feature.group" version=""/>
 <iu id="org.eclipse.mylyn.commons.identity.feature.group" version=""/>
@@ -251,6 +253,7 @@
 <iu id="com.atlassian.connector.eclipse.subclipse.ui" version=""/>
 <iu id="com.atlassian.connector.eclipse.ui" version=""/>
 <iu id="com.thoughtworks.xstream" version=""/>
+<iu id="org.xmlpull" version=""/>
 <iu id="org.eclipse.ui" version=""/>
 <iu id="org.eclipse.core.runtime" version=""/>
 <iu id="org.eclipse.core.resources" version=""/>
@@ -274,6 +277,7 @@
 <iu id="org.mortbay.jetty.server" version=""/>
 <iu id="org.mortbay.jetty.util" version=""/>
 <iu id="org.apache.jasper" version=""/>
+<iu id="org.apache.catalina" version=""/>
 <iu id="org.joda.time" version=""/>
 <iu id="javax.servlet" version=""/>
 <iu id="javax.servlet.jsp" version=""/>
@@ -289,8 +293,8 @@
 <iu id="org.eclipse.birt.integration.wtp.feature.group" version=""/>
 <iu id="org.eclipse.birt.chart.feature.group" version=""/>
 <iu id="org.eclipse.birt.chart.integration.wtp.feature.group" version=""/>
-<iu id="com.google.gdt.eclipse.suite.e37.feature.feature.group" version=""/>
-<iu id="com.google.gwt.eclipse.sdkbundle.e37.feature.feature.group" version=""/>
+<iu id="com.google.gdt.eclipse.suite.e42.feature.feature.group" version=""/>
+<iu id="com.google.gwt.eclipse.sdkbundle.e42.feature.feature.group" version=""/>
 <iu id="org.mozilla.xulrunner.feature.feature.group" version=""/>
 <iu id="org.mozilla.xpcom.feature.feature.group" version=""/>
 </p2.mirror>

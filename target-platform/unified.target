@@ -14,10 +14,10 @@
 			<repository location="http://download.jboss.org/jbosstools/updates/target-platform_3.4.juno.SR0/latest/"/>
 
 			<!-- m2e, m2e-wtp + deps -->
-            <unit id="org.eclipse.m2e.sdk.feature.feature.group" version="1.1.0.20120530-0009"/>
+			<unit id="org.eclipse.m2e.sdk.feature.feature.group" version="1.1.0.20120530-0009"/>
 			<unit id="org.eclipse.m2e.feature.feature.group" version="1.1.0.20120530-0009"/>
 			<unit id="org.maven.ide.eclipse.wtp.feature.feature.group" version="0.15.2.20120306-2040"/>
-            <unit id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version="0.15.0.201206251206"/>
+			<unit id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version="0.15.0.201206251206"/>
 			<unit id="ch.qos.logback.classic" version="1.0.0.v20111214-2030"/>
 			<unit id="ch.qos.logback.core" version="1.0.0.v20111214-2030"/>
 			<unit id="ch.qos.logback.slf4j" version="1.0.0.v20120123-1500"/>
@@ -307,8 +307,8 @@
 			<unit id="org.eclipse.birt.chart.integration.wtp.feature.group" version="4.2.0.v20120613-1143-51-7w3123172402254"/>
 
 			<!-- GWT/GPE dependencies (include only those which are EPL or other OSS licensed!) -->
-			<unit id="com.google.gdt.eclipse.suite.e37.feature.feature.group" version="2.5.2.v201202290255-rel-r37"/>
-			<unit id="com.google.gwt.eclipse.sdkbundle.e37.feature.feature.group" version="2.4.0.v201202290255-rel-r37"/>
+			<unit id="com.google.gdt.eclipse.suite.e42.feature.feature.group" version="3.0.1.v201206290132-rel-r42"/>
+			<unit id="com.google.gwt.eclipse.sdkbundle.e42.feature.feature.group" version="2.4.0.v201206290132-rel-r42"/>
 		</location>
 	</locations>
 	<includeBundles>

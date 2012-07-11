@@ -14,10 +14,10 @@
 			<repository location="http://download.jboss.org/jbosstools/updates/juno/SR0/"/>
 
 			<!-- m2e, m2e-wtp + deps -->
-            <unit id="org.eclipse.m2e.sdk.feature.feature.group" version="1.1.0.20120530-0009"/>
+			<unit id="org.eclipse.m2e.sdk.feature.feature.group" version="1.1.0.20120530-0009"/>
 			<unit id="org.eclipse.m2e.feature.feature.group" version="1.1.0.20120530-0009"/>
 			<unit id="org.maven.ide.eclipse.wtp.feature.feature.group" version="0.15.2.20120306-2040"/>
-                       <unit id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version="0.15.0.201202141716"/>
+			<unit id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version="0.15.0.201206251206"/>
 			<unit id="ch.qos.logback.classic" version="1.0.0.v20111214-2030"/>
 			<unit id="ch.qos.logback.core" version="1.0.0.v20111214-2030"/>
 			<unit id="ch.qos.logback.slf4j" version="1.0.0.v20120123-1500"/>
@@ -43,6 +43,7 @@
 			<unit id="org.hamcrest.integration" version="1.1.0.v20090501071000"/>
 
 			<!-- Orbit bundles needed for Eclipse Checkstyle (eclipse-cs) -->
+			<unit id="org.apache.lucene.core" version="3.5.0.v20120319-2345"/>
 			<unit id="org.apache.lucene.highlighter" version="3.5.0.v20120319-2345"/>
 			<unit id="org.apache.lucene.memory" version="3.5.0.v20120319-2345"/>
 			<unit id="org.apache.lucene.misc" version="3.5.0.v20120319-2345"/>
@@ -215,6 +216,7 @@
 			<!-- JBDS-1904, JBIDE-9351, JBIDE-10094 add mylyn and jira to JBT/JBDS TP -->
 			<unit id="org.eclipse.mylyn_feature.feature.group" version="3.8.0.v20120612-0600"/>
 			<unit id="org.eclipse.mylyn.ide_feature.feature.group" version="3.8.0.v20120612-0600"/>
+			<unit id="org.eclipse.mylyn.tasks.ide.feature.group" version="3.8.0.v20120612-0600"/>
 			<unit id="org.eclipse.mylyn.commons.feature.group" version="3.8.0.v20120612-0600"/>
 			<unit id="org.eclipse.mylyn.commons.compatibility.feature.group" version="3.8.0.v20120612-0600"/>
 			<unit id="org.eclipse.mylyn.commons.identity.feature.group" version="1.0.0.v20120612-0600"/>
@@ -236,29 +238,30 @@
 			<unit id="org.eclipse.mylyn.tasks.ui" version="3.8.0.v20120612-0600"/>
 			<unit id="org.eclipse.mylyn.tasks.core" version="3.8.0.v20120612-0600"/>
 			<unit id="org.eclipse.mylyn.tasks.bugs" version="3.8.0.v20120612-0600"/>
-			<unit id="com.atlassian.connector.commons" version="4.0.0.v20120518"/>
-			<unit id="com.atlassian.connector.eclipse.bamboo.core" version="3.0.5.v20120518"/>
-			<unit id="com.atlassian.connector.eclipse.bamboo.ui" version="3.0.5.v20120518"/>
-			<unit id="com.atlassian.connector.eclipse.branding.ui" version="3.0.5.v20120518"/>
-			<unit id="com.atlassian.connector.eclipse.commons.core" version="3.0.5.v20120518"/>
-			<unit id="com.atlassian.connector.eclipse.commons.ui" version="3.0.5.v20120518"/>
-			<unit id="com.atlassian.connector.eclipse.core" version="3.0.5.v20120518"/>
-			<unit id="com.atlassian.connector.eclipse.crucible.core" version="3.0.5.v20120518"/>
-			<unit id="com.atlassian.connector.eclipse.crucible.ui" version="3.0.5.v20120518"/>
-			<unit id="com.atlassian.connector.eclipse.cvs.core" version="3.0.5.v20120518"/>
-			<unit id="com.atlassian.connector.eclipse.cvs.ui" version="3.0.5.v20120518"/>
-			<unit id="com.atlassian.connector.eclipse.directclickthrough.ui" version="3.0.5.v20120518"/>
-			<unit id="com.atlassian.connector.eclipse.fisheye.core" version="3.0.5.v20120518"/>
-			<unit id="com.atlassian.connector.eclipse.fisheye.ui" version="3.0.5.v20120518"/>
-			<unit id="com.atlassian.connector.eclipse.help" version="3.0.5.v20120518"/>
-			<unit id="com.atlassian.connector.eclipse.jira.core" version="3.0.5.v20120518"/>
-			<unit id="com.atlassian.connector.eclipse.jira.ui" version="3.0.5.v20120518"/>
-			<unit id="com.atlassian.connector.eclipse.monitor.core" version="3.0.5.v20120518"/>
-			<unit id="com.atlassian.connector.eclipse.monitor.ui" version="3.0.5.v20120518"/>
-			<unit id="com.atlassian.connector.eclipse.subclipse.core" version="3.0.5.v20120518"/>
-			<unit id="com.atlassian.connector.eclipse.subclipse.ui" version="3.0.5.v20120518"/>
-			<unit id="com.atlassian.connector.eclipse.ui" version="3.0.5.v20120518"/>
+			<unit id="com.atlassian.connector.commons" version="4.0.0.v20120628"/>
+			<unit id="com.atlassian.connector.eclipse.bamboo.core" version="3.0.6.v20120628"/>
+			<unit id="com.atlassian.connector.eclipse.bamboo.ui" version="3.0.6.v20120628"/>
+			<unit id="com.atlassian.connector.eclipse.branding.ui" version="3.0.6.v20120628"/>
+			<unit id="com.atlassian.connector.eclipse.commons.core" version="3.0.6.v20120628"/>
+			<unit id="com.atlassian.connector.eclipse.commons.ui" version="3.0.6.v20120628"/>
+			<unit id="com.atlassian.connector.eclipse.core" version="3.0.6.v20120628"/>
+			<unit id="com.atlassian.connector.eclipse.crucible.core" version="3.0.6.v20120628"/>
+			<unit id="com.atlassian.connector.eclipse.crucible.ui" version="3.0.6.v20120628"/>
+			<unit id="com.atlassian.connector.eclipse.cvs.core" version="3.0.6.v20120628"/>
+			<unit id="com.atlassian.connector.eclipse.cvs.ui" version="3.0.6.v20120628"/>
+			<unit id="com.atlassian.connector.eclipse.directclickthrough.ui" version="3.0.6.v20120628"/>
+			<unit id="com.atlassian.connector.eclipse.fisheye.core" version="3.0.6.v20120628"/>
+			<unit id="com.atlassian.connector.eclipse.fisheye.ui" version="3.0.6.v20120628"/>
+			<unit id="com.atlassian.connector.eclipse.help" version="3.0.6.v20120628"/>
+			<unit id="com.atlassian.connector.eclipse.jira.core" version="3.0.6.v20120628"/>
+			<unit id="com.atlassian.connector.eclipse.jira.ui" version="3.0.6.v20120628"/>
+			<unit id="com.atlassian.connector.eclipse.monitor.core" version="3.0.6.v20120628"/>
+			<unit id="com.atlassian.connector.eclipse.monitor.ui" version="3.0.6.v20120628"/>
+			<unit id="com.atlassian.connector.eclipse.subclipse.core" version="3.0.6.v20120628"/>
+			<unit id="com.atlassian.connector.eclipse.subclipse.ui" version="3.0.6.v20120628"/>
+			<unit id="com.atlassian.connector.eclipse.ui" version="3.0.6.v20120628"/>
 			<unit id="com.thoughtworks.xstream" version="1.3.1.v201111240924"/>
+			<unit id="org.xmlpull" version="1.1.3.4_v2012015148"/>
 			<unit id="org.eclipse.ui" version="3.103.0.v20120521-2329"/>
 			<unit id="org.eclipse.core.runtime" version="3.8.0.v20120521-2346"/>
 			<unit id="org.eclipse.core.resources" version="3.8.0.v20120522-2034"/>
@@ -282,6 +285,7 @@
 			<unit id="org.mortbay.jetty.server" version="6.1.23.v201012071420"/>
 			<unit id="org.mortbay.jetty.util" version="6.1.23.v201012071420"/>
 			<unit id="org.apache.jasper" version="7.0.26.v201205030742"/>
+			<unit id="org.apache.catalina" version="7.0.26.v201205021508"/>
 			<unit id="org.joda.time" version="1.6.0.v20081202-0100"/>
 			<unit id="javax.servlet" version="3.0.0.v201112011016"/>
 			<unit id="javax.servlet.jsp" version="2.2.0.v201112011158"/>
@@ -303,8 +307,8 @@
 			<unit id="org.eclipse.birt.chart.integration.wtp.feature.group" version="4.2.0.v20120613-1143-51-7w3123172402254"/>
 
 			<!-- GWT/GPE dependencies (include only those which are EPL or other OSS licensed!) -->
-			<unit id="com.google.gdt.eclipse.suite.e37.feature.feature.group" version="2.5.2.v201202290255-rel-r37"/>
-			<unit id="com.google.gwt.eclipse.sdkbundle.e37.feature.feature.group" version="2.4.0.v201202290255-rel-r37"/>
+			<unit id="com.google.gdt.eclipse.suite.e42.feature.feature.group" version="3.0.1.v201206290132-rel-r42"/>
+			<unit id="com.google.gwt.eclipse.sdkbundle.e42.feature.feature.group" version="2.4.0.v201206290132-rel-r42"/>
 		</location>
 	</locations>
 	<includeBundles>
