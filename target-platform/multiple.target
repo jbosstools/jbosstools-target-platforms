@@ -287,6 +287,7 @@
 			<unit id="org.apache.jasper" version="7.0.26.v201205030742"/>
 			<unit id="org.apache.catalina" version="7.0.26.v201205021508"/>
 			<unit id="javax.ejb" version="3.1.1.v201204261316"/>
+			<unit id="javax.transaction" version="1.1.1.v201105210645"/>
 			<unit id="org.joda.time" version="1.6.0.v20081202-0100"/>
 			<unit id="javax.servlet" version="3.0.0.v201112011016"/>
 			<unit id="javax.servlet.jsp" version="2.2.0.v201112011158"/>
