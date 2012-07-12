@@ -3,7 +3,7 @@
 
 	<!-- if useLatest = true, omit versions from p2.mirror script to fetch latest version available; 
 		 if useLatest = false, include versions and fetch specific versions requested. -->
-	<property name="useLatest" value="true" />
+	<property name="useLatest" value="false" />
 
 	<property name="tmpdir" value="${java.io.tmpdir}/target-platform-build" />
 

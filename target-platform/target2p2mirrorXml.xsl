@@ -9,7 +9,7 @@
 
 	<!-- if useLatest = true, omit versions from p2.mirror script to fetch latest version available; 
 		 if useLatest = false, include versions and fetch specific versions requested. -->
-	<xsl:param name="useLatest" select="'true'" as="xs:string"/>
+	<xsl:param name="useLatest" select="'false'" as="xs:string"/>
 
 	<xsl:param name="verbose" select="'${verbose}'" as="xs:string"/>
 	<xsl:param name="followStrict" select="'${followStrict}'" as="xs:string"/>
