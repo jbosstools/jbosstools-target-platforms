@@ -256,7 +256,6 @@
 			<unit id="com.atlassian.connector.eclipse.jira.core" version="3.0.6.v20120628"/>
 			<unit id="com.atlassian.connector.eclipse.jira.ui" version="3.0.6.v20120628"/>
 			<unit id="com.atlassian.connector.eclipse.monitor.core" version="3.0.6.v20120628"/>
-			<unit id="com.atlassian.connector.eclipse.monitor.ui" version="3.0.6.v20120628"/>
 			<unit id="com.atlassian.connector.eclipse.subclipse.core" version="3.0.6.v20120628"/>
 			<unit id="com.atlassian.connector.eclipse.subclipse.ui" version="3.0.6.v20120628"/>
 			<unit id="com.atlassian.connector.eclipse.ui" version="3.0.6.v20120628"/>
