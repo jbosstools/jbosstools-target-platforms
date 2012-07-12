@@ -18,10 +18,33 @@
 		<eclipse.version>4.2</eclipse.version>
 		<eclipse.type>platform</eclipse.type>
 		<eclipse.URL>http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops4/R-4.2-201206081400/</eclipse.URL>
+		<!-- Temporary before release of Tycho 0.16 -->
+		<!-- JBIDE-12003 -->
+		<tychoVersion>0.16.0-SNAPSHOT</tychoVersion>
+		<tychoExtrasVersion>0.16.0-SNAPSHOT</tychoExtrasVersion>
 	</properties>
 
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho.extras</groupId>
+				<artifactId>target-platform-validation-plugin</artifactId>
+				<version>${tychoExtrasVersion}</version>
+				<executions>
+					<execution>
+						<phase>validate</phase>
+						<goals>
+							<goal>validate-target-platform</goal>
+						</goals>
+						<configuration>
+							<targetFiles>
+								<param>unified.target</param>
+							</targetFiles>
+							<failOnError>true</failOnError>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>build-helper-maven-plugin</artifactId>
@@ -198,5 +221,12 @@
 			<layout>default</layout>
 		</snapshotRepository>
 	</distributionManagement>
+	
+	<pluginRepositories>
+  <pluginRepository>
+    <id>tycho-snapshots</id>
+    <url>https://oss.sonatype.org/content/groups/public/</url>
+  </pluginRepository>
+</pluginRepositories>
 
 </project>
