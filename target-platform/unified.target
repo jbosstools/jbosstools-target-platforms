@@ -6,11 +6,11 @@
 		using vi, apply this transform:
 		:%s/.\+\/\(org.\+\)_\(\d\+.\+\)\.jar/\t\t\t<unit id="\1.feature.group" version="\2"\/>/g
 	-->
-	<!-- for trunk use _composite_/core/trunk; for 3.4_stable_branch, use _composite_/core/3.4.juno -->
 	<locations>
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
 			<!-- don't forget to increment these files when moving up a version:
 				build.xml, *.target*, publish.sh, target2p2mirror.xml -->
+			<!-- for trunk use _composite_/core/trunk; for 3.4_stable_branch, use _composite_/core/3.4.juno -->
 			<repository location="http://download.jboss.org/jbosstools/updates/target-platform_3.4.juno.SR0/latest/"/>
 
 			<!-- for these IUs we need multiple versions -->
@@ -25,7 +25,7 @@
 			<unit id="javax.servlet" version="2.5.0.v200910301333"/>
 			<unit id="javax.servlet.jsp" version="2.2.0.v201112011158"/>
 			<!-- <unit id="javax.servlet.jsp" version="2.0.0.v201101211617"/> -->
-			<unit id="javax.servlet.jsp" version="2.0.0.v201101211617"/>
+			<unit id="javax.servlet.jsp" version="2.0.0.v200806031607"/>
 			<unit id="javax.wsdl" version="1.6.2.v201012040545"/>
 			<unit id="javax.wsdl" version="1.5.1.v201012040544"/>
 			<unit id="javax.xml.bind" version="2.2.0.v201105210648"/>
@@ -108,6 +108,8 @@
 
 			<!-- Platform: CVS, JDT, RCP, PDE, Equinox, Help -->
 			<unit id="com.ibm.icu.base" version="4.4.2.v20110831"/>
+			<!-- need two versions here to include org.eclipse.update.ui, which is only on the 3.8 site -->
+			<unit id="org.eclipse.platform.feature.group" version="3.8.0.v20120607-071945-9gF7jI7nG5qByXMVdkhRMWBQlF4PnDCLybDCPQ"/>
 			<unit id="org.eclipse.platform.feature.group" version="4.2.0.v20120608-135145-9JF7BHV8FyMteji0Oi_ePMz0xuZ8TVo7lV0z0ecb"/>
 			<unit id="org.eclipse.platform.ide" version="4.2.0.I20120608-1400"/>
 			<unit id="org.eclipse.platform.sdk" version="4.2.0.I20120608-1400"/>
@@ -131,6 +133,13 @@
 			<unit id="org.eclipse.rcp.feature.group" version="4.2.0.v20120528-1648-7IAPA7BrHQicRpNdOz-Obz-rlRCA"/>
 			<unit id="org.eclipse.pde.feature.group" version="3.8.0.v20120525-1249-7c7vFitFFt6Zr5a12MM4IKMFZ"/>
 			<unit id="org.eclipse.help.feature.group" version="1.4.0.v20120608-133537-8P7vFOTFK_Qj4JmDIQXL8Tn"/>
+			<!-- update.ui is on the 3.8 site, not the 4.2 site -->
+			<unit id="org.eclipse.update.ui" version="3.3.0.v20120523-1742"/>
+			<!-- there are two versions of this IU - 
+				4.2 has ./org.eclipse.update.core_3.2.600.v20120530-1204.jar and 
+				3.8 has ./org.eclipse.update.core_3.2.600.v20120530-120908.jar
+			-->
+			<unit id="org.eclipse.update.core" version="3.2.600.v20120530-120908"/>
 			<unit id="org.eclipse.update.core" version="3.2.600.v20120530-1204"/>
 
 			<!-- DTP -->
@@ -356,6 +365,8 @@
 		</location>
 	</locations>
 	<includeBundles>
+		<!-- JBIDE-12292 include m2e.wtp like a component, rather than an upstream dependency -->
+		<feature id="org.eclipse.m2e.wtp.feature"/>
 		<feature id="org.mozilla.xulrunner.feature"/>
 		<feature id="org.mozilla.xpcom.feature"/>
 	</includeBundles>
