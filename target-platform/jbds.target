@@ -107,8 +107,8 @@
 
 			<!-- Platform: CVS, JDT, RCP, PDE, Equinox, Help -->
 			<unit id="com.ibm.icu.base" version="4.4.2.v20110831"/>
-			<!-- need two versions here to include org.eclipse.update.ui, which is only on the 3.8 site -->
-			<unit id="org.eclipse.platform.feature.group" version="3.8.0.v20120607-071945-9gF7jI7nG5qByXMVdkhRMWBQlF4PnDCLybDCPQ"/>
+			<!-- cannot include two versions of the same feature as they conflict in terms of inclusion of org.eclipse.update.ui, which is only on the 3.8 site -->
+			<!-- <unit id="org.eclipse.platform.feature.group" version="3.8.0.v20120607-071945-9gF7jI7nG5qByXMVdkhRMWBQlF4PnDCLybDCPQ"/> -->
 			<unit id="org.eclipse.platform.feature.group" version="4.2.0.v20120608-135145-9JF7BHV8FyMteji0Oi_ePMz0xuZ8TVo7lV0z0ecb"/>
 			<unit id="org.eclipse.platform.ide" version="4.2.0.I20120608-1400"/>
 			<unit id="org.eclipse.platform.sdk" version="4.2.0.I20120608-1400"/>
@@ -138,7 +138,7 @@
 				4.2 has ./org.eclipse.update.core_3.2.600.v20120530-1204.jar and 
 				3.8 has ./org.eclipse.update.core_3.2.600.v20120530-120908.jar
 			-->
-			<unit id="org.eclipse.update.core" version="3.2.600.v20120530-120908"/>
+			<!-- <unit id="org.eclipse.update.core" version="3.2.600.v20120530-120908"/> -->
 			<unit id="org.eclipse.update.core" version="3.2.600.v20120530-1204"/>
 
 			<!-- DTP -->
