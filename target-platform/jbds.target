@@ -23,7 +23,8 @@
 			<unit id="javax.servlet" version="3.0.0.v201112011016"/>
 			<unit id="javax.servlet" version="2.5.0.v200910301333"/>
 			<unit id="javax.servlet.jsp" version="2.2.0.v201112011158"/>
-			<unit id="javax.servlet.jsp" version="2.0.0.v201101211617"/>
+			<!-- <unit id="javax.servlet.jsp" version="2.0.0.v201101211617"/> -->
+			<unit id="javax.servlet.jsp" version="2.0.0.v200806031607"/>
 			<unit id="javax.wsdl" version="1.6.2.v201012040545"/>
 			<unit id="javax.wsdl" version="1.5.1.v201012040544"/>
 			<unit id="javax.xml.bind" version="2.2.0.v201105210648"/>
