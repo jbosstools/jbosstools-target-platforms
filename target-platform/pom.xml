@@ -34,12 +34,15 @@
 					<execution>
 						<phase>validate</phase>
 						<goals>
-							<goal>validate-target-platform</goal>
+ 							<goal>validate-target-platform</goal> 
 						</goals>
 						<configuration>
 							<targetFiles>
 								<param>multiple.target</param>
-								<param>unified.target</param>
+								<!-- DO NOT VALIDATE unified.target because this cannot be validated until multiple.target is built and published 
+								     <param>unified.target</param>
+								-->
+								<param>jbds.target</param>
 							</targetFiles>
 							<failOnError>true</failOnError>
 						</configuration>
