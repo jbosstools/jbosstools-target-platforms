@@ -39,7 +39,7 @@
 						<configuration>
 							<targetFiles>
 								<param>multiple.target</param>
-								<!-- DO NOT VALIDATE unified.target because this cannot be validated until multiple.target is built and published --> 
+								<!-- DO NOT VALIDATE unified.target until multiple.target is built and published --> 
 								<param>unified.target</param>
 								<!-- DO NOT VALIDATE jbds.target since it's the same as multiple.target now (redundant step) 
 								     <param>jbds.target</param
