@@ -7,7 +7,7 @@
 		:%s/.\+\/\(org.\+\)_\(\d\+.\+\)\.jar/\t\t\t<unit id="\1.feature.group" version="\2"\/>/g
 	-->
 	<locations>
-		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+		<location includeAllPlatforms="false" includeMode="planner" includeSource="true" type="InstallableUnit">
 			<!-- don't forget to increment these files when moving up a version:
 				build.xml, *.target*, publish.sh, target2p2mirror.xml -->
 			<!-- for trunk use _composite_/core/trunk; for 3.4_stable_branch, use _composite_/core/3.4.juno -->
