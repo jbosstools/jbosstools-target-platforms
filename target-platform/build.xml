@@ -210,11 +210,14 @@ To build an alternate target platform (eg., Juno) for JBDS:
 	<!-- /abs/path/to/eclipse -vm /opt/jdk1.6.0/bin/java -nosplash -data /tmp/workspace -consolelog -application 
 			org.eclipse.ant.core.antRunner -f *.target.p2mirror.xml -Ddebug=true -DfollowStrict=true -DrepoDir=/tmp/REPO/ -->
 	<target name="run.p2mirror.script" description="build target update site using p2.mirror">
-		<exec executable="${WORKINGDIR}/eclipse-${eclipse.version}/eclipse/eclipse" dir="${basedir}" failonerror="true">
+		<java classname="org.eclipse.equinox.launcher.Main" fork="true" dir="${basedir}" failonerror="true">
+			<classpath>
+				<fileset dir="${WORKINGDIR}/eclipse-${eclipse.version}/eclipse/plugins" includes="org.eclipse.equinox.launcher_*.jar"/>
+			</classpath>
 			<arg line=" -nosplash -data ${tmpdir}/workspace -consolelog -application org.eclipse.ant.core.antRunner" />
 			<arg line=" -f ${targetFile}.p2mirror.xml -DfollowStrict=true -DrepoDir=${repoDir}" />
 			<arg line=" -Ddebug=true -vmargs -Dosgi.locking=none" />
-		</exec>
+		</java>
 	</target>
 
 	<target name="update.target.file" description="use XSLT to update .target file from contents of local repo">
