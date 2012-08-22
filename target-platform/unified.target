@@ -10,8 +10,8 @@
 		<location includeAllPlatforms="false" includeMode="planner" includeSource="true" type="InstallableUnit">
 			<!-- don't forget to increment these files when moving up a version:
 				build.xml, *.target*, publish.sh, target2p2mirror.xml -->
-			<!-- for trunk use _composite_/core/trunk; for 3.4_stable_branch, use _composite_/core/3.4.juno -->
-			<repository location="http://download.jboss.org/jbosstools/updates/target-platform_3.4.juno.SR0/latest/"/>
+			<!-- for trunk use _composite_/core/trunk; for 3.4_stable_branch, use _composite_/core/4.0.juno -->
+			<repository location="http://download.jboss.org/jbosstools/updates/target-platform_4.0.juno.SR0/latest/"/>
 
 			<!-- for these IUs we need multiple versions -->
 			<unit id="javax.wsdl" version="1.6.2.v201012040545"/>

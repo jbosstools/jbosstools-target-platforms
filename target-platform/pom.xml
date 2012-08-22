@@ -14,7 +14,7 @@
 		<target.platform.classifier.multiple.name>multiple</target.platform.classifier.multiple.name>
 		<target.platform.classifier.unified.name>unified</target.platform.classifier.unified.name>
 		<target.platform.classifier.local.name>local</target.platform.classifier.local.name>
-		<unified.URL>http://download.jboss.org/jbosstools/updates/target-platform_3.4.juno.SR0/latest/</unified.URL>
+		<unified.URL>http://download.jboss.org/jbosstools/updates/target-platform_4.0.juno.SR0/latest/</unified.URL>
 		<eclipse.version>4.2</eclipse.version>
 		<eclipse.type>platform</eclipse.type>
 		<eclipse.URL>http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops4/R-4.2-201206081400/</eclipse.URL>
