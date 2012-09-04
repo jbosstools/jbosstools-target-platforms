@@ -305,6 +305,9 @@
 			<!-- GWT/GPE dependencies (include only those which are EPL or other OSS licensed!) -->
 			<unit id="com.google.gdt.eclipse.suite.e37.feature.feature.group" version="2.5.1.v201201120043-rel-r37"/>
 			<unit id="com.google.gwt.eclipse.sdkbundle.e37.feature.feature.group" version="2.4.0.v201201120043-rel-r37"/>
+			
+			<!-- Theming -->
+			<unit id="net.jeeeyul.eclipse.themes" version="1.5.0.201209040005"/>
 		</location>
 	</locations>
 	<includeBundles>
