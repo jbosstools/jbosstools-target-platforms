@@ -21,8 +21,8 @@
 		<eclipse.version>4.2</eclipse.version>
 		<eclipse.URL>http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops4/R-4.2-201206081400/</eclipse.URL>
 		-->
-		<eclipse.version>M20120829-1200</eclipse.version>
-		<eclipse.URL>http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops4/M20120829-1200/</eclipse.URL>
+		<eclipse.version>M20120829-1000</eclipse.version>
+		<eclipse.URL>http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops4/M20120829-1000/</eclipse.URL>
 		
 		<!-- Temporary before release of Tycho 0.16 -->
 		<!-- JBIDE-12003 -->

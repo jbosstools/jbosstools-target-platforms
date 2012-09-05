@@ -159,9 +159,9 @@ To build an alternate target platform (eg., Juno) for JBDS:
 		<!-- <property name="eclipse.version" value="4.2" />
 		<property name="eclipse.type" value="platform" />
 		<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/R-4.2-201206081400/"/> -->
-		<property name="eclipse.version" value="M20120829-1200" />
+		<property name="eclipse.version" value="M20120829-1000" />
 		<property name="eclipse.type" value="platform" />
-		<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/M20120829-1200/"/>
+		<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/M20120829-1000/"/>
 
 		<if>
 			<equals arg1="${arch}" arg2="x86" />
