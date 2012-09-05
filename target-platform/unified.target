@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><?pde version="3.6"?>
-<target includeMode="feature" name="e42-wtp34">
+<target includeMode="feature" name="e42-wtp34-jbds6">
 	<!-- Pro tip: to convert 
 			from org.eclipse.foo_4.6.0.v201005032111-777K4AkF7B77R7c7N77.jar
 		to <unit version="4.6.0.v201005032111-777K4AkF7B77R7c7N77" id="org.eclipse.foo.feature.group"/>
@@ -7,10 +7,9 @@
 		:%s/.\+\/\(org.\+\)_\(\d\+.\+\)\.jar/\t\t\t<unit id="\1.feature.group" version="\2"\/>/g
 	-->
 	<locations>
-		<location includeAllPlatforms="false" includeMode="planner" includeSource="true" type="InstallableUnit">
+		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
 			<!-- don't forget to increment these files when moving up a version:
 				build.xml, *.target*, publish.sh, target2p2mirror.xml -->
-			<!-- for trunk use _composite_/core/trunk; for 4.0_stable_branch, use _composite_/core/4.0.juno -->
 			<repository location="http://download.jboss.org/jbosstools/updates/target-platform_4.0.juno.SR0a/latest/"/>
 
 			<!-- for these IUs we need multiple versions -->
@@ -42,7 +41,7 @@
 			<!-- m2e, m2e-wtp + deps -->
 			<unit id="org.eclipse.m2e.sdk.feature.feature.group" version="1.1.0.20120530-0009"/>
 			<unit id="org.eclipse.m2e.feature.feature.group" version="1.1.0.20120530-0009"/>
-			<unit id="org.maven.ide.eclipse.wtp.feature.feature.group" version="0.15.2.20120306-2040"/>
+			<unit id="org.eclipse.m2e.wtp.feature.feature.group" version="0.16.0"/>
 			<unit id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version="0.15.0.201206251206"/>
 			<unit id="ch.qos.logback.classic" version="1.0.0.v20111214-2030"/>
 			<unit id="ch.qos.logback.core" version="1.0.0.v20111214-2030"/>
