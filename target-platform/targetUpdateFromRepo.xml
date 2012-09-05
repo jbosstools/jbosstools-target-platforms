@@ -12,7 +12,7 @@
 	<!-- create a second .target file which replaces all URLs with a single unified (published) one
 		(eg., for jbosstools target platform site), set these properties too -->
 	<property name="unified.targetFile" value="unified.target" />
-	<property name="unified.URL" value="http://download.jboss.org/jbosstools/updates/target-platform_4.0.juno.SR0/latest/" />
+	<property name="unified.URL" value="http://download.jboss.org/jbosstools/updates/target-platform_4.0.juno.SR0a/latest/" />
 	<property name="local.targetFile" value="local.target" />
 	<property name="local.URL" value="file://${repoDir}" />
 

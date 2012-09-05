@@ -28,7 +28,7 @@
 <p2.mirror destination="file://${repoDir}" verbose="${verbose}">
 <slicingOptions includeFeatures="true" followStrict="${followStrict}"/>
 <source>
-<repository location="http://download.jboss.org/jbosstools/updates/juno/SR0/"/>
+<repository location="http://download.jboss.org/jbosstools/updates/juno/SR0a/"/>
 </source>
 <iu id="javax.wsdl" version="1.6.2.v201012040545"/>
 <iu id="javax.wsdl" version="1.5.1.v201012040544"/>
@@ -336,6 +336,7 @@
 <iu id="org.eclipse.birt.chart.integration.wtp.feature.group" version="4.2.0.v20120613-1143-51-7w3123172402254"/>
 <iu id="com.google.gdt.eclipse.suite.e42.feature.feature.group" version="3.0.1.v201206290132-rel-r42"/>
 <iu id="com.google.gwt.eclipse.sdkbundle.e42.feature.feature.group" version="2.4.0.v201206290132-rel-r42"/>
+<iu id="net.jeeeyul.eclipse.themes.feature.feature.group" version="1.5.0.201209040005"/>
 </p2.mirror>
 </target>
 </project>

@@ -67,7 +67,7 @@ To run for JBDS target file WHILE JBT target file is being run:
 
 To build an alternate target platform (eg., Juno) for JBT:
 
-	$ ant -DtargetFile=multiple.target -DrepoDir=${WORKINGDIR}/JBT_REPO/ -Declipse.version=4.2 -Declipse.type=platform -Declipse.URL=http://www.eclipse.org/downloads/download.php?r=1\&amp;file=/eclipse/downloads/drops4/R-4.2-201206081400/ -Dunified.URL=http://download.jboss.org/jbosstools/updates/target-platform_4.0.juno.SR0/latest/
+	$ ant -DtargetFile=multiple.target -DrepoDir=${WORKINGDIR}/JBT_REPO/ -Declipse.version=4.2 -Declipse.type=platform -Declipse.URL=http://www.eclipse.org/downloads/download.php?r=1\&amp;file=/eclipse/downloads/drops4/R-4.2-201206081400/ -Dunified.URL=http://download.jboss.org/jbosstools/updates/target-platform_4.0.juno.SR0a/latest/
 
 To build an alternate target platform (eg., Juno) for JBDS:
 
@@ -156,9 +156,12 @@ To build an alternate target platform (eg., Juno) for JBDS:
 		<!-- http://mirror.csclub.uwaterloo.ca/eclipse/eclipse/downloads/drops4/R-4.2-201206081400/eclipse-platform-4.2-linux-gtk-x86_64.tar.gz -->
 		<!-- eclipse-platform-3.8M6-linux-gtk-x86_64.tar.gz -->
 		<!-- eclipse-platform-3.7.2-linux-gtk-x86_64.tar.gz -->
-		<property name="eclipse.version" value="4.2" />
+		<!-- <property name="eclipse.version" value="4.2" />
 		<property name="eclipse.type" value="platform" />
-		<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/R-4.2-201206081400/"/>
+		<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/R-4.2-201206081400/"/> -->
+		<property name="eclipse.version" value="M20120829-1200" />
+		<property name="eclipse.type" value="platform" />
+		<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/M20120829-1200/"/>
 
 		<if>
 			<equals arg1="${arch}" arg2="x86" />
