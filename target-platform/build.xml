@@ -93,7 +93,7 @@ To build an alternate target platform (eg., Juno) for JBDS:
 		<antcall target="build.local.target.platform.repo" />
 	</target>
 
-	<target name="build.local.target.platform.repo" depends="init, get.arch, get.eclipse, gen.p2mirror.script, run.p2mirror.script, update.target.file, cleanup" />
+	<target name="build.local.target.platform.repo" depends="init, get.arch, get.eclipse, gen.p2mirror.script, run.p2mirror.script, cleanup" />
 
 	<!-- ********************************************************************************** -->
 
@@ -223,16 +223,16 @@ To build an alternate target platform (eg., Juno) for JBDS:
 		</java>
 	</target>
 
-	<target name="update.target.file" description="use XSLT to update .target file from contents of local repo">
-		<echo>
+	<target name="update.target.file" description="optional step: use XSLT to update .target file from contents of local repo">
+<!--		<echo>
 This step - calling targetUpdateFromRepo.xml - is no longer enabled to prevent the .target 
 file from being stripped of duplicate IUs. Instead, generation is a one-way process: 
 
 1. Manually update .target file
 2. Generate .p2mirror.xml file, with useLatest=false
 3. ...
-4. Profit!</echo>
-		<!-- <ant antfile="targetUpdateFromRepo.xml" /> -->
+4. Profit!</echo> -->
+		<ant antfile="targetUpdateFromRepo.xml" />
 	</target>
 
 	<target name="cleanup">
