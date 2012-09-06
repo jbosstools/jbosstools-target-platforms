@@ -122,8 +122,9 @@ To simply generate a local.target file from the multiple.target file, use:
 			<filterchain>
 				<linecontains>
 					<contains value="${test.pattern}" />
-					<contains value="feature.group" />
+					<!-- <contains value="feature.group" /> -->
 				</linecontains>
+				<striplinecomments><comment value="#"/></striplinecomments>
 			</filterchain>
 		</loadfile>
 		<echo file="${tmpfile}">${artifactVersionsPropertiesContents}</echo>

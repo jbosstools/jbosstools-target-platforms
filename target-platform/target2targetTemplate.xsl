@@ -12,14 +12,25 @@
 <xsl:template match="unit">
 <xsl:choose>
 <xsl:when test="$replace.versions">
-<unit id="{@id}" version="${{{@id}.version}}">
+
+<xsl:variable name="prevID"><xsl:value-of select="preceding-sibling::* [1]/@id" /></xsl:variable> <!-- <prevID><xsl:value-of select="$prevID"/></prevID> -->
+<xsl:variable name="thisID"><xsl:value-of select="@id" /></xsl:variable> <!-- <thisID><xsl:value-of select="$thisID"/></thisID> -->
+<xsl:variable name="nextID"><xsl:value-of select="following-sibling::* [1]/@id" /></xsl:variable> <!-- <nextID><xsl:value-of select="$nextID"/></nextID> -->
+
+<!-- if there is more than one node matching <unit id="some.id"/> then DO NOT REPLACE the version -->
+<xsl:choose>
+	<xsl:when test="contains ($thisID, $nextID) or contains ($thisID, $prevID)">
+		<!-- <xsl:comment> Note multiple versions of this IU; cannot update automatically. </xsl:comment> -->
+		<unit id="{@id}" version="{@version}"><xsl:apply-templates/></unit>
+	</xsl:when>
+	<xsl:otherwise>
+		<unit id="{@id}" version="${{{@id}.version}}"><xsl:apply-templates/></unit>
+	</xsl:otherwise>
+</xsl:choose>
 <xsl:apply-templates/>
-</unit>
 </xsl:when>
 <xsl:otherwise>
-<unit id="{@id}" version="{@version}">
-<xsl:apply-templates/>
-</unit>
+<unit id="{@id}" version="{@version}"><xsl:apply-templates/></unit>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:template>
