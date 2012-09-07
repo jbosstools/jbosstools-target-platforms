@@ -14,8 +14,8 @@
 		<target.platform.classifier.multiple.name>multiple</target.platform.classifier.multiple.name>
 		<target.platform.classifier.unified.name>unified</target.platform.classifier.unified.name>
 		<target.platform.classifier.local.name>local</target.platform.classifier.local.name>
+		<!-- unified.URL is only used when regenerating the .target file via targetUpdateFromRepo.xml --> 
 		<unified.URL>http://download.jboss.org/jbosstools/updates/target-platform_4.0.juno.SR0a/latest/</unified.URL>
-		<eclipse.type>platform</eclipse.type>
 
 		<!--
 		<eclipse.version>4.2</eclipse.version>
@@ -23,6 +23,7 @@
 		-->
 		<eclipse.version>M20120829-1000</eclipse.version>
 		<eclipse.URL>http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops4/M20120829-1000/</eclipse.URL>
+		<eclipse.type>platform</eclipse.type>
 		
 		<!-- Temporary before release of Tycho 0.16 -->
 		<!-- JBIDE-12003 -->
