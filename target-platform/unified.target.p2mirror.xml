@@ -51,7 +51,7 @@
 <iu id="org.apache.commons.logging" version="1.0.4.v201101211617"/>
 <iu id="org.apache.lucene" version="2.9.1.v201101211721"/>
 <iu id="org.apache.lucene" version="1.9.1.v201101211617"/>
-<iu id="org.apache.lucene.core" version="3.5.0.v20120725-1805"/>
+<iu id="org.apache.lucene.core" version="3.5.0.v20120319-2345"/>
 <iu id="org.apache.lucene.core" version="2.9.1.v201101211721"/>
 <iu id="org.junit" version="4.10.0.v4_10_0_v20120426-0900"/>
 <iu id="org.junit" version="3.8.2.v3_8_2_v20100427-1100"/>
