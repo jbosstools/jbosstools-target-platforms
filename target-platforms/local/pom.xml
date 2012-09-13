@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.jboss.tools</groupId>
-		<artifactId>target-platforms</artifactId> 
+		<artifactId>target-platforms</artifactId>
 		<version>4.0.0.Alpha2-SNAPSHOT</version>
 	</parent>
 	<groupId>org.jboss.tools.target-platforms</groupId>
@@ -13,7 +13,7 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<repoDir>${basedir}/REPO</repoDir>
+		<repoDir>${project.build.directory}/REPO</repoDir>
 		<eclipse.type>platform</eclipse.type>
 
 		<!--
@@ -22,7 +22,7 @@
 		-->
 		<eclipse.version>M20120829-1000</eclipse.version>
 		<eclipse.URL>http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/M20120829-1000/</eclipse.URL>
-		
+
 		<!-- Temporary before release of Tycho 0.16 -->
 		<!-- JBIDE-12003 -->
 		<tychoVersion>0.16.0-SNAPSHOT</tychoVersion>
@@ -99,7 +99,7 @@
 					<execution>
 						<phase>verify</phase>
 						<goals>
- 							<goal>validate-target-platform</goal> 
+ 							<goal>validate-target-platform</goal>
 						</goals>
 						<configuration>
 							<targetFiles>
@@ -139,6 +139,9 @@
 	<profiles>
 		<profile>
 			<id>get.local.target</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
 			<build>
 				<plugins>
 					<plugin>
