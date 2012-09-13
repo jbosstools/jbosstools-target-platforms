@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<!-- <parent> <groupId>org.jboss.tools</groupId> <artifactId>parent</artifactId> 
+		<version>0.0.1-SNAPSHOT</version> </parent> -->
+	<groupId>org.jboss.tools</groupId>
+	<artifactId>target-platforms</artifactId>
+	<version>4.0.0.Alpha2-SNAPSHOT</version>
+	<name>JBoss Tools Target Platforms (Parent)</name>
+	<packaging>pom</packaging>
+
+	<properties>
+		<!-- Temporary before release of Tycho 0.16 -->
+		<!-- JBIDE-12003 -->
+		<tychoVersion>0.16.0-SNAPSHOT</tychoVersion>
+		<tychoExtrasVersion>0.16.0-SNAPSHOT</tychoExtrasVersion>
+	</properties>
+	
+	<modules>
+		<module>multiple</module>
+		<!-- Only build multiple by default, other modules depend on context (CI vs local) -->
+	</modules>
+
+	<distributionManagement>
+		<repository>
+			<id>jboss-releases-repository</id>
+			<name>JBoss Releases Repository</name>
+			<uniqueVersion>false</uniqueVersion>
+			<url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
+			<layout>default</layout>
+		</repository>
+		<snapshotRepository>
+			<id>jboss-snapshots-repository</id>
+			<name>JBoss Snapshot Repository</name>
+			<uniqueVersion>false</uniqueVersion>
+			<url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
+			<layout>default</layout>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>tycho-snapshots</id>
+			<url>https://oss.sonatype.org/content/groups/public/</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+</project>

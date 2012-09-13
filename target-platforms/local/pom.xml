@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.jboss.tools</groupId>
+		<artifactId>target-platforms</artifactId> 
+		<version>4.0.0.Alpha2-SNAPSHOT</version>
+	</parent>
+	<groupId>org.jboss.tools.target-platforms</groupId>
+	<artifactId>local</artifactId>
+	<name>Local (aggragated) target platform</name>
+	<packaging>pom</packaging>
+
+	<properties>
+		<repoDir>${basedir}/REPO</repoDir>
+		<eclipse.type>platform</eclipse.type>
+
+		<!--
+		<eclipse.version>4.2</eclipse.version>
+		<eclipse.URL>http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops4/R-4.2-201206081400/</eclipse.URL>
+		-->
+		<eclipse.version>M20120829-1000</eclipse.version>
+		<eclipse.URL>http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/M20120829-1000/</eclipse.URL>
+		
+		<!-- Temporary before release of Tycho 0.16 -->
+		<!-- JBIDE-12003 -->
+		<tychoVersion>0.16.0-SNAPSHOT</tychoVersion>
+		<tychoExtrasVersion>0.16.0-SNAPSHOT</tychoExtrasVersion>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.5.1</version>
+				<executions>
+					<execution>
+						<id>get-multiple-target</id>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>get</goal>
+						</goals>
+						<configuration>
+							<groupId>${project.groupId}</groupId>
+							<artifactId>multiple</artifactId>
+							<version>${project.version}</version>
+							<packaging>target</packaging>
+							<classifier>multiple</classifier>
+							<destination>${project.build.directory}/multiple.target</destination>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>xml-maven-plugin</artifactId>
+				<version>1.0</version>
+				<executions>
+					<execution>
+						<id>generate-unified.target</id>
+						<phase>generate-resources</phase> <!-- Should be generate-resources -->
+						<goals>
+							<goal>transform</goal>
+						</goals>
+						<configuration>
+							<transformationSets>
+								<transformationSet>
+									<dir>${project.build.directory}</dir>
+									<includes>
+										<include>multiple.target</include>
+									</includes>
+									<stylesheet>multiple2local.xsl</stylesheet>
+									<outputDir>${project.build.directory}/local</outputDir>
+									<outputProperties>
+										<outputPropertie>
+											<name>indent</name>
+											<value>yes</value>
+										</outputPropertie>
+									</outputProperties>
+									<parameters>
+										<parameter>
+											<name>destinationUrl</name>
+											<value>file:/${repoDir}</value>
+										</parameter>
+									</parameters>
+								</transformationSet>
+							</transformationSets>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho.extras</groupId>
+				<artifactId>target-platform-validation-plugin</artifactId>
+				<version>${tychoExtrasVersion}</version>
+				<executions>
+					<execution>
+						<phase>verify</phase>
+						<goals>
+ 							<goal>validate-target-platform</goal> 
+						</goals>
+						<configuration>
+							<targetFiles>
+								<param>${project.build.directory}/local/multiple.target</param>
+							</targetFiles>
+							<failOnError>true</failOnError>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>build-helper-maven-plugin</artifactId>
+				<version>1.3</version>
+				<executions>
+					<execution>
+						<id>attach-artifacts</id>
+						<phase>package</phase>
+						<goals>
+							<goal>attach-artifact</goal>
+						</goals>
+						<configuration>
+							<artifacts>
+								<artifact>
+									<file>${project.build.directory}/local/multiple.target</file>
+									<type>target</type>
+									<classifier>local</classifier>
+								</artifact>
+							</artifacts>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<profiles>
+		<profile>
+			<id>get.local.target</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<version>1.6</version>
+						<executions>
+							<execution>
+								<phase>package</phase>
+								<configuration>
+									<tasks>
+										<!-- build the local.target file -->
+										<ant antfile="build.xml">
+											<!-- target File is the reference target file (multiple) -->
+											<property name="targetFile" value="${project.build.directory}/multiple.target" />
+											<property name="eclipse.version" value="${eclipse.version}" />
+											<property name="eclipse.type" value="${eclipse.type}" />
+											<property name="eclipse.URL" value="${eclipse.URL}"/>
+											<property name="repoDir" value="${repoDir}"/>
+											<!-- <property name="repoDir" value="/path/to/where/to/provision/repo"/> -->
+										</ant>
+									</tasks>
+								</configuration>
+								<goals>
+									<goal>run</goal>
+								</goals>
+							</execution>
+						</executions>
+						<dependencies>
+							<dependency>
+								<groupId>commons-net</groupId>
+								<artifactId>commons-net</artifactId>
+								<version>1.4.1</version>
+							</dependency>
+							<dependency>
+								<groupId>org.apache.ant</groupId>
+								<artifactId>ant-commons-net</artifactId>
+								<version>1.7.1</version>
+							</dependency>
+							<dependency>
+								<groupId>org.apache.ant</groupId>
+								<artifactId>ant-trax</artifactId>
+								<version>1.7.1</version>
+							</dependency>
+						</dependencies>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
+</project>
