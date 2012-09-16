@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><?pde version="3.6"?>
 <target includeMode="feature" name="e42-wtp34-jbds6">
-	<!-- Pro tip: to convert 
+	<!-- Pro tip: to convert
 			from org.eclipse.foo_4.6.0.v201005032111-777K4AkF7B77R7c7N77.jar
 		to <unit version="4.6.0.v201005032111-777K4AkF7B77R7c7N77" id="org.eclipse.foo.feature.group"/>
 		using vi, apply this transform:
@@ -43,7 +43,7 @@
 			<!-- m2e, m2e-wtp + deps -->
 			<unit id="org.eclipse.m2e.sdk.feature.feature.group" version="1.2.0.20120903-1050"/>
 			<unit id="org.eclipse.m2e.feature.feature.group" version="1.2.0.20120903-1050"/>
-			<unit id="org.eclipse.m2e.wtp.feature.feature.group" version="0.16.0.20120910-0913"/>
+			<unit id="org.eclipse.m2e.wtp.feature.feature.group" version="0.16.0.20120913-2037"/>
 			<unit id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version="0.15.0.201207090125"/>
 			<unit id="ch.qos.logback.classic" version="1.0.0.v20111214-2030"/>
 			<unit id="ch.qos.logback.core" version="1.0.0.v20111214-2030"/>
@@ -135,8 +135,8 @@
 			<unit id="org.eclipse.help.feature.group" version="1.4.1.v20120726-051048-8R7xFOUFLWUl7MoRL__LBXl27"/>
 			<!-- update.ui is on the 3.8 site, not the 4.2 site -->
 			<unit id="org.eclipse.update.ui" version="3.3.0.v20120523-1742"/>
-			<!-- there are two versions of this IU - 
-				4.2 has ./org.eclipse.update.core_3.2.600.v20120530-1204.jar and 
+			<!-- there are two versions of this IU -
+				4.2 has ./org.eclipse.update.core_3.2.600.v20120530-1204.jar and
 				3.8 has ./org.eclipse.update.core_3.2.600.v20120530-120908.jar
 			-->
 			<!-- <unit id="org.eclipse.update.core" version="3.2.600.v20120530-120908"/> -->
