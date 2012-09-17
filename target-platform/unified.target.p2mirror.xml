@@ -57,7 +57,7 @@
 <iu id="org.junit" version="3.8.2.v3_8_2_v20100427-1100"/>
 <iu id="org.eclipse.m2e.sdk.feature.feature.group" version="1.2.0.20120903-1050"/>
 <iu id="org.eclipse.m2e.feature.feature.group" version="1.2.0.20120903-1050"/>
-<iu id="org.eclipse.m2e.wtp.feature.feature.group" version="0.16.0.20120910-0913"/>
+<iu id="org.eclipse.m2e.wtp.feature.feature.group" version="0.16.0.20120914-0945"/>
 <iu id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version="0.15.0.201207090125"/>
 <iu id="ch.qos.logback.classic" version="1.0.0.v20111214-2030"/>
 <iu id="ch.qos.logback.core" version="1.0.0.v20111214-2030"/>
