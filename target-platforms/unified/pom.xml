@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.jboss.tools</groupId>
-		<artifactId>target-platforms</artifactId> 
+		<artifactId>target-platforms</artifactId>
 		<version>4.0.0.Alpha2-SNAPSHOT</version>
 	</parent>
 	<groupId>org.jboss.tools.target-platforms</groupId>
@@ -13,7 +13,7 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<unified.URL>http://download.jboss.org/jbosstools/updates/target-platform_4.0.juno.SR0/latest/</unified.URL>
+		<unified.URL>http://download.jboss.org/jbosstools/updates/target-platform_4.0.juno.SR0a/latest/</unified.URL>
 	</properties>
 
 	<build>
@@ -86,7 +86,7 @@
 					<execution>
 						<phase>verify</phase>
 						<goals>
- 							<goal>validate-target-platform</goal> 
+ 							<goal>validate-target-platform</goal>
 						</goals>
 						<configuration>
 							<targetFiles>
