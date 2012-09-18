@@ -59,7 +59,7 @@
 										<include>multiple.target</include>
 									</includes>
 									<stylesheet>multiple2unified.xsl</stylesheet>
-									<outputDir>${project.build.directory}/outputTarget</outputDir>
+									<outputDir>${project.build.directory}/${project.artifactId}</outputDir>
 									<outputProperties>
 										<outputPropertie>
 											<name>indent</name>
@@ -90,7 +90,7 @@
 						</goals>
 						<configuration>
 							<targetFiles>
-								<param>${project.build.directory}/outputTarget/multiple.target</param>
+								<param>${project.build.directory}/${project.artifactId}/multiple.target</param>
 							</targetFiles>
 							<failOnError>true</failOnError>
 						</configuration>
@@ -111,7 +111,7 @@
 						<configuration>
 							<artifacts>
 								<artifact>
-									<file>${project.build.directory}/outputTarget/mutliple.target</file>
+									<file>${project.build.directory}/${project.artifactId}/multiple.target</file>
 									<type>target</type>
 									<classifier>unified</classifier>
 								</artifact>
