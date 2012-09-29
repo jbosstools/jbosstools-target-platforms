@@ -10,7 +10,7 @@
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
 			<!-- don't forget to increment these files when moving up a version:
 				build.xml, *.target*, publish.sh, target2p2mirror.xml -->
-			<repository location="http://download.jboss.org/jbosstools/updates/juno/SR0a/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/juno/SR1/"/>
 
 			<!-- for these IUs we need multiple versions -->
 			<unit id="javax.wsdl" version="1.6.2.v201012040545"/>
@@ -102,7 +102,7 @@
 			<unit id="org.eclipse.gef.feature.group" version="3.9.0.201208201742"/>
 			<unit id="org.eclipse.zest.feature.group" version="1.5.0.201208201742"/>
 
-			<!-- UML2 -->
+			<!-- Needed for Teiid Designer: UML2 -->
 			<unit id="org.eclipse.uml2.feature.group" version="4.0.1.v20120830-1547"/>
 			<unit id="org.eclipse.uml2.doc.feature.group" version="4.0.0.v20120830-1547"/>
 
@@ -345,21 +345,21 @@
 			<unit id="javax.xml.rpc" version="1.1.0.v201005080400"/>
 			<unit id="javax.el" version="2.2.0.v201108011116"/>
 
-			<!-- SWTBot -->
+			<!-- only in JBT: SWTBot -->
 			<unit id="org.eclipse.swtbot.eclipse.feature.group" version="2.0.5.20111003_1754-3676ac8-dev-e36"/>
 			<unit id="org.eclipse.swtbot.eclipse.gef.feature.group" version="2.0.5.20111003_1754-3676ac8-dev-e36"/>
 			<unit id="org.eclipse.swtbot.ide.feature.group" version="2.0.5.20111003_1754-3676ac8-dev-e36"/>
 			<unit id="org.eclipse.swtbot.eclipse.test.junit4.feature.group" version="2.0.5.20111003_1754-3676ac8-dev-e36"/>
 			<unit id="org.eclipse.swtbot.feature.group" version="2.0.5.20111003_1754-3676ac8-dev-e36"/>
 
-			<!-- BIRT -->
+			<!-- only in JBT: BIRT -->
 			<unit id="org.eclipse.birt.osgi.runtime.sdk.feature.group" version="4.2.1.v20120820-793187qD_Cz0RBQLXOVGu3BTF-Oc"/>
 			<unit id="org.eclipse.birt.feature.group" version="4.2.1.v20120820-ChBG8RGYgRQlJ7iVBW4z0tnDWYPt"/>
 			<unit id="org.eclipse.birt.integration.wtp.feature.group" version="4.2.1.v20120904-1129-5107w31231A150223A"/>
 			<unit id="org.eclipse.birt.chart.feature.group" version="4.2.1.v20120820-828i7DFQCnvK_6tK4mbB8"/>
 			<unit id="org.eclipse.birt.chart.integration.wtp.feature.group" version="4.2.1.v20120904-1129-5107w31231A150223A"/>
 
-			<!-- GWT/GPE dependencies (include only those which are EPL or other OSS licensed!) -->
+			<!-- only in JBT: GWT/GPE dependencies (include only those which are EPL or other OSS licensed!) -->
 			<unit id="com.google.gdt.eclipse.suite.e42.feature.feature.group" version="3.1.0.v201208080121-rel-r42"/>
 			<unit id="com.google.gwt.eclipse.sdkbundle.e42.feature.feature.group" version="2.4.0.v201208080121-rel-r42"/>
 		</location>
