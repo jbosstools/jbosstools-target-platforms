@@ -53,13 +53,19 @@ Thus, default operation is this (if run w/ these options or NO options):
 
 	$ ant -DtargetFile=multiple.target build.local.target.platform.repo
 
-To run for JBDS target file instead of JBT target files, pass in alternate target file and resulting repo path:
+You can also call the jbds or jbt targets, which are equivalent to these:
 
 	$ ant -DtargetFile=jbds.target -DrepoDir=${WORKINGDIR}/JBDS_REPO/
-
-Or, simply call the jbds target, to use the defaults in the previous example:
-
 	$ ant jbds
+	$ ant -DtargetFile=multiple.target -DrepoDir=${WORKINGDIR}/JBT_REPO/
+	$ ant jbt
+
+Or if you want to update the .target files too:
+
+	$ ant build.local.target.platform.repo update.target.file -DtargetFile=jbds.target -DrepoDir=${WORKINGDIR}/JBDS_REPO/ -DuseLatest=true 
+	$ ant jbds-update
+	$ ant build.local.target.platform.repo update.target.file -DtargetFile=multiple.target -DrepoDir=${WORKINGDIR}/JBT_REPO/ -DuseLatest=true
+	$ ant jbt-update
 
 To run for JBDS target file WHILE JBT target file is being run:
 
@@ -67,7 +73,7 @@ To run for JBDS target file WHILE JBT target file is being run:
 
 To build an alternate target platform (eg., Juno) for JBT:
 
-	$ ant -DtargetFile=multiple.target -DrepoDir=${WORKINGDIR}/JBT_REPO/ -Declipse.version=4.2 -Declipse.type=platform -Declipse.URL=http://www.eclipse.org/downloads/download.php?r=1\&amp;file=/eclipse/downloads/drops4/R-4.2-201206081400/ -Dunified.URL=http://download.jboss.org/jbosstools/updates/target-platform_4.0.juno.SR0a/latest/
+	$ ant -DtargetFile=multiple.target -DrepoDir=${WORKINGDIR}/JBT_REPO/ -Declipse.version=4.2 -Declipse.type=platform -Declipse.URL=http://www.eclipse.org/downloads/download.php?r=1\&amp;file=/eclipse/downloads/drops4/R-4.2-201206081400/ -Dunified.URL=http://download.jboss.org/jbosstools/updates/target-platform_4.0.juno.SR1/latest/
 
 To build an alternate target platform (eg., Juno) for JBDS:
 
@@ -85,12 +91,32 @@ To build an alternate target platform (eg., Juno) for JBDS:
 	<!-- to install from the target platform repo, first build the repo, then install using p2.director -->
 	<target name="install" depends="build.local.target.platform.repo, install.local.target.platform.repo" />
 
+	<target name="jbt" description="default local build of multiple.target in ./JBDT_REPO/" depends="init">
+		<var name="targetFile" unset="true" />
+		<var name="targetFile" value="multiple.target" />
+		<var name="repoDir" unset="true" />
+		<var name="repoDir" value="${WORKINGDIR}/JBT_REPO" />
+		<antcall target="build.local.target.platform.repo" />
+	</target>
+
 	<target name="jbds" description="default local build of jbds.target in ./JBDS_REPO/" depends="init">
 		<var name="targetFile" unset="true" />
 		<var name="targetFile" value="jbds.target" />
 		<var name="repoDir" unset="true" />
 		<var name="repoDir" value="${WORKINGDIR}/JBDS_REPO" />
 		<antcall target="build.local.target.platform.repo" />
+	</target>
+
+	<target name="jbt-update" description="default local build of multiple.target in ./JBT_REPO/, with useLatest=true to update target file" depends="init">
+		<var name="useLatest" value="true"/>
+		<antcall target="jbt"/>
+		<antcall target="update.target.file"/>
+	</target>
+
+	<target name="jbds-update" description="default local build of jbds.target in ./JBDS_REPO/, with useLatest=true to update target file" depends="init">
+		<var name="useLatest" value="true"/>
+		<antcall target="jbds"/>
+		<antcall target="update.target.file"/>
 	</target>
 
 	<target name="build.local.target.platform.repo" depends="init, get.arch, get.eclipse, gen.p2mirror.script, run.p2mirror.script, cleanup" />
@@ -156,12 +182,12 @@ To build an alternate target platform (eg., Juno) for JBDS:
 		<!-- http://mirror.csclub.uwaterloo.ca/eclipse/eclipse/downloads/drops4/R-4.2-201206081400/eclipse-platform-4.2-linux-gtk-x86_64.tar.gz -->
 		<!-- eclipse-platform-3.8M6-linux-gtk-x86_64.tar.gz -->
 		<!-- eclipse-platform-3.7.2-linux-gtk-x86_64.tar.gz -->
-		<!-- <property name="eclipse.version" value="4.2" />
+		<property name="eclipse.version" value="4.2.1" />
 		<property name="eclipse.type" value="platform" />
-		<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/R-4.2-201206081400/"/> -->
-		<property name="eclipse.version" value="M20120829-1000" />
+		<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/R-4.2.1-201209141800/"/>
+		<!-- <property name="eclipse.version" value="M20120829-1000" />
 		<property name="eclipse.type" value="platform" />
-		<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/M20120829-1000/"/>
+		<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/M20120829-1000/"/> -->
 
 		<if>
 			<equals arg1="${arch}" arg2="x86" />
