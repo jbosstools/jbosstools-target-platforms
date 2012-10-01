@@ -23,32 +23,36 @@ while [ "$#" -gt 0 ]; do
 		'-include') include="$2"; shift 2;;
 		'-exclude') exclude="$2"; shift 2;;
 
-		'-jbt_4.0.juno.SR1') 
-		# defaults for JBT (trunk)
-		targetZipFile=e421-wtp341.target
-		repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO_4.0.juno.SR1
-		destinationPath=/home/hudson/static_build_env/jbds/target-platform_4.0.juno.SR1
-		DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform_4.0.juno.SR1
-		include="*"
-		exclude="--exclude '.blobstore'" # exclude the .blobstore
-		shift 1;;
+		'-jbt_4.0.juno.SR1')
+			# defaults for JBT (trunk)
+			targetZipFile=e421-wtp341.target
+			repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO_4.0.juno.SR1
+			destinationPath=/home/hudson/static_build_env/jbds/target-platform_4.0.juno.SR1
+			DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/target-platform_4.0.juno.SR1
+			include="*"
+			exclude="--exclude '.blobstore'" # exclude the .blobstore
+			shift 1;;
 
-		'-jbds_4.0.juno.SR1') 
-		# defaults for JBDS (trunk)
-		targetZipFile=jbds600-e421-wtp341.target
-		repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO_4.0.juno.SR1
-		destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform_4.0.juno.SR1
-		DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform_4.0.juno.SR1
-		include=".blobstore *" # include the .blobstore
-		exclude="" 
-		shift 1;;		
+		'-jbds_4.0.juno.SR1')
+			# defaults for JBDS (trunk)
+			targetZipFile=jbds600-e421-wtp341.target
+			repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO_4.0.juno.SR1
+			destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform_4.0.juno.SR1
+			DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform_4.0.juno.SR1
+			include=".blobstore *" # include the .blobstore
+			exclude=""
+			shift 1;;
+
+		*)
+			echo "Unknown parameter " $1
+			exit 1;;
 	esac
 done
 
 if [[ -d ${repoDir} ]]; then
 	cd ${repoDir}
 
-	if [[ ! -d ${destinationPath}/${targetZipFile} ]]; then 
+	if [[ ! -d ${destinationPath}/${targetZipFile} ]]; then
 		mkdir -p ${destinationPath}/${targetZipFile}
 	fi
 	du -sh ${repoDir} ${destinationPath}/${targetZipFile}
@@ -80,6 +84,6 @@ if [[ -d ${repoDir} ]]; then
 	# generate MD5 sum for zip (file contains only the hash, not the hash + filename)
 	for m in $(md5sum ${targetZip}); do if [[ $m != ${targetZip} ]]; then echo $m > ${targetZip}.MD5; fi; done
 
-	date; rsync -arzq --protocol=28 --rsh=ssh ${targetZip} ${targetZip}.MD5 ${DESTINATION}/ 
+	date; rsync -arzq --protocol=28 --rsh=ssh ${targetZip} ${targetZip}.MD5 ${DESTINATION}/
 	rm -f ${targetZip} ${targetZip}.MD5
 fi
