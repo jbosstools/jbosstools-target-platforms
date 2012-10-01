@@ -26,7 +26,7 @@
 						</goals>
 						<configuration>
 							<targetFiles>
-								<param>${project.build.directory}/jbds.target</param>
+								<param>jbds.target</param>
 							</targetFiles>
 							<failOnError>true</failOnError>
 						</configuration>
@@ -47,7 +47,7 @@
 						<configuration>
 							<artifacts>
 								<artifact>
-									<file>${project.build.directory}/jbds.target</file>
+									<file>jbds.target</file>
 									<type>target</type>
 									<classifier>jbds</classifier>
 								</artifact>
