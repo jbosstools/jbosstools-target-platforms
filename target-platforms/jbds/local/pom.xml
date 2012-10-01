@@ -8,7 +8,7 @@
 		<version>4.0.0.Beta1-SNAPSHOT</version>
 	</parent>
 	<groupId>org.jboss.tools.target-platforms</groupId>
-	<artifactId>local</artifactId>
+	<artifactId>jbds-local</artifactId>
 	<name>Local (aggragated) target platform</name>
 	<packaging>pom</packaging>
 
@@ -44,11 +44,11 @@
 						</goals>
 						<configuration>
 							<groupId>${project.groupId}</groupId>
-							<artifactId>multiple</artifactId>
+							<artifactId>jbds-multiple</artifactId>
 							<version>${project.version}</version>
 							<packaging>target</packaging>
-							<classifier>multiple</classifier>
-							<destination>${project.build.directory}/multiple.target</destination>
+							<classifier>jbds-multiple</classifier>
+							<destination>${project.build.directory}/jbds-multiple.target</destination>
 						</configuration>
 					</execution>
 				</executions>
@@ -69,7 +69,7 @@
 								<transformationSet>
 									<dir>${project.build.directory}</dir>
 									<includes>
-										<include>multiple.target</include>
+										<include>jbds-multiple.target</include>
 									</includes>
 									<stylesheet>multiple2local.xsl</stylesheet>
 									<outputDir>${project.build.directory}/${project.artifactId}</outputDir>
@@ -103,7 +103,7 @@
 						</goals>
 						<configuration>
 							<targetFiles>
-								<param>${project.build.directory}/${project.artifactId}/multiple.target</param>
+								<param>${project.build.directory}/${project.artifactId}/jbds-multiple.target</param>
 							</targetFiles>
 							<failOnError>true</failOnError>
 						</configuration>
@@ -124,9 +124,9 @@
 						<configuration>
 							<artifacts>
 								<artifact>
-									<file>${project.build.directory}/${project.artifactId}/multiple.target</file>
+									<file>${project.build.directory}/${project.artifactId}/jbds-multiple.target</file>
 									<type>target</type>
-									<classifier>local</classifier>
+									<classifier>${project.artifactId}</classifier>
 								</artifact>
 							</artifacts>
 						</configuration>
@@ -157,7 +157,7 @@
 										<!-- build the local.target file -->
 										<ant antfile="build.xml">
 											<!-- target File is the reference target file (multiple) -->
-											<property name="targetFile" value="${project.build.directory}/multiple.target" />
+											<property name="targetFile" value="${project.build.directory}/jbds-multiple.target" />
 											<property name="eclipse.version" value="${eclipse.version}" />
 											<property name="eclipse.type" value="${eclipse.type}" />
 											<property name="eclipse.URL" value="${eclipse.URL}"/>

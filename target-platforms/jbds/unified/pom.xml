@@ -8,25 +8,12 @@
 		<version>4.0.0.Beta1-SNAPSHOT</version>
 	</parent>
 	<groupId>org.jboss.tools.target-platforms</groupId>
-	<artifactId>local</artifactId>
-	<name>Local (aggragated) target platform</name>
+	<artifactId>jbds-unified</artifactId>
+	<name>Unified (Aggregated) target platform</name>
 	<packaging>pom</packaging>
 
 	<properties>
-		<repoDir>${project.build.directory}/REPO</repoDir>
-		<eclipse.type>platform</eclipse.type>
-
-		<!--
-		<eclipse.version>4.2</eclipse.version>
-		<eclipse.URL>http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops4/R-4.2-201206081400/</eclipse.URL>
-		-->
-		<eclipse.version>M20120829-1000</eclipse.version>
-		<eclipse.URL>http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/M20120829-1000/</eclipse.URL>
-
-		<!-- Temporary before release of Tycho 0.16 -->
-		<!-- JBIDE-12003 -->
-		<tychoVersion>0.16.0-SNAPSHOT</tychoVersion>
-		<tychoExtrasVersion>0.16.0-SNAPSHOT</tychoExtrasVersion>
+		<unified.URL>http://download.jboss.org/jbosstools/updates/jbds-target-platform_4.0.juno.SR1-experimental/latest/</unified.URL>
 	</properties>
 
 	<build>
@@ -44,11 +31,11 @@
 						</goals>
 						<configuration>
 							<groupId>${project.groupId}</groupId>
-							<artifactId>multiple</artifactId>
+							<artifactId>jbds-multiple</artifactId>
 							<version>${project.version}</version>
 							<packaging>target</packaging>
-							<classifier>multiple</classifier>
-							<destination>${project.build.directory}/multiple.target</destination>
+							<classifier>jbds-multiple</classifier>
+							<destination>${project.build.directory}/jbds-multiple.target</destination>
 						</configuration>
 					</execution>
 				</executions>
@@ -69,9 +56,9 @@
 								<transformationSet>
 									<dir>${project.build.directory}</dir>
 									<includes>
-										<include>multiple.target</include>
+										<include>jbds-multiple.target</include>
 									</includes>
-									<stylesheet>multiple2local.xsl</stylesheet>
+									<stylesheet>multiple2unified.xsl</stylesheet>
 									<outputDir>${project.build.directory}/${project.artifactId}</outputDir>
 									<outputProperties>
 										<outputPropertie>
@@ -82,7 +69,7 @@
 									<parameters>
 										<parameter>
 											<name>destinationUrl</name>
-											<value>file:/${repoDir}</value>
+											<value>${unified.URL}</value>
 										</parameter>
 									</parameters>
 								</transformationSet>
@@ -103,7 +90,7 @@
 						</goals>
 						<configuration>
 							<targetFiles>
-								<param>${project.build.directory}/${project.artifactId}/multiple.target</param>
+								<param>${project.build.directory}/${project.artifactId}/jbds-multiple.target</param>
 							</targetFiles>
 							<failOnError>true</failOnError>
 						</configuration>
@@ -126,7 +113,7 @@
 								<artifact>
 									<file>${project.build.directory}/${project.artifactId}/multiple.target</file>
 									<type>target</type>
-									<classifier>local</classifier>
+									<classifier>${project.artifactId}</classifier>
 								</artifact>
 							</artifacts>
 						</configuration>
@@ -135,63 +122,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	<profiles>
-		<profile>
-			<id>get.local.target</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-			<build>
-				<plugins>
-					<plugin>
-						<!-- Workaround for https://bugs.eclipse.org/bugs/show_bug.cgi?id=389052  -->
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-antrun-plugin</artifactId>
-						<version>1.6</version>
-						<executions>
-							<execution>
-								<phase>package</phase>
-								<configuration>
-									<tasks>
-										<!-- build the local.target file -->
-										<ant antfile="build.xml">
-											<!-- target File is the reference target file (multiple) -->
-											<property name="targetFile" value="${project.build.directory}/multiple.target" />
-											<property name="eclipse.version" value="${eclipse.version}" />
-											<property name="eclipse.type" value="${eclipse.type}" />
-											<property name="eclipse.URL" value="${eclipse.URL}"/>
-											<property name="repoDir" value="${repoDir}"/>
-											<!-- <property name="repoDir" value="/path/to/where/to/provision/repo"/> -->
-										</ant>
-									</tasks>
-								</configuration>
-								<goals>
-									<goal>run</goal>
-								</goals>
-							</execution>
-						</executions>
-						<dependencies>
-							<dependency>
-								<groupId>commons-net</groupId>
-								<artifactId>commons-net</artifactId>
-								<version>1.4.1</version>
-							</dependency>
-							<dependency>
-								<groupId>org.apache.ant</groupId>
-								<artifactId>ant-commons-net</artifactId>
-								<version>1.7.1</version>
-							</dependency>
-							<dependency>
-								<groupId>org.apache.ant</groupId>
-								<artifactId>ant-trax</artifactId>
-								<version>1.7.1</version>
-							</dependency>
-						</dependencies>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-	</profiles>
-
 </project>
