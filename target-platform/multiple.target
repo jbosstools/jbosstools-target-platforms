@@ -40,20 +40,6 @@
 			<unit id="org.junit" version="4.10.0.v4_10_0_v20120426-0900"/>
 			<unit id="org.junit" version="3.8.2.v3_8_2_v20100427-1100"/>
 
-			<!-- m2e, m2e-wtp + deps -->
-			<unit id="org.eclipse.m2e.sdk.feature.feature.group" version="1.2.0.20120903-1050"/>
-			<unit id="org.eclipse.m2e.feature.feature.group" version="1.2.0.20120903-1050"/>
-			<unit id="org.eclipse.m2e.wtp.feature.feature.group" version="0.16.0.20120914-0945"/>
-			<unit id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version="0.15.0.201207090125-signed-201209140800"/>
-			<unit id="ch.qos.logback.classic" version="1.0.0.v20111214-2030"/>
-			<unit id="ch.qos.logback.core" version="1.0.0.v20111214-2030"/>
-			<unit id="ch.qos.logback.slf4j" version="1.0.0.v20120123-1500"/>
-			<unit id="org.slf4j.api" version="1.6.4.v20120130-2120"/>
-			<unit id="com.ning.async-http-client" version="1.6.5.20120903-0645"/>
-			<unit id="org.jboss.netty" version="3.2.5.Final-20120903-0645"/>
-			<unit id="org.eclipse.equinox.p2.discovery.compatibility" version="1.0.101.v20120524-1717"/>
-			<unit id="org.eclipse.equinox.p2.discovery" version="1.0.200.v20120524-1717"/>
-			<unit id="org.eclipse.equinox.p2.ui.discovery" version="1.0.0.v20110808-1657"/>
 
 			<!-- Orbit bundles -->
 			<unit id="javax.activation" version="1.1.0.v201108011116"/>
@@ -74,6 +60,20 @@
 			<unit id="org.apache.lucene.queries" version="3.5.0.v20120319-2345"/>
 			<unit id="org.apache.lucene.snowball" version="2.9.1.v20100421-0704"/>
 			<unit id="org.apache.lucene.spellchecker" version="3.5.0.v20120319-2345"/>
+			<!-- m2e, m2e-wtp + deps -->
+			<unit id="org.eclipse.m2e.sdk.feature.feature.group" version="1.2.0.20120903-1050"/>
+			<unit id="org.eclipse.m2e.feature.feature.group" version="1.2.0.20120903-1050"/>
+			<unit id="ch.qos.logback.classic" version="1.0.0.v20111214-2030"/>
+			<unit id="ch.qos.logback.core" version="1.0.0.v20111214-2030"/>
+			<unit id="ch.qos.logback.slf4j" version="1.0.0.v20120123-1500"/>
+			<unit id="org.slf4j.api" version="1.6.4.v20120130-2120"/>
+			<unit id="com.ning.async-http-client" version="1.6.5.20120903-0645"/>
+			<unit id="org.jboss.netty" version="3.2.5.Final-20120903-0645"/>
+			<unit id="org.eclipse.m2e.wtp.feature.feature.group" version="0.16.0.20120914-0945"/>
+			<unit id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version="0.15.0.201207090125-signed-201209140800"/>
+			<unit id="org.eclipse.equinox.p2.discovery.compatibility" version="1.0.101.v20120524-1717"/>
+			<unit id="org.eclipse.equinox.p2.discovery" version="1.0.200.v20120524-1717"/>
+			<unit id="org.eclipse.equinox.p2.ui.discovery" version="1.0.0.v20110808-1657"/>
 
 			<!-- EMF, XSD -->
 			<unit id="org.eclipse.emf.workspace.feature.group" version="1.6.0.v20120328-0001-37708s734E377I3B4C2"/>
