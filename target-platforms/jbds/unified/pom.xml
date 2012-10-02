@@ -111,7 +111,7 @@
 						<configuration>
 							<artifacts>
 								<artifact>
-									<file>${project.build.directory}/${project.artifactId}/multiple.target</file>
+									<file>${project.build.directory}/${project.artifactId}/jbds-multiple.target</file>
 									<type>target</type>
 									<classifier>${project.artifactId}</classifier>
 								</artifact>
