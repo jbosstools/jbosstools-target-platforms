@@ -58,7 +58,7 @@
 									<includes>
 										<include>multiple.target</include>
 									</includes>
-									<stylesheet>multiple2unified.xsl</stylesheet>
+									<stylesheet>multiple2jenkins.xsl</stylesheet>
 									<outputDir>${project.build.directory}/${project.artifactId}</outputDir>
 									<outputProperties>
 										<outputPropertie>
