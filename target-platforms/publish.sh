@@ -43,6 +43,26 @@ while [ "$#" -gt 0 ]; do
 			exclude=""
 			shift 1;;
 
+		'-jbt_4.0.juno.SR0b')
+			# defaults for JBT (trunk)
+			targetZipFile=e420-wtp340.target
+			repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO_4.0.juno.SR0b
+			destinationPath=/home/hudson/static_build_env/jbds/target-platform_4.0.juno.SR0b
+			DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/juno/SR0b
+			include="*"
+			exclude="--exclude '.blobstore'" # exclude the .blobstore
+			shift 1;;
+
+		'-jbds_4.0.juno.SR0b')
+			# defaults for JBDS (trunk)
+			targetZipFile=jbds600-e420-wtp340.target
+			repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO_4.0.juno.SR0b
+			destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform_4.0.juno.SR0b
+			DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform_4.0.juno.SR0b
+			include=".blobstore *" # include the .blobstore
+			exclude=""
+			shift 1;;
+
 		*)
 			echo "Unknown parameter " $1
 			exit 1;;
