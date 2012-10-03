@@ -24,7 +24,6 @@ To build JBT/JBDS target platforms with Juno SR0 (should not change unless we ne
 
 To build JBT/JBDS target platforms with Juno SRx (moves forward when there's a new release):
 
-
 	mvn install -P jbdevstudio-latest
 	mvn install -P jbosstools-latest
 
