@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>org.jboss.tools.target-platforms</groupId>
 	<artifactId>jbdevstudio-JunoSR1.local</artifactId>
-	<name>jbdevstudio-JunoSR1 Local (Aggregate) target platform</name>
+	<name>jbdevstudio-JunoSR1 Local (Aggregate) Target Platform</name>
 	<packaging>pom</packaging>
 
 	<properties>

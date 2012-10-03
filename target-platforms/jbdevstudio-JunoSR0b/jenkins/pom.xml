@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>org.jboss.tools.target-platforms</groupId>
 	<artifactId>jbdevstudio-JunoSR0b.jenkins</artifactId>
-	<name>jbdevstudio-JunoSR0b Unified (Aggregate) target platform for Jenkins</name>
+	<name>jbdevstudio-JunoSR0b Unified (Aggregate) Target Platform for Jenkins</name>
 	<packaging>pom</packaging>
 
 	<properties>

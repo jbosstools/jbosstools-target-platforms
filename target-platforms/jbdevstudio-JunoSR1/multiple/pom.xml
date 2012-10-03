@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>org.jboss.tools.target-platforms</groupId>
 	<artifactId>jbdevstudio-JunoSR1.multiple</artifactId>
-	<name>jbdevstudio-JunoSR1 Multiple (Composite) target platform</name>
+	<name>jbdevstudio-JunoSR1 Multiple (Composite) Target Platform</name>
 	<packaging>pom</packaging>
 
 	<build>
