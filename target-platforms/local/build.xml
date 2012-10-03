@@ -1,7 +1,7 @@
 <project default="build.local.target.platform.repo" name="jbosstools target platform p2.mirror generator - ant script for Hudson">
 	<property name="targetFile" value="multiple.target" />
 
-	<!-- if useLatest = true, omit versions from p2.mirror script to fetch latest version available; 
+	<!-- if useLatest = true, omit versions from p2.mirror script to fetch latest version available;
 		 if useLatest = false, include versions and fetch specific versions requested. -->
 	<property name="useLatest" value="false" />
 
@@ -23,19 +23,19 @@
 
 	<target name="help">
 		<echo>This script, if run in its entirety, will:
-			
+
 	a) download features, plugins, binaries, and metadata from the site(s) specified
 		in a given target platform, and create a local p2 repo
 	b) generate a local.target file, which points at the generated local p2 repo
 
 After running this script, publish this pom and *.target files to your local ~/.m2 repo:
 	mvn clean install -f .../target-platform/pom.xml -P use.local.target
-			
+
 Then you can then refer to it in downstream builds using:
 		mvn install -P local.target
 
 ------------------
-			
+
 Default target is:
 
 	* build.local.target.platform.repo
@@ -110,7 +110,7 @@ To build an alternate target platform (eg., Juno) for JBT:
 						<property name="getArch" value="../getArch.sh"/>
 					</else>
 				</if>
-				
+
 				<!-- Ant thinks that ${os.arch} == i386 for x86_64, so use `uname` instead -->
 				<exec executable="bash" outputproperty="arch">
 					<arg line="${getArch}" />
@@ -190,7 +190,7 @@ To build an alternate target platform (eg., Juno) for JBT:
 		<ant antfile="target2p2mirror.xml" />
 	</target>
 
-	<!-- /abs/path/to/eclipse -vm /opt/jdk1.6.0/bin/java -nosplash -data /tmp/workspace -consolelog -application 
+	<!-- /abs/path/to/eclipse -vm /opt/jdk1.6.0/bin/java -nosplash -data /tmp/workspace -consolelog -application
 			org.eclipse.ant.core.antRunner -f *.target.p2mirror.xml -Ddebug=true -DfollowStrict=true -DrepoDir=/tmp/REPO/ -->
 	<target name="run.p2mirror.script" description="build target update site using p2.mirror">
 		<java classname="org.eclipse.equinox.launcher.Main" fork="true" dir="${basedir}" failonerror="true">
@@ -202,18 +202,6 @@ To build an alternate target platform (eg., Juno) for JBT:
 			<arg line=" -Ddebug=true -vmargs -Dosgi.locking=none -XX:MaxPermSize=128m" />
 			<jvmarg value="-XX:MaxPermSize=128m"/>
 		</java>
-	</target>
-
-	<target name="update.target.file" description="optional step: use XSLT to update .target file from contents of local repo">
-<!--		<echo>
-This step - calling targetUpdateFromRepo.xml - is no longer enabled to prevent the .target 
-file from being stripped of duplicate IUs. Instead, generation is a one-way process: 
-
-1. Manually update .target file
-2. Generate .p2mirror.xml file, with useLatest=false
-3. ...
-4. Profit!</echo> -->
-		<ant antfile="targetUpdateFromRepo.xml" />
 	</target>
 
 	<target name="cleanup">
