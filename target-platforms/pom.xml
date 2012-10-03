@@ -7,7 +7,7 @@
 	<groupId>org.jboss.tools</groupId>
 	<artifactId>target-platforms</artifactId>
 	<version>4.0.0.Beta1-SNAPSHOT</version>
-	<name>JBoss Tools Target Platforms (Parent)</name>
+	<name>JBoss Tools + JBDS Target Platform Parent</name>
 	<packaging>pom</packaging>
 
 	<properties>
@@ -17,10 +17,37 @@
 		<tychoExtrasVersion>0.16.0-SNAPSHOT</tychoExtrasVersion>
 	</properties>
 	
-	<modules>
-		<module>multiple</module>
-		<!-- Only build multiple by default, other modules depend on context (CI vs local) -->
-	</modules>
+	<profiles>
+		<profile>
+			<id>jbdevstudio-latest</id>
+			<modules>
+				<module>jbdevstudio-JunoSR1/multiple</module>
+				<module>jbdevstudio-JunoSR1/local</module>
+			</modules>
+		</profile>
+		<profile>
+			<id>jbosstools-latest</id>
+			<modules>
+				<module>jbosstools-JunoSR1/multiple</module>
+				<module>jbosstools-JunoSR1/local</module>
+			</modules>
+		</profile>
+		<profile>
+			<id>jbdevstudio-stable</id>
+			<modules>
+				<module>jbdevstudio-JunoSR0b/multiple</module>
+				<module>jbdevstudio-JunoSR0b/local</module>
+			</modules>
+		</profile>
+		<profile>
+			<id>jbosstools-stable</id>
+			<modules>
+				<module>jbosstools-JunoSR0b/multiple</module>
+				<module>jbosstools-JunoSR0b/local</module>
+			</modules>
+		</profile>
+	</profiles>
+
 
 	<distributionManagement>
 		<repository>
