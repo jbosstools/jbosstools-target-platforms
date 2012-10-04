@@ -7,8 +7,8 @@
 		<artifactId>target-platforms</artifactId>
 		<version>4.0.0.Beta1-SNAPSHOT</version>
 	</parent>
-	<groupId>org.jboss.tools.target-platforms</groupId>
-	<artifactId>jbdevstudio-JunoSR0b.unified</artifactId>
+	<groupId>org.jboss.tools.target-platforms.jbdevstudio-JunoSR0b</groupId>
+	<artifactId>unified</artifactId>
 	<name>jbdevstudio-JunoSR0b Unified (Aggregate) Target Platform</name>
 	<packaging>pom</packaging>
 
@@ -31,11 +31,11 @@
 						</goals>
 						<configuration>
 							<groupId>${project.groupId}</groupId>
-							<artifactId>jbds-multiple</artifactId>
+							<artifactId>multiple</artifactId>
 							<version>${project.version}</version>
 							<packaging>target</packaging>
-							<classifier>jbds-multiple</classifier>
-							<destination>${project.build.directory}/jbds-multiple.target</destination>
+							<classifier>multiple</classifier>
+							<destination>${project.build.directory}/multiple.target</destination>
 						</configuration>
 					</execution>
 				</executions>
@@ -56,7 +56,7 @@
 								<transformationSet>
 									<dir>${project.build.directory}</dir>
 									<includes>
-										<include>jbds-multiple.target</include>
+										<include>multiple.target</include>
 									</includes>
 									<stylesheet>../../scripts/multiple2other.xsl</stylesheet>
 									<outputDir>${project.build.directory}/${project.artifactId}</outputDir>
@@ -90,7 +90,7 @@
 						</goals>
 						<configuration>
 							<targetFiles>
-								<param>${project.build.directory}/${project.artifactId}/jbds-multiple.target</param>
+								<param>${project.build.directory}/${project.artifactId}/multiple.target</param>
 							</targetFiles>
 							<failOnError>true</failOnError>
 						</configuration>
@@ -111,7 +111,7 @@
 						<configuration>
 							<artifacts>
 								<artifact>
-									<file>${project.build.directory}/${project.artifactId}/jbds-multiple.target</file>
+									<file>${project.build.directory}/${project.artifactId}/multiple.target</file>
 									<type>target</type>
 									<classifier>${project.artifactId}</classifier>
 								</artifact>

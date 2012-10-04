@@ -7,8 +7,8 @@
 		<artifactId>target-platforms</artifactId>
 		<version>4.0.0.Beta1-SNAPSHOT</version>
 	</parent>
-	<groupId>org.jboss.tools.target-platforms</groupId>
-	<artifactId>jbdevstudio-JunoSR1.multiple</artifactId>
+	<groupId>org.jboss.tools.target-platforms.jbdevstudio-JunoSR1</groupId>
+	<artifactId>multiple</artifactId>
 	<name>jbdevstudio-JunoSR1 Multiple (Composite) Target Platform</name>
 	<packaging>pom</packaging>
 
@@ -26,7 +26,7 @@
 						</goals>
 						<configuration>
 							<targetFiles>
-								<param>jbds-multiple.target</param>
+								<param>multiple.target</param>
 							</targetFiles>
 							<failOnError>true</failOnError>
 						</configuration>
@@ -48,9 +48,9 @@
 							<artifacts>
 								<!-- add more artifacts if want more target platforms -->
 								<artifact>
-									<file>jbds-multiple.target</file>
+									<file>multiple.target</file>
 									<type>target</type>
-									<classifier>jbds-multiple</classifier>
+									<classifier>multiple</classifier>
 								</artifact>
 							</artifacts>
 						</configuration>

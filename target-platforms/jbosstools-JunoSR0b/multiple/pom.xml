@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.jboss.tools</groupId>
-		<artifactId>target-platforms</artifactId> 
+		<artifactId>target-platforms</artifactId>
 		<version>4.0.0.Beta1-SNAPSHOT</version>
 	</parent>
-	<groupId>org.jboss.tools.target-platforms</groupId>
-	<artifactId>jbosstools-JunoSR0b.multiple</artifactId>
+	<groupId>org.jboss.tools.target-platforms.jbosstools-JunoSR0b</groupId>
+	<artifactId>multiple</artifactId>
 	<name>jbosstools-JunoSR0b Multiple (Composite) Target Platform</name>
 	<packaging>pom</packaging>
 
@@ -22,7 +22,7 @@
 					<execution>
 						<phase>verify</phase>
 						<goals>
- 							<goal>validate-target-platform</goal> 
+ 							<goal>validate-target-platform</goal>
 						</goals>
 						<configuration>
 							<targetFiles>
@@ -50,7 +50,7 @@
 								<artifact>
 									<file>multiple.target</file>
 									<type>target</type>
-									<classifier>multiple</classifier>
+									<classifier>${project.artifactId}</classifier>
 								</artifact>
 							</artifacts>
 						</configuration>
