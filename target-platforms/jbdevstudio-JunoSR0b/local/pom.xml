@@ -43,7 +43,7 @@
 							<version>${project.version}</version>
 							<packaging>target</packaging>
 							<classifier>multiple</classifier>
-							<destination>${project.build.directory}/jmultiple.target</destination>
+							<destination>${project.build.directory}/multiple.target</destination>
 						</configuration>
 					</execution>
 				</executions>
