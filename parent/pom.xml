@@ -640,11 +640,6 @@
 			without needing to use a local.site file -->
 		<profile>
 			<id>local.site</id>
-			<activation>
-				<property>
-						<name>BUILD_NUMBER</name>
-				</property>
-			</activation>
 			<repositories>
 				<repository>
 					<id>local.site</id>
