@@ -5,7 +5,8 @@
 		 if useLatest = false, include versions and fetch specific versions requested. -->
 	<property name="useLatest" value="false" />
 
-	<property name="tmpdir" value="${java.io.tmpdir}/target-platform-build" />
+	<tempfile property="tmpdir" destDir="${java.io.tmpdir}" prefix="target-platform-build"/>
+	<mkdir dir="${tmpdir}" />
 
 	<condition property="WORKINGDIR" value="/home/hudson/static_build_env/jbds/tools/sources" else="${basedir}">
 		<available file="/home/hudson/static_build_env/jbds" type="dir" />
@@ -62,7 +63,7 @@ To build an alternate target platform (eg., Juno) for JBT:
 	<!-- to install from the target platform repo, first build the repo, then install using p2.director -->
 	<target name="install" depends="build.local.target.platform.repo, install.local.target.platform.repo" />
 
-	<target name="build.local.target.platform.repo" depends="init, get.arch, get.eclipse, gen.p2mirror.script, run.p2mirror.script, cleanup" />
+	<target name="build.local.target.platform.repo" depends="init, get.eclipse, gen.p2mirror.script, run.p2mirror.script, cleanup" />
 
 	<!-- ********************************************************************************** -->
 
@@ -81,10 +82,10 @@ To build an alternate target platform (eg., Juno) for JBT:
 		<property name="ANTCONTRIB_MIRROR" value="http://sourceforge.net/projects/ant-contrib/files/ant-contrib/ant-contrib-1.0b2/" />
 		<get usetimestamp="true" dest="${COMMON_TOOLS}/ant-contrib-1.0b2-bin.zip" src="${ANTCONTRIB_MIRROR}/ant-contrib-1.0b2-bin.zip/download" />
 		<touch file="${COMMON_TOOLS}/ant-contrib-1.0b2-bin.zip" />
-		<mkdir dir="${java.io.tmpdir}/ant-contrib-1.0b2-bin.zip_" />
-		<unzip src="${COMMON_TOOLS}/ant-contrib-1.0b2-bin.zip" dest="${java.io.tmpdir}/ant-contrib-1.0b2-bin.zip_" overwrite="true" />
-		<copy file="${java.io.tmpdir}/ant-contrib-1.0b2-bin.zip_/ant-contrib/lib/ant-contrib.jar" tofile="${COMMON_TOOLS}/ant-contrib.jar" failonerror="true" />
-		<delete dir="${java.io.tmpdir}/ant-contrib-1.0b2-bin.zip_" includeemptydirs="true" quiet="true" />
+		<mkdir dir="${tmpdir}/ant-contrib-1.0b2-bin.zip_" />
+		<unzip src="${COMMON_TOOLS}/ant-contrib-1.0b2-bin.zip" dest="${tmpdir}/ant-contrib-1.0b2-bin.zip_" overwrite="true" />
+		<copy file="${tmpdir}/ant-contrib-1.0b2-bin.zip_/ant-contrib/lib/ant-contrib.jar" tofile="${COMMON_TOOLS}/ant-contrib.jar" failonerror="true" />
+		<delete dir="${tmpdir}/ant-contrib-1.0b2-bin.zip_" includeemptydirs="true" quiet="true" />
 	</target>
 
 	<target name="get.arch">
@@ -125,24 +126,25 @@ To build an alternate target platform (eg., Juno) for JBT:
 	</target>
 
 	<!-- should work on osx-cocoa32, win32, lin32, lin64 -->
-	<target name="get.eclipse">
+	<target name="get.eclipse" depends="get.arch">
 		<!-- NOTE: must use same platform (50M) or SDK (103M - 168M) version as feature version on target platform, or will get install/update conflicts -->
 		<!-- don't forget to increment these files when moving up a version:
 		     build.xml, *.target*, publish.sh, target2p2mirror.xml -->
 		<!-- also jbds/trunk/releng/org.jboss.ide.eclipse.releng/requirements/jbds-target-platform/build.properties
 		     also all devstudio-5.0_*.updatesite jobs (4) need to be pointed at the new Target Platform URL
 		-->
-		<!-- http://download.eclipse.org/eclipse/downloads/drops/M20120201-1336/download.php?dropFile=eclipse-platform-M20120201-1336-linux-gtk-x86_64.tar.gz -->
+		<!-- http://download.eclipse.org/eclipse/downloads/drops4/M20120201-1336/download.php?dropFile=eclipse-platform-M20120201-1336-linux-gtk-x86_64.tar.gz -->
 		<!-- http://mirror.csclub.uwaterloo.ca/eclipse/eclipse/downloads/drops4/R-4.2-201206081400/eclipse-platform-4.2-linux-gtk-x86_64.tar.gz -->
 		<!-- eclipse-platform-3.8M6-linux-gtk-x86_64.tar.gz -->
 		<!-- eclipse-platform-3.7.2-linux-gtk-x86_64.tar.gz -->
-		<!-- <property name="eclipse.version" value="4.2" />
+		<property name="eclipse.version" value="4.2.1" />
 		<property name="eclipse.type" value="platform" />
-		<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/R-4.2-201206081400/"/> -->
-		<property name="eclipse.version" value="M20120829-1000" />
+		<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops4/R-4.2.1-201209141800"/>
+		<property name="downloadDir" value="${WORKINGDIR}"/>
+		<property name="unpackDir" value="${WORKINGDIR}/eclipse-${eclipse.version}"/>
+		<!-- <property name="eclipse.version" value="M20120829-1000" />
 		<property name="eclipse.type" value="platform" />
-		<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops/M20120829-1000/"/>
-
+		<property name="eclipse.URL" value="http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops4/M20120829-1000"/> -->
 		<if>
 			<equals arg1="${arch}" arg2="x86" />
 			<then>
@@ -155,34 +157,20 @@ To build an alternate target platform (eg., Juno) for JBT:
 
 		<if>
 			<not>
-				<available file="${WORKINGDIR}/${eclipse.file}" type="file" />
+				<available file="${downloadDir}/${eclipse.file}" type="file" />
 			</not>
 			<then>
-				<get src="${eclipse.URL}/${eclipse.file}" dest="${WORKINGDIR}/${eclipse.file}" ignoreerrors="false"/>
+				<get src="${eclipse.URL}/${eclipse.file}" dest="${downloadDir}/${eclipse.file}" ignoreerrors="false"/>
 			</then>
 		</if>
 
 		<!-- purge previous eclipse install to avoid conflicts w/ Eclipse feature versions -->
-		<delete dir="${WORKINGDIR}/eclipse-${eclipse.version}" includeemptydirs="true" quiet="true" />
+		<delete dir="${unpackDir}" includeemptydirs="true" quiet="true" />
 
-		<untar compression="gzip" dest="${WORKINGDIR}/eclipse-${eclipse.version}" src="${WORKINGDIR}/${eclipse.file}" overwrite="true" />
-
-		<!-- add 70M delta pack, eg. http://download.eclipse.org/eclipse/downloads/drops/M20101006-0936/download.php?dropFile=eclipse-M20101006-0936-delta-pack.zip -->
-		<!-- ONLY need deltapack if using -Dtycho.targetPlatform, which is now depredated
-		<property name="deltapack.file" value="eclipse-${eclipse.version}-delta-pack.zip"/>
-		<if>
-			<not>
-				<available file="${WORKINGDIR}/${deltapack.file}" type="file" />
-			</not>
-			<then>
-				<get src="${eclipse.URL}/${deltapack.file}" dest="${WORKINGDIR}/${deltapack.file}" />
-			</then>
-		</if>
-		<unzip src="${WORKINGDIR}/${deltapack.file}" dest="${WORKINGDIR}" overwrite="true"/>
-		-->
+		<untar compression="gzip" dest="${unpackDir}" src="${downloadDir}/${eclipse.file}" overwrite="true" />
 
 		<!-- make eclipse executable -->
-		<chmod perm="+x" file="${WORKINGDIR}/eclipse-${eclipse.version}/eclipse/eclipse" />
+		<chmod perm="+x" file="${unpackDir}/eclipse/eclipse" />
 
 	</target>
 
@@ -246,7 +234,7 @@ To build an alternate target platform (eg., Juno) for JBT:
 Source Repo(s): ${p2.director.input.repo}
 Install Path: ${p2.director.install.path}
 Feature(s) or Plugin(s) to Install:
-${install}
+${p2.director.installIU}
  </echo>
 
 		<mkdir dir="${p2.director.install.path}" />
@@ -258,11 +246,11 @@ ${install}
 			<arg line=" -consoleLog" />
 			<arg line=" -flavor tooling" />
 			<arg line=" -roaming" />
-			<arg line=" -profile SDKProfile" />
+			<arg line=" -profile PlatformProfile" />
 			<arg line=" -destination ${p2.director.install.path}" />
 			<arg line=" -bundlepool ${p2.director.install.path}" />
 			<arg line=" -installIU ${p2.director.installIU}" />
-			<arg line=" -metadataRepository ${p2.director.input.repo},file://${p2.director.install.path}/p2/org.eclipse.equinox.p2.engine/profileRegistry/SDKProfile.profile" />
+			<arg line=" -metadataRepository ${p2.director.input.repo},file://${p2.director.install.path}/p2/org.eclipse.equinox.p2.engine/profileRegistry/PlatformProfile.profile" />
 			<arg line=" -artifactRepository ${p2.director.input.repo},file://${p2.director.install.path}" />
 			<arg line=" -profileProperties org.eclipse.update.install.features=true" />
 			<arg line=" -vmargs" />
