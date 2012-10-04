@@ -118,7 +118,7 @@
 										<artifactId>multiple</artifactId>
 										<version>${project.version}</version>
 										<classifier>multiple</classifier>
-										<<type>target</type>
+										<type>target</type>
 									</artifact>
 								</configuration>
 							</execution>
