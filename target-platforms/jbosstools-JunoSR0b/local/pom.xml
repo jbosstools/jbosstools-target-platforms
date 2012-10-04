@@ -7,8 +7,8 @@
 		<artifactId>target-platforms</artifactId>
 		<version>4.0.0.Beta1-SNAPSHOT</version>
 	</parent>
-	<groupId>org.jboss.tools.target-platforms</groupId>
-	<artifactId>jbosstools-JunoSR0b.local</artifactId>
+	<groupId>org.jboss.tools.target-platforms.jbosstools-JunoSR0b</groupId>
+	<artifactId>local</artifactId>
 	<name>jbosstools-JunoSR0b Local (Aggregate) Target Platform</name>
 	<packaging>pom</packaging>
 
@@ -121,7 +121,7 @@
 								<artifact>
 									<file>${project.build.directory}/${project.artifactId}/multiple.target</file>
 									<type>target</type>
-									<classifier>local</classifier>
+									<classifier>${project.artifactId}</classifier>
 								</artifact>
 							</artifacts>
 						</configuration>

@@ -7,8 +7,8 @@
 		<artifactId>target-platforms</artifactId>
 		<version>4.0.0.Beta1-SNAPSHOT</version>
 	</parent>
-	<groupId>org.jboss.tools.target-platforms</groupId>
-	<artifactId>jbosstools-JunoSR0b.jenkins</artifactId>
+	<groupId>org.jboss.tools.target-platforms.jbosstools-JunoSR0b</groupId>
+	<artifactId>jenkins</artifactId>
 	<name>jbosstools-JunoSR0b Unified (Aggregate) Target Platform for Jenkins</name>
 	<packaging>pom</packaging>
 
