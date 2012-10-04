@@ -38,6 +38,8 @@
 		<!-- Default coverage filter, to be overriden when necessary -->
 		<coverage.filter>org.jboss.tools.*</coverage.filter>
 
+		<targetPlatformGroup>jbosstools-JunoSR1</targetPlatformGroup>
+
 		<!-- 1a. URL of latest JBT target platform site -->
 		<jbosstools-target-site>http://download.jboss.org/jbosstools/updates/target-platform_4.0.juno.SR1/latest/</jbosstools-target-site>
 
@@ -542,7 +544,7 @@
 						<configuration>
 							<target>
 								<artifact>
-									<groupId>org.jboss.tools.target-platforms</groupId>
+									<groupId>org.jboss.tools.target-platforms.${targetPlatformGroup}</groupId>
 									<artifactId>multiple</artifactId>
 									<version>${JBT_VERSION}.${BUILD_ALIAS}-SNAPSHOT</version>
 									<classifier>multiple</classifier>
@@ -568,8 +570,8 @@
 						<configuration>
 							<target>
 								<artifact>
-									<groupId>org.jboss.tools.target-platforms</groupId>
-									<artifactId>unified</artifactId>
+									<groupId>org.jboss.tools.target-platforms.${targetPlatformGroup}</groupId>
+ 									<artifactId>unified</artifactId>
 									<version>${JBT_VERSION}.${BUILD_ALIAS}-SNAPSHOT</version>
 									<classifier>unified</classifier>
 								</artifact>
@@ -593,7 +595,7 @@
 						<configuration>
 							<target>
 								<artifact>
-									<groupId>org.jboss.tools.target-platforms</groupId>
+									<groupId>org.jboss.tools.target-platforms.${targetPlatformGroup}</groupId>
 									<artifactId>jenkins</artifactId>
 									<version>${JBT_VERSION}.${BUILD_ALIAS}-SNAPSHOT</version>
 									<classifier>jenkins</classifier>
@@ -623,7 +625,7 @@
 						<configuration>
 							<target>
 								<artifact>
-									<groupId>org.jboss.tools.target-platofms</groupId>
+									<groupId>org.jboss.tools.target-platforms.${targetPlatformGroup}</groupId>
 									<artifactId>local</artifactId>
 									<version>${JBT_VERSION}.${BUILD_ALIAS}-SNAPSHOT</version>
 									<classifier>local</classifier>
