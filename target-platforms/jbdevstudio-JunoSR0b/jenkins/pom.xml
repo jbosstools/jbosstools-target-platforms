@@ -12,68 +12,26 @@
 	<name>jbdevstudio-JunoSR0b Unified (Aggregate) Target Platform for Jenkins</name>
 	<packaging>pom</packaging>
 
-	<properties>
-		<unified.URL>file:///home/hudson/static_build_env/jbds/jbds-target-platform_4.0.juno.SR0b/jbds600-e420-wtp340.target/</unified.URL>
-	</properties>
-
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-dependency-plugin</artifactId>
-				<version>2.5.1</version>
+				<groupId>org.jboss.tools.tycho-plugins</groupId>
+				<artifactId>target-platform-utils</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
 				<executions>
 					<execution>
-						<id>get-multiple-target</id>
+						<id>create-target</id>
 						<phase>generate-resources</phase>
 						<goals>
-							<goal>get</goal>
+							<goal>flatten-target</goal>
 						</goals>
 						<configuration>
-							<groupId>${project.groupId}</groupId>
-							<artifactId>multiple</artifactId>
-							<version>${project.version}</version>
-							<packaging>target</packaging>
-							<classifier>multiple</classifier>
-							<destination>${project.build.directory}/multiple.target</destination>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>xml-maven-plugin</artifactId>
-				<version>1.0</version>
-				<executions>
-					<execution>
-						<id>generate-unified.target</id>
-						<phase>generate-resources</phase> <!-- Should be generate-resources -->
-						<goals>
-							<goal>transform</goal>
-						</goals>
-						<configuration>
-							<transformationSets>
-								<transformationSet>
-									<dir>${project.build.directory}</dir>
-									<includes>
-										<include>multiple.target</include>
-									</includes>
-									<stylesheet>../../scripts/multiple2other.xsl</stylesheet>
-									<outputDir>${project.build.directory}/${project.artifactId}</outputDir>
-									<outputProperties>
-										<outputPropertie>
-											<name>indent</name>
-											<value>yes</value>
-										</outputPropertie>
-									</outputProperties>
-									<parameters>
-										<parameter>
-											<name>destinationUrl</name>
-											<value>${unified.URL}</value>
-										</parameter>
-									</parameters>
-								</transformationSet>
-							</transformationSets>
+							<sourceTargetArtifact>
+								<groupId>${project.groupId}</groupId>
+								<artifactId>multiple</artifactId>
+								<version>${project.version}</version>
+							</sourceTargetArtifact>
+							<targetRepositoryUrl>file:///home/hudson/static_build_env/jbds/jbds-target-platform_4.0.juno.SR0b/jbds600-e420-wtp340.target/</targetRepositoryUrl>
 						</configuration>
 					</execution>
 				</executions>
@@ -90,7 +48,7 @@
 						</goals>
 						<configuration>
 							<targetFiles>
-								<param>${project.build.directory}/${project.artifactId}/multiple.target</param>
+								<param>${project.build.directory}/${project.artifactId}.target</param>
 							</targetFiles>
 							<failOnError>true</failOnError>
 						</configuration>
@@ -111,7 +69,7 @@
 						<configuration>
 							<artifacts>
 								<artifact>
-									<file>${project.build.directory}/${project.artifactId}/multiple.target</file>
+									<file>${project.build.directory}/${project.artifactId}.target</file>
 									<type>target</type>
 									<classifier>${project.artifactId}</classifier>
 								</artifact>
