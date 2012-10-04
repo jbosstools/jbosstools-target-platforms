@@ -23,7 +23,7 @@ while [ "$#" -gt 0 ]; do
 		'-include') include="$2"; shift 2;;
 		'-exclude') exclude="$2"; shift 2;;
 
-		'-jbt_4.0.juno.SR1')
+		'-jbosstools-JunoSR1')
 			# defaults for JBT (trunk)
 			targetZipFile=e421-wtp341.target
 			repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO_4.0.juno.SR1
@@ -33,7 +33,7 @@ while [ "$#" -gt 0 ]; do
 			exclude="--exclude '.blobstore'" # exclude the .blobstore
 			shift 1;;
 
-		'-jbds_4.0.juno.SR1')
+		'-jbdevstudio-JunoSR1')
 			# defaults for JBDS (trunk)
 			targetZipFile=jbds600-e421-wtp341.target
 			repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO_4.0.juno.SR1
@@ -43,7 +43,7 @@ while [ "$#" -gt 0 ]; do
 			exclude=""
 			shift 1;;
 
-		'-jbt_4.0.juno.SR0b')
+		'-jbosstools-JunoSR0b')
 			# defaults for JBT (trunk)
 			targetZipFile=e420-wtp340.target
 			repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO_4.0.juno.SR0b
@@ -53,7 +53,7 @@ while [ "$#" -gt 0 ]; do
 			exclude="--exclude '.blobstore'" # exclude the .blobstore
 			shift 1;;
 
-		'-jbds_4.0.juno.SR0b')
+		'-jbdevstudio-JunoSR0b')
 			# defaults for JBDS (trunk)
 			targetZipFile=jbds600-e420-wtp340.target
 			repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO_4.0.juno.SR0b
