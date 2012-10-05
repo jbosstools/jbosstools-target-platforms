@@ -77,7 +77,7 @@
 		<jbosstools-nightly-soa-tooling-tests>http://download.jboss.org/jbosstools/updates/nightly/soatests/trunk/</jbosstools-nightly-soa-tooling-tests>
 
 		<!-- 5. extra requirements (for 3rd party "Extras" site) -->
-		<jboss-requirements-composite-extras-mirror>http://download.jboss.org/jbosstools/updates/juno/extras/</jboss-requirements-composite-extras-mirror>
+		<jboss-requirements-composite-extras-mirror>http://download.jboss.org/jbosstools/updates/juno/extras/SR0b/</jboss-requirements-composite-extras-mirror>
 
 		<!-- JBIDE-12294, JBIDE-12629 latest stable build of m2e, m2e-wtp, and m2e-apt for use with JBDS product builds -->
 		<m2e>http://download.jboss.org/jbosstools/updates/requirements/m2eclipse/20120917-1234/</m2e>
