@@ -14,10 +14,6 @@
 
 	<properties>
 		<repoDir>${project.build.directory}/REPO</repoDir>
-		<eclipse.type>platform</eclipse.type>
-
-		<eclipse.version>4.2.1</eclipse.version>
-		<eclipse.URL>http://www.eclipse.org/downloads/download.php?r=1&amp;file=/eclipse/downloads/drops4/R-4.2.1-201209141800/</eclipse.URL>
 		<!-- Temporary before release of Tycho 0.16 -->
 		<!-- JBIDE-12003 -->
 		<tychoVersion>0.16.0-SNAPSHOT</tychoVersion>
@@ -26,6 +22,14 @@
 
 	<build>
 		<plugins>
+			<plugin>
+				<!-- Workaround for https://bugs.eclipse.org/bugs/show_bug.cgi?id=391397 -->
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tychoVersion}</version>
+				<extensions>true</extensions>
+			</plugin>
+
 			<plugin>
 				<groupId>org.jboss.tools.tycho-plugins</groupId>
 				<artifactId>target-platform-utils</artifactId>
@@ -95,82 +99,40 @@
 
 	<profiles>
 		<profile>
-			<id>get.local.target</id>
+			<id>multiple2repo</id>
 			<activation>
 				<activeByDefault>true</activeByDefault>
 			</activation>
 			<build>
 				<plugins>
 					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-dependency-plugin</artifactId>
-						<version>2.5.1</version>
-						<executions>
-							<execution>
-								<id>get-multiple</id>
-								<goals>
-									<goal>get</goal>
-								</goals>
-								<phase>package</phase>
-								<configuration>
-									<groupId>${project.groupId}</groupId>
-									<artifactId>multiple</artifactId>
-									<version>${project.version}</version>
-									<classifier>multiple</classifier>
-									<packaging>target</packaging>
-									<destination>${project.build.directory}/multiple.target</destination>
-								</configuration>
-							</execution>
-						</executions>
-					</plugin>
-					<plugin>
 						<!-- Workaround for https://bugs.eclipse.org/bugs/show_bug.cgi?id=389052  -->
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-antrun-plugin</artifactId>
-						<version>1.6</version>
+						<groupId>org.jboss.tools.tycho-plugins</groupId>
+						<artifactId>target-platform-utils</artifactId>
+						<version>0.0.1-SNAPSHOT</version>
 						<executions>
 							<execution>
 								<phase>package</phase>
-								<configuration>
-									<tasks>
-										<!-- build the local.target file -->
-										<ant antfile="../../scripts/build.xml">
-											<!-- target File is the reference target file (multiple) -->
-											<property name="targetFile" value="${project.build.directory}/multiple.target" />
-											<property name="eclipse.version" value="${eclipse.version}" />
-											<property name="eclipse.type" value="${eclipse.type}" />
-											<property name="eclipse.URL" value="${eclipse.URL}"/>
-											<property name="repoDir" value="${repoDir}"/>
-											<!-- <property name="repoDir" value="/path/to/where/to/provision/repo"/> -->
-										</ant>
-									</tasks>
-								</configuration>
 								<goals>
-									<goal>run</goal>
+									<goal>mirror-target-to-repo</goal>
 								</goals>
+								<configuration>
+									<sourceTargetArtifact>
+										<groupId>${project.groupId}</groupId>
+										<artifactId>multiple</artifactId>
+										<version>${project.version}</version>
+									</sourceTargetArtifact>
+									<outputRepository>${repoDir}</outputRepository>
+								</configuration>
 							</execution>
 						</executions>
-						<dependencies>
-							<dependency>
-								<groupId>commons-net</groupId>
-								<artifactId>commons-net</artifactId>
-								<version>1.4.1</version>
-							</dependency>
-							<dependency>
-								<groupId>org.apache.ant</groupId>
-								<artifactId>ant-commons-net</artifactId>
-								<version>1.7.1</version>
-							</dependency>
-							<dependency>
-								<groupId>org.apache.ant</groupId>
-								<artifactId>ant-trax</artifactId>
-								<version>1.7.1</version>
-							</dependency>
-						</dependencies>
 					</plugin>
 				</plugins>
 			</build>
 		</profile>
 	</profiles>
+
+</project>
+
 
 </project>
