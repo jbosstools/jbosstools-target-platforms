@@ -772,27 +772,16 @@
 		</repository>
 	</repositories>
 
-	<!-- Additional m2 repos to resolve things like org.eclipse.tycho:tycho-maven-plugin:0.13.0-SNAPSHOT -->
+	<!-- Additional m2 repos to resolve things like org.eclipse.tycho:tycho-maven-plugin:0.16.0-SNAPSHOT -->
+	<!-- JBoss Nexus repos are also added, but in settings.xml -->
 	<pluginRepositories>
 		<pluginRepository>
 			<id>sonatype-public-grid</id>
-			<name>sonatype-public-grid</name>
 			<url>https://repository.sonatype.org/content/groups/sonatype-public-grid</url>
 		</pluginRepository>
 		<pluginRepository>
 			<id>sonatype-public-repository</id>
 			<url>https://oss.sonatype.org/content/groups/public</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-		</pluginRepository>
-		<pluginRepository>
-			<id>repository.sonatype.org-snapshots</id>
-			<name>repository.sonatype.org-snapshots</name>
-			<url>https://repository.sonatype.org/content/repositories/snapshots</url>
 		</pluginRepository>
 	</pluginRepositories>
 
