@@ -284,6 +284,7 @@
 			<plugins>
 				<!--This plugin's configuration is used to store Eclipse m2e settings only.
                     It has no influence on the Maven build itself.-->
+                <!-- Workaround for https://bugs.eclipse.org/bugs/show_bug.cgi?id=350414 -->
 				<plugin>
 					<groupId>org.eclipse.m2e</groupId>
 					<artifactId>lifecycle-mapping</artifactId>
