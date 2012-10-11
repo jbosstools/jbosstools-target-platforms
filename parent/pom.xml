@@ -51,7 +51,6 @@
 
 		<!-- 1b. or use -Plocal.site -Dlocal.site=file:///${HOME}/trunk/build/target-platform/REPO/ -->
 		<!-- TODO: don't forget to update JBDS .updatesite jobs when this value changes! -->
-		<!-- TODO: see also 'hudson' profile below for other default value -->
 		<local.site>file:///${user.home}/.m2/jbosstools-target-platform_4.0.juno.SR0b/</local.site>
 
 		<!-- 2a. URL of latest JBT nightly staging composite site (all the components
@@ -66,12 +65,10 @@
 		<local.composite>file:///home/hudson/static_build_env/jbds/builds/staging/_composite_/core/trunk/</local.composite>
 		<local.composite-soa-tooling>file:///home/hudson/static_build_env/jbds/builds/staging/_composite_/soa-tooling/trunk/</local.composite-soa-tooling>
 
-		<!-- 3a. URL of latest JBT requirements composite mirror -->
-		<!-- TODO: don't forget to update this in ../aggregate/*/associate.properties too (5 files)! -->
+		<!-- 3. URL of latest JBT SOA requirements composite mirror -->
+		<!-- TODO: JBIDE-11121 - remove this when we have a SOA TP site instead -->
+		<!-- TODO: don't forget to update this in ../aggregate/soa*/associate.properties too (2 files)! -->
 		<jboss-requirements-composite-soa-tooling-mirror>http://download.jboss.org/jbosstools/updates/juno/soa-tooling/SR0/</jboss-requirements-composite-soa-tooling-mirror>
-
-		<!-- 3b., or use -Plocal.requirements -Dlocal.requirements=file:///path/to/mirror/of/composite/requirements/site -->
-		<local.requirements>file:///qa/services/http/binaries/RHDS/updates/juno/</local.requirements>
 
 		<!-- 4. published aggregate update sites go here, for consumption by QE
 			and downstream JBDS builds -->
@@ -430,28 +427,6 @@
 				<repository>
 					<id>jbosstools-nightly-tests</id>
 					<url>${jbosstools-nightly-tests}</url>
-					<layout>p2</layout>
-					<snapshots>
-						<enabled>true</enabled>
-					</snapshots>
-					<releases>
-						<enabled>true</enabled>
-					</releases>
-				</repository>
-			</repositories>
-		</profile>
-
-		<!-- same contents as jbosstools-target-site, but locally
-			available (to improve network lag) -->
-		<profile>
-			<id>local.requirements</id>
-			<activation>
-				<activeByDefault>false</activeByDefault>
-			</activation>
-			<repositories>
-				<repository>
-					<id>local.requirements</id>
-					<url>${local.requirements}</url>
 					<layout>p2</layout>
 					<snapshots>
 						<enabled>true</enabled>
