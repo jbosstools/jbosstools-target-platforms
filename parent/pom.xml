@@ -561,8 +561,11 @@
 			</build>
 		</profile>
 
-		<!-- Target platform file pointing at a single update site located
-			from Jenkins filesystem (mirrored unified.target for performances) -->
+		<!-- Target platform files pointing at a single update site located
+			from Jenkins filesystem (mirrored unified.target for performances) 
+			use jenkins.target for component builds, and 
+			use jenkins.target.maximum for aggregate and installer builds
+		-->
 		<profile>
 			<id>jenkins.target</id>
 			<build>
@@ -574,8 +577,33 @@
 						<configuration>
 							<target>
 								<artifact>
-									<groupId>org.jboss.tools.target-platforms.${targetPlatformGroup}</groupId>
+									<groupId>org.jboss.tools.target-platforms.${targetPlatformGroup-maximum}</groupId>
 									<artifactId>jenkins</artifactId>
+									<version>${JBT_VERSION}.${BUILD_ALIAS}-SNAPSHOT</version>
+									<classifier>jenkins</classifier>
+								</artifact>
+							</target>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>jenkins.target.maximum</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.eclipse.tycho</groupId>
+						<artifactId>target-platform-configuration</artifactId>
+						<version>${tychoVersion}</version>
+						<configuration>
+							<target>
+								<artifact>
+									<groupId>org.jboss.tools.target-platforms.${targetPlatformGroup-maximum}</groupId>
+ 									<artifactId>jenkins</artifactId>
 									<version>${JBT_VERSION}.${BUILD_ALIAS}-SNAPSHOT</version>
 									<classifier>jenkins</classifier>
 								</artifact>
