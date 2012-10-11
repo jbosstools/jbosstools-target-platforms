@@ -60,7 +60,7 @@
 					<execution>
 						<phase>verify</phase>
 						<goals>
- 							<goal>validate-target-platform</goal>
+ 							<!-- DISABLE validation due to http://dev.eclipse.org/mhonarc/lists/tycho-dev/msg00817.html <goal>validate-target-platform</goal> -->
 						</goals>
 						<configuration>
 							<targetFiles>
