@@ -38,17 +38,17 @@
 		<!-- Default coverage filter, to be overriden when necessary -->
 		<coverage.filter>org.jboss.tools.*</coverage.filter>
 
-		<targetPlatformGroup>jbosstools-JunoSR1</targetPlatformGroup>
+		<targetPlatformGroup>jbosstools-JunoSR0b</targetPlatformGroup>
 
 		<!-- 1a. URL of latest JBT target platform site -->
 		<!-- minimum TP: use http://download.jboss.org/jbosstools/updates/juno/SR0b/latest/ -->
 		<!-- latest TP: use http://download.jboss.org/jbosstools/updates/juno/SR1/latest/ -->
-		<jbosstools-target-site>http://download.jboss.org/jbosstools/updates/juno/SR1/latest/</jbosstools-target-site>
+		<jbosstools-target-site>http://download.jboss.org/jbosstools/updates/juno/SR0b/latest/</jbosstools-target-site>
 
 		<!-- 1b. or use -Plocal.site -Dlocal.site=file:///${HOME}/trunk/build/target-platform/REPO/ -->
 		<!-- TODO: don't forget to update JBDS .updatesite jobs when this value changes! -->
 		<!-- TODO: see also 'hudson' profile below for other default value -->
-		<local.site>file:///${user.home}/.m2/jbosstools-target-platform_4.0.juno.SR1/</local.site>
+		<local.site>file:///${user.home}/.m2/jbosstools-target-platform_4.0.juno.SR0b/</local.site>
 
 		<!-- 2a. URL of latest JBT nightly staging composite site (all the components
 			in once place) -->
@@ -64,8 +64,8 @@
 
 		<!-- 3a. URL of latest JBT requirements composite mirror -->
 		<!-- TODO: don't forget to update this in ../aggregate/*/associate.properties too (5 files)! -->
-		<jboss-requirements-composite-mirror>http://download.jboss.org/jbosstools/updates/juno/SR1/</jboss-requirements-composite-mirror>
-		<jboss-requirements-composite-soa-tooling-mirror>http://download.jboss.org/jbosstools/updates/juno/soa-tooling/SR1/</jboss-requirements-composite-soa-tooling-mirror>
+		<jboss-requirements-composite-mirror>http://download.jboss.org/jbosstools/updates/juno/SR0b/latest/</jboss-requirements-composite-mirror>
+		<jboss-requirements-composite-soa-tooling-mirror>http://download.jboss.org/jbosstools/updates/juno/soa-tooling/SR0/</jboss-requirements-composite-soa-tooling-mirror>
 
 		<!-- 3b., or use -Plocal.requirements -Dlocal.requirements=file:///path/to/mirror/of/composite/requirements/site -->
 		<local.requirements>file:///qa/services/http/binaries/RHDS/updates/juno/</local.requirements>
