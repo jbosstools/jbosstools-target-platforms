@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.jboss.tools</groupId>
+		<artifactId>target-platforms</artifactId>
+		<version>4.0.0.Beta1-SNAPSHOT</version>
+	</parent>
+	<groupId>org.jboss.tools.target-platforms.jbosstools-JunoSR0c</groupId>
+	<artifactId>unified</artifactId>
+	<name>jbosstools-JunoSR0c Unified (Aggregate) Target Platform</name>
+	<packaging>pom</packaging>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.jboss.tools.tycho-plugins</groupId>
+				<artifactId>target-platform-utils</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+				<executions>
+					<execution>
+						<id>create-target</id>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>flatten-target</goal>
+						</goals>
+						<configuration>
+							<sourceTargetArtifact>
+								<groupId>${project.groupId}</groupId>
+								<artifactId>multiple</artifactId>
+								<version>${project.version}</version>
+							</sourceTargetArtifact>
+							<targetRepositoryUrl>http://download.jboss.org/jbosstools/updates/juno/SR0c/latest/</targetRepositoryUrl>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho.extras</groupId>
+				<artifactId>target-platform-validation-plugin</artifactId>
+				<version>${tychoExtrasVersion}</version>
+				<executions>
+					<execution>
+						<phase>verify</phase>
+						<goals>
+ 							<!-- DISABLE validation due to http://dev.eclipse.org/mhonarc/lists/tycho-dev/msg00817.html <goal>validate-target-platform</goal> -->
+						</goals>
+						<configuration>
+							<targetFiles>
+								<param>${project.build.directory}/${project.artifactId}.target</param>
+							</targetFiles>
+							<failOnError>true</failOnError>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>build-helper-maven-plugin</artifactId>
+				<version>1.3</version>
+				<executions>
+					<execution>
+						<id>attach-artifacts</id>
+						<phase>package</phase>
+						<goals>
+							<goal>attach-artifact</goal>
+						</goals>
+						<configuration>
+							<artifacts>
+								<artifact>
+									<file>${project.build.directory}/${project.artifactId}.target</file>
+									<type>target</type>
+									<classifier>${project.artifactId}</classifier>
+								</artifact>
+							</artifacts>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
