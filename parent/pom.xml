@@ -38,11 +38,15 @@
 		<!-- Default coverage filter, to be overriden when necessary -->
 		<coverage.filter>org.jboss.tools.*</coverage.filter>
 
+		<!-- to build with the minimum TP, use -Punified.target (on by default); to build with the maximum TP, use -Pmaximum -->
+		<!-- when building/testing components, use minumum TP -->
 		<targetPlatformGroup>jbosstools-JunoSR0b</targetPlatformGroup>
+		<!-- building/testing aggregate sites & installers, use maximum TP -->
+		<!-- TODO: don't forget to update this in ../aggregate/*/associate.properties too (5 files)! -->
+		<targetPlatformGroup-maximum>jbosstools-JunoSR1</targetPlatformGroup-maximum>
 
 		<!-- 1a. URL of latest JBT target platform site -->
-		<!-- minimum TP: use http://download.jboss.org/jbosstools/updates/juno/SR0b/latest/ -->
-		<!-- latest TP: use http://download.jboss.org/jbosstools/updates/juno/SR1/latest/ -->
+		<!-- deprecated variable: latest minimum TP (now defined within the unified.target pom) -->
 		<jbosstools-target-site>http://download.jboss.org/jbosstools/updates/juno/SR0b/latest/</jbosstools-target-site>
 
 		<!-- 1b. or use -Plocal.site -Dlocal.site=file:///${HOME}/trunk/build/target-platform/REPO/ -->
@@ -64,7 +68,6 @@
 
 		<!-- 3a. URL of latest JBT requirements composite mirror -->
 		<!-- TODO: don't forget to update this in ../aggregate/*/associate.properties too (5 files)! -->
-		<jboss-requirements-composite-mirror>http://download.jboss.org/jbosstools/updates/juno/SR0b/latest/</jboss-requirements-composite-mirror>
 		<jboss-requirements-composite-soa-tooling-mirror>http://download.jboss.org/jbosstools/updates/juno/soa-tooling/SR0/</jboss-requirements-composite-soa-tooling-mirror>
 
 		<!-- 3b., or use -Plocal.requirements -Dlocal.requirements=file:///path/to/mirror/of/composite/requirements/site -->
@@ -438,7 +441,7 @@
 			</repositories>
 		</profile>
 
-		<!-- same contents as jboss-requirements-composite-mirror, but locally
+		<!-- same contents as jbosstools-target-site, but locally
 			available (to improve network lag) -->
 		<profile>
 			<id>local.requirements</id>
@@ -471,31 +474,6 @@
 				<repository>
 					<id>local.composite</id>
 					<url>${local.composite}</url>
-					<layout>p2</layout>
-					<snapshots>
-						<enabled>true</enabled>
-					</snapshots>
-					<releases>
-						<enabled>true</enabled>
-					</releases>
-				</repository>
-			</repositories>
-		</profile>
-
-		<!-- Contains all the Eclipse.org deps, mirrored onto download.jboss.org.
-			This is the superset of sites from which the TP is created. Should be disabled
-			closer to GA so we're only using the TP contents exclusively. -->
-		<!-- deactivated by default, because target platform should be enough to
-			compile everything -->
-		<profile>
-			<id>jboss-requirements-composite-mirror</id>
-			<activation>
-				<activeByDefault>false</activeByDefault>
-			</activation>
-			<repositories>
-				<repository>
-					<id>jboss-requirements-composite-mirror</id>
-					<url>${jboss-requirements-composite-mirror}</url>
 					<layout>p2</layout>
 					<snapshots>
 						<enabled>true</enabled>
@@ -572,6 +550,31 @@
 							<target>
 								<artifact>
 									<groupId>org.jboss.tools.target-platforms.${targetPlatformGroup}</groupId>
+ 									<artifactId>unified</artifactId>
+									<version>${JBT_VERSION}.${BUILD_ALIAS}-SNAPSHOT</version>
+									<classifier>unified</classifier>
+								</artifact>
+							</target>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>maximum</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.eclipse.tycho</groupId>
+						<artifactId>target-platform-configuration</artifactId>
+						<version>${tychoVersion}</version>
+						<configuration>
+							<target>
+								<artifact>
+									<groupId>org.jboss.tools.target-platforms.${targetPlatformGroup-maximum}</groupId>
  									<artifactId>unified</artifactId>
 									<version>${JBT_VERSION}.${BUILD_ALIAS}-SNAPSHOT</version>
 									<classifier>unified</classifier>
@@ -685,20 +688,25 @@
 				<platformSystemProperties> -XstartOnFirstThread </platformSystemProperties>
 			</properties>
 			<!-- This is required to have it working by default under mac osx for swtbot tests -->
-			<!-- Or better is to use "-Posx,default" -->
-			<repositories>
-				<repository>
-					<id>jbosstools-target-site</id>
-					<url>${jbosstools-target-site}</url>
-					<layout>p2</layout>
-					<snapshots>
-						<enabled>true</enabled>
-					</snapshots>
-					<releases>
-						<enabled>true</enabled>
-					</releases>
-				</repository>
-			</repositories>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.eclipse.tycho</groupId>
+						<artifactId>target-platform-configuration</artifactId>
+						<version>${tychoVersion}</version>
+						<configuration>
+							<target>
+								<artifact>
+									<groupId>org.jboss.tools.target-platforms.${targetPlatformGroup}</groupId>
+ 									<artifactId>unified</artifactId>
+									<version>${JBT_VERSION}.${BUILD_ALIAS}-SNAPSHOT</version>
+									<classifier>unified</classifier>
+								</artifact>
+							</target>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
 		</profile>
 
 		<profile>
