@@ -410,12 +410,7 @@
 		<profile>
 			<id>jbosstools-staging-aggregate</id>
 			<activation>
-				<!-- JBIDE-11663 disable automatic enablement when swtbot.test.skip = false
-				<property>
-					<name>swtbot.test.skip</name>
-					<value>false</value>
-				</property>
-				-->
+				<activeByDefault>true</activeByDefault>
 			</activation>
 			<repositories>
 				<repository>
@@ -564,6 +559,9 @@
 			the unified.target file -->
 		<profile>
 			<id>unified.target</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
 			<build>
 				<plugins>
 					<plugin>
@@ -723,26 +721,6 @@
 					</plugin>
 				</plugins>
 			</build>
-		</profile>
-
-		<profile>
-			<id>default</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-			<repositories>
-				<repository>
-					<id>jbosstools-target-site</id>
-					<url>${jbosstools-target-site}</url>
-					<layout>p2</layout>
-					<snapshots>
-						<enabled>true</enabled>
-					</snapshots>
-					<releases>
-						<enabled>true</enabled>
-					</releases>
-				</repository>
-			</repositories>
 		</profile>
 
 		<!-- Multiple triggers to disable tests that depends on private requirements
