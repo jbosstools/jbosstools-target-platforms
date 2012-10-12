@@ -39,8 +39,8 @@ while [ "$#" -gt 0 ]; do
 			repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO_4.0.juno.SR1a
 			destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform_4.0.juno.SR1a
 			DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform_4.0.juno.SR1a
-			include=".blobstore *" # include the .blobstore
-			exclude=""
+			include="*"
+			exclude="--exclude '.blobstore'" # exclude the .blobstore
 			shift 1;;
 
 		'-jbosstools-JunoSR0c')
@@ -59,8 +59,8 @@ while [ "$#" -gt 0 ]; do
 			repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO_4.0.juno.SR0c
 			destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform_4.0.juno.SR0c
 			DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform_4.0.juno.SR0c
-			include=".blobstore *" # include the .blobstore
-			exclude=""
+			include="*"
+			exclude="--exclude '.blobstore'" # exclude the .blobstore
 			shift 1;;
 
 		*)
