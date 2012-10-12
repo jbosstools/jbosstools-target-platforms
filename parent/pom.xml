@@ -40,18 +40,18 @@
 
 		<!-- to build with the minimum TP, use -Punified.target (on by default); to build with the maximum TP, use -Pmaximum -->
 		<!-- when building/testing components, use minumum TP -->
-		<targetPlatformGroup>jbosstools-JunoSR0b</targetPlatformGroup>
+		<targetPlatformGroup>jbosstools-JunoSR0c</targetPlatformGroup>
 		<!-- building/testing aggregate sites & installers, use maximum TP -->
 		<!-- TODO: don't forget to update this in ../aggregate/*/associate.properties too (5 files)! -->
-		<targetPlatformGroup-maximum>jbosstools-JunoSR1</targetPlatformGroup-maximum>
+		<targetPlatformGroup-maximum>jbosstools-JunoSR1a</targetPlatformGroup-maximum>
 
 		<!-- 1a. URL of latest JBT target platform site -->
 		<!-- deprecated variable: latest minimum TP (now defined within the unified.target pom) -->
-		<jbosstools-target-site>http://download.jboss.org/jbosstools/updates/juno/SR0b/latest/</jbosstools-target-site>
+		<jbosstools-target-site>http://download.jboss.org/jbosstools/updates/juno/SR0c/latest/</jbosstools-target-site>
 
 		<!-- 1b. or use -Plocal.site -Dlocal.site=file:///${HOME}/trunk/build/target-platform/REPO/ -->
 		<!-- TODO: don't forget to update JBDS .updatesite jobs when this value changes! -->
-		<local.site>file:///${user.home}/.m2/jbosstools-target-platform_4.0.juno.SR0b/</local.site>
+		<local.site>file:///${user.home}/.m2/jbosstools-target-platform_4.0.juno.SR0c/</local.site>
 
 		<!-- 2a. URL of latest JBT nightly staging composite site (all the components
 			in once place) -->
@@ -79,7 +79,7 @@
 		<jbosstools-nightly-soa-tooling-tests>http://download.jboss.org/jbosstools/updates/nightly/soatests/trunk/</jbosstools-nightly-soa-tooling-tests>
 
 		<!-- 5. extra requirements (for 3rd party "Extras" site) -->
-		<jboss-requirements-composite-extras-mirror>http://download.jboss.org/jbosstools/updates/juno/extras/SR0b/</jboss-requirements-composite-extras-mirror>
+		<jboss-requirements-composite-extras-mirror>http://download.jboss.org/jbosstools/updates/juno/extras/SR0c/</jboss-requirements-composite-extras-mirror>
 
 		<!-- JBIDE-12294, JBIDE-12629 latest stable build of m2e, m2e-wtp, and m2e-apt for use with JBDS product builds -->
 		<m2e>http://download.jboss.org/jbosstools/updates/requirements/m2eclipse/20120917-1234/</m2e>
