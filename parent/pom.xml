@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jboss.tools</groupId>
 	<artifactId>parent</artifactId>
-	<version>4.0.0.Beta1-SNAPSHOT</version>
+	<version>4.0.0.Beta2-SNAPSHOT</version>
 	<name>JBoss Tools Parent</name>
 	<packaging>pom</packaging>
 
@@ -15,7 +15,7 @@
 		<scmBranch>trunk</scmBranch>
 		<JBT_VERSION>4.0.0</JBT_VERSION>
 		<JBDS_VERSION>6.0.0</JBDS_VERSION>
-		<BUILD_ALIAS>Beta1</BUILD_ALIAS>
+		<BUILD_ALIAS>Beta2</BUILD_ALIAS>
 		<targetEclipseVersion>4.2</targetEclipseVersion>
 		<memoryOptions1>-Xms512m -Xmx1024m -XX:PermSize=256m</memoryOptions1>
 		<memoryOptions2>-XX:MaxPermSize=256m</memoryOptions2>
