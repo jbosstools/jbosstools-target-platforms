@@ -761,6 +761,14 @@
 				<enabled>true</enabled>
 			</releases>
 		</repository>
+		<repository>
+                        <id>jboss-snapshots-repository</id>
+                        <name>JBoss Snapshots Repository</name>
+                        <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
 	</repositories>
 
 	<!-- Additional m2 repos to resolve things like org.eclipse.tycho:tycho-maven-plugin:0.16.0-SNAPSHOT -->
