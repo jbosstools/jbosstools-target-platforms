@@ -68,7 +68,7 @@
 		<!-- 3. URL of latest JBT SOA requirements composite mirror -->
 		<!-- TODO: JBIDE-11121 - remove this when we have a SOA TP site instead -->
 		<!-- TODO: don't forget to update this in ../aggregate/soa*/associate.properties too (2 files)! -->
-		<jboss-requirements-composite-soa-tooling-mirror>http://download.jboss.org/jbosstools/updates/juno/soa-tooling/SR0/</jboss-requirements-composite-soa-tooling-mirror>
+		<jboss-requirements-composite-soa-tooling-mirror>http://download.jboss.org/jbosstools/updates/juno/soa-tooling/SR0a/</jboss-requirements-composite-soa-tooling-mirror>
 
 		<!-- 4. published aggregate update sites go here, for consumption by QE
 			and downstream JBDS builds -->
