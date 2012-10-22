@@ -1,5 +1,9 @@
 # The JBoss Tools Build project
 
+## Summary
+
+JBoss Tools Build project provides the JBoss Tools parent and Eclipse target platforrms used by JBoss Tools projects.
+
 ## Install
 
 _JBoss Tools Build_ is part of [JBoss Tools](http://jboss.org/tools) from
