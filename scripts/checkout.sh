@@ -38,27 +38,25 @@ while [[ "$#" -gt 0 ]]; do
 	shift 1
 done
 
-# TODO: make this actually delete or update; rather than just echoing
 readOp ()
 {
 	echo -e "There is already a folder in this directory called ${blue}${module}${norm}. Would you like to ${red}DELETE${norm} (d), ${yellow}UPDATE${norm} (u), or ${green}SKIP${norm} (s)?"
 	read op
 	case $op in
-		'd'|'DELETE')	echo "  >> rm -fr ./${module}; git clone git@github.com:jbosstools/jbosstools-${module}.git ${module}";;
-		'u'|'UPDATE')	echo "  >> cd ${module}; git pull; git checkout ${branch}; cd -";;
-		's'|'SKIP')		debug "Module ${module} skipped.";;
-		*)			readOp;;
+		'd'|'D'|'delete'|'DELETE')	rm -fr ./${module}; git clone git@github.com:jbosstools/jbosstools-${module}.git ${module};;
+		'u'|'U'|'update'|'UPDATE')	pushd ${module} >/dev/null; git pull; git checkout ${branch}; popd >/dev/null;;
+		's'|'S'|'skip'|'SKIP')	debug "Module ${module} skipped.";;
+		*)		readOp;;
 	esac
 }
 
-# TODO: make this actually fetch instead of just echoing
 gitClone ()
 {
 	module=$1
 	if [[ -d ${module} ]]; then
 		readOp;
 	else
-		echo "  >> git clone git@github.com:jbosstools/jbosstools-${module}.git ${module}"
+		git clone git@github.com:jbosstools/jbosstools-${module}.git ${module}
 	fi
 	
 }
