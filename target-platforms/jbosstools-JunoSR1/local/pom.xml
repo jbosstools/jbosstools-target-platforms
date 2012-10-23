@@ -14,10 +14,9 @@
 
 	<properties>
 		<repoDir>${project.build.directory}/REPO</repoDir>
-		<!-- Temporary before release of Tycho 0.16 -->
 		<!-- JBIDE-12003 -->
-		<tychoVersion>0.16.0-SNAPSHOT</tychoVersion>
-		<tychoExtrasVersion>0.16.0-SNAPSHOT</tychoExtrasVersion>
+		<tychoVersion>0.16.0</tychoVersion>
+		<tychoExtrasVersion>0.16.0</tychoExtrasVersion>
 	</properties>
 
 	<build>
