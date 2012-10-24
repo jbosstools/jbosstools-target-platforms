@@ -69,9 +69,11 @@ switchToFork ()
 	pushd ${basedir}/${module} >/dev/null
 	git remote rm origin
 	if [[ $username ]]; then
-		git remote add origin git://github.com/${username}/jbosstools-${module}.git
+		# read-write
+		git remote add origin git@github.com:${username}/jbosstools-${module}.git
 	fi
 	git remote rm upstream
+	# read-only
 	git remote add upstream git://github.com/jbosstools/jbosstools-${module}.git
 
 	git checkout -b upstream/${branch}
@@ -131,8 +133,10 @@ gitClone ()
 		readOp;
 	else
 		if [[ $username ]]; then
-			git clone git://github.com/${username}/jbosstools-${module}.git ${module}
+			# read-write
+			git clone git@github.com:${username}/jbosstools-${module}.git ${module}
 		else
+			# read-only
 			git clone git://github.com/jbosstools/jbosstools-${module}.git ${module}
 		fi
 		switchToFork ${module} ${branch} ${username}
