@@ -15,6 +15,7 @@ debug ()
 	$dbg "${grey}${1}${norm}"
 }
 
+basedir=`pwd`
 username=""
 moduleNames=""
 branch="master"
@@ -44,7 +45,7 @@ done
 showStatus()
 {
 	module=$1
-	pushd ${module} >/dev/null
+	pushd ${basedir}/${module} >/dev/null
 	echo '=============================================================';
 	echo "git status:"
 	git status
@@ -62,13 +63,24 @@ showStatus()
 
 switchToFork ()
 {
-	module=$1
-	username=$2
-	branch=$3
-	pushd ${module} >/dev/null
-	git remote add ${username} git://github.com/${username}/jbosstools-${module}.git
-	git checkout -b ${username}/${branch}
-	git pull ${username} ${branch}
+	module="$1"
+	branch="$2"
+	username="$3"
+	pushd ${basedir}/${module} >/dev/null
+	git remote rm origin
+	if [[ $username ]]; then
+		git remote add origin git://github.com/${username}/jbosstools-${module}.git
+	fi
+	git remote rm upstream
+	git remote add upstream git://github.com/jbosstools/jbosstools-${module}.git
+
+	git checkout -b upstream/${branch}
+	git checkout upstream/${branch}
+	git pull upstream upstream/${branch}
+
+	git checkout -b ${branch}
+	git checkout ${branch}
+	git pull origin ${branch}
 	popd >/dev/null
 }
 
@@ -79,24 +91,26 @@ readOp ()
 	case $op in
 		'f'|'F'|'fork'|'FORK') 		
 			if [[ ! $username ]]; then
-				echo "Error: no username specified with '-u USERNAME' on commandline. Must exit!"; exit 1;
+				echo "Error: no username specified with '-u USERNAME' on commandline. Must exit!"
+				exit 1
 			else
-				switchToFork ${module} ${username} ${branch}
+				switchToFork ${module} ${branch} ${username}
 				showStatus ${module}
 			fi
 			;;
 		'd'|'D'|'delete'|'DELETE')
-			rm -fr ./${module}; gitClone ${module}
+			rm -fr ./${module}
+			gitClone ${module}
 			;;
 		'u'|'U'|'update'|'UPDATE')	
-			pushd ${module} >/dev/null
-			if [[ ! $username ]]; then
-				git checkout ${branch} 
-				git pull ${branch}
-			else
-				git checkout -b ${username}/${branch}
-				git checkout ${username}/${branch}
-				git pull ${username} ${branch}
+			pushd ${basedir}/${module} >/dev/null
+			git checkout -b upstream/${branch}
+			git checkout upstream/${branch}
+			git pull upstream ${branch}
+			if [[ $username ]]; then
+				git checkout -b ${branch}
+				git checkout ${branch}
+				git pull origin ${branch}
 			fi
 			showStatus ${module}
 			popd >/dev/null
@@ -116,10 +130,12 @@ gitClone ()
 	if [[ -d ./${module} ]]; then
 		readOp;
 	else
-		git clone git@github.com:jbosstools/jbosstools-${module}.git ${module}
 		if [[ $username ]]; then
-			switchToFork ${module} ${username} ${branch}
+			git clone git://github.com/${username}/jbosstools-${module}.git ${module}
+		else
+			git clone git://github.com/jbosstools/jbosstools-${module}.git ${module}
 		fi
+		switchToFork ${module} ${branch} ${username}
 		showStatus ${module}
 	fi
 }
