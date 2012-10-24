@@ -107,9 +107,12 @@ readOp ()
 	esac
 }
 
+# store list of modules so we don't do them twice
+doneModules=""
 gitClone ()
 {
 	module=$1
+	doneModules="${doneModules} ${module}"
 	if [[ -d ./${module} ]]; then
 		readOp;
 	else
@@ -125,8 +128,10 @@ gitClone ()
 gitCloneUpstream ()
 {
 	if [[ -f ${moduleName}/pom.xml ]]; then
+		debug "Read ${moduleName}/pom.xml ..."
 		SEQ=/usr/bin/seq
 		a=( $( cat ${moduleName}/pom.xml ) )
+		nextModules=""
 		for i in $($SEQ 0 $((${#a[@]} - 1))); do
 			line="${a[$i]}"
 			if [[ ${line//<id>bootstrap<\/id>} != $line ]]; then # begin processing actual content
@@ -136,25 +141,41 @@ gitCloneUpstream ()
 					nextModule=$nextLine
 					if [[ ${nextModule//module>} != ${nextModule} ]]; then # want this one
 						nextModule=$(echo ${nextModule} | sed -e "s#<module>../\(.\+\)</module>#\1#")
-						gitClone $nextModule
+						nextModules="${nextModules} ${nextModule}"
+						debug "nextModule = $nextModule"
 					fi
 					i=$(( $i + 1 )); nextLine="${a[$i]}"
 				done
+				for nextModule in ${nextModules}; do gitCloneAll ${nextModule}; done
 			fi
 		done
+		debug "Done reading pom.xml."
 	else
 		debug "File ${moduleName}/pom.xml not found in current directory. Did the previous step fail to git clone?"
 	fi
 }
 
-for moduleName in $moduleNames; do
-	if [[ ${noUpstreamClone} == "1" ]]; then
-		debug "Fetching module ${moduleName} from branch ${branch} (no upstream modules will be fetched) ..."
-		gitClone ${moduleName}
-	else
-		debug "Fetching module ${moduleName} from branch ${branch} (and upstream modules) ..."
-		gitClone ${moduleName}
-		# next step will only do something useful if the previous step completed; without it there's no ${moduleName}/pom.xml to parse
-		gitCloneUpstream ${moduleName}
+gitCloneAll ()
+{
+	moduleName=$1
+	if [[ $moduleName ]]; then
+		#echo $doneModules
+		if [[ ${doneModules/ ${moduleName}/} == $doneModules ]]; then
+			if [[ ${noUpstreamClone} == "1" ]]; then
+				debug "Fetching module ${moduleName} from branch ${branch} (no upstream modules will be fetched) ..."
+				gitClone ${moduleName}
+			else
+				debug "Fetching module ${moduleName} from branch ${branch} (and upstream modules) ..."
+				gitClone ${moduleName}
+				# next step will only do something useful if the previous step completed; without it there's no ${moduleName}/pom.xml to parse
+				gitCloneUpstream ${moduleName}
+			fi
+		#else
+			#debug "Already processed ${moduleName}: skip."
+		fi
 	fi
+}
+
+for moduleName in $moduleNames; do
+	gitCloneAll ${moduleName}
 done
