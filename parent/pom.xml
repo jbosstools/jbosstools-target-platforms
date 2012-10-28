@@ -419,7 +419,7 @@
 		<profile>
 			<id>jbosstools-staging-aggregate</id>
 			<activation>
-				<activeByDefault>true</activeByDefault>
+				<property><name>!nostaging-aggregate</name></property>
 			</activation>
 			<repositories>
 				<repository>
