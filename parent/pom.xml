@@ -451,9 +451,6 @@
 			available (to improve network lag) -->
 		<profile>
 			<id>local.composite</id>
-			<activation>
-				<activeByDefault>false</activeByDefault>
-			</activation>
 			<repositories>
 				<repository>
 					<id>local.composite</id>
@@ -473,9 +470,6 @@
 			sites from which the JBDS Extras site is created. -->
 		<profile>
 			<id>jboss-requirements-composite-extras-mirror</id>
-			<activation>
-				<activeByDefault>false</activeByDefault>
-			</activation>
 			<repositories>
 				<repository>
 					<id>jboss-requirements-composite-extras-mirror</id>
