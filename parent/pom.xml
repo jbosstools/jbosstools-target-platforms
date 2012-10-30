@@ -16,6 +16,7 @@
 		<JBT_VERSION>4.0.0</JBT_VERSION>
 		<JBDS_VERSION>6.0.0</JBDS_VERSION>
 		<BUILD_ALIAS>Beta2</BUILD_ALIAS>
+		<TARGET_PLATFORM_VERSION>${JBT_VERSION}.${BUILD_ALIAS}-SNAPSHOT</TARGET_PLATFORM_VERSION>
 		<targetEclipseVersion>4.2</targetEclipseVersion>
 		<memoryOptions1>-Xms512m -Xmx1024m -XX:PermSize=256m</memoryOptions1>
 		<memoryOptions2>-XX:MaxPermSize=256m</memoryOptions2>
@@ -498,7 +499,7 @@
 								<artifact>
 									<groupId>org.jboss.tools.target-platforms.${targetPlatformGroup}</groupId>
 									<artifactId>multiple</artifactId>
-									<version>${JBT_VERSION}.${BUILD_ALIAS}-SNAPSHOT</version>
+									<version>${TARGET_PLATFORM_VERSION}</version>
 									<classifier>multiple</classifier>
 								</artifact>
 							</target>
@@ -527,7 +528,7 @@
 								<artifact>
 									<groupId>org.jboss.tools.target-platforms.${targetPlatformGroup}</groupId>
  									<artifactId>unified</artifactId>
-									<version>${JBT_VERSION}.${BUILD_ALIAS}-SNAPSHOT</version>
+									<version>${TARGET_PLATFORM_VERSION}</version>
 									<classifier>unified</classifier>
 								</artifact>
 							</target>
@@ -552,7 +553,7 @@
 								<artifact>
 									<groupId>org.jboss.tools.target-platforms.${targetPlatformGroup-maximum}</groupId>
  									<artifactId>unified</artifactId>
-									<version>${JBT_VERSION}.${BUILD_ALIAS}-SNAPSHOT</version>
+									<version>${TARGET_PLATFORM_VERSION}</version>
 									<classifier>unified</classifier>
 								</artifact>
 							</target>
@@ -580,7 +581,7 @@
 								<artifact>
 									<groupId>org.jboss.tools.target-platforms.${targetPlatformGroup-maximum}</groupId>
 									<artifactId>jenkins</artifactId>
-									<version>${JBT_VERSION}.${BUILD_ALIAS}-SNAPSHOT</version>
+									<version>${TARGET_PLATFORM_VERSION}</version>
 									<classifier>jenkins</classifier>
 								</artifact>
 							</target>
@@ -605,7 +606,7 @@
 								<artifact>
 									<groupId>org.jboss.tools.target-platforms.${targetPlatformGroup-maximum}</groupId>
  									<artifactId>jenkins</artifactId>
-									<version>${JBT_VERSION}.${BUILD_ALIAS}-SNAPSHOT</version>
+									<version>${TARGET_PLATFORM_VERSION}</version>
 									<classifier>jenkins</classifier>
 								</artifact>
 							</target>
@@ -635,7 +636,7 @@
 								<artifact>
 									<groupId>org.jboss.tools.target-platforms.${targetPlatformGroup}</groupId>
 									<artifactId>local</artifactId>
-									<version>${JBT_VERSION}.${BUILD_ALIAS}-SNAPSHOT</version>
+									<version>${TARGET_PLATFORM_VERSION}</version>
 									<classifier>local</classifier>
 								</artifact>
 							</target>
@@ -703,7 +704,7 @@
 								<artifact>
 									<groupId>org.jboss.tools.target-platforms.${targetPlatformGroup}</groupId>
  									<artifactId>unified</artifactId>
-									<version>${JBT_VERSION}.${BUILD_ALIAS}-SNAPSHOT</version>
+									<version>${TARGET_PLATFORM_VERSION}</version>
 									<classifier>unified</classifier>
 								</artifact>
 							</target>
