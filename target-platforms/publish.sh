@@ -106,4 +106,7 @@ if [[ -d ${repoDir} ]]; then
 
 	date; rsync -arzq --protocol=28 --rsh=ssh ${targetZip} ${targetZip}.MD5 ${DESTINATION}/
 	rm -f ${targetZip} ${targetZip}.MD5
+else
+	echo "repoDir ${repoDir} not found or not a directory! Must exit!"
+	exit 1;
 fi
