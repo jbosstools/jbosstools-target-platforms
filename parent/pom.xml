@@ -10,8 +10,8 @@
 
 	<properties>
 		<!-- to build w/ latest 0.15.0-SNAPSHOT, run `mvn install -DtychoVersion=0.15.0-SNAPSHOT` -->
-		<tychoVersion>0.15.0</tychoVersion>
-		<tychoExtrasVersion>0.15.0</tychoExtrasVersion>
+		<tychoVersion>0.16.0</tychoVersion>
+		<tychoExtrasVersion>0.16.0</tychoExtrasVersion>
 		<scmBranch>trunk</scmBranch>
 		<JBT_VERSION>4.0.0</JBT_VERSION>
 		<JBDS_VERSION>6.0.0</JBDS_VERSION>
