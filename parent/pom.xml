@@ -21,6 +21,7 @@
 		<memoryOptions1>-Xms512m -Xmx1024m -XX:PermSize=256m</memoryOptions1>
 		<memoryOptions2>-XX:MaxPermSize=256m</memoryOptions2>
 		<systemProperties></systemProperties>
+		<debugProperties></debugProperties>
 		<platformSystemProperties></platformSystemProperties>
 		<applejdkProperties></applejdkProperties>
 
@@ -194,7 +195,7 @@
 					<useUIThread>true</useUIThread>
 					<!-- THE FOLLOWING LINE MUST NOT BE BROKEN BY AUTOFORMATTING -->
 					<!-- tycho.testArgLine repeated to keep jacoco configuration for jacoco-maven-plugin -->
-					<argLine>${tycho.testArgLine} ${memoryOptions1} ${memoryOptions2} ${applejdkProperties} ${platformSystemProperties} ${systemProperties} -Dusage_reporting_enabled=false -Dorg.jboss.tools.tests.skipPrivateRequirements=${skipPrivateRequirements}</argLine>
+					<argLine>${tycho.testArgLine} ${memoryOptions1} ${memoryOptions2} ${applejdkProperties} ${platformSystemProperties} ${systemProperties} ${debugProperties} -Dusage_reporting_enabled=false -Dorg.jboss.tools.tests.skipPrivateRequirements=${skipPrivateRequirements}</argLine>
 					<!-- https://docs.sonatype.org/display/TYCHO/How+to+run+SWTBot+tests+with+Tycho -->
 					<!-- set useUIThread=true for regular ui tests -->
 					<!-- set useUIThread=false for swtbot tests -->
@@ -750,6 +751,14 @@
 			<properties>
 				<maven.test.skip>true</maven.test.skip>
 				<skipTestsWithPrivateRequirements>true</skipTestsWithPrivateRequirements>
+			</properties>
+		</profile>
+
+		<!-- Debug profile to add debug properties to tycho surefire argLine. JBQA-7293 -->
+		<profile>
+			<id>debug</id>
+			<properties>
+				<debugProperties>-Xdebug -Xrunjdwp:transport=dt_socket,address=8001,server=y,suspend=y </debugProperties>
 			</properties>
 		</profile>
 	</profiles>
