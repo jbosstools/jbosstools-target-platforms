@@ -51,21 +51,21 @@
 		<jbosstools-target-site>http://download.jboss.org/jbosstools/updates/juno/SR0c/latest/</jbosstools-target-site>
 		<jbosstools-target-site-maximum>http://download.jboss.org/jbosstools/updates/juno/SR1a/latest/</jbosstools-target-site-maximum>
 
-		<!-- 1b. or use -Plocal.site -Dlocal.site=file:///${HOME}/trunk/build/target-platform/REPO/ -->
+		<!-- 1b. or use -Plocal.site -Dlocal.site=file:///${HOME}/jbosstools/jbosstools-build/target-platforms/jbosstools-JunoSR0c/local/target/REPO/ -->
 		<!-- TODO: don't forget to update JBDS .updatesite jobs when this value changes! -->
 		<local.site>file:///${user.home}/.m2/jbosstools-target-platform_4.0.juno.SR0c/</local.site>
 
 		<!-- 2a. URL of latest JBT nightly staging composite site (all the components
 			in once place) -->
 		<!-- for trunk use _composite_/trunk; for 4.0_stable_branch, use _composite_/4.0.juno -->
-		<jbosstools-nightly-staging-composite>http://download.jboss.org/jbosstools/builds/staging/_composite_/core/trunk/</jbosstools-nightly-staging-composite>
+		<jbosstools-nightly-staging-composite>http://download.jboss.org/jbosstools/builds/staging/_composite_/core/4.0.juno/</jbosstools-nightly-staging-composite>
 		<!-- this site is not enabled by default as SOA Tooling is a downstream project (sorta). -->
-		<jbosstools-nightly-staging-composite-soa-tooling>http://download.jboss.org/jbosstools/builds/staging/_composite_/soa-tooling/trunk/</jbosstools-nightly-staging-composite-soa-tooling>
+		<jbosstools-nightly-staging-composite-soa-tooling>http://download.jboss.org/jbosstools/builds/staging/_composite_/soa-tooling/4.0.juno/</jbosstools-nightly-staging-composite-soa-tooling>
 
 		<!-- 2b. or use -Plocal.composite -Dlocal.composite=file:///path/to/mirror/of/composite/staging/site/ -->
 		<!-- for trunk use _composite_/trunk; for 4.0_stable_branch, use _composite_/4.0.juno -->
-		<local.composite>file:///home/hudson/static_build_env/jbds/builds/staging/_composite_/core/trunk/</local.composite>
-		<local.composite-soa-tooling>file:///home/hudson/static_build_env/jbds/builds/staging/_composite_/soa-tooling/trunk/</local.composite-soa-tooling>
+		<local.composite>file:///home/hudson/static_build_env/jbds/builds/staging/_composite_/core/4.0.juno/</local.composite>
+		<local.composite-soa-tooling>file:///home/hudson/static_build_env/jbds/builds/staging/_composite_/soa-tooling/4.0.juno/</local.composite-soa-tooling>
 
 		<!-- 3. URL of latest JBT SOA requirements composite mirror -->
 		<!-- TODO: JBIDE-11121 - remove this when we have a SOA TP site instead -->
@@ -74,11 +74,11 @@
 
 		<!-- 4. published aggregate update sites go here, for consumption by QE
 			and downstream JBDS builds -->
-		<jbosstools-nightly>http://download.jboss.org/jbosstools/updates/nightly/core/trunk/</jbosstools-nightly>
-		<jbosstools-nightly-tests>http://download.jboss.org/jbosstools/updates/nightly/coretests/trunk/</jbosstools-nightly-tests>
+		<jbosstools-nightly>http://download.jboss.org/jbosstools/updates/nightly/core/4.0.juno/</jbosstools-nightly>
+		<jbosstools-nightly-tests>http://download.jboss.org/jbosstools/updates/nightly/coretests/4.0.juno/</jbosstools-nightly-tests>
 		<!-- these sites are not enabled by default as SOA Tooling is a downstream project (sorta). -->
-		<jbosstools-nightly-soa-tooling>http://download.jboss.org/jbosstools/updates/nightly/soa-tooling/trunk/</jbosstools-nightly-soa-tooling>
-		<jbosstools-nightly-soa-tooling-tests>http://download.jboss.org/jbosstools/updates/nightly/soatests/trunk/</jbosstools-nightly-soa-tooling-tests>
+		<jbosstools-nightly-soa-tooling>http://download.jboss.org/jbosstools/updates/nightly/soa-tooling/4.0.juno/</jbosstools-nightly-soa-tooling>
+		<jbosstools-nightly-soa-tooling-tests>http://download.jboss.org/jbosstools/updates/nightly/soatests/4.0.juno/</jbosstools-nightly-soa-tooling-tests>
 
 		<!-- 5. extra requirements (for 3rd party "Extras" site) -->
 		<jboss-requirements-composite-extras-mirror>http://download.jboss.org/jbosstools/updates/juno/extras/SR0c/</jboss-requirements-composite-extras-mirror>
@@ -615,13 +615,9 @@
 			</build>
 		</profile>
 
-		<!-- To use this profile, must have first created a local.target file,
-			which points to a local repo. You can do this by hand or generate it from
-			multiple.target using: cd ~/trunk/build/target-platform; ant See also the
-			README in target-platform/ folder for additional usage examples. You can
-			also run `ant help`. If you want to build the target-platform/pom.xml AND
-			generate a local repo + local.target file ALL AT THE SAME TIME, you can do:
-			mvn clean install -Pget.local.target -f /path/to/target-platform/pom.xml -->
+		<!-- To use this profile, must have first created a local target file which points to a local repo. Generate it from
+			multiple.target using: cd ~/jbosstools/jbosstools-build/target-platforms/jbosstools-JunoSR0c; mvn install 
+			See also the README in target-platforms/ folder for additional info. -->
 		<profile>
 			<id>local.target</id>
 			<build>
