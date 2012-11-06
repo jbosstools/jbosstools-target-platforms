@@ -227,7 +227,6 @@
 						<include>**/*AllBotTests*.class</include>
 						<include>**/*TestSuite*.class</include>
 					</includes>
-					<parallel>true</parallel>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -564,8 +563,8 @@
 		</profile>
 
 		<!-- Target platform files pointing at a single update site located
-			from Jenkins filesystem (mirrored unified.target for performances) 
-			use jenkins.target for component builds, and 
+			from Jenkins filesystem (mirrored unified.target for performances)
+			use jenkins.target for component builds, and
 			use jenkins.target.maximum for aggregate and installer builds
 		-->
 		<profile>
