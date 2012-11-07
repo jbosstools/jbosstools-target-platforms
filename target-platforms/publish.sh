@@ -82,7 +82,7 @@ if [[ -d ${repoDir} ]]; then
 
 	du -sh ${repoDir} ${destinationPath}/${targetZipFile}
 
-	# upload to http://download.jboss.org/jbossotools/updates/target-platform_3.3.indigo/latest/ for public use
+	# upload to http://download.jboss.org/jbossotools/updates/target-platform_3.3.indigo/REPO/ for public use
 	if [[ ${DESTINATION/:/} == ${DESTINATION} ]]; then # local path, no user@server:/path
 		mkdir -p ${DESTINATION}/
 	else
@@ -93,19 +93,40 @@ if [[ -d ${repoDir} ]]; then
 		fi
 	fi
 	# if the following line fails, make sure that ${DESTINATION} is already created on target server
-	date; rsync -arzqc --protocol=28 --delete-after --delete-excluded --rsh=ssh ${exclude} ${include} ${DESTINATION}/latest/
+	date; rsync -arzqc --protocol=28 --delete-after --delete-excluded --rsh=ssh ${exclude} ${include} ${DESTINATION}/REPO/
 
-	targetZip=/tmp/${targetZipFile}.zip
-
+	targetDir=/tmp/${targetZipFile}
 	# create zip, then upload to http://download.jboss.org/jbossotools/updates/target-platform_3.3.indigo/${targetZipFile}.zip for public use
+	targetZip=${targetDir}/${targetZipFile}.zip
 	zip -q -r9 ${targetZip} ${include}
 	du -sh ${targetZip}
-
 	# generate MD5 sum for zip (file contains only the hash, not the hash + filename)
 	for m in $(md5sum ${targetZip}); do if [[ $m != ${targetZip} ]]; then echo $m > ${targetZip}.MD5; fi; done
+	# generate compositeContent.xml and compositeArtifacts.xml to make this URL a link to /REPO with p2
+	timestamp=$(date +%s0000)
+	echo "<?compositeMetadataRepository version='1.0.0'?>
+<repository name='JBoss Tools Target Platform Site' type='org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository' version='1.0.0'>
+  <properties size='2'>
+    <property name='p2.compressed' value='true'/>
+    <property name='p2.timestamp' value=\"${timestamp}\"/>
+  </properties>
+  <children size='1'>
+    <child location='REPO/'/>
+  </children>
+</repository>" > ${targetDir}/compositeContent.xml
+	echo "<?compositeArtifactRepository version='1.0.0'?>
+<repository name='JBoss Tools Target Platform Site' type='org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository' version='1.0.0'>
+  <properties size='2'>
+    <property name='p2.compressed' value='true'/>
+    <property name='p2.timestamp' value=\"${timestamp}\"/>
+  </properties>
+  <children size='1'>
+    <child location='REPO/'/>
+  </children>
+</repository>" > ${targetDir}/compositeContent.xml
 
-	date; rsync -arzq --protocol=28 --rsh=ssh ${targetZip} ${targetZip}.MD5 ${DESTINATION}/
-	rm -f ${targetZip} ${targetZip}.MD5
+	date; rsync -arzq --protocol=28 --rsh=ssh ${targetDir}/* ${DESTINATION}/
+	rm -f ${targetDir}
 else
 	echo "repoDir ${repoDir} not found or not a directory! Must exit!"
 	exit 1;
