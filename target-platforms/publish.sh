@@ -95,7 +95,7 @@ if [[ -d ${repoDir} ]]; then
 	# if the following line fails, make sure that ${DESTINATION} is already created on target server
 	date; rsync -arzqc --protocol=28 --delete-after --delete-excluded --rsh=ssh ${exclude} ${include} ${DESTINATION}/REPO/
 
-	targetDir=/tmp/${targetZipFile}
+	targetDir=`mktemp -d -t ${targetZipFile}.XXXXXXXX`; mkdir -p ${targetDir}
 	# create zip, then upload to http://download.jboss.org/jbossotools/updates/target-platform_3.3.indigo/${targetZipFile}.zip for public use
 	targetZip=${targetDir}/${targetZipFile}.zip
 	zip -q -r9 ${targetZip} ${include}
@@ -126,7 +126,7 @@ if [[ -d ${repoDir} ]]; then
 </repository>" > ${targetDir}/compositeContent.xml
 
 	date; rsync -arzq --protocol=28 --rsh=ssh ${targetDir}/* ${DESTINATION}/
-	rm -f ${targetDir}
+	rm -fr ${targetDir}
 else
 	echo "repoDir ${repoDir} not found or not a directory! Must exit!"
 	exit 1;
