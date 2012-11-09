@@ -362,6 +362,11 @@
 	<profiles>
 		<profile>
 			<id>jbosstools-site</id>
+			<activation>
+				<property>
+					<name>!no-jbosstools-site</name>
+				</property>
+			</activation>
 			<repositories>
 				<repository>
 					<id>jbosstools-site</id>
@@ -434,9 +439,14 @@
 			</repositories>
 		</profile>
 
-		<!-- enable actual using a target platform, can simply be disable with -P !target-platform -->
+		<!-- enable actual using a target platform, can simply be disable with -Dno-target-platform -->
 		<profile>
 			<id>target-platform</id>
+			<activation>
+				<property>
+					<name>!no-target-platform</name>
+				</property>
+			</activation>
 			<build>
 				<plugins>
 					<plugin>
