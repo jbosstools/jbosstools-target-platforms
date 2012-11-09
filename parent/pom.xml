@@ -25,7 +25,7 @@
 
 		<maven.antrun.plugin.version>1.3</maven.antrun.plugin.version>
 
-		
+
 		<swtbot.test.skip>true</swtbot.test.skip>
 		<!-- Used to install 3rd-party runtimes for testing -->
 		<skipRequirements>${skipTests}</skipRequirements>
@@ -46,12 +46,11 @@
 		<!-- TODO: don't forget to update this in ../aggregate/*/associate.properties too (5 files)! -->
 		<targetPlatformGroup-maximum>jbosstools-JunoSR1a</targetPlatformGroup-maximum>
 
-                <tpc.group>${targetPlatformGroup}</tpc.group>
+		<!-- Use *target* profiles to select other values for those properties-->
+		<tpc.group>${targetPlatformGroup}</tpc.group>
 		<tpc.groupId>org.jboss.tools.target-platforms.${tpc.group}</tpc.groupId>
 		<tpc.artifactId>unified</tpc.artifactId>
-	        <tpc.version>${JBT_VERSION}.${BUILD_ALIAS}-SNAPSHOT</tpc.version>
-		<tpc.classifier>unified</tpc.classifier>
-
+		<tpc.version>${JBT_VERSION}.${BUILD_ALIAS}-SNAPSHOT</tpc.version>
 
 		<!-- 1a. URL of latest JBT target platform site -->
 		<!-- deprecated variable: latest minimum TP (now defined within the unified.target pom) -->
@@ -90,8 +89,10 @@
 		<!-- 5. extra requirements (for 3rd party "Extras" site) -->
 		<jboss-requirements-composite-extras-mirror>http://download.jboss.org/jbosstools/updates/juno/extras/SR0c/</jboss-requirements-composite-extras-mirror>
 
-		<!-- JBDS-2290, JBIDE-12294, JBIDE-12629 latest stable build of m2e, m2e-wtp, and m2e-apt for use with JBDS product builds -->
-		<m2e>http://download.jboss.org/jbosstools/updates/requirements/m2eclipse/20120926-1337/</m2e>
+		<!-- Use jbosstools-* profiles to select other values for those properties-->
+		<!-- Default values copied from jbosstools-staging-aggregate< -->
+		<jbosstools-site>${jbosstools-nightly}</jbosstools-site>
+		<jbosstools-tests-site>${jbosstools-nightly-tests}</jbosstools-tests-site>
 
 	</properties>
 
@@ -348,69 +349,48 @@
 	</build>
 
 	<scm>
-		<connection>scm:svn:http://anonsvn.jboss.org/repos/jbosstools/${scmBranch}
-		</connection>
-		<developerConnection>scm:svn:http://anonsvn.jboss.org/repos/jbosstools/${scmBranch}
-		</developerConnection>
-		<url>http://anonsvn.jboss.org/repos/jbosstools/${scmBranch}
-		</url>
+		<connection>scm:svn:http://anonsvn.jboss.org/repos/jbosstools/${scmBranch}</connection>
+		<developerConnection>scm:svn:http://anonsvn.jboss.org/repos/jbosstools/${scmBranch}</developerConnection>
+		<url>http://anonsvn.jboss.org/repos/jbosstools/${scmBranch}</url>
 	</scm>
 
 	<issueManagement>
 		<system>jira</system>
 		<url>https://jira.jboss.org/jira/secure/</url>
 	</issueManagement>
+
 	<profiles>
+		<profile>
+			<id>jbosstools-site</id>
+			<repositories>
+				<repository>
+					<id>jbosstools-site</id>
+					<url>${jbosstools-site}</url>
+					<layout>p2</layout>
+				</repository>
+				<repository>
+					<id>jbosstools-tests-site</id>
+					<url>${jbosstools-tests-site}</url>
+					<layout>p2</layout>
+				</repository>
+			</repositories>
+		</profile>
 		<!-- Latest JBT work-in-progress component builds (CI builds), not yet
 			pushed to the above nightly update site -->
 		<!-- disabled by default because it causes local compilation problems -->
 		<profile>
 			<id>jbosstools-nightly-staging-composite</id>
-			<activation>
-				<!-- JBIDE-11663 disable automatic enablement when swtbot.test.skip = false
-				<property>
-					<name>swtbot.test.skip</name>
-					<value>false</value>
-				</property>
-				-->
-			</activation>
-			<repositories>
-				<repository>
-					<id>jbosstools-nightly-staging-composite</id>
-					<url>${jbosstools-nightly-staging-composite}</url>
-					<layout>p2</layout>
-					<snapshots>
-						<enabled>true</enabled>
-					</snapshots>
-					<releases>
-						<enabled>true</enabled>
-					</releases>
-				</repository>
-			</repositories>
+			<properties>
+				<jbosstools-site>${jbosstools-nightly-staging-composite}</jbosstools-site>
+				<jbosstools-tests-site>${jbosstools-nightly-staging-composite}</jbosstools-tests-site>
+			</properties>
 		</profile>
 		<profile>
 			<id>jbosstools-nightly-staging-composite-soa-tooling</id>
-			<activation>
-				<!-- JBIDE-11663 disable automatic enablement when swtbot.test.skip = false
-				<property>
-					<name>swtbot.test.skip</name>
-					<value>false</value>
-				</property>
-				-->
-			</activation>
-			<repositories>
-				<repository>
-					<id>jbosstools-nightly-staging-composite-soa-tooling</id>
-					<url>${jbosstools-nightly-staging-composite-soa-tooling}</url>
-					<layout>p2</layout>
-					<snapshots>
-						<enabled>true</enabled>
-					</snapshots>
-					<releases>
-						<enabled>true</enabled>
-					</releases>
-				</repository>
-			</repositories>
+			<properties>
+				<jbosstools-site>${jbosstools-nightly-staging-composite-soa-tooling}</jbosstools-site>
+				<jbosstools-tests-site>${jbosstools-nightly-staging-composite-soa-tooling}</jbosstools-tests-site>
+			</properties>
 		</profile>
 
 		<!-- Profiles to resolve deps on other JBT components against latest aggregate site
@@ -418,52 +398,21 @@
 		https://community.jboss.org/wiki/HowToBuildJBossToolsWithMaven3#Build_a_component_resolving_to_a_recent_aggregation_build_for_other_JBT_dependencies_Recommanded -->
 		<profile>
 			<id>jbosstools-staging-aggregate</id>
-			<activation>
-				<property><name>!nostaging-aggregate</name></property>
-			</activation>
-			<repositories>
-				<repository>
-					<id>jbosstools-nightly</id>
-					<url>${jbosstools-nightly}</url>
-					<layout>p2</layout>
-					<snapshots>
-						<enabled>true</enabled>
-					</snapshots>
-					<releases>
-						<enabled>true</enabled>
-					</releases>
-				</repository>
-				<repository>
-					<id>jbosstools-nightly-tests</id>
-					<url>${jbosstools-nightly-tests}</url>
-					<layout>p2</layout>
-					<snapshots>
-						<enabled>true</enabled>
-					</snapshots>
-					<releases>
-						<enabled>true</enabled>
-					</releases>
-				</repository>
-			</repositories>
+			<properties>
+				<jbosstools-site>${jbosstools-nightly}</jbosstools-site>
+				<jbosstools-tests-site>${jbosstools-nightly-tests}</jbosstools-tests-site>
+			</properties>
 		</profile>
 
 		<!-- same contents as jbosstools-nightly-staging-composite, but locally
 			available (to improve network lag) -->
+		<!-- TODO: replace by maven mirroring -->
 		<profile>
 			<id>local.composite</id>
-			<repositories>
-				<repository>
-					<id>local.composite</id>
-					<url>${local.composite}</url>
-					<layout>p2</layout>
-					<snapshots>
-						<enabled>true</enabled>
-					</snapshots>
-					<releases>
-						<enabled>true</enabled>
-					</releases>
-				</repository>
-			</repositories>
+			<properties>
+				<jbosstools-site>${local.composite}</jbosstools-site>
+				<jbosstools-tests-site>${local.composite}</jbosstools-tests-site>
+			</properties>
 		</profile>
 
 		<!-- Contains all the Third Party Extras deps. This is the superset of
@@ -485,40 +434,36 @@
 			</repositories>
 		</profile>
 
-		<!-- enable actual using a target platform -->
+		<!-- enable actual using a target platform, can simply be disable with -P !target-platform -->
 		<profile>
-                       <id>target.static</id>
-		       <activation>
-			 <property><name>!target.dynamic</name></property>
-		       </activation>
-                       <build>
-                               <plugins>
-                                       <plugin>
-                                               <groupId>org.eclipse.tycho</groupId>
-                                               <artifactId>target-platform-configuration</artifactId>
-                                               <version>${tychoVersion}</version>
-                                               <configuration>
-                                                       <target>
-                                                               <artifact>
-                                                                       <groupId>${tpc.groupId}</groupId>
-                                                                       <artifactId>${tpc.artifactId}</artifactId>
-                                                                       <version>${tpc.version}</version>
-                                                                       <classifier>${tpc.classifier}</classifier>
-                                                               </artifact>
-                                                       </target>
-                                               </configuration>
-                                       </plugin>
-                               </plugins>
-                       </build>
+			<id>target-platform</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.eclipse.tycho</groupId>
+						<artifactId>target-platform-configuration</artifactId>
+						<version>${tychoVersion}</version>
+						<configuration>
+							<target>
+								<artifact>
+									<groupId>${tpc.groupId}</groupId>
+									<artifactId>${tpc.artifactId}</artifactId>
+									<version>${tpc.version}</version>
+									<classifier>${tpc.artifactId}</classifier>
+								</artifact>
+							</target>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
 		</profile>
 
 		<!-- Target platform file pointing at the composite target platform
 			AKA multiple.target -->
 		<profile>
 			<id>multiple.target</id>
-                        <properties>
-			  <tpc.artifactId>multiple</tpc.artifactId>
-			  <tpc.classifier>multiple</tpc.classifier>
+			<properties>
+				<tpc.artifactId>multiple</tpc.artifactId>
 			</properties>
 		</profile>
 
@@ -528,39 +473,37 @@
 		<profile>
 			<id>unified.target</id>
 			<properties>
-			  <tpc.artifactId>unified</tpc.artifactId>
-			  <tpc.classifier>unified</tpc.classifier>			
+				<tpc.artifactId>unified</tpc.artifactId>
 			</properties>
 		</profile>
-		
+
 		<profile>
 			<id>maximum</id>
 			<properties>
-			  <tpc.group>${targetPlatformGroup-maximum}</tpc.group>
-			  <tpc.artifactId>unified</tpc.artifactId>
-			  <tpc.classifier>unified</tpc.classifier>			
+				<tpc.group>${targetPlatformGroup-maximum}</tpc.group>
+				<tpc.artifactId>unified</tpc.artifactId>
 			</properties>
 		</profile>
 
 		<!-- Target platform files pointing at a single update site located
-			from Jenkins filesystem (mirrored unified.target for performances) 
-			use jenkins.target for component builds, and 
+			from Jenkins filesystem (mirrored unified.target for performances)
+			use jenkins.target for component builds, and
 			use jenkins.target.maximum for aggregate and installer builds
 		-->
 		<profile>
 			<id>jenkins.target</id>
 			<properties>
-			  <tpc.group>${targetPlatformGroup-maximum}</tpc.group> <!-- why is jenkins explicitly maximum --> 
-			  <tpc.artifactId>jenkins</tpc.artifactId>
-			  <tpc.classifier>jenkins</tpc.classifier>			
+				<tpc.group>${targetPlatformGroup-maximum}</tpc.group> <!-- why is jenkins explicitly maximum -->
+				<tpc.artifactId>jenkins</tpc.artifactId>
+				<tpc.classifier>jenkins</tpc.classifier>
 			</properties>
 		</profile>
 		<profile>
 			<id>jenkins.target.maximum</id>
 			<properties>
-			  <tpc.group>${targetPlatformGroup-maximum}</tpc.group>
-			  <tpc.artifactId>jenkins</tpc.artifactId>
-			  <tpc.classifier>jenkins</tpc.classifier>			
+				<tpc.group>${targetPlatformGroup-maximum}</tpc.group>
+				<tpc.artifactId>jenkins</tpc.artifactId>
+				<tpc.classifier>jenkins</tpc.classifier>
 			</properties>
 		</profile>
 
@@ -574,8 +517,8 @@
 		<profile>
 			<id>local.target</id>
 			<properties>
-			  <tpc.artifactId>local</tpc.artifactId>
-			  <tpc.classifier>local</tpc.classifier>			
+				<tpc.artifactId>local</tpc.artifactId>
+				<tpc.classifier>local</tpc.classifier>
 			</properties>
 		</profile>
 
@@ -677,9 +620,9 @@
 			</releases>
 		</repository>
 		<repository>
-                        <id>jboss-snapshots-repository</id>
-                        <name>JBoss Snapshots Repository</name>
-                        <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
+			<id>jboss-snapshots-repository</id>
+			<name>JBoss Snapshots Repository</name>
+			<url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
