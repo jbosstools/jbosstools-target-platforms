@@ -123,7 +123,7 @@ if [[ -d ${repoDir} ]]; then
   <children size='1'>
     <child location='REPO/'/>
   </children>
-</repository>" > ${targetDir}/compositeContent.xml
+</repository>" > ${targetDir}/compositeArtifacts.xml
 
 	date; rsync -arzq --protocol=28 --rsh=ssh ${targetDir}/* ${DESTINATION}/
 	rm -fr ${targetDir}
