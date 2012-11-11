@@ -31,7 +31,7 @@
 								<artifactId>multiple</artifactId>
 								<version>${project.version}</version>
 							</sourceTargetArtifact>
-							<targetRepositoryUrl>http://download.jboss.org/jbosstools/updates/juno/SR1a/latest/</targetRepositoryUrl>
+							<targetRepositoryUrl>http://download.jboss.org/jbosstools/updates/juno/SR1a/REPO/</targetRepositoryUrl>
 						</configuration>
 					</execution>
 				</executions>

@@ -31,7 +31,7 @@
 								<artifactId>multiple</artifactId>
 								<version>${project.version}</version>
 							</sourceTargetArtifact>
-							<targetRepositoryUrl>http://www.qa.jboss.com/binaries/RHDS/updates/jbds-target-platform_4.0.juno.SR0c/latest</targetRepositoryUrl>
+							<targetRepositoryUrl>http://www.qa.jboss.com/binaries/RHDS/updates/jbds-target-platform_4.0.juno.SR0c/REPO/</targetRepositoryUrl>
 						</configuration>
 					</execution>
 				</executions>
