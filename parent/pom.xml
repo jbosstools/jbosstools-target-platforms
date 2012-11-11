@@ -48,8 +48,8 @@
 
 		<!-- 1a. URL of latest JBT target platform site -->
 		<!-- deprecated variable: latest minimum TP (now defined within the unified.target pom) -->
-		<jbosstools-target-site>http://download.jboss.org/jbosstools/updates/juno/SR0c/latest/</jbosstools-target-site>
-		<jbosstools-target-site-maximum>http://download.jboss.org/jbosstools/updates/juno/SR1a/latest/</jbosstools-target-site-maximum>
+		<jbosstools-target-site>http://download.jboss.org/jbosstools/updates/juno/SR0c/REPO/</jbosstools-target-site>
+		<jbosstools-target-site-maximum>http://download.jboss.org/jbosstools/updates/juno/SR1a/REPO/</jbosstools-target-site-maximum>
 
 		<!-- 1b. or use -Plocal.site -Dlocal.site=file:///${HOME}/jbosstools/jbosstools-build/target-platforms/jbosstools-JunoSR0c/local/target/REPO/ -->
 		<!-- TODO: don't forget to update JBDS .updatesite jobs when this value changes! -->
