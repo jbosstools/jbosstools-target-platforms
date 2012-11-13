@@ -116,6 +116,8 @@
 
 		<!-- In case no profile fits your requested TP version, directly override this property -->
 		<TARGET_PLATFORM_VERSION>${JBT_VERSION}.JunoSR0c-SNAPSHOT</TARGET_PLATFORM_VERSION>
+		<!-- default value for the "maximum" profiles -->
+		<TARGET_PLATFORM_VERSION-maximum>${JBT_VERSION}.JunoSR1a-SNAPSHOT</TARGET_PLATFORM_VERSION-maximum>
 
 	</properties>
 
@@ -521,6 +523,7 @@
 			<id>maximum</id>
 			<properties>
 				<tpc.group>${targetPlatformGroup-maximum}</tpc.group>
+				<TARGET_PLATFORM_VERSION>${TARGET_PLATFORM_VERSION-maximum}</TARGET_PLATFORM_VERSION>
 			</properties>
 		</profile>
 
@@ -540,6 +543,7 @@
 			<properties>
 				<tpc.group>${targetPlatformGroup-maximum}</tpc.group>
 				<tpc.targetKind>jenkins</tpc.targetKind>
+				<TARGET_PLATFORM_VERSION>${TARGET_PLATFORM_VERSION-maximum}</TARGET_PLATFORM_VERSION>
 			</properties>
 		</profile>
 
