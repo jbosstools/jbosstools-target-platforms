@@ -11,7 +11,7 @@
 	<artifactId>unified</artifactId>
 	<name>jbosstools-JunoSR1a Unified (Aggregate) Target Platform</name>
 	<packaging>pom</packaging>
-	<version>6.0.0.JunoSR1a-SNAPSHOT</version>
+	<version>4.0.0.JunoSR1a-SNAPSHOT</version>
 
 	<build>
 		<plugins>
