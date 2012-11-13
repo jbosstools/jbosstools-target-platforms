@@ -11,6 +11,7 @@
 	<artifactId>unified</artifactId>
 	<name>jbdevstudio-JunoSR0c Unified (Aggregate) Target Platform</name>
 	<packaging>pom</packaging>
+	<version>6.0.0.JunoSR0c-SNAPSHOT</version>
 
 	<build>
 		<plugins>
