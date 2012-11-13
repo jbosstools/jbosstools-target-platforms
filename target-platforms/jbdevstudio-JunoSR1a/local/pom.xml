@@ -14,21 +14,10 @@
 
 	<properties>
 		<repoDir>${project.build.directory}/REPO</repoDir>
-		<!-- JBIDE-12003 -->
-		<tychoVersion>0.16.0</tychoVersion>
-		<tychoExtrasVersion>0.16.0</tychoExtrasVersion>
 	</properties>
 
 	<build>
 		<plugins>
-			<plugin>
-				<!-- Workaround for https://bugs.eclipse.org/bugs/show_bug.cgi?id=391397 -->
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>tycho-maven-plugin</artifactId>
-				<version>${tychoVersion}</version>
-				<extensions>true</extensions>
-			</plugin>
-
 			<plugin>
 				<groupId>org.jboss.tools.tycho-plugins</groupId>
 				<artifactId>target-platform-utils</artifactId>
@@ -59,7 +48,7 @@
 					<execution>
 						<phase>verify</phase>
 						<goals>
- 							<!-- DISABLE validation due to http://dev.eclipse.org/mhonarc/lists/tycho-dev/msg00817.html <goal>validate-target-platform</goal> -->
+ 							<goal>validate-target-platform</goal>
 						</goals>
 						<configuration>
 							<targetFiles>
