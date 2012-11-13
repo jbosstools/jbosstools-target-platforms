@@ -9,6 +9,9 @@
 	<packaging>pom</packaging>
 
 	<properties>
+		<!-- ==================================================== -->
+		<!-- General properties, not meant to be tweaked by users -->
+		<!-- ==================================================== -->
 		<!-- to build w/ latest 0.15.0-SNAPSHOT, run `mvn install -DtychoVersion=0.15.0-SNAPSHOT` -->
 		<tychoVersion>0.15.0</tychoVersion>
 		<tychoExtrasVersion>0.15.0</tychoExtrasVersion>
@@ -22,10 +25,13 @@
 		<systemProperties></systemProperties>
 		<platformSystemProperties></platformSystemProperties>
 		<applejdkProperties></applejdkProperties>
-
 		<maven.antrun.plugin.version>1.3</maven.antrun.plugin.version>
+		<!-- Default coverage filter, to be overriden when necessary -->
+		<coverage.filter>org.jboss.tools.*</coverage.filter>
 
-
+		<!-- ===================================================== -->
+		<!-- SWITCHES can be overriden by command-line -Dkey=value -->
+		<!-- ===================================================== -->
 		<swtbot.test.skip>true</swtbot.test.skip>
 		<!-- Used to install 3rd-party runtimes for testing -->
 		<skipRequirements>${skipTests}</skipRequirements>
@@ -36,29 +42,20 @@
 		<skipTestsWithPrivateRequirements>${skipPrivateRequirements}</skipTestsWithPrivateRequirements>
 		<!-- Tests Timeout in seconds -->
 		<surefire.timeout>2400</surefire.timeout>
-		<!-- Default coverage filter, to be overriden when necessary -->
-		<coverage.filter>org.jboss.tools.*</coverage.filter>
 
-		<!-- to build with the minimum TP, use -Punified.target (on by default); to build with the maximum TP, use -Pmaximum -->
-		<!-- when building/testing components, use minumum TP -->
-		<targetPlatformGroup>jbosstools-JunoSR0c</targetPlatformGroup>
-		<!-- building/testing aggregate sites & installers, use maximum TP -->
-		<!-- TODO: don't forget to update this in ../aggregate/*/associate.properties too (5 files)! -->
-		<targetPlatformGroup-maximum>jbosstools-JunoSR1a</targetPlatformGroup-maximum>
 
-		<!-- Use *target* profiles to select other values for those properties-->
-		<tpc.group>${targetPlatformGroup}</tpc.group>
-		<tpc.groupId>org.jboss.tools.target-platforms.${tpc.group}</tpc.groupId>
-		<tpc.artifactId>unified</tpc.artifactId>
-		<tpc.version>${JBT_VERSION}.${BUILD_ALIAS}-SNAPSHOT</tpc.version>
+		<!-- ======================== -->
+		<!-- JBOSS TOOLS DEPENDENCIES -->
+		<!-- ======================== -->
 
 		<!-- 1a. URL of latest JBT target platform site -->
-		<!-- deprecated variable: latest minimum TP (now defined within the unified.target pom) -->
+		<!-- DEPRECATED variable: latest minimum TP (now defined within the unified.target pom) -->
 		<jbosstools-target-site>http://download.jboss.org/jbosstools/updates/juno/SR0c/latest/</jbosstools-target-site>
 		<jbosstools-target-site-maximum>http://download.jboss.org/jbosstools/updates/juno/SR1a/latest/</jbosstools-target-site-maximum>
 
 		<!-- 1b. or use -Plocal.site -Dlocal.site=file:///${HOME}/trunk/build/target-platform/REPO/ -->
 		<!-- TODO: don't forget to update JBDS .updatesite jobs when this value changes! -->
+		<!-- DEPRECATED: Use Maven mirrors in settings.xml instead -->
 		<local.site>file:///${user.home}/.m2/jbosstools-target-platform_4.0.juno.SR0c/</local.site>
 
 		<!-- 2a. URL of latest JBT nightly staging composite site (all the components
@@ -70,6 +67,7 @@
 
 		<!-- 2b. or use -Plocal.composite -Dlocal.composite=file:///path/to/mirror/of/composite/staging/site/ -->
 		<!-- for trunk use _composite_/trunk; for 4.0_stable_branch, use _composite_/4.0.juno -->
+		<!-- DEPRECATED: Use Maven mirrors in settings.xml instead -->
 		<local.composite>file:///home/hudson/static_build_env/jbds/builds/staging/_composite_/core/trunk/</local.composite>
 		<local.composite-soa-tooling>file:///home/hudson/static_build_env/jbds/builds/staging/_composite_/soa-tooling/trunk/</local.composite-soa-tooling>
 
@@ -89,10 +87,31 @@
 		<!-- 5. extra requirements (for 3rd party "Extras" site) -->
 		<jboss-requirements-composite-extras-mirror>http://download.jboss.org/jbosstools/updates/juno/extras/SR0c/</jboss-requirements-composite-extras-mirror>
 
-		<!-- Use jbosstools-* profiles to select other values for those properties-->
+		<!-- --------------------------------------------------------------------- -->
+		<!-- Use jbosstools-* profiles to select other values for those properties -->
+		<!-- --------------------------------------------------------------------- -->
 		<!-- Default values copied from jbosstools-staging-aggregate< -->
 		<jbosstools-site>${jbosstools-nightly}</jbosstools-site>
 		<jbosstools-tests-site>${jbosstools-nightly-tests}</jbosstools-tests-site>
+
+		<!-- ================ -->
+		<!-- TARGET-PLATFORMS -->
+		<!-- ================ -->
+
+		<!-- to build with the minimum TP, use -Punified.target (on by default); to build with the maximum TP, use -Pmaximum -->
+		<!-- when building/testing components, use minumum TP -->
+		<targetPlatformGroup>jbosstools-JunoSR0c</targetPlatformGroup>
+		<!-- building/testing aggregate sites & installers, use maximum TP -->
+		<!-- TODO: don't forget to update this in ../aggregate/*/associate.properties too (5 files)! -->
+		<targetPlatformGroup-maximum>jbosstools-JunoSR1a</targetPlatformGroup-maximum>
+
+		<!-- ---------------------------------------------------------------- -->
+		<!-- Use *target* profiles to select other values for those properties-->
+		<!-- ---------------------------------------------------------------- -->
+		<!-- tpc.group is one of ${targetPlatformGroup} or ${targetPlatformGroup-maximun} -->
+		<tpc.group>${targetPlatformGroup}</tpc.group>
+		<!-- Is one of "unified" or "multiple" (other values "jenkins" & "local" are deprecated -->
+		<tpc.targetKind>unified</tpc.targetKind>
 
 	</properties>
 
@@ -360,6 +379,9 @@
 	</issueManagement>
 
 	<profiles>
+		<!-- --------------------------------------------- -->
+		<!-- Profiles to manage dependencies on jbosstools -->
+		<!-- --------------------------------------------- -->
 		<profile>
 			<id>jbosstools-site</id>
 			<activation>
@@ -439,6 +461,9 @@
 			</repositories>
 		</profile>
 
+		<!-- ------------------------------------------------------------ -->
+		<!-- Profiles to manage target-platform and 3rd pary dependencies -->
+		<!-- ------------------------------------------------------------ -->
 		<!-- enable actual using a target platform, can simply be disable with -Dno-target-platform -->
 		<profile>
 			<id>target-platform</id>
@@ -456,10 +481,10 @@
 						<configuration>
 							<target>
 								<artifact>
-									<groupId>${tpc.groupId}</groupId>
-									<artifactId>${tpc.artifactId}</artifactId>
-									<version>${tpc.version}</version>
-									<classifier>${tpc.artifactId}</classifier>
+									<groupId>org.jboss.tools.target-platforms.${tpc.group}</groupId>
+									<artifactId>${tpc.targetKind}</artifactId>
+									<version>${JBT_VERSION}.${BUILD_ALIAS}-SNAPSHOT</version>
+									<classifier>${tpc.targetKind}</classifier>
 								</artifact>
 							</target>
 						</configuration>
@@ -473,7 +498,7 @@
 		<profile>
 			<id>multiple.target</id>
 			<properties>
-				<tpc.artifactId>multiple</tpc.artifactId>
+				<tpc.targetKind>multiple</tpc.targetKind>
 			</properties>
 		</profile>
 
@@ -483,7 +508,7 @@
 		<profile>
 			<id>unified.target</id>
 			<properties>
-				<tpc.artifactId>unified</tpc.artifactId>
+				<tpc.targetKind>unified</tpc.targetKind>
 			</properties>
 		</profile>
 
@@ -491,7 +516,6 @@
 			<id>maximum</id>
 			<properties>
 				<tpc.group>${targetPlatformGroup-maximum}</tpc.group>
-				<tpc.artifactId>unified</tpc.artifactId>
 			</properties>
 		</profile>
 
@@ -503,17 +527,14 @@
 		<profile>
 			<id>jenkins.target</id>
 			<properties>
-				<tpc.group>${targetPlatformGroup-maximum}</tpc.group> <!-- why is jenkins explicitly maximum -->
-				<tpc.artifactId>jenkins</tpc.artifactId>
-				<tpc.classifier>jenkins</tpc.classifier>
+				<tpc.targetKind>jenkins</tpc.targetKind>
 			</properties>
 		</profile>
 		<profile>
 			<id>jenkins.target.maximum</id>
 			<properties>
 				<tpc.group>${targetPlatformGroup-maximum}</tpc.group>
-				<tpc.artifactId>jenkins</tpc.artifactId>
-				<tpc.classifier>jenkins</tpc.classifier>
+				<tpc.targetKind>jenkins</tpc.targetKind>
 			</properties>
 		</profile>
 
@@ -527,8 +548,7 @@
 		<profile>
 			<id>local.target</id>
 			<properties>
-				<tpc.artifactId>local</tpc.artifactId>
-				<tpc.classifier>local</tpc.classifier>
+				<tpc.targetKind>local</tpc.targetKind>
 			</properties>
 		</profile>
 
