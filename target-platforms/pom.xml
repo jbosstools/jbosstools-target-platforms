@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<!-- <parent> <groupId>org.jboss.tools</groupId> <artifactId>parent</artifactId> 
+	<!-- <parent> <groupId>org.jboss.tools</groupId> <artifactId>parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version> </parent> -->
 	<groupId>org.jboss.tools</groupId>
 	<artifactId>target-platforms</artifactId>
@@ -14,11 +14,21 @@
 		for p in jbdevstudio-maximum jbosstools-maximum jbdevstudio-minimum jbosstools-minimum; do mvn install -P${p}; done
 	-->
 	<properties>
-		<!-- JBIDE-12003 -->
 		<tychoVersion>0.16.0</tychoVersion>
 		<tychoExtrasVersion>0.16.0</tychoExtrasVersion>
 	</properties>
-	
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tychoVersion}</version>
+				<extensions>true</extensions>
+			</plugin>
+		</plugins>
+	</build>
+
 	<profiles>
 		<profile>
 			<id>jbdevstudio-maximum</id>
@@ -73,5 +83,5 @@
 			<url>https://oss.sonatype.org/content/groups/public/</url>
 		</pluginRepository>
 	</pluginRepositories>
-	
+
 </project>
