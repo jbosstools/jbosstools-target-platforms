@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.jboss.tools.target-platforms.jbdevstudio-JunoSR1a</groupId>
 		<artifactId>all</artifactId>
-		<version>4.0.0.Beta2-SNAPSHOT</version>
+		<version>4.0.0.CR1-SNAPSHOT</version>
 	</parent>
 	<groupId>org.jboss.tools.target-platforms.jbdevstudio-JunoSR1a</groupId>
 	<artifactId>unified</artifactId>
@@ -31,7 +31,7 @@
 								<artifactId>multiple</artifactId>
 								<version>${project.version}</version>
 							</sourceTargetArtifact>
-							<targetRepositoryUrl>http://www.qa.jboss.com/binaries/RHDS/updates/jbds-target-platform_4.0.juno.SR1a/latest</targetRepositoryUrl>
+							<targetRepositoryUrl>http://www.qa.jboss.com/binaries/RHDS/updates/jbds-target-platform_4.0.juno.SR1a/REPO/</targetRepositoryUrl>
 						</configuration>
 					</execution>
 				</executions>

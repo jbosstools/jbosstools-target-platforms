@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jboss.tools</groupId>
 	<artifactId>parent</artifactId>
-	<version>4.0.0.Beta2-SNAPSHOT</version>
+	<version>4.0.0.CR1-SNAPSHOT</version>
 	<name>JBoss Tools Parent</name>
 	<packaging>pom</packaging>
 
@@ -13,12 +13,12 @@
 		<!-- General properties, not meant to be tweaked by users -->
 		<!-- ==================================================== -->
 		<!-- to build w/ latest 0.15.0-SNAPSHOT, run `mvn install -DtychoVersion=0.15.0-SNAPSHOT` -->
-		<tychoVersion>0.15.0</tychoVersion>
-		<tychoExtrasVersion>0.15.0</tychoExtrasVersion>
+		<tychoVersion>0.16.0</tychoVersion>
+		<tychoExtrasVersion>0.16.0</tychoExtrasVersion>
 		<scmBranch>trunk</scmBranch>
 		<JBT_VERSION>4.0.0</JBT_VERSION>
 		<JBDS_VERSION>6.0.0</JBDS_VERSION>
-		<BUILD_ALIAS>Beta2</BUILD_ALIAS>
+		<BUILD_ALIAS>CR1</BUILD_ALIAS>
 		<targetEclipseVersion>4.2</targetEclipseVersion>
 		<memoryOptions1>-Xms512m -Xmx1024m -XX:PermSize=256m</memoryOptions1>
 		<memoryOptions2>-XX:MaxPermSize=256m</memoryOptions2>
@@ -50,10 +50,10 @@
 
 		<!-- 1a. URL of latest JBT target platform site -->
 		<!-- DEPRECATED variable: latest minimum TP (now defined within the unified.target pom) -->
-		<jbosstools-target-site>http://download.jboss.org/jbosstools/updates/juno/SR0c/latest/</jbosstools-target-site>
-		<jbosstools-target-site-maximum>http://download.jboss.org/jbosstools/updates/juno/SR1a/latest/</jbosstools-target-site-maximum>
+		<jbosstools-target-site>http://download.jboss.org/jbosstools/updates/juno/SR0c/REPO/</jbosstools-target-site>
+		<jbosstools-target-site-maximum>http://download.jboss.org/jbosstools/updates/juno/SR1a/REPO/</jbosstools-target-site-maximum>
 
-		<!-- 1b. or use -Plocal.site -Dlocal.site=file:///${HOME}/trunk/build/target-platform/REPO/ -->
+		<!-- 1b. or use -Plocal.site -Dlocal.site=file:///${HOME}/jbosstools/jbosstools-build/target-platforms/jbosstools-JunoSR0c/local/target/REPO/ -->
 		<!-- TODO: don't forget to update JBDS .updatesite jobs when this value changes! -->
 		<!-- DEPRECATED: Use Maven mirrors in settings.xml instead -->
 		<local.site>file:///${user.home}/.m2/jbosstools-target-platform_4.0.juno.SR0c/</local.site>
@@ -87,9 +87,9 @@
 		<!-- 5. extra requirements (for 3rd party "Extras" site) -->
 		<jboss-requirements-composite-extras-mirror>http://download.jboss.org/jbosstools/updates/juno/extras/SR0c/</jboss-requirements-composite-extras-mirror>
 
-		<!-- --------------------------------------------------------------------- -->
+		<!-- ********************************************************************* -->
 		<!-- Use jbosstools-* profiles to select other values for those properties -->
-		<!-- --------------------------------------------------------------------- -->
+		<!-- ********************************************************************* -->
 		<!-- Default values copied from jbosstools-staging-aggregate< -->
 		<jbosstools-site>${jbosstools-nightly}</jbosstools-site>
 		<jbosstools-tests-site>${jbosstools-nightly-tests}</jbosstools-tests-site>
@@ -105,9 +105,9 @@
 		<!-- TODO: don't forget to update this in ../aggregate/*/associate.properties too (5 files)! -->
 		<targetPlatformGroup-maximum>jbosstools-JunoSR1a</targetPlatformGroup-maximum>
 
-		<!-- ---------------------------------------------------------------- -->
-		<!-- Use *target* profiles to select other values for those properties-->
-		<!-- ---------------------------------------------------------------- -->
+		<!-- ***************************************************************** -->
+		<!-- Use *target* profiles to select other values for those properties -->
+		<!-- ***************************************************************** -->
 		<!-- tpc.group is one of ${targetPlatformGroup} or ${targetPlatformGroup-maximun} -->
 		<tpc.group>${targetPlatformGroup}</tpc.group>
 		<!-- Is one of "unified" or "multiple" (other values "jenkins" & "local" are deprecated -->
@@ -254,7 +254,6 @@
 						<include>**/*AllBotTests*.class</include>
 						<include>**/*TestSuite*.class</include>
 					</includes>
-					<parallel>true</parallel>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -379,9 +378,10 @@
 	</issueManagement>
 
 	<profiles>
-		<!-- --------------------------------------------- -->
+		<!-- ********************************************* -->
 		<!-- Profiles to manage dependencies on jbosstools -->
-		<!-- --------------------------------------------- -->
+		<!-- ********************************************* -->
+
 		<profile>
 			<id>jbosstools-site</id>
 			<activation>
@@ -461,9 +461,11 @@
 			</repositories>
 		</profile>
 
-		<!-- ------------------------------------------------------------ -->
+
+		<!-- ************************************************************ -->
 		<!-- Profiles to manage target-platform and 3rd pary dependencies -->
-		<!-- ------------------------------------------------------------ -->
+		<!-- ************************************************************ -->
+
 		<!-- enable actual using a target platform, can simply be disable with -Dno-target-platform -->
 		<profile>
 			<id>target-platform</id>
@@ -484,7 +486,6 @@
 									<groupId>org.jboss.tools.target-platforms.${tpc.group}</groupId>
 									<artifactId>${tpc.targetKind}</artifactId>
 									<version>${JBT_VERSION}.${BUILD_ALIAS}-SNAPSHOT</version>
-									<classifier>${tpc.targetKind}</classifier>
 								</artifact>
 							</target>
 						</configuration>
@@ -538,13 +539,9 @@
 			</properties>
 		</profile>
 
-		<!-- To use this profile, must have first created a local.target file,
-			which points to a local repo. You can do this by hand or generate it from
-			multiple.target using: cd ~/trunk/build/target-platform; ant See also the
-			README in target-platform/ folder for additional usage examples. You can
-			also run `ant help`. If you want to build the target-platform/pom.xml AND
-			generate a local repo + local.target file ALL AT THE SAME TIME, you can do:
-			mvn clean install -Pget.local.target -f /path/to/target-platform/pom.xml -->
+		<!-- To use this profile, must have first created a local target file which points to a local repo. Generate it from
+			multiple.target using: cd ~/jbosstools/jbosstools-build/target-platforms/jbosstools-JunoSR0c; mvn install 
+			See also the README in target-platforms/ folder for additional info. -->
 		<profile>
 			<id>local.target</id>
 			<properties>
