@@ -11,6 +11,7 @@
 	<artifactId>local</artifactId>
 	<name>jbdevstudio-JunoSR0c Local (Aggregate) Target Platform</name>
 	<packaging>pom</packaging>
+	<version>6.0.0.JunoSR0c-SNAPSHOT</version>
 
 	<properties>
 		<repoDir>${project.build.directory}/REPO</repoDir>

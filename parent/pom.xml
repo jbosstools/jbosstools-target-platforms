@@ -115,7 +115,7 @@
 		<tpc.targetKind>unified</tpc.targetKind>
 
 		<!-- In case no profile fits your requested TP version, directly override this property -->
-		<TARGET_PLATFORM_VERSION>${JBT_VERSION}.${BUILD_ALIAS}-SNAPSHOT</TARGET_PLATFORM_VERSION>
+		<TARGET_PLATFORM_VERSION>${JBT_VERSION}.JunoSR0c-SNAPSHOT</TARGET_PLATFORM_VERSION>
 
 	</properties>
 
