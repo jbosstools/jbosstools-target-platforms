@@ -85,6 +85,7 @@
 		<jbosstools-nightly-soa-tooling-tests>http://download.jboss.org/jbosstools/updates/nightly/soatests/trunk/</jbosstools-nightly-soa-tooling-tests>
 
 		<!-- 5. extra requirements (for 3rd party "Extras" site) -->
+		<!-- TODO: shouln't those move to another (JBDS?) pom -->
 		<jboss-requirements-composite-extras-mirror>http://download.jboss.org/jbosstools/updates/juno/extras/SR0c/</jboss-requirements-composite-extras-mirror>
 
 		<!-- ********************************************************************* -->
@@ -112,6 +113,9 @@
 		<tpc.group>${targetPlatformGroup}</tpc.group>
 		<!-- Is one of "unified" or "multiple" (other values "jenkins" & "local" are deprecated -->
 		<tpc.targetKind>unified</tpc.targetKind>
+
+		<!-- In case no profile fits your requested TP version, directly override this property -->
+		<TARGET_PLATFORM_VERSION>${JBT_VERSION}.${BUILD_ALIAS}-SNAPSHOT</TARGET_PLATFORM_VERSION>
 
 	</properties>
 
@@ -485,7 +489,7 @@
 								<artifact>
 									<groupId>org.jboss.tools.target-platforms.${tpc.group}</groupId>
 									<artifactId>${tpc.targetKind}</artifactId>
-									<version>${JBT_VERSION}.${BUILD_ALIAS}-SNAPSHOT</version>
+									<version>${TARGET_PLATFORM_VERSION}</version>
 								</artifact>
 							</target>
 						</configuration>
@@ -540,7 +544,7 @@
 		</profile>
 
 		<!-- To use this profile, must have first created a local target file which points to a local repo. Generate it from
-			multiple.target using: cd ~/jbosstools/jbosstools-build/target-platforms/jbosstools-JunoSR0c; mvn install 
+			multiple.target using: cd ~/jbosstools/jbosstools-build/target-platforms/jbosstools-JunoSR0c; mvn install
 			See also the README in target-platforms/ folder for additional info. -->
 		<profile>
 			<id>local.target</id>
