@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.jboss.tools.target-platforms.jbosstools-JunoSR0c</groupId>
 		<artifactId>all</artifactId>
-		<version>4.0.0.Beta2-SNAPSHOT</version>
+		<version>4.0.0.CR1-SNAPSHOT</version>
 	</parent>
 	<groupId>org.jboss.tools.target-platforms.jbosstools-JunoSR0c</groupId>
 	<artifactId>unified</artifactId>
@@ -31,7 +31,7 @@
 								<artifactId>multiple</artifactId>
 								<version>${project.version}</version>
 							</sourceTargetArtifact>
-							<targetRepositoryUrl>http://download.jboss.org/jbosstools/updates/juno/SR0c/latest/</targetRepositoryUrl>
+							<targetRepositoryUrl>http://download.jboss.org/jbosstools/updates/juno/SR0c/REPO/</targetRepositoryUrl>
 						</configuration>
 					</execution>
 				</executions>
