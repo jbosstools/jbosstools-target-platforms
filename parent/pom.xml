@@ -421,7 +421,8 @@
 		<profile>
 			<id>jbosstools-nightly-staging-composite-soa-tooling</id>
 			<properties>
-				<jbosstools-site>${jbosstools-nightly-staging-composite-soa-tooling}</jbosstools-site>
+				<!-- TODO: This SOA profile should be based on usage of a SOA-specific TP made of unified + JBT -->
+				<jbosstools-site>${jbosstools-nightly-staging-composite}</jbosstools-site>
 				<jbosstools-tests-site>${jbosstools-nightly-staging-composite-soa-tooling}</jbosstools-tests-site>
 			</properties>
 		</profile>
