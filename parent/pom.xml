@@ -492,6 +492,7 @@
 									<groupId>org.jboss.tools.target-platforms.${tpc.group}</groupId>
 									<artifactId>${tpc.targetKind}</artifactId>
 									<version>${TARGET_PLATFORM_VERSION}</version>
+									<classifier>${tpc.targetKind}</classifier>
 								</artifact>
 							</target>
 						</configuration>
