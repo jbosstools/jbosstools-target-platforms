@@ -397,21 +397,12 @@
 			<id>jbosstools-nightly-staging-composite</id>
 			<properties>
 				<jbosstools-site>${jbosstools-nightly-staging-composite}</jbosstools-site>
-				<jbosstools-tests-site>${jbosstools-nightly-tests}</jbosstools-tests-site>
+				<jbosstools-tests-site>${jbosstools-nightly-staging-composite}</jbosstools-tests-site>
 			</properties>
 		</profile>
-		<profile>
-			<id>jbosstools-nightly-staging-composite-soa-tooling</id>
-			<properties>
-				<!-- TODO: This SOA profile should be based on usage of a SOA-specific TP made of unified + JBT -->
-				<jbosstools-site>${jbosstools-nightly-staging-composite-soa-tooling}</jbosstools-site>
-				<jbosstools-tests-site>${jbosstools-nightly-soa-tooling-tests}</jbosstools-tests-site>
-			</properties>
-		</profile>
-
 		<!-- Profiles to resolve deps on other JBT components against latest aggregate site
-		Recommanded for local builds, see https://issues.jboss.org/browse/JBIDE-11516 and
-		https://community.jboss.org/wiki/HowToBuildJBossToolsWithMaven3#Build_a_component_resolving_to_a_recent_aggregation_build_for_other_JBT_dependencies_Recommanded -->
+			Recommanded for local builds, see https://issues.jboss.org/browse/JBIDE-11516 and
+			https://community.jboss.org/wiki/HowToBuildJBossToolsWithMaven3#Build_a_component_resolving_to_a_recent_aggregation_build_for_other_JBT_dependencies_Recommanded -->
 		<profile>
 			<id>jbosstools-staging-aggregate</id>
 			<properties>
@@ -419,6 +410,23 @@
 				<jbosstools-tests-site>${jbosstools-nightly-tests}</jbosstools-tests-site>
 			</properties>
 		</profile>
+
+		<profile>
+			<id>jbosstools-nightly-staging-composite-soa-tooling</id>
+			<properties>
+				<!-- TODO: This SOA profile should be based on usage of a SOA-specific TP made of unified + JBT -->
+				<jbosstools-site>${jbosstools-nightly}</jbosstools-site>
+				<jbosstools-tests-site>${jbosstools-nightly-tests}</jbosstools-tests-site>
+			</properties>
+			<repositories>
+				<repository>
+					<id>jbosstools-nightly-staging-composite-soa-tooling-</id>
+					<url>${jbosstools-nightly-staging-composite-soa-tooling}</url>
+					<layout>p2</layout>
+				</repository>
+			</repositories>
+		</profile>
+
 
 		<!-- Contains all the Third Party Extras deps. This is the superset of
 			sites from which the JBDS Extras site is created. -->
