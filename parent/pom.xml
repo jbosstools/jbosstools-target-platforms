@@ -415,15 +415,15 @@
 			<id>jbosstools-nightly-staging-composite</id>
 			<properties>
 				<jbosstools-site>${jbosstools-nightly-staging-composite}</jbosstools-site>
-				<jbosstools-tests-site>${jbosstools-nightly-staging-composite}</jbosstools-tests-site>
+				<jbosstools-tests-site>${jbosstools-nightly-tests}</jbosstools-tests-site>
 			</properties>
 		</profile>
 		<profile>
 			<id>jbosstools-nightly-staging-composite-soa-tooling</id>
 			<properties>
 				<!-- TODO: This SOA profile should be based on usage of a SOA-specific TP made of unified + JBT -->
-				<jbosstools-site>${jbosstools-nightly-staging-composite}</jbosstools-site>
-				<jbosstools-tests-site>${jbosstools-nightly-staging-composite-soa-tooling}</jbosstools-tests-site>
+				<jbosstools-site>${jbosstools-nightly-staging-composite-soa-tooling}</jbosstools-site>
+				<jbosstools-tests-site>${jbosstools-nightly-soa-tooling-tests}</jbosstools-tests-site>
 			</properties>
 		</profile>
 
@@ -445,7 +445,7 @@
 			<id>local.composite</id>
 			<properties>
 				<jbosstools-site>${local.composite}</jbosstools-site>
-				<jbosstools-tests-site>${local.composite}</jbosstools-tests-site>
+				<jbosstools-tests-site>${jbosstools-nightly-tests}</jbosstools-tests-site>
 			</properties>
 		</profile>
 
