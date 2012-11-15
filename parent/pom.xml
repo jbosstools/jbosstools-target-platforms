@@ -48,36 +48,18 @@
 		<!-- JBOSS TOOLS DEPENDENCIES -->
 		<!-- ======================== -->
 
-		<!-- 1a. URL of latest JBT target platform site -->
-		<!-- DEPRECATED variable: latest minimum TP (now defined within the unified.target pom) -->
-		<jbosstools-target-site>http://download.jboss.org/jbosstools/updates/juno/SR0c/REPO/</jbosstools-target-site>
-		<jbosstools-target-site-maximum>http://download.jboss.org/jbosstools/updates/juno/SR1a/REPO/</jbosstools-target-site-maximum>
-
-		<!-- 1b. or use -Plocal.site -Dlocal.site=file:///${HOME}/jbosstools/jbosstools-build/target-platforms/jbosstools-JunoSR0c/local/target/REPO/ -->
-		<!-- TODO: don't forget to update JBDS .updatesite jobs when this value changes! -->
-		<!-- DEPRECATED: Use Maven mirrors in settings.xml instead -->
-		<local.site>file:///${user.home}/.m2/jbosstools-target-platform_4.0.juno.SR0c/</local.site>
-
-		<!-- 2a. URL of latest JBT nightly staging composite site (all the components
-			in once place) -->
+		<!-- URL of latest JBT nightly staging composite site (all the componentsin once place) -->
 		<!-- for trunk use _composite_/trunk; for 4.0_stable_branch, use _composite_/4.0.juno -->
 		<jbosstools-nightly-staging-composite>http://download.jboss.org/jbosstools/builds/staging/_composite_/core/trunk/</jbosstools-nightly-staging-composite>
 		<!-- this site is not enabled by default as SOA Tooling is a downstream project (sorta). -->
 		<jbosstools-nightly-staging-composite-soa-tooling>http://download.jboss.org/jbosstools/builds/staging/_composite_/soa-tooling/trunk/</jbosstools-nightly-staging-composite-soa-tooling>
 
-		<!-- 2b. or use -Plocal.composite -Dlocal.composite=file:///path/to/mirror/of/composite/staging/site/ -->
-		<!-- for trunk use _composite_/trunk; for 4.0_stable_branch, use _composite_/4.0.juno -->
-		<!-- DEPRECATED: Use Maven mirrors in settings.xml instead -->
-		<local.composite>file:///home/hudson/static_build_env/jbds/builds/staging/_composite_/core/trunk/</local.composite>
-		<local.composite-soa-tooling>file:///home/hudson/static_build_env/jbds/builds/staging/_composite_/soa-tooling/trunk/</local.composite-soa-tooling>
-
-		<!-- 3. URL of latest JBT SOA requirements composite mirror -->
+		<!-- URL of latest JBT SOA requirements composite mirror -->
 		<!-- TODO: JBIDE-11121 - remove this when we have a SOA TP site instead -->
 		<!-- TODO: don't forget to update this in ../aggregate/soa*/associate.properties too (2 files)! -->
 		<jboss-requirements-composite-soa-tooling-mirror>http://download.jboss.org/jbosstools/updates/juno/soa-tooling/SR0a/</jboss-requirements-composite-soa-tooling-mirror>
 
-		<!-- 4. published aggregate update sites go here, for consumption by QE
-			and downstream JBDS builds -->
+		<!-- published aggregate update sites go here, for consumption by QE and downstream JBDS builds -->
 		<jbosstools-nightly>http://download.jboss.org/jbosstools/updates/nightly/core/trunk/</jbosstools-nightly>
 		<jbosstools-nightly-tests>http://download.jboss.org/jbosstools/updates/nightly/coretests/trunk/</jbosstools-nightly-tests>
 		<!-- these sites are not enabled by default as SOA Tooling is a downstream project (sorta). -->
@@ -438,17 +420,6 @@
 			</properties>
 		</profile>
 
-		<!-- same contents as jbosstools-nightly-staging-composite, but locally
-			available (to improve network lag) -->
-		<!-- TODO: replace by maven mirroring -->
-		<profile>
-			<id>local.composite</id>
-			<properties>
-				<jbosstools-site>${local.composite}</jbosstools-site>
-				<jbosstools-tests-site>${jbosstools-nightly-tests}</jbosstools-tests-site>
-			</properties>
-		</profile>
-
 		<!-- Contains all the Third Party Extras deps. This is the superset of
 			sites from which the JBDS Extras site is created. -->
 		<profile>
@@ -510,7 +481,6 @@
 				<tpc.targetKind>multiple</tpc.targetKind>
 			</properties>
 		</profile>
-
 		<!-- Target platform file pointing at a single update site from which to
 			resolve. See unified.site if you want to resolve against a site w/o using
 			the unified.target file -->
@@ -529,55 +499,6 @@
 			</properties>
 		</profile>
 
-		<!-- Target platform files pointing at a single update site located
-			from Jenkins filesystem (mirrored unified.target for performances)
-			use jenkins.target for component builds, and
-			use jenkins.target.maximum for aggregate and installer builds
-		-->
-		<profile>
-			<id>jenkins.target</id>
-			<properties>
-				<tpc.targetKind>jenkins</tpc.targetKind>
-			</properties>
-		</profile>
-		<profile>
-			<id>jenkins.target.maximum</id>
-			<properties>
-				<tpc.group>${targetPlatformGroup-maximum}</tpc.group>
-				<tpc.targetKind>jenkins</tpc.targetKind>
-				<TARGET_PLATFORM_VERSION>${TARGET_PLATFORM_VERSION-maximum}</TARGET_PLATFORM_VERSION>
-			</properties>
-		</profile>
-
-		<!-- To use this profile, must have first created a local target file which points to a local repo. Generate it from
-			multiple.target using: cd ~/jbosstools/jbosstools-build/target-platforms/jbosstools-JunoSR0c; mvn install
-			See also the README in target-platforms/ folder for additional info. -->
-		<profile>
-			<id>local.target</id>
-			<properties>
-				<tpc.targetKind>local</tpc.targetKind>
-			</properties>
-		</profile>
-
-		<!-- if you have a local repo mirror of the unified.site, you can use this
-			profile with the -Dlocal.site=file:///path/to/repo to resolve dependencies
-			without needing to use a local.site file -->
-		<profile>
-			<id>local.site</id>
-			<repositories>
-				<repository>
-					<id>local.site</id>
-					<url>${local.site}</url>
-					<layout>p2</layout>
-					<snapshots>
-						<enabled>true</enabled>
-					</snapshots>
-					<releases>
-						<enabled>true</enabled>
-					</releases>
-				</repository>
-			</repositories>
-		</profile>
 
 		<profile>
 			<!-- JBIDE-12455 , necessary because of XulRunner doesn't support 64bits OSX -->
