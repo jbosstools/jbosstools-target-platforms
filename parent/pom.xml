@@ -68,7 +68,7 @@
 
 		<!-- 5. extra requirements (for 3rd party "Extras" site) -->
 		<!-- TODO: shouln't those move to another (JBDS?) pom -->
-		<jboss-requirements-composite-extras-mirror>http://download.jboss.org/jbosstools/updates/juno/extras/SR0c/</jboss-requirements-composite-extras-mirror>
+		<jboss-requirements-composite-extras-mirror>http://download.jboss.org/jbosstools/updates/juno/extras/SR1/</jboss-requirements-composite-extras-mirror>
 
 		<!-- ********************************************************************* -->
 		<!-- Use jbosstools-* profiles to select other values for those properties -->
