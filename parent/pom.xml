@@ -424,6 +424,12 @@
 					<url>${jbosstools-nightly-staging-composite-soa-tooling}</url>
 					<layout>p2</layout>
 				</repository>
+				<!-- TODO JBIDE-11121: this repo should be in an SOA TP -->
+				<repository>
+					<id>jboss-requirements-composite-soa-tooling-mirror</id>
+					<url>${jboss-requirements-composite-soa-tooling-mirror}</url>
+					<layout>p2</layout>
+				</repository>
 			</repositories>
 		</profile>
 
