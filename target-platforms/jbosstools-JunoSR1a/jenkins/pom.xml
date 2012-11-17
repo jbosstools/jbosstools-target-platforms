@@ -11,7 +11,7 @@
 	<artifactId>jenkins</artifactId>
 	<name>jbosstools-JunoSR1a Unified (Aggregate) Target Platform for Jenkins</name>
 	<packaging>pom</packaging>
-	<version>4.0.0.JunoSR1a-SNAPSHOT</version>
+	<version>4.1.0.JunoSR1a-SNAPSHOT</version>
 
 	<build>
 		<plugins>

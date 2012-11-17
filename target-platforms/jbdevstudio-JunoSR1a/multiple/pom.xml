@@ -11,7 +11,7 @@
 	<artifactId>multiple</artifactId>
 	<name>jbdevstudio-JunoSR1a Multiple (Composite) Target Platform</name>
 	<packaging>pom</packaging>
-	<version>6.0.0.JunoSR1a-SNAPSHOT</version>
+	<version>6.1.0.JunoSR1a-SNAPSHOT</version>
 
 	<build>
 		<plugins>

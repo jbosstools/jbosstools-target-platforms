@@ -11,7 +11,7 @@
 	<artifactId>multiple</artifactId>
 	<name>jbosstools-JunoSR0c Multiple (Composite) Target Platform</name>
 	<packaging>pom</packaging>
-	<version>4.0.0.JunoSR0c-SNAPSHOT</version>
+	<version>4.1.0.JunoSR0c-SNAPSHOT</version>
 
 	<build>
 		<plugins>
