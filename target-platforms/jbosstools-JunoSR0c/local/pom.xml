@@ -11,7 +11,7 @@
 	<artifactId>local</artifactId>
 	<name>jbosstools-JunoSR0c Local (Aggregate) Target Platform</name>
 	<packaging>pom</packaging>
-	<version>4.0.0.JunoSR0c-SNAPSHOT</version>
+	<version>4.1.0.JunoSR0c-SNAPSHOT</version>
 
 	<properties>
 		<repoDir>${project.build.directory}/REPO</repoDir>
