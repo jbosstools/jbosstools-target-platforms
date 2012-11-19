@@ -12,8 +12,6 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>multiple</module>
-		<module>local</module>
 		<module>unified</module>
-		<module>jenkins</module>
 	</modules>
 </project>
