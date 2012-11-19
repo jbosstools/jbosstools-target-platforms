@@ -77,6 +77,11 @@ if [[ -d ${repoDir} ]]; then
 	fi
 	du -sh ${repoDir} ${destinationPath}/${targetZipFile}
 
+	# JBDS-2380 massage content.jar to remove all external 3rd party references: target platform site should be self contained
+	wget https://raw.github.com/jbosstools/jbosstools-download.jboss.org/master/jbosstools/updates/requirements/remove.references.xml
+	ant -f remove.references.xml -DworkDir=`pwd` 
+	rm -f remove.references.xml
+
 	# copy/update into central place for reuse by local downstream build jobs
 	date; rsync -arzqc --protocol=28 --delete-after --delete-excluded --rsh=ssh ${exclude} ${include} ${destinationPath}/${targetZipFile}/
 
