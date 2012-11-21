@@ -3,15 +3,14 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>org.jboss.tools.target-platforms.jbosstools-JunoSR1a</groupId>
+		<groupId>org.jboss.tools.target-platforms.jbosstools</groupId>
 		<artifactId>all</artifactId>
-		<version>4.1.0.Alpha1-SNAPSHOT</version>
+		<version>4.2.1.a-SNAPSHOT</version>
 	</parent>
-	<groupId>org.jboss.tools.target-platforms.jbosstools-JunoSR1a</groupId>
+	<groupId>org.jboss.tools.target-platforms.jbosstools</groupId>
 	<artifactId>multiple</artifactId>
 	<name>jbosstools-JunoSR1a Multiple (Composite) Target Platform</name>
 	<packaging>pom</packaging>
-	<version>4.1.0.JunoSR1a-SNAPSHOT</version>
 
 	<build>
 		<plugins>
