@@ -83,10 +83,8 @@
 
 		<!-- to build with the minimum TP, use -Punified.target (on by default); to build with the maximum TP, use -Pmaximum -->
 		<!-- when building/testing components, use minumum TP -->
-		<targetPlatformGroup>jbosstools-JunoSR0c</targetPlatformGroup>
-		<!-- building/testing aggregate sites & installers, use maximum TP -->
-		<!-- TODO: don't forget to update this in ../aggregate/*/associate.properties too (5 files)! -->
-		<targetPlatformGroup-maximum>jbosstools-JunoSR1a</targetPlatformGroup-maximum>
+		<!-- This must be overriden when using other groups for TP, such as jbdevstudio -->
+		<targetPlatformGroup>jbosstools</targetPlatformGroup>
 
 		<!-- ***************************************************************** -->
 		<!-- Use *target* profiles to select other values for those properties -->
@@ -97,9 +95,9 @@
 		<tpc.targetKind>unified</tpc.targetKind>
 
 		<!-- In case no profile fits your requested TP version, directly override this property -->
-		<TARGET_PLATFORM_VERSION>${JBT_VERSION}.JunoSR0c-SNAPSHOT</TARGET_PLATFORM_VERSION>
+		<TARGET_PLATFORM_VERSION>4.2.0.c-SNAPSHOT</TARGET_PLATFORM_VERSION>
 		<!-- default value for the "maximum" profiles -->
-		<TARGET_PLATFORM_VERSION-maximum>${JBT_VERSION}.JunoSR1a-SNAPSHOT</TARGET_PLATFORM_VERSION-maximum>
+		<TARGET_PLATFORM_VERSION-maximum>4.2.1.a-SNAPSHOT</TARGET_PLATFORM_VERSION-maximum>
 
 	</properties>
 
@@ -508,7 +506,6 @@
 		<profile>
 			<id>maximum</id>
 			<properties>
-				<tpc.group>${targetPlatformGroup-maximum}</tpc.group>
 				<TARGET_PLATFORM_VERSION>${TARGET_PLATFORM_VERSION-maximum}</TARGET_PLATFORM_VERSION>
 			</properties>
 		</profile>

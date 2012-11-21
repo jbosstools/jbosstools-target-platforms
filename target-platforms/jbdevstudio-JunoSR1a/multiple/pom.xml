@@ -2,16 +2,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>org.jboss.tools.target-platforms.jbdevstudio-JunoSR1a</groupId>
+		<parent>
+		<groupId>org.jboss.tools.target-platforms.jbdevstudio</groupId>
 		<artifactId>all</artifactId>
-		<version>4.1.0.Alpha1-SNAPSHOT</version>
+		<version>4.2.1.a-SNAPSHOT</version>
 	</parent>
-	<groupId>org.jboss.tools.target-platforms.jbdevstudio-JunoSR1a</groupId>
+	<groupId>org.jboss.tools.target-platforms.jbdevstudio</groupId>
 	<artifactId>multiple</artifactId>
 	<name>jbdevstudio-JunoSR1a Multiple (Composite) Target Platform</name>
 	<packaging>pom</packaging>
-	<version>6.1.0.JunoSR1a-SNAPSHOT</version>
 
 	<build>
 		<plugins>

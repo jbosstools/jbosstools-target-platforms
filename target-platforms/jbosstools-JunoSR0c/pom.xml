@@ -7,8 +7,9 @@
 		<artifactId>target-platforms</artifactId>
 		<version>4.1.0.Alpha1-SNAPSHOT</version>
 	</parent>
-	<groupId>org.jboss.tools.target-platforms.jbosstools-JunoSR0c</groupId>
+	<groupId>org.jboss.tools.target-platforms.jbosstools</groupId>
 	<artifactId>all</artifactId>
+	<version>4.2.0.c-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<modules>
 		<module>multiple</module>
