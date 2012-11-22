@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jboss.tools</groupId>
 	<artifactId>parent</artifactId>
-	<version>4.0.0.CR1-SNAPSHOT</version>
+	<version>4.1.0.Alpha1-SNAPSHOT</version>
 	<name>JBoss Tools Parent</name>
 	<packaging>pom</packaging>
 
@@ -16,9 +16,9 @@
 		<tychoVersion>0.16.0</tychoVersion>
 		<tychoExtrasVersion>0.16.0</tychoExtrasVersion>
 		<scmBranch>trunk</scmBranch>
-		<JBT_VERSION>4.0.0</JBT_VERSION>
-		<JBDS_VERSION>6.0.0</JBDS_VERSION>
-		<BUILD_ALIAS>CR1</BUILD_ALIAS>
+		<JBT_VERSION>4.1.0</JBT_VERSION>
+		<JBDS_VERSION>6.1.0</JBDS_VERSION>
+		<BUILD_ALIAS>Alpha1</BUILD_ALIAS>
 		<targetEclipseVersion>4.2</targetEclipseVersion>
 		<memoryOptions1>-Xms512m -Xmx1024m -XX:PermSize=256m</memoryOptions1>
 		<memoryOptions2>-XX:MaxPermSize=256m</memoryOptions2>
