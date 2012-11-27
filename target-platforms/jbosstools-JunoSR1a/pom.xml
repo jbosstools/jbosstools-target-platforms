@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>org.jboss.tools.target-platforms.jbosstools</groupId>
 	<artifactId>all</artifactId>
-	<version>4.2.1.a-SNSAPSHOT</version>
+	<version>4.2.1.a-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<modules>
 		<module>multiple</module>
