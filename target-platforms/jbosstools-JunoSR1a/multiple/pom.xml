@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>org.jboss.tools.target-platforms.jbosstools</groupId>
 	<artifactId>multiple</artifactId>
-	<name>jbosstools-JunoSR1a Multiple (Composite) Target Platform</name>
+	<name>jbosstools Multiple (Composite) Target Platform 4.2.1.a</name>
 	<packaging>pom</packaging>
 
 	<build>
