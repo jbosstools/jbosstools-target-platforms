@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>org.jboss.tools.target-platforms.jbosstools</groupId>
 	<artifactId>unified</artifactId>
-	<name>jbosstools-JunoSR0c Unified (Aggregate) Target Platform</name>
+	<name>jbosstools Unified (Aggregate) Target Platform 4.2.0.c</name>
 	<packaging>pom</packaging>
 
 	<build>
