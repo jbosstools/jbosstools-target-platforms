@@ -33,29 +33,29 @@
 		<profile>
 			<id>jbdevstudio-maximum</id>
 			<modules>
-				<module>jbdevstudio-JunoSR1a/multiple</module>
-				<module>jbdevstudio-JunoSR1a/unified</module>
+				<module>jbdevstudio-4.2.1.a/multiple</module>
+				<module>jbdevstudio-4.2.1.a/unified</module>
 			</modules>
 		</profile>
 		<profile>
 			<id>jbosstools-maximum</id>
 			<modules>
-				<module>jbosstools-JunoSR1a/multiple</module>
-				<module>jbosstools-JunoSR1a/unified</module>
+				<module>jbosstools-4.2.1.a/multiple</module>
+				<module>jbosstools-4.2.1.a/unified</module>
 			</modules>
 		</profile>
 		<profile>
 			<id>jbdevstudio-minimum</id>
 			<modules>
-				<module>jbdevstudio-JunoSR0c/multiple</module>
-				<module>jbdevstudio-JunoSR0c/unified</module>
+				<module>jbdevstudio-4.2.0.c/multiple</module>
+				<module>jbdevstudio-4.2.0.c/unified</module>
 			</modules>
 		</profile>
 		<profile>
 			<id>jbosstools-minimum</id>
 			<modules>
-				<module>jbosstools-JunoSR0c/multiple</module>
-				<module>jbosstools-JunoSR0c/unified</module>
+				<module>jbosstools-4.2.0.c/multiple</module>
+				<module>jbosstools-4.2.0.c/unified</module>
 			</modules>
 		</profile>
 	</profiles>
