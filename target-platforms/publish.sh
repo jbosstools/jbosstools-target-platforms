@@ -35,7 +35,7 @@ while [ "$#" -gt 0 ]; do
 
 		'-jbdevstudio-4.3.0.M4')
 			# defaults for JBDS (trunk)
-			targetZipFile=jbds610-e430-wtp350.target
+			targetZipFile=jbds700-e430-wtp350.target
 			repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO_4.1.kepler.M4
 			destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform_4.1.kepler.M4
 			DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform_4.1.kepler.M4
