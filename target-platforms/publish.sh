@@ -23,22 +23,22 @@ while [ "$#" -gt 0 ]; do
 		'-include') include="$2"; shift 2;;
 		'-exclude') exclude="$2"; shift 2;;
 
-		'-jbosstools-4.2.1.a')
+		'-jbosstools-4.3.0.M4')
 			# defaults for JBT (trunk)
-			targetZipFile=e421-wtp341.target
-			repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO_4.0.juno.SR1a
-			destinationPath=/home/hudson/static_build_env/jbds/target-platform_4.0.juno.SR1a
-			DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/juno/SR1a
+			targetZipFile=e430-wtp350.target
+			repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO_4.1.kepler.M4
+			destinationPath=/home/hudson/static_build_env/jbds/target-platform_4.1.kepler.M4
+			DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/kepler/M4
 			include="*"
 			exclude="--exclude '.blobstore'" # exclude the .blobstore
 			shift 1;;
 
-		'-jbdevstudio-4.2.1.a')
+		'-jbdevstudio-4.3.0.M4')
 			# defaults for JBDS (trunk)
-			targetZipFile=jbds600-e421-wtp341.target
-			repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO_4.0.juno.SR1a
-			destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform_4.0.juno.SR1a
-			DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform_4.0.juno.SR1a
+			targetZipFile=jbds610-e430-wtp350.target
+			repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO_4.1.kepler.M4
+			destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform_4.1.kepler.M4
+			DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform_4.1.kepler.M4
 			include="*"
 			exclude="--exclude '.blobstore'" # exclude the .blobstore
 			shift 1;;

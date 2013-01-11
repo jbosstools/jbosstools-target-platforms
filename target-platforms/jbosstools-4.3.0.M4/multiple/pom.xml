@@ -7,7 +7,6 @@
 		<artifactId>all</artifactId>
 		<version>4.3.0.M4-SNAPSHOT</version>
 	</parent>
-	<groupId>org.jboss.tools.target-platforms.jbosstools</groupId>
 	<artifactId>multiple</artifactId>
 	<name>jbosstools Multiple (Composite) Target Platform based on Eclipse 4.3.0.M4</name>
 	<packaging>pom</packaging>

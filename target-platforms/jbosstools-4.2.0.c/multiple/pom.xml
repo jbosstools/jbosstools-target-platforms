@@ -7,7 +7,6 @@
 		<artifactId>all</artifactId>
 		<version>4.2.0.c-SNAPSHOT</version>
 	</parent>
-	<groupId>org.jboss.tools.target-platforms.jbosstools</groupId>
 	<artifactId>multiple</artifactId>
 	<name>jbosstools Multiple (Composite) Target Platform 4.2.0.c</name>
 	<packaging>pom</packaging>

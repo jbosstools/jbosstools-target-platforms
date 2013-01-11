@@ -2,14 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-		<parent>
-		<groupId>org.jboss.tools.target-platforms.jbdevstudio</groupId>
+	<parent>
+		<groupId>org.jboss.tools.target-platforms.jbosstools</groupId>
 		<artifactId>all</artifactId>
-		<version>4.2.1.a-SNAPSHOT</version>
+		<version>4.3.0.M4-SNAPSHOT</version>
 	</parent>
-	<groupId>org.jboss.tools.target-platforms.jbdevstudio</groupId>
 	<artifactId>unified</artifactId>
-	<name>jbdevstudio Unified (Aggregate) Target Platform 4.2.1.a</name>
+	<name>jbosstools Unified (Aggregate) Target Platform 4.2.1.a</name>
 	<packaging>pom</packaging>
 
 	<build>
@@ -31,7 +30,7 @@
 								<artifactId>multiple</artifactId>
 								<version>${project.version}</version>
 							</sourceTargetArtifact>
-							<targetRepositoryUrl>http://www.qa.jboss.com/binaries/RHDS/updates/jbds-target-platform_4.0.juno.SR1a/REPO/</targetRepositoryUrl>
+							<targetRepositoryUrl>http://download.jboss.org/jbosstools/updates/kepler/M4/REPO/</targetRepositoryUrl>
 						</configuration>
 					</execution>
 				</executions>

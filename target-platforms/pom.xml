@@ -33,15 +33,15 @@
 		<profile>
 			<id>jbdevstudio-maximum</id>
 			<modules>
-				<module>jbdevstudio-4.2.1.a/multiple</module>
-				<module>jbdevstudio-4.2.1.a/unified</module>
+				<module>jbdevstudio-4.3.0.M4/multiple</module>
+				<module>jbdevstudio-4.3.0.M4/unified</module>
 			</modules>
 		</profile>
 		<profile>
 			<id>jbosstools-maximum</id>
 			<modules>
-				<module>jbosstools-4.2.1.a/multiple</module>
-				<module>jbosstools-4.2.1.a/unified</module>
+				<module>jbosstools-4.3.0.M4/multiple</module>
+				<module>jbosstools-4.3.0.M4/unified</module>
 			</modules>
 		</profile>
 		<profile>
