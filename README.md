@@ -2,11 +2,11 @@
 
 ## Summary
 
-JBoss Tools Build project provides the JBoss Tools parent and Eclipse target platforrms used by JBoss Tools projects.
+JBoss Tools Target Platforms project provides the JBoss Tools Eclipse target platforrms used by JBoss Tools projects.
 
 ## Install
 
-_JBoss Tools Build_ is part of [JBoss Tools](http://jboss.org/tools) from
+_JBoss Tools Target Platforms_ is part of [JBoss Tools](http://jboss.org/tools) from
 which it can be [downloaded and installed](http://jboss.org/tools/download)
 on its own or together with the full JBoss Tools distribution.
 
@@ -15,9 +15,9 @@ on its own or together with the full JBoss Tools distribution.
 The easiest way to get started with the code is to [create your own fork](http://help.github.com/forking/), 
 and then clone your fork:
 
-    $ git clone git@github.com:<you>/jbosstools-build.git
+    $ git clone git@github.com:<you>/jbosstools-target-platforms.git
     $ cd jbosstools-build
-    $ git remote add upstream git://github.com/jbosstools/jbosstools-build.git
+    $ git remote add upstream git://github.com/jbosstools/jbosstools-target-platforms.git
 	
 At any time, you can pull changes from the upstream and merge them onto your master:
 
@@ -46,7 +46,7 @@ But *do not* push changes without having the new and existing unit tests pass!
  
 ## Contribute fixes and features
 
-_JBoss Tools Build_ is open source, and we welcome anybody that wants to
+_JBoss Tools Target Platforms_ is open source, and we welcome anybody that wants to
 participate and contribute!
 
 If you want to fix a bug or make any changes, please log an issue in

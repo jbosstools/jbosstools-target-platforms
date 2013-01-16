@@ -6,13 +6,10 @@
 		<version>0.0.1-SNAPSHOT</version> </parent> -->
 	<groupId>org.jboss.tools</groupId>
 	<artifactId>target-platforms</artifactId>
-	<version>4.1.0.Alpha1-SNAPSHOT</version>
-	<name>JBoss Tools + JBDS Target Platform Parent</name>
+	<version>4.2.0.c-SNAPSHOT</version>
+	<name>JBoss Tools + JBDS Target Platformi</name>
 	<packaging>pom</packaging>
 
-	<!-- to update all 4 TPs below, use something like this:
-		for p in jbdevstudio-maximum jbosstools-maximum jbdevstudio-minimum jbosstools-minimum; do mvn install -P${p}; done
-	-->
 	<properties>
 		<tychoVersion>0.16.0</tychoVersion>
 		<tychoExtrasVersion>0.16.0</tychoExtrasVersion>
@@ -29,36 +26,10 @@
 		</plugins>
 	</build>
 
-	<profiles>
-		<profile>
-			<id>jbdevstudio-maximum</id>
-			<modules>
-				<module>jbdevstudio-4.3.0.M4/multiple</module>
-				<module>jbdevstudio-4.3.0.M4/unified</module>
-			</modules>
-		</profile>
-		<profile>
-			<id>jbosstools-maximum</id>
-			<modules>
-				<module>jbosstools-4.3.0.M4/multiple</module>
-				<module>jbosstools-4.3.0.M4/unified</module>
-			</modules>
-		</profile>
-		<profile>
-			<id>jbdevstudio-minimum</id>
-			<modules>
-				<module>jbdevstudio-4.2.0.c/multiple</module>
-				<module>jbdevstudio-4.2.0.c/unified</module>
-			</modules>
-		</profile>
-		<profile>
-			<id>jbosstools-minimum</id>
-			<modules>
-				<module>jbosstools-4.2.0.c/multiple</module>
-				<module>jbosstools-4.2.0.c/unified</module>
-			</modules>
-		</profile>
-	</profiles>
+	<modules>
+		<module>jbdevstudio</module>
+		<module>jbosstools</module>
+	</modules>
 
 	<distributionManagement>
 		<repository>
