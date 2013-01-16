@@ -52,6 +52,12 @@
 			<unit id="org.hamcrest.integration" version="1.1.0.v20090501071000"/>
 			<unit id="com.google.guava" version="10.0.1.v201203051515"/>
 
+			<!-- Mylyn/Bugzilla -->
+			<unit id="org.apache.xmlrpc" version="3.0.0.v20100427-1100"/>
+			<unit id="org.apache.ws.commons.util" version="1.0.1.v20100518-1140"/>
+			<unit id="org.apache.httpcomponents.httpclient" version="4.1.2.v201203221030"/>
+			<unit id="org.apache.httpcomponents.httpcore" version="4.1.4.v201203221030"/>
+
 			<!-- Orbit bundles needed for Eclipse Checkstyle (eclipse-cs) -->
 			<unit id="org.apache.lucene.highlighter" version="3.5.0.v20120319-2345"/>
 			<unit id="org.apache.lucene.memory" version="3.5.0.v20120319-2345"/>
@@ -142,21 +148,12 @@
 			<!-- <unit id="org.eclipse.platform.feature.group" version="3.8.0.v20120607-071945-9gF7jI7nG5qByXMVdkhRMWBQlF4PnDCLybDCPQ"/> -->
 			<unit id="org.eclipse.platform.feature.group" version="4.3.0.v20121210-194028-9PF7VHLnG0BBkXvb-5n61JdBeLn2Lmpr5BVxLP"/>
 			<unit id="org.eclipse.platform.ide" version="4.3.0.I20121214-0730"/>
-			<unit id="org.eclipse.platform.sdk" version="4.3.0.I20121214-0730"/>
-			<unit id="org.eclipse.sdk.feature.group" version="4.3.0.v20120906-193403-7V7p-DQ72z-z-8U8IIz0Ennw4DFBv216MQ_3m27IU_Kz0"/>
-			<unit id="org.eclipse.sdk.ide" version="4.3.0.I20121214-0730"/>
 			<unit id="org.eclipse.cvs.feature.group" version="1.4.0.v20120730-104118-7B79FKsAkF7BF9NBI4HCET85"/>
 			<unit id="org.eclipse.jdt.feature.group" version="3.9.0.v20121210-132935-8-8tFyYFNOfwKDedebWWejRS5834"/>
 			<unit id="org.eclipse.equinox.server.core.feature.group" version="1.2.0.v20120522-1841-7K7WFSgF7RZHQZL1VY8SvhjTx"/>
 			<unit id="org.eclipse.equinox.executable.feature.group" version="3.6.0.v20121210-201226-7I7HFhJFEx2Xo2nn_JGp51Pb8"/>
-			<unit id="org.eclipse.equinox.compendium.sdk.feature.group" version="3.8.0.v20120522-1841-7X7kGZ-FPGjtJk1XPz-SUR8TMP"/>
-			<unit id="org.eclipse.equinox.core.sdk.feature.group" version="3.8.0.v20121023-201113-85FAoGhVFoYTldK4i8V3hm_YQm"/>
 			<unit id="org.eclipse.equinox.p2.discovery.feature.feature.group" version="1.0.100.v20120727-170929-4-Bh9oB58A5N9L28PCQ"/>
 			<unit id="org.eclipse.equinox.p2.user.ui.feature.group" version="2.2.0.v20120727-170929-66DF9JXVirEz-SogAbq5ZppxNhez"/>
-			<unit id="org.eclipse.equinox.p2.sdk.feature.group" version="3.8.0.v20120524-0542-9N8LI0sGMMn84ko_8woyZDwRSQDR"/>
-			<unit id="org.eclipse.equinox.serverside.sdk.feature.group" version="3.8.0.v20120522-1841-9Q7dFw6FYGisDwLz-mMoWRcRc53x"/>
-			<unit id="org.eclipse.equinox.sdk.feature.group" version="3.8.0.v20120912-125810-7M7iA78fz0c6_Mey1mItD4Lmfdx9"/>
-			<unit id="org.eclipse.equinox.weaving.sdk.feature.group" version="1.0.200.v20120522-1841-79-FKsEVVFNVFsVk7O6G6"/>
 			<unit id="org.eclipse.equinox.server.jetty.feature.group" version="1.1.0.v20120522-1841-8077D_F8NcJTbM2Z_488HK5C"/>
 			<unit id="org.eclipse.equinox.server.p2.feature.group" version="1.2.0.v20121207-191313-7z7cFncFTy21YxJfn5_kPfPGs"/>
 			<unit id="org.eclipse.equinox.server.servletbridge.feature.group" version="1.0.101.v20120522-1841-42F9w9oB58B5S9B299JU53"/>
@@ -246,6 +243,8 @@
 			<unit id="org.eclipse.mylyn.commons.repositories.http.feature.group" version="1.1.0.I20121215-2122"/>
 			<unit id="org.eclipse.mylyn.context_feature.feature.group" version="3.9.0.I20121215-2122"/>
 			<unit id="org.eclipse.mylyn.bugzilla_feature.feature.group" version="3.9.0.I20121215-2122"/>
+			<unit id='org.eclipse.mylyn.commons.xmlrpc' version='3.9.0.I20121215-2122'/>
+			<unit id="org.eclipse.mylyn.commons.soap" version='3.9.0.I20121215-2122'/>
 			<unit id="org.eclipse.mylyn.discovery.feature.group" version="3.9.0.I20121215-2122"/>
 			<unit id="org.eclipse.mylyn.java_feature.feature.group" version="3.9.0.I20121215-2122"/>
 			<unit id="org.eclipse.mylyn.monitor.feature.group" version="3.9.0.I20121215-2122"/>
@@ -255,7 +254,6 @@
 			<unit id="org.eclipse.mylyn.cvs.feature.group" version="1.1.0.I20121215-2122"/>
 			<unit id="org.eclipse.mylyn.git.feature.group" version="1.1.0.I20121215-2122"/>
 			<unit id="org.eclipse.mylyn.versions.feature.group" version="1.1.0.I20121215-2122"/>
-			<unit id="org.eclipse.mylyn.commons.sdk.feature.group" version="3.9.0.I20121215-2122"/>
 			<unit id="org.eclipse.mylyn.tasks.ui" version="3.9.0.I20121215-2122"/>
 			<unit id="org.eclipse.mylyn.tasks.core" version="3.9.0.I20121215-2122"/>
 			<unit id="org.eclipse.mylyn.tasks.bugs" version="3.9.0.I20121215-2122"/>
@@ -333,7 +331,6 @@
 			<unit id="org.eclipse.jpt.jaxb.feature.feature.group" version="1.3.0.v201210121950-57A-AkF7BFAM7P7EQM"/>
 
 			<unit id="org.eclipse.jsf.feature.feature.group" version="3.5.0.v201211081916-7E7U-F9JgLWgWWMhXsXM"/>
-			<unit id="org.eclipse.jsf.feature.source.feature.group" version="3.5.0.v201211081916-7E7U-F9JgLWgWWMhXsXM"/>
 			<unit id="org.eclipse.jst.common.fproj.enablement.jdt.feature.group" version="3.4.0.v201108231500-377DG8s73543J5H6D66"/>
 			<unit id="org.eclipse.jst.enterprise_core.feature.feature.group" version="3.4.1.v201210040825-52FUGAkF7BA9J8K9VAB"/>
 			<unit id="org.eclipse.jst.enterprise_ui.feature.feature.group" version="3.4.1.v201210040825-7b7JIM2FSK2WNbQQ9Br68CV-TyUq"/>
