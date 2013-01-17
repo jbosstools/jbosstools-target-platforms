@@ -8,7 +8,7 @@
 		<version>4.2.1.a-SNAPSHOT</version>
 	</parent>
 	<artifactId>multiple</artifactId>
-	<name>jbdevstudio Multiple (Composite) Target Platform 4.2.0.c</name>
+	<name>jbdevstudio Multiple (Composite) Target Platform 4.2.1.a</name>
 	<packaging>pom</packaging>
 
 	<build>
@@ -85,5 +85,5 @@
 			</build>
 		</profile>
 	</profiles>
-	
+
 </project>
