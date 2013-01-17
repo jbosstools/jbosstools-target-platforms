@@ -8,7 +8,7 @@
 include="*"
 exclude="--exclude '.blobstore'" # exclude the .blobstore
 
-REPO_LABEL=SR1a
+REPO_LABEL=SR1b
 
 while [ "$#" -gt 0 ]; do
 	case $1 in

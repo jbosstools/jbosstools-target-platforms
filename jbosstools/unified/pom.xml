@@ -5,10 +5,10 @@
 	<parent>
 		<groupId>org.jboss.tools.target-platforms.jbosstools</groupId>
 		<artifactId>all</artifactId>
-		<version>4.2.1.a-SNAPSHOT</version>
+		<version>4.2.1.b-SNAPSHOT</version>
 	</parent>
 	<artifactId>unified</artifactId>
-	<name>jbosstools Unified (Aggregate) Target Platform 4.2.1.a</name>
+	<name>jbosstools Unified (Aggregate) Target Platform 4.2.1.b</name>
 	<packaging>pom</packaging>
 
 	<build>
@@ -30,7 +30,7 @@
 								<artifactId>multiple</artifactId>
 								<version>${project.version}</version>
 							</sourceTargetArtifact>
-							<targetRepositoryUrl>http://download.jboss.org/jbosstools/updates/juno/SR1a/REPO/</targetRepositoryUrl>
+							<targetRepositoryUrl>http://download.jboss.org/jbosstools/updates/juno/SR1b/REPO/</targetRepositoryUrl>
 						</configuration>
 					</execution>
 				</executions>

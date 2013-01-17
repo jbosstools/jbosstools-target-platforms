@@ -59,6 +59,12 @@
 			<unit id="org.apache.lucene.snowball" version="2.9.1.v20100421-0704"/>
 			<unit id="org.apache.lucene.spellchecker" version="3.5.0.v20120319-2345"/>
 
+			<!-- Mylyn/Bugzilla -->
+			<unit id="org.apache.xmlrpc" version="3.0.0.v20100427-1100"/>
+			<unit id="org.apache.ws.commons.util" version="1.0.1.v20100518-1140"/>
+			<unit id="org.apache.httpcomponents.httpclient" version="4.1.2.v201203221030"/>
+			<unit id="org.apache.httpcomponents.httpcore" version="4.1.4.v201203221030"/>
+
 			<unit id="org.apache.axis" version="1.4.0.v201005080400"/>
 			<unit id="org.apache.commons.io" version="2.0.1.v201105210651"/>
 			<unit id="org.apache.commons.httpclient" version="3.1.0.v201012070820"/>
@@ -75,8 +81,9 @@
 			<repository location="http://download.jboss.org/jbosstools/updates/requirements/m2eclipse/20120926-1337/"/>
 
 			<!-- m2e, m2e-wtp, m2e-apt, m2e-jdt, m2e-wro4j, m2e-buildhelper + deps -->
-			<unit id="org.eclipse.m2e.sdk.feature.feature.group" version="1.2.0.20120903-1050"/>
 			<unit id="org.eclipse.m2e.feature.feature.group" version="1.2.0.20120903-1050"/>
+			<!-- Maven tests require a bundle from m2e SDK -->
+			<unit id="org.eclipse.m2e.tests.common" version="1.2.0.20120903-1050"/>
 			<unit id="org.eclipse.m2e.wtp.feature.feature.group" version="0.16.0.20120914-0945"/>
 			<unit id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version="0.15.0.201207090125-signed-201209140800"/>
 			<unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.0.1.201209200721"/>
@@ -136,21 +143,12 @@
 			<!-- <unit id="org.eclipse.platform.feature.group" version="3.8.0.v20120607-071945-9gF7jI7nG5qByXMVdkhRMWBQlF4PnDCLybDCPQ"/> -->
 			<unit id="org.eclipse.platform.feature.group" version="4.2.1.v20120814-120134-9JF7BHVGFyMveli1uX6aTH0q-eAap6PAgOP5mO"/>
 			<unit id="org.eclipse.platform.ide" version="4.2.1.M20120914-1800"/>
-			<unit id="org.eclipse.platform.sdk" version="4.2.1.M20120914-1800"/>
-			<unit id="org.eclipse.sdk.feature.group" version="4.2.1.v20120814-120134-7T7oDODQ-3Heq-afCDlg7T4xJuvxaC2ohMfCfB5451Rz0"/>
-			<unit id="org.eclipse.sdk.ide" version="4.2.1.M20120914-1800"/>
 			<unit id="org.eclipse.cvs.feature.group" version="1.3.200.v20120525-1249-7B79FJJAkF7BF7VEH5IAJT"/>
 			<unit id="org.eclipse.jdt.feature.group" version="3.8.1.v20120814-104540-8-8nFqpFNOfwKDRVz-tXOcL5d_83"/>
 			<unit id="org.eclipse.equinox.server.core.feature.group" version="1.2.0.v20120522-1841-7K7VFO1F7RZHQZI4_c8StnvFB"/>
 			<unit id="org.eclipse.equinox.executable.feature.group" version="3.6.0.v20120522-1813-7P7OG2BFLWUl7UmbVUO9iCm"/>
-			<unit id="org.eclipse.equinox.compendium.sdk.feature.group" version="3.8.0.v20120522-1841-7X7eGb7FPGjtJjv1kjS_NdG"/>
-			<unit id="org.eclipse.equinox.core.sdk.feature.group" version="3.8.0.v20120522-1813-85FAcGbFFoYTldJrUNk3a52oHJ"/>
 			<unit id="org.eclipse.equinox.p2.discovery.feature.feature.group" version="1.0.100.v20120524-0542-4-Bh9oB58A5N9L28PCQ"/>
 			<unit id="org.eclipse.equinox.p2.user.ui.feature.group" version="2.2.0.v20120524-0542-62DG9JXTlSiz-UbcP0w0KGl9CKNP"/>
-			<unit id="org.eclipse.equinox.p2.sdk.feature.group" version="3.8.0.v20120524-0542-9N89H_oGMMn84Qsz0iIohu4jLeQD"/>
-			<unit id="org.eclipse.equinox.serverside.sdk.feature.group" version="3.8.0.v20120522-1841-9Q7dFszFYGis9uZsz0QodZP4fL9p"/>
-			<unit id="org.eclipse.equinox.sdk.feature.group" version="3.8.0.v20120522-1841-7M7fA78g5_y-g-jtHxcd5k8q8lFR"/>
-			<unit id="org.eclipse.equinox.weaving.sdk.feature.group" version="1.0.200.v20120522-1841-79-FKsEVVFNVFsVk7O6G6"/>
 			<unit id="org.eclipse.equinox.server.jetty.feature.group" version="1.1.0.v20120522-1841-8077C0F8NcJTbL1ab47MJ5"/>
 			<unit id="org.eclipse.equinox.server.p2.feature.group" version="1.2.0.v20120522-1841-7z7_FfoFTy21Yu4Ykq_engx38"/>
 			<unit id="org.eclipse.equinox.server.servletbridge.feature.group" version="1.0.101.v20120522-1841-42F9w9oB58B5KBB2ADHO"/>
@@ -240,6 +238,8 @@
 			<unit id="org.eclipse.mylyn.commons.repositories.http.feature.group" version="1.0.2.v20120916-1200"/>
 			<unit id="org.eclipse.mylyn.context_feature.feature.group" version="3.8.2.v20120916-1200"/>
 			<unit id="org.eclipse.mylyn.bugzilla_feature.feature.group" version="3.8.2.v20120916-1200"/>
+			<unid id="org.eclipse.mylyn.commons.xmlrpc" version="3.8.2.v20120916-1200"/>
+			<unid id="org.eclipse.mylyn.commons.soap" version="3.8.2.v20120916-1200"/>
 			<unit id="org.eclipse.mylyn.discovery.feature.group" version="3.8.2.v20120916-1200"/>
 			<unit id="org.eclipse.mylyn.java_feature.feature.group" version="3.8.2.v20120916-1200"/>
 			<unit id="org.eclipse.mylyn.monitor.feature.group" version="3.8.2.v20120916-1200"/>
@@ -249,7 +249,6 @@
 			<unit id="org.eclipse.mylyn.cvs.feature.group" version="1.0.2.v20120916-1200"/>
 			<unit id="org.eclipse.mylyn.git.feature.group" version="1.0.2.v20120916-1200"/>
 			<unit id="org.eclipse.mylyn.versions.feature.group" version="1.0.2.v20120916-1200"/>
-			<unit id="org.eclipse.mylyn.commons.sdk.feature.group" version="3.8.2.v20120916-1200"/>
 			<unit id="org.eclipse.mylyn.tasks.ui" version="3.8.2.v20120916-1200"/>
 			<unit id="org.eclipse.mylyn.tasks.core" version="3.8.2.v20120916-1200"/>
 			<unit id="org.eclipse.mylyn.tasks.bugs" version="3.8.2.v20120916-1200"/>
@@ -333,7 +332,6 @@
 			<unit id="org.eclipse.jpt.jaxb.feature.feature.group" version="1.2.1.v201208222210-56ABAkF7BF7cFFFFB7"/>
 
 			<unit id="org.eclipse.jsf.feature.feature.group" version="3.4.1.v201208241503-7E7JFBjF9JgLWgMhh4X6Ps"/>
-			<unit id="org.eclipse.jsf.feature.source.feature.group" version="3.4.1.v201208241503-7E7JFBjF9JgLWgMhh4X6Ps"/>
 			<unit id="org.eclipse.jst.common.fproj.enablement.jdt.feature.group" version="3.4.0.v201108231500-377DG8s73543J5H6D66"/>
 			<unit id="org.eclipse.jst.enterprise_core.feature.feature.group" version="3.4.0.v201108110300-52FShAkF7BA8O8J9OC8"/>
 			<unit id="org.eclipse.jst.enterprise_ui.feature.feature.group" version="3.4.0.v201107072300-7b7JIM0FSK2WM1PS9Ar7AKUz0TrWn"/>
@@ -391,7 +389,6 @@
 		<!-- Only in JBT: BIRT -->
 		<!-- <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
 			<repository location="http://download.jboss.org/jbosstools/updates/requirements/birt/4.2.1.v20120912/"/>
-			<unit id="org.eclipse.birt.osgi.runtime.sdk.feature.group" version="4.2.1.v20120820-793187qD_D0RBQLXOVH-wQkmJ1cI"/>
 			<unit id="org.eclipse.birt.feature.group" version="4.2.1.v20120820-ChBG8UGYgRQlJ7y9Lz-wS7nDcRL4"/>
 			<unit id="org.eclipse.birt.integration.wtp.feature.group" version="4.2.1.v20120912-1721-5107w31231A2302832"/>
 			<unit id="org.eclipse.birt.chart.feature.group" version="4.2.1.v20120820-828i7EFQCnvK_6wFGvqLR"/>
