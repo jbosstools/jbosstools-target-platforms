@@ -8,7 +8,8 @@
 include="*"
 exclude="--exclude '.blobstore'" # exclude the .blobstore
 
-REPO_LABEL=SR1a
+ECLIPSE_RELEASE_TRAIN=kepler
+REPO_LABEL=M4
 
 while [ "$#" -gt 0 ]; do
 	case $1 in
@@ -24,9 +25,9 @@ while [ "$#" -gt 0 ]; do
 		'-jbosstools')
 			# defaults for JBT (trunk)
 			targetZipFile=e421-wtp341.target
-			repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO_4.0.juno.${REPO_LABEL}
-			destinationPath=/home/hudson/static_build_env/jbds/target-platform_4.0.juno.${REPO_LABEL}
-			DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/juno/${REPO_LABEL}
+			repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO_4.0.${ECLIPSE_RELEASE_TRAIN}.${REPO_LABEL}
+			destinationPath=/home/hudson/static_build_env/jbds/target-platform_4.0.${ECLIPSE_RELEASE_TRAIN}.${REPO_LABEL}
+			DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/${ECLIPSE_RELEASE_TRAIN}/${REPO_LABEL}
 			include="*"
 			exclude="--exclude '.blobstore'" # exclude the .blobstore
 			shift 1;;
@@ -34,9 +35,9 @@ while [ "$#" -gt 0 ]; do
 		'-jbdevstudio')
 			# defaults for JBDS (trunk)
 			targetZipFile=jbds600-e421-wtp341.target
-			repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO_4.0.juno.${REPO_LABEL}
-			destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform_4.0.juno.${REPO_LABEL}
-			DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform_4.0.juno.${REPO_LABEL}
+			repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO_4.0.${ECLIPSE_RELEASE_TRAIN}.${REPO_LABEL}
+			destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform_4.0.${ECLIPSE_RELEASE_TRAIN}.${REPO_LABEL}
+			DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform_4.0.${ECLIPSE_RELEASE_TRAIN}.${REPO_LABEL}
 			include="*"
 			exclude="--exclude '.blobstore'" # exclude the .blobstore
 			shift 1;;

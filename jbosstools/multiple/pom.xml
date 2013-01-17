@@ -5,10 +5,10 @@
 	<parent>
 		<groupId>org.jboss.tools.target-platforms.jbosstools</groupId>
 		<artifactId>all</artifactId>
-		<version>4.2.1.a-SNAPSHOT</version>
+		<version>4.3.0.M4-SNAPSHOT</version>
 	</parent>
 	<artifactId>multiple</artifactId>
-	<name>jbosstools Multiple (Composite) Target Platform 4.2.0.c</name>
+	<name>jbosstools Multiple (Composite) Target Platform 4.3.0.M4</name>
 	<packaging>pom</packaging>
 
 	<build>
@@ -58,7 +58,7 @@
 			</plugin>
 		</plugins>
 	</build>
-	
+
 	<profiles>
 		<profile>
 			<id>multiple2repo</id>
