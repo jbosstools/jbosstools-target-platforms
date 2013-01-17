@@ -22,9 +22,9 @@ while [ "$#" -gt 0 ]; do
 		'-jbosstools')
 			# defaults for JBT (trunk)
 			targetZipFile=e420-wtp340.target
-			repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO_4.0.juno.SR0c
-			destinationPath=/home/hudson/static_build_env/jbds/target-platform_4.0.juno.SR0c
-			DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/juno/SR0c
+			repoDir=/home/hudson/static_build_env/jbds/tools/sources/REPO_4.0.juno.SR0d
+			destinationPath=/home/hudson/static_build_env/jbds/target-platform_4.0.juno.SR0d
+			DESTINATION=tools@filemgmt.jboss.org:/downloads_htdocs/tools/updates/juno/SR0d
 			include="*"
 			exclude="--exclude '.blobstore'" # exclude the .blobstore
 			shift 1;;
@@ -32,9 +32,9 @@ while [ "$#" -gt 0 ]; do
 		'-jbdevstudio')
 			# defaults for JBDS (trunk)
 			targetZipFile=jbds600-e420-wtp340.target
-			repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO_4.0.juno.SR0c
-			destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform_4.0.juno.SR0c
-			DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform_4.0.juno.SR0c
+			repoDir=/home/hudson/static_build_env/jbds/tools/sources/JBDS-REPO_4.0.juno.SR0d
+			destinationPath=/home/hudson/static_build_env/jbds/jbds-target-platform_4.0.juno.SR0d
+			DESTINATION=/qa/services/http/binaries/RHDS/updates/jbds-target-platform_4.0.juno.SR0d
 			include="*"
 			exclude="--exclude '.blobstore'" # exclude the .blobstore
 			shift 1;;
