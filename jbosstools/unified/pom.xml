@@ -5,10 +5,10 @@
 	<parent>
 		<groupId>org.jboss.tools.target-platforms.jbosstools</groupId>
 		<artifactId>all</artifactId>
-		<version>4.3.0.M4-SNAPSHOT</version>
+		<version>4.30.0.Alpha1-SNAPSHOT</version>
 	</parent>
 	<artifactId>unified</artifactId>
-	<name>jbosstools Unified (Aggregate) Target Platform 4.3.0.M4</name>
+	<name>jbosstools Unified (Aggregate) Target Platform 4.30.0.Alpha1</name>
 	<packaging>pom</packaging>
 
 	<build>
@@ -30,7 +30,7 @@
 								<artifactId>multiple</artifactId>
 								<version>${project.version}</version>
 							</sourceTargetArtifact>
-							<targetRepositoryUrl>http://download.jboss.org/jbosstools/updates/kepler/M4/REPO/</targetRepositoryUrl>
+							<targetRepositoryUrl>http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/4.30.0.Alpha1/REPO/</targetRepositoryUrl>
 						</configuration>
 					</execution>
 				</executions>

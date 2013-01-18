@@ -5,10 +5,10 @@
 	<parent>
 		<groupId>org.jboss.tools.target-platforms.jbdevstudio</groupId>
 		<artifactId>all</artifactId>
-		<version>4.3.0.M4-SNAPSHOT</version>
+		<version>4.30.0.Alpha1-SNAPSHOT</version>
 	</parent>
 	<artifactId>unified</artifactId>
-	<name>jbdevstudio Unified (Aggregate) Target Platform 4.3.0.M4</name>
+	<name>jbdevstudio Unified (Aggregate) Target Platform 4.30.0.Alpha1</name>
 	<packaging>pom</packaging>
 
 	<build>
@@ -30,7 +30,7 @@
 								<artifactId>multiple</artifactId>
 								<version>${project.version}</version>
 							</sourceTargetArtifact>
-							<targetRepositoryUrl>http://www.qa.jboss.com/binaries/RHDS/updates/jbds-target-platform_4.0.kepler.M4/REPO/</targetRepositoryUrl>
+							<targetRepositoryUrl>http://www.qa.jboss.com/binaries/RHDS/targetplatforms/jbdevstudiotarget/4.30.0.Alpha1/REPO/</targetRepositoryUrl>
 						</configuration>
 					</execution>
 				</executions>
