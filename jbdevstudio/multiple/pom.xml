@@ -5,10 +5,10 @@
 	<parent>
 		<groupId>org.jboss.tools.target-platforms.jbdevstudio</groupId>
 		<artifactId>all</artifactId>
-		<version>4.2.1.b-SNAPSHOT</version>
+		<version>4.21.3.Final</version>
 	</parent>
 	<artifactId>multiple</artifactId>
-	<name>jbdevstudio Multiple (Composite) Target Platform 4.2.1.b</name>
+	<name>jbdevstudio Multiple (Composite) Target Platform 4.21.3.Final</name>
 	<packaging>pom</packaging>
 
 	<build>
