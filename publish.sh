@@ -23,7 +23,7 @@ if [[ ${JOB_NAME} ]] && [[ ${JOB_NAME##*-target-platform-*} != ${JOB_NAME} ]]; t
 	version=${JOB_NAME##*-target-platform-}
 fi
 if [[ ${JOB_NAME} ]] && [[ ${JOB_NAME##*-targetplatform-*} != ${JOB_NAME} ]]; then
-	version=${JOB_NAME##*-targetplatform-}
+	version=${JOB_NAME##*targetplatform-}
 fi
 
 while [ "$#" -gt 0 ]; do
