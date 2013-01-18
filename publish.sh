@@ -22,7 +22,7 @@ version="";
 if [[ ${JOB_NAME} ]] && [[ ${JOB_NAME##*-target-platform-*} != ${JOB_NAME} ]]; then
 	version=${JOB_NAME##*-target-platform-}
 fi
-if [[ ${JOB_NAME} ]] && [[ ${JOB_NAME##*-targetplatform-*} != ${JOB_NAME} ]]; then
+if [[ ${JOB_NAME} ]] && [[ ${JOB_NAME##*targetplatform-*} != ${JOB_NAME} ]]; then
 	version=${JOB_NAME##*targetplatform-}
 fi
 
