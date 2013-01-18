@@ -5,10 +5,10 @@
 	<parent>
 		<groupId>org.jboss.tools.target-platforms.jbdevstudio</groupId>
 		<artifactId>all</artifactId>
-		<version>4.2.0.d-SNAPSHOT</version>
+		<version>4.20.5.Final</version>
 	</parent>
 	<artifactId>unified</artifactId>
-	<name>jbdevstudio Unified (Aggregate) Target Platform 4.2.0.d</name>
+	<name>jbdevstudio Unified (Aggregate) Target Platform 4.20.5.Final</name>
 	<packaging>pom</packaging>
 
 	<build>
@@ -30,7 +30,7 @@
 								<artifactId>multiple</artifactId>
 								<version>${project.version}</version>
 							</sourceTargetArtifact>
-							<targetRepositoryUrl>http://www.qa.jboss.com/binaries/RHDS/updates/jbds-target-platform_4.0.juno.SR0d/REPO/</targetRepositoryUrl>
+							<targetRepositoryUrl>http://www.qa.jboss.com/binaries/RHDS/targetplatforms/jbdevstudiotarget/4.20.5.Final/REPO/</targetRepositoryUrl>
 						</configuration>
 					</execution>
 				</executions>
