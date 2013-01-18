@@ -13,7 +13,7 @@ projectName='jbosstools'
 DESTINATIONROOT=tools@filemgmt.jboss.org:/downloads_htdocs/tools/targetplatforms
 # or, if the JOB_NAME contains devstudio, use devstudio defaults 
 if [[ ${JOB_NAME} ]] && [[ ${JOB_NAME##*devstudio*} != ${JOB_NAME} ]]; then
-	projectName='devstudio'
+	projectName='jbdevstudio'
 	DESTINATIONROOT=/qa/services/http/binaries/RHDS/targetplatforms
 fi
 
@@ -32,8 +32,8 @@ while [ "$#" -gt 0 ]; do
 			version="$2"
 			shift 2;;
 
-		'-devstudio')
-			projectName='devstudio'
+		'-jbdevstudio')
+			projectName='jbdevstudio'
 			# to publish JBDS files to www.qa.jboss.com/binaries/RHDS/targetplatforms/, copy files here
 			DESTINATIONROOT=/qa/services/http/binaries/RHDS/targetplatforms
 			shift 1;;
@@ -45,7 +45,7 @@ while [ "$#" -gt 0 ]; do
 done
 
 if [[ ! ${version} ]]; then
-	echo "version not set. Must define version, eg., $0 -version 4.30.0.Final -devstudio"
+	echo "version not set. Must define version, eg., $0 -version 4.30.0.Final -jbdevstudio"
 	exit 1
 fi
 
@@ -58,7 +58,7 @@ targetZipFile=${projectName}target-${version}.zip
 # publish to this location on download.jboss.org or www.qa.jboss.com, eg., tools@filemgmt.jboss.org:/downloads_htdocs/tools/targetplatforms/jbosstoolstarget/4.30.0.Final
 DESTINATION=${DESTINATIONROOT}/${projectName}target/${version}
 
-# keep a copy internally and ref that in downstream builds via hudson-settings.xml, eg., /home/hudson/static_build_env/jbds/targetplatforms/devstudio/4.30.0.Final
+# keep a copy internally and ref that in downstream builds via hudson-settings.xml, eg., /home/hudson/static_build_env/jbds/targetplatforms/jbdevstudio/4.30.0.Final
 INTERNALDEST=${INTERNALDESTROOT}/${projectName}target/${version}
 
 if [[ -d ${sourceFolder} ]]; then
