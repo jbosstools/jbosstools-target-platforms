@@ -238,8 +238,8 @@
 			<unit id="org.eclipse.mylyn.commons.repositories.http.feature.group" version="1.0.2.v20120916-1200"/>
 			<unit id="org.eclipse.mylyn.context_feature.feature.group" version="3.8.2.v20120916-1200"/>
 			<unit id="org.eclipse.mylyn.bugzilla_feature.feature.group" version="3.8.2.v20120916-1200"/>
-			<unid id="org.eclipse.mylyn.commons.xmlrpc" version="3.8.2.v20120916-1200"/>
-			<unid id="org.eclipse.mylyn.commons.soap" version="3.8.2.v20120916-1200"/>
+			<unit id="org.eclipse.mylyn.commons.xmlrpc" version="3.8.2.v20120916-1200"/>
+			<unit id="org.eclipse.mylyn.commons.soap" version="3.8.2.v20120916-1200"/>
 			<unit id="org.eclipse.mylyn.discovery.feature.group" version="3.8.2.v20120916-1200"/>
 			<unit id="org.eclipse.mylyn.java_feature.feature.group" version="3.8.2.v20120916-1200"/>
 			<unit id="org.eclipse.mylyn.monitor.feature.group" version="3.8.2.v20120916-1200"/>
