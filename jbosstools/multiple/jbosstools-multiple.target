@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde version="3.8"?>
 
-<target includeMode="feature" name="jbosstoolstarget-4.20.5.Final" sequenceNumber="0">
+<target includeMode="feature" name="jbosstoolstarget-4.20.5.Final-SNAPSHOT" sequenceNumber="0">
 <locations>
 <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
 <unit id="javax.wsdl" version="1.6.2.v201012040545"/>

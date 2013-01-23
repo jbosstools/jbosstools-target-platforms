@@ -30,7 +30,7 @@
 								<artifactId>jbosstools-multiple</artifactId>
 								<version>${project.version}</version>
 							</sourceTargetArtifact>
-							<targetRepositoryUrl>http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/4.20.5.Final/REPO/</targetRepositoryUrl>
+							<targetRepositoryUrl>http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/${project.version}/REPO/</targetRepositoryUrl>
 						</configuration>
 					</execution>
 				</executions>

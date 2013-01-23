@@ -30,7 +30,7 @@
 								<artifactId>jbdevstudio-multiple</artifactId>
 								<version>${project.version}</version>
 							</sourceTargetArtifact>
-							<targetRepositoryUrl>http://www.qa.jboss.com/binaries/RHDS/targetplatforms/jbdevstudiotarget/4.20.5.Final/REPO/</targetRepositoryUrl>
+							<targetRepositoryUrl>http://www.qa.jboss.com/binaries/RHDS/targetplatforms/jbdevstudiotarget/${project.version}/REPO/</targetRepositoryUrl>
 						</configuration>
 					</execution>
 				</executions>
