@@ -50,7 +50,7 @@ if [[ ! ${version} ]]; then
 fi
 
 # source target platform site from workspace
-sourceFolder=${WORKSPACE}/${projectName}/multiple/target/multiple.target.repo
+sourceFolder=${WORKSPACE}/${projectName}/multiple/target/${projectName}-multiple.target.repo
 
 # eg., jbosstoolstarget-4.30.0.Final.zip
 targetZipFile=${projectName}target-${version}.zip 
