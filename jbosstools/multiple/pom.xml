@@ -3,12 +3,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>org.jboss.tools.target-platforms.jbosstools</groupId>
-		<artifactId>all</artifactId>
+		<groupId>org.jboss.tools.targetplatforms</groupId>
+		<artifactId>jbosstools-all</artifactId>
 		<version>4.30.0.Alpha1-SNAPSHOT</version>
 	</parent>
-	<artifactId>multiple</artifactId>
-	<name>jbosstools Multiple (Composite) Target Platform 4.30.0.Alpha1</name>
+	<artifactId>jbosstools-multiple</artifactId>
+	<name>JBoss Tools Multiple (Composite) Target Platform</name>
 	<packaging>pom</packaging>
 
 	<build>
@@ -25,7 +25,7 @@
 						</goals>
 						<configuration>
 							<targetFiles>
-								<param>multiple.target</param>
+								<param>${project.artifactId}.target</param>
 							</targetFiles>
 							<failOnError>true</failOnError>
 						</configuration>
@@ -47,7 +47,7 @@
 							<artifacts>
 								<!-- add more artifacts if want more target platforms -->
 								<artifact>
-									<file>multiple.target</file>
+									<file>${project.artifactId}.target</file>
 									<type>target</type>
 									<classifier>${project.artifactId}</classifier>
 								</artifact>
