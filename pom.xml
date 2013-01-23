@@ -4,10 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 	<!-- <parent> <groupId>org.jboss.tools</groupId> <artifactId>parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version> </parent> -->
-	<groupId>org.jboss.tools</groupId>
-	<artifactId>target-platforms</artifactId>
+	<groupId>org.jboss.tools.targetplatforms</groupId>
+	<artifactId>root</artifactId>
 	<version>4.21.3.Final-SNAPSHOT</version>
-	<name>JBoss Tools + JBDS Target Platform</name>
+	<name>JBoss Tools + JBDS Target Platform Root</name>
 	<packaging>pom</packaging>
 
 	<properties>

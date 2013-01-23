@@ -3,12 +3,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>org.jboss.tools.target-platforms.jbdevstudio</groupId>
-		<artifactId>all</artifactId>
+		<groupId>org.jboss.tools.targetplatforms</groupId>
+		<artifactId>jbdevstudio-all</artifactId>
 		<version>4.21.3.Final-SNAPSHOT</version>
 	</parent>
-	<artifactId>unified</artifactId>
-	<name>jbdevstudio Unified (Aggregate) Target Platform 4.21.3.Final</name>
+	<artifactId>jbdevstudio-unified</artifactId>
+	<name>JBDS Unified (Aggregate) Target Platform</name>
 	<packaging>pom</packaging>
 
 	<build>
@@ -27,10 +27,10 @@
 						<configuration>
 							<sourceTargetArtifact>
 								<groupId>${project.groupId}</groupId>
-								<artifactId>multiple</artifactId>
+								<artifactId>jbdevstudio-multiple</artifactId>
 								<version>${project.version}</version>
 							</sourceTargetArtifact>
-							<targetRepositoryUrl>http://www.qa.jboss.com/binaries/RHDS/targetplatforms/jbdevstudiotarget/4.21.3.Final/REPO/</targetRepositoryUrl>
+							<targetRepositoryUrl>http://www.qa.jboss.com/binaries/RHDS/targetplatforms/jbdevstudiotarget/${project.version}/REPO/</targetRepositoryUrl>
 						</configuration>
 					</execution>
 				</executions>
