@@ -1,14 +1,10 @@
-# The JBoss Tools Build project
+# The JBoss Tools Target Platforms project
 
 ## Summary
 
-JBoss Tools Target Platforms project provides the JBoss Tools Eclipse target platforrms used by JBoss Tools projects.
+JBoss Tools Target Platforms project provides the JBoss Tools Eclipse-based target platforrms used by JBoss Tools projects.
 
-## Install
-
-_JBoss Tools Target Platforms_ is part of [JBoss Tools](http://jboss.org/tools) from
-which it can be [downloaded and installed](http://jboss.org/tools/download)
-on its own or together with the full JBoss Tools distribution.
+The 'master' branch only contains shared content - see the 4.x branches for the actual target platform definitions. To build them, simply run 'mvn verify' in a given target platform folder.
 
 ## Get the code
 
@@ -19,18 +15,18 @@ and then clone your fork:
     $ cd jbosstools-build
     $ git remote add upstream git://github.com/jbosstools/jbosstools-target-platforms.git
 	
-At any time, you can pull changes from the upstream and merge them onto your master:
+At any time, you can pull changes from the upstream and merge them onto your 4.3.0 branch:
 
-    $ git checkout master               # switches to the 'master' branch
-    $ git pull upstream master          # fetches all 'upstream' changes and merges 'upstream/master' onto your 'master' branch
-    $ git push origin                   # pushes all the updates to your fork, which should be in-sync with 'upstream'
+    $ git checkout 4.3.0               # switches to the '4.3.0' branch
+    $ git pull upstream 4.3.0          # fetches all 'upstream' changes and merges 'upstream/4.3.0' onto your '4.3.0' branch
+    $ git push origin                  # pushes all the updates to your fork, which should be in-sync with 'upstream'
 
-The general idea is to keep your 'master' branch in-sync with the
-'upstream/master'.
+The general idea is to keep your '4.3.0' branch in-sync with the
+'upstream/4.3.0'.
 
-## Building JBoss Tools Build
+## Building JBoss Tools Target Platforms
 
-To build _JBoss Tools Build_ requires specific versions of Java and
+To build _JBoss Tools Target Platforms_ requires specific versions of Java and
 Maven. Also, there is some Maven setup. The [How to Build JBoss Tools with Maven 3](https://community.jboss.org/wiki/HowToBuildJBossToolsWithMaven3)
 document will guide you through that setup.
 
@@ -63,18 +59,18 @@ tests) runs successfully, commit your changes on your topic branch
 (with good comments). Then it's time to check for any recent changes
 that were made in the official repository:
 
-	$ git checkout master               # switches to the 'master' branch
-	$ git pull upstream master          # fetches all 'upstream' changes and merges 'upstream/master' onto your 'master' branch
+	$ git checkout 4.3.0               # switches to the '4.3.0' branch
+	$ git pull upstream 4.3.0          # fetches all 'upstream' changes and merges 'upstream/4.3.0' onto your '4.3.0' branch
 	$ git checkout jbide-1234           # switches to your topic branch
-	$ git rebase master                 # reapplies your changes on top of the latest in master
-	                                      (i.e., the latest from master will be the new base for your changes)
+	$ git rebase 4.3.0                 # reapplies your changes on top of the latest in 4.3.0
+	                                      (i.e., the latest from 4.3.0 will be the new base for your changes)
 
 If the pull grabbed a lot of changes, you should rerun your build with
 tests enabled to make sure your changes are still good.
 
 You can then push your topic branch and its changes into your public fork repository:
 
-	$ git push origin jbide-1234         # pushes your topic branch into your public fork of JBoss Tools Build
+	$ git push origin jbide-1234         # pushes your topic branch into your public fork of JBoss Tools Target Platforms
 
 And then [generate a pull-request](http://help.github.com/pull-requests/) where we can
 review the proposed changes, comment on them, discuss them with you,
