@@ -75,7 +75,7 @@ if [[ -d ${sourceFolder} ]]; then
 	rm -f remove.references.xml
 
 	# copy/update into central place for reuse by local downstream build jobs
-	date; rsync -arzqc --protocol=28 --delete-after --delete-excluded --rsh=ssh ${exclude} ${include} ${INTERNALDEST}/
+	date; rsync -arzqc --protocol=28 --delete-after --delete-excluded --rsh=ssh ${exclude} ${include} ${INTERNALDEST}/REPO/
 
 	du -sh ${sourceFolder} ${INTERNALDEST}
 
