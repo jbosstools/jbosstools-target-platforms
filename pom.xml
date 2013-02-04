@@ -36,7 +36,7 @@
 			<id>jboss-releases-repository</id>
 			<name>JBoss Releases Repository</name>
 			<uniqueVersion>false</uniqueVersion>
-			<url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
+			<url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</url>
 			<layout>default</layout>
 		</repository>
 		<snapshotRepository>
