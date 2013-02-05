@@ -6,7 +6,7 @@
 		<version>0.0.1-SNAPSHOT</version> </parent> -->
 	<groupId>org.jboss.tools.targetplatforms</groupId>
 	<artifactId>root</artifactId>
-	<version>4.30.0.Alpha1-SNAPSHOT</version>
+	<version>4.30.1.Alpha1-SNAPSHOT</version>
 	<name>JBoss Tools + JBDS Target Platform Root</name>
 	<packaging>pom</packaging>
 
