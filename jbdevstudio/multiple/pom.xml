@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.jboss.tools.targetplatforms</groupId>
 		<artifactId>jbdevstudio-all</artifactId>
-		<version>4.20.5.Final-SNAPSHOT</version>
+		<version>4.20.6.Final-SNAPSHOT</version>
 	</parent>
 	<artifactId>jbdevstudio-multiple</artifactId>
 	<name>JBDS Multiple (Composite) Target Platform</name>

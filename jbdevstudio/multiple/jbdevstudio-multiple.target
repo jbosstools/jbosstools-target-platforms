@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde version="3.8"?>
 
-<target includeMode="feature" name="jbdevstudiotarget-4.20.5.Final-SNAPSHOT" sequenceNumber="0">
+<target includeMode="feature" name="jbdevstudiotarget-4.20.6.Final-SNAPSHOT" sequenceNumber="0">
 <locations>
 <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
 <unit id="javax.wsdl" version="1.6.2.v201012040545"/>
@@ -101,12 +101,8 @@
 <unit id="org.eclipse.xsd.mapping.editor.feature.group" version="2.7.0.v20120319-0555"/>
 <unit id="org.eclipse.xsd.mapping.feature.group" version="2.7.0.v20120319-0555"/>
 <unit id="org.eclipse.xsd.feature.group" version="2.8.0.v20120319-0555"/>
-<unit id="org.eclipse.graphiti.feature.feature.group" version="0.9.0.v20120613-0805"/>
 <unit id="org.eclipse.draw2d.feature.group" version="3.8.0.201206112118"/>
 <unit id="org.eclipse.gef.feature.group" version="3.8.0.201206112118"/>
-<unit id="org.eclipse.zest.feature.group" version="1.4.0.201206112118"/>
-<unit id="org.eclipse.uml2.feature.group" version="4.0.0.v20120604-0919"/>
-<unit id="org.eclipse.uml2.doc.feature.group" version="4.0.0.v20120604-0919"/>
 <unit id="com.ibm.icu.base" version="4.4.2.v20110831"/>
 <unit id="org.eclipse.platform.feature.group" version="4.2.0.v20120608-135145-9JF7BHV8FyMteji0Oi_ePMz0xuZ8TVo7lV0z0ecb"/>
 <unit id="org.eclipse.platform.ide" version="4.2.0.I20120608-1400"/>
