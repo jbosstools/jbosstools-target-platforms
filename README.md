@@ -1,10 +1,12 @@
 # The JBoss Tools Target Platforms project
 
+
 ## Summary
 
 JBoss Tools Target Platforms project provides the JBoss Tools Eclipse-based target platforrms used by JBoss Tools projects.
 
 The 'master' branch only contains shared content - see the 4.x branches for the actual target platform definitions. To build them, simply run 'mvn verify' in a given target platform folder.
+
 
 ## Get the code
 
@@ -24,6 +26,7 @@ At any time, you can pull changes from the upstream and merge them onto your 4.3
 The general idea is to keep your '4.3.0' branch in-sync with the
 'upstream/4.3.0'.
 
+
 ## Building JBoss Tools Target Platforms
 
 To build _JBoss Tools Target Platforms_ requires specific versions of Java and
@@ -40,6 +43,24 @@ If you just want to check if things compiles/builds you can run:
 
 But *do not* push changes without having the new and existing unit tests pass!
  
+
+## Updating versions of IUs in .target files
+
+When moving from one version of the target to another, the steps are:
+
+1. Update the URLs contained in multiple.target (by hand)
+
+2. Regenerate the IU versions:
+
+	$ cd jbosstools/multiple
+	$ mvn org.jboss.tools.tycho-plugins:target-platform-utils:0.0.1-SNAPSHOT:fix-versions -DtargetFile=jbosstools-multiple.target
+
+3. Merge changes in new target file to actual target file:
+
+	$ mv jbosstools-multiple.target_fixedVersion.target jbosstools-multiple.target
+	$ rm jbosstools-multiple.target_update_hints.txt
+
+
 ## Contribute fixes and features
 
 _JBoss Tools Target Platforms_ is open source, and we welcome anybody that wants to
