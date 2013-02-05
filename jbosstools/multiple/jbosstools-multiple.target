@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><?pde version="3.6"?>
-<target includeMode="feature" name="jbosstoolstarget-4.21.3.Final-SNAPSHOT">
+<target includeMode="feature" name="jbosstoolstarget-4.21.4.Final-SNAPSHOT">
 	<!-- Pro tip: to convert
 			from org.eclipse.foo_4.6.0.v201005032111-777K4AkF7B77R7c7N77.jar
 		to <unit version="4.6.0.v201005032111-777K4AkF7B77R7c7N77" id="org.eclipse.foo.feature.group"/>
@@ -127,15 +127,9 @@
 			<unit id="org.eclipse.xsd.mapping.feature.group" version="2.7.0.v20120917-0436"/>
 			<unit id="org.eclipse.xsd.feature.group" version="2.8.0.v20120917-0436"/>
 
-			<!-- GEF, Draw2D, Graphiti, Zest -->
-			<unit id="org.eclipse.graphiti.feature.feature.group" version="0.9.1.v20120919-0732"/>
+			<!-- GEF, Draw2D  -->
 			<unit id="org.eclipse.draw2d.feature.group" version="3.9.0.201208201742"/>
 			<unit id="org.eclipse.gef.feature.group" version="3.9.0.201208201742"/>
-			<unit id="org.eclipse.zest.feature.group" version="1.5.0.201208201742"/>
-
-			<!-- Needed for Teiid Designer: UML2 -->
-			<unit id="org.eclipse.uml2.feature.group" version="4.0.1.v20120913-1441"/>
-			<unit id="org.eclipse.uml2.doc.feature.group" version="4.0.0.v20120913-1441"/>
 
 			<!-- Platform: CVS, JDT, RCP, PDE, Equinox, Help -->
 			<unit id="com.ibm.icu.base" version="4.4.2.v20110831"/>
