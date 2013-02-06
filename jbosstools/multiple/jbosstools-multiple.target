@@ -257,7 +257,8 @@
 			<unit id="org.eclipse.ui.ide" version="3.9.0.v20130129-143038"/>
 			<unit id="org.eclipse.ui.workbench.texteditor" version="3.8.100.v20130108-175952"/>
 			<unit id="org.eclipse.jface.text" version="3.8.100.v20130121-142253"/>
-			<unit id="org.eclipse.osgi" version="3.9.0.v20121210-201226"/>
+			<!-- have to manually update this one if more than one version exists in Kepler mirror -->
+			<unit id="org.eclipse.osgi" version="3.9.0.v20130128-202223"/>
 			<unit id="org.eclipse.core.filesystem" version="1.4.0.v20130122-153237"/>
 			<unit id="org.eclipse.ui.forms" version="3.5.200.v20120705-114351"/>
 			<unit id="org.eclipse.ui.editors" version="3.8.100.v20121221-081121"/>
