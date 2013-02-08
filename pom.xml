@@ -24,6 +24,15 @@
 				<extensions>true</extensions>
 			</plugin>
 		</plugins>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.jboss.tools.tycho-plugins</groupId>
+					<artifactId>target-platform-utils</artifactId>
+					<version>0.16.0-SNAPSHOT</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 	</build>
 
 	<modules>
