@@ -16,7 +16,6 @@
 			<plugin>
 				<groupId>org.jboss.tools.tycho-plugins</groupId>
 				<artifactId>target-platform-utils</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
 				<executions>
 					<execution>
 						<id>create-target</id>
