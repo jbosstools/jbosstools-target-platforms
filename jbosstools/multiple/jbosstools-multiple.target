@@ -90,6 +90,7 @@
 			<unit id="org.sonatype.m2e.buildhelper.feature.feature.group" version="0.15.0.201212120353"/>
 			<unit id="org.eclipse.m2e.wtp.feature.feature.group" version="0.17.0.20130205-1928"/>
 			<unit id="org.eclipse.m2e.wtp.jaxrs.feature.feature.group" version="0.17.0.20130205-1928"/>
+			<unit id="org.eclipse.m2e.wtp.jpa.feature.feature.group" version="0.17.0.e43-20130205-1932"/>
 			<unit id="org.eclipse.m2e.wtp.jsf.feature.feature.group" version="0.17.0.20130205-1928"/>
 			<unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.0.1.201209200721"/>
 			<unit id="org.jboss.tools.m2e.jdt.feature.feature.group" version="1.0.1.201209200903"/>
