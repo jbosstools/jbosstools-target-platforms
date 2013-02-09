@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jboss.tools.targetplatforms</groupId>
 	<artifactId>root</artifactId>
-	<version>4.30.2.Alpha1-SNAPSHOT</version>
+	<version>4.30.3.Alpha1-SNAPSHOT</version>
 	<name>JBoss Tools + JBDS Target Platform Root</name>
 	<packaging>pom</packaging>
 
@@ -55,10 +55,32 @@
 		</snapshotRepository>
 	</distributionManagement>
 
+	<!-- Additional m2 repos to resolve things like org.eclipse.tycho:tycho-maven-plugin:0.16.0-SNAPSHOT -->
+    <!-- JBoss Nexus repos are also added, but in settings.xml -->
 	<pluginRepositories>
 		<pluginRepository>
-			<id>tycho-snapshots</id>
-			<url>https://oss.sonatype.org/content/groups/public/</url>
+			<id>sonatype-public-grid</id>
+			<url>https://repository.sonatype.org/content/groups/sonatype-public-grid</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>sonatype-public-repository</id>
+			<url>https://oss.sonatype.org/content/groups/public</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>jboss-releases</id>
+			<name>JBoss Releases Maven Repository</name>
+			<url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</pluginRepository>
+		<pluginRepository>
+			<id>jboss-snapshots-repository</id>
+			<name>JBoss Snapshots Repository</name>
+			<url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
 
