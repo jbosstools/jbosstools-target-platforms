@@ -53,11 +53,13 @@ When moving from one version of the target to another, the steps are:
 2. Regenerate the IU versions:
 
     $ cd jbosstools/multiple
+
     $ mvn org.jboss.tools.tycho-plugins:target-platform-utils:0.0.1-SNAPSHOT:fix-versions -DtargetFile=jbosstools-multiple.target
 
 3. Merge changes in new target file to actual target file:
 
     $ mv jbosstools-multiple.target_fixedVersion.target jbosstools-multiple.target
+
     $ rm jbosstools-multiple.target_update_hints.txt
 
 
