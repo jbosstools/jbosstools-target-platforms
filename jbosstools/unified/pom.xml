@@ -27,6 +27,7 @@
 							<sourceTargetArtifact>
 								<groupId>${project.groupId}</groupId>
 								<artifactId>jbosstools-multiple</artifactId>
+								<classifier>jbosstools-multiple</classifier>
 								<version>${project.version}</version>
 							</sourceTargetArtifact>
 							<targetRepositoryUrl>http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/${project.version}/REPO/</targetRepositoryUrl>
