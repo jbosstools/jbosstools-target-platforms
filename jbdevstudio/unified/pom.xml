@@ -27,6 +27,7 @@
 							<sourceTargetArtifact>
 								<groupId>${project.groupId}</groupId>
 								<artifactId>jbdevstudio-multiple</artifactId>
+								<classifier>jbdevstudio-multiple</classifier>
 								<version>${project.version}</version>
 							</sourceTargetArtifact>
 							<targetRepositoryUrl>http://www.qa.jboss.com/binaries/RHDS/targetplatforms/jbdevstudiotarget/${project.version}/REPO/</targetRepositoryUrl>
