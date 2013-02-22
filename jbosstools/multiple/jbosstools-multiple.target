@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><?pde version="3.6"?>
-<target includeMode="feature" name="jbosstoolstarget-4.22.0.Final-SNAPSHOT">
+<target includeMode="feature" name="jbosstoolstarget-4.22.1.Final">
 	<!-- Pro tip: to convert
 			from org.eclipse.foo_4.6.0.v201005032111-777K4AkF7B77R7c7N77.jar
 		to <unit version="4.6.0.v201005032111-777K4AkF7B77R7c7N77" id="org.eclipse.foo.feature.group"/>
@@ -206,10 +206,6 @@
 			<unit id="org.eclipse.jsch.ui" version="1.1.400.v20120522-1148"/>
 			<unit id="org.eclipse.jsch.core" version="1.1.400.v20120522-1148"/>
 			<unit id="com.jcraft.jsch" version="0.1.46.v201205102330"/>
-			<unit id="org.eclipse.jgit.feature.group" version="2.3.0.201302130906"/>
-			<unit id="org.eclipse.egit.feature.group" version="2.3.0.201302130906"/>
-			<unit id="org.eclipse.egit.mylyn.feature.group" version="2.3.0.201302130906"/>
-			<unit id="org.eclipse.mylyn.github.feature.feature.group" version="2.3.0.201302130906"/>
 
 			<!-- needed for JBoss Central -->
 			<unit id="com.sun.syndication" version="0.9.0.v200803061811"/>
@@ -275,6 +271,14 @@
 			<unit id="org.eclipse.update.core" version="3.2.600.v20130104-035921"/>
 		</location>
 
+		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
+			<repository location="http://download.jboss.org/jbosstools/updates/requirements/egit/2.3.1.201302201838-r/"/>
+			<!-- egit 2.3.1 is not in Juno site, pull from separate mirror -->
+			<unit id="org.eclipse.jgit.feature.group" version="2.3.1.201302201838-r"/>
+			<unit id="org.eclipse.egit.feature.group" version="2.3.1.201302201838-r"/>
+			<unit id="org.eclipse.egit.mylyn.feature.group" version="2.3.1.201302201838-r"/>
+			<unit id="org.eclipse.mylyn.github.feature.feature.group" version="2.3.0.201302130906"/>
+		</location>
 
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
 			<repository location="http://download.jboss.org/jbosstools/updates/requirements/atlassian/3.0.6.v20120628/"/>
