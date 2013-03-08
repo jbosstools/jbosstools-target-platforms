@@ -74,8 +74,12 @@
 			<unit id="org.apache.catalina" version="7.0.26.v201205021508"/>
 			<unit id="javax.ejb" version="3.1.1.v201204261316"/>
 			<unit id="javax.transaction" version="1.1.1.v201105210645"/>
+
+			<!-- Servlet 3.0, Jetty 8 (JBIDE-13712 / http://www.eclipse.org/eclipse/development/porting/4.2/incompatibilities.php#jetty ) -->
 			<unit id="javax.el" version="2.2.0.v201108011116"/>
+			<unit id="com.sun.el" version="2.2.0.v201108011116"/>
 			<unit id="javax.xml.rpc" version="1.1.0.v201005080400"/>
+			<unit id="org.apache.jasper.glassfish" version="2.2.2.v201205150955"/>
 		</location>
 
 		<!-- m2e and family -->
@@ -263,6 +267,15 @@
 			<unit id="org.eclipse.team.ui" version="3.7.0.v20130102-134006"/>
 			<unit id="org.eclipse.jface" version="3.8.300.v20130125-160915"/>
 			<unit id="org.eclipse.compare" version="3.5.400.v20130102-134006"/>
+
+			<!-- Servlet 3.0, Jetty 8 (JBIDE-13712 / http://www.eclipse.org/eclipse/development/porting/4.2/incompatibilities.php#jetty ) -->
+			<unit id="org.eclipse.jetty.http" version="8.1.3.v20120522"/>
+			<unit id="org.eclipse.jetty.continuation" version="8.1.3.v20120522"/>
+			<unit id="org.eclipse.jetty.io" version="8.1.3.v20120522"/>
+			<unit id="org.eclipse.jetty.security" version="8.1.3.v20120522"/>
+			<unit id="org.eclipse.jetty.server" version="8.1.3.v20120522"/>
+			<unit id="org.eclipse.jetty.servlet" version="8.1.3.v20120522"/>
+			<unit id="org.eclipse.jetty.util" version="8.1.3.v20120522"/>
 		</location>
 
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
