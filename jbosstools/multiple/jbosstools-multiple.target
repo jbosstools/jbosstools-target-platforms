@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><?pde version="3.6"?>
-<target includeMode="feature" name="jbosstoolstarget-4.22.1.Final-SNAPSHOT">
+<target includeMode="feature" name="jbosstoolstarget-4.22.2.Final-SNAPSHOT">
 	<!-- Pro tip: to convert
 			from org.eclipse.foo_4.6.0.v201005032111-777K4AkF7B77R7c7N77.jar
 		to <unit version="4.6.0.v201005032111-777K4AkF7B77R7c7N77" id="org.eclipse.foo.feature.group"/>
@@ -78,25 +78,25 @@
 		</location>
 
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
-			<repository location="http://download.jboss.org/jbosstools/updates/requirements/m2eclipse/20120926-1337/"/>
+			<repository location="http://download.jboss.org/jbosstools/updates/requirements/m2eclipse/20130220-2020_1.3_0.17/"/>
 
 			<!-- m2e, m2e-wtp, m2e-apt, m2e-jdt, m2e-wro4j, m2e-buildhelper + deps -->
-			<unit id="org.eclipse.m2e.feature.feature.group" version="1.2.0.20120903-1050"/>
+			<unit id="org.eclipse.m2e.feature.feature.group" version="1.3.1.20130219-1424"/>
 			<!-- Maven tests require a bundle from m2e SDK -->
-			<unit id="org.eclipse.m2e.tests.common" version="1.2.0.20120903-1050"/>
-			<unit id="org.eclipse.m2e.wtp.feature.feature.group" version="0.16.0.20120914-0945"/>
-			<unit id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version="0.15.0.201207090125-signed-201209140800"/>
+			<unit id="org.eclipse.m2e.tests.common" version="1.3.1.20130219-1424"/>
+			<unit id="org.eclipse.m2e.wtp.feature.feature.group" version="0.17.0.20130212-1819"/>
+			<unit id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version="0.15.0.201212080009"/>
 			<unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.0.1.201209200721"/>
 			<unit id="org.jboss.tools.m2e.jdt.feature.feature.group" version="1.0.1.201209200903"/>
 			<unit id="org.jboss.tools.m2e.wro4j.feature.feature.group" version="1.0.1.201209200854"/>
-			<unit id="org.sonatype.m2e.buildhelper.feature.feature.group" version="0.15.0.201207090124"/>
+			<unit id="org.sonatype.m2e.buildhelper.feature.feature.group" version="0.15.0.201212120353"/>
 
 			<unit id="ch.qos.logback.classic" version="1.0.0.v20111214-2030"/>
 			<unit id="ch.qos.logback.core" version="1.0.0.v20111214-2030"/>
 			<unit id="ch.qos.logback.slf4j" version="1.0.0.v20120123-1500"/>
 			<unit id="org.slf4j.api" version="1.6.4.v20120130-2120"/>
-			<unit id="com.ning.async-http-client" version="1.6.5.20120903-0645"/>
-			<unit id="org.jboss.netty" version="3.2.5.Final-20120903-0645"/>
+			<unit id="com.ning.async-http-client" version="1.6.5.20130219-0923"/>
+			<unit id="org.jboss.netty" version="3.2.5.Final-20130219-0923"/>
 		</location>
 
 		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
