@@ -269,7 +269,7 @@
 			<unit id="org.eclipse.compare" version="3.5.400.v20130102-134006"/>
 		</location>
 
-		<location>
+		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
 			<!-- Servlet 3.0, Jetty 8 (JBIDE-13712 / http://www.eclipse.org/eclipse/development/porting/4.2/incompatibilities.php#jetty ) -->
 			<repository location="http://download.jboss.org/jbosstools/updates/requirements/jetty/8.1.9.v20130131/"/>
 			
