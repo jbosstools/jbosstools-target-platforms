@@ -51,6 +51,7 @@
       <unit id="org.hamcrest.library" version="1.1.0.v20090501071000"/>
       <unit id="org.hamcrest.integration" version="1.1.0.v201303031500"/>
       <unit id="com.google.guava" version="10.0.1.v201203051515"/>
+      <unit id="com.sun.jersey" version="1.17.0.v20130314-2020"/>
 
       <!-- Mylyn/Bugzilla -->
       <unit id="org.apache.xmlrpc" version="3.0.0.v20100427-1100"/>
@@ -310,18 +311,26 @@
     <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/atlassian/3.2.0.v20130212/"/>
       <!-- JBIDE-13682 only include commons.core and jira since these are the only ones on which JBoss Mylyn stuff depends -->
-      <unit id="com.atlassian.connector.eclipse.commons.core" version="3.2.0.v20130212"/>
-      <unit id="com.atlassian.connector.eclipse.commons.ui" version="3.2.0.v20130212"/>
       <unit id="com.atlassian.connector.eclipse.jira.core" version="3.2.0.v20130212"/>
       <unit id="com.atlassian.connector.eclipse.jira.ui" version="3.2.0.v20130212"/>
+      <unit id="com.atlassian.connector.eclipse.monitor.core" version="3.2.0.v20130212"/>
+      <unit id="com.atlassian.connector.eclipse.monitor.ui" version="3.2.0.v20130212"/>
+      <unit id="com.atlassian.connector.eclipse.commons.core" version="3.2.0.v20130212"/>
+      <unit id="com.atlassian.connector.eclipse.commons.ui" version="3.2.0.v20130212"/>
       <unit id="com.atlassian.connector.eclipse.branding.ui" version="3.2.0.v20130212"/>
+      <unit id="com.atlassian.jira.rest.client" version="1.1.0.2"/>
+      <!-- also need these (from Orbit): 
+        org.apache.commons.httpclient
+        com.sun.jersey
+      -->
+      <unit id="com.google.guava" version="13.0.0"/>
+      <unit id="org.codehaus.jettison" version="1.0.0"/>
+      <unit id="org.joda.time" version="1.6.0.v20081202-0100"/>
 
       <!-- JBIDE-13682 remove these (commented out, in case we need to add some back in?)
       <unit id="com.atlassian.connector.commons" version="4.0.0.v20121218"/>
       <unit id="com.atlassian.connector.eclipse.bamboo.core" version="3.0.7.v20121218"/>
       <unit id="com.atlassian.connector.eclipse.bamboo.ui" version="3.0.7.v20121218"/>
-      <unit id="com.atlassian.connector.eclipse.commons.core" version="3.0.7.v20121218"/>
-      <unit id="com.atlassian.connector.eclipse.commons.ui" version="3.0.7.v20121218"/>
       <unit id="com.atlassian.connector.eclipse.core" version="3.0.7.v20121218"/>
       <unit id="com.atlassian.connector.eclipse.crucible.core" version="3.0.7.v20121218"/>
       <unit id="com.atlassian.connector.eclipse.crucible.ui" version="3.0.7.v20121218"/>
@@ -333,8 +342,6 @@
       <unit id="com.atlassian.connector.eclipse.help" version="3.0.7.v20121218"/>
       <unit id="com.atlassian.connector.eclipse.jira.core" version="3.0.7.v20121218"/>
       <unit id="com.atlassian.connector.eclipse.jira.ui" version="3.0.7.v20121218"/>
-      <unit id="com.atlassian.connector.eclipse.monitor.core" version="3.0.7.v20121218"/>
-      <unit id="com.atlassian.connector.eclipse.monitor.ui" version="3.0.7.v20121218"/>
       <unit id="com.atlassian.connector.eclipse.subclipse.core" version="3.0.7.v20121218"/>
       <unit id="com.atlassian.connector.eclipse.subclipse.ui" version="3.0.7.v20121218"/>
       <unit id="com.atlassian.connector.eclipse.ui" version="3.0.7.v20121218"/>
