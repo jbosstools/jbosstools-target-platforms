@@ -4,13 +4,13 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jboss.tools.targetplatforms</groupId>
 	<artifactId>root</artifactId>
-	<version>4.30.5.Alpha2-SNAPSHOT</version>
+	<version>4.30.5.Alpha3-SNAPSHOT</version>
 	<name>JBoss Tools + JBDS Target Platform Root</name>
 	<packaging>pom</packaging>
 
 	<properties>
-		<tychoVersion>0.16.0</tychoVersion>
-		<tychoExtrasVersion>0.16.0</tychoExtrasVersion>
+		<tychoVersion>0.17.0</tychoVersion>
+		<tychoExtrasVersion>0.17.0</tychoExtrasVersion>
 	</properties>
 
 	<build>
