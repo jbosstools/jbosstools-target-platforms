@@ -315,7 +315,7 @@
     <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/atlassian/3.2.0.v20130212/"/>
       <!-- JBIDE-13682 only include commons.core and jira since these are the only ones on which JBoss Mylyn stuff depends -->
-      <unit id="com.atlassian.connector.eclipse.jira.feature.group" version="3.2.0.v20130212
+      <unit id="com.atlassian.connector.eclipse.jira.feature.group" version="3.2.0.v20130212"/>
       <unit id="com.atlassian.connector.eclipse.monitor.feature.group" version="3.2.0.v20130212"/>
       <unit id="com.atlassian.connector.eclipse.commons.feature.group" version="3.2.0.v20130212"/>
       <unit id="com.atlassian.connector.commons.feature.group" version="3.2.0.v20130212"/>
