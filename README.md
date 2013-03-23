@@ -63,7 +63,7 @@ for PROJECT in jbosstools jbdevstudio; do
   pushd ${BASEDIR}/${PROJECT}/unified && mvn install -DtargetRepositoryUrl=file://${BASEDIR}/${PROJECT}/multiple/target/${PROJECT}-multiple.target.repo/ && popd
 done</pre>
 
-3. Check in updated target files & push to master.
+<ol><li value="4"> Check in updated target files & push to master.</li></ol>
 
 
 ## Contribute fixes and features
