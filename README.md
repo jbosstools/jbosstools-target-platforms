@@ -48,33 +48,23 @@ But *do not* push changes without having the new and existing unit tests pass!
 
 When moving from one version of the target to another, the steps are:
 
-1. Update the URLs contained in multiple.target (by hand)
+0. Bump the target platform versions contained in all 5 pom.xml and 2 *.target files.
 
-2. Regenerate the IU versions:
+1. Update the URLs contained in jbosstools-multiple.target and jbdevstudio-multiple.target (by hand). Check in changes (but do not push to master).
 
-	$ cd jbosstools/multiple
-	$ mvn org.jboss.tools.tycho-plugins:target-platform-utils:0.0.1-SNAPSHOT:fix-versions -DtargetFile=jbosstools-multiple.target
+2. Regenerate the IU versions and validate
 
-3. Merge changes in new target file to actual target file:
+  # point BASEDIR to where you have these sources checked out
+  BASEDIR=$HOME/jbosstools-target-platforms
+  for PROJECT in jbosstools jbdevstudio; do 
+    # Merge changes in new target file to actual target file
+	  pushd ${BASEDIR}/${PROJECT}/multiple && mvn org.jboss.tools.tycho-plugins:target-platform-utils:0.0.1-SNAPSHOT:fix-versions -DtargetFile=${PROJECT}-multiple.target && rm -f ${PROJECT}-multiple.target ${PROJECT}-multiple.target_update_hints.txt && mv -f ${PROJECT}-multiple.target_fixedVersion.target ${PROJECT}-multiple.target && popd
 
-	$ mv jbosstools-multiple.target_fixedVersion.target jbosstools-multiple.target
-	$ rm jbosstools-multiple.target_update_hints.txt
+    # Verify target platform is self-contained by building unified.target locally
+    pushd ${BASEDIR}/${PROJECT}/unified && mvn install -DtargetRepositoryUrl=file://${BASEDIR}/${PROJECT}/multiple/target/${PROJECT}-multiple.target.repo/ && popd
+  done
 
-4. Verify target platform is self-contained by building unified.target locally:
-
-  a. Run a local web server, so you can access the directory.xml via an http:// URL. You have many options for this. Here's one:
-
-  su
-  cd /tmp; wget -nc https://raw.github.com/elonen/nanohttpd/master/NanoHTTPD.java
-  # assuming sources checked out into /home/user/jbosstools-target-platforms/
-  javac NanoHTTPD.java; java NanoHTTPD -d /home/user/jbosstools-target-platforms/ -p 8081
-
-  b. In another console, build the unified target:
-
-  $ cd jbosstools/unified
-  $ mvn install -DtargetRepositoryUrl=http://localhost:8081/jbosstools/multiple/target/jbosstools-multiple.target.repo/
-
-5. Merge changes done in steps 1-4 into jbdevstudio/mutiple/jbdevstudio-multiple.target. Repeat.
+3. Check in updated target files & push to master.
 
 
 ## Contribute fixes and features
