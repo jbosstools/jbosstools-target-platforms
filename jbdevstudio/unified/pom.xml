@@ -10,7 +10,9 @@
 	<artifactId>jbdevstudio-unified</artifactId>
 	<name>JBDS Unified (Aggregate) Target Platform</name>
 	<packaging>pom</packaging>
-
+	<properties>
+		<targetRepositoryUrl>http://www.qa.jboss.com/binaries/RHDS/targetplatforms/jbdevstudiotarget/${project.version}/REPO/</targetRepositoryUrl>
+	</properties>
 	<build>
 		<plugins>
 			<plugin>
@@ -30,7 +32,7 @@
 								<classifier>jbdevstudio-multiple</classifier>
 								<version>${project.version}</version>
 							</sourceTargetArtifact>
-							<targetRepositoryUrl>http://www.qa.jboss.com/binaries/RHDS/targetplatforms/jbdevstudiotarget/${project.version}/REPO/</targetRepositoryUrl>
+							<targetRepositoryUrl>${targetRepositoryUrl}</targetRepositoryUrl>
 						</configuration>
 					</execution>
 				</executions>

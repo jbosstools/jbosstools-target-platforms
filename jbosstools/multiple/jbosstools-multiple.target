@@ -56,6 +56,7 @@
       <unit id="com.sun.jersey" version="1.17.0.v20130314-2020"/>
       <unit id="com.thoughtworks.xstream" version="1.3.1.v201111240924"/>
       <unit id="javax.ws.rs" version="1.1.1.v20130318-1750"/>
+      <unit id="org.xmlpull" version="1.1.3.4_v201201052148"/>
 
       <!-- Needed for Mylyn/Bugzilla -->
       <unit id="org.apache.xmlrpc" version="3.0.0.v20100427-1100"/>
@@ -320,13 +321,10 @@
       <unit id="com.atlassian.connector.eclipse.commons.feature.group" version="3.2.0.v20130212"/>
       <unit id="com.atlassian.connector.commons.feature.group" version="3.2.0.v20130212"/>
       <unit id="com.atlassian.jira.rest.client" version="1.1.0.2"/>
-      <!-- also need these (from Orbit): 
-        org.apache.commons.httpclient
-        com.sun.jersey
-      -->
       <unit id="com.google.guava" version="13.0.0"/>
       <unit id="org.codehaus.jettison" version="1.0.0"/>
       <unit id="org.joda.time" version="1.6.0.v20081202-0100"/>
+      <!-- see also section above under Orbit site for more deps not listed here -->
 
       <!-- JBIDE-13682 remove these (commented out, in case we need to add some back in?)
       <unit id="com.atlassian.connector.commons" version="4.0.0.v20121218"/>

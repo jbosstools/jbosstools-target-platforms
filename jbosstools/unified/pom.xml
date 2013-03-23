@@ -10,7 +10,9 @@
 	<artifactId>jbosstools-unified</artifactId>
 	<name>JBoss Tools Unified (Aggregate) Target Platform</name>
 	<packaging>pom</packaging>
-
+	<properties>
+		<targetRepositoryUrl>http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/${project.version}/REPO/</targetRepositoryUrl>
+	</properties>
 	<build>
 		<plugins>
 			<plugin>
@@ -30,7 +32,7 @@
 								<classifier>jbosstools-multiple</classifier>
 								<version>${project.version}</version>
 							</sourceTargetArtifact>
-							<targetRepositoryUrl>http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/${project.version}/REPO/</targetRepositoryUrl>
+							<targetRepositoryUrl>${targetRepositoryUrl}</targetRepositoryUrl>
 						</configuration>
 					</execution>
 				</executions>
