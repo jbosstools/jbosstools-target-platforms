@@ -54,15 +54,14 @@ When moving from one version of the target to another, the steps are:
 
 2. Regenerate the IU versions and validate
 
-  # point BASEDIR to where you have these sources checked out
-  BASEDIR=$HOME/jbosstools-target-platforms
-  for PROJECT in jbosstools jbdevstudio; do 
-    # Merge changes in new target file to actual target file
-	  pushd ${BASEDIR}/${PROJECT}/multiple && mvn org.jboss.tools.tycho-plugins:target-platform-utils:0.0.1-SNAPSHOT:fix-versions -DtargetFile=${PROJECT}-multiple.target && rm -f ${PROJECT}-multiple.target ${PROJECT}-multiple.target_update_hints.txt && mv -f ${PROJECT}-multiple.target_fixedVersion.target ${PROJECT}-multiple.target && popd
-
-    # Verify target platform is self-contained by building unified.target locally
-    pushd ${BASEDIR}/${PROJECT}/unified && mvn install -DtargetRepositoryUrl=file://${BASEDIR}/${PROJECT}/multiple/target/${PROJECT}-multiple.target.repo/ && popd
-  done
+<pre># point BASEDIR to where you have these sources checked out
+BASEDIR=$HOME/jbosstools-target-platforms
+for PROJECT in jbosstools jbdevstudio; do 
+  # Merge changes in new target file to actual target file
+  pushd ${BASEDIR}/${PROJECT}/multiple && mvn org.jboss.tools.tycho-plugins:target-platform-utils:0.0.1-SNAPSHOT:fix-versions -DtargetFile=${PROJECT}-multiple.target && rm -f ${PROJECT}-multiple.target ${PROJECT}-multiple.target_update_hints.txt && mv -f ${PROJECT}-multiple.target_fixedVersion.target ${PROJECT}-multiple.target && popd
+  # Verify target platform is self-contained by building unified.target locally
+  pushd ${BASEDIR}/${PROJECT}/unified && mvn install -DtargetRepositoryUrl=file://${BASEDIR}/${PROJECT}/multiple/target/${PROJECT}-multiple.target.repo/ && popd
+done</pre>
 
 3. Check in updated target files & push to master.
 
