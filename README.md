@@ -60,6 +60,22 @@ When moving from one version of the target to another, the steps are:
 	$ mv jbosstools-multiple.target_fixedVersion.target jbosstools-multiple.target
 	$ rm jbosstools-multiple.target_update_hints.txt
 
+4. Verify target platform is self-contained by building unified.target locally:
+
+  a. Run a local web server, so you can access the directory.xml via an http:// URL. You have many options for this. Here's one:
+
+  su
+  cd /tmp; wget -nc https://raw.github.com/elonen/nanohttpd/master/NanoHTTPD.java
+  # assuming sources checked out into /home/user/jbosstools-target-platforms/
+  javac NanoHTTPD.java; java NanoHTTPD -d /home/user/jbosstools-target-platforms/ -p 8081
+
+  b. In another console, build the unified target:
+
+  $ cd jbosstools/unified
+  $ mvn install -DtargetRepositoryUrl=http://localhost:8081/jbosstools/multiple/target/jbosstools-multiple.target.repo/
+
+5. Merge changes done in steps 1-4 into jbdevstudio/mutiple/jbdevstudio-multiple.target. Repeat.
+
 
 ## Contribute fixes and features
 
