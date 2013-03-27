@@ -59,6 +59,8 @@ BASEDIR=$HOME/jbosstools-target-platforms
 for PROJECT in jbosstools jbdevstudio; do 
   # Merge changes in new target file to actual target file
   pushd ${BASEDIR}/${PROJECT}/multiple && mvn org.jboss.tools.tycho-plugins:target-platform-utils:0.0.1-SNAPSHOT:fix-versions -DtargetFile=${PROJECT}-multiple.target && rm -f ${PROJECT}-multiple.target ${PROJECT}-multiple.target_update_hints.txt && mv -f ${PROJECT}-multiple.target_fixedVersion.target ${PROJECT}-multiple.target && popd
+  # Resolve the new target platform
+  pushd ${BASEDIR}/${PROJECT}/multiple && mvn clean install 
   # Verify target platform is self-contained by building unified.target locally
   pushd ${BASEDIR}/${PROJECT}/unified && mvn install -DtargetRepositoryUrl=file://${BASEDIR}/${PROJECT}/multiple/target/${PROJECT}-multiple.target.repo/ && popd
 done</pre>
