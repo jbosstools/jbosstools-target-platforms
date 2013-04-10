@@ -300,6 +300,7 @@
       <unit id="org.eclipse.jetty.servlets" version="8.1.9.v20130131"/>
       <unit id="org.eclipse.jetty.websocket" version="8.1.9.v20130131"/>
       <unit id="org.eclipse.jetty.client" version="8.1.9.v20130131"/>
+      <unit id="org.eclipse.jetty.rewrite" version="8.1.9.v20130131"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
