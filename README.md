@@ -37,6 +37,10 @@ This command will run the build:
 
     $ mvn clean verify
 
+If you want to run the build and fetch source bundles at the same time as other bundles are being resolved, do this:
+
+    $ mvn clean verify -Dmirror-target-to-repo.includeSources=true
+
 If you just want to check if things compiles/builds you can run:
 
     $ mvn clean verify -DskipTest=true
