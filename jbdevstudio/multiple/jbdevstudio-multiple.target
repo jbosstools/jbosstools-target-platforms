@@ -161,7 +161,9 @@
       <unit id="com.ibm.icu.base" version="50.1.0.v20121116-2"/>
       <!-- cannot include two versions of the same feature (4.3.0 and 3.8.0) as they conflict in terms of inclusion of org.eclipse.update.ui, which is only on the 3.8 site -->
       <unit id="org.eclipse.platform.feature.group" version="4.3.0.v20130314-1730"/>
+      <!-- Appears to have vanished in M7; cannot find a reference to this plugin in JBDS product build so probably safe to remove
       <unit id="org.eclipse.platform.ide" version="4.3.0.I20130314-1330"/>
+      -->
       <unit id="org.eclipse.cvs.feature.group" version="1.4.0.v20130314-1330"/>
       <unit id="org.eclipse.jdt.feature.group" version="3.9.0.v20130314-1330"/>
       <unit id="org.eclipse.equinox.server.core.feature.group" version="1.2.0.v20130308-1450"/>
@@ -275,6 +277,7 @@
 
     </location>
 
+    <!-- TM and RSE are in Kepler site but this way we get sources too -->
     <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/tm/3.4.1.201305031537/"/>
       <unit id="org.eclipse.rse.feature.group" version="3.4.1.201305031537"/>
