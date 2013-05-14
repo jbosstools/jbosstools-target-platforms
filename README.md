@@ -41,6 +41,10 @@ If you want to run the build and fetch source bundles at the same time as other 
 
     $ mvn clean verify -Dmirror-target-to-repo.includeSources=true
 
+If you want to run the build and not fail if there's a problem w/ validation, do this:
+
+    $ mvn clean verify -Dvalidate-target-platform.failOnError=false
+
 If you just want to check if things compiles/builds you can run:
 
     $ mvn clean verify -DskipTest=true

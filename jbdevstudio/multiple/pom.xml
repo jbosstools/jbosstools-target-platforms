@@ -11,10 +11,10 @@
 	<name>JBDS Multiple (Composite) Target Platform</name>
 	<packaging>pom</packaging>
 
-  <properties>
-    <!-- set this to false to allow validation to proceed but NOT fail the build -->
-    <validate-target-platform.failOnError>true</validate-target-platform.failOnError>
-  </properties>
+	<properties>
+		<!-- set this to false to allow validation to proceed but NOT fail the build -->
+		<validate-target-platform.failOnError>true</validate-target-platform.failOnError>
+	</properties>
 
 	<build>
 		<plugins>
