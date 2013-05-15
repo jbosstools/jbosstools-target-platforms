@@ -11,6 +11,8 @@
 	<name>JBoss Tools Unified (Aggregate) Target Platform</name>
 	<packaging>pom</packaging>
 	<properties>
+		<!-- set this to false to allow validation to proceed but NOT fail the build -->
+		<validate-target-platform.failOnError>true</validate-target-platform.failOnError>
 		<targetRepositoryUrl>http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/${project.version}/REPO/</targetRepositoryUrl>
 	</properties>
 	<build>
@@ -51,7 +53,7 @@
 							<targetFiles>
 								<param>${project.build.directory}/${project.artifactId}.target</param>
 							</targetFiles>
-							<failOnError>true</failOnError>
+							<failOnError>${validate-target-platform.failOnError}</failOnError>
 						</configuration>
 					</execution>
 				</executions>
