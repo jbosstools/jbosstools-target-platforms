@@ -317,13 +317,13 @@
       <unit id="org.eclipse.update.core" version="3.2.600.v20130326-1319"/>
     </location>
 
-    <!-- egit 2.3.1 is in Kepler site but this way we get sources too -->
+    <!-- egit 3.0 is in Kepler site but this way we get sources too -->
     <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/egit/2.3.1.201302201838-r/"/>
-      <unit id="org.eclipse.jgit.feature.group" version="2.3.1.201302201838-r"/>
-      <unit id="org.eclipse.egit.feature.group" version="2.3.1.201302201838-r"/>
-      <unit id="org.eclipse.egit.mylyn.feature.group" version="2.3.1.201302201838-r"/>
-      <unit id="org.eclipse.mylyn.github.feature.feature.group" version="2.3.0.201302130906"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/egit/3.0.0.201305080800-m7/"/>
+      <unit id="org.eclipse.jgit.feature.group" version="3.0.0.201305080800-m7"/>
+      <unit id="org.eclipse.egit.feature.group" version="3.0.0.201305080800-m7"/>
+      <unit id="org.eclipse.egit.mylyn.feature.group" version="3.0.0.201305080800-m7"/>
+      <unit id="org.eclipse.mylyn.github.feature.feature.group" version="3.0.0.201305080800-m7"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
