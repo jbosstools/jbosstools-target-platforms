@@ -393,8 +393,7 @@
       <unit id="org.eclipse.jst.server_userdoc.feature.feature.group" version="3.3.100.v20110303-2-Eo7w3121162A3329"/>
       <unit id="org.eclipse.jst.web_core.feature.feature.group" version="3.5.0.v201303132100-7Q7GGb8FE9LeBTMOz0fdlMn1k1xz00tJ533877"/>
       <unit id="org.eclipse.jst.webpageeditor.feature.feature.group" version="2.5.0.v201305011549-47C-9oB58E5K588KHW"/>
-      <!-- JBIDE-14422 -->
-      <!--unit id="org.eclipse.jst.web_ui.feature.feature.group" version="3.5.0.v201303132100-7F7GFUGC27SvlcDqtgjb-_fhALqUqcxTpwxR8dsR"/-->
+      <unit id="org.eclipse.jst.web_ui.feature.feature.group" version="3.5.0.v201303132100-7F7GFUGC27SvlcDqtgjb-_fhALqUqcxTpwxR8dsR"/>
       <unit id="org.eclipse.jst.web_userdoc.feature.feature.group" version="3.5.0.v201303142300-23-7w312415412669"/>
       <unit id="org.eclipse.jst.ws.axis2tools.feature.feature.group" version="1.1.200.v201103022333-78-FF0DZRDKDDePSKwHj"/>
       <unit id="org.eclipse.jst.ws.cxf.feature.feature.group" version="1.1.100.v201302202059-7H79FL7FAKlbpxGz0bPn0l-E7G9E"/>
@@ -416,8 +415,7 @@
       <unit id="org.eclipse.wst.web_ui.feature.feature.group" version="3.5.0.v201209252144-7O7QG-6EMkBQ3A-bjcZ0x5QBPrhj48Zz-Bojv422"/>
       <unit id="org.eclipse.wst.web_userdoc.feature.feature.group" version="3.3.0.v201102200555-31Eo8s734B3E4H7799"/>
       <unit id="org.eclipse.wst.ws_core.feature.feature.group" version="3.5.0.v201303141425-7L7SFpmFGtGd00j0wz-sI422766"/>
-      <!-- JBIDE-14422 -->
-      <!--unit id="org.eclipse.wst.ws_ui.feature.feature.group" version="3.5.0.v201303130455-7I7EFkYEtEo_L098-I7p2E7P2ryR5_y5VhjP9iqL"/-->
+      <unit id="org.eclipse.wst.ws_ui.feature.feature.group" version="3.5.0.v201303130455-7I7EFkYEtEo_L098-I7p2E7P2ryR5_y5VhjP9iqL"/>
       <unit id="org.eclipse.wst.ws_userdoc.feature.feature.group" version="3.1.300.v201102200555-44FR79oB5855Q8IBD7G"/>
       <unit id="org.eclipse.wst.ws_wsdl15.feature.feature.group" version="1.5.301.v201102200555-2407w312123151655"/>
       <unit id="org.eclipse.wst.xml_core.feature.feature.group" version="3.5.0.v201209252144-7C7OFvSF7RZHQWIhO6PwRi"/>
