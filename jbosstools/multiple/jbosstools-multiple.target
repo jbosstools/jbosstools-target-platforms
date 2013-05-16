@@ -453,9 +453,8 @@
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/birt/4.3.0.v201304271046/"/>
       <unit id="org.eclipse.birt.feature.group" version="4.3.0.v201304271046-DMBlA3Gi06mHuAqvaM9Zf4FWMBU0"/>
       <unit id="org.eclipse.birt.chart.feature.group" version="4.3.0.v201303181854-828j7QFQCnvKj93BAJh4V"/>
-      <!--JBIDE-14421 -->
-      <!--unit id="org.eclipse.birt.integration.wtp.feature.group" version="4.3.0.v20130507-1501-5117w3124161802612"/-->
-      <!--unit id="org.eclipse.birt.chart.integration.wtp.feature.group" version="4.3.0.v20130507-1501-5117w3124161802612"/-->
+      <unit id="org.eclipse.birt.integration.wtp.feature.group" version="4.3.0.v20130507-1501-5117w3124161802612"/>
+      <unit id="org.eclipse.birt.chart.integration.wtp.feature.group" version="4.3.0.v20130507-1501-5117w3124161802612"/>
     </location>
 
   </locations>
