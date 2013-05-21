@@ -69,9 +69,9 @@ When moving from one version of the target to another, the steps are:
     BASEDIR=`pwd`
     for PROJECT in jbosstools jbdevstudio; do 
       # Merge changes in new target file to actual target file
-      pushd ${BASEDIR}/${PROJECT}/multiple && mvn org.jboss.tools.tycho-plugins:target-platform-utils:0.0.1-SNAPSHOT:fix-versions -DtargetFile=${PROJECT}-multiple.target && rm -f ${PROJECT}-multiple.target ${PROJECT}-multiple.target_update_hints.txt && mv -f ${PROJECT}-multiple.target_fixedVersion.target ${PROJECT}-multiple.target && popd
+      pushd ${BASEDIR}/${PROJECT}/multiple && mvn -U org.jboss.tools.tycho-plugins:target-platform-utils:0.0.1-SNAPSHOT:fix-versions -DtargetFile=${PROJECT}-multiple.target && rm -f ${PROJECT}-multiple.target ${PROJECT}-multiple.target_update_hints.txt && mv -f ${PROJECT}-multiple.target_fixedVersion.target ${PROJECT}-multiple.target && popd
       # Resolve the new 'multiple' target platform and verify it is self-contained by building the 'unified' target platform too
-      pushd ${BASEDIR}/${PROJECT} && mvn install -DtargetRepositoryUrl=file://${BASEDIR}/${PROJECT}/multiple/target/${PROJECT}-multiple.target.repo/ && popd
+      pushd ${BASEDIR}/${PROJECT} && mvn -U install -DtargetRepositoryUrl=file://${BASEDIR}/${PROJECT}/multiple/target/${PROJECT}-multiple.target.repo/ && popd
     done
 
 </pre>
