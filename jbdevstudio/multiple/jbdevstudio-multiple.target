@@ -8,7 +8,7 @@
   -->
   <locations>
     <!-- JBIDE-12815 JBoss Tools Locus bundles: not quite ready to be included -->
-    <!-- <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
+    <!-- <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/integration/kepler/core/locus/0.0.1.v20130507-2028-B7/"/> -->
       <!-- JBIDE-12971 Mockito
       <unit id="org.jboss.tools.locus.mockito" version="1.9.5.Final_patched_TEIIDDES-1681-v20130507-2028-B7"/> -->
@@ -16,10 +16,10 @@
       <unit id="org.jboss.tools.locus.easytesting.fest-assert" version="1.4.0.Final-v20130507-2028-B7"/> -->
     <!-- </location> -->
 
-    <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
+   <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <!-- don't forget to increment these files when moving up a version:
         build.xml, *.target*, publish.sh, target2p2mirror.xml -->
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/S20130427215344/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/R20130517111416/"/>
 
       <!-- for these IUs we need multiple versions -->
       <unit id="javax.wsdl" version="1.6.2.v201012040545"/>
@@ -98,7 +98,7 @@
     </location>
 
     <!-- m2e and family -->
-    <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2eclipse/20130507-1357_1.4_1.0/"/>
 
       <unit id="org.eclipse.m2e.feature.feature.group" version="1.4.0.20130318-1103"/>
@@ -124,7 +124,7 @@
     </location>
 
     <!-- Eclipse -->
-    <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130510-0900-M7/"/>
 
       <unit id="org.eclipse.equinox.p2.discovery.compatibility" version="1.0.101.v20130327-2119"/>
@@ -244,8 +244,8 @@
     </location>
 
     <!-- Mylyn site contains more than is in Kepler site, and this way we get sources too -->
-    <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/mylyn/3.9.0-I20130508-0822/"/>
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/mylyn/3.9.0-I20130529-1332/"/>
       <unit id="org.eclipse.mylyn.bugzilla_feature.feature.group" version="3.9.0.I20130508-0822"/>
       <unit id="org.eclipse.mylyn.commons.feature.group" version="3.9.0.I20130508-0822"/>
       <unit id="org.eclipse.mylyn.commons.compatibility.feature.group" version="3.9.0.I20130508-0822"/>
@@ -280,8 +280,8 @@
     </location>
 
     <!-- TM and RSE are in Kepler site but this way we get sources too -->
-    <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/tm/3.4.1.201305031537/"/>
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/tm/3.5.0.201305241355/"/>
       <unit id="org.eclipse.rse.feature.group" version="3.4.1.201305031537"/>
       <unit id="org.eclipse.rse.ssh.feature.group" version="3.0.400.201205062159"/>
       <unit id="org.eclipse.rse.terminals.feature.group" version="1.2.1.201305031537"/>
@@ -298,9 +298,10 @@
     </location>
 
     <!-- Servlet 3.0, Jetty 8 (JBIDE-13712 / http://www.eclipse.org/eclipse/development/porting/4.2/incompatibilities.php#jetty )
-         Jetty 8.1.9 is in Kepler site but this way we get sources too -->
-    <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/jetty/8.1.9.v20130131/"/>
+         Jetty 8.1.9 is in Kepler site but this way we get sources too
+         If possible, use same version of Jetty as the one in the Release Train repository -->
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/jetty/8.1.10.v20130312/"/>
       <unit id="org.eclipse.jetty.http" version="8.1.9.v20130131"/>
       <unit id="org.eclipse.jetty.continuation" version="8.1.9.v20130131"/>
       <unit id="org.eclipse.jetty.io" version="8.1.9.v20130131"/>
@@ -314,21 +315,21 @@
       <unit id="org.eclipse.jetty.rewrite" version="8.1.9.v20130131"/>
     </location>
 
-    <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
+    <!--location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/eclipse/S-4.3M7-201305020800/"/>
       <unit id="org.eclipse.update.core" version="3.2.600.v20130326-1319"/>
-    </location>
+    </location-->
 
     <!-- egit 3.0 is in Kepler site but this way we get sources too -->
-    <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/egit/3.0.0.201305080800-m7/"/>
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/egit/3.0.0.201305282000-rc2/"/>
       <unit id="org.eclipse.jgit.feature.group" version="3.0.0.201305080800-m7"/>
       <unit id="org.eclipse.egit.feature.group" version="3.0.0.201305080800-m7"/>
       <unit id="org.eclipse.egit.mylyn.feature.group" version="3.0.0.201305080800-m7"/>
       <unit id="org.eclipse.mylyn.github.feature.feature.group" version="3.0.0.201305080800-m7"/>
     </location>
 
-    <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/atlassian/3.2.1.v20130402/"/>
       <!-- JBIDE-13682 only include commons.core and jira since these are the only ones on which JBoss Mylyn stuff depends -->
       <unit id="com.atlassian.connector.eclipse.jira.feature.group" version="3.2.1.v20130402"/>
@@ -367,8 +368,8 @@
       -->
     </location>
 
-    <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools/S-3.5.0M7-20130507050119/"/>
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools/S-3.5.0RC2-20130528141217/"/>
 
       <unit id="org.eclipse.jst.jee" version="1.0.600.v201305070100"/>
       <unit id="org.eclipse.jst.jee.web" version="1.0.400.v201305070100"/>
@@ -427,7 +428,7 @@
       <unit id="org.eclipse.wst.xsl.feature.feature.group" version="1.3.300.v201302282018-7T7_F_uFIqUoKCGIeb62mhZKaH_Lg"/>
     </location>
 
-    <location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/gwt/3.2.3.v201304260926-rel-r42/"/>
       <unit id="com.google.gdt.eclipse.suite.e42.feature.feature.group" version="3.2.3.v201304260926-rel-r42"/>
       <unit id="com.google.gwt.eclipse.sdkbundle.feature.feature.group" version="2.5.1"/>
