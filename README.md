@@ -41,6 +41,10 @@ If you want to run the build and fetch source bundles at the same time as other 
 
     $ mvn clean verify -Dmirror-target-to-repo.includeSources=true
 
+If you want to run the build and not fail if there's a problem w/ validation, do this:
+
+    $ mvn clean verify -Dvalidate-target-platform.failOnError=false
+
 If you just want to check if things compiles/builds you can run:
 
     $ mvn clean verify -DskipTest=true
@@ -52,19 +56,27 @@ But *do not* push changes without having the new and existing unit tests pass!
 
 When moving from one version of the target to another, the steps are:
 
-1. Update the URLs contained in multiple.target (by hand)
+0. Bump the target platform versions contained in all 5 pom.xml and 2 *.target files.
 
-2. Regenerate the IU versions:
+1. Update the URLs contained in jbosstools-multiple.target and jbdevstudio-multiple.target (by hand). Check in changes (but do not push to master).
 
-    $ cd jbosstools/multiple
+2. Regenerate the IU versions, using <a href="https://github.com/jbosstools/jbosstools-maven-plugins/wiki">org.jboss.tools.tycho-plugins:target-platform-utils</a>, and validate results
 
-    $ mvn org.jboss.tools.tycho-plugins:target-platform-utils:0.0.1-SNAPSHOT:fix-versions -DtargetFile=jbosstools-multiple.target
+<pre>
 
-3. Merge changes in new target file to actual target file:
+    # point BASEDIR to where you have these sources checked out
+    BASEDIR=$HOME/jbosstools-target-platforms; # or, just do this:
+    BASEDIR=`pwd`
+    for PROJECT in jbosstools jbdevstudio; do 
+      # Merge changes in new target file to actual target file
+      pushd ${BASEDIR}/${PROJECT}/multiple && mvn -U org.jboss.tools.tycho-plugins:target-platform-utils:0.16.0-SNAPSHOT:fix-versions -DtargetFile=${PROJECT}-multiple.target && rm -f ${PROJECT}-multiple.target ${PROJECT}-multiple.target_update_hints.txt && mv -f ${PROJECT}-multiple.target_fixedVersion.target ${PROJECT}-multiple.target && popd
+      # Resolve the new 'multiple' target platform and verify it is self-contained by building the 'unified' target platform too
+      pushd ${BASEDIR}/${PROJECT} && mvn -U install -DtargetRepositoryUrl=file://${BASEDIR}/${PROJECT}/multiple/target/${PROJECT}-multiple.target.repo/ && popd
+    done
 
-    $ mv jbosstools-multiple.target_fixedVersion.target jbosstools-multiple.target
+</pre>
 
-    $ rm jbosstools-multiple.target_update_hints.txt
+<ol><li value="4"> Check in updated target files & push to master.</li></ol>
 
 
 ## Contribute fixes and features
