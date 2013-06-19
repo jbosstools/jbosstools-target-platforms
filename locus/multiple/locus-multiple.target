@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><?pde version="3.6"?>
+<target includeMode="feature" name="jbosstoolstarget-4.22.2.Final-SNAPSHOT">
+	<!-- Pro tip: to convert
+			from org.eclipse.foo_4.6.0.v201005032111-777K4AkF7B77R7c7N77.jar
+		to <unit version="4.6.0.v201005032111-777K4AkF7B77R7c7N77" id="org.eclipse.foo.feature.group"/>
+		using vi, apply this transform:
+		:%s/.\+\/\(org.\+\)_\(\d\+.\+\)\.jar/\t\t\t<unit id="\1.feature.group" version="\2"\/>/g
+	-->
+	<locations>
+		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
+			<!-- don't forget to increment these files when moving up a version:
+				build.xml, *.target*, publish.sh, target2p2mirror.xml -->
+			<repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/R20130517111416"/>
+      <!-- need:
+            org.junit [4.11.0,5.0.0)
+            org.apache.ant [1.8.4,2.0.0)
+      -->
+			<unit id="org.junit" version="4.11.0.v201303080030"/>
+			<unit id="org.apache.ant" version="1.8.4.v201303080030"/>
+			<unit id="org.apache.commons.beanutils" version="1.8.0.v201205091237"/>
+		</location>
+
+		<!-- org.apache.ant -->
+		<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit" includeSource="true">
+			<repository location="http://download.jboss.org/jbosstools/updates/requirements/juno/201302132140-R/"/>
+			<unit id="org.eclipse.osgi" version="3.8.2.v20130124-134944"/>
+		</location>
+	</locations>
+	<targetJRE path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+</target>
