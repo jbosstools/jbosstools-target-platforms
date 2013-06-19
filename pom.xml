@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.jboss.tools.targetplatforms</groupId>
+	<artifactId>root</artifactId>
+  <version>4.22.2.Final-SNAPSHOT</version>
+	<name>JBoss Tools + JBDS Target Platform Root</name>
+	<packaging>pom</packaging>
+
+	<properties>
+		<tychoVersion>0.16.0</tychoVersion>
+		<tychoExtrasVersion>0.16.0</tychoExtrasVersion>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tychoVersion}</version>
+				<extensions>true</extensions>
+			</plugin>
+		</plugins>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.jboss.tools.tycho-plugins</groupId>
+					<artifactId>target-platform-utils</artifactId>
+					<version>0.16.0.CR1</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+	<modules>
+		<module>jbdevstudio</module>
+		<module>jbosstools</module>
+	</modules>
+
+	<distributionManagement>
+		<repository>
+			<id>jboss-releases-repository</id>
+			<name>JBoss Releases Repository</name>
+			<uniqueVersion>false</uniqueVersion>
+			<url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</url>
+			<layout>default</layout>
+		</repository>
+		<snapshotRepository>
+			<id>jboss-snapshots-repository</id>
+			<name>JBoss Snapshot Repository</name>
+			<uniqueVersion>false</uniqueVersion>
+			<url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
+			<layout>default</layout>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<!-- Additional m2 repos to resolve things like org.eclipse.tycho:tycho-maven-plugin:0.16.0-SNAPSHOT -->
+    <!-- JBoss Nexus repos are also added, but in settings.xml -->
+	<pluginRepositories>
+		<pluginRepository>
+			<id>sonatype-public-grid</id>
+			<url>https://repository.sonatype.org/content/groups/sonatype-public-grid</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>sonatype-public-repository</id>
+			<url>https://oss.sonatype.org/content/groups/public</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>jboss-releases</id>
+			<name>JBoss Releases Maven Repository</name>
+			<url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</pluginRepository>
+		<pluginRepository>
+			<id>jboss-snapshots-repository</id>
+			<name>JBoss Snapshots Repository</name>
+			<url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+
+</project>
