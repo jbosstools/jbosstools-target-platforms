@@ -28,6 +28,10 @@ fi
 
 while [ "$#" -gt 0 ]; do
 	case $1 in
+    '-sourceFolder')
+      sourceFolder="$2"
+      shift 2;;
+    
     '-projectName')
       projectName="$2"
       shift 2;;
@@ -53,8 +57,8 @@ if [[ ! ${version} ]]; then
 	exit 1
 fi
 
-# source target platform site from workspace
-sourceFolder=${WORKSPACE}/${projectName}/multiple/target/${projectName}-multiple.target.repo
+# source target platform site from workspace, if not set on commandline
+if [[ ! ${sourceFolder} ]]; then sourceFolder=${WORKSPACE}/${projectName}/multiple/target/${projectName}-multiple.target.repo; fi
 
 # eg., jbosstoolstarget-4.30.0.Final.zip
 targetZipFile=${projectName}target-${version}.zip 
