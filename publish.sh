@@ -91,11 +91,15 @@ if [[ -d ${sourceFolder} ]]; then
 	if [[ ${DESTINATION/:/} == ${DESTINATION} ]]; then # local path, no user@server:/path
 		mkdir -p ${DESTINATION}/
 	else
-		DESTPARENT=${DESTINATION%/*}; NEWFOLDER=${DESTINATION##*/}
-		if [[ $(echo "ls" | sftp ${DESTPARENT} 2>&1 | grep ${NEWFOLDER}) == "" ]]; then
-			# DESTHOST=${DESTINATION%:*}; DESTFOLD=${DESTINATION#*:}; echo "mkdir ${DESTFOLD}" | sftp ${DESTHOST}; # alternate approach
-			echo "mkdir ${NEWFOLDER}" | sftp ${DESTPARENT}
-		fi
+    DESTPARENT=${DESTINATION%/*}; NEWFOLDER=${DESTINATION##*/}
+    DESTPARENT2=${DESTPARENT%/*}; NEWFOLDER2=${DESTPARENT##*/}
+    if [[ $(echo "ls" | sftp ${DESTPARENT2} 2>&1 | grep ${NEWFOLDER2}) == "" ]]; then
+      echo "mkdir ${NEWFOLDER2}" | sftp ${DESTPARENT2}
+    fi
+    if [[ $(echo "ls" | sftp ${DESTPARENT} 2>&1 | grep ${NEWFOLDER}) == "" ]]; then
+      # DESTHOST=${DESTINATION%:*}; DESTFOLD=${DESTINATION#*:}; echo "mkdir ${DESTFOLD}" | sftp ${DESTHOST}; # alternate approach
+      echo "mkdir ${NEWFOLDER}" | sftp ${DESTPARENT}
+    fi
 	fi
 	# if the following line fails, make sure that ${DESTINATION} is already created on target server
 	date; rsync -arzqc --protocol=28 --delete-after --delete-excluded --rsh=ssh ${exclude} ${include} ${DESTINATION}/REPO/
