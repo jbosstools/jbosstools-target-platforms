@@ -28,9 +28,13 @@ fi
 
 while [ "$#" -gt 0 ]; do
 	case $1 in
-		'-version')
-			version="$2"
-			shift 2;;
+    '-projectName')
+      projectName="$2"
+      shift 2;;
+
+    '-version')
+      version="$2"
+      shift 2;;
 
 		'-jbdevstudio')
 			projectName='jbdevstudio'
@@ -102,7 +106,7 @@ if [[ -d ${sourceFolder} ]]; then
 	# generate compositeContent.xml and compositeArtifacts.xml to make this URL a link to /REPO with p2
 	timestamp=$(date +%s0000)
 	echo "<?compositeMetadataRepository version='1.0.0'?>
-<repository name='JBoss Tools Target Platform Site' type='org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository' version='1.0.0'>
+<repository name='${projectName} Target Platform Site' type='org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository' version='1.0.0'>
   <properties size='2'>
     <property name='p2.compressed' value='true'/>
     <property name='p2.timestamp' value=\"${timestamp}\"/>
@@ -112,7 +116,7 @@ if [[ -d ${sourceFolder} ]]; then
   </children>
 </repository>" > ${tempDir}/compositeContent.xml
 	echo "<?compositeArtifactRepository version='1.0.0'?>
-<repository name='JBoss Tools Target Platform Site' type='org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository' version='1.0.0'>
+<repository name='${projectName} Target Platform Site' type='org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository' version='1.0.0'>
   <properties size='2'>
     <property name='p2.compressed' value='true'/>
     <property name='p2.timestamp' value=\"${timestamp}\"/>
