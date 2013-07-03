@@ -70,7 +70,7 @@ DESTINATION=${DESTINATIONROOT}/${projectName}target/${version}
 INTERNALDEST=${INTERNALDESTROOT}/${projectName}target/${version}
 
 if [[ -d ${sourceFolder} ]]; then
-	cd ${sourceFolder}
+	pushd ${sourceFolder} >/dev/null
 
 	if [[ ! -d ${INTERNALDEST} ]]; then
 		mkdir -p ${INTERNALDEST}
@@ -131,6 +131,7 @@ if [[ -d ${sourceFolder} ]]; then
 
 	date; rsync -arzq --protocol=28 --rsh=ssh ${tempDir}/* ${DESTINATION}/
 	rm -fr ${tempDir}
+  popd >/dev/null  
 else
 	echo "sourceFolder ${sourceFolder} not found or not a directory! Must exit!"
 	exit 1;
