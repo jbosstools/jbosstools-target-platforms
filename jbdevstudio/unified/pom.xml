@@ -13,7 +13,7 @@
 	<properties>
 		<!-- set this to false to allow validation to proceed but NOT fail the build -->
 		<validate-target-platform.failOnError>true</validate-target-platform.failOnError>
-		<targetRepositoryUrl>http://www.qa.jboss.com/binaries/RHDS/targetplatforms/jbdevstudiotarget/${project.version}/REPO/</targetRepositoryUrl>
+		<targetRepositoryUrl>http://download.jboss.org/jbosstools/targetplatforms/jbdevstudiotarget/${project.version}/REPO/</targetRepositoryUrl>
 	</properties>
 	<build>
 		<plugins>
