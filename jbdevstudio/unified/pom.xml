@@ -30,7 +30,7 @@
 								<classifier>jbdevstudio-multiple</classifier>
 								<version>${project.version}</version>
 							</sourceTargetArtifact>
-							<targetRepositoryUrl>http://www.qa.jboss.com/binaries/RHDS/targetplatforms/jbdevstudiotarget/${project.version}/REPO/</targetRepositoryUrl>
+							<targetRepositoryUrl>http://download.jboss.org/jbosstools/targetplatforms/jbdevstudiotarget/${project.version}/REPO/</targetRepositoryUrl>
 						</configuration>
 					</execution>
 				</executions>
