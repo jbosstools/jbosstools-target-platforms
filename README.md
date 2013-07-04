@@ -76,7 +76,7 @@ When moving from one version of the target to another, the steps are:
 
 </pre>
 
-<ol><li value="4"> Check in updated target files & push to master.</li></ol>
+<ol><li value="4"> Check in updated target files & push to the branch.</li></ol>
 
 
 ## Contribute fixes and features
