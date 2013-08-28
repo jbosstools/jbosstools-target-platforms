@@ -19,7 +19,7 @@
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <!-- don't forget to increment these files when moving up a version:
         build.xml, *.target*, publish.sh, target2p2mirror.xml -->
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/R20130517111416/"/>
+      <repository location="http://download.jboss.org/jbosstools/static/requirements/orbit/R20130827064939/"/>
 
       <!-- for these IUs we need multiple versions -->
       <unit id="javax.wsdl" version="1.6.2.v201012040545"/>
