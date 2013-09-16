@@ -17,14 +17,14 @@ and then clone your fork:
     $ cd jbosstools-build
     $ git remote add upstream git://github.com/jbosstools/jbosstools-target-platforms.git
 	
-At any time, you can pull changes from the upstream and merge them onto your 4.3.0 branch:
+At any time, you can pull changes from the upstream and merge them onto your 4.31.x branch:
 
-    $ git checkout 4.3.0               # switches to the '4.3.0' branch
-    $ git pull upstream 4.3.0          # fetches all 'upstream' changes and merges 'upstream/4.3.0' onto your '4.3.0' branch
+    $ git checkout 4.31.x               # switches to the '4.31.x' branch
+    $ git pull upstream 4.31.x          # fetches all 'upstream' changes and merges 'upstream/4.31.x' onto your '4.31.x' branch
     $ git push origin                  # pushes all the updates to your fork, which should be in-sync with 'upstream'
 
-The general idea is to keep your '4.3.0' branch in-sync with the
-'upstream/4.3.0'.
+The general idea is to keep your '4.31.x' branch in-sync with the
+'upstream/4.31.x'.
 
 
 ## Building JBoss Tools Target Platforms
@@ -98,11 +98,11 @@ tests) runs successfully, commit your changes on your topic branch
 (with good comments). Then it's time to check for any recent changes
 that were made in the official repository:
 
-	$ git checkout 4.3.0               # switches to the '4.3.0' branch
-	$ git pull upstream 4.3.0          # fetches all 'upstream' changes and merges 'upstream/4.3.0' onto your '4.3.0' branch
+	$ git checkout 4.31.x               # switches to the '4.31.x' branch
+	$ git pull upstream 4.31.x          # fetches all 'upstream' changes and merges 'upstream/4.31.x' onto your '4.31.x' branch
 	$ git checkout jbide-1234           # switches to your topic branch
-	$ git rebase 4.3.0                 # reapplies your changes on top of the latest in 4.3.0
-	                                      (i.e., the latest from 4.3.0 will be the new base for your changes)
+	$ git rebase 4.31.x                 # reapplies your changes on top of the latest in 4.31.x
+	                                      (i.e., the latest from 4.31.x will be the new base for your changes)
 
 If the pull grabbed a lot of changes, you should rerun your build with
 tests enabled to make sure your changes are still good.
