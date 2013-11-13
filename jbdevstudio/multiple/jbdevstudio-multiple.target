@@ -420,8 +420,8 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/gwt/3.2.3.v201304260926-rel-r42/"/>
-      <unit id="com.google.gdt.eclipse.suite.e42.feature.feature.group" version="3.2.3.v201304260926-rel-r42"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/gwt/3.4.2.v201310081834-rel-r43/"/>
+      <unit id="com.google.gdt.eclipse.suite.e43.feature.feature.group" version="3.4.2.v201310081834-rel-r43"/>
       <unit id="com.google.gwt.eclipse.sdkbundle.feature.feature.group" version="2.5.1"/>
     </location>
   </locations>
