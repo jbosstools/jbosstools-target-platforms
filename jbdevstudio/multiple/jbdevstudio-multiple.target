@@ -119,10 +119,13 @@
       <unit id="org.eclipse.m2e.wtp.jsf.feature.feature.group" version="1.1.0.20130821-1331"/>
       <unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.0.1.201209200721"/>
       <unit id="org.jboss.tools.m2e.jdt.feature.feature.group" version="1.0.1.201209200903"/>
-      <unit id="org.jboss.tools.m2e.wro4j.feature.feature.group" version="1.0.1.201209200854"/>
 
       <unit id="com.ning.async-http-client" version="1.6.5.20131001-2328"/>
       <unit id="org.jboss.netty" version="3.2.5.Final-20131001-2328"/>
+    </location>
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/1.0.2-2013-11-12_19-36-08-H20/"/>
+      <unit id="org.jboss.tools.m2e.wro4j.feature.feature.group" version="1.0.2.201311130036"/>
     </location>
 
     <!-- Eclipse -->
