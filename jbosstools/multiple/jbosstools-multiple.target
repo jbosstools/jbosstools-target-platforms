@@ -118,18 +118,6 @@
       <unit id="org.eclipse.m2e.wtp.jsf.feature.feature.group" version="1.1.0.20130821-1331"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/1.0.2-2013-11-12_19-36-08-H20/"/>
-      <unit id="org.jboss.tools.m2e.wro4j.feature.feature.group" version="1.0.2.201311130036"/>
-    </location>
-    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/1.1.0-2013-11-29_03-18-37-H27/"/>
-      <unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.1.0.201311290819"/>
-    </location>
-    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-jdt-compiler/"/>
-      <unit id="org.jboss.tools.m2e.jdt.feature.feature.group" version="1.0.1.201209200903"/>
-    </location>
-    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-mavenarchiver/"/>
       <unit id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version="0.15.0.201212080009"/>
     </location>
