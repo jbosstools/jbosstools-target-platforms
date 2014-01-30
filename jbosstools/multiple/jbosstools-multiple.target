@@ -122,8 +122,8 @@
       <unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.1.0.201311290819"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-mavenarchiver/"/>
-      <unit id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version="0.15.0.201212080009"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2eclipse-mavenarchiver/0.16.0.201401211452/"/>
+      <unit id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version="0.16.0.201401211452"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-buildhelper/"/>
