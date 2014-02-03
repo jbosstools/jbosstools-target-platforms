@@ -54,11 +54,6 @@
       <unit id="org.apache.commons.io" version="2.0.1.v201105210651"/>
       <unit id="org.apache.commons.codec" version="1.3.0.v201101211617"/>
       <unit id="org.apache.commons.httpclient" version="3.1.0.v201012070820"/>
-      <unit id="org.hamcrest" version="1.1.0.v20090501071000"/>
-      <unit id="org.hamcrest.core" version="1.1.0.v20090501071000"/>
-      <unit id="org.hamcrest.text" version="1.1.0.v20090501071000"/>
-      <unit id="org.hamcrest.library" version="1.1.0.v20090501071000"/>
-      <unit id="org.hamcrest.integration" version="1.1.0.v201303031500"/>
 
       <!-- Needed for Atlassian -->
       <unit id="com.google.guava" version="10.0.1.v201203051515"/>
@@ -452,6 +447,8 @@
       <unit id="org.eclipse.birt.chart.feature.group" version="4.3.2.v201310241736-828v7QFQCnvKmHZJoM5Ac"/>
       <unit id="org.eclipse.birt.integration.wtp.feature.group" version="4.3.2.v20131213-1101-5217w3124232402212"/>
       <unit id="org.eclipse.birt.chart.integration.wtp.feature.group" version="4.3.2.v20131213-1101-5217w3124232402212"/>
+      <unit id="org.hamcrest.core" version="1.3.0.v201303031735"/>
+      <unit id="org.hamcrest.library" version="1.3.0.v201305281000"/>
     </location>
 
   </locations>
