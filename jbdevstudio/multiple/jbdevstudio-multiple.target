@@ -71,6 +71,12 @@
       <unit id="javax.ejb" version="3.1.1.v201204261316"/>
       <unit id="javax.transaction" version="1.1.1.v201105210645"/>
 
+      <!-- Needed by jbosstools-webservices -->
+      <unit id="ch.qos.logback.classic" version="1.0.7.v20121108-1250"/>
+      <unit id="ch.qos.logback.core" version="1.0.7.v20121108-1250"/>
+      <!-- Needed by jbosstools-aerogear -->
+      <unit id="com.google.gson" version="2.1.0.v201303041604"/>
+
       <!-- Servlet 3.0, Jetty 8 (JBIDE-13712 / http://www.eclipse.org/eclipse/development/porting/4.2/incompatibilities.php#jetty ) -->
       <unit id="javax.el" version="2.2.0.v201303151357"/>
       <unit id="com.sun.el" version="2.2.0.v201303151357"/>

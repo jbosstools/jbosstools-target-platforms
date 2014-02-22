@@ -65,6 +65,12 @@
       <unit id="javax.ejb" version="3.1.1.v201204261316"/>
       <unit id="javax.transaction" version="1.1.1.v201105210645"/>
 
+      <!-- Needed by jbosstools-webservices -->
+      <unit id="ch.qos.logback.classic" version="1.0.7.v20121108-1250"/>
+      <unit id="ch.qos.logback.core" version="1.0.7.v20121108-1250"/>
+      <!-- Needed by jbosstools-aerogear -->
+      <unit id="com.google.gson" version="2.1.0.v201303041604"/>
+
       <!-- Needed for Mylyn/Bugzilla -->
       <unit id="org.apache.xmlrpc" version="3.0.0.v20100427-1100"/>
       <unit id="org.apache.ws.commons.util" version="1.0.1.v20100518-1140"/>
