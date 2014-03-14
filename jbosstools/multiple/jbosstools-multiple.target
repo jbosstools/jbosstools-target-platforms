@@ -235,6 +235,17 @@
       <unit id="org.eclipse.jgit.feature.group" version="3.3.0.201403021825-r"/>
       <unit id="org.eclipse.egit.feature.group" version="3.3.0.201403021825-r"/>
 
+      <!-- only in JBT: sapphire (used by Arquillian) -->
+      <unit id="org.eclipse.sapphire" version="0.7.0.201312161343"/>
+      <unit id="org.eclipse.sapphire.java" version="0.7.0.201312161343"/>
+      <unit id="org.eclipse.sapphire.java.jdt" version="0.7.0.201312161343"/>
+      <unit id="org.eclipse.sapphire.modeling.xml" version="0.7.0.201312161343"/>
+      <unit id="org.eclipse.sapphire.osgi" version="0.7.0.201312161343"/>
+      <unit id="org.eclipse.sapphire.platform" version="0.7.0.201312161343"/>
+      <unit id="org.eclipse.sapphire.ui" version="0.7.0.201312161343"/>
+      <unit id="org.eclipse.sapphire.ui.swt.gef" version="0.7.0.201312161343"/>
+      <unit id="org.eclipse.sapphire.ui.swt.xml.editor" version="0.7.0.201312161343"/>
+      <unit id="org.objectweb.asm" version="0.0.0"/>
     </location>
 
     <!-- TM and RSE are in Kepler site but this way we get sources too -->
