@@ -236,16 +236,16 @@
       <unit id="org.eclipse.egit.feature.group" version="3.3.0.201403021825-r"/>
 
       <!-- only in JBT: sapphire (used by Arquillian) -->
-      <unit id="org.eclipse.sapphire" version="0.7.0.201312161343"/>
-      <unit id="org.eclipse.sapphire.java" version="0.7.0.201312161343"/>
-      <unit id="org.eclipse.sapphire.java.jdt" version="0.7.0.201312161343"/>
-      <unit id="org.eclipse.sapphire.modeling.xml" version="0.7.0.201312161343"/>
-      <unit id="org.eclipse.sapphire.osgi" version="0.7.0.201312161343"/>
-      <unit id="org.eclipse.sapphire.platform" version="0.7.0.201312161343"/>
-      <unit id="org.eclipse.sapphire.ui" version="0.7.0.201312161343"/>
-      <unit id="org.eclipse.sapphire.ui.swt.gef" version="0.7.0.201312161343"/>
-      <unit id="org.eclipse.sapphire.ui.swt.xml.editor" version="0.7.0.201312161343"/>
-      <unit id="org.objectweb.asm" version="0.0.0"/>
+      <unit id="org.eclipse.sapphire.feature.group" version="8.0.0.201402132212"/>
+      <unit id="org.eclipse.sapphire.java.feature.group" version="8.0.0.201402132212"/>
+      <unit id="org.eclipse.sapphire.java.jdt.feature.group" version="8.0.0.201402132212"/>
+      <unit id="org.eclipse.sapphire.modeling.xml.feature.group" version="8.0.0.201402132212"/>
+      <unit id="org.eclipse.sapphire.osgi.feature.group" version="8.0.0.201402132212"/>
+      <unit id="org.eclipse.sapphire.platform.feature.group" version="8.0.0.201402132212"/>
+      <unit id="org.eclipse.sapphire.ui.feature.group" version="8.0.0.201402132212"/>
+      <unit id="org.eclipse.sapphire.ui.swt.gef.feature.group" version="8.0.0.201402132212"/>
+      <unit id="org.eclipse.sapphire.ui.swt.xml.editor.feature.group" version="8.0.0.201402132212"/>
+      <unit id="org.objectweb.asm" version="4.0.0.v201302062210"/>
     </location>
 
     <!-- TM and RSE are in Kepler site but this way we get sources too -->
