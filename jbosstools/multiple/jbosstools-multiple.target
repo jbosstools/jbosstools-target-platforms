@@ -373,6 +373,7 @@
       <unit id="org.eclipse.birt.feature.group" version="4.4.0.v201402232139-DPEp7FGixAot3AH8segZ-VBCWne9"/>
       <unit id="org.eclipse.birt.chart.feature.group" version="4.4.0.v201402232139-829A4FQCnvK55qKmUD78"/>
       <unit id="org.eclipse.birt.integration.wtp.feature.group" version="4.4.0.v20140311-1438-53-7w3125142202549"/>
+      <unit id="org.eclipse.birt.chart.integration.wtp.feature.group" version="4.4.0.v20140311-1438-53-7w3125142202549"/>
     </location>
 
   </locations>
