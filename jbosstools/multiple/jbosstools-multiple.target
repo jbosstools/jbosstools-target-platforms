@@ -243,6 +243,7 @@
       <unit id="org.eclipse.mylyn.discovery.feature.group" version="3.11.0.v20131021-1909"/>
       <unit id="org.eclipse.mylyn.tasks.core" version="3.11.0.v20140304-2222"/>
       <unit id="org.eclipse.mylyn.tasks.ui" version="3.11.0.v20140304-0241"/>
+      <unit id="org.eclipse.mylyn.tasks.bugs" version="3.11.0.v20131021-1910"/>
       <!-- Those Mylyn/Bugzilla IUs are only necessary for tests -->
       <unit id="org.eclipse.mylyn.bugzilla_feature.feature.group" version="3.11.0.v20140218-2238"/>
       <unit id="org.eclipse.mylyn.bugzilla.ide" version="3.11.0.v20131021-1909"/>
