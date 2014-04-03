@@ -388,17 +388,6 @@
       <unit id="org.eclipse.wst.xsl.feature.feature.group" version="1.3.300.v201302282018-7T7_F_uFIqUoKCGIeb62mhZKaH_Lg"/>
     </location>
 
-    <!-- Only in JBT: GWT (deprecated?) -->
-    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/gwt/3.4.2.v201310081834-rel-r43/"/>
-      <!-- JBIDE-16910 cannot be installed to Luna as Luna includes org.eclipse.core.runtime_3.10.0.v20140221-2027.jar and contained plugin requires org.eclipse.core.runtime < 3.10 <unit id="com.google.gdt.eclipse.suite.e43.feature.feature.group" version="3.4.2.v201310081834-rel-r43"/> -->
-      <unit id="com.google.gwt.eclipse.sdkbundle.feature.feature.group" version="2.5.1"/>
-      <unit id="com.google.gwt.eclipse.oophm" version="3.4.2.v201310081834-rel-r43"/>
-      <unit id="com.google.gwt.eclipse.core" version="3.4.2.v201310081834-rel-r43"/>
-      <unit id="com.google.gdt.eclipse.core" version="3.4.2.v201310081834-rel-r43"/>
-      <unit id="com.google.gdt.eclipse.platform" version="3.4.2.v201310081834-rel-r43"/>
-    </location>
-
     <!-- Only in JBT, for integration-tests: SWTBot -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/swtbot/2.2.0/"/>
