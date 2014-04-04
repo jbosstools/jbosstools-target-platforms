@@ -94,8 +94,8 @@ When moving from one version of the target to another, the steps are:
 </pre>
 
 <ol>
-  <li value="4"> Follow the [release guidelines](https://github.com/jbosstools/jbosstools-devdoc/blob/master/building/target_platforms/target_platforms_updates.adoc) for how to announce target platform changes.</li>
-  <li>Check in updated target files & push to the branch.</li>
+  <li value="4"> Follow the <a href="https://github.com/jbosstools/jbosstools-devdoc/blob/master/building/target_platforms/target_platforms_updates.adoc">release guidelines</a> for how to announce target platform changes.</li>
+  <li>Check in updated target files &amp; push to the branch.</li>
 </ol>
 
 ## Contribute fixes and features
