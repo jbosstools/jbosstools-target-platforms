@@ -87,13 +87,16 @@ When moving from one version of the target to another, the steps are:
         echo "Unpack ${ECLIPSEZIP} into ${INSTALLDIR} ..." && tar xzf ${ECLIPSEZIP}
         echo "Fetch install script to ${INSTALLSCRIPT} ..." && wget -q --no-check-certificate -N https://raw.githubusercontent.com/jbosstools/jbosstools-build-ci/master/util/installFromTarget.sh -O ${INSTALLSCRIPT} && chmod +x ${INSTALLSCRIPT} 
         echo "Install..." && ${INSTALLSCRIPT} -ECLIPSE ${INSTALLDIR}/eclipse -INSTALL_PLAN file://${BASEDIR}/${PROJECT}/multiple/target/${PROJECT}-multiple.target.repo/ \
-        | tee /tmp/log.txt; cat /tmp/log.txt | egrep -i "could not be found|FAILED|Missing|Only one of the following|being installed|Cannot satisfy dependency"
+        | tee /tmp/log.txt; cat /tmp/log.txt | egrep -i -A2 "could not be found|FAILED|Missing|Only one of the following|being installed|Cannot satisfy dependency"
       popd
     done
 
 </pre>
 
-<ol><li value="4"> Check in updated target files & push to the branch.</li></ol>
+<ol>
+  <li value="4"> Follow the [release guidelines]() for how to announce target platform changes.</li>
+  <li>Check in updated target files & push to the branch.</li>
+</ol>
 
 ## Contribute fixes and features
 
