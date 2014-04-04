@@ -70,14 +70,29 @@ When moving from one version of the target to another, the steps are:
     for PROJECT in jbosstools jbdevstudio; do 
       # Merge changes in new target file to actual target file
       pushd ${BASEDIR}/${PROJECT}/multiple && mvn -U org.jboss.tools.tycho-plugins:target-platform-utils:0.19.0-SNAPSHOT:fix-versions -DtargetFile=${PROJECT}-multiple.target && rm -f ${PROJECT}-multiple.target ${PROJECT}-multiple.target_update_hints.txt && mv -f ${PROJECT}-multiple.target_fixedVersion.target ${PROJECT}-multiple.target && popd
-      # Resolve the new 'multiple' target platform and verify it is self-contained by building the 'unified' target platform too
-      pushd ${BASEDIR}/${PROJECT} && mvn -U install -DtargetRepositoryUrl=file://${BASEDIR}/${PROJECT}/multiple/target/${PROJECT}-multiple.target.repo/ && popd
+    
+      # Step 2: Resolve the new 'multiple' target platform and verify it is self-contained by building the 'unified' target platform too
+      # TODO: if you removed IUs, be sure to do a `mvn clean install`, rather than just a `mvn install`; process will be much longer but will guarantee metadata is correct 
+      pushd ${BASEDIR}/${PROJECT} && mvn install -DtargetRepositoryUrl=file://${BASEDIR}/${PROJECT}/multiple/target/${PROJECT}-multiple.target.repo/ && popd
+    
+      # Step 3: Install the new target platform into a clean Eclipse JEE bundle to verify if everything can be installed
+      INSTALLDIR=/tmp/${PROJECT}target-install-test
+      INSTALLSCRIPT=/tmp/installFromTarget.sh
+      rm -fr ${INSTALLDIR} && mkdir -p ${INSTALLDIR}
+      pushd ${INSTALLDIR}
+        echo "Unpack ${ECLIPSEZIP} into ${INSTALLDIR} ..." && tar xzf ${ECLIPSEZIP}
+        echo "Fetch install script to ${INSTALLSCRIPT} ..." && wget -q --no-check-certificate -N https://raw.githubusercontent.com/jbosstools/jbosstools-build-ci/master/util/installFromTarget.sh -O ${INSTALLSCRIPT} && chmod +x ${INSTALLSCRIPT} 
+        echo "Install..." && ${INSTALLSCRIPT} -ECLIPSE ${INSTALLDIR}/eclipse -INSTALL_PLAN file://${BASEDIR}/${PROJECT}/multiple/target/${PROJECT}-multiple.target.repo/ \
+        | tee /tmp/log.txt; cat /tmp/log.txt | egrep -i -A2 "could not be found|FAILED|Missing|Only one of the following|being installed|Cannot satisfy dependency"
+      popd
     done
 
 </pre>
 
-<ol><li value="4"> Check in updated target files & push to master.</li></ol>
-
+<ol>
+  <li value="4"> Follow the [release guidelines](https://github.com/jbosstools/jbosstools-devdoc/blob/master/building/target_platforms/target_platforms_updates.adoc) for how to announce target platform changes.</li>
+  <li>Check in updated target files & push to the branch.</li>
+</ol>
 
 ## Contribute fixes and features
 
