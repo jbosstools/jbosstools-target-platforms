@@ -67,8 +67,12 @@ When moving from one version of the target to another, the steps are:
     # point BASEDIR to where you have these sources checked out
     BASEDIR=$HOME/jbosstools-target-platforms; # or, just do this:
     BASEDIR=`pwd`
+
+    # set path to where you have the latest compatible Eclipse bundle stored locally
+    ECLIPSEZIP=${HOME}/tmp/Eclipse_Bundles/eclipse-jee-luna-M6-linux-gtk-x86_64.tar.gz
+
     for PROJECT in jbosstools jbdevstudio; do 
-      # Merge changes in new target file to actual target file
+      # Step 1: Merge changes in new target file to actual target file
       pushd ${BASEDIR}/${PROJECT}/multiple && mvn -U org.jboss.tools.tycho-plugins:target-platform-utils:0.19.0-SNAPSHOT:fix-versions -DtargetFile=${PROJECT}-multiple.target && rm -f ${PROJECT}-multiple.target ${PROJECT}-multiple.target_update_hints.txt && mv -f ${PROJECT}-multiple.target_fixedVersion.target ${PROJECT}-multiple.target && popd
     
       # Step 2: Resolve the new 'multiple' target platform and verify it is self-contained by building the 'unified' target platform too
@@ -90,7 +94,7 @@ When moving from one version of the target to another, the steps are:
 </pre>
 
 <ol>
-  <li value="4"> Follow the [release guidelines](https://github.com/jbosstools/jbosstools-devdoc/blob/master/building/target_platforms/target_platforms_updates.adoc) for how to announce target platform changes.</li>
+  <li value="4"> Follow the [release guidelines]() for how to announce target platform changes.</li>
   <li>Check in updated target files & push to the branch.</li>
 </ol>
 
