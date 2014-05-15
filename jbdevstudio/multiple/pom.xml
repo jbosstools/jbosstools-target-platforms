@@ -67,9 +67,6 @@
 	<profiles>
 		<profile>
 			<id>multiple2repo</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
 			<build>
 				<plugins>
 					<plugin>
