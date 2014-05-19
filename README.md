@@ -77,7 +77,7 @@ When moving from one version of the target to another, the steps are:
     
       # Step 2: Resolve the new 'multiple' target platform and verify it is self-contained by building the 'unified' target platform too
       # TODO: if you removed IUs, be sure to do a `mvn clean install`, rather than just a `mvn install`; process will be much longer but will guarantee metadata is correct 
-      pushd ${BASEDIR}/${PROJECT} && mvn install -DtargetRepositoryUrl=file://${BASEDIR}/${PROJECT}/multiple/target/${PROJECT}-multiple.target.repo/ && popd
+      pushd ${BASEDIR}/${PROJECT} && mvn install -Pmultiple2repo -DtargetRepositoryUrl=file://${BASEDIR}/${PROJECT}/multiple/target/${PROJECT}-multiple.target.repo/ && popd
     
       # Step 3: Install the new target platform into a clean Eclipse JEE bundle to verify if everything can be installed
       INSTALLDIR=/tmp/${PROJECT}target-install-test
