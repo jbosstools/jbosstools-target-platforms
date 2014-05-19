@@ -33,21 +33,25 @@ To build _JBoss Tools Target Platforms_ requires specific versions of Java and
 Maven. Also, there is some Maven setup. The [How to Build JBoss Tools with Maven 3](https://community.jboss.org/wiki/HowToBuildJBossToolsWithMaven3)
 document will guide you through that setup.
 
-This command will run the build:
+This command will run the build, but will NOT download the contents of the target platform to disk:
 
     $ mvn clean verify
 
+If you want to download the contents of the target platform to disk, do this:
+
+    $ mvn clean verify -Pmultiple2repo
+
 If you want to run the build and fetch source bundles at the same time as other bundles are being resolved, do this:
 
-    $ mvn clean verify -Dmirror-target-to-repo.includeSources=true
+    $ mvn clean verify -Pmultiple2repo -Dmirror-target-to-repo.includeSources=true
 
 If you want to run the build and not fail if there's a problem w/ validation, do this:
 
-    $ mvn clean verify -Dvalidate-target-platform.failOnError=false
+    $ mvn clean verify -Pmultiple2repo -Dvalidate-target-platform.failOnError=false
 
 If you just want to check if things compiles/builds you can run:
 
-    $ mvn clean verify -DskipTest=true
+    $ mvn clean verify -Pmultiple2repo -DskipTest=true
 
 But *do not* push changes without having the new and existing unit tests pass!
  
