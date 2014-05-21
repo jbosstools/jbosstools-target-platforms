@@ -73,7 +73,7 @@ When moving from one version of the target to another, the steps are:
     BASEDIR=`pwd`
 
     # set path to where you have the latest compatible Eclipse bundle stored locally
-    ECLIPSEZIP=${HOME}/tmp/Eclipse_Bundles/eclipse-jee-luna-M6-linux-gtk-x86_64.tar.gz
+    ECLIPSEZIP=${HOME}/tmp/Eclipse_Bundles/eclipse-jee-luna-M7-linux-gtk-x86_64.tar.gz
 
     for PROJECT in jbosstools jbdevstudio; do 
       # Step 1: Merge changes in new target file to actual target file
