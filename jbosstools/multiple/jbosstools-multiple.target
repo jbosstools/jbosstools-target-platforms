@@ -91,7 +91,7 @@
 
      <!-- m2e family, not included in Luna site -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/1.1.0-2013-11-29_03-18-37-H27/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/1.1.0-2014-05-21_05-04-36-H34/"/>
       <unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.1.0.201311290819"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
@@ -405,17 +405,16 @@
 
     <!-- Only in JBT: BIRT -->
     <!-- JBIDE-16794 BIRT site only contains Apache Batik 1.7.0, but it depends on 1.6.0 (both are in Luna M6). See above -->
-    <!-- JBIDE-17254: Birt cannot be installed with Luna M7
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/birt/4.4.0.v20140311-1438/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/birt/4.4.0.v20140520-1129/"/>
       <unit id="org.eclipse.birt.feature.group" version="4.4.0.v201402232139-DPEp7FGixAot3AH8segZ-VBCWne9"/>
       <unit id="org.eclipse.birt.chart.feature.group" version="4.4.0.v201402232139-829A4FQCnvK55qKmUD78"/>
       <unit id="org.eclipse.birt.integration.wtp.feature.group" version="4.4.0.v20140311-1438-53-7w3125142202549"/>
       <unit id="org.eclipse.birt.chart.integration.wtp.feature.group" version="4.4.0.v20140311-1438-53-7w3125142202549"/>
-    </location-->
+    </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://downloads.jboss.org/jbosstools/updates/requirements/tern/0.2.0.201404252310-SNAPSHOT/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/tern/0.2.0.201405210810-SNAPSHOT/"/>
       <unit id="tern-feature.feature.group" version="0.2.0.201404252310" />
       <unit id="tern-jsdt-feature.feature.group" version="0.2.0.201404252310" />
       <unit id="tern-server-nodejs-feature.feature.group" version="0.2.0.201404252310" />
