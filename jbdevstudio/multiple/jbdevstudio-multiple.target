@@ -106,15 +106,6 @@
       <unit id="org.sonatype.m2e.egit.feature.feature.group" version="0.14.0.201401060023"/>
     </location>
 
-    <!-- Only in JBDS: 
-    m2e-extension m2e.jdt.feature is only in JBDS BYOE / installer (unlike maven.jdt.feature, which is part of jbosstools-central and is therefore in BOTH JBT & JBDS update sites) 
-    TODO: JBIDE-16757 move to Central? 
-    -->
-    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-jdt-compiler/"/>
-      <unit id="org.jboss.tools.m2e.jdt.feature.feature.group" version="1.0.1.201209200903"/>
-    </location>
-
     <!-- Eclipse -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/luna/201405090900-M7/"/>
