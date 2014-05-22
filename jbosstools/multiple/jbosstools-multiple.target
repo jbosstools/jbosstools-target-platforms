@@ -414,7 +414,7 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/tern/0.2.0.201405210810a-SNAPSHOT/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/tern/0.2.0.201405210810-SNAPSHOT/"/>
       <unit id="minimal-json" version="0.9.1" />
       <unit id="tern-feature.feature.group" version="0.2.0.201405210810" />
       <unit id="tern-jsdt-feature.feature.group" version="0.2.0.201405210810" />
