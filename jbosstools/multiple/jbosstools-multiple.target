@@ -406,15 +406,16 @@
     <!-- Only in JBT: BIRT -->
     <!-- JBIDE-16794 BIRT site only contains Apache Batik 1.7.0, but it depends on 1.6.0 (both are in Luna M6). See above -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/birt/4.4.0.v20140520-1129/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/birt/4.4.0.v20140521-1030/"/>
       <unit id="org.eclipse.birt.feature.group" version="4.4.0.v201405191524-DPEp7FGixAot6DLz0hXcUqaHoLSX"/>
       <unit id="org.eclipse.birt.chart.feature.group" version="4.4.0.v201405191524-829A4FQCnvK65Q9sKwwG"/>
-      <unit id="org.eclipse.birt.integration.wtp.feature.group" version="4.4.0.v20140520-1129-53-7w312516310223A"/>
-      <unit id="org.eclipse.birt.chart.integration.wtp.feature.group" version="4.4.0.v20140520-1129-53-7w312516310223A"/>
+      <unit id="org.eclipse.birt.integration.wtp.feature.group" version="4.4.0.v20140521-1030-53-7w3125163202141"/>
+      <unit id="org.eclipse.birt.chart.integration.wtp.feature.group" version="4.4.0.v20140521-1030-53-7w3125163202141"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/tern/0.2.0.201405210810-SNAPSHOT/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/tern/0.2.0.201405210810a-SNAPSHOT/"/>
+      <unit id="com.googlecode.json-simple" version="1.1.1" />
       <unit id="tern-feature.feature.group" version="0.2.0.201405210810" />
       <unit id="tern-jsdt-feature.feature.group" version="0.2.0.201405210810" />
       <unit id="tern-server-nodejs-feature.feature.group" version="0.2.0.201405210810" />
