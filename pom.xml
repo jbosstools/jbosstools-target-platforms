@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jboss.tools.targetplatforms</groupId>
 	<artifactId>root</artifactId>
-	<version>4.40.0.Beta3</version>
+	<version>4.40.0.Beta4-SNAPSHOT</version>
 	<name>JBoss Tools + JBDS Target Platform Root</name>
 	<packaging>pom</packaging>
 
