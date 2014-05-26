@@ -141,17 +141,17 @@ describing the bug or new feature and give it a component type of
 topic branch named with the JIRA issue number. For example, this
 command creates a branch for the JBIDE-1234 issue:
 
-  $ git checkout -b jbide-1234
+    $ git checkout -b jbide-1234
 
 After you're happy with your changes and a full build (with unit
 tests) runs successfully, commit your changes on your topic branch
 (with good comments). Then it's time to check for any recent changes
 that were made in the official repository:
 
-  $ git checkout 4.40.x               # switches to the '4.40.x' branch
-  $ git pull upstream 4.40.x          # fetches all 'upstream' changes and merges 'upstream/4.40.x' onto your '4.40.x' branch
-  $ git checkout jbide-1234           # switches to your topic branch
-  $ git rebase 4.40.x                 # reapplies your changes on top of the latest in 4.40.x
+    $ git checkout 4.40.x               # switches to the '4.40.x' branch
+    $ git pull upstream 4.40.x          # fetches all 'upstream' changes and merges 'upstream/4.40.x' onto your '4.40.x' branch
+    $ git checkout jbide-1234           # switches to your topic branch
+    $ git rebase 4.40.x                 # reapplies your changes on top of the latest in 4.40.x
                                         (i.e., the latest from 4.40.x will be the new base for your changes)
 
 If the pull grabbed a lot of changes, you should rerun your build with
@@ -159,7 +159,7 @@ tests enabled to make sure your changes are still good.
 
 You can then push your topic branch and its changes into your public fork repository:
 
-  $ git push origin jbide-1234         # pushes your topic branch into your public fork of JBoss Tools Target Platforms
+    $ git push origin jbide-1234         # pushes your topic branch into your public fork of JBoss Tools Target Platforms
 
 And then [generate a pull-request](http://help.github.com/pull-requests/) where we can
 review the proposed changes, comment on them, discuss them with you,
