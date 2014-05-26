@@ -92,18 +92,19 @@
       <unit id="org.slf4j.api" version="1.7.2.v20121108-1250"/>
     </location>
 
-     <!-- m2e family, not included in Luna site -->
+    <!-- TODO: make sure these versions match up across JBT/JBDS/Central target platforms (JBIDE-17429) -->
+    <!-- m2e family, not included in Luna site -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/1.1.0-2013-11-29_03-18-37-H27/"/>
-      <unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.1.0.201311290819"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/1.1.0-2014-05-21_05-04-36-H34/"/>
+      <unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.1.0.201405210909"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-buildhelper/"/>
       <unit id="org.sonatype.m2e.buildhelper.feature.feature.group" version="0.15.0.201212120353"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2eclipse-egit/0.14.0.201401060023/"/>
-      <unit id="org.sonatype.m2e.egit.feature.feature.group" version="0.14.0.201401060023"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2eclipse-egit/0.14.0.201404242142/"/>
+      <unit id="org.sonatype.m2e.egit.feature.feature.group" version="0.14.0.201404242142"/>
     </location>
 
     <!-- Eclipse -->
