@@ -269,7 +269,8 @@
       <unit id="org.apache.batik.util.gui" version="1.6.0.v201011041432"/>
       <unit id="org.apache.batik.xml" version="1.6.0.v201011041432"/>
 
-      <!-- only in JBT: sapphire (used by Arquillian) -->
+      <!-- NOTE: Sapphire is also on the JBT Early Access site, because Arquillian requires it -->
+      <!-- required by Arquillian -->
       <unit id="org.eclipse.sapphire.feature.group" version="8.0.0.201404241341"/>
       <unit id="org.eclipse.sapphire.java.feature.group" version="8.0.0.201404241341"/>
       <unit id="org.eclipse.sapphire.java.jdt.feature.group" version="8.0.0.201404241341"/>
@@ -414,6 +415,8 @@
       <unit id="org.eclipse.birt.chart.integration.wtp.feature.group" version="4.4.0.v20140521-1030-53-7w3125163202141"/>
     </location>
 
+    <!-- NOTE: Tern is also included in JBT Early Access site because AngularJS requires it -->
+    <!-- Also required by jst.jsdt feature, which is not yet in JBDS -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/tern/0.2.0.201405210810-SNAPSHOT/"/>
       <unit id="minimal-json" version="0.9.1" />
