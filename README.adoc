@@ -1,0 +1,124 @@
+# The JBoss Tools Target Platforms project
+
+
+## Summary
+
+JBoss Tools Target Platforms project provides the JBoss Tools Eclipse-based target platforrms used by JBoss Tools projects.
+
+The 'master' branch only contains shared content - see the 4.x branches for the actual target platform definitions. To build them, simply run 'mvn verify' in a given target platform folder.
+
+
+## Get the code
+
+The easiest way to get started with the code is to http://help.github.com/forking/[create your own fork], 
+and then clone your fork:
+
+    $ git clone git@github.com:<you>/jbosstools-target-platforms.git
+    $ cd jbosstools-build
+    $ git remote add upstream git://github.com/jbosstools/jbosstools-target-platforms.git
+  
+At any time, you can pull changes from the upstream and merge them onto your 4.40.x branch:
+
+    $ git checkout 4.40.x               # switches to the '4.40.x' branch
+    $ git pull upstream 4.40.x          # fetches all 'upstream' changes and merges 'upstream/4.40.x' onto your '4.40.x' branch
+    $ git push origin                  # pushes all the updates to your fork, which should be in-sync with 'upstream'
+
+The general idea is to keep your '4.40.x' branch in-sync with the
+'upstream/4.40.x'.
+
+
+## Building Target Platforms
+
+To build, you require specific versions of Java and Maven. Also, there is some Maven setup. 
+The https://community.jboss.org/wiki/HowToBuildJBossToolsWithMaven3[How to Build JBoss Tools with Maven 3]
+document will guide you through that setup.
+
+This command will run the build, but will NOT download the contents of the target platform to disk:
+
+    $ mvn clean verify
+
+If you want to download the contents of the target platform to disk, do this:
+
+    $ mvn clean verify -Pmultiple2repo
+
+If you want to run the build and fetch source bundles at the same time as other bundles are being resolved, do this:
+
+    $ mvn clean verify -Pmultiple2repo -Dmirror-target-to-repo.includeSources=true
+
+If you want to run the build and not fail if there's a problem w/ validation, do this:
+
+    $ mvn clean verify -Pmultiple2repo -Dvalidate-target-platform.failOnError=false
+
+If you just want to check if things compiles/builds you can run:
+
+    $ mvn clean verify -Pmultiple2repo -DskipTest=true
+
+But *do not* push changes without having the new and existing unit tests pass!
+ 
+
+## Updating versions of IUs in .target files
+
+When moving from one version of the target to another, the steps are:
+
+. If this is a new target platform (rather than changes to an existing SNAPSHOT) increment the target platform versions contained in all 5 pom.xml and 2 *.target files.
+
+. Manually update the URLs contained in the *.target files.
+
+. Validate the target platform. https://github.com/jbosstools/jbosstools-build-ci/tree/master/util/verifyTarget.sh[You can use a script to automate these next 4 steps].
++
+[CAUTION]
+====
+. Regenerate the IU versions, using https://github.com/jbosstools/jbosstools-maven-plugins/wiki[org.jboss.tools.tycho-plugins:target-platform-utils], and validate the results
+* `mvn -U org.jboss.tools.tycho-plugins:target-platform-utils:0.19.0-SNAPSHOT:fix-versions -DtargetFile=/path/to/some.target`
+
+. Resolve & verify the new target platform, including sources
+* `mvn (clean) install -Pmultiple2repo -Dmirror-target-to-repo.includeSources=true`
+
+. https://github.com/jbosstools/jbosstools-build-ci/blob/master/util/installFromTarget.sh[Install the new target platform] into a clean Eclipse JEE bundle to verify that everything can be installed, using http://download.jboss.org/jbosstools/updates/scripted-installation/director.xml[a headless p2.director script]. http://download.jboss.org/jbosstools/updates/scripted-installation/[More info]
+
+. Produce a https://github.com/irbull/p2diff[p2diff] report
+====
+
+. Follow the https://github.com/jbosstools/jbosstools-devdoc/blob/master/building/target_platforms/target_platforms_updates.adoc[release guidelines] for how to commit to a topic branch, and announce target platform changes.
+
+. Check in updated target files &amp; push to the branch.
+
+
+
+
+## Contribute fixes and features
+
+_JBoss Tools Target Platforms_ is open source, and we welcome anybody that wants to
+participate and contribute!
+
+If you want to fix a bug or make any changes, please log an issue in
+the https://issues.jboss.org/browse/JBIDE[JBoss Tools JIRA]
+describing the bug or new feature and give it a component type of
+`build`. Then we highly recommend making the changes on a
+topic branch named with the JIRA issue number. For example, this
+command creates a branch for the JBIDE-1234 issue:
+
+    $ git checkout -b jbide-1234
+
+After you're happy with your changes and a full build (with unit
+tests) runs successfully, commit your changes on your topic branch
+(with good comments). Then it's time to check for any recent changes
+that were made in the official repository:
+
+    $ git checkout 4.40.x               # switches to the '4.40.x' branch
+    $ git pull upstream 4.40.x          # fetches all 'upstream' changes and merges 'upstream/4.40.x' onto your '4.40.x' branch
+    $ git checkout jbide-1234           # switches to your topic branch
+    $ git rebase 4.40.x                 # reapplies your changes on top of the latest in 4.40.x
+                                        (i.e., the latest from 4.40.x will be the new base for your changes)
+
+If the pull grabbed a lot of changes, you should rerun your build with
+tests enabled to make sure your changes are still good.
+
+You can then push your topic branch and its changes into your public fork repository:
+
+    $ git push origin jbide-1234         # pushes your topic branch into your public fork of JBoss Tools Target Platforms
+
+And then http://help.github.com/pull-requests/[generate a pull-request] where we can
+review the proposed changes, comment on them, discuss them with you,
+and if everything is good merge the changes right into the official
+repository.
