@@ -1,20 +1,20 @@
-# The JBoss Tools Target Platforms project
+== The JBoss Tools Target Platforms project
 
 
-## Summary
+=== Summary
 
 JBoss Tools Target Platforms project provides the JBoss Tools Eclipse-based target platforrms used by JBoss Tools projects.
 
 The 'master' branch only contains shared content - see the 4.x branches for the actual target platform definitions. To build them, simply run 'mvn verify' in a given target platform folder.
 
 
-## Get the code
+=== Get the code
 
 The easiest way to get started with the code is to http://help.github.com/forking/[create your own fork], 
 and then clone your fork:
 
     $ git clone git@github.com:<you>/jbosstools-target-platforms.git
-    $ cd jbosstools-build
+    $ cd jbosstools-target-platforms
     $ git remote add upstream git://github.com/jbosstools/jbosstools-target-platforms.git
   
 At any time, you can pull changes from the upstream and merge them onto your 4.40.x branch:
@@ -27,66 +27,17 @@ The general idea is to keep your '4.40.x' branch in-sync with the
 'upstream/4.40.x'.
 
 
-## Building Target Platforms
+=== Build target platform(s) locally
 
-To build, you require specific versions of Java and Maven. Also, there is some Maven setup. 
-The https://community.jboss.org/wiki/HowToBuildJBossToolsWithMaven3[How to Build JBoss Tools with Maven 3]
-document will guide you through that setup.
-
-This command will run the build, but will NOT download the contents of the target platform to disk:
-
-    $ mvn clean verify
-
-If you want to download the contents of the target platform to disk, do this:
-
-    $ mvn clean verify -Pmultiple2repo
-
-If you want to run the build and fetch source bundles at the same time as other bundles are being resolved, do this:
-
-    $ mvn clean verify -Pmultiple2repo -Dmirror-target-to-repo.includeSources=true
-
-If you want to run the build and not fail if there's a problem w/ validation, do this:
-
-    $ mvn clean verify -Pmultiple2repo -Dvalidate-target-platform.failOnError=false
-
-If you just want to check if things compiles/builds you can run:
-
-    $ mvn clean verify -Pmultiple2repo -DskipTest=true
-
-But *do not* push changes without having the new and existing unit tests pass!
- 
-
-## Updating versions of IUs in .target files
-
-When moving from one version of the target to another, the steps are:
-
-. If this is a new target platform (rather than changes to an existing SNAPSHOT) increment the target platform versions contained in all 5 pom.xml and 2 *.target files.
-
-. Manually update the URLs contained in the *.target files.
-
-. Validate the target platform. https://github.com/jbosstools/jbosstools-build-ci/tree/master/util/verifyTarget.sh[You can use a script to automate these next 4 steps].
-+
-[CAUTION]
-====
-. Regenerate the IU versions, using https://github.com/jbosstools/jbosstools-maven-plugins/wiki[org.jboss.tools.tycho-plugins:target-platform-utils], and validate the results
-* `mvn -U org.jboss.tools.tycho-plugins:target-platform-utils:0.19.0-SNAPSHOT:fix-versions -DtargetFile=/path/to/some.target`
-
-. Resolve & verify the new target platform, including sources
-* `mvn (clean) install -Pmultiple2repo -Dmirror-target-to-repo.includeSources=true`
-
-. https://github.com/jbosstools/jbosstools-build-ci/blob/master/util/installFromTarget.sh[Install the new target platform] into a clean Eclipse JEE bundle to verify that everything can be installed, using http://download.jboss.org/jbosstools/updates/scripted-installation/director.xml[a headless p2.director script]. http://download.jboss.org/jbosstools/updates/scripted-installation/[More info]
-
-. Produce a https://github.com/irbull/p2diff[p2diff] report
-====
-
-. Follow the https://github.com/jbosstools/jbosstools-devdoc/blob/master/building/target_platforms/target_platforms_updates.adoc[release guidelines] for how to commit to a topic branch, and announce target platform changes.
-
-. Check in updated target files &amp; push to the branch.
+See https://github.com/jbosstools/jbosstools-devdoc/blob/master/building/target_platforms/target_platforms_updates.adoc#build-target-platforms-locally[Build target platform(s) locally]
 
 
+=== Update versions of IUs in the .target files
+
+See https://github.com/jbosstools/jbosstools-devdoc/blob/master/building/target_platforms/target_platforms_updates.adoc#update-versions-of-ius-in-the-target-files[Update versions of IUs in the .target files]
 
 
-## Contribute fixes and features
+=== Contribute fixes and features
 
 _JBoss Tools Target Platforms_ is open source, and we welcome anybody that wants to
 participate and contribute!
