@@ -104,8 +104,8 @@
       <unit id="org.sonatype.m2e.buildhelper.feature.feature.group" version="0.15.0.201212120353"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2eclipse-egit/0.14.0.201404242142/"/>
-      <unit id="org.sonatype.m2e.egit.feature.feature.group" version="0.14.0.201404242142"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2eclipse-egit/0.14.0.201406241643/"/>
+      <unit id="org.sonatype.m2e.egit.feature.feature.group" version="0.14.0.201406241643"/>
     </location>
     <!-- JBDS-3032 move m2e.jdt from Central to JBDS TP -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
