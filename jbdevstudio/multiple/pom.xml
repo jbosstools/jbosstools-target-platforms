@@ -33,6 +33,7 @@
 								<param>${project.artifactId}.target</param>
 							</targetFiles>
 							<failOnError>${validate-target-platform.failOnError}</failOnError>
+							<checkDependencies>true</checkDependencies>
 						</configuration>
 					</execution>
 				</executions>
