@@ -376,7 +376,12 @@
       <unit id="org.eclipse.wst.xml.xpath2.processor.feature.feature.group" version="2.0.300.v201405062203-7A7K8ZCcNBGPDQJ_GZKf"/>
       <unit id="org.eclipse.wst.xsl.feature.feature.group" version="1.3.400.v201405062208-7T7_FbTFIqUoKCGIeb62mhZKaH_Lg"/>
     </location>
-
+    
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://downloads.jboss.org/jbosstools/updates/requirements/thym/0.1.0-SNAPSHOT-201407181900/"/>
+      <unit id="org.eclipse.thym.feature.feature.group" version="0.1.0.201407181900"/>
+    </location>
+      
     <!-- Only in JBDS (shipped in installer): TestNG -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/testng/6.8.6.20130914_0724/"/>
