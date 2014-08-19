@@ -17,6 +17,13 @@
     <!-- </location> -->
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://powermock-osgi.googlecode.com/svn/updateSite/1.5.4.1/"/>
+      <unit id="org.powermock.mockito-junit.feature.feature.group" version="1.5.4.1"/>
+      <unit id="org.objenesis" version="2.1.0"/>
+      <unit id="javassist" version="3.18.1.GA"/>
+    </location>
+
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <!-- don't forget to increment these files when moving up a version:
         build.xml, *.target*, publish.sh, target2p2mirror.xml -->
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/R20140525021250/"/>
