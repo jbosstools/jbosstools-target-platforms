@@ -378,8 +378,8 @@
     </location>
     
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://downloads.jboss.org/jbosstools/updates/requirements/thym/0.1.0-SNAPSHOT-201407181900/"/>
-      <unit id="org.eclipse.thym.feature.feature.group" version="0.1.0.201407181900"/>
+      <repository location="http://downloads.jboss.org/jbosstools/updates/requirements/thym/0.1.0-SNAPSHOT-201408251101/"/>
+      <unit id="org.eclipse.thym.feature.feature.group" version="0.1.0.201408251101"/>
     </location>
       
     <!-- Only in JBDS (shipped in installer): TestNG -->
