@@ -424,7 +424,7 @@
     </location>
 
     <!-- NOTE: Tern is also included in JBT Early Access site because AngularJS requires it -->
-    <!-- Also required by jst.jsdt feature, which is not yet in JBDS -->
+    <!-- NOTE's Note: Since Early Access site reference this target, it's probably not that necessary to duplicate it-->
     <!-- TODO: update jbtearlyaccess-multiple.target too -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/tern/0.5.0.201408272110-SNAPSHOT"/>
