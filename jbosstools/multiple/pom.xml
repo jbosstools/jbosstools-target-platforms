@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.jboss.tools.targetplatforms</groupId>
 		<artifactId>jbosstools-all</artifactId>
-		<version>4.40.0.CR1</version>
+		<version>4.40.0.CR2-SNAPSHOT</version>
 	</parent>
 	<artifactId>jbosstools-multiple</artifactId>
 	<name>JBoss Tools Multiple (Composite) Target Platform</name>
