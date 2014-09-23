@@ -127,7 +127,7 @@
       <unit id="org.eclipse.m2e.wtp.jpa.feature.feature.group" version="1.1.0.e43-20140611-1648"/>
       <unit id="org.eclipse.m2e.wtp.jsf.feature.feature.group" version="1.1.0.20140611-1646"/>
       <!-- m2e mavenarchiver (no sources avail) -->
-      <unit id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version="0.16.0.201401211452-signed-20140310144306"/>
+      <unit id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version="0.16.0.201409161210"/>
 
       <!-- p2.discovery -->
       <unit id="org.eclipse.equinox.p2.discovery.compatibility" version="1.0.200.v20131211-1531"/>
