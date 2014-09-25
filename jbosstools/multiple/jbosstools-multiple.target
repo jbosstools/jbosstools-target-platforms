@@ -435,13 +435,13 @@
     <!-- NOTE's Note: Since Early Access site reference this target, it's probably not that necessary to duplicate it-->
     <!-- TODO: update jbtearlyaccess-multiple.target too -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/tern/0.6.0.201409041810-SNAPSHOT/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/tern/0.6.0.201409231610-SNAPSHOT/"/>
       <unit id="minimal-json" version="0.9.1"/>
-      <unit id="tern-feature.feature.group" version="0.6.0.201409041810"/>
-      <unit id="tern-jsdt-feature.feature.group" version="0.6.0.201409041810"/>
-      <unit id="tern-server-nodejs-feature.feature.group" version="0.6.0.201409041810"/>
-      <unit id="tern.eclipse.ide.tools.feature.feature.group" version="0.6.0.201409041810"/>
-      <unit id="tern.eclipse.ide.server.nodejs.embed.feature.group" version="0.6.0.201409041810"/>
+      <unit id="tern-feature.feature.group" version="0.6.0.201409231610"/>
+      <unit id="tern-jsdt-feature.feature.group" version="0.6.0.201409231610"/>
+      <unit id="tern-server-nodejs-feature.feature.group" version="0.6.0.201409231610"/>
+      <unit id="tern.eclipse.ide.tools.feature.feature.group" version="0.6.0.201409231610"/>
+      <unit id="tern.eclipse.ide.server.nodejs.embed.feature.group" version="0.6.0.201409231610"/>
     </location>
   </locations>
   <targetJRE path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
