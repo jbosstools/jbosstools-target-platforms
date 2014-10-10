@@ -385,8 +385,8 @@
     </location>
     
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://downloads.jboss.org/jbosstools/updates/requirements/thym/0.1.0-SNAPSHOT-201410021222/"/>
-      <unit id="org.eclipse.thym.feature.feature.group" version="0.1.0.201410021222"/>
+      <repository location="http://downloads.jboss.org/jbosstools/updates/requirements/thym/0.1.0-SNAPSHOT-201410092351/"/>
+      <unit id="org.eclipse.thym.feature.feature.group" version="0.1.0.201410092351"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
