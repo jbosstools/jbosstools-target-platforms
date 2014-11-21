@@ -405,8 +405,8 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://downloads.jboss.org/jbosstools/updates/requirements/thym/0.1.0-SNAPSHOT-201411181746/"/>
-      <unit id="org.eclipse.thym.feature.feature.group" version="0.1.0.201411181746"/>
+      <repository location="http://downloads.jboss.org/jbosstools/updates/requirements/thym/0.1.0-SNAPSHOT-201411202306/"/>
+      <unit id="org.eclipse.thym.feature.feature.group" version="0.1.0.201411202306"/>
     </location>
 
     <!-- Only in JBT, for integration-tests: SWTBot -->
