@@ -96,8 +96,8 @@
     <!-- TODO: make sure these versions match up across JBT/JBDS/Central target platforms (JBIDE-17429) -->
     <!-- m2e family, not included in Luna site -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/1.1.0-2014-05-21_05-04-36-H34/"/>
-      <unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.1.0.201405210909"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/1.1.1-2014-11-26_15-11-10-H37/"/>
+      <unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.1.1.201411262015"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-buildhelper/"/>
