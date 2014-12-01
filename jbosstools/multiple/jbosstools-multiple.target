@@ -423,11 +423,11 @@
     <!-- Only in JBT: BIRT -->
     <!-- JBIDE-16794 BIRT site only contains Apache Batik 1.7.0, but it depends on 1.6.0 (both are in Luna M6). See above -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/birt/4.4.0.v20140521-1030/"/>
-      <unit id="org.eclipse.birt.feature.group" version="4.4.0.v201405191524-DPEp7FGixAot6DLz0hXcUqaHoLSX"/>
-      <unit id="org.eclipse.birt.chart.feature.group" version="4.4.0.v201405191524-829A4FQCnvK65Q9sKwwG"/>
-      <unit id="org.eclipse.birt.integration.wtp.feature.group" version="4.4.0.v20140521-1030-53-7w3125163202141"/>
-      <unit id="org.eclipse.birt.chart.integration.wtp.feature.group" version="4.4.0.v20140521-1030-53-7w3125163202141"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/birt/4.4.1.v201408290142/"/>
+      <unit id="org.eclipse.birt.feature.group" version="4.4.1.v201408290142-DPEq8eGixAot6Wst_F1wRaIdN1Ls"/>
+      <unit id="org.eclipse.birt.chart.feature.group" version="4.4.1.v201408290142-829B7EFQCnvK660Hl9JGt"/>
+      <unit id="org.eclipse.birt.integration.wtp.feature.group" version="4.4.1.v20140916-1320-5307w31251A2702431"/>
+      <unit id="org.eclipse.birt.chart.integration.wtp.feature.group" version="4.4.1.v20140916-1320-5307w31251A2702431"/>
     </location>
 
     <!-- NOTE: Tern is also included in JBT Early Access site because AngularJS requires it -->
