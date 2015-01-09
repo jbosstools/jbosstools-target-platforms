@@ -267,6 +267,18 @@
       <!-- egit -->
       <unit id="org.eclipse.jgit.feature.group" version="3.6.0.201411121045-m1"/>
       <unit id="org.eclipse.egit.feature.group" version="3.6.0.201411121045-m1"/>
+
+      <!-- Sapphire is required for batch -->
+      <unit id="org.eclipse.sapphire.feature.group" version="9.0.0.201408261741"/>
+      <unit id="org.eclipse.sapphire.java.feature.group" version="9.0.0.201408261741"/>
+      <unit id="org.eclipse.sapphire.java.jdt.feature.group" version="9.0.0.201408261741"/>
+      <unit id="org.eclipse.sapphire.modeling.xml.feature.group" version="9.0.0.201408261741"/>
+      <unit id="org.eclipse.sapphire.osgi.feature.group" version="9.0.0.201408261741"/>
+      <unit id="org.eclipse.sapphire.platform.feature.group" version="9.0.0.201408261741"/>
+      <unit id="org.eclipse.sapphire.ui.feature.group" version="9.0.0.201408261741"/>
+      <unit id="org.eclipse.sapphire.ui.swt.gef.feature.group" version="9.0.0.201408261741"/>
+      <unit id="org.eclipse.sapphire.ui.swt.xml.editor.feature.group" version="9.0.0.201408261741"/>
+      <unit id="org.objectweb.asm" version="5.0.1.v201404251740"/>
     </location>
 
     <!-- TM and RSE are in Kepler site but this way we get sources too -->

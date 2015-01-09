@@ -274,9 +274,7 @@
       <unit id="org.apache.batik.util.gui" version="1.6.0.v201011041432"/>
       <unit id="org.apache.batik.xml" version="1.6.0.v201011041432"/>
 
-      <!-- NOTE: Sapphire is also on the JBT Early Access site, because Arquillian requires it -->
-      <!-- required by Arquillian -->
-      <!-- only in JBT: sapphire (used by Arquillian) -->
+      <!-- Required for Batch and Arquillian -->
       <unit id="org.eclipse.sapphire.feature.group" version="9.0.0.201408261741"/>
       <unit id="org.eclipse.sapphire.java.feature.group" version="9.0.0.201408261741"/>
       <unit id="org.eclipse.sapphire.java.jdt.feature.group" version="9.0.0.201408261741"/>
