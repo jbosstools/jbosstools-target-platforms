@@ -112,7 +112,7 @@
 
     <!-- Eclipse -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/luna/201409261001-SR1a/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/luna/201501121000-SR1a/"/>
 
       <!-- m2e -->
       <unit id="org.eclipse.m2e.feature.feature.group" version="1.5.0.20140606-0033"/>
@@ -257,8 +257,8 @@
       <unit id="org.eclipse.mylyn.commons.xmlrpc" version="3.13.0.v20140702-2155"/>
 
       <!-- egit -->
-      <unit id="org.eclipse.jgit.feature.group" version="3.4.1.201406201815-r"/>
-      <unit id="org.eclipse.egit.feature.group" version="3.4.1.201406201815-r"/>
+      <unit id="org.eclipse.jgit.feature.group" version="3.4.2.201412180340-r"/>
+      <unit id="org.eclipse.egit.feature.group" version="3.4.2.201412180340-r"/>
 
       <!-- JBIDE-16794 Apache Batik 1.6.0 is required by BIRT, but BIRT site only contains 1.7.0 -->
       <unit id="org.apache.batik.bridge" version="1.6.0.v201011041432"/>
