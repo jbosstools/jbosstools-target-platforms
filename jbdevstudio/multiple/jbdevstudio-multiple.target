@@ -394,11 +394,6 @@
       <unit id="org.eclipse.wst.xsl.feature.feature.group" version="1.3.401.v201409111855"/>
     </location>
 
-    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://downloads.jboss.org/jbosstools/updates/requirements/thym/0.1.0-SNAPSHOT-201412031506/"/>
-      <unit id="org.eclipse.thym.feature.feature.group" version="0.1.0.201412031506"/>
-    </location>
-
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/tern/0.6.0.201409231610-SNAPSHOT/"/>
       <unit id="minimal-json" version="0.9.1"/>
