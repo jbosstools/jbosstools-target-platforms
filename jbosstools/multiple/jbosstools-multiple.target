@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><?pde version="3.6"?>
-<target includeMode="feature" name="jbosstoolstarget-4.40.0.Final">
+<target includeMode="feature" name="jbosstoolstarget-4.40.1.Beta1-SNAPSHOT">
   <!-- Pro tip: to convert
       from org.eclipse.foo_4.6.0.v201005032111-777K4AkF7B77R7c7N77.jar
     to <unit version="4.6.0.v201005032111-777K4AkF7B77R7c7N77" id="org.eclipse.foo.feature.group"/>
@@ -426,6 +426,16 @@
     <!-- NOTE: Tern is also included in JBT Early Access site because AngularJS requires it -->
     <!-- NOTE's Note: Since Early Access site reference this target, it's probably not that necessary to duplicate it-->
     <!-- TODO: update jbtearlyaccess-multiple.target too -->
+    <!-- JBIDE-19045: need Tern 0.6 for JBT 4.2.0-4.2.2 / JBDS 8.0; need Tern 0.7 for JBT 4.2.3 / JBDS 8.1 -->
+    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/tern/0.7.0.201412012159/"/>
+      <unit id="minimal-json" version="0.9.1"/>
+      <unit id="tern-feature.feature.group" version="0.7.0.201412012159"/>
+      <unit id="tern-jsdt-feature.feature.group" version="0.7.0.201412012159"/>
+      <unit id="tern-server-nodejs-feature.feature.group" version="0.7.0.201412012159"/>
+      <unit id="tern.eclipse.ide.tools.feature.feature.group" version="0.7.0.201412012159"/>
+      <unit id="tern.eclipse.ide.server.nodejs.embed.feature.group" version="0.7.0.201412012159"/>
+    </location>
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/tern/0.6.0.201409231610-SNAPSHOT/"/>
       <unit id="minimal-json" version="0.9.1"/>
