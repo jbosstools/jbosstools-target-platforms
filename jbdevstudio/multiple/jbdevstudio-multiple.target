@@ -394,16 +394,10 @@
       <unit id="org.eclipse.wst.xsl.feature.feature.group" version="1.3.401.v201409111855"/>
     </location>
 
-    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/tern/0.8.0.201501132311-SNAPSHOT/"/>
-      <unit id="minimal-json" version="0.9.1"/>
-      <unit id="tern-feature.feature.group" version="0.8.0.201501132311"/>
-      <unit id="tern-jsdt-feature.feature.group" version="0.8.0.201501132311"/>
-      <unit id="tern-server-nodejs-feature.feature.group" version="0.8.0.201501132311"/>
-      <unit id="tern.eclipse.ide.tools.feature.feature.group" version="0.8.0.201501132311"/>
-      <unit id="tern.eclipse.ide.server.nodejs.embed.feature.group" version="0.8.0.201501132311"/>
-    </location>
-      
+    <!-- JBIDE-19045 move Tern to a stable URL like XulRunner, so no longer in target platform 
+      http://download.jboss.org/jbosstools/updates/stable/luna/core/tern/
+    -->
+
     <!-- Only in JBDS (shipped in installer): TestNG -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/testng/6.8.6.20130914_0724/"/>
