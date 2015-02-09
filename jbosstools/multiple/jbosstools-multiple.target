@@ -425,9 +425,7 @@
       <unit id="org.eclipse.birt.chart.integration.wtp.feature.group" version="4.4.1.v20140916-1320-5307w31251A2702431"/>
     </location>
 
-    <!-- JBIDE-19045 move Tern to a stable URL like XulRunner, so no longer in target platform 
-      http://download.jboss.org/jbosstools/updates/stable/luna/core/tern/
-    -->
+    <!-- JBIDE-19045 move Tern into JST project, so no longer in target platform -->
 
   </locations>
   <targetJRE path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
