@@ -7,15 +7,6 @@
     :%s/.\+\/\(org.\+\)_\(\d\+.\+\)\.jar/\t\t\t<unit id="\1.feature.group" version="\2"\/>/g
   -->
   <locations>
-    <!-- JBIDE-12815 JBoss Tools Locus bundles: not quite ready to be included -->
-    <!-- <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/integration/kepler/core/locus/0.0.1.v20130507-2028-B7/"/> -->
-      <!-- JBIDE-12971 Mockito
-      <unit id="org.jboss.tools.locus.mockito" version="1.9.5.Final_patched_TEIIDDES-1681-v20130507-2028-B7"/> -->
-      <!-- JBIDE-12972 Fest Assert
-      <unit id="org.jboss.tools.locus.easytesting.fest-assert" version="1.4.0.Final-v20130507-2028-B7"/> -->
-    <!-- </location> -->
-
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <!-- don't forget to increment these files when moving up a version:
         build.xml, *.target*, publish.sh, target2p2mirror.xml -->
@@ -86,6 +77,15 @@
       <unit id="org.apache.jasper.glassfish" version="2.2.2.v201501141630"/>
       <!-- <unit id="ch.qos.logback.slf4j" version="1.0.7.v20121108-1250"/> -->
       <unit id="org.slf4j.api" version="1.7.2.v20121108-1250"/>
+    </location>
+
+    <!-- JBIDE-12815 JBoss Tools Locus bundles: not quite ready to be included -->
+    <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+        <repository location="http://repository.jboss.org/nexus/content/unzip/unzip/org/jboss/tools/locus/update.site/1.1.1.Final/update.site-1.1.1.Final.zip-unzip/"/>
+        <!-- JBIDE-12971 JBIDE-19110 Mockito
+        <unit id="org.jboss.tools.locus.mockito" version="1.9.5.Final_patched_TEIIDDES-1681-v20131024-0922-B58"/>  -->
+        <!-- JBIDE-12972 Fest Assert
+        <unit id="org.jboss.tools.locus.easytesting.fest-assert" version="1.4.0.Final-v20130507-2028-B7"/> -->
     </location>
 
     <!-- TODO: make sure these versions match up across JBT/JBDS/Central target platforms (JBIDE-17429) -->
