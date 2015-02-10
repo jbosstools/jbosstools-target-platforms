@@ -93,6 +93,12 @@
       <unit id="org.slf4j.api" version="1.7.2.v20121108-1250"/>
     </location>
 
+    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/tern/0.8.0.201501272018/"/>
+      <!-- Required by FeedHenry module -->
+      <unit id="minimal-json" version="0.9.2"/>
+    </location>
+
     <!-- TODO: make sure these versions match up across JBT/JBDS/Central target platforms (JBIDE-17429) -->
     <!-- m2e family, not included in Luna site -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
