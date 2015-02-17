@@ -254,7 +254,8 @@
       <unit id="org.eclipse.mylyn.tasks.core" version="3.15.0.v20150113-0037"/>
       <unit id="org.eclipse.mylyn.tasks.ui" version="3.15.0.v20150113-0037"/>
       <unit id="org.eclipse.mylyn.tasks.bugs" version="3.15.0.v20150113-0037"/>
-      <!-- Those Mylyn/Bugzilla IUs are only necessary for tests -->
+      <unit id="org.eclipse.mylyn.wikitext_feature.feature.group" version="2.4.0.v20150203-1911"/>
+      <!-- These Mylyn/Bugzilla IUs are only necessary for tests -->
       <unit id="org.eclipse.mylyn.bugzilla_feature.feature.group" version="3.15.0.v20150203-1905"/>
       <unit id="org.eclipse.mylyn.bugzilla.ide" version="3.15.0.v20150113-0039"/>
       <unit id="org.eclipse.mylyn.commons.xmlrpc" version="3.15.0.v20150112-2323"/>
