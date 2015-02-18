@@ -9,8 +9,9 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<tychoVersion>0.21.0</tychoVersion>
+		<tychoVersion>0.22.0</tychoVersion>
 		<tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
+		<jbossTychoPluginsVersion>0.22.1-SNAPSHOT</jbossTychoPluginsVersion>
 	</properties>
 
 	<build>
@@ -27,7 +28,7 @@
 				<plugin>
 					<groupId>org.jboss.tools.tycho-plugins</groupId>
 					<artifactId>target-platform-utils</artifactId>
-					<version>0.21.0</version>
+					<version>${jbossTychoPluginsVersion}</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
