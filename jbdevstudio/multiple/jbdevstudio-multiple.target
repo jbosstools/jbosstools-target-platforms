@@ -126,7 +126,7 @@
 
     <!-- Eclipse -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/luna/201502110900-SR2-RC3/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/luna/201502190900-SR2-RC4/"/>
 
       <!-- m2e -->
       <unit id="org.eclipse.m2e.feature.feature.group" version="1.5.1.20150109-1820"/>
@@ -253,22 +253,22 @@
       <unit id="org.eclipse.gef.feature.group" version="3.9.101.201408150207"/>
 
       <!-- mylyn -->
-      <unit id="org.eclipse.mylyn_feature.feature.group" version="3.14.1.v20150126-2142"/>
-      <unit id="org.eclipse.mylyn.commons.feature.group" version="3.14.1.v20150126-2107"/>
-      <unit id="org.eclipse.mylyn.commons.identity.feature.group" version="1.6.1.v20150126-2107"/>
-      <unit id="org.eclipse.mylyn.commons.net" version="3.14.1.v20150126-2107"/>
-      <unit id="org.eclipse.mylyn.commons.notifications.feature.group" version="1.6.1.v20150126-2107"/>
-      <unit id="org.eclipse.mylyn.commons.repositories.feature.group" version="1.6.1.v20150126-2107"/>
-      <unit id="org.eclipse.mylyn.context_feature.feature.group" version="3.14.1.v20150126-2144"/>
-      <unit id="org.eclipse.mylyn.discovery.feature.group" version="3.14.1.v20150126-2107"/>
-      <unit id="org.eclipse.mylyn.monitor.feature.group" version="3.14.1.v20150126-2107"/>
-      <unit id="org.eclipse.mylyn.tasks.core" version="3.14.1.v20150126-2142"/>
-      <unit id="org.eclipse.mylyn.tasks.ui" version="3.14.1.v20150126-2142"/>
-      <unit id="org.eclipse.mylyn.tasks.bugs" version="3.14.1.v20150126-2142"/>
+      <unit id="org.eclipse.mylyn_feature.feature.group" version="3.14.2.v20150217-2341"/>
+      <unit id="org.eclipse.mylyn.commons.feature.group" version="3.14.2.v20150217-2244"/>
+      <unit id="org.eclipse.mylyn.commons.identity.feature.group" version="1.6.2.v20150217-2244"/>
+      <unit id="org.eclipse.mylyn.commons.net" version="3.14.2.v20150217-2244"/>
+      <unit id="org.eclipse.mylyn.commons.notifications.feature.group" version="1.6.2.v20150217-2244"/>
+      <unit id="org.eclipse.mylyn.commons.repositories.feature.group" version="1.6.2.v20150217-2244"/>
+      <unit id="org.eclipse.mylyn.context_feature.feature.group" version="3.14.2.v20150218-0125"/>
+      <unit id="org.eclipse.mylyn.discovery.feature.group" version="3.14.2.v20150217-2244"/>
+      <unit id="org.eclipse.mylyn.monitor.feature.group" version="3.14.2.v20150217-2244"/>
+      <unit id="org.eclipse.mylyn.tasks.core" version="3.14.2.v20150217-2341"/>
+      <unit id="org.eclipse.mylyn.tasks.ui" version="3.14.2.v20150217-2341"/>
+      <unit id="org.eclipse.mylyn.tasks.bugs" version="3.14.2.v20150217-2341"/>
       <!-- Those Mylyn/Bugzilla IUs are only necessary for tests -->
-      <unit id="org.eclipse.mylyn.bugzilla_feature.feature.group" version="3.14.1.v20150126-2142"/>
-      <unit id="org.eclipse.mylyn.bugzilla.ide" version="3.14.1.v20150126-2144"/>
-      <unit id="org.eclipse.mylyn.commons.xmlrpc" version="3.14.1.v20150126-2107"/>
+      <unit id="org.eclipse.mylyn.bugzilla_feature.feature.group" version="3.14.2.v20150217-2341"/>
+      <unit id="org.eclipse.mylyn.bugzilla.ide" version="3.14.2.v20150218-0125"/>
+      <unit id="org.eclipse.mylyn.commons.xmlrpc" version="3.14.2.v20150217-2244"/>
 
       <!-- egit -->
       <unit id="org.eclipse.jgit.feature.group" version="3.4.2.201412180340-r"/>
@@ -277,20 +277,20 @@
 
     <!-- TM and RSE are in Kepler site but this way we get sources too -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/tm/3.7.0.RC3/"/>
-      <unit id="org.eclipse.rse.feature.group" version="3.7.0.201501081601"/>
-      <unit id="org.eclipse.rse.ssh.feature.group" version="3.7.0.201501081601"/>
-      <unit id="org.eclipse.rse.terminals.feature.group" version="3.7.0.201501081601"/>
-      <unit id="org.eclipse.rse.telnet.feature.group" version="3.7.0.201501081601"/>
-      <unit id="org.eclipse.rse.ftp.feature.group" version="3.7.0.201501081601"/>
-      <unit id="org.eclipse.rse.local.feature.group" version="3.7.0.201501081601"/>
-      <unit id="org.eclipse.rse.useractions.feature.group" version="3.7.0.201501081601"/>
-      <unit id="org.eclipse.tm.terminal.feature.group" version="3.7.0.201501081601"/>
-      <unit id="org.eclipse.tm.terminal.view.feature.group" version="3.7.0.201501081601"/>
-      <unit id="org.eclipse.tm.terminal.telnet.feature.group" version="3.7.0.201501081601"/>
-      <unit id="org.eclipse.tm.terminal.serial.feature.group" version="3.7.0.201501081601"/>
-      <unit id="org.eclipse.tm.terminal.feature.group" version="3.7.0.201501081601"/>
-      <unit id="org.eclipse.tm.terminal.ssh.feature.group" version="3.7.0.201501081601"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/tm/3.7.0.R/"/>
+      <unit id="org.eclipse.rse.feature.group" version="3.7.0.201502160819"/>
+      <unit id="org.eclipse.rse.ssh.feature.group" version="3.7.0.201502160819"/>
+      <unit id="org.eclipse.rse.terminals.feature.group" version="3.7.0.201502160819"/>
+      <unit id="org.eclipse.rse.telnet.feature.group" version="3.7.0.201502160819"/>
+      <unit id="org.eclipse.rse.ftp.feature.group" version="3.7.0.201502160819"/>
+      <unit id="org.eclipse.rse.local.feature.group" version="3.7.0.201502160819"/>
+      <unit id="org.eclipse.rse.useractions.feature.group" version="3.7.0.201502160819"/>
+      <unit id="org.eclipse.tm.terminal.feature.group" version="3.7.0.201502160819"/>
+      <unit id="org.eclipse.tm.terminal.view.feature.group" version="3.7.0.201502160819"/>
+      <unit id="org.eclipse.tm.terminal.telnet.feature.group" version="3.7.0.201502160819"/>
+      <unit id="org.eclipse.tm.terminal.serial.feature.group" version="3.7.0.201502160819"/>
+      <unit id="org.eclipse.tm.terminal.feature.group" version="3.7.0.201502160819"/>
+      <unit id="org.eclipse.tm.terminal.ssh.feature.group" version="3.7.0.201502160819"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
@@ -331,7 +331,7 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools/M-3.6.3RC3-20150209165014/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools/R-3.6.3-20150216091848/"/>
 
       <unit id="org.eclipse.jst.jee" version="1.0.700.v201404092004"/>
       <unit id="org.eclipse.jst.jee.web" version="1.0.500.v201404021628"/>
