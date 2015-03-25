@@ -310,6 +310,7 @@
       <unit id="org.eclipse.tm.terminal.ssh.feature.group" version="2.1.300.201406020016"/>
     </location>
 
+    <!-- TODO: Need to remove obsolete Jetty 8, once migration to Jetty 9 will be done @see JBIDE-19497, JBIDE-18804 -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/jetty/8.1.14.v20131031/"/>
       <unit id="org.eclipse.jetty.http" version="8.1.14.v20131031"/>
@@ -323,6 +324,19 @@
       <unit id="org.eclipse.jetty.websocket" version="8.1.14.v20131031"/>
       <unit id="org.eclipse.jetty.client" version="8.1.14.v20131031"/>
       <unit id="org.eclipse.jetty.rewrite" version="8.1.14.v20131031"/>
+    </location>
+
+    <!-- Jetty 9 -->
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/jetty/9.2.5.v20141112/"/>
+      <unit id="org.eclipse.jetty.client" version="9.2.5.v20141112"/>
+      <unit id="org.eclipse.jetty.proxy" version="9.2.5.v20141112"/>
+      <unit id="org.eclipse.jetty.rewrite" version="9.2.5.v20141112"/>
+      <unit id="org.eclipse.jetty.servlets" version="9.2.5.v20141112"/>
+      <unit id="org.eclipse.jetty.websocket.api" version="9.2.5.v20141112"/>
+      <unit id="org.eclipse.jetty.websocket.common" version="9.2.5.v20141112"/>
+      <unit id="org.eclipse.jetty.websocket.server" version="9.2.5.v20141112"/>
+      <unit id="org.eclipse.jetty.websocket.servlet" version="9.2.5.v20141112"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
