@@ -337,6 +337,7 @@
       <unit id="org.eclipse.jetty.websocket.common" version="9.2.5.v20141112"/>
       <unit id="org.eclipse.jetty.websocket.server" version="9.2.5.v20141112"/>
       <unit id="org.eclipse.jetty.websocket.servlet" version="9.2.5.v20141112"/>
+      <unit id="org.eclipse.jetty.websocket.client" version="9.2.5.v20141112"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
