@@ -409,6 +409,10 @@
       <unit id="org.eclipse.e4.ui.importer.java" version="0.1.0.v20150318-1723"/>
       <unit id="org.eclipse.e4.ui.importer.pde" version="0.1.0.v20150318-1723"/>
     </location>
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/egit/v4.0.0.201503231230-m1/"/>
+      <unit id="org.eclipse.egit.ui.importer" version="0.0.1.201503231230-m1"/>
+    </location>
 
     <!-- Only in JBDS (shipped in installer): TestNG -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
