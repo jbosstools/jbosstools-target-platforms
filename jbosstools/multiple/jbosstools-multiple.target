@@ -430,9 +430,9 @@
     
     <!-- Easymport -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/e4.ui/201503301551-SNAPSHOT/"/>
-      <unit id="org.eclipse.e4.ui.importer" version="0.1.0.v20150325-1724"/>
-      <unit id="org.eclipse.e4.ui.importer.java" version="0.1.0.v20150318-1723"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/e4.ui/201504141856-SNAPSHOT/"/>
+      <unit id="org.eclipse.e4.ui.importer" version="0.1.0.v20150410-1142"/>
+      <unit id="org.eclipse.e4.ui.importer.java" version="0.1.0.v20150414-1856"/>
       <unit id="org.eclipse.e4.ui.importer.pde" version="0.1.0.v20150318-1723"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
