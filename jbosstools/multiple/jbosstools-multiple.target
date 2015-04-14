@@ -311,16 +311,16 @@
 
     <!-- Jetty 9 -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/jetty/9.2.5.v20141112/"/>
-      <unit id="org.eclipse.jetty.client" version="9.2.5.v20141112"/>
-      <unit id="org.eclipse.jetty.proxy" version="9.2.5.v20141112"/>
-      <unit id="org.eclipse.jetty.rewrite" version="9.2.5.v20141112"/>
-      <unit id="org.eclipse.jetty.servlets" version="9.2.5.v20141112"/>
-      <unit id="org.eclipse.jetty.websocket.api" version="9.2.5.v20141112"/>
-      <unit id="org.eclipse.jetty.websocket.common" version="9.2.5.v20141112"/>
-      <unit id="org.eclipse.jetty.websocket.server" version="9.2.5.v20141112"/>
-      <unit id="org.eclipse.jetty.websocket.servlet" version="9.2.5.v20141112"/>
-      <unit id="org.eclipse.jetty.websocket.client" version="9.2.5.v20141112"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/jetty/9.2.9.v20150224/"/>
+      <unit id="org.eclipse.jetty.client" version="9.2.9.v20150224"/>
+      <unit id="org.eclipse.jetty.proxy" version="9.2.9.v20150224"/>
+      <unit id="org.eclipse.jetty.rewrite" version="9.2.9.v20150224"/>
+      <unit id="org.eclipse.jetty.servlets" version="9.2.9.v20150224"/>
+      <unit id="org.eclipse.jetty.websocket.api" version="9.2.9.v20150224"/>
+      <unit id="org.eclipse.jetty.websocket.common" version="9.2.9.v20150224"/>
+      <unit id="org.eclipse.jetty.websocket.server" version="9.2.9.v20150224"/>
+      <unit id="org.eclipse.jetty.websocket.servlet" version="9.2.9.v20150224"/>
+      <unit id="org.eclipse.jetty.websocket.client" version="9.2.9.v20150224"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
