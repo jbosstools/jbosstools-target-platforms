@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><?pde version="3.6"?>
-<target includeMode="feature" name="jbosstoolstarget-4.50.0.Alpha2-SNAPSHOT">
+<target includeMode="feature" name="jbosstoolstarget-4.50.0.Alpha2">
   <!-- Pro tip: to convert
       from org.eclipse.foo_4.6.0.v201005032111-777K4AkF7B77R7c7N77.jar
     to <unit version="4.6.0.v201005032111-777K4AkF7B77R7c7N77" id="org.eclipse.foo.feature.group"/>
@@ -21,7 +21,6 @@
       <unit id="org.apache.commons.lang" version="2.4.0.v201005080502"/>
       <unit id="org.apache.commons.lang" version="2.1.0.v201005080500"/>
       <unit id="javax.servlet" version="3.0.0.v201112011016"/>
-      <unit id="javax.servlet" version="2.5.0.v201103041518"/>
       <unit id="javax.servlet.jsp" version="2.2.0.v201112011158"/>
       <unit id="javax.servlet.jsp" version="2.0.0.v201101211617"/>
       <unit id="javax.wsdl" version="1.6.2.v201012040545"/>
