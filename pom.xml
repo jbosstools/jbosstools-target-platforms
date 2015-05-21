@@ -30,6 +30,52 @@
 					<artifactId>target-platform-utils</artifactId>
 					<version>${jbossTychoPluginsVersion}</version>
 				</plugin>
+				<plugin>
+					<artifactId>maven-assembly-plugin</artifactId>
+					<version>2.5.4</version>
+					<executions>
+						<execution>
+							<id>create-zip</id>
+							<phase>package</phase>
+							<goals>
+								<goal>single</goal>
+							</goals>
+							<configuration>
+								<appendAssemblyId>false</appendAssemblyId>
+								<!-- JBIDE-19800 to use this, must specify path to an assembly.xml file. Examples in jbosstools-discovery and jbosstools-target-platforms
+								<descriptors><descriptor>publish-assembly.xml</descriptor></descriptors>
+								-->
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+				<plugin>
+					<groupId>net.ju-n.maven.plugins</groupId>
+					<artifactId>checksum-maven-plugin</artifactId>
+					<version>1.2</version>
+					<executions>
+						<execution>
+							<goals>
+								<goal>files</goal>
+							</goals>
+						</execution>
+					</executions>
+					<configuration>
+						<quiet>true</quiet>
+						<csvSummary>false</csvSummary>
+						<algorithms>
+							<algorithm>SHA-1</algorithm>
+						</algorithms>
+						<fileSets>
+							<fileSet>
+								<directory>${project.build.directory}</directory>
+								<includes>
+									<include>**/*.zip</include>
+								</includes>
+							</fileSet>
+						</fileSets>
+					</configuration>
+				</plugin>
 			</plugins>
 		</pluginManagement>
 	</build>

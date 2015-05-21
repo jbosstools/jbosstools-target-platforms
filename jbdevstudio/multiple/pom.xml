@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.jboss.tools.targetplatforms</groupId>
-		<artifactId>jbdevstudio-all</artifactId>
+		<artifactId>jbdevstudio</artifactId>
 		<version>4.50.0.Beta1-SNAPSHOT</version>
 	</parent>
 	<artifactId>jbdevstudio-multiple</artifactId>
@@ -71,7 +71,7 @@
 			<build>
 				<plugins>
 					<plugin>
-						<!-- Workaround for https://bugs.eclipse.org/bugs/show_bug.cgi?id=389052  -->
+						<!-- Workaround for https://bugs.eclipse.org/bugs/show_bug.cgi?id=389052	-->
 						<groupId>org.jboss.tools.tycho-plugins</groupId>
 						<artifactId>target-platform-utils</artifactId>
 						<executions>
@@ -80,8 +80,25 @@
 								<goals>
 									<goal>mirror-target-to-repo</goal>
 								</goals>
+								<configuration>
+									<sourceTargetFile>${project.artifactId}.target</sourceTargetFile>
+								</configuration>
 							</execution>
 						</executions>
+					</plugin>
+					<plugin>
+						<artifactId>maven-assembly-plugin</artifactId>
+						<configuration>
+							<descriptors>
+								<descriptor>${basedir}/../../publish-assembly.xml</descriptor>
+							</descriptors>
+							<!-- JBIDE-19800 zip would be jbdevstudio-multiple-4.50.0.Beta1-SNAPSHOT.zip; want jbdevstudiotarget-4.50.0.Beta1-SNAPSHOT.zip -->
+							<finalName>${project.parent.artifactId}target-${project.version}</finalName>
+						</configuration>
+					</plugin>
+					<plugin>
+						<groupId>net.ju-n.maven.plugins</groupId>
+						<artifactId>checksum-maven-plugin</artifactId>
 					</plugin>
 				</plugins>
 			</build>

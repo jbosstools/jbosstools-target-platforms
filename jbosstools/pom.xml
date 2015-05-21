@@ -8,7 +8,7 @@
 		<version>4.50.0.Beta1-SNAPSHOT</version>
 	</parent>
 	<groupId>org.jboss.tools.targetplatforms</groupId>
-	<artifactId>jbosstools-all</artifactId>
+	<artifactId>jbosstools</artifactId>
 	<name>JBoss Tools Target Platforms</name>
 	<packaging>pom</packaging>
 	<modules>
