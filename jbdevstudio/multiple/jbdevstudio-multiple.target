@@ -323,6 +323,14 @@
       <unit id="org.eclipse.jetty.proxy" version="9.2.10.v20150310"/>
       <unit id="org.eclipse.jetty.rewrite" version="9.2.10.v20150310"/>
       <unit id="org.eclipse.jetty.servlets" version="9.2.10.v20150310"/>
+      <unit id="org.eclipse.jetty.util" version="9.2.10.v20150310"/>
+      <unit id="org.eclipse.jetty.server" version="9.2.10.v20150310"/>
+      <unit id="org.eclipse.jetty.servlet" version="9.2.10.v20150310"/>
+      <unit id="org.eclipse.jetty.http" version="9.2.10.v20150310"/>
+      <unit id="org.eclipse.jetty.proxy" version="9.2.10.v20150310"/>
+      <unit id="org.eclipse.jetty.io" version="9.2.10.v20150310"/>
+      <unit id="org.eclipse.jetty.continuation" version="9.2.10.v20150310"/>
+      <unit id="org.eclipse.jetty.security" version="9.2.10.v20150310"/>
       <unit id="org.eclipse.jetty.websocket.api" version="9.2.10.v20150310"/>
       <unit id="org.eclipse.jetty.websocket.common" version="9.2.10.v20150310"/>
       <unit id="org.eclipse.jetty.websocket.server" version="9.2.10.v20150310"/>
