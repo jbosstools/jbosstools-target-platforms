@@ -307,10 +307,15 @@
       <unit id="org.eclipse.cdt.native.feature.group" version="8.7.0.201505250904"/>
 
       <!-- JBIDE-19879 required by new launchbar -->
-      <unit id="org.eclipse.launchbar.core" version="1.0.0.201505191448"/>
-      <unit id="org.eclipse.launchbar.ui" version="1.0.0.201505191448"/>
       <unit id="org.eclipse.remote.core" version="2.0.0.201505271353"/>
       <unit id="org.eclipse.remote.ui" version="2.0.0.201505271353"/>
+    </location>
+
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/launchbar/1.0.0.201506011405/"/>
+      <!-- JBIDE-19879 required by new launchbar -->
+      <unit id="org.eclipse.launchbar.core" version="1.0.0.201506011405"/>
+      <unit id="org.eclipse.launchbar.ui" version="1.0.0.201506011405"/>
     </location>
 
     <!-- TM and RSE are in Luna site but this way we get sources too -->
