@@ -471,8 +471,11 @@
     
     <!-- Eclipse Docker Tooling -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/1.0.0.201506030402/"/>
-      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="1.0.0.201506030402"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/1.0.0.201506031638/"/>
+      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="1.0.0.201506031638"/>
+      <unit id="org.eclipse.linuxtools.docker.core" version="1.0.0.201506031638"/>
+      <unit id="org.eclipse.linuxtools.docker.docs" version="1.0.0.201506031638"/>
+      <unit id="org.eclipse.linuxtools.docker.ui" version="1.0.0.201506031638"/>
       <unit id="com.fasterxml.jackson.core.jackson-annotations" version="2.5.0.v201504151636"/>
       <unit id="com.fasterxml.jackson.core.jackson-core" version="2.5.0.v201504151636"/>
       <unit id="com.fasterxml.jackson.core.jackson-databind" version="2.5.0.v201504151636"/>
@@ -494,9 +497,6 @@
       <unit id="org.apache.commons.compress" version="1.6.0.v201310281400"/>
       <unit id="org.bouncycastle.bcpkix" version="1.51.0.v201505131810"/>
       <unit id="org.bouncycastle.bcprov" version="1.51.0.v201505131810"/>
-      <unit id="org.eclipse.linuxtools.docker.core" version="1.0.0.201506030402"/>
-      <unit id="org.eclipse.linuxtools.docker.docs" version="1.0.0.201506030402"/>
-      <unit id="org.eclipse.linuxtools.docker.ui" version="1.0.0.201506030402"/>
       <unit id="org.glassfish.hk2.api" version="2.3.0.b10_201505192201"/>
       <unit id="org.glassfish.hk2.locator" version="2.3.0.b10_201505192201"/>
       <unit id="org.glassfish.hk2.osgi-resource-locator" version="2.3.0.b10_201505192201"/>
