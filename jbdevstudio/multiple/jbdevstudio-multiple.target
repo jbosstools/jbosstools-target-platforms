@@ -106,15 +106,6 @@
       <unit id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version="0.17.0.201502101659"/>
     </location>
 
-    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2e-wtp/1.2.0.20150526-1758/"/>
-      <!-- m2e-wtp -->
-      <unit id="org.eclipse.m2e.wtp.feature.feature.group" version="1.2.0.20150526-1758"/>
-      <unit id="org.eclipse.m2e.wtp.jaxrs.feature.feature.group" version="1.2.0.20150526-1758"/>
-      <unit id="org.eclipse.m2e.wtp.jpa.feature.feature.group" version="1.2.0.e43-20150526-1800"/>
-      <unit id="org.eclipse.m2e.wtp.jsf.feature.feature.group" version="1.2.0.20150526-1758"/>
-    </location>
-
     <!-- Eclipse -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/mars/201505291000-RC2/"/>
@@ -123,6 +114,11 @@
       <unit id="org.eclipse.m2e.feature.feature.group" version="1.6.0.20150526-2032"/>
       <!-- Required for m2e tests -->
       <unit id="org.eclipse.m2e.tests.common" version="1.6.0.20150526-2032"/>
+      <!-- m2e-wtp -->
+      <unit id="org.eclipse.m2e.wtp.feature.feature.group" version="1.2.0.20150526-1758"/>
+      <unit id="org.eclipse.m2e.wtp.jaxrs.feature.feature.group" version="1.2.0.20150526-1758"/>
+      <unit id="org.eclipse.m2e.wtp.jpa.feature.feature.group" version="1.2.0.e43-20150526-1800"/>
+      <unit id="org.eclipse.m2e.wtp.jsf.feature.feature.group" version="1.2.0.20150526-1758"/>
 
       <!-- p2.discovery -->
       <unit id="org.eclipse.equinox.p2.discovery.compatibility" version="1.0.200.v20131211-1531"/>
