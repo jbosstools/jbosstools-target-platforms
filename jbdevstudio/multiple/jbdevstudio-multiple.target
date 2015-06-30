@@ -81,8 +81,7 @@
     </location>
     -->
 
-    <!-- TODO: make sure these versions match up across JBT/JBDS/Central target platforms (JBIDE-17429) -->
-    <!-- m2e family, not included in Luna site -->
+    <!-- m2e family, not included in SimRel site; see also Central TP for more -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/1.1.1-2014-11-26_15-11-10-H37/"/>
       <unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.1.1.201411262015"/>
@@ -105,15 +104,16 @@
       <!-- m2e mavenarchiver (no sources avail) -->
       <unit id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version="0.17.0.201502101659"/>
     </location>
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2e/1.6.1.20150625-2338/"/>
+      <unit id="org.eclipse.m2e.feature.feature.group" version="1.6.1.20150625-2338"/>
+      <unit id="org.eclipse.m2e.tests.common" version="1.6.1.20150625-2338"/>
+    </location>
 
-    <!-- Eclipse -->
+    <!-- SimRel -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/mars/201506181000-SR0/"/>
 
-      <!-- m2e -->
-      <unit id="org.eclipse.m2e.feature.feature.group" version="1.6.0.20150526-2032"/>
-      <!-- Required for m2e tests -->
-      <unit id="org.eclipse.m2e.tests.common" version="1.6.0.20150526-2032"/>
       <!-- m2e-wtp -->
       <unit id="org.eclipse.m2e.wtp.feature.feature.group" version="1.2.0.20150602-1740"/>
       <unit id="org.eclipse.m2e.wtp.jaxrs.feature.feature.group" version="1.2.0.20150602-1740"/>
