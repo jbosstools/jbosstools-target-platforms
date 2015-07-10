@@ -248,7 +248,6 @@
       <unit id="org.eclipse.mylyn.tasks.ui" version="3.16.0.v20150609-0543"/>
       <unit id="org.eclipse.mylyn.tasks.bugs" version="3.16.0.v20150525-2001"/>
       <unit id="org.jsoup" version="1.7.2.v201411291515"/>
-      <unit id="org.eclipse.mylyn.wikitext_feature.feature.group" version="2.5.0.v20150522-1430"/>
       <!-- These Mylyn/Bugzilla IUs are only necessary for tests -->
       <unit id="org.eclipse.mylyn.bugzilla_feature.feature.group" version="3.16.0.v20150525-2001"/>
       <unit id="org.eclipse.mylyn.bugzilla.ide" version="3.16.0.v20150522-2252"/>
@@ -296,6 +295,7 @@
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/mylyn-extras/2.6.0.N20150706-2134/"/>
       <!-- JBIDE-20216 wikitext asciidoc editor; exclude creole and commonmark plugins -->
+      <unit id="org.eclipse.mylyn.wikitext_feature.feature.group" version="2.6.0.N20150706-2134"/>
       <unit id="org.eclipse.mylyn.wikitext.asciidoc.core" version="2.6.0.N20150625-2041"/>
       <unit id="org.eclipse.mylyn.wikitext.asciidoc.ui" version="2.6.0.N20150625-2041"/>
     </location>
