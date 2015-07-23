@@ -446,8 +446,8 @@
 
     <!-- Only in JBDS (shipped in installer): TestNG -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/testng/6.8.6.20130914_0724/"/>
-      <unit id="org.testng.eclipse.feature.group" version="6.8.6.20130914_0724"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/testng/6.9.5.201506120235/"/>
+      <unit id="org.testng.eclipse.feature.group" version="6.9.5.201506120235"/>
     </location>
     
     <!-- Eclipse Docker Tooling -->
