@@ -352,25 +352,25 @@
 
     <!-- Jetty 9 -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/jetty/9.3.2.v20150730/"/>
-      <unit id="org.eclipse.jetty.client" version="9.3.2.v20150730"/>
-      <unit id="org.eclipse.jetty.continuation" version="9.3.2.v20150730"/>
-      <unit id="org.eclipse.jetty.http" version="9.3.2.v20150730"/>
-      <unit id="org.eclipse.jetty.io" version="9.3.2.v20150730"/>
-      <unit id="org.eclipse.jetty.proxy" version="9.3.2.v20150730"/>
-      <unit id="org.eclipse.jetty.rewrite" version="9.3.2.v20150730"/>
-      <unit id="org.eclipse.jetty.security" version="9.3.2.v20150730"/>
-      <unit id="org.eclipse.jetty.server" version="9.3.2.v20150730"/>
-      <unit id="org.eclipse.jetty.servlet" version="9.3.2.v20150730"/>
-      <unit id="org.eclipse.jetty.servlets" version="9.3.2.v20150730"/>
-      <unit id="org.eclipse.jetty.util" version="9.3.2.v20150730"/>
-      <unit id="org.eclipse.jetty.webapp" version="9.3.2.v20150730"/>
-      <unit id="org.eclipse.jetty.websocket.api" version="9.3.2.v20150730"/>
-      <unit id="org.eclipse.jetty.websocket.client" version="9.3.2.v20150730"/>
-      <unit id="org.eclipse.jetty.websocket.common" version="9.3.2.v20150730"/>
-      <unit id="org.eclipse.jetty.websocket.server" version="9.3.2.v20150730"/>
-      <unit id="org.eclipse.jetty.websocket.servlet" version="9.3.2.v20150730"/>
-      <unit id="org.eclipse.jetty.xml" version="9.3.2.v20150730"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/jetty/9.3.5.v20151012/"/>
+      <unit id="org.eclipse.jetty.client" version="9.3.5.v20151012"/>
+      <unit id="org.eclipse.jetty.continuation" version="9.3.5.v20151012"/>
+      <unit id="org.eclipse.jetty.http" version="9.3.5.v20151012"/>
+      <unit id="org.eclipse.jetty.io" version="9.3.5.v20151012"/>
+      <unit id="org.eclipse.jetty.proxy" version="9.3.5.v20151012"/>
+      <unit id="org.eclipse.jetty.rewrite" version="9.3.5.v20151012"/>
+      <unit id="org.eclipse.jetty.security" version="9.3.5.v20151012"/>
+      <unit id="org.eclipse.jetty.server" version="9.3.5.v20151012"/>
+      <unit id="org.eclipse.jetty.servlet" version="9.3.5.v20151012"/>
+      <unit id="org.eclipse.jetty.servlets" version="9.3.5.v20151012"/>
+      <unit id="org.eclipse.jetty.util" version="9.3.5.v20151012"/>
+      <unit id="org.eclipse.jetty.webapp" version="9.3.5.v20151012"/>
+      <unit id="org.eclipse.jetty.websocket.api" version="9.3.5.v20151012"/>
+      <unit id="org.eclipse.jetty.websocket.client" version="9.3.5.v20151012"/>
+      <unit id="org.eclipse.jetty.websocket.common" version="9.3.5.v20151012"/>
+      <unit id="org.eclipse.jetty.websocket.server" version="9.3.5.v20151012"/>
+      <unit id="org.eclipse.jetty.websocket.servlet" version="9.3.5.v20151012"/>
+      <unit id="org.eclipse.jetty.xml" version="9.3.5.v20151012"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
