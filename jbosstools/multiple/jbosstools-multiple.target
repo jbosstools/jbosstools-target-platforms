@@ -180,7 +180,6 @@
       <unit id="org.eclipse.help.feature.group" version="2.1.1.v20151029-1100"/>
 
       <!-- DTP -->
-      <!-- removed from Neon M3 <unit id="org.eclipse.core.runtime.compatibility" version="3.2.300.v20150423-0821"/> -->
       <unit id="org.eclipse.datatools.modelbase.feature.feature.group" version="1.13.0.201511112326"/>
       <unit id="org.eclipse.datatools.connectivity.feature.feature.group" version="1.13.0.201511112326"/>
       <unit id="org.eclipse.datatools.connectivity.oda.feature.feature.group" version="1.13.0.201511112326"/>
@@ -477,11 +476,20 @@
     <!-- Only in JBT: BIRT -->
     <!-- JBIDE-16794 BIRT site only contains Apache Batik 1.7.0, but it depends on 1.6.0 (both are in Luna M6). See above -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/birt/4.5.0.v201506092134/"/>
-      <unit id="org.eclipse.birt.feature.group" version="4.5.0.v201506092134"/>
-      <unit id="org.eclipse.birt.chart.feature.group" version="4.5.0.v201506092134"/>
-      <unit id="org.eclipse.birt.integration.wtp.feature.group" version="4.5.0.v201506092134"/>
-      <unit id="org.eclipse.birt.chart.integration.wtp.feature.group" version="4.5.0.v201506092134"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/birt/4.5.0.v201510231925/"/>
+      <unit id="org.eclipse.birt.feature.group" version="4.5.0.v201510231925"/>
+      <unit id="org.eclipse.birt.chart.feature.group" version="4.5.0.v201510231925"/>
+      <unit id="org.eclipse.birt.integration.wtp.feature.group" version="4.5.0.v201510231925"/>
+      <unit id="org.eclipse.birt.chart.integration.wtp.feature.group" version="4.5.0.v201510231925"/>
+      <unit id="org.eclipse.jetty.osgi.boot" version="9.2.9.v20150224"/>
+      <unit id="org.eclipse.jetty.deploy" version="9.2.9.v20150224"/>
+
+      <!-- JBIDE-20976 Required by o.j.t.common.model.ui, 
+      o.e.platform.feature, o.e.m2e.feature, o.e.datatools.oda.cshelp, o.aspectj.ajde, o.e.wst.xml.xpath.core, 
+      and o.e.birt.feature [JBT only]
+      -->
+      <!-- removed from Neon M3 but available in birt mirror -->
+      <unit id="org.eclipse.core.runtime.compatibility" version="3.2.300.v20150423-0821"/>
     </location>
 
     <!-- JBIDE-19045 move Tern into JST project, so no longer in target platform -->
@@ -494,8 +502,8 @@
       <unit id="org.eclipse.e4.ui.importer.pde" version="0.2.0.v20150908-1034"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/egit/v4.1.0.201509280440-r/"/>
-      <unit id="org.eclipse.egit.ui.importer" version="4.1.0.201509280440-r"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/egit/v4.2.0.201511101648-m1/"/>
+      <unit id="org.eclipse.egit.ui.importer" version="4.2.0.201511101648-m1"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/jsdt/3.5.0.v201509081821-SNAPSHOT/"/>
