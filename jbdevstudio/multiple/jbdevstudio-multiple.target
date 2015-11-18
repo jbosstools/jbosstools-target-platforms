@@ -445,8 +445,8 @@
     
     <!-- Easymport -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/e4.ui/0.2.0.v20151014-1740-SNAPSHOT/"/>
-      <unit id="org.eclipse.e4.ui.importer" version="0.2.0.v20151014-1740"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/e4.ui/0.2.0.v20151113-1307-SNAPSHOT/"/>
+      <unit id="org.eclipse.e4.ui.importer" version="0.2.0.v20151113-1307"/>
       <unit id="org.eclipse.e4.ui.importer.java" version="0.2.0.v20150908-1034"/>
       <unit id="org.eclipse.e4.ui.importer.pde" version="0.2.0.v20150908-1034"/>
     </location>
@@ -455,8 +455,8 @@
       <unit id="org.eclipse.egit.ui.importer" version="4.0.0.201506090130-r"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/jsdt/3.5.0.v201505071819-SNAPSHOT/"/>
-      <unit id="org.eclipse.wst.jsdt.ui.importer" version="0.0.1.v201503301926"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/jsdt/3.5.0.v201509081821-SNAPSHOT/"/>
+      <unit id="org.eclipse.wst.jsdt.ui.importer" version="0.0.1.v201509081821"/>
     </location>
 
     <!-- Only in JBDS (shipped in installer): TestNG -->
