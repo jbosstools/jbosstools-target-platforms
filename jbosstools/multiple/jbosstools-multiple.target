@@ -7,9 +7,15 @@
     :%s/.\+\/\(org.\+\)_\(\d\+.\+\)\.jar/\t\t\t<unit id="\1.feature.group" version="\2"\/>/g
   -->
   <locations>
+    <!-- don't forget to increment these files when moving up a version: build.xml, *.target -->
+
+    <!-- fix for JBDS-3560 -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <!-- don't forget to increment these files when moving up a version:
-        build.xml, *.target*, publish.sh, target2p2mirror.xml -->
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/I20151117200049/"/>
+      <unit id="org.apache.commons.collections" version="3.2.2.v201511171945"/>
+    </location>
+
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/R20150519210750/"/>
 
       <!-- for these IUs we need multiple versions -->
