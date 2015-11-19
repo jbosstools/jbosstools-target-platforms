@@ -481,8 +481,8 @@
       <unit id="org.eclipse.egit.ui.importer" version="4.0.0.201506090130-r"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/jsdt/3.5.0.v201505071819-SNAPSHOT/"/>
-      <unit id="org.eclipse.wst.jsdt.ui.importer" version="0.0.1.v201503301926"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/jsdt/3.5.0.v201509081821-SNAPSHOT/"/>
+      <unit id="org.eclipse.wst.jsdt.ui.importer" version="0.0.1.v201509081821"/>
     </location>
     
     <!-- Eclipse Docker Tooling -->
