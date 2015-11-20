@@ -379,6 +379,13 @@
       <unit id="org.eclipse.jetty.websocket.server" version="9.3.5.v20151012"/>
       <unit id="org.eclipse.jetty.websocket.servlet" version="9.3.5.v20151012"/>
       <unit id="org.eclipse.jetty.xml" version="9.3.5.v20151012"/>
+
+      <!-- Required by birt -->
+      <unit id="org.eclipse.jetty.osgi.boot" version="9.3.5.v20151012"/>
+      <unit id="org.eclipse.jetty.deploy" version="9.3.5.v20151012"/>
+      <unit id="org.eclipse.jetty.annotations" version="9.3.5.v20151012"/>
+      <unit id="org.eclipse.jetty.plus" version="9.3.5.v20151012"/>
+      <unit id="org.eclipse.jetty.jndi" version="9.3.5.v20151012"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
@@ -484,8 +491,6 @@
       <unit id="org.eclipse.birt.chart.feature.group" version="4.5.0.v201510231925"/>
       <unit id="org.eclipse.birt.integration.wtp.feature.group" version="4.5.0.v201510231925"/>
       <unit id="org.eclipse.birt.chart.integration.wtp.feature.group" version="4.5.0.v201510231925"/>
-      <unit id="org.eclipse.jetty.osgi.boot" version="9.2.9.v20150224"/>
-      <unit id="org.eclipse.jetty.deploy" version="9.2.9.v20150224"/>
 
       <!-- JBIDE-20976 Required by o.j.t.common.model.ui, 
       o.e.platform.feature, o.e.m2e.feature, o.e.datatools.oda.cshelp, o.aspectj.ajde, o.e.wst.xml.xpath.core, 
