@@ -13,7 +13,8 @@
 	<properties>
 		<!-- set this to false to allow validation to proceed but NOT fail the build -->
 		<validate-target-platform.failOnError>true</validate-target-platform.failOnError>
-		<targetRepositoryUrl>https://devstudio.redhat.com/targetplatforms/jbdevstudiotarget/${project.version}/REPO/</targetRepositoryUrl>
+		<targetRepositoryUrl>https://devstudio.redhat.com/targetplatforms/${project.parent.artifactId}target/${project.version}/REPO/</targetRepositoryUrl>
+		<multipleArtifactId>${project.parent.artifactId}-multiple</multipleArtifactId>
 	</properties>
 	<build>
 		<plugins>
@@ -30,8 +31,8 @@
 						<configuration>
 							<sourceTargetArtifact>
 								<groupId>${project.groupId}</groupId>
-								<artifactId>jbdevstudio-multiple</artifactId>
-								<classifier>jbdevstudio-multiple</classifier>
+								<artifactId>${multipleArtifactId}</artifactId>
+								<classifier>${multipleArtifactId}</classifier>
 								<version>${project.version}</version>
 							</sourceTargetArtifact>
 							<targetRepositoryUrl>${targetRepositoryUrl}</targetRepositoryUrl>
@@ -75,6 +76,12 @@
 									<file>${project.build.directory}/${project.artifactId}.target</file>
 									<type>target</type>
 									<classifier>${project.artifactId}</classifier>
+								</artifact>
+								<!-- JBIDE-21120 deploy the multiple.target here too -->
+								<artifact>
+									<file>${project.build.directory}/../multiple/${multipleArtifactId}.target</file>
+									<type>target</type>
+									<classifier>${multipleArtifactId}</classifier>
 								</artifact>
 							</artifacts>
 						</configuration>

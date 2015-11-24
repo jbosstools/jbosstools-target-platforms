@@ -14,6 +14,8 @@
 	<properties>
 		<!-- set this to false to allow validation to proceed but NOT fail the build -->
 		<validate-target-platform.failOnError>true</validate-target-platform.failOnError>
+		<!-- JBIDE-21120 don't deploy these artifacts (to avoid deploying the TP to JBoss Nexus); instead, the ../unified/pom.xml will handle deploying both that .target file and this one too -->
+		<maven.deploy.skip>true</maven.deploy.skip>
 	</properties>
 
 	<build>
@@ -34,30 +36,6 @@
 							</targetFiles>
 							<failOnError>${validate-target-platform.failOnError}</failOnError>
 							<checkDependencies>true</checkDependencies>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>build-helper-maven-plugin</artifactId>
-				<version>1.3</version>
-				<executions>
-					<execution>
-						<id>attach-artifacts</id>
-						<phase>package</phase>
-						<goals>
-							<goal>attach-artifact</goal>
-						</goals>
-						<configuration>
-							<artifacts>
-								<!-- add more artifacts if want more target platforms -->
-								<artifact>
-									<file>${project.artifactId}.target</file>
-									<type>target</type>
-									<classifier>${project.artifactId}</classifier>
-								</artifact>
-							</artifacts>
 						</configuration>
 					</execution>
 				</executions>
