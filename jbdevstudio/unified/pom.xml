@@ -79,7 +79,7 @@
 								</artifact>
 								<!-- JBIDE-21120 deploy the multiple.target here too -->
 								<artifact>
-									<file>${project.build.directory}/../multiple/${multipleArtifactId}.target</file>
+									<file>${project.build.directory}/../../multiple/${multipleArtifactId}.target</file>
 									<type>target</type>
 									<classifier>${multipleArtifactId}</classifier>
 								</artifact>
