@@ -77,17 +77,12 @@
 									<type>target</type>
 									<classifier>${project.artifactId}</classifier>
 								</artifact>
-								<!-- JBIDE-21120 deploy the multiple.target here too -->
-								<!-- <artifact>
-									<file>${project.build.directory}/../../multiple/${multipleArtifactId}.target</file>
-									<type>target</type>
-									<classifier>${multipleArtifactId}</classifier>
-								</artifact> -->
 							</artifacts>
 						</configuration>
 					</execution>
 				</executions>
 			</plugin>
+			<!-- JBIDE-21120 deploy the multiple.target here too -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-deploy-plugin</artifactId>
