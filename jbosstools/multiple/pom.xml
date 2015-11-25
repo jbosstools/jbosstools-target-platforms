@@ -14,7 +14,17 @@
 	<properties>
 		<!-- set this to false to allow validation to proceed but NOT fail the build -->
 		<validate-target-platform.failOnError>true</validate-target-platform.failOnError>
-		<!-- JBIDE-21120 don't deploy these artifacts (to avoid deploying the TP to JBoss Nexus); instead, the ../unified/pom.xml will handle deploying both that .target file and this one too -->
+		<!-- JBIDE-21120 don't deploy these artifacts (to avoid deploying the TP to JBoss Nexus); instead use 
+mvn deploy:deploy-file \
+-DgroupId=org.jboss.tools.targetplatforms \
+-Dversion=4.60.0.Alpha1-SNAPSHOT \
+-DartifactId=jbosstools-multiple \
+-Dclassifier=jbosstools-multiple \
+-Dfile=multiple/jbosstools-multiple.target \
+-DrepositoryId=jboss-snapshots-repository \
+-Durl=https://repository.jboss.org/nexus/content/repositories/snapshots/ \
+-DgeneratePom=false
+		-->
 		<maven.deploy.skip>true</maven.deploy.skip>
 	</properties>
 
