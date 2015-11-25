@@ -101,11 +101,11 @@
 							<file>${project.build.directory}/../../multiple/${multipleArtifactId}.target</file>
 							<type>target</type>
 							<classifier>${multipleArtifactId}</classifier>
+							<groupId>${project.groupId}</groupId>
 							<artifactId>${multipleArtifactId}</artifactId>
-							<!-- <groupId>${project.groupId}</groupId>
-							<version>${project.version}</version> -->
-							<!-- <repositoryId>jboss-snapshots-repository</repositoryId>
-							<url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url> -->
+							<version>${project.version}</version>
+							<repositoryId>jboss-snapshots-repository</repositoryId>
+							<url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
 						</configuration>
 					</execution>
 				</executions>
