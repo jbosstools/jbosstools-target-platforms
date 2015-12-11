@@ -475,11 +475,12 @@
     
     <!-- Eclipse Docker Tooling -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/1.2.0.201511162301/"/>
-      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="1.2.0.201511162301"/>
-      <unit id="org.eclipse.linuxtools.docker.core" version="1.2.0.201511162301"/>
-      <unit id="org.eclipse.linuxtools.docker.docs" version="1.2.0.201511162301"/>
-      <unit id="org.eclipse.linuxtools.docker.ui" version="1.2.0.201511162301"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/1.2.0.201512112123/"/>
+      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="1.2.0.201512112123"/>
+      <unit id="org.eclipse.linuxtools.docker.core" version="1.2.0.201512112123"/>
+      <unit id="org.eclipse.linuxtools.docker.docs" version="1.2.0.201512112123"/>
+      <unit id="org.eclipse.linuxtools.docker.ui" version="1.2.0.201512112123"/>
+      <unit id="com.spotify.docker.client" version="3.1.10.v20151113-2033"/>
       <unit id="com.fasterxml.jackson.core.jackson-annotations" version="2.5.0.v201504151636"/>
       <unit id="com.fasterxml.jackson.core.jackson-core" version="2.5.0.v201504151636"/>
       <unit id="com.fasterxml.jackson.core.jackson-databind" version="2.5.0.v201504151636"/>
@@ -488,7 +489,6 @@
       <unit id="com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider" version="2.5.0.v201504171603"/>
       <unit id="com.google.guava" version="15.0.0.v201403281430"/>
       <unit id="com.kenai.jffi" version="1.2.7.v201505052040"/>
-      <unit id="com.spotify.docker.client" version="3.1.1.v201508201820"/>
       <unit id="javassist" version="3.13.0.GA_v201209210905"/>
       <unit id="javax.ws.rs" version="2.0.1.v201504171603"/>
       <unit id="jnr.constants" version="0.8.6.v201505052040"/>
