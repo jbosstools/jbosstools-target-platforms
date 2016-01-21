@@ -319,6 +319,7 @@
       <!-- egit -->
       <unit id="org.eclipse.jgit.feature.group" version="4.1.1.201511131810-r"/>
       <unit id="org.eclipse.egit.feature.group" version="4.1.1.201511131810-r"/>
+      <unit id="org.eclipse.egit.ui.importer" version="4.1.1.201511131810-r"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
@@ -463,10 +464,6 @@
       <unit id="org.eclipse.e4.ui.importer" version="0.2.0.v20151123-1229"/>
       <unit id="org.eclipse.e4.ui.importer.java" version="0.2.0.v20150908-1034"/>
       <unit id="org.eclipse.e4.ui.importer.pde" version="0.2.0.v20150908-1034"/>
-    </location>
-    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/egit/v4.0.0.201506090130-r/"/>
-      <unit id="org.eclipse.egit.ui.importer" version="4.0.0.201506090130-r"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/jsdt/3.5.0.v201509081821-SNAPSHOT/"/>
