@@ -234,6 +234,8 @@
 
       <!-- needed for JBoss Central -->
       <unit id="com.sun.syndication" version="0.9.0.v200803061811"/>
+      <!-- JBDS-3566 include AERI in JBDS (and later JBT) -->
+      <unit id="org.eclipse.epp.logging.aeri.feature.feature.group" version="1.100.0.v20151216-0616"/>
 
       <unit id="org.eclipse.ui" version="3.107.0.v20151202-1450"/>
       <unit id="org.eclipse.core.runtime" version="3.12.0.v20151104-0048"/>
@@ -490,11 +492,11 @@
     
     <!-- Eclipse Docker Tooling -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/1.2.0.201512112123/"/>
-      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="1.2.0.201512112123"/>
-      <unit id="org.eclipse.linuxtools.docker.core" version="1.2.0.201512112123"/>
-      <unit id="org.eclipse.linuxtools.docker.docs" version="1.2.0.201512112123"/>
-      <unit id="org.eclipse.linuxtools.docker.ui" version="1.2.0.201512112123"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/1.2.1.201601192048/"/>
+      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="1.2.0.201601192048"/>
+      <unit id="org.eclipse.linuxtools.docker.core" version="1.2.1.201601192048"/>
+      <unit id="org.eclipse.linuxtools.docker.docs" version="1.2.1.201601192048"/>
+      <unit id="org.eclipse.linuxtools.docker.ui" version="1.2.1.201601192048"/>
       <unit id="com.spotify.docker.client" version="3.1.10.v20151113-2033"/>
       <unit id="com.fasterxml.jackson.core.jackson-annotations" version="2.5.0.v201504151636"/>
       <unit id="com.fasterxml.jackson.core.jackson-core" version="2.5.0.v201504151636"/>
@@ -527,6 +529,13 @@
       <unit id="org.glassfish.jersey.media.jersey-media-json-jackson" version="2.14.0.v201504171603"/>
       <unit id="org.objectweb.asm" version="4.0.0.v201302062210"/>
       <unit id="org.slf4j.api" version="1.7.2.v20121108-1250"/>
+    </location>
+
+    <!-- JBIDE-21377 YAML Editor -->
+    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/springide/3.7.3.201512072012-CI-B680/"/>
+      <unit id="org.dadacoalition.yedit" version="1.0.18.201506232135-RELEASE-SIGNED"/>
+      <unit id="org.yaml.snakeyaml" version="1.14.0.v201505061500"/>
     </location>
 
   </locations>
