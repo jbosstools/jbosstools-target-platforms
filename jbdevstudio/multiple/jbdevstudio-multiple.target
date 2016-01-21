@@ -278,10 +278,6 @@
       <unit id="org.eclipse.mylyn.bugzilla.ide" version="3.18.0.v20151013-1847"/>
       <unit id="org.eclipse.mylyn.commons.xmlrpc" version="3.18.0.v20151009-1724"/>
 
-      <!-- egit -->
-      <unit id="org.eclipse.jgit.feature.group" version="4.0.3.201509231615-r"/>
-      <unit id="org.eclipse.egit.feature.group" version="4.0.3.201509231615-r"/>
-
       <!-- Required for Batch and Arquillian -->
       <unit id="org.eclipse.sapphire.feature.group" version="9.0.4.201511201829"/>
       <unit id="org.eclipse.sapphire.java.feature.group" version="9.0.4.201511201829"/>
@@ -315,6 +311,14 @@
       <!-- JBIDE-19879 required by new launchbar -->
       <unit id="org.eclipse.remote.core" version="2.0.0.201601141453"/>
       <unit id="org.eclipse.remote.ui" version="2.0.0.201601141453"/>
+    </location>
+
+    <!-- this is also in Mars but want newer version -->
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/egit/v4.1.1.201511131810-r/"/>
+      <!-- egit -->
+      <unit id="org.eclipse.jgit.feature.group" version="4.1.1.201511131810-r"/>
+      <unit id="org.eclipse.egit.feature.group" version="4.1.1.201511131810-r"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">

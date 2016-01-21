@@ -276,9 +276,6 @@
       <unit id="org.eclipse.mylyn.bugzilla.ide" version="3.18.0.v20151013-1847"/>
       <unit id="org.eclipse.mylyn.commons.xmlrpc" version="3.18.0.v20151009-1724"/>
 
-      <!-- egit -->
-      <unit id="org.eclipse.jgit.feature.group" version="4.0.3.201509231615-r"/>
-      <unit id="org.eclipse.egit.feature.group" version="4.0.3.201509231615-r"/>
 
       <!-- JBIDE-16794 Apache Batik 1.6.0 is required by BIRT, but BIRT site only contains 1.7.0 -->
       <unit id="org.apache.batik.bridge" version="1.6.0.v201011041432"/>
@@ -327,6 +324,14 @@
       <!-- JBIDE-19879 required by new launchbar -->
       <unit id="org.eclipse.remote.core" version="2.0.0.201601141453"/>
       <unit id="org.eclipse.remote.ui" version="2.0.0.201601141453"/>
+    </location>
+
+    <!-- this is also in Mars but want newer version -->
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/egit/v4.1.1.201511131810-r/"/>
+      <!-- egit -->
+      <unit id="org.eclipse.jgit.feature.group" version="4.1.1.201511131810-r"/>
+      <unit id="org.eclipse.egit.feature.group" version="4.1.1.201511131810-r"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
