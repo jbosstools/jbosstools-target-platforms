@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.jboss.tools.targetplatforms</groupId>
 		<artifactId>jbdevstudio</artifactId>
-		<version>4.51.2.Beta1-SNAPSHOT</version>
+		<version>4.52.0.Beta2-SNAPSHOT</version>
 	</parent>
 	<artifactId>jbdevstudio-multiple</artifactId>
 	<name>JBDS Multiple (Composite) Target Platform</name>
@@ -92,7 +92,7 @@
 							<descriptors>
 								<descriptor>${basedir}/../../publish-assembly.xml</descriptor>
 							</descriptors>
-							<!-- JBIDE-19800 zip would be jbdevstudio-multiple-4.50.0.Beta1-SNAPSHOT.zip; want jbdevstudiotarget-4.50.0.Beta1-SNAPSHOT.zip -->
+							<!-- JBIDE-19800 zip would be jbdevstudio-multiple-4.52.0.Beta2-SNAPSHOT.zip; want jbdevstudiotarget-4.52.0.Beta2-SNAPSHOT.zip -->
 							<finalName>${project.parent.artifactId}target-${project.version}</finalName>
 						</configuration>
 					</plugin>
