@@ -104,11 +104,12 @@
       <!-- m2e mavenarchiver (no sources avail) -->
       <unit id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version="0.17.0.201502101659"/>
     </location>
-    <!--<location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2e/1.7.0.20160202-2119/"/>
-      <unit id="org.eclipse.m2e.feature.feature.group" version="1.7.0.20151110-2248"/>
-      <unit id="org.eclipse.m2e.tests.common" version="1.7.0.20151110-2248"/>
-    </location>-->
+      <!--unit id="org.eclipse.m2e.feature.feature.group" version="1.7.0.20151110-2248"/>
+      <unit id="org.eclipse.m2e.tests.common" version="1.7.0.20151110-2248"/-->
+      <unit id="org.eclipse.m2e.importer" version="1.7.0.20160202-2119"/>
+    </location>
 
     <!-- SimRel -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
