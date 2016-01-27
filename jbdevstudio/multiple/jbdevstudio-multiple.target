@@ -244,8 +244,8 @@
       <unit id="org.eclipse.ui.ide" version="3.11.0.v20150825-2158"/>
       <unit id="org.eclipse.ui.workbench.texteditor" version="3.9.100.v20141023-1946"/>
       <unit id="org.eclipse.jface.text" version="3.10.0.v20150603-1752"/>
-      <!-- have to manually update this one if more than one version exists in Kepler mirror -->
-      <unit id="org.eclipse.osgi" version="3.10.101.v20150820-1432"/>
+      <!-- TODO: update singleton org.eclipse.osgi version if more than one in SimRel mirror to prevent install problems -->
+      <unit id="org.eclipse.osgi" version="3.10.102.v20151214-1617"/>
       <unit id="org.eclipse.core.filesystem" version="1.5.0.v20150725-1910"/>
       <unit id="org.eclipse.ui.forms" version="3.6.200.v20150506-2029"/>
       <unit id="org.eclipse.ui.editors" version="3.9.0.v20150213-1939"/>
