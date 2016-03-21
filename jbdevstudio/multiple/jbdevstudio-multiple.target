@@ -472,11 +472,11 @@
     
     <!-- Eclipse Docker Tooling -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/1.2.1.201602162146/"/>
-      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="1.2.1.201602162146"/>
-      <unit id="org.eclipse.linuxtools.docker.core" version="1.2.1.201602162146"/>
-      <unit id="org.eclipse.linuxtools.docker.docs" version="1.2.1.201602162146"/>
-      <unit id="org.eclipse.linuxtools.docker.ui" version="1.2.1.201602162146"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/1.2.2.201603181907/"/>
+      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="1.2.2.201603181907"/>
+      <unit id="org.eclipse.linuxtools.docker.core" version="1.2.2.201603181907"/>
+      <unit id="org.eclipse.linuxtools.docker.docs" version="1.2.2.201603181907"/>
+      <unit id="org.eclipse.linuxtools.docker.ui" version="1.2.2.201603181907"/>
       <unit id="com.spotify.docker.client" version="3.1.10.v20151113-2033"/>
       <unit id="com.fasterxml.jackson.core.jackson-annotations" version="2.5.0.v201504151636"/>
       <unit id="com.fasterxml.jackson.core.jackson-core" version="2.5.0.v201504151636"/>
