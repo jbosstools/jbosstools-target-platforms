@@ -107,6 +107,10 @@
       <unit id="org.eclipse.m2e.feature.feature.group" version="1.7.0.20151110-2248"/>
       <unit id="org.eclipse.m2e.tests.common" version="1.7.0.20151110-2248"/>
     </location>-->
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2e/1.7.0.20160121-1938-SNAPSHOT/"/>
+      <unit id="org.eclipse.m2e.importer" version="1.7.0.20151110-2248"/>
+    </location>
 
     <!-- SimRel -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
