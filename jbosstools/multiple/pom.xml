@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.jboss.tools.targetplatforms</groupId>
 		<artifactId>jbosstools</artifactId>
-		<version>4.52.0.CR1-SNAPSHOT</version>
+		<version>4.52.0.Final-SNAPSHOT</version>
 	</parent>
 	<artifactId>jbosstools-multiple</artifactId>
 	<name>JBoss Tools Multiple (Composite) Target Platform</name>
@@ -92,7 +92,7 @@
 							<descriptors>
 								<descriptor>${basedir}/../../publish-assembly.xml</descriptor>
 							</descriptors>
-							<!-- JBIDE-19800 zip would be jbosstools-multiple-4.52.0.CR1-SNAPSHOT.zip; want jbosstoolstarget-4.52.0.CR1-SNAPSHOT.zip -->
+							<!-- JBIDE-19800 zip would be jbosstools-multiple-4.52.0.Final-SNAPSHOT.zip; want jbosstoolstarget-4.52.0.Final-SNAPSHOT.zip -->
 							<finalName>${project.parent.artifactId}target-${project.version}</finalName>
 						</configuration>
 					</plugin>
