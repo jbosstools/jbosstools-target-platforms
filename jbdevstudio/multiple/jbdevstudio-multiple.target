@@ -122,12 +122,6 @@
 
     <!-- SimRel -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/mars/20160217-1705-2.RC4/"/> 
-
-      <!-- JBDS-3566 include AERI in JBDS (and later JBT) -->
-      <unit id="org.eclipse.epp.logging.aeri.feature.feature.group" version="1.100.0.v20160217-0435"/>
-    </location>
-    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/mars/201506181000-SR0/"/>
 
       <!-- m2e-wtp -->
@@ -310,6 +304,12 @@
       <!-- JBIDE-19879 required by new launchbar -->
       <unit id="org.eclipse.remote.core" version="2.0.0.201506061609"/>
       <unit id="org.eclipse.remote.ui" version="2.0.0.201506061609"/>
+    </location>
+
+    <!-- JBDS-3566 JBIDE-21997 include AERI (use Neon.M6 version in Mars.2 TP) -->
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/aeri/1.100.0.v20160304-1116/"/>
+      <unit id="org.eclipse.epp.logging.aeri.feature.feature.group" version="1.100.0.v20160304-1116"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
