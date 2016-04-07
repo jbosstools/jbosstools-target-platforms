@@ -92,7 +92,6 @@
 							<descriptors>
 								<descriptor>${basedir}/../../publish-assembly.xml</descriptor>
 							</descriptors>
-							<!-- JBIDE-19800 zip would be jbosstools-multiple-4.50.0.Beta1-SNAPSHOT.zip; want jbosstoolstarget-4.50.0.Beta1-SNAPSHOT.zip -->
 							<finalName>${project.parent.artifactId}target-${project.version}</finalName>
 						</configuration>
 					</plugin>
