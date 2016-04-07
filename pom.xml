@@ -102,7 +102,7 @@
 		</snapshotRepository>
 	</distributionManagement>
 
-	<!-- Additional m2 repos to resolve things like org.eclipse.tycho:tycho-maven-plugin:0.16.0-SNAPSHOT -->
+	<!-- Additional m2 repos to resolve things like org.eclipse.tycho:tycho-maven-plugin -->
     <!-- JBoss Nexus repos are also added, but in settings.xml -->
 	<pluginRepositories>
 		<pluginRepository>
