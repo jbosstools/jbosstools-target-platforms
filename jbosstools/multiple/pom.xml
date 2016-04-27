@@ -24,7 +24,7 @@
 				<version>${tychoExtrasVersion}</version>
 				<executions>
 					<execution>
-						<phase>verify</phase>
+						<phase>validate</phase>
 						<goals>
  							<goal>validate-target-platform</goal>
 						</goals>
