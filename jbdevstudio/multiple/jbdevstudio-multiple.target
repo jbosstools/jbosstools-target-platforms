@@ -215,6 +215,7 @@
 
       <!-- Recommenders for Java (and deps) -->
       <unit id="org.eclipse.recommenders.rcp.feature.feature.group" version="2.4.0.v20160503-1414"/>
+      <unit id="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group" version="2.4.0.v20160503-1414"/>
       <unit id="org.eclipse.aether.feature.feature.group" version="1.0.1.v20141111"/>
       <unit id="org.eclipse.aether.transport.file.feature.feature.group" version="1.0.1.v20141111"/>
       <unit id="org.eclipse.aether.transport.http.feature.feature.group" version="1.0.1.v20141111"/>
@@ -391,10 +392,6 @@
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools/S-3.8.0M7-20160503010110/"/>
-
-      <!-- JBIDE-21171 new for Neon M4 -->
-      <unit id="org.eclipse.wst.jsdt.nodejs.feature.feature.group" version="1.0.0.v201604282302"/>
-
       <unit id="org.eclipse.jst.jee" version="1.0.700.v201404092004"/>
       <unit id="org.eclipse.jst.jee.web" version="1.0.500.v201404021628"/>
       <unit id="org.eclipse.jst.common.fproj.enablement.jdt.feature.group" version="3.8.0.v201603091933"/>
@@ -434,6 +431,9 @@
       <unit id="org.eclipse.wst.common.fproj.feature.group" version="3.7.0.v201505072140"/>
       <unit id="org.eclipse.wst.common_ui.feature.feature.group" version="3.8.0.v201603091933"/>
       <unit id="org.eclipse.wst.jsdt.feature.feature.group" version="2.0.0.v201604300029"/>
+      <unit id="org.eclipse.wst.jsdt.nodejs.feature.feature.group" version="1.0.0.v201604282302"/>
+      <unit id="org.eclipse.wst.json_ui.feature.feature.group" version="1.0.0.v201604280217"/>
+      <unit id="org.eclipse.wst.json_core.feature.feature.group" version="1.0.0.v201604280217"/>
       <unit id="org.eclipse.wst.server_adapters.feature.feature.group" version="3.2.403.v201508132126"/>
       <unit id="org.eclipse.wst.server_core.feature.feature.group" version="3.3.601.v201603031514"/>
       <unit id="org.eclipse.wst.server_ui.feature.feature.group" version="3.3.653.v201604062105"/>
@@ -490,6 +490,7 @@
     <!-- Eclipse Docker Tooling -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/2.0.0.201605032008/"/>
+      <unit id="org.eclipse.linuxtools.vagrant.feature.feature.group" version="2.0.0.201605032008"/>
       <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="2.0.0.201605032008"/>
       <unit id="org.eclipse.linuxtools.docker.core" version="2.0.0.201605032008"/>
       <unit id="org.eclipse.linuxtools.docker.docs" version="1.2.0.201605032008"/>
