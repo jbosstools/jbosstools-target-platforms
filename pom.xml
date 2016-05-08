@@ -18,6 +18,7 @@
 		<!-- workaround for https://issues.jboss.org/browse/JBIDE-22248 and https://engineering.redhat.com/rt/Ticket/Display.html?id=401756 -->
 		<!-- <jbossNexus>repository.jboss.org</jbossNexus> -->
 		<jbossNexus>origin-repository.jboss.org</jbossNexus>
+		<targetRepositoryUrl>SET_ME_IN_CHILDREN/${project.parent.artifactId}target/${project.version}/REPO/</targetRepositoryUrl>
 	</properties>
 
 	<build>
@@ -80,6 +81,43 @@
 								</includes>
 							</fileSet>
 						</fileSets>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.eclipse.tycho.extras</groupId>
+					<artifactId>tycho-eclipserun-plugin</artifactId>
+					<version>${tychoVersion}</version>
+					<configuration>
+						<repositories>
+							<repository>
+								<id>p2diff</id>
+								<layout>p2</layout>
+								<url>http://download.jboss.org/jbosstools/updates/requirements/p2diff/20160508-2315/</url>
+							</repository>
+							<repository>
+								<id>mars</id>
+								<layout>p2</layout>
+								<url>http://download.jboss.org/jbosstools/updates/requirements/mars/201509161958-SR1.RC4/</url>
+							</repository>
+						</repositories>
+						<dependencies>
+							<dependency>
+								<type>eclipse-plugin</type>
+								<artifactId>org.eclipse.equinox.p2.example.p2diff</artifactId>
+								<version>0.0.0</version>
+							</dependency>
+							<dependency>
+								<type>eclipse-feature</type>
+								<artifactId>org.eclipse.rcp</artifactId>
+								<version>0.0.0</version>
+							</dependency>
+							<dependency>
+								<type>eclipse-plugin</type>
+								<artifactId>org.eclipse.equinox.p2.transport.ecf</artifactId>
+								<version>0.0.0</version>
+							</dependency>
+						</dependencies>
+						<appArgLine>-application org.eclipse.equinox.p2.example.p2diff.application -outputFile=${project.build.directory}/${artifactId}.p2diff -mode=ignoreVersions file:${project.build.directory}/${project.artifactId}.target.repo ${targetRepositoryUrl}</appArgLine>
 					</configuration>
 				</plugin>
 			</plugins>

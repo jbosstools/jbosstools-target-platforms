@@ -87,6 +87,20 @@
 						</executions>
 					</plugin>
 					<plugin>
+						<groupId>org.eclipse.tycho.extras</groupId>
+						<artifactId>tycho-eclipserun-plugin</artifactId>
+						<version>${tychoVersion}</version>
+						<executions>
+							<execution>
+								<phase>verify</phase>
+								<id>generate-p2diff</id>
+								<goals>
+									<goal>eclipse-run</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
 						<artifactId>maven-assembly-plugin</artifactId>
 						<configuration>
 							<descriptors>

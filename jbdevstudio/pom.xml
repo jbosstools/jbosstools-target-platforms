@@ -11,6 +11,10 @@
 	<artifactId>jbdevstudio</artifactId>
 	<name>JBDS Target Platforms</name>
 	<packaging>pom</packaging>
+	
+	<properties>
+		<targetRepositoryUrl>https://devstudio.redhat.com/targetplatforms/${project.parent.artifactId}target/${project.version}/REPO/</targetRepositoryUrl>
+	</properties>
 	<modules>
 		<module>multiple</module>
 		<module>unified</module>

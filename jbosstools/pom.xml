@@ -11,6 +11,9 @@
 	<artifactId>jbosstools</artifactId>
 	<name>JBoss Tools Target Platforms</name>
 	<packaging>pom</packaging>
+	<properties>
+		<targetRepositoryUrl>http://download.jboss.org/${project.parent.artifactId}/targetplatforms/${project.parent.artifactId}target/${project.version}/REPO/</targetRepositoryUrl>
+	</properties>
 	<modules>
 		<module>multiple</module>
 		<module>unified</module>
