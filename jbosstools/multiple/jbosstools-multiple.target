@@ -482,9 +482,10 @@
     <!-- JBIDE-19045 move Tern into JST project, so no longer in target platform -->
     
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/e4.ui/0.15.0.v20151110-2230/"/>
-      <unit id="org.eclipse.e4.ui.importer.java" version="0.2.0.v20160427-1136"/>
-      <unit id="org.eclipse.e4.ui.importer.pde" version="0.2.0.v20160427-1136"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/e4.ui/0.2.0.v20160511-1529/"/>
+      <unit id="org.eclipse.e4.ui.importer.java" version="0.2.0.v20160511-1529"/>
+      <unit id="org.eclipse.e4.ui.importer.pde" version="0.2.0.v20160511-1529"/>
+      <unit id="org.eclipse.e4.ui.naturist" version="0.0.1.v20160426-1215"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/egit/v4.4.0.201605041135-m1/"/>
