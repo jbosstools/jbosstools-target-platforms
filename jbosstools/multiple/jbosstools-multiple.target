@@ -314,11 +314,11 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/mylyn-extras/2.9.0.N20160429-2231/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/mylyn-extras/2.8.0.N20160219-2043/"/>
       <!-- JBIDE-20216 wikitext asciidoc editor; exclude creole and commonmark plugins -->
-      <unit id="org.eclipse.mylyn.wikitext_feature.feature.group" version="2.9.0.N20160429-2231"/>
-      <unit id="org.eclipse.mylyn.wikitext.asciidoc.core" version="2.9.0.N20160429-2231"/>
-      <unit id="org.eclipse.mylyn.wikitext.asciidoc.ui" version="2.9.0.N20160429-2231"/>
+      <unit id="org.eclipse.mylyn.wikitext_feature.feature.group" version="2.8.0.N20160219-2043"/>
+      <unit id="org.eclipse.mylyn.wikitext.asciidoc.core" version="2.8.0.N20160111-1930"/>
+      <unit id="org.eclipse.mylyn.wikitext.asciidoc.ui" version="2.8.0.N20160111-1930"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
