@@ -18,6 +18,7 @@
 		<!-- if https://issues.jboss.org/browse/JBIDE-22248 comes back, use <jbossNexus>origin-repository.jboss.org</jbossNexus> -->
 		<jbossNexus>repository.jboss.org</jbossNexus>
 		<targetRepositoryUrl>SET_ME_IN_CHILDREN/${project.parent.artifactId}target/${project.version}/REPO/</targetRepositoryUrl>
+		<p2diff.skip>false</p2diff.skip>
 	</properties>
 
 	<build>
@@ -117,6 +118,7 @@
 							</dependency>
 						</dependencies>
 						<appArgLine>-application org.eclipse.equinox.p2.example.p2diff.application -outputFile=${project.build.directory}/${artifactId}.p2diff -mode=ignoreVersions file:${project.build.directory}/${project.artifactId}.target.repo ${targetRepositoryUrl}</appArgLine>
+						<skip>${p2diff.skip}</skip>
 					</configuration>
 				</plugin>
 			</plugins>
