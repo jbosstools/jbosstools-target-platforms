@@ -117,9 +117,30 @@
 								<version>0.0.0</version>
 							</dependency>
 						</dependencies>
-						<appArgLine>-application org.eclipse.equinox.p2.example.p2diff.application -outputFile=${project.build.directory}/${artifactId}.p2diff -mode=ignoreVersions file:${project.build.directory}/${project.artifactId}.target.repo ${targetRepositoryUrl}</appArgLine>
 						<skip>${p2diff.skip}</skip>
 					</configuration>
+					<executions>
+						<execution>
+							<id>p2diff-ignoreVersions</id>
+							<phase>verify</phase>
+							<goals>
+								<goal>eclipse-run</goal>
+							</goals>
+							<configuration>
+								<appArgLine>-application org.eclipse.equinox.p2.example.p2diff.application -outputFile=${project.build.directory}/${project.artifactId}-ignoreVersions.p2diff -mode=ignoreVersions file:${project.build.directory}/${project.artifactId}.target.repo ${targetRepositoryUrl}</appArgLine>
+							</configuration>
+						</execution>
+						<execution>
+							<id>p2diff-considerVersions</id>
+							<phase>verify</phase>
+							<goals>
+								<goal>eclipse-run</goal>
+							</goals>
+							<configuration>
+								<appArgLine>-application org.eclipse.equinox.p2.example.p2diff.application -outputFile=${project.build.directory}/${project.artifactId}-considerVersions.p2diff file:${project.build.directory}/${project.artifactId}.target.repo ${targetRepositoryUrl}</appArgLine>
+							</configuration>
+						</execution>
+					</executions>
 				</plugin>
 			</plugins>
 		</pluginManagement>
