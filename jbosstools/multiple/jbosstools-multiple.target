@@ -470,17 +470,6 @@
       <unit id="org.jboss.reddeer.junit.extension.feature.feature.group" version="1.1.0.201604261406"/>
     </location>
 
-    <!-- TODO remove this
-    https://issues.jboss.org/browse/JBIDE-21382 Required by o.j.t.common.model.ui, 
-    o.e.platform.feature, o.e.m2e.feature, o.e.datatools.oda.cshelp, o.aspectj.ajde, o.e.wst.xml.xpath.core, 
-    and o.e.birt.feature [JBT only]
-    -->
-    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/birt/4.6.0.v201602022206/"/>
-      <!-- removed from Neon M3 but available in birt mirror -->
-      <unit id="org.eclipse.core.runtime.compatibility" version="3.2.300.v20150423-0821"/>
-    </location>
-
     <!-- JBIDE-19045 move Tern into JST project, so no longer in target platform -->
     
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
