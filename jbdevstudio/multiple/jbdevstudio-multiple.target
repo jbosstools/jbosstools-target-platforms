@@ -440,7 +440,7 @@
       <unit id="org.eclipse.wst.server_ui.feature.feature.group" version="3.3.653.v201606030549"/>
       <unit id="org.eclipse.wst.server_userdoc.feature.feature.group" version="3.3.300.v201405011426"/>
       <unit id="org.eclipse.wst.web_core.feature.feature.group" version="3.8.0.v201605311817"/>
-      <unit id="org.eclipse.wst.web_ui.feature.feature.group" version="3.8.0.v201605232053"/>
+      <unit id="org.eclipse.wst.web_ui.feature.feature.group" version="3.8.0.v201606030549"/>
       <unit id="org.eclipse.wst.web_userdoc.feature.feature.group" version="3.8.0.v201511030001"/>
       <unit id="org.eclipse.wst.ws_core.feature.feature.group" version="3.7.0.v201505131719"/>
       <unit id="org.eclipse.wst.ws_ui.feature.feature.group" version="3.8.0.v201605120129"/>
