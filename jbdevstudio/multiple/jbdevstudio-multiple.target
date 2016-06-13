@@ -474,12 +474,12 @@
     
     <!-- Eclipse Docker Tooling -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/2.0.0.201606072024/"/>
-      <unit id="org.eclipse.linuxtools.vagrant.feature.feature.group" version="2.0.0.201606072024"/>
-      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="2.0.0.201606072024"/>
-      <unit id="org.eclipse.linuxtools.docker.core" version="2.0.0.201606072024"/>
-      <unit id="org.eclipse.linuxtools.docker.docs" version="2.0.0.201606072024"/>
-      <unit id="org.eclipse.linuxtools.docker.ui" version="2.0.0.201606072024"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/2.0.0.201606101757/"/>
+      <unit id="org.eclipse.linuxtools.vagrant.feature.feature.group" version="2.0.0.201606101757"/>
+      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="2.0.0.201606101757"/>
+      <unit id="org.eclipse.linuxtools.docker.core" version="2.0.0.201606101757"/>
+      <unit id="org.eclipse.linuxtools.docker.docs" version="2.0.0.201606101757"/>
+      <unit id="org.eclipse.linuxtools.docker.ui" version="2.0.0.201606101757"/>
       <unit id="com.spotify.docker.client" version="3.4.0.v20160411-1914"/>
       <unit id="com.fasterxml.jackson.core.jackson-annotations" version="2.5.0.v201504151636"/>
       <unit id="com.fasterxml.jackson.core.jackson-core" version="2.5.0.v201504151636"/>
