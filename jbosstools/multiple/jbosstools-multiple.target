@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><?pde version="3.6"?>
-<target includeMode="feature" name="jbosstoolstarget-4.60.0.Final">
+<target includeMode="feature" name="jbosstoolstarget-4.60.1.AM1-SNAPSHOT">
   <!-- Pro tip: to convert
       from org.eclipse.foo_4.6.0.v201005032111-777K4AkF7B77R7c7N77.jar
     to <unit version="4.6.0.v201005032111-777K4AkF7B77R7c7N77" id="org.eclipse.foo.feature.group"/>
@@ -477,10 +477,10 @@
       <unit id="org.eclipse.e4.ui.importer.pde" version="0.2.0.v20160511-1529"/>
       <unit id="org.eclipse.e4.ui.naturist" version="0.0.1.v20160426-1215"/>
     </location>
-    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+<!--     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/egit/v4.4.0.201606011500-rc2/"/>
       <unit id="org.eclipse.egit.ui.smartimport" version="4.4.0.201606011500-rc2"/>
-    </location>
+    </location> -->
     
     <!-- Eclipse Docker Tooling -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
