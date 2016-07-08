@@ -9,9 +9,9 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<tychoVersion>0.25.0</tychoVersion>
+		<tychoVersion>0.26.0-SNAPSHOT</tychoVersion>
 		<tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
-		<jbossTychoPluginsVersion>0.25.0-SNAPSHOT</jbossTychoPluginsVersion>
+		<jbossTychoPluginsVersion>0.26.0-SNAPSHOT</jbossTychoPluginsVersion>
 		<!-- JBIDE-21120 when deploying a non-SNAPSHOT, override these values in Jenkins or via commandline using values in distributionManagement below -->
 		<deploymentRepositoryId>jboss-snapshots-repository</deploymentRepositoryId>
 		<deploymentURL>https://${jbossNexus}/nexus/content/repositories/snapshots/</deploymentURL>
@@ -169,8 +169,12 @@
 	</distributionManagement>
 
 	<!-- Additional m2 repos to resolve things like org.eclipse.tycho:tycho-maven-plugin:0.16.0-SNAPSHOT -->
-    <!-- JBoss Nexus repos are also added, but in settings.xml -->
+	<!-- JBoss Nexus repos are also added, but in settings.xml -->
 	<pluginRepositories>
+		<pluginRepository>
+			<id>tycho-snapshots</id>
+			<url>https://repo.eclipse.org/content/repositories/tycho-snapshots/</url>
+		</pluginRepository>
 		<pluginRepository>
 			<id>sonatype-public-grid</id>
 			<url>https://repository.sonatype.org/content/groups/sonatype-public-grid</url>
@@ -180,14 +184,6 @@
 			<url>https://oss.sonatype.org/content/groups/public</url>
 		</pluginRepository>
 		<pluginRepository>
-			<id>jboss-releases</id>
-			<name>JBoss Releases Maven Repository</name>
-			<url>https://${jbossNexus}/nexus/content/repositories/releases/</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-		</pluginRepository>
-		<pluginRepository>
 			<id>jboss-snapshots-repository</id>
 			<name>JBoss Snapshots Repository</name>
 			<url>https://${jbossNexus}/nexus/content/repositories/snapshots/</url>
@@ -195,6 +191,13 @@
 				<enabled>true</enabled>
 			</snapshots>
 		</pluginRepository>
+		<pluginRepository>
+			<id>jboss-releases</id>
+			<name>JBoss Releases Maven Repository</name>
+			<url>https://${jbossNexus}/nexus/content/repositories/releases/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</pluginRepository>
 	</pluginRepositories>
-
 </project>
