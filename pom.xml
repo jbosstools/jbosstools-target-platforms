@@ -9,7 +9,7 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<tychoVersion>0.25.0</tychoVersion>
+		<tychoVersion>0.26.0-SNAPSHOT</tychoVersion>
 		<tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
 		<jbossTychoPluginsVersion>0.25.0-SNAPSHOT</jbossTychoPluginsVersion>
 		<!-- JBIDE-21120 when deploying a non-SNAPSHOT, override these values in Jenkins or via commandline using values in distributionManagement below -->
@@ -180,6 +180,9 @@
 			<url>https://oss.sonatype.org/content/groups/public</url>
 		</pluginRepository>
 		<pluginRepository>
+			<id>tycho-snapshots</id>
+			<url>https://repo.eclipse.org/content/repositories/tycho-snapshots/</url>
+		</pluginRepository>
 			<id>jboss-releases</id>
 			<name>JBoss Releases Maven Repository</name>
 			<url>https://${jbossNexus}/nexus/content/repositories/releases/</url>
