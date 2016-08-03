@@ -460,6 +460,7 @@
       <repository location="http://download.jboss.org/jbosstools/neon/snapshots/updates/reddeer/1.1.0.20160426/"/>
       <unit id="org.jboss.reddeer.eclipse.feature.feature.group" version="1.1.0.201604261406"/>
       <unit id="org.jboss.reddeer.junit.extension.feature.feature.group" version="1.1.0.201604261406"/>
+      <unit id="org.jboss.reddeer.ui.feature.feature.group" version="1.1.0.201604261406"/>
     </location>
 
     <!-- JBIDE-19045 move Tern into JST project, so no longer in target platform -->
