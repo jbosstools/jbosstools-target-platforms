@@ -34,6 +34,7 @@
 							</targetFiles>
 							<failOnError>${validate-target-platform.failOnError}</failOnError>
 							<checkDependencies>true</checkDependencies>
+							<checkProvisioning>true</checkProvisioning>
 						</configuration>
 					</execution>
 				</executions>
@@ -109,5 +110,10 @@
 			</build>
 		</profile>
 	</profiles>
-
+	<pluginRepositories>
+		<pluginRepository>
+			<id>tycho-snapshots</id>
+			<url>https://repo.eclipse.org/content/repositories/tycho-snapshots/</url>
+		</pluginRepository>
+	</pluginRepositories>
 </project>
