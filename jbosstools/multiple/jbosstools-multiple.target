@@ -457,10 +457,10 @@
 
     <!-- Only in JBT, for integration-tests: Red Deer -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/neon/development/updates/reddeer/1.1.0.20160804/"/>
-      <unit id="org.jboss.reddeer.eclipse.feature.feature.group" version="1.1.0.201608040821"/>
-      <unit id="org.jboss.reddeer.junit.extension.feature.feature.group" version="1.1.0.201608040821"/>
-      <unit id="org.jboss.reddeer.ui.feature.feature.group" version="1.1.0.201608040821"/>
+      <repository location="http://download.jboss.org/jbosstools/neon/stable/updates/reddeer/1.1.0/"/>
+      <unit id="org.jboss.reddeer.eclipse.feature.feature.group" version="1.1.0.Final"/>
+      <unit id="org.jboss.reddeer.junit.extension.feature.feature.group" version="1.1.0.Final"/>
+      <unit id="org.jboss.reddeer.ui.feature.feature.group" version="1.1.0.Final"/>
     </location>
 
     <!-- JBIDE-19045 move Tern into JST project, so no longer in target platform -->
@@ -478,12 +478,12 @@
     
     <!-- Eclipse Docker Tooling -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/2.1.0.201608101805/"/>
-      <unit id="org.eclipse.linuxtools.vagrant.feature.feature.group" version="2.0.0.201608101805"/>
-      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="2.1.0.201608101805"/>
-      <unit id="org.eclipse.linuxtools.docker.core" version="2.1.0.201608101805"/>
-      <unit id="org.eclipse.linuxtools.docker.docs" version="2.0.0.201608101805"/>
-      <unit id="org.eclipse.linuxtools.docker.ui" version="2.1.0.201608101805"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/2.1.0.201608232052/"/>
+      <unit id="org.eclipse.linuxtools.vagrant.feature.feature.group" version="2.0.0.201608232052"/>
+      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="2.1.0.201608232052"/>
+      <unit id="org.eclipse.linuxtools.docker.core" version="2.1.0.201608232052"/>
+      <unit id="org.eclipse.linuxtools.docker.docs" version="2.0.0.201608232052"/>
+      <unit id="org.eclipse.linuxtools.docker.ui" version="2.1.0.201608232052"/>
       <unit id="com.spotify.docker.client" version="3.4.0.v20160411-1914"/>
       <unit id="com.fasterxml.jackson.core.jackson-annotations" version="2.5.0.v201504151636"/>
       <unit id="com.fasterxml.jackson.core.jackson-core" version="2.5.0.v201504151636"/>
