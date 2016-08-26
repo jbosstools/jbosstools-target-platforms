@@ -10,13 +10,13 @@ The 'master' branch only contains shared content - see the 4.x branches for the 
 
 === Get the code
 
-The easiest way to get started with the code is to http://help.github.com/forking/[create your own fork], 
+The easiest way to get started with the code is to http://help.github.com/forking/[create your own fork],
 and then clone your fork:
 
     $ git clone git@github.com:<you>/jbosstools-target-platforms.git
     $ cd jbosstools-target-platforms
     $ git remote add upstream git://github.com/jbosstools/jbosstools-target-platforms.git
-  
+
 At any time, you can pull changes from the upstream and merge them onto your 4.40.x branch:
 
     $ git checkout 4.40.x               # switches to the '4.40.x' branch
@@ -73,3 +73,29 @@ And then http://help.github.com/pull-requests/[generate a pull-request] where we
 review the proposed changes, comment on them, discuss them with you,
 and if everything is good merge the changes right into the official
 repository.
+
+==== Using Jenkins
+
+To contribute a fix using Jenkins, you can use two Jenkins jobs - one to pull the new requirement mirror, and a second to build a submitted PR.
+
+Here's how that works.
+
+ Update https://jenkins.mw.lab.eng.bos.redhat.com/hudson/view/DevStudio/view/DevStudio_Master/job/jbosstoolstargetplatformrequirements-mirror-matrix/configure[jbosstoolstargetplatformrequirements-mirror-matrix] job config to add new triple:
+
+    docker;2.1.0.201608232052;download.eclipse.org_-_linuxtools_-_update-neon-1-docker-rc1
+
+* Run the job to create new mirrors for each triple. The build's description will include the new URLs of the requirements under http://download.jboss.org/jbosstools/updates/requirements/
+
+* When done, update these two files to insert the new <repository location="..."/>  for Docker.
+
+(This could be done by a sed script.)
+
+* Run https://github.com/jbosstools/jbosstools-build-ci/blob/jbosstools-4.4.x/util/verifyTarget.sh[verifyTarget.sh] to also update the versions of IUs, not just the URLs, in jbosstools/ folder and verify there are no duplicates / conflicts. This could take up to an hour depending on your network speed. Repeat for jbdevstudio.
+
+(Both runs can be done in parallel if you stagger them about 5 mins apart, but COULD result in maven errors, so just run it again if that happens.)
+
+* Submit a PR like https://github.com/jbosstools/jbosstools-target-platforms/pull/232[this one]. Within 5 minutes, a PR builder job will fire and your PR will be updated with the build status when the build is complete.
+
+* Once your PR is merged, it can be built using this https://jenkins.mw.lab.eng.bos.redhat.com/hudson/job/jbosstoolstargetplatforms-matrix/[jbosstoolstargetplatforms-matrix] job.
+
+* When done (about 1 hr), announce the change on the http://lists.jboss.org/pipermail/jbosstools-dev/[jbosstools-dev] list.
