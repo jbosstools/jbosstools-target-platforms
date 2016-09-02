@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><?pde version="3.6"?>
-<target includeMode="feature" name="jbdevstudiotarget-4.60.1.Final">
+<target includeMode="feature" name="jbdevstudiotarget-4.60.2.Final-SNAPSHOT">
   <!-- Pro tip: to convert
       from org.eclipse.foo_4.6.0.v201005032111-777K4AkF7B77R7c7N77.jar
     to <unit version="4.6.0.v201005032111-777K4AkF7B77R7c7N77" id="org.eclipse.foo.feature.group"/>
@@ -75,7 +75,7 @@
     </location>
 
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-        <repository location="https://repository.jboss.org/nexus/content/unzip/unzip/org/jboss/tools/locus/update.site/1.3.0.Final/update.site-1.3.0.Final.zip-unzip/"/>
+        <repository location="http://origin-repository.jboss.org/nexus/content/unzip/unzip/org/jboss/tools/locus/jbosstools-locus/1.6.0.Final/jbosstools-locus-1.6.0.Final-updatesite.zip-unzip/"/>
 		<!-- For Jetty websocket 9.2.13 -->
         <unit id="org.apache.aries.util" version="1.1.1"/>
         <unit id="org.apache.aries.spifly.dynamic.bundle" version="1.0.2"/>
