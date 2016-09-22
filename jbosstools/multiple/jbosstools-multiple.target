@@ -245,7 +245,7 @@
       <unit id="org.eclipse.ui.workbench.texteditor" version="3.10.1.v20160818-1626"/>
       <unit id="org.eclipse.jface.text" version="3.11.1.v20160819-1517"/>
       <!-- have to manually update this one if more than one version exists in SimRel mirror -->
-      <!-- <unit id="org.eclipse.osgi" version="3.10.200.v20151207-2221"/> -->
+      <unit id="org.eclipse.osgi" version="3.11.1.v20160708-1632"/>
       <unit id="org.eclipse.core.filesystem" version="1.6.0.v20160503-1608"/>
       <unit id="org.eclipse.ui.forms" version="3.7.0.v20160518-1929"/>
       <unit id="org.eclipse.ui.editors" version="3.10.0.v20160505-0931"/>
@@ -516,10 +516,6 @@
       <unit id="org.eclipse.e4.ui.importer.pde" version="0.2.0.v20160511-1529"/>
       <unit id="org.eclipse.e4.ui.naturist" version="0.0.1.v20160426-1215"/>
     </location>
-<!--     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/egit/v4.4.0.201606011500-rc2/"/>
-      <unit id="org.eclipse.egit.ui.smartimport" version="4.4.0.201606011500-rc2"/>
-    </location> -->
 
 
     <!-- JBIDE-21377 YAML Editor -->
