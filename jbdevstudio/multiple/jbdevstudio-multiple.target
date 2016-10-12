@@ -100,9 +100,9 @@
       <unit id="org.jboss.tools.m2e.jdt.feature.feature.group" version="1.0.1.201209200903"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2eclipse-mavenarchiver/0.17.1.201605251832-signed-20160525150658/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2eclipse-mavenarchiver/0.17.2.201606141937-signed-20160830073346/"/>
       <!-- m2e mavenarchiver (no sources avail) -->
-      <unit id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version="0.17.1.201605251832-signed-20160525150658"/>
+      <unit id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version="0.17.2.201606141937-signed-20160830073346"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2e/1.7.0.20160603-1933/"/>
