@@ -423,7 +423,6 @@
       <unit id="org.eclipse.wst.common_core.feature.feature.group" version="3.7.1.v201508262220"/>
       <unit id="org.eclipse.wst.common.fproj.feature.group" version="3.7.0.v201505072140"/>
       <unit id="org.eclipse.wst.common_ui.feature.feature.group" version="3.8.0.v201603091933"/>
-      <unit id="org.eclipse.wst.jsdt.chromium.debug.feature.feature.group" version="0.4.0.v201606032110"/>
       <unit id="org.eclipse.wst.jsdt.feature.feature.group" version="2.0.0.v201605311817"/>
       <unit id="org.eclipse.wst.jsdt.nodejs.feature.feature.group" version="1.0.0.v201605232053"/>
       <unit id="org.eclipse.wst.json_ui.feature.feature.group" version="1.0.0.v201605251755"/>
@@ -444,6 +443,12 @@
       <unit id="org.eclipse.wst.xml_userdoc.feature.feature.group" version="3.8.0.v201511030001"/>
       <unit id="org.eclipse.wst.xml.xpath2.processor.feature.feature.group" version="2.0.301.v201409111854"/>
       <unit id="org.eclipse.wst.xsl.feature.feature.group" version="1.3.401.v201509231858"/>
+    </location>
+
+    <!-- JBIDE-22225 use Neon.1 version of chromium.debug.feature -->
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools/R-3.8.1-20160912100321/"/>
+      <unit id="org.eclipse.wst.jsdt.chromium.debug.feature.feature.group" version="0.4.0.v201609071943"/>
     </location>
 
     <!-- JBIDE-19045 move Tern into JST project, so no longer in target platform -->
