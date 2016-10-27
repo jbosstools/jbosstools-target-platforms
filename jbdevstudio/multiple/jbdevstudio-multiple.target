@@ -75,7 +75,7 @@
     </location>
 
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-        <repository location="https://repository.jboss.org/nexus/content/unzip/unzip/org/jboss/tools/locus/update.site/1.3.0.Final/update.site-1.3.0.Final.zip-unzip/"/>
+        <repository location="http://origin-repository.jboss.org/nexus/content/unzip/unzip/org/jboss/tools/locus/jbosstools-locus/1.6.0.Final/jbosstools-locus-1.6.0.Final-updatesite.zip-unzip/"/>
 		<!-- For Jetty websocket 9.2.13 -->
         <unit id="org.apache.aries.util" version="1.1.1"/>
         <unit id="org.apache.aries.spifly.dynamic.bundle" version="1.0.2"/>
@@ -83,8 +83,8 @@
 
     <!-- m2e family, not included in SimRel site; see also Central TP for more -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/1.2.0-2016-01-25_16-03-44-H45/"/>
-      <unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.2.0.201601252104"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/1.3.0-2016-10-26_18-05-00-B50/"/>
+      <unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.3.0.201610261805"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2e-buildhelper/0.15.0.201405280027/"/>
@@ -105,10 +105,17 @@
       <unit id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version="0.17.2.201606141937-signed-20160830073346"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2e/1.7.0.20160603-1933/"/>
-      <unit id="org.eclipse.m2e.feature.feature.group" version="1.7.0.20160603-1933"/>
-      <unit id="org.eclipse.m2e.tests.common" version="1.7.0.20160603-1933"/>
-      <unit id="org.eclipse.m2e.importer" version="1.7.0.20160603-1933"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2e/1.7.1.20161026-1743/"/>
+      <unit id="org.eclipse.m2e.feature.feature.group" version="1.7.1.20161026-1743"/>
+      <unit id="org.eclipse.m2e.tests.common" version="1.7.1.20161026-1743"/>
+      <unit id="org.eclipse.m2e.importer" version="1.7.1.20161026-1743"/>
+    </location>
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2e-wtp/1.3.2.20161026-1738/"/>
+      <unit id="org.eclipse.m2e.wtp.feature.feature.group" version="1.3.2.20161026-1738"/>
+      <unit id="org.eclipse.m2e.wtp.jaxrs.feature.feature.group" version="1.3.2.20161026-1738"/>
+      <unit id="org.eclipse.m2e.wtp.jpa.feature.feature.group" version="1.3.2.20161026-1738"/>
+      <unit id="org.eclipse.m2e.wtp.jsf.feature.feature.group" version="1.3.2.20161026-1738"/>
     </location>
 
     <!-- SimRel -->
@@ -119,10 +126,10 @@
       <!-- <unit id="org.eclipse.m2e.feature.feature.group" version="1.7.0.20160524-1815"/> -->
       <!-- <unit id="org.eclipse.m2e.tests.common" version="1.7.0.20160524-1815"/> -->
       <!-- m2e-wtp -->
-      <unit id="org.eclipse.m2e.wtp.feature.feature.group" version="1.3.0.20160530-2310"/>
+      <!-- see m2e-wtp site above <unit id="org.eclipse.m2e.wtp.feature.feature.group" version="1.3.0.20160530-2310"/>
       <unit id="org.eclipse.m2e.wtp.jaxrs.feature.feature.group" version="1.3.0.20160530-2310"/>
       <unit id="org.eclipse.m2e.wtp.jpa.feature.feature.group" version="1.3.0.20160530-2310"/>
-      <unit id="org.eclipse.m2e.wtp.jsf.feature.feature.group" version="1.3.0.20160530-2310"/>
+      <unit id="org.eclipse.m2e.wtp.jsf.feature.feature.group" version="1.3.0.20160530-2310"/> -->
 
       <!-- p2.discovery -->
       <unit id="org.eclipse.equinox.p2.discovery.compatibility" version="1.0.200.v20131211-1531"/>
