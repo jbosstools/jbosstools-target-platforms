@@ -380,13 +380,6 @@
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/mylyn/3.11.0-v20140314-2044/"/>
       <unit id="org.eclipse.mylyn.commons.soap_feature.feature.group" version="3.11.0.v20131219-1119"/>
     </location>
-    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/luna/201406120900-RC4/"/>
-      <!-- requested in JBDS-3082 / JBDS-2991 -->
-      <!-- No more part of Eclipse release train since Luna SR1 -->
-      <!-- May be unnecessary when updating to newer atlassian plugins -->
-      <unit id="org.eclipse.core.runtime.compatibility.auth" version="3.2.300.v20120523-2004"/>
-    </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools/S-3.8.0RC4-20160608130753/"/>
