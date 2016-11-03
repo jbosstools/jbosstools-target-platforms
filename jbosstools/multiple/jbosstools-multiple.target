@@ -28,10 +28,6 @@
       <unit id="org.apache.commons.collections" version="3.2.2.v201511171945"/>
       <unit id="org.apache.commons.logging" version="1.1.1.v201101211721"/>
       <unit id="org.apache.commons.logging" version="1.0.4.v201101211617"/>
-      <unit id="org.apache.lucene" version="3.5.0.v20120725-1805"/>
-      <unit id="org.apache.lucene.core" version="3.5.0.v20120725-1805"/>
-      <unit id="org.apache.lucene.misc" version="3.5.0.v20120725-1805"/>
-      <unit id="org.apache.lucene.queries" version="3.5.0.v20120725-1805"/>
       <unit id="org.junit" version="4.12.0.v201504281640"/>
 
       <!-- Orbit bundles -->
@@ -68,6 +64,13 @@
       <unit id="org.objectweb.asm.commons" version="5.0.1.v201404251740"/>
     </location>
 
+    <!-- JBDS-4133 - Lucene 5 -->
+    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/lucene/rh-java-common-lucene5_5.4.1_2.2.el7/"/>
+      <unit id="org.apache.lucene.analyzers-common" version="5.4.1"/> 
+      <unit id="org.apache.lucene.core" version="5.4.1"/> 
+    </location>
+
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/tern/1.2.0.201605160910/"/>
       <!-- Required by FeedHenry module -->
@@ -76,10 +79,10 @@
 
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
         <repository location="http://origin-repository.jboss.org/nexus/content/unzip/unzip/org/jboss/tools/locus/jbosstools-locus/1.6.0.Final/jbosstools-locus-1.6.0.Final-updatesite.zip-unzip/"/>
-		<!-- Only in JBT: Test dependencies -->
+        <!-- Only in JBT: Test dependencies -->
         <unit id="org.jboss.tools.locus.mockito" version="1.9.5.v20131024-0922"/>
         <unit id="org.assertj.core" version="2.1.0"/>
-		<!-- For Jetty websocket 9.2.13 -->
+        <!-- For Jetty websocket 9.2.13 -->
         <unit id="org.apache.aries.util" version="1.1.1"/>
         <unit id="org.apache.aries.spifly.dynamic.bundle" version="1.0.2"/>
     </location>

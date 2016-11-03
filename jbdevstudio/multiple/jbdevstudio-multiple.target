@@ -28,10 +28,6 @@
       <unit id="org.apache.commons.collections" version="3.2.2.v201511171945"/>
       <unit id="org.apache.commons.logging" version="1.1.1.v201101211721"/>
       <unit id="org.apache.commons.logging" version="1.0.4.v201101211617"/>
-      <unit id="org.apache.lucene" version="3.5.0.v20120725-1805"/>
-      <unit id="org.apache.lucene.core" version="3.5.0.v20120725-1805"/>
-      <unit id="org.apache.lucene.misc" version="3.5.0.v20120725-1805"/>
-      <unit id="org.apache.lucene.queries" version="3.5.0.v20120725-1805"/>
       <unit id="org.junit" version="4.12.0.v201504281640"/>
 
       <!-- Orbit bundles -->
@@ -66,6 +62,13 @@
 
       <!-- JBIDE-20671 jetty 9.2.13.v20150730 requires org.apache.aries.spifly.dynamic.bundle 1.0.2, which requires 'package org.objectweb.asm.commons [5.0.0,6.0.0)' -->
       <unit id="org.objectweb.asm.commons" version="5.0.1.v201404251740"/>
+    </location>
+
+    <!-- JBDS-4133 - Lucene 5 -->
+    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/lucene/rh-java-common-lucene5_5.4.1_2.2.el7/"/>
+      <unit id="org.apache.lucene.analyzers-common" version="5.4.1"/> 
+      <unit id="org.apache.lucene.core" version="5.4.1"/> 
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
