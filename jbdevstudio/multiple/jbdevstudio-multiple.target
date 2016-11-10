@@ -242,6 +242,7 @@
       <unit id="org.apache.commons.pool" version="1.6.0.v201204271246"/>
       <unit id="org.apache.solr.client.solrj" version="3.5.0.v20150506-0844"/>
       <unit id="org.apache.commons.math" version="2.1.0.v201105210652"/>
+      <unit id="org.apache.commons.beanutils" version="1.8.0.v201205091237"/>
 
       <!-- needed for JBoss Central -->
       <unit id="com.sun.syndication" version="0.9.0.v200803061811"/>
