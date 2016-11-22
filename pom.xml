@@ -108,7 +108,7 @@
 							</dependency>
 							<dependency>
 								<type>eclipse-feature</type>
-								<artifactId>org.eclipse.rcp</artifactId>
+								<artifactId>org.eclipse.platform</artifactId>
 								<version>0.0.0</version>
 							</dependency>
 							<dependency>
@@ -127,7 +127,14 @@
 								<goal>eclipse-run</goal>
 							</goals>
 							<configuration>
-								<appArgLine>-application org.eclipse.equinox.p2.example.p2diff.application -outputFile=${project.build.directory}/${project.artifactId}-ignoreVersions.p2diff -mode=ignoreVersions file:${project.build.directory}/${project.artifactId}.target.repo ${targetRepositoryUrl}</appArgLine>
+								<applicationsArgs>
+									<arg>-application</arg>
+									<arg>org.eclipse.equinox.p2.example.p2diff.application</arg>
+									<arg>-outputFile=${project.build.directory}/${project.artifactId}-ignoreVersions.p2diff</arg>
+									<arg>-mode=ignoreVersions</arg>
+									<arg>file:${project.build.directory}/${project.artifactId}.target.repo</arg>
+									<arg>${targetRepositoryUrl}</arg>
+								</applicationsArgs>
 							</configuration>
 						</execution>
 						<execution>
