@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jboss.tools.targetplatforms</groupId>
 	<artifactId>root</artifactId>
-	<version>4.60.2.Final</version>
+	<version>4.60.3.AM1-SNAPSHOT</version>
 	<name>JBoss Tools + JBDS Target Platform Root</name>
 	<packaging>pom</packaging>
 
@@ -128,6 +128,9 @@
 							</goals>
 							<configuration>
 								<applicationsArgs>
+									<arg>-consolelog</arg>
+									<arg>-debug</arg>
+									<arg>-clean</arg>
 									<arg>-application</arg>
 									<arg>org.eclipse.equinox.p2.example.p2diff.application</arg>
 									<arg>-outputFile=${project.build.directory}/${project.artifactId}-ignoreVersions.p2diff</arg>
@@ -145,6 +148,9 @@
 							</goals>
 							<configuration>
 								<applicationsArgs>
+									<arg>-consolelog</arg>
+									<arg>-debug</arg>
+									<arg>-clean</arg>
 									<arg>-application</arg>
 									<arg>org.eclipse.equinox.p2.example.p2diff.application</arg>
 									<arg>-outputFile=${project.build.directory}/${project.artifactId}-considerVersions.p2diff</arg>
