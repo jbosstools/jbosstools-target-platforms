@@ -31,6 +31,9 @@ The general idea is to keep your '4.40.x' branch in-sync with the
 
 See https://github.com/jbosstools/jbosstools-devdoc/blob/master/building/target_platforms/target_platforms_updates.adoc#build-target-platforms-locally[Build target platform(s) locally]
 
+=== Fetch target platform (with sources) from zip
+
+See https://github.com/jbosstools/jbosstools-devdoc/blob/master/building/target_platforms/target_platforms_for_consumers.adoc#build-target-platform-bootstrapped-from-zip[Build target platform(s) bootstrapped from zip]
 
 === Update versions of IUs in the .target files
 
