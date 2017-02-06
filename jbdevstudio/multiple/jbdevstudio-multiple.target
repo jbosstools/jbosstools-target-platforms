@@ -331,9 +331,6 @@
       <!-- Eclipse Docker Tooling -->
       <unit id="org.eclipse.linuxtools.vagrant.feature.feature.group" version="2.2.0.201612072123"/>
       <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="2.2.0.201612072123"/>
-      <unit id="org.eclipse.linuxtools.docker.core" version="2.1.0.201612072123"/>
-      <unit id="org.eclipse.linuxtools.docker.docs" version="2.1.0.201612072123"/>
-      <unit id="org.eclipse.linuxtools.docker.ui" version="2.1.0.201612072123"/>
       <unit id="com.spotify.docker.client" version="3.4.0.v20160411-1914"/>
       <unit id="com.fasterxml.jackson.core.jackson-annotations" version="2.5.0.v201504151636"/>
       <unit id="com.fasterxml.jackson.core.jackson-core" version="2.5.0.v201504151636"/>
