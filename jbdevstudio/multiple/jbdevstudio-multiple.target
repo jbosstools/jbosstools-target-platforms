@@ -460,8 +460,8 @@
 
     <!-- Only in JBDS (shipped in installer): TestNG -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/testng/6.9.13.201609291640/"/>
-      <unit id="org.testng.eclipse.feature.group" version="6.9.13.201609291640"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/testng/6.10.0.201612030230/"/>
+      <unit id="org.testng.eclipse.feature.group" version="6.10.0.201612030230"/>
     </location>
 
     <!-- JBIDE-21377 YAML Editor -->
