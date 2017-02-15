@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.jboss.tools.targetplatforms</groupId>
 		<artifactId>jbdevstudio</artifactId>
-		<version>4.62.0.Final-SNAPSHOT</version>
+		<version>4.62.0.Final</version>
 	</parent>
 	<artifactId>jbdevstudio-unified</artifactId>
 	<name>JBDS Unified (Aggregate) Target Platform</name>
