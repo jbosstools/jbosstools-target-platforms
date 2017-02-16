@@ -291,7 +291,7 @@
       <unit id="org.eclipse.zest.feature.group" version="1.7.0.201606061308"/>
 
       <!-- mylyn -->
-      <unit id="org.eclipse.mylyn.bugzilla.ide" version="3.22.0.v20161011-2234"/>
+      <unit id="org.eclipse.mylyn.ide_feature.feature.group" version="3.22.0.v20161011-2234"/>
       <unit id="org.eclipse.mylyn.bugzilla_feature.feature.group" version="3.22.0.v20161122-1702"/>
       <unit id="org.eclipse.mylyn.commons.feature.group" version="3.22.0.v20161206-0357"/>
       <unit id="org.eclipse.mylyn.commons.identity.feature.group" version="1.14.0.v20161024-1634"/>
@@ -302,7 +302,7 @@
       <unit id="org.eclipse.mylyn.context_feature.feature.group" version="3.22.0.v20161024-1635"/>
       <unit id="org.eclipse.mylyn.discovery.feature.group" version="3.22.0.v20161006-2037"/>
       <unit id="org.eclipse.mylyn.monitor.feature.group" version="3.22.0.v20161006-2037"/>
-      <unit id="org.eclipse.mylyn.tasks.bugs" version="3.22.0.v20161011-2205"/>
+      <unit id="org.eclipse.mylyn.tasks.ide.feature.group" version="3.22.0.v20161011-2205"/>
       <unit id="org.eclipse.mylyn.tasks.core" version="3.22.0.v20170127-0126"/>
       <unit id="org.eclipse.mylyn.tasks.ui" version="3.22.0.v20170130-1900"/>
       <unit id="org.eclipse.mylyn.wikitext_feature.feature.group" version="2.11.0.v20170124-1727"/>
