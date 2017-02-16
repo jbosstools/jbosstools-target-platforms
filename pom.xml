@@ -11,7 +11,7 @@
 	<properties>
 		<tychoVersion>0.26.0</tychoVersion>
 		<tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
-		<jbossTychoPluginsVersion>0.26.1-SNAPSHOT</jbossTychoPluginsVersion>
+		<jbossTychoPluginsVersion>0.26.1</jbossTychoPluginsVersion>
 		<!-- JBIDE-21120 when deploying a non-SNAPSHOT, override these values in Jenkins or via commandline using values in distributionManagement below -->
 		<deploymentRepositoryId>jboss-snapshots-repository</deploymentRepositoryId>
 		<deploymentURL>https://${jbossNexus}/nexus/content/repositories/snapshots/</deploymentURL>
