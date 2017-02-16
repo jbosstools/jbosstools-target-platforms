@@ -292,6 +292,7 @@
 
       <!-- mylyn -->
       <unit id="org.eclipse.mylyn.ide_feature.feature.group" version="3.22.0.v20161011-2234"/>
+      <unit id="org.eclipse.mylyn.team_feature.feature.group" version="3.22.0.v20161030-0112"/>
       <unit id="org.eclipse.mylyn.bugzilla_feature.feature.group" version="3.22.0.v20161122-1702"/>
       <unit id="org.eclipse.mylyn.commons.feature.group" version="3.22.0.v20161206-0357"/>
       <unit id="org.eclipse.mylyn.commons.identity.feature.group" version="1.14.0.v20161024-1634"/>
