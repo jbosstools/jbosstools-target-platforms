@@ -12,11 +12,11 @@
 		<tychoVersion>0.26.0</tychoVersion>
 		<tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
 		<jbossTychoPluginsVersion>0.26.1</jbossTychoPluginsVersion>
+		<jbossNexus>repository.jboss.org</jbossNexus>
 		<!-- JBIDE-21120 when deploying a non-SNAPSHOT, override these values in Jenkins or via commandline using values in distributionManagement below -->
 		<deploymentRepositoryId>jboss-snapshots-repository</deploymentRepositoryId>
 		<deploymentURL>https://${jbossNexus}/nexus/content/repositories/snapshots/</deploymentURL>
 		<!-- if https://issues.jboss.org/browse/JBIDE-22248 comes back, use <jbossNexus>origin-repository.jboss.org</jbossNexus> -->
-		<jbossNexus>repository.jboss.org</jbossNexus>
 		<targetRepositoryUrl>SET_ME_IN_CHILDREN/${project.parent.artifactId}target/${project.version}/REPO/</targetRepositoryUrl>
 		<p2diff.skip>false</p2diff.skip>
 	</properties>
@@ -28,6 +28,18 @@
 				<artifactId>tycho-maven-plugin</artifactId>
 				<version>${tychoVersion}</version>
 				<extensions>true</extensions>
+			</plugin>
+			<plugin>
+				<groupId>org.sonatype.plugins</groupId>
+				<artifactId>nexus-staging-maven-plugin</artifactId>
+				<version>1.6.7</version>
+				<extensions>true</extensions>
+				<configuration>
+					<!-- The Base URL of Nexus instance where we want to stage -->
+					<nexusUrl>https://${jbossNexus}/nexus/</nexusUrl>
+					<!-- The server "id" element from settings to use authentication from -->
+					<serverId>jboss-releases-repository</serverId>
+				</configuration>
 			</plugin>
 		</plugins>
 		<pluginManagement>
