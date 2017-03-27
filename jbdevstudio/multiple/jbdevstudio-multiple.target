@@ -276,13 +276,11 @@
       <unit id="org.eclipse.mylyn.context_feature.feature.group" version="3.21.0.v20160815-2336"/>
       <unit id="org.eclipse.mylyn.discovery.feature.group" version="3.21.0.v20160729-1739"/>
       <unit id="org.eclipse.mylyn.monitor.feature.group" version="3.21.0.v20160630-1702"/>
-      <unit id="org.eclipse.mylyn.tasks.core" version="3.21.0.v20160914-0252"/>
-      <unit id="org.eclipse.mylyn.tasks.ui" version="3.21.0.v20160913-2131"/>
-      <unit id="org.eclipse.mylyn.tasks.bugs" version="3.21.0.v20160929-1805"/>
+      <unit id="org.eclipse.mylyn.tasks.ide.feature.group" version="3.21.0.v20160929-1805"/>
       <unit id="org.jsoup" version="1.7.2.v201411291515"/>
       <!-- These Mylyn/Bugzilla IUs are only necessary for tests -->
       <unit id="org.eclipse.mylyn.bugzilla_feature.feature.group" version="3.21.0.v20160909-1813"/>
-      <unit id="org.eclipse.mylyn.bugzilla.ide" version="3.21.0.v20160912-1820"/>
+      <unit id="org.eclipse.mylyn.ide_feature.feature.group" version="3.21.0.v20160912-1820"/>
       <unit id="org.eclipse.mylyn.commons.xmlrpc" version="3.21.0.v20160630-1702"/>
       <!-- WikiText -->
       <unit id="org.eclipse.mylyn.wikitext_feature.feature.group" version="2.10.1.v20161129-1925"/>
