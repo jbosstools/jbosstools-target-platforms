@@ -281,6 +281,7 @@
       <!-- These Mylyn/Bugzilla IUs are only necessary for tests -->
       <unit id="org.eclipse.mylyn.bugzilla_feature.feature.group" version="3.21.0.v20160909-1813"/>
       <unit id="org.eclipse.mylyn.ide_feature.feature.group" version="3.21.0.v20160912-1820"/>
+      <unit id="org.eclipse.mylyn.team_feature.feature.group" version="3.21.0.v20160701-1337"/>
       <unit id="org.eclipse.mylyn.commons.xmlrpc" version="3.21.0.v20160630-1702"/>
       <!-- WikiText -->
       <unit id="org.eclipse.mylyn.wikitext_feature.feature.group" version="2.10.1.v20161129-1925"/>
