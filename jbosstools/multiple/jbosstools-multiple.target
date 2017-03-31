@@ -9,15 +9,9 @@
   <locations>
     <!-- don't forget to increment these files when moving up a version: build.xml, *.target -->
 
-    <!-- JBDS-4342 include old Orbit in order to include slf4j.api 1.7.2 instead of 1.7.10 -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/R20160520211859/"/>
-      <unit id="org.slf4j.api" version="1.7.2.v20121108-1250"/>
-    </location>
-
-    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/R20170307180635/"/>
-
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/S20170306214312/"/>
+      
       <!-- for these IUs we need multiple versions -->
       <unit id="javax.wsdl" version="1.6.2.v201012040545"/>
       <unit id="javax.wsdl" version="1.5.1.v201012040544"/>
@@ -59,6 +53,8 @@
       <unit id="org.objectweb.asm.tree" version="5.2.0.v20170126-0011"/>
       <unit id="org.objectweb.asm.util" version="5.2.0.v20170126-0011"/>
       <unit id="org.glassfish.jersey.ext.entityfiltering" version="2.22.1.v20161103-0227"/>
+      <!-- do not include docker.client 6.1.1 here -->
+      <unit id="com.spotify.docker.client" version="3.6.8.v20170223-1848"/>
 
       <!-- Needed by jbosstools-webservices -->
       <unit id="ch.qos.logback.classic" version="1.0.7.v20121108-1250"/>
@@ -88,10 +84,10 @@
 
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
         <repository location="http://repository.jboss.org/nexus/content/unzip/unzip/org/jboss/tools/locus/jbosstools-locus/1.6.0.Final/jbosstools-locus-1.6.0.Final-updatesite.zip-unzip/"/>
-		<!-- Only in JBT: Test dependencies -->
+        <!-- Only in JBT: Test dependencies -->
         <unit id="org.jboss.tools.locus.mockito" version="1.9.5.v20131024-0922"/>
         <unit id="org.assertj.core" version="2.1.0"/>
-		<!-- For Jetty websocket 9.2.13 -->
+        <!-- For Jetty websocket 9.2.13 -->
         <unit id="org.apache.aries.util" version="1.1.1"/>
         <unit id="org.apache.aries.spifly.dynamic.bundle" version="1.0.2"/>
     </location>
@@ -337,10 +333,7 @@
       <unit id="org.eclipse.rse.local.feature.group" version="3.7.0.201610260947"/>
       <unit id="org.eclipse.rse.useractions.feature.group" version="3.7.0.201610260947"/>
 
-      <!-- Eclipse Docker Tooling -->
-      <unit id="org.eclipse.linuxtools.vagrant.feature.feature.group" version="2.3.0.201703072040"/>
-      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="2.3.0.201703072040"/>
-      <unit id="com.spotify.docker.client" version="3.6.8.v20161117-2005"/>
+      <!-- Eclipse Docker Tooling deps -->
       <unit id="com.fasterxml.jackson.core.jackson-annotations" version="2.6.2.v20161117-2150"/>
       <unit id="com.fasterxml.jackson.core.jackson-core" version="2.6.2.v20161117-2150"/>
       <unit id="com.fasterxml.jackson.core.jackson-databind" version="2.6.2.v20161117-2150"/>
@@ -371,7 +364,14 @@
       <unit id="org.glassfish.jersey.core.jersey-server" version="2.22.1.v20161103-1916"/>
       <unit id="org.glassfish.jersey.media.jersey-media-json-jackson" version="2.22.1.v20161117-2005"/>
       <unit id="org.objectweb.asm" version="5.1.0.v20160914-0701"/>
-      <!-- JBDS-4342 exclude 1.7.10 in favour of 1.7.2 <unit id="org.slf4j.api" version="1.7.10.v20160921-1923"/> -->
+      <unit id="org.slf4j.api" version="1.7.2.v20121108-1250"/>
+    </location>
+
+    <!-- Eclipse Docker Tooling -->
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/2.3.1.201703301750/"/>
+      <unit id="org.eclipse.linuxtools.vagrant.feature.feature.group" version="2.3.1.201703301750"/>
+      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="2.3.1.201703301750"/>
     </location>
 
     <!-- <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
