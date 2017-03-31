@@ -9,6 +9,12 @@
   <locations>
     <!-- don't forget to increment these files when moving up a version: build.xml, *.target -->
 
+    <!-- JBDS-4342 include old Orbit in order to include slf4j.api 1.7.2 instead of 1.7.10 -->
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/R20160520211859/"/>
+      <unit id="org.slf4j.api" version="1.7.2.v20121108-1250"/>
+    </location>
+
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/R20170307180635/"/>
 
@@ -69,7 +75,6 @@
       <unit id="com.sun.el" version="2.2.0.v201303151357"/>
       <unit id="javax.xml.rpc" version="1.1.0.v201209140446"/>
       <unit id="org.apache.jasper.glassfish" version="2.2.2.v201501141630"/>
-      <!-- <unit id="org.slf4j.api" version="1.7.2.v20121108-1250"/> -->
 
       <!-- JBIDE-20671 jetty 9.2.13.v20150730 requires org.apache.aries.spifly.dynamic.bundle 1.0.2, which requires 'package org.objectweb.asm.commons [5.0.0,6.0.0)' -->
       <unit id="org.objectweb.asm.commons" version="5.0.1.v201404251740"/>
@@ -83,7 +88,7 @@
 
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
         <repository location="http://repository.jboss.org/nexus/content/unzip/unzip/org/jboss/tools/locus/jbosstools-locus/1.6.0.Final/jbosstools-locus-1.6.0.Final-updatesite.zip-unzip/"/>
-		<!-- For Jetty websocket 9.2.13 -->
+        <!-- For Jetty websocket 9.2.13 -->
         <unit id="org.apache.aries.util" version="1.1.1"/>
         <unit id="org.apache.aries.spifly.dynamic.bundle" version="1.0.2"/>
     </location>
@@ -368,7 +373,7 @@
       <unit id="org.glassfish.jersey.core.jersey-server" version="2.22.1.v20161103-1916"/>
       <unit id="org.glassfish.jersey.media.jersey-media-json-jackson" version="2.22.1.v20161117-2005"/>
       <unit id="org.objectweb.asm" version="5.1.0.v20160914-0701"/>
-      <unit id="org.slf4j.api" version="1.7.10.v20160921-1923"/>
+      <!-- JBDS-4342 exclude 1.7.10 in favour of 1.7.2 <unit id="org.slf4j.api" version="1.7.10.v20160921-1923"/> -->
     </location>
 
     <!-- <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
