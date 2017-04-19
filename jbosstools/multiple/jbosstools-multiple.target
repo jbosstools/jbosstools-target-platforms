@@ -412,7 +412,6 @@
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools/R-3.8.2-20170308000057/"/>
       <unit id="org.eclipse.jst.jee" version="1.0.700.v201404092004"/>
       <unit id="org.eclipse.jst.jee.web" version="1.0.500.v201404021628"/>
-      <unit id="org.eclipse.jst.common.fproj.enablement.jdt.feature.group" version="3.8.0.v201603091933"/>
       <unit id="org.eclipse.jst.ws.axis2tools.feature.feature.group" version="1.1.301.v201410160332"/>
       <unit id="org.eclipse.jst.ws.cxf.feature.feature.group" version="1.1.300.v201701262158"/>
 
@@ -423,7 +422,6 @@
       <unit id="org.eclipse.jpt.jaxb.feature.feature.group" version="1.5.100.v201603180253"/>
 
       <unit id="org.eclipse.jsf.feature.feature.group" version="3.9.0.v201605262035"/>
-      <unit id="org.eclipse.jst.common.fproj.enablement.jdt.feature.group" version="3.8.0.v201603091933"/>
       <unit id="org.eclipse.jst.enterprise_core.feature.feature.group" version="3.6.0.v201701262105"/>
       <unit id="org.eclipse.jst.enterprise_ui.feature.feature.group" version="3.8.0.v201701262139"/>
       <unit id="org.eclipse.jst.enterprise_userdoc.feature.feature.group" version="3.6.0.v201612121628"/>
@@ -443,11 +441,6 @@
       <unit id="org.eclipse.jst.ws.jaxws.feature.feature.group" version="1.2.300.v201701262158"/>
       <unit id="org.eclipse.jst.ws.jaxws_userdoc.feature.feature.group" version="1.0.402.v201503151903"/>
 
-      <unit id="org.eclipse.wst.common.frameworks" version="1.2.200.v201304241450"/>
-      <unit id="org.eclipse.wst.common.project.facet.ui" version="1.4.600.v201505072140"/>
-      <unit id="org.eclipse.wst.common_core.feature.feature.group" version="3.8.2.v201701191735"/>
-      <unit id="org.eclipse.wst.common.fproj.feature.group" version="3.7.0.v201505072140"/>
-      <unit id="org.eclipse.wst.common_ui.feature.feature.group" version="3.8.0.v201701191735"/>
       <unit id="org.eclipse.wst.jsdt.chromium.debug.feature.feature.group" version="0.5.200.v201701261810"/>
       <unit id="org.eclipse.wst.jsdt.feature.feature.group" version="2.0.200.v201612211424"/>
       <unit id="org.eclipse.wst.jsdt.nodejs.feature.feature.group" version="1.0.200.v201610220243"/>
@@ -469,6 +462,18 @@
       <unit id="org.eclipse.wst.xml_userdoc.feature.feature.group" version="3.8.2.v201610032207"/>
       <unit id="org.eclipse.wst.xml.xpath2.processor.feature.feature.group" version="2.0.301.v201409111854"/>
       <unit id="org.eclipse.wst.xsl.feature.feature.group" version="1.3.401.v201509231858"/>
+
+      <!-- https://issues.jboss.org/browse/JBIDE-24240 rebuilt in 3.8.3 patch build -->
+      <unit id="org.eclipse.wst.common_core.feature.feature.group" version="3.8.2.v201701191735"/>
+      <unit id="org.eclipse.wst.common_ui.feature.feature.group" version="3.8.0.v201701191735"/>
+      <unit id="org.eclipse.jst.common.fproj.enablement.jdt.feature.group" version="3.8.0.v201603091933"/>
+      <unit id="org.eclipse.wst.common.fproj.feature.group" version="3.7.0.v201505072140"/>
+    </location>
+
+    <!-- https://issues.jboss.org/browse/JBIDE-24240 patch org.eclipse.wst.common.modulecore_1.2.501.v201704182159 -->
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools/eclipse.webtools.common.all_R3_8_x_2017-04-19_18-43-15_9/"/>
+      <unit id="org.eclipse.wst.common_core_EBZ511793.feature.patch.feature.group" version="3.8.3.v201704191843"/>
     </location>
 
     <!-- Only in JBT, for integration-tests: SWTBot -->
