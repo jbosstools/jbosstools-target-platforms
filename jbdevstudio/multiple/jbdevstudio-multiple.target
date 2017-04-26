@@ -396,13 +396,6 @@
 
     </location>
 
-    <!-- m2eclipse-tycho for Fuse Tooling -->
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.sonatype.tycho.m2e.feature.feature.group" version="0.9.0.201609061714"/>
-
-      <repository id="jbt-m2eclipse-tycho" location="http://download.jboss.org/jbosstools/updates/requirements/m2eclipse-tycho/"/>
-    </location>
-
     <!-- Fuse Tooling -->
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.gemini.management" version="2.0.0.RELEASE"/>
