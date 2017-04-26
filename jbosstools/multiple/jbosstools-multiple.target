@@ -77,7 +77,8 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/tern/1.2.0.201605160910/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/tern/1.2.1.201611022209/"/>
+      <unit id="javax.websocket" version="1.1.0"/>
       <!-- Required by FeedHenry module -->
       <unit id="minimal-json" version="0.9.4"/>
     </location>
