@@ -53,8 +53,7 @@
       <unit id="org.objectweb.asm.tree" version="5.2.0.v20170126-0011"/>
       <unit id="org.objectweb.asm.util" version="5.2.0.v20170126-0011"/>
       <unit id="org.glassfish.jersey.ext.entityfiltering" version="2.22.1.v20161103-0227"/>
-      <!-- do not include docker.client 6.1.1 here -->
-      <unit id="com.spotify.docker.client" version="3.6.8.v20170223-1848"/>
+      <!-- do not include docker.client 6.1.1 or 3.6.8 here -->
 
       <!-- Needed by jbosstools-webservices -->
       <unit id="ch.qos.logback.classic" version="1.0.7.v20121108-1250"/>
@@ -341,44 +340,47 @@
       <unit id="org.eclipse.rse.useractions.feature.group" version="3.7.0.201610260947"/>
 
       <!-- Eclipse Docker Tooling deps -->
-      <unit id="com.fasterxml.jackson.core.jackson-annotations" version="2.6.2.v20161117-2150"/>
-      <unit id="com.fasterxml.jackson.core.jackson-core" version="2.6.2.v20161117-2150"/>
-      <unit id="com.fasterxml.jackson.core.jackson-databind" version="2.6.2.v20161117-2150"/>
-      <unit id="com.fasterxml.jackson.datatype.jackson-datatype-guava" version="2.6.2.v20161117-2150"/>
-      <unit id="com.fasterxml.jackson.jaxrs.jackson-jaxrs-base" version="2.6.2.v20161117-2150"/>
-      <unit id="com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider" version="2.6.2.v20161117-2150"/>
-      <unit id="com.google.guava" version="18.0.0.v20161115-1643"/>
-      <unit id="javassist" version="3.13.0.GA_v201209210905"/>
-      <unit id="javax.ws.rs" version="2.0.1.v201504171603"/>
       <unit id="com.github.jnr.constants" version="0.9.1.v20161107-2054"/>
-      <unit id="com.github.jnr.enxio" version="0.12.0.v20161107-2054"/>
-      <unit id="com.github.jnr.ffi" version="2.0.9.v20161107-2054"/>
-      <unit id="com.github.jnr.posix" version="3.0.29.v20161107-2054"/>
-      <unit id="com.github.jnr.unixsocket" version="0.12.0.v20161107-2054"/>
-      <unit id="jnr.x86asm" version="1.0.2.v201505052040"/>
-      <unit id="org.aopalliance" version="1.0.0.v201105210816"/>
-      <unit id="org.apache.commons.compress" version="1.6.0.v201310281400"/>
-      <unit id="org.bouncycastle.bcpkix" version="1.52.0.v20161004-1854"/>
-      <unit id="org.bouncycastle.bcprov" version="1.52.0.v20161004-1854"/>
-      <unit id="org.glassfish.hk2.api" version="2.5.0.v20161103-0227"/>
-      <unit id="org.glassfish.hk2.locator" version="2.5.0.v20161103-0227"/>
-      <unit id="org.glassfish.hk2.osgi-resource-locator" version="2.5.0.v20161103-1916"/>
-      <unit id="org.glassfish.hk2.utils" version="2.5.0.v20160210-1508"/>
-      <unit id="org.glassfish.jersey.apache.connector" version="2.22.1.v20161103-1916"/>
-      <unit id="org.glassfish.jersey.bundles.repackaged.jersey-guava" version="2.22.1.v20161103-1916"/>
-      <unit id="org.glassfish.jersey.core.jersey-client" version="2.22.1.v20161103-1916"/>
-      <unit id="org.glassfish.jersey.core.jersey-common" version="2.22.1.v20161103-1916"/>
       <unit id="org.glassfish.jersey.core.jersey-server" version="2.22.1.v20161103-1916"/>
-      <unit id="org.glassfish.jersey.media.jersey-media-json-jackson" version="2.22.1.v20161117-2005"/>
-      <unit id="org.objectweb.asm" version="5.1.0.v20160914-0701"/>
-      <unit id="org.slf4j.api" version="1.7.2.v20121108-1250"/>
+
     </location>
 
     <!-- Eclipse Docker Tooling -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/2.3.1.201703301750/"/>
-      <unit id="org.eclipse.linuxtools.vagrant.feature.feature.group" version="2.3.1.201703301750"/>
-      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="2.3.1.201703301750"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/2.3.0.201704251823/"/>
+      <unit id="org.eclipse.linuxtools.vagrant.feature.feature.group" version="2.3.0.201704251823"/>
+      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="2.3.0.201704251823"/>
+      <!-- Eclipse Docker Tooling deps -->
+      <unit id="com.fasterxml.jackson.core.jackson-annotations" version="2.5.0.v201504151636"/>
+      <unit id="com.fasterxml.jackson.core.jackson-core" version="2.5.0.v201504151636"/>
+      <unit id="com.fasterxml.jackson.core.jackson-databind" version="2.5.0.v201504151636"/>
+      <unit id="com.fasterxml.jackson.datatype.jackson-datatype-guava" version="2.5.0.v201504151636"/>
+      <unit id="com.fasterxml.jackson.jaxrs.jackson-jaxrs-base" version="2.5.0.v201504171603"/>
+      <unit id="com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider" version="2.5.0.v201504171603"/>
+      <unit id="com.google.guava" version="15.0.0.v201403281430"/>
+      <unit id="com.spotify.docker.client" version="3.4.0.v20160411-1914"/>
+      <unit id="javassist" version="3.13.0.GA_v201209210905"/>
+      <unit id="javax.ws.rs" version="2.0.1.v201504171603"/>
+      <unit id="jnr.enxio" version="0.6.0.v201505052040"/>
+      <unit id="jnr.ffi" version="2.0.1.v201505052040"/>
+      <unit id="jnr.posix" version="3.0.9.v201505052040"/>
+      <unit id="jnr.unixsocket" version="0.5.0.v201505052040"/>
+      <unit id="jnr.x86asm" version="1.0.2.v201505052040"/>
+      <unit id="org.aopalliance" version="1.0.0.v201105210816"/>
+      <unit id="org.apache.commons.compress" version="1.6.0.v201310281400"/>
+      <unit id="org.bouncycastle.bcpkix" version="1.52.0.v20160915-1535"/>
+      <unit id="org.bouncycastle.bcprov" version="1.52.0.v20160915-1535"/>
+      <unit id="org.glassfish.hk2.api" version="2.5.0.v20161103-0227"/>
+      <unit id="org.glassfish.hk2.locator" version="2.5.0.v20161103-0227"/>
+      <unit id="org.glassfish.hk2.osgi-resource-locator" version="2.5.0.v20161103-1916"/>
+      <unit id="org.glassfish.hk2.utils" version="2.5.0.v20160210-1508"/>
+      <unit id="org.glassfish.jersey.apache.connector" version="2.14.0.v201504171603"/>
+      <unit id="org.glassfish.jersey.bundles.repackaged.jersey-guava" version="2.22.1.v20161103-1916"/>
+      <unit id="org.glassfish.jersey.core.jersey-client" version="2.22.1.v20161103-1916"/>
+      <unit id="org.glassfish.jersey.core.jersey-common" version="2.22.1.v20161103-1916"/>
+      <unit id="org.glassfish.jersey.media.jersey-media-json-jackson" version="2.22.1.v20161117-2005"/>
+      <unit id="org.objectweb.asm" version="5.1.0.v20160914-0701"/>
+      <unit id="org.slf4j.api" version="1.7.2.v20121108-1250"/>
     </location>
 
     <!-- <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
