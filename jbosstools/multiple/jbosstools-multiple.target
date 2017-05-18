@@ -245,6 +245,7 @@
       <unit id="org.eclipse.equinox.executable.feature.group" version="3.7.0.v20170511-1520"/>
       <unit id="org.eclipse.equinox.p2.discovery.feature.feature.group" version="1.1.0.v20170418-0708"/>
       <unit id="org.eclipse.equinox.p2.user.ui.feature.group" version="2.3.0.v20170510-2006"/>
+      <unit id="org.eclipse.equinox.http.registry" version="1.1.400.v20150715-1528"/>
       <unit id="org.eclipse.equinox.server.core.feature.group" version="1.5.0.v20170510-2118"/>
       <unit id="org.eclipse.equinox.server.jetty.feature.group" version="1.4.0.v20170504-0615"/>
       <unit id="org.eclipse.help.feature.group" version="2.2.100.v20170512-0500"/>
@@ -340,6 +341,17 @@
       <unit id="org.eclipse.mylyn.commons.net" version="3.23.0.v20170411-1844"/>
       <unit id="org.eclipse.mylyn.commons.xmlrpc" version="3.23.0.v20170411-1844"/>
       <unit id="org.jsoup" version="1.7.2.v201411291515"/>
+
+      <!-- mylyn + mylyn accessories (used by Central) -->
+      <unit id="org.eclipse.egit.mylyn.feature.group" version="4.8.0.201705170830-rc1"/>
+      <unit id="org.eclipse.mylyn.builds.feature.group" version="1.15.0.v20170411-2141"/>
+      <unit id="org.eclipse.mylyn.commons.repositories.http.feature.group" version="1.15.0.v20170411-1844"/>
+      <unit id="org.eclipse.mylyn.github.feature.feature.group" version="4.8.0.201705170830-rc1"/>
+      <unit id="org.eclipse.mylyn.git.feature.group" version="1.15.0.v20170411-2003"/>
+      <unit id="org.eclipse.mylyn.hudson.feature.group" version="1.15.0.v20170411-2141"/>
+      <unit id="org.eclipse.mylyn.java_feature.feature.group" version="3.23.0.v20170411-2108"/>
+      <unit id="org.eclipse.mylyn.pde_feature.feature.group" version="3.23.0.v20170411-2108"/>
+      <unit id="org.eclipse.mylyn.versions.feature.group" version="1.15.0.v20170411-2003"/>
 
       <!-- egit -->
       <unit id="org.eclipse.egit.feature.group" version="4.8.0.201705170830-rc1"/>
