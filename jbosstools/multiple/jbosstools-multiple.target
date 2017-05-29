@@ -4,7 +4,7 @@
     <!-- don't forget to increment these files when moving up a version: build.xml, *.target -->
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <!-- NOTE: As of Oxygen.0.M5, latest milestone -->
+      <!-- NOTE: As of Oxygen.0.M7, latest milestone -->
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/S20170516192513/"/>
 
       <!-- for these IUs we need multiple versions -->
@@ -435,25 +435,25 @@
 
     <!-- Jetty 9 -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/jetty/9.4.0.201612132209/"/>
-      <unit id="org.eclipse.jetty.client" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.continuation" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.http" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.io" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.proxy" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.rewrite" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.security" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.server" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.servlet" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.servlets" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.util" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.webapp" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.websocket.api" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.websocket.client" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.websocket.common" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.websocket.server" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.websocket.servlet" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.xml" version="9.4.0.v20161208"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/jetty/9.4.5.v20170502/"/>
+      <unit id="org.eclipse.jetty.client" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.continuation" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.http" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.io" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.proxy" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.rewrite" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.security" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.server" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.servlet" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.servlets" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.util" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.webapp" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.websocket.api" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.websocket.client" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.websocket.common" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.websocket.server" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.websocket.servlet" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.xml" version="9.4.5.v20170502"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
@@ -546,6 +546,12 @@
       <unit id="org.eclipse.e4.ui.importer.java" version="0.2.0.v20160511-1529"/>
       <unit id="org.eclipse.e4.ui.importer.pde" version="0.2.0.v20160511-1529"/>
       <unit id="org.eclipse.e4.ui.naturist" version="0.0.1.v20160426-1215"/>
+    </location>
+
+    <!-- TestNG -->
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/testng/6.11.0.201703011520/"/>
+      <unit id="org.testng.eclipse.feature.group" version="6.11.0.201703011520"/>
     </location>
 
     <!-- JBIDE-21377 YAML Editor -->

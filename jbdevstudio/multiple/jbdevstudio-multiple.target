@@ -4,7 +4,7 @@
     <!-- don't forget to increment these files when moving up a version: build.xml, *.target -->
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <!-- NOTE: As of Oxygen.0.M5, latest milestone -->
+      <!-- NOTE: As of Oxygen.0.M7, latest milestone -->
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/S20170516192513/"/>
 
       <!-- for these IUs we need multiple versions -->
@@ -122,6 +122,9 @@
       <unit id="org.glassfish.jersey.media.jersey-media-json-jackson" version="2.22.1.v20161117-2005"/>
       <unit id="org.objectweb.asm.util" version="5.2.0.v20170126-0011"/>
       <unit id="org.slf4j.api" version="1.7.10.v20170428-1633"/>
+      <unit id="org.assertj" version="1.7.1.v20170413-2026"/>
+      <unit id="org.mockito" version="1.9.5.v201605172210"/>
+      <unit id="org.objenesis" version="1.0.0.v201505121915"/>
 
       <!-- Fuse Tooling transitive dep -->
       <unit id="javax.validation" version="1.0.0.GA_v201205091237"/>
@@ -432,25 +435,25 @@
 
     <!-- Jetty 9 -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/jetty/9.4.0.201612132209/"/>
-      <unit id="org.eclipse.jetty.client" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.continuation" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.http" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.io" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.proxy" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.rewrite" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.security" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.server" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.servlet" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.servlets" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.util" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.webapp" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.websocket.api" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.websocket.client" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.websocket.common" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.websocket.server" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.websocket.servlet" version="9.4.0.v20161208"/>
-      <unit id="org.eclipse.jetty.xml" version="9.4.0.v20161208"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/jetty/9.4.5.v20170502/"/>
+      <unit id="org.eclipse.jetty.client" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.continuation" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.http" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.io" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.proxy" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.rewrite" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.security" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.server" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.servlet" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.servlets" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.util" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.webapp" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.websocket.api" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.websocket.client" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.websocket.common" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.websocket.server" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.websocket.servlet" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.xml" version="9.4.5.v20170502"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
@@ -512,6 +515,30 @@
       <unit id="org.eclipse.wst.xsl.feature.feature.group" version="1.3.401.v201509231858"/>
     </location>
 
+    <!-- Only in JBT, for integration-tests: SWTBot -->
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/swtbot/2.5.0/"/>
+      <unit id="org.eclipse.swtbot.eclipse.feature.group" version="2.5.0.201609021837"/>
+      <unit id="org.eclipse.swtbot.eclipse.gef.feature.group" version="2.5.0.201609021837"/>
+      <unit id="org.eclipse.swtbot.feature.group" version="2.5.0.201609021837"/>
+      <unit id="org.eclipse.swtbot.forms.feature.group" version="2.5.0.201609021837"/>
+      <unit id="org.hamcrest.core" version="1.3.0.v201303031735"/>
+      <unit id="org.hamcrest.library" version="1.3.0.v201505072020"/>
+    </location>
+
+    <!-- Only in JBT, for integration-tests: RedDeer -->
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/neon/development/updates/reddeer/1.2.2.20170524/"/>
+      <unit id="org.jboss.reddeer.eclipse.feature.feature.group" version="1.2.2.201705240857"/>
+      <unit id="org.jboss.reddeer.graphiti.feature.feature.group" version="1.2.2.201705240857"/>
+      <unit id="org.jboss.reddeer.junit.extension.feature.feature.group" version="1.2.2.201705240857"/>
+      <unit id="org.jboss.reddeer.ui.feature.feature.group" version="1.2.2.201705240857"/>
+    </location>
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/3.0.0.201705171707/"/>
+      <unit id="org.eclipse.linuxtools.docker.tests.feature.feature.group" version="3.0.0.201705171707"/>
+    </location>
+
     <!-- JBIDE-19045 move Tern into JST project, so no longer in target platform -->
     <!-- NOTE: As of Oxygen.0.M5, nothing new here -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
@@ -521,10 +548,10 @@
       <unit id="org.eclipse.e4.ui.naturist" version="0.0.1.v20160426-1215"/>
     </location>
 
-    <!-- Only in JBDS (shipped in installer): TestNG -->
+    <!-- TestNG -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/testng/6.10.0.201612030230/"/>
-      <unit id="org.testng.eclipse.feature.group" version="6.10.0.201612030230"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/testng/6.11.0.201703011520/"/>
+      <unit id="org.testng.eclipse.feature.group" version="6.11.0.201703011520"/>
     </location>
 
     <!-- JBIDE-21377 YAML Editor -->
