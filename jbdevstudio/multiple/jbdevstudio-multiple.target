@@ -170,11 +170,6 @@
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2eclipse-egit/0.15.0.201610271523/"/>
       <unit id="org.sonatype.m2e.egit.feature.feature.group" version="0.15.0.201610271523"/>
     </location>
-    <!-- Only in JBDS: JBDS-3032 move m2e.jdt from Central to JBDS TP -->
-    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-jdt-compiler/"/>
-      <unit id="org.jboss.tools.m2e.jdt.feature.feature.group" version="1.0.1.201209200903"/>
-    </location>
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2eclipse-mavenarchiver/0.17.2.201606141937-signed-20160830073346/"/>
       <!-- m2e mavenarchiver (no sources avail) -->
