@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><?pde version="3.6"?>
 <target includeMode="feature" name="jbdevstudiotarget-4.70.0.AM1-SNAPSHOT">
-  <!-- Pro tip: to convert
-      from org.eclipse.foo_4.6.0.v201005032111-777K4AkF7B77R7c7N77.jar
-    to <unit id="org.eclipse.foo.feature.group" version="4.6.0.v201005032111-777K4AkF7B77R7c7N77"/>
-    using vi, apply this transform:
-    :%s/.\+\/\(org.\+\)_\(\d\+.\+\)\.jar/\t\t\t<unit id="\1.feature.group" version="\2"\/>/g
-  -->
   <locations>
     <!-- don't forget to increment these files when moving up a version: build.xml, *.target -->
 
