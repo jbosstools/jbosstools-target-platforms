@@ -418,6 +418,12 @@
       <unit id="org.w3c.dom.smil" version="1.0.1.v200903091627"/>
       <unit id="org.w3c.dom.svg" version="1.1.0.v201011041433"/>
 
+      <!-- Buildship -->
+      <unit id="org.eclipse.buildship.feature.group" version="2.0.2.v20170420-0906"/>
+      <unit id="com.gradleware.tooling.model" version="0.19.0.v20170412105839"/>
+      <unit id="com.gradleware.tooling.client" version="0.19.0.v20170412105839"/>
+      <unit id="com.gradleware.tooling.utils" version="0.19.0.v20170412105839"/>
+      <unit id="org.gradle.toolingapi" version="3.5.0.v20170412105839"/>
     </location>
 
     <!-- Fuse Tooling -->
