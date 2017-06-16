@@ -5,7 +5,7 @@
 	<groupId>org.jboss.tools.targetplatforms</groupId>
 	<artifactId>root</artifactId>
 	<version>4.70.0.AM1-SNAPSHOT</version>
-	<name>JBoss Tools + JBDS Target Platform Root</name>
+	<name>JBoss Tools + Devstudio Target Platform Root</name>
 	<packaging>pom</packaging>
 
 	<properties>

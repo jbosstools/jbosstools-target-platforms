@@ -8,7 +8,7 @@
 		<version>4.70.0.AM1-SNAPSHOT</version>
 	</parent>
 	<artifactId>jbdevstudio-unified</artifactId>
-	<name>JBDS Unified (Aggregate) Target Platform</name>
+	<name>Devstudio Unified (Aggregate) Target Platform</name>
 	<packaging>pom</packaging>
 	<properties>
 		<!-- set this to false to allow validation to proceed but NOT fail the build -->

@@ -8,12 +8,14 @@
 		<version>4.70.0.AM1-SNAPSHOT</version>
 	</parent>
 	<artifactId>jbdevstudio-multiple</artifactId>
-	<name>JBDS Multiple (Composite) Target Platform</name>
+	<name>Devstudio Multiple (Composite) Target Platform</name>
 	<packaging>pom</packaging>
 
 	<properties>
 		<!-- set this to false to allow validation to proceed but NOT fail the build -->
 		<validate-target-platform.failOnError>true</validate-target-platform.failOnError>
+		<!-- JBIDE-23481, JBDS-4440 include 3rd party sources in the target platforms-->
+		<mirror-target-to-repo.includeSources>true</mirror-target-to-repo.includeSources>
 	</properties>
 
 	<build>

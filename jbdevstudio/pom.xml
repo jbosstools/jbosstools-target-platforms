@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>org.jboss.tools.targetplatforms</groupId>
 	<artifactId>jbdevstudio</artifactId>
-	<name>JBDS Target Platforms</name>
+	<name>Devstudio Target Platforms</name>
 	<packaging>pom</packaging>
 	
 	<properties>
