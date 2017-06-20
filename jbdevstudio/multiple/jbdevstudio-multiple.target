@@ -534,11 +534,11 @@
 
     <!-- Only in JBT, for integration-tests: RedDeer -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/neon/development/updates/reddeer/1.2.2.20170524/"/>
-      <unit id="org.jboss.reddeer.eclipse.feature.feature.group" version="1.2.2.201705240857"/>
-      <unit id="org.jboss.reddeer.graphiti.feature.feature.group" version="1.2.2.201705240857"/>
-      <unit id="org.jboss.reddeer.junit.extension.feature.feature.group" version="1.2.2.201705240857"/>
-      <unit id="org.jboss.reddeer.ui.feature.feature.group" version="1.2.2.201705240857"/>
+      <repository location="http://download.jboss.org/jbosstools/neon/development/updates/reddeer/1.2.2.20170619/"/>
+      <unit id="org.jboss.reddeer.eclipse.feature.feature.group" version="1.2.2.201706191328"/>
+      <unit id="org.jboss.reddeer.graphiti.feature.feature.group" version="1.2.2.201706191328"/>
+      <unit id="org.jboss.reddeer.junit.extension.feature.feature.group" version="1.2.2.201706191328"/>
+      <unit id="org.jboss.reddeer.ui.feature.feature.group" version="1.2.2.201706191328"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/3.0.0.201705171707/"/>
