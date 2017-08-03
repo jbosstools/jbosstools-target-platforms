@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><?pde version="3.6"?>
-<target includeMode="feature" name="jbdevstudiotarget-4.70.0.Final">
+<target includeMode="feature" name="jbdevstudiotarget-4.70.1.Final-SNAPSHOT">
   <locations>
     <!-- don't forget to increment these files when moving up a version: build.xml, *.target -->
 
@@ -392,10 +392,6 @@
       <unit id="org.eclipse.rse.telnet.feature.group" version="3.7.0.201704251225"/>
       <unit id="org.eclipse.rse.useractions.feature.group" version="3.7.0.201704251225"/>
 
-      <!-- Eclipse Docker Tooling (see Orbit section above for dependencies) -->
-      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="3.0.0.201706141541"/>
-      <unit id="org.eclipse.linuxtools.vagrant.feature.feature.group" version="3.0.0.201706141541"/>
-
       <!-- Graphiti required by JBoss Fuse Tooling -->
       <unit id="org.eclipse.graphiti.feature.feature.group" version="0.14.0.201705161212"/>
       <unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.14.0.201705161212"/>
@@ -521,7 +517,14 @@
       <unit id="org.eclipse.wst.xsl.feature.feature.group" version="1.3.401.v201509231858"/>
     </location>
 
-    <!-- Only in JBT, for integration-tests: SWTBot -->
+    <!-- Eclipse Docker Tooling (see Orbit section above for dependencies) -->
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/3.1.0.201708010032/"/>
+      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="3.1.0.201708010032"/>
+      <unit id="org.eclipse.linuxtools.vagrant.feature.feature.group" version="3.1.0.201708010032"/>
+      <unit id="org.eclipse.linuxtools.docker.tests.feature.feature.group" version="3.1.0.201708010032"/>
+    </location>
+
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/swtbot/2.5.0/"/>
       <unit id="org.eclipse.swtbot.eclipse.feature.group" version="2.5.0.201609021837"/>
@@ -531,8 +534,6 @@
       <unit id="org.hamcrest.core" version="1.3.0.v201303031735"/>
       <unit id="org.hamcrest.library" version="1.3.0.v201505072020"/>
     </location>
-
-    <!-- Only in JBT, for integration-tests: RedDeer -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/neon/development/updates/reddeer/1.2.2.20170619/"/>
       <unit id="org.jboss.reddeer.eclipse.feature.feature.group" version="1.2.2.201706191328"/>
@@ -540,12 +541,7 @@
       <unit id="org.jboss.reddeer.junit.extension.feature.feature.group" version="1.2.2.201706191328"/>
       <unit id="org.jboss.reddeer.ui.feature.feature.group" version="1.2.2.201706191328"/>
     </location>
-    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/3.1.0.201708010032/"/>
-      <unit id="org.eclipse.linuxtools.docker.tests.feature.feature.group" version="3.1.0.201708010032"/>
-    </location>
 
-    <!-- JBIDE-19045 move Tern into JST project, so no longer in target platform -->
     <!-- NOTE: As of Oxygen.0.M5, nothing new here -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/e4.ui/0.2.0.v20160511-1529/"/>
