@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><?pde version="3.6"?>
-<target includeMode="feature" name="jbdevstudiotarget-4.70.2.Final">
+<target includeMode="feature" name="jbdevstudiotarget-4.71.0.AM2-SNAPSHOT">
   <locations>
     <!-- don't forget to increment these files when moving up a version: build.xml, *.target -->
 
@@ -379,11 +379,6 @@
       <unit id="org.eclipse.tm.terminal.view.ui" version="4.3.0.201706130844"/>
       <unit id="org.eclipse.tm.terminal.view.ui.rse" version="4.2.0.201609191434"/>
 
-      <!-- JBIDE-19879 required by new launchbar -->
-      <unit id="org.eclipse.launchbar.feature.group" version="2.1.1.201706131403"/>
-      <unit id="org.eclipse.remote.core" version="3.0.0.201706052031"/>
-      <unit id="org.eclipse.remote.ui" version="2.1.0.201706052031"/>
-
       <!-- newer RSE version in Neon than in RSE site? -->
       <unit id="org.eclipse.rse.feature.group" version="3.7.3.201704251225"/>
       <unit id="org.eclipse.rse.ftp.feature.group" version="3.7.1.201704251225"/>
@@ -420,12 +415,21 @@
       <unit id="com.gradleware.tooling.client" version="0.19.0.v20170412105839"/>
       <unit id="com.gradleware.tooling.utils" version="0.19.0.v20170412105839"/>
       <unit id="org.gradle.toolingapi" version="3.5.0.v20170412105839"/>
+
+      <unit id="org.eclipse.remote.core" version="3.0.0.201706052031"/>
+      <unit id="org.eclipse.remote.ui" version="2.1.0.201706052031"/>
+    </location>
+
+    <!-- JBIDE-19879 required by new launchbar -->
+    <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/launchbar/2.1.2.201708231630/"/>
+      <unit id="org.eclipse.launchbar.feature.group" version="2.1.2.201708231630"/>
     </location>
 
     <!-- Fuse Tooling -->
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/gemini/"/>
       <unit id="org.eclipse.gemini.management" version="2.0.0.RELEASE"/>
-      <repository id="jbt-gemini" location="http://download.jboss.org/jbosstools/updates/requirements/gemini/"/>
     </location>
 
     <!-- TM and RSE are in Neon site but this way we get sources too -->
@@ -535,11 +539,18 @@
       <unit id="org.hamcrest.library" version="1.3.0.v201505072020"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/neon/development/updates/reddeer/1.2.2.20170619/"/>
-      <unit id="org.jboss.reddeer.eclipse.feature.feature.group" version="1.2.2.201706191328"/>
-      <unit id="org.jboss.reddeer.graphiti.feature.feature.group" version="1.2.2.201706191328"/>
-      <unit id="org.jboss.reddeer.junit.extension.feature.feature.group" version="1.2.2.201706191328"/>
-      <unit id="org.jboss.reddeer.ui.feature.feature.group" version="1.2.2.201706191328"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/reddeer/2.0.0.Beta/"/>
+      <unit id="org.eclipse.reddeer.codegen.feature.feature.group" version="2.0.0.Beta"/>
+      <unit id="org.eclipse.reddeer.eclipse.feature.feature.group" version="2.0.0.Beta"/>
+      <unit id="org.eclipse.reddeer.gef.spy.feature.feature.group" version="2.0.0.Beta"/>
+      <unit id="org.eclipse.reddeer.graphiti.feature.feature.group" version="2.0.0.Beta"/>
+      <unit id="org.eclipse.reddeer.logparser.feature.feature.group" version="2.0.0.Beta"/>
+      <unit id="org.eclipse.reddeer.recorder.feature.feature.group" version="2.0.0.Beta"/>
+      <unit id="org.eclipse.reddeer.selenium.feature.feature.group" version="2.0.0.Beta"/>
+      <unit id="org.eclipse.reddeer.spy.feature.feature.group" version="2.0.0.Beta"/>
+      <unit id="org.eclipse.reddeer.swt.feature.feature.group" version="2.0.0.Beta"/>
+      <unit id="org.eclipse.reddeer.tests.feature.feature.group" version="2.0.0.Beta"/>
+      <unit id="org.eclipse.reddeer.ui.feature.feature.group" version="2.0.0.Beta"/>
     </location>
 
     <!-- NOTE: As of Oxygen.0.M5, nothing new here -->
