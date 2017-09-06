@@ -178,7 +178,6 @@
 	</build>
 
 	<modules>
-		<module>jbdevstudio</module>
 		<module>jbosstools</module>
 	</modules>
 
