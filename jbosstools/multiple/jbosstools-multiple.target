@@ -123,6 +123,7 @@
       <unit id="org.objectweb.asm.util" version="5.2.0.v20170126-0011"/>
       <unit id="org.slf4j.api" version="1.7.10.v20170428-1633"/>
       <unit id="org.assertj" version="1.7.1.v20170413-2026"/>
+      <unit id="org.json" version="1.0.0.v201011060100"/>
       <unit id="org.mockito" version="1.9.5.v201605172210"/>
       <unit id="org.objenesis" version="1.0.0.v201505121915"/>
 
@@ -519,10 +520,10 @@
 
     <!-- Eclipse Docker Tooling (see Orbit section above for dependencies) -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/3.1.0.201708010032/"/>
-      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="3.1.0.201708010032"/>
-      <unit id="org.eclipse.linuxtools.vagrant.feature.feature.group" version="3.1.0.201708010032"/>
-      <unit id="org.eclipse.linuxtools.docker.tests.feature.feature.group" version="3.1.0.201708010032"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/3.1.1.201709061712/"/>
+      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="3.1.1.201709061712"/>
+      <unit id="org.eclipse.linuxtools.vagrant.feature.feature.group" version="3.1.1.201709061712"/>
+      <unit id="org.eclipse.linuxtools.docker.tests.feature.feature.group" version="3.1.1.201709061712"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
@@ -531,15 +532,23 @@
       <unit id="org.eclipse.swtbot.eclipse.gef.feature.group" version="2.5.0.201609021837"/>
       <unit id="org.eclipse.swtbot.feature.group" version="2.5.0.201609021837"/>
       <unit id="org.eclipse.swtbot.forms.feature.group" version="2.5.0.201609021837"/>
+      <unit id="org.eclipse.swtbot.generator.feature.feature.group" version="2.5.0.201609021837"/>
       <unit id="org.hamcrest.core" version="1.3.0.v201303031735"/>
       <unit id="org.hamcrest.library" version="1.3.0.v201505072020"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/neon/development/updates/reddeer/1.2.2.20170619/"/>
-      <unit id="org.jboss.reddeer.eclipse.feature.feature.group" version="1.2.2.201706191328"/>
-      <unit id="org.jboss.reddeer.graphiti.feature.feature.group" version="1.2.2.201706191328"/>
-      <unit id="org.jboss.reddeer.junit.extension.feature.feature.group" version="1.2.2.201706191328"/>
-      <unit id="org.jboss.reddeer.ui.feature.feature.group" version="1.2.2.201706191328"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/reddeer/2.0.0.Beta/"/>
+      <unit id="org.eclipse.reddeer.codegen.feature.feature.group" version="2.0.0.Beta"/>
+      <unit id="org.eclipse.reddeer.eclipse.feature.feature.group" version="2.0.0.Beta"/>
+      <unit id="org.eclipse.reddeer.gef.spy.feature.feature.group" version="2.0.0.Beta"/>
+      <unit id="org.eclipse.reddeer.graphiti.feature.feature.group" version="2.0.0.Beta"/>
+      <unit id="org.eclipse.reddeer.logparser.feature.feature.group" version="2.0.0.Beta"/>
+      <unit id="org.eclipse.reddeer.recorder.feature.feature.group" version="2.0.0.Beta"/>
+      <unit id="org.eclipse.reddeer.selenium.feature.feature.group" version="2.0.0.Beta"/>
+      <unit id="org.eclipse.reddeer.spy.feature.feature.group" version="2.0.0.Beta"/>
+      <unit id="org.eclipse.reddeer.swt.feature.feature.group" version="2.0.0.Beta"/>
+      <unit id="org.eclipse.reddeer.tests.feature.feature.group" version="2.0.0.Beta"/>
+      <unit id="org.eclipse.reddeer.ui.feature.feature.group" version="2.0.0.Beta"/>
     </location>
 
     <!-- NOTE: As of Oxygen.0.M5, nothing new here -->
