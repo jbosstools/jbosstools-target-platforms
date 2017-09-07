@@ -193,7 +193,7 @@
 
     <!-- SimRel -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/oxygen/201706161000-Oxygen.0.RC4a"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/oxygen/20170906-1950-Oxygen.1.RC3/"/>
 
       <!-- p2.discovery -->
       <unit id="org.eclipse.equinox.p2.discovery" version="1.0.400.v20160504-1450"/>
@@ -203,8 +203,8 @@
       <!-- ECF -->
       <unit id="org.eclipse.ecf.core.feature.feature.group" version="1.4.0.v20170516-2248"/>
       <unit id="org.eclipse.ecf.core.ssl.feature.feature.group" version="1.1.0.v20170110-1317"/>
-      <unit id="org.eclipse.ecf.filetransfer.feature.feature.group" version="3.13.7.v20170516-2248"/>
-      <unit id="org.eclipse.ecf.filetransfer.httpclient4.feature.feature.group" version="3.13.7.v20170516-2248"/>
+      <unit id="org.eclipse.ecf.filetransfer.feature.feature.group" version="3.13.8.v20170715-2257"/>
+      <unit id="org.eclipse.ecf.filetransfer.httpclient4.feature.feature.group" version="3.13.8.v20170715-2257"/>
       <unit id="org.eclipse.ecf.filetransfer.httpclient4.ssl.feature.feature.group" version="1.1.0.v20170110-1317"/>
       <unit id="org.eclipse.ecf.filetransfer.ssl.feature.feature.group" version="1.1.0.v20170110-1317"/>
       <unit id="org.eclipse.equinox.concurrent" version="1.1.0.v20130327-1442"/>
@@ -236,18 +236,18 @@
 
       <!-- Platform: CVS, JDT, RCP, PDE, Equinox, Help -->
       <unit id="com.ibm.icu.base" version="58.2.0.v20170418-1837"/>
-      <unit id="org.eclipse.cvs.feature.group" version="1.4.400.v20170612-0950"/>
-      <unit id="org.eclipse.equinox.executable.feature.group" version="3.7.0.v20170531-1133"/>
-      <unit id="org.eclipse.equinox.p2.discovery.feature.feature.group" version="1.1.0.v20170418-0708"/>
-      <unit id="org.eclipse.equinox.p2.user.ui.feature.group" version="2.3.0.v20170524-1345"/>
+      <unit id="org.eclipse.cvs.feature.group" version="1.4.401.v20170901-1220"/>
+      <unit id="org.eclipse.equinox.executable.feature.group" version="3.7.1.v20170811-1325"/>
+      <unit id="org.eclipse.equinox.p2.discovery.feature.feature.group" version="1.1.1.v20170817-1345"/>
+      <unit id="org.eclipse.equinox.p2.user.ui.feature.group" version="2.3.1.v20170817-1345"/>
       <unit id="org.eclipse.equinox.http.registry" version="1.1.400.v20150715-1528"/>
-      <unit id="org.eclipse.equinox.server.core.feature.group" version="1.5.0.v20170518-1049"/>
-      <unit id="org.eclipse.equinox.server.jetty.feature.group" version="1.4.0.v20170524-1452"/>
-      <unit id="org.eclipse.help.feature.group" version="2.2.100.v20170612-0950"/>
-      <unit id="org.eclipse.jdt.feature.group" version="3.13.0.v20170612-0950"/>
-      <unit id="org.eclipse.pde.feature.group" version="3.13.0.v20170612-0950"/>
-      <unit id="org.eclipse.platform.feature.group" version="4.7.0.v20170612-1255"/>
-      <unit id="org.eclipse.rcp.feature.group" version="4.7.0.v20170612-1255"/>
+      <unit id="org.eclipse.equinox.server.core.feature.group" version="1.5.1.v20170821-1548"/>
+      <unit id="org.eclipse.equinox.server.jetty.feature.group" version="1.4.1.v20170811-1407"/>
+      <unit id="org.eclipse.help.feature.group" version="2.2.101.v20170901-1220"/>
+      <unit id="org.eclipse.jdt.feature.group" version="3.13.1.v20170901-1220"/>
+      <unit id="org.eclipse.pde.feature.group" version="3.13.1.v20170901-1220"/>
+      <unit id="org.eclipse.platform.feature.group" version="4.7.1.v20170901-1220"/>
+      <unit id="org.eclipse.rcp.feature.group" version="4.7.1.v20170901-1220"/>
 
       <!-- DTP -->
       <unit id="org.eclipse.datatools.common.doc.user.feature.group" version="1.14.0.201701131441"/>
@@ -295,23 +295,23 @@
       <unit id="org.apache.commons.pool" version="1.6.0.v201204271246"/>
       <unit id="org.apache.solr.client.solrj" version="3.5.0.v20150506-0844"/>
       <unit id="org.eclipse.aether.maven" version="3.1.0.v20140706-2237"/>
-      <unit id="org.eclipse.recommenders.rcp.feature.feature.group" version="2.4.9.v20170613-1301"/>
-      <unit id="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group" version="2.4.9.v20170613-1301"/>
+      <unit id="org.eclipse.recommenders.rcp.feature.feature.group" version="2.4.10.v20170905-1029"/>
+      <unit id="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group" version="2.4.10.v20170811-0800"/>
 
       <!-- needed for JBoss Central -->
-      <unit id="org.eclipse.compare" version="3.7.100.v20170303-1847"/>
+      <unit id="org.eclipse.compare" version="3.7.101.v20170724-1603"/>
       <unit id="org.eclipse.core.filesystem" version="1.7.0.v20170406-1337"/>
       <unit id="org.eclipse.core.resources" version="3.12.0.v20170417-1558"/>
       <unit id="org.eclipse.core.runtime" version="3.13.0.v20170207-1030"/>
-      <unit id="org.eclipse.epp.logging.aeri.feature.feature.group" version="2.0.5.v20170613-1207"/>
-      <unit id="org.eclipse.jface" version="3.13.0.v20170503-1507"/>
+      <unit id="org.eclipse.epp.logging.aeri.feature.feature.group" version="2.0.6.v20170905-0947"/>
+      <unit id="org.eclipse.jface" version="3.13.1.v20170810-0135"/>
       <unit id="org.eclipse.jface.text" version="3.12.0.v20170523-1043"/>
       <unit id="org.eclipse.team.core" version="3.8.100.v20170516-0820"/>
       <unit id="org.eclipse.team.ui" version="3.8.1.v20170515-1133"/>
       <unit id="org.eclipse.ui" version="3.109.0.v20170411-1742"/>
       <unit id="org.eclipse.ui.editors" version="3.11.0.v20170202-1823"/>
-      <unit id="org.eclipse.ui.forms" version="3.7.100.v20170517-1755"/>
-      <unit id="org.eclipse.ui.ide" version="3.13.0.v20170516-1223"/>
+      <unit id="org.eclipse.ui.forms" version="3.7.101.v20170815-1446"/>
+      <unit id="org.eclipse.ui.ide" version="3.13.1.v20170822-1526"/>
       <unit id="org.eclipse.ui.workbench.texteditor" version="3.10.100.v20170426-2021"/>
 
       <!-- Zest -->
@@ -322,7 +322,7 @@
       <!-- mylyn -->
       <unit id="org.eclipse.mylyn.ide_feature.feature.group" version="3.23.0.v20170411-2108"/>
       <unit id="org.eclipse.mylyn.team_feature.feature.group" version="3.23.0.v20170411-2108"/>
-      <unit id="org.eclipse.mylyn.bugzilla_feature.feature.group" version="3.23.0.v20170411-2036"/>
+      <unit id="org.eclipse.mylyn.bugzilla_feature.feature.group" version="3.23.1.v20170623-0008"/>
       <unit id="org.eclipse.mylyn.commons.feature.group" version="3.23.0.v20170503-0014"/>
       <unit id="org.eclipse.mylyn.commons.identity.feature.group" version="1.15.0.v20170411-1844"/>
       <unit id="org.eclipse.mylyn.commons.notifications.feature.group" version="1.15.0.v20170411-1844"/>
@@ -330,9 +330,9 @@
       <unit id="org.eclipse.mylyn.context_feature.feature.group" version="3.23.0.v20170414-0629"/>
       <unit id="org.eclipse.mylyn.discovery.feature.group" version="3.23.0.v20170411-1844"/>
       <unit id="org.eclipse.mylyn.monitor.feature.group" version="3.23.0.v20170411-1844"/>
-      <unit id="org.eclipse.mylyn.tasks.ide.feature.group" version="3.23.0.v20170411-2036"/>
+      <unit id="org.eclipse.mylyn.tasks.ide.feature.group" version="3.23.1.v20170623-0008"/>
       <unit id="org.eclipse.mylyn.wikitext_feature.feature.group" version="3.0.6.201703111926"/>
-      <unit id="org.eclipse.mylyn_feature.feature.group" version="3.23.0.v20170614-1854"/>
+      <unit id="org.eclipse.mylyn_feature.feature.group" version="3.23.1.v20170623-0008"/>
       <unit id="org.eclipse.mylyn.commons.net" version="3.23.0.v20170411-1844"/>
       <unit id="org.eclipse.mylyn.commons.xmlrpc" version="3.23.0.v20170411-1844"/>
       <unit id="org.jsoup" version="1.7.2.v201411291515"/>
@@ -365,7 +365,7 @@
       <unit id="org.eclipse.sapphire.ui.swt.xml.editor.feature.group" version="9.1.0.201609301330"/>
 
       <!-- JBIDE-17686 Required by rse.terminals, but not in the new RSE 4.0 M7 site -->
-      <unit id="org.eclipse.cdt.native.feature.group" version="9.3.0.201706122201"/>
+      <unit id="org.eclipse.cdt.native.feature.group" version="9.3.2.201709050901"/>
       <unit id="org.eclipse.core.expressions" version="3.6.0.v20170207-1037"/>
       <unit id="org.eclipse.rse.connectorservice.ssh" version="2.1.300.201505220524"/>
       <unit id="org.eclipse.rse.core" version="3.3.100.201603151753"/>
@@ -411,11 +411,11 @@
       <unit id="org.w3c.dom.svg" version="1.1.0.v201011041433"/>
 
       <!-- Buildship -->
-      <unit id="org.eclipse.buildship.feature.group" version="2.0.2.v20170420-0909"/>
-      <unit id="com.gradleware.tooling.model" version="0.19.0.v20170412105839"/>
-      <unit id="com.gradleware.tooling.client" version="0.19.0.v20170412105839"/>
-      <unit id="com.gradleware.tooling.utils" version="0.19.0.v20170412105839"/>
-      <unit id="org.gradle.toolingapi" version="3.5.0.v20170412105839"/>
+      <unit id="org.eclipse.buildship.feature.group" version="2.1.2.v20170807-1324"/>
+      <unit id="com.gradleware.tooling.model" version="0.19.3.v20170801075239"/>
+      <unit id="com.gradleware.tooling.client" version="0.19.3.v20170801075239"/>
+      <unit id="com.gradleware.tooling.utils" version="0.19.3.v20170801075239"/>
+      <unit id="org.gradle.toolingapi" version="3.5.0.v20170801075239"/>
 
       <unit id="org.eclipse.remote.core" version="3.0.0.201706052031"/>
       <unit id="org.eclipse.remote.ui" version="2.1.0.201706052031"/>
