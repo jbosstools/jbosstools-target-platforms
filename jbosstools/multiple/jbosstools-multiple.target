@@ -8,33 +8,30 @@
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/S20170516192513/"/>
 
       <!-- for these IUs we need multiple versions -->
-      <unit id="com.google.guava" version="15.0.0.v201403281430"/> <!-- m2e 1.7.1 needs 15.0 -->
+      <unit id="com.google.guava" version="15.0.0.v201403281430"/> <!-- needed by org.eclipse.recommenders.rcp.feature 2.4.10 -->
       <unit id="com.google.guava" version="18.0.0.v20161115-1643"/>
-      <unit id="com.google.guava" version="21.0.0.v20170206-1425"/>
-      <unit id="javax.wsdl" version="1.5.1.v201012040544"/>
+      <unit id="com.google.guava" version="21.0.0.v20170206-1425"/> <!-- needed by m2e 1.8.1 -->
+      <unit id="org.apache.lucene.core" version="3.5.0.v20120725-1805"/> <!-- needed by org.jboss.tools.ws.jaxrs.core -->
+      <unit id="org.apache.lucene.core" version="6.1.0.v20161115-1612"/>
+
+      <!-- aerogear, browsersim, livereload require 
+      	org.apache.aries.spifly.dynamic.bundle 1.0.2, which requires
+        org.objectweb.asm.commons [5.0.0,6.0.0)' -->
+      <unit id="org.objectweb.asm.commons" version="5.2.0.v20170126-0011"/>
+      <unit id="org.objectweb.asm" version="5.2.0.v20170126-0011"/>
+      <unit id="org.objectweb.asm.analysis" version="5.2.0.v20170126-0011"/>
+      <unit id="org.objectweb.asm.tree" version="5.2.0.v20170126-0011"/>
+      <unit id="org.objectweb.asm.util" version="5.2.0.v20170126-0011"/>
+      <!-- for these IUs we need multiple versions -->
+
       <unit id="javax.wsdl" version="1.6.2.v201012040545"/>
       <unit id="javax.xml.bind" version="2.2.0.v201105210648"/>
-      <unit id="javax.xml.bind" version="2.2.0.v201105210648"/>
-      <unit id="javax.xml.soap" version="1.2.0.v201005080501"/>
-      <unit id="javax.xml.soap" version="1.3.0.v201105210645"/>
-      <unit id="org.apache.lucene.core" version="3.5.0.v20120725-1805"/>
-      <unit id="org.apache.lucene.core" version="5.2.1.v20160301-1110"/>
-      <unit id="org.apache.lucene.core" version="6.1.0.v20161115-1612"/>
-      <unit id="org.objectweb.asm" version="4.0.0.v201302062210"/>
-      <unit id="org.objectweb.asm" version="5.0.1.v201404251740"/>
-      <unit id="org.objectweb.asm" version="5.2.0.v20170126-0011"/>
-      <unit id="org.objectweb.asm.analysis" version="5.0.1.v201505121915"/>
-      <unit id="org.objectweb.asm.analysis" version="5.2.0.v20170126-0011"/>
-      <unit id="org.objectweb.asm.tree" version="5.0.1.v201404251740"/>
-      <unit id="org.objectweb.asm.tree" version="5.2.0.v20170126-0011"/>
-      <unit id="org.objectweb.asm.util" version="5.0.1.v201404251740"/>
-      <unit id="org.objectweb.asm.util" version="5.2.0.v20170126-0011"/>
-      <!-- Needed by jbosstools-webservices -->
+
+	  <!-- 1.0+ needed by livereload -->
+      <unit id="ch.qos.logback.classic" version="1.1.2.v20160208-0839"/> 
       <unit id="ch.qos.logback.classic" version="1.0.7.v20121108-1250"/>
-      <unit id="ch.qos.logback.classic" version="1.1.2.v20160208-0839"/>
-      <unit id="ch.qos.logback.core" version="1.0.7.v20121108-1250"/>
       <unit id="ch.qos.logback.core" version="1.1.2.v20160208-0839"/>
-      <!-- for these IUs we need multiple versions -->
+      <unit id="ch.qos.logback.core" version="1.0.7.v20121108-1250"/>
 
       <!-- Orbit bundles -->
       <unit id="javax.activation" version="1.1.0.v201211130549"/>
@@ -52,7 +49,6 @@
       <unit id="org.apache.httpcomponents.httpclient" version="4.3.6.v201511171540"/>
       <unit id="org.apache.httpcomponents.httpcore" version="4.3.3.v201411290715"/>
       <unit id="org.apache.lucene.misc" version="6.1.0.v20161115-1612"/>
-      <unit id="org.apache.lucene.queries" version="5.2.1.v20160926-1534"/>
       <unit id="org.apache.lucene.queryparser" version="6.1.0.v20161115-1612"/>
       <unit id="org.apache.oro" version="2.0.8.v201005080400"/>
       <unit id="org.jdom" version="1.1.1.v201101151400"/>
@@ -84,9 +80,6 @@
       <unit id="javax.el" version="2.2.0.v201303151357"/>
       <unit id="javax.xml.rpc" version="1.1.0.v201209140446"/>
       <unit id="org.apache.jasper.glassfish" version="2.2.2.v201501141630"/>
-
-      <!-- org.apache.aries.spifly.dynamic.bundle 1.0.2, which requires 'package org.objectweb.asm.commons [5.0.0,6.0.0)' -->
-      <unit id="org.objectweb.asm.commons" version="5.2.0.v20170126-0011"/>
 
       <!-- Docker Tooling deps -->
       <unit id="com.fasterxml.jackson.core.jackson-annotations" version="2.6.2.v20161117-2150"/>
@@ -120,7 +113,6 @@
       <unit id="org.glassfish.jersey.core.jersey-server" version="2.22.1.v20161103-1916"/>
       <unit id="org.glassfish.jersey.ext.entityfiltering" version="2.22.1.v20161103-0227"/>
       <unit id="org.glassfish.jersey.media.jersey-media-json-jackson" version="2.22.1.v20161117-2005"/>
-      <unit id="org.objectweb.asm.util" version="5.2.0.v20170126-0011"/>
       <unit id="org.slf4j.api" version="1.7.10.v20170428-1633"/>
       <unit id="org.assertj" version="1.7.1.v20170413-2026"/>
       <unit id="org.json" version="1.0.0.v201011060100"/>
