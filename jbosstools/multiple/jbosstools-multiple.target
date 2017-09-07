@@ -187,8 +187,8 @@
       <unit id="org.eclipse.m2e.wtp.jsf.feature.feature.group" version="1.3.2.20161026-1738"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2eclipse-tycho/0.9.0.201609252021/"/>
-      <unit id="org.sonatype.tycho.m2e.feature.feature.group" version="0.9.0.201609252021"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2eclipse-tycho/0.8.1.201704211436/"/>
+      <unit id="org.sonatype.tycho.m2e.feature.feature.group" version="0.8.1.201704211436"/>
     </location>
 
     <!-- SimRel -->
