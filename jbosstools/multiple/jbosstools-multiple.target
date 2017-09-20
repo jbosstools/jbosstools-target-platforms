@@ -551,14 +551,6 @@
       <unit id="org.eclipse.reddeer.ui.feature.feature.group" version="2.0.0.Beta"/>
     </location>
 
-    <!-- NOTE: As of Oxygen.0.M5, nothing new here -->
-    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/e4.ui/0.2.0.v20160511-1529/"/>
-      <unit id="org.eclipse.e4.ui.importer.java" version="0.2.0.v20160511-1529"/>
-      <unit id="org.eclipse.e4.ui.importer.pde" version="0.2.0.v20160511-1529"/>
-      <unit id="org.eclipse.e4.ui.naturist" version="0.0.1.v20160426-1215"/>
-    </location>
-
     <!-- TestNG -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/testng/6.11.0.201703011520/"/>
