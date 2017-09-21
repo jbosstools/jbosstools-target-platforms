@@ -190,11 +190,11 @@
 
     <!-- SimRel -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/oxygen/20170906-1950-Oxygen.1.RC3/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/oxygen/20170920-1610-Oxygen.1.RC4/"/>
 
       <!-- p2.discovery -->
       <unit id="org.eclipse.equinox.p2.discovery" version="1.0.400.v20160504-1450"/>
-      <unit id="org.eclipse.equinox.p2.discovery.compatibility" version="1.0.200.v20131211-1531"/>
+      <unit id="org.eclipse.equinox.p2.discovery.compatibility" version="1.0.201.v20170906-1259"/>
       <unit id="org.eclipse.equinox.p2.ui.discovery" version="1.0.300.v20170418-0708"/>
 
       <!-- ECF -->
@@ -233,18 +233,18 @@
 
       <!-- Platform: CVS, JDT, RCP, PDE, Equinox, Help -->
       <unit id="com.ibm.icu.base" version="58.2.0.v20170418-1837"/>
-      <unit id="org.eclipse.cvs.feature.group" version="1.4.401.v20170901-1220"/>
+      <unit id="org.eclipse.cvs.feature.group" version="1.4.401.v20170906-1700"/>
       <unit id="org.eclipse.equinox.executable.feature.group" version="3.7.1.v20170811-1325"/>
-      <unit id="org.eclipse.equinox.p2.discovery.feature.feature.group" version="1.1.1.v20170817-1345"/>
-      <unit id="org.eclipse.equinox.p2.user.ui.feature.group" version="2.3.1.v20170817-1345"/>
+      <unit id="org.eclipse.equinox.p2.discovery.feature.feature.group" version="1.1.1.v20170906-1259"/>
+      <unit id="org.eclipse.equinox.p2.user.ui.feature.group" version="2.3.1.v20170906-1259"/>
       <unit id="org.eclipse.equinox.http.registry" version="1.1.400.v20150715-1528"/>
       <unit id="org.eclipse.equinox.server.core.feature.group" version="1.5.1.v20170821-1548"/>
       <unit id="org.eclipse.equinox.server.jetty.feature.group" version="1.4.1.v20170811-1407"/>
-      <unit id="org.eclipse.help.feature.group" version="2.2.101.v20170901-1220"/>
-      <unit id="org.eclipse.jdt.feature.group" version="3.13.1.v20170901-1220"/>
-      <unit id="org.eclipse.pde.feature.group" version="3.13.1.v20170901-1220"/>
-      <unit id="org.eclipse.platform.feature.group" version="4.7.1.v20170901-1220"/>
-      <unit id="org.eclipse.rcp.feature.group" version="4.7.1.v20170901-1220"/>
+      <unit id="org.eclipse.help.feature.group" version="2.2.101.v20170906-1700"/>
+      <unit id="org.eclipse.jdt.feature.group" version="3.13.1.v20170906-1700"/>
+      <unit id="org.eclipse.pde.feature.group" version="3.13.1.v20170906-1700"/>
+      <unit id="org.eclipse.platform.feature.group" version="4.7.1.v20170906-1700"/>
+      <unit id="org.eclipse.rcp.feature.group" version="4.7.1.v20170906-1700"/>
 
       <!-- DTP -->
       <unit id="org.eclipse.datatools.common.doc.user.feature.group" version="1.14.0.201701131441"/>
@@ -291,15 +291,15 @@
       <unit id="org.apache.commons.pool" version="1.6.0.v201204271246"/>
       <unit id="org.apache.solr.client.solrj" version="3.5.0.v20150506-0844"/>
       <unit id="org.eclipse.aether.maven" version="3.1.0.v20140706-2237"/>
-      <unit id="org.eclipse.recommenders.rcp.feature.feature.group" version="2.4.10.v20170905-1029"/>
-      <unit id="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group" version="2.4.10.v20170811-0800"/>
+      <unit id="org.eclipse.recommenders.rcp.feature.feature.group" version="2.4.10.v20170911-1410"/>
+      <unit id="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group" version="2.4.10.v20170911-1410"/>
 
       <!-- needed for JBoss Central -->
       <unit id="org.eclipse.compare" version="3.7.101.v20170724-1603"/>
       <unit id="org.eclipse.core.filesystem" version="1.7.0.v20170406-1337"/>
       <unit id="org.eclipse.core.resources" version="3.12.0.v20170417-1558"/>
       <unit id="org.eclipse.core.runtime" version="3.13.0.v20170207-1030"/>
-      <unit id="org.eclipse.epp.logging.aeri.feature.feature.group" version="2.0.6.v20170905-0947"/>
+      <unit id="org.eclipse.epp.logging.aeri.feature.feature.group" version="2.0.6.v20170906-1226"/>
       <unit id="org.eclipse.jface" version="3.13.1.v20170810-0135"/>
       <unit id="org.eclipse.jface.text" version="3.12.0.v20170523-1043"/>
       <unit id="org.eclipse.team.core" version="3.8.100.v20170516-0820"/>
@@ -361,7 +361,7 @@
       <unit id="org.eclipse.sapphire.ui.swt.xml.editor.feature.group" version="9.1.0.201609301330"/>
 
       <!-- JBIDE-17686 Required by rse.terminals, but not in the new RSE 4.0 M7 site -->
-      <unit id="org.eclipse.cdt.native.feature.group" version="9.3.2.201709050901"/>
+      <unit id="org.eclipse.cdt.native.feature.group" version="9.3.2.201709131603"/>
       <unit id="org.eclipse.core.expressions" version="3.6.0.v20170207-1037"/>
       <unit id="org.eclipse.rse.connectorservice.ssh" version="2.1.300.201505220524"/>
       <unit id="org.eclipse.rse.core" version="3.3.100.201603151753"/>
@@ -537,18 +537,18 @@
       <unit id="org.hamcrest.library" version="1.3.0.v201505072020"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/reddeer/2.0.0.Beta/"/>
-      <unit id="org.eclipse.reddeer.codegen.feature.feature.group" version="2.0.0.Beta"/>
-      <unit id="org.eclipse.reddeer.eclipse.feature.feature.group" version="2.0.0.Beta"/>
-      <unit id="org.eclipse.reddeer.gef.spy.feature.feature.group" version="2.0.0.Beta"/>
-      <unit id="org.eclipse.reddeer.graphiti.feature.feature.group" version="2.0.0.Beta"/>
-      <unit id="org.eclipse.reddeer.logparser.feature.feature.group" version="2.0.0.Beta"/>
-      <unit id="org.eclipse.reddeer.recorder.feature.feature.group" version="2.0.0.Beta"/>
-      <unit id="org.eclipse.reddeer.selenium.feature.feature.group" version="2.0.0.Beta"/>
-      <unit id="org.eclipse.reddeer.spy.feature.feature.group" version="2.0.0.Beta"/>
-      <unit id="org.eclipse.reddeer.swt.feature.feature.group" version="2.0.0.Beta"/>
-      <unit id="org.eclipse.reddeer.tests.feature.feature.group" version="2.0.0.Beta"/>
-      <unit id="org.eclipse.reddeer.ui.feature.feature.group" version="2.0.0.Beta"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/reddeer/2.0.0.Final/"/>
+      <unit id="org.eclipse.reddeer.codegen.feature.feature.group" version="2.0.0.Final"/>
+      <unit id="org.eclipse.reddeer.eclipse.feature.feature.group" version="2.0.0.Final"/>
+      <unit id="org.eclipse.reddeer.gef.spy.feature.feature.group" version="2.0.0.Final"/>
+      <unit id="org.eclipse.reddeer.graphiti.feature.feature.group" version="2.0.0.Final"/>
+      <unit id="org.eclipse.reddeer.logparser.feature.feature.group" version="2.0.0.Final"/>
+      <unit id="org.eclipse.reddeer.recorder.feature.feature.group" version="2.0.0.Final"/>
+      <unit id="org.eclipse.reddeer.selenium.feature.feature.group" version="2.0.0.Final"/>
+      <unit id="org.eclipse.reddeer.spy.feature.feature.group" version="2.0.0.Final"/>
+      <unit id="org.eclipse.reddeer.swt.feature.feature.group" version="2.0.0.Final"/>
+      <unit id="org.eclipse.reddeer.tests.feature.feature.group" version="2.0.0.Final"/>
+      <unit id="org.eclipse.reddeer.ui.feature.feature.group" version="2.0.0.Final"/>
     </location>
 
     <!-- TestNG -->
