@@ -315,39 +315,14 @@
       <unit id="org.eclipse.gef.feature.group" version="3.11.0.201606061308"/>
       <unit id="org.eclipse.zest.feature.group" version="1.7.0.201606061308"/>
 
-      <!-- mylyn -->
-      <unit id="org.eclipse.mylyn.ide_feature.feature.group" version="3.23.0.v20170411-2108"/>
-      <unit id="org.eclipse.mylyn.team_feature.feature.group" version="3.23.0.v20170411-2108"/>
-      <unit id="org.eclipse.mylyn.bugzilla_feature.feature.group" version="3.23.1.v20170623-0008"/>
-      <unit id="org.eclipse.mylyn.commons.feature.group" version="3.23.0.v20170503-0014"/>
-      <unit id="org.eclipse.mylyn.commons.identity.feature.group" version="1.15.0.v20170411-1844"/>
-      <unit id="org.eclipse.mylyn.commons.notifications.feature.group" version="1.15.0.v20170411-1844"/>
-      <unit id="org.eclipse.mylyn.commons.repositories.feature.group" version="1.15.0.v20170411-1844"/>
-      <unit id="org.eclipse.mylyn.context_feature.feature.group" version="3.23.0.v20170414-0629"/>
-      <unit id="org.eclipse.mylyn.discovery.feature.group" version="3.23.0.v20170411-1844"/>
-      <unit id="org.eclipse.mylyn.monitor.feature.group" version="3.23.0.v20170411-1844"/>
-      <unit id="org.eclipse.mylyn.tasks.ide.feature.group" version="3.23.1.v20170623-0008"/>
-      <unit id="org.eclipse.mylyn.wikitext_feature.feature.group" version="3.0.6.201703111926"/>
-      <unit id="org.eclipse.mylyn_feature.feature.group" version="3.23.1.v20170623-0008"/>
-      <unit id="org.eclipse.mylyn.commons.net" version="3.23.0.v20170411-1844"/>
-      <unit id="org.eclipse.mylyn.commons.xmlrpc" version="3.23.0.v20170411-1844"/>
-      <unit id="org.jsoup" version="1.7.2.v201411291515"/>
-
-      <!-- mylyn + mylyn accessories (used by Central) -->
-      <unit id="org.eclipse.egit.mylyn.feature.group" version="4.8.0.201706111038-r"/>
-      <unit id="org.eclipse.mylyn.builds.feature.group" version="1.15.0.v20170411-2141"/>
-      <unit id="org.eclipse.mylyn.commons.repositories.http.feature.group" version="1.15.0.v20170411-1844"/>
-      <unit id="org.eclipse.mylyn.github.feature.feature.group" version="4.8.0.201706111038-r"/>
-      <unit id="org.eclipse.mylyn.git.feature.group" version="1.15.0.v20170411-2003"/>
-      <unit id="org.eclipse.mylyn.hudson.feature.group" version="1.15.0.v20170411-2141"/>
-      <unit id="org.eclipse.mylyn.java_feature.feature.group" version="3.23.0.v20170411-2108"/>
-      <unit id="org.eclipse.mylyn.pde_feature.feature.group" version="3.23.0.v20170411-2108"/>
-      <unit id="org.eclipse.mylyn.versions.feature.group" version="1.15.0.v20170411-2003"/>
-
       <!-- egit -->
       <unit id="org.eclipse.egit.feature.group" version="4.8.0.201706111038-r"/>
       <unit id="org.eclipse.egit.ui.smartimport" version="4.8.0.201706111038-r"/>
       <unit id="org.eclipse.jgit.feature.group" version="4.8.0.201706111038-r"/>
+
+      <!-- mylyn + git stuff -->
+      <unit id="org.eclipse.egit.mylyn.feature.group" version="4.8.0.201706111038-r"/>
+      <unit id="org.eclipse.mylyn.github.feature.feature.group" version="4.8.0.201706111038-r"/>
 
       <!-- Required for Batch and Arquillian -->
       <unit id="org.eclipse.sapphire.feature.group" version="9.1.0.201609301330"/>
@@ -406,6 +381,8 @@
       <!-- <unit id="org.w3c.dom.smil" version="1.0.1.v200903091627"/> -->
       <unit id="org.w3c.dom.svg" version="1.1.0.v201011041433"/>
 
+      <unit id="org.jsoup" version="1.7.2.v201411291515"/>
+
       <!-- Buildship -->
       <unit id="org.eclipse.buildship.feature.group" version="2.1.2.v20170807-1324"/>
       <unit id="com.gradleware.tooling.model" version="0.19.3.v20170801075239"/>
@@ -415,6 +392,32 @@
 
       <unit id="org.eclipse.remote.core" version="3.0.0.201706052031"/>
       <unit id="org.eclipse.remote.ui" version="2.1.0.201706052031"/>
+    </location>
+
+    <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/mylyn/3.23.1-v20170623-2012__3.0.18.20170823144938/"/>
+      <unit id="org.eclipse.mylyn.bugzilla_feature.feature.group" version="3.23.1.v20170623-0008"/>
+      <unit id="org.eclipse.mylyn.builds.feature.group" version="1.15.0.v20170411-2141"/>
+      <unit id="org.eclipse.mylyn.commons.feature.group" version="3.23.0.v20170503-0014"/>
+      <unit id="org.eclipse.mylyn.commons.identity.feature.group" version="1.15.0.v20170411-1844"/>
+      <unit id="org.eclipse.mylyn.commons.net" version="3.23.0.v20170411-1844"/>
+      <unit id="org.eclipse.mylyn.commons.notifications.feature.group" version="1.15.0.v20170411-1844"/>
+      <unit id="org.eclipse.mylyn.commons.repositories.feature.group" version="1.15.0.v20170411-1844"/>
+      <unit id="org.eclipse.mylyn.commons.repositories.http.feature.group" version="1.15.0.v20170411-1844"/>
+      <unit id="org.eclipse.mylyn.commons.xmlrpc" version="3.23.0.v20170411-1844"/>
+      <unit id="org.eclipse.mylyn.context_feature.feature.group" version="3.23.0.v20170414-0629"/>
+      <unit id="org.eclipse.mylyn.discovery.feature.group" version="3.23.0.v20170411-1844"/>
+      <unit id="org.eclipse.mylyn.git.feature.group" version="1.15.0.v20170411-2003"/>
+      <unit id="org.eclipse.mylyn.hudson.feature.group" version="1.15.0.v20170411-2141"/>
+      <unit id="org.eclipse.mylyn.ide_feature.feature.group" version="3.23.0.v20170411-2108"/>
+      <unit id="org.eclipse.mylyn.java_feature.feature.group" version="3.23.0.v20170411-2108"/>
+      <unit id="org.eclipse.mylyn.monitor.feature.group" version="3.23.0.v20170411-1844"/>
+      <unit id="org.eclipse.mylyn.pde_feature.feature.group" version="3.23.0.v20170411-2108"/>
+      <unit id="org.eclipse.mylyn.tasks.ide.feature.group" version="3.23.1.v20170623-0008"/>
+      <unit id="org.eclipse.mylyn.team_feature.feature.group" version="3.23.0.v20170411-2108"/>
+      <unit id="org.eclipse.mylyn.versions.feature.group" version="1.15.0.v20170411-2003"/>
+      <unit id="org.eclipse.mylyn.wikitext_feature.feature.group" version="3.0.18.201708231851"/>
+      <unit id="org.eclipse.mylyn_feature.feature.group" version="3.23.1.v20170623-0008"/>
     </location>
 
     <!-- JBIDE-19879 required by new launchbar -->
