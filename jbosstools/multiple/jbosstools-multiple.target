@@ -94,6 +94,7 @@
       <unit id="com.fasterxml.jackson.datatype.jackson-datatype-guava" version="2.6.2.v20161117-2150"/>
       <unit id="com.fasterxml.jackson.jaxrs.jackson-jaxrs-base" version="2.6.2.v20161117-2150"/>
       <unit id="com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider" version="2.6.2.v20161117-2150"/>
+      <unit id="org.codehaus.jackson.core" version="1.6.0.v20101005-0925"/> <!-- needed by SpringIDE -->
       <unit id="com.github.jnr.constants" version="0.9.1.v20161107-2054"/>
       <unit id="com.github.jnr.enxio" version="0.12.0.v20161107-2054"/>
       <unit id="com.github.jnr.ffi" version="2.0.9.v20161107-2054"/>
