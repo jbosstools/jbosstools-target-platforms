@@ -5,14 +5,14 @@
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <!-- NOTE: As of Oxygen.0.M7, latest milestone -->
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/S20170516192513/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/R20170818183741/"/>
 
       <!-- for these IUs we need multiple versions -->
       <unit id="com.google.guava" version="15.0.0.v201403281430"/> <!-- needed by org.eclipse.recommenders.rcp.feature 2.4.10 -->
       <!-- <unit id="com.google.guava" version="18.0.0.v20161115-1643"/> --> <!-- maybe no longer needed? -->
       <unit id="com.google.guava" version="21.0.0.v20170206-1425"/> <!-- needed by m2e 1.8.1 -->
       <unit id="org.apache.lucene.core" version="3.5.0.v20120725-1805"/> <!-- needed by org.jboss.tools.ws.jaxrs.core -->
-      <unit id="org.apache.lucene.core" version="6.1.0.v20161115-1612"/>
+      <unit id="org.apache.lucene.core" version="6.1.0.v20170814-1820"/>
       <unit id="org.apache.lucene.misc" version="6.1.0.v20161115-1612"/>
       <unit id="org.apache.lucene.queryparser" version="6.1.0.v20161115-1612"/>
 
