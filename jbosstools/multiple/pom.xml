@@ -16,6 +16,13 @@
 		<validate-target-platform.failOnError>true</validate-target-platform.failOnError>
 		<!-- JBIDE-23481, JBDS-4440 include 3rd party sources in the target platforms-->
 		<mirror-target-to-repo.includeSources>true</mirror-target-to-repo.includeSources>
+		<!-- JBIDE-25228, JBIDE-25220 explicitly set options for mirroring -->
+		<mirror-target-to-repo.followStrictOnly>true</mirror-target-to-repo.followStrictOnly>
+		<mirror-target-to-repo.followOnlyFilteredRequirements>false</mirror-target-to-repo.followOnlyFilteredRequirements>
+		<mirror-target-to-repo.includeNonGreedy>true</mirror-target-to-repo.includeNonGreedy>
+		<mirror-target-to-repo.includeFeature>true</mirror-target-to-repo.includeFeature>
+		<mirror-target-to-repo.includeOptional>true</mirror-target-to-repo.includeOptional>
+		<mirror-target-to-repo.latestVersionOnly>false</mirror-target-to-repo.latestVersionOnly>
 	</properties>
 
 	<build>
