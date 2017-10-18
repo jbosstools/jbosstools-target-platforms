@@ -553,6 +553,14 @@
       <unit id="org.eclipse.reddeer.ui.feature.feature.group" version="2.0.0.Final"/>
     </location>
 
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/lsp4e/0.4.0.201710071337/"/>
+      <unit id="org.eclipse.lsp4e" version="0.4.0.201710071337"/>
+      <unit id="org.eclipse.lsp4j" version="0.3.0.v20170913-0636"/>
+      <unit id="org.eclipse.lsp4j.jsonrpc" version="0.3.0.v20170913-0636"/>
+      <unit id="org.eclipse.xtext.xbase.lib" version="2.13.0.v20170919-1045"/>
+    </location>
+
     <!-- TestNG -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/testng/6.11.0.201703011520/"/>
