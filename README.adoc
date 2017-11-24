@@ -17,14 +17,14 @@ and then clone your fork:
     $ cd jbosstools-target-platforms
     $ git remote add upstream git://github.com/jbosstools/jbosstools-target-platforms.git
 
-At any time, you can pull changes from the upstream and merge them onto your 4.71.x branch:
+At any time, you can pull changes from the upstream and merge them onto your 4.72.x branch:
 
-    $ git checkout 4.71.x               # switches to the '4.71.x' branch
-    $ git pull upstream 4.71.x          # fetches all 'upstream' changes and merges 'upstream/4.71.x' onto your '4.71.x' branch
+    $ git checkout 4.72.x               # switches to the '4.72.x' branch
+    $ git pull upstream 4.72.x          # fetches all 'upstream' changes and merges 'upstream/4.72.x' onto your '4.72.x' branch
     $ git push origin                  # pushes all the updates to your fork, which should be in-sync with 'upstream'
 
-The general idea is to keep your '4.71.x' branch in-sync with the
-'upstream/4.71.x'.
+The general idea is to keep your '4.72.x' branch in-sync with the
+'upstream/4.72.x'.
 
 
 === Build target platform(s) locally
@@ -59,11 +59,11 @@ tests) runs successfully, commit your changes on your topic branch
 (with good comments). Then it's time to check for any recent changes
 that were made in the official repository:
 
-    $ git checkout 4.71.x               # switches to the '4.71.x' branch
-    $ git pull upstream 4.71.x          # fetches all 'upstream' changes and merges 'upstream/4.71.x' onto your '4.71.x' branch
+    $ git checkout 4.72.x               # switches to the '4.72.x' branch
+    $ git pull upstream 4.72.x          # fetches all 'upstream' changes and merges 'upstream/4.72.x' onto your '4.72.x' branch
     $ git checkout jbide-1234           # switches to your topic branch
-    $ git rebase 4.71.x                 # reapplies your changes on top of the latest in 4.71.x
-                                        (i.e., the latest from 4.71.x will be the new base for your changes)
+    $ git rebase 4.72.x                 # reapplies your changes on top of the latest in 4.72.x
+                                        (i.e., the latest from 4.72.x will be the new base for your changes)
 
 If the pull grabbed a lot of changes, you should rerun your build with
 tests enabled to make sure your changes are still good.
