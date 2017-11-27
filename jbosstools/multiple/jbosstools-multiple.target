@@ -430,6 +430,7 @@
       <!-- workaround for https://bugs.eclipse.org/bugs/show_bug.cgi?id=527813 - eventually we shouldn't need these -->
       <unit id="org.eclipse.jetty.http" version="9.4.5.v20170502"/>
       <unit id="org.eclipse.jetty.io" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.security" version="9.4.5.v20170502"/>
       <unit id="org.eclipse.jetty.util" version="9.4.5.v20170502"/>
     </location>
 
