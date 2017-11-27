@@ -432,6 +432,7 @@
       <unit id="org.eclipse.jetty.io" version="9.4.5.v20170502"/>
       <unit id="org.eclipse.jetty.security" version="9.4.5.v20170502"/>
       <unit id="org.eclipse.jetty.server" version="9.4.5.v20170502"/>
+      <unit id="org.eclipse.jetty.servlet" version="9.4.5.v20170502"/>
       <unit id="org.eclipse.jetty.util" version="9.4.5.v20170502"/>
     </location>
 
