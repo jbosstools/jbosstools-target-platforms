@@ -361,8 +361,6 @@
       <unit id="org.eclipse.launchbar.feature.group" version="2.2.0.201711162100"/>
 
       <!-- mylyn + git stuff -->
-      <unit id="org.eclipse.egit.mylyn.feature.group" version="4.9.1.201712030800-r"/>
-      <unit id="org.eclipse.mylyn.github.feature.feature.group" version="4.9.0.201710071750-r"/>
       <unit id="org.eclipse.mylyn.bugzilla_feature.feature.group" version="3.23.1.v20170623-0008"/>
       <unit id="org.eclipse.mylyn.builds.feature.group" version="1.15.0.v20170411-2141"/>
       <unit id="org.eclipse.mylyn.commons.feature.group" version="3.23.0.v20170503-0014"/>
@@ -429,9 +427,11 @@
     <!-- egit -->
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/egit/4.9.2.201712150930-r/"/>
+      <unit id="org.eclipse.egit.mylyn.feature.group" version="4.9.2.201712150930-r"/>
       <unit id="org.eclipse.egit.feature.group" version="4.9.2.201712150930-r"/>
       <unit id="org.eclipse.egit.ui.smartimport" version="4.9.2.201712150930-r"/>
       <unit id="org.eclipse.jgit.feature.group" version="4.9.2.201712150930-r"/>
+      <unit id="org.eclipse.mylyn.github.feature.feature.group" version="4.9.0.201710071750-r"/>
     </location>
 
 
