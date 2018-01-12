@@ -156,8 +156,8 @@
     <!-- m2e family, not included in SimRel site; see also Central TP for more -->
     <!-- NOTE: As of Oxygen.0.M5, not yet updated -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/1.3.0-2016-10-26_18-05-00-B50/"/>
-      <unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.3.0.201610261805"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/1.4.0-2018-01-12_16-25-02-H6/"/>
+      <unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.4.0.201801121617"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2e-buildhelper/0.15.0.201405280027/"/>
