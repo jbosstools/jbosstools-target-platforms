@@ -9,9 +9,9 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<tychoVersion>1.0.0</tychoVersion>
+		<tychoVersion>1.1.0</tychoVersion>
 		<tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
-		<jbossTychoPluginsVersion>1.0.1-SNAPSHOT</jbossTychoPluginsVersion>
+		<jbossTychoPluginsVersion>1.1.0-SNAPSHOT</jbossTychoPluginsVersion>
 		<!-- if https://issues.jboss.org/browse/JBIDE-22248 comes back, use <jbossNexus>origin-repository.jboss.org</jbossNexus> -->
 		<jbossNexus>origin-repository.jboss.org</jbossNexus>
 		<!-- JBIDE-21120 when deploying a non-SNAPSHOT, override these values in Jenkins or via commandline using values in distributionManagement below -->
