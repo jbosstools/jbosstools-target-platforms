@@ -193,7 +193,7 @@
 
     <!-- SimRel -->
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/oxygen/201712131135-Oxygen.2.RC4/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/oxygen/201802211500-Oxygen.3.RC2/"/>
 
       <!-- p2.discovery -->
       <unit id="org.eclipse.equinox.p2.discovery" version="1.0.400.v20160504-1450"/>
@@ -236,18 +236,18 @@
 
       <!-- Platform: CVS, JDT, RCP, PDE, Equinox, Help -->
       <unit id="com.ibm.icu.base" version="58.2.0.v20170418-1837"/>
-      <unit id="org.eclipse.cvs.feature.group" version="1.4.402.v20171130-0510"/>
+      <unit id="org.eclipse.cvs.feature.group" version="1.4.403.v20180215-0545"/>
       <unit id="org.eclipse.equinox.executable.feature.group" version="3.7.2.v20171108-1834"/>
       <unit id="org.eclipse.equinox.p2.discovery.feature.feature.group" version="1.1.1.v20170906-1259"/>
       <unit id="org.eclipse.equinox.p2.user.ui.feature.group" version="2.3.2.v20171108-1343"/>
       <unit id="org.eclipse.equinox.http.registry" version="1.1.400.v20150715-1528"/>
-      <unit id="org.eclipse.equinox.server.core.feature.group" version="1.5.2.v20171108-1350"/>
+      <unit id="org.eclipse.equinox.server.core.feature.group" version="1.5.3.v20180210-1608"/>
       <unit id="org.eclipse.equinox.server.jetty.feature.group" version="1.4.2.v20171108-1350"/>
-      <unit id="org.eclipse.help.feature.group" version="2.2.102.v20171130-0510"/>
-      <unit id="org.eclipse.jdt.feature.group" version="3.13.2.v20171130-0906"/>
-      <unit id="org.eclipse.pde.feature.group" version="3.13.2.v20171130-0510"/>
-      <unit id="org.eclipse.platform.feature.group" version="4.7.2.v20171130-0510"/>
-      <unit id="org.eclipse.rcp.feature.group" version="4.7.2.v20171130-0510"/>
+      <unit id="org.eclipse.help.feature.group" version="2.2.103.v20180215-0545"/>
+      <unit id="org.eclipse.jdt.feature.group" version="3.13.3.v20180215-0725"/>
+      <unit id="org.eclipse.pde.feature.group" version="3.13.3.v20180215-0545"/>
+      <unit id="org.eclipse.platform.feature.group" version="4.7.3.v20180215-0545"/>
+      <unit id="org.eclipse.rcp.feature.group" version="4.7.3.v20180215-0545"/>
 
       <!-- Recommenders for Java (and deps) -->
       <unit id="com.google.inject" version="3.0.0.v201312141243"/>
@@ -258,17 +258,17 @@
       <unit id="org.apache.commons.pool" version="1.6.0.v201204271246"/>
       <unit id="org.apache.solr.client.solrj" version="3.5.0.v20150506-0844"/>
       <unit id="org.eclipse.aether.maven" version="3.1.0.v20140706-2237"/>
-      <unit id="org.eclipse.recommenders.rcp.feature.feature.group" version="2.5.0.v20171201-1623"/>
-      <unit id="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group" version="2.5.0.v20171201-1623"/>
+      <unit id="org.eclipse.recommenders.rcp.feature.feature.group" version="2.5.1.v20180130-0943"/>
+      <unit id="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group" version="2.5.1.v20180124-1055"/>
 
       <!-- needed for JBoss Central -->
       <unit id="org.eclipse.compare" version="3.7.101.v20170724-1603"/>
       <unit id="org.eclipse.core.filesystem" version="1.7.0.v20170406-1337"/>
       <unit id="org.eclipse.core.resources" version="3.12.0.v20170417-1558"/>
       <unit id="org.eclipse.core.runtime" version="3.13.0.v20170207-1030"/>
-      <unit id="org.eclipse.epp.logging.aeri.feature.feature.group" version="2.0.6.v20170906-1226"/>
+      <unit id="org.eclipse.epp.logging.aeri.feature.feature.group" version="2.0.7.v20170906-1327"/>
       <unit id="org.eclipse.jface" version="3.13.2.v20171022-1656"/>
-      <unit id="org.eclipse.jface.text" version="3.12.1.v20171114-1359"/>
+      <unit id="org.eclipse.jface.text" version="3.12.2.v20180112-1341"/>
       <unit id="org.eclipse.team.core" version="3.8.100.v20170516-0820"/>
       <unit id="org.eclipse.team.ui" version="3.8.1.v20170515-1133"/>
       <unit id="org.eclipse.ui" version="3.109.0.v20170411-1742"/>
@@ -294,7 +294,7 @@
       <unit id="org.eclipse.sapphire.ui.swt.xml.editor.feature.group" version="9.1.0.201609301330"/>
 
       <!-- JBIDE-17686 Required by rse.terminals, but not in the new RSE 4.0 M7 site -->
-      <unit id="org.eclipse.cdt.native.feature.group" version="9.4.0.201712051550"/>
+      <unit id="org.eclipse.cdt.native.feature.group" version="9.4.3.201802170900"/>
       <unit id="org.eclipse.core.expressions" version="3.6.0.v20170207-1037"/>
       <unit id="org.eclipse.rse.connectorservice.ssh" version="2.1.300.201505220524"/>
       <unit id="org.eclipse.rse.core" version="3.3.100.201603151753"/>
@@ -342,14 +342,14 @@
       <unit id="org.jsoup" version="1.7.2.v201411291515"/>
 
       <!-- Buildship -->
-      <unit id="org.eclipse.buildship.feature.group" version="2.1.2.v20170807-1324"/>
-      <unit id="com.gradleware.tooling.model" version="0.19.3.v20170801075239"/>
-      <unit id="com.gradleware.tooling.client" version="0.19.3.v20170801075239"/>
-      <unit id="com.gradleware.tooling.utils" version="0.19.3.v20170801075239"/>
-      <unit id="org.gradle.toolingapi" version="3.5.0.v20170801075239"/>
+      <unit id="org.eclipse.buildship.feature.group" version="2.2.1.v20180125-1441"/>
+      <unit id="com.gradleware.tooling.model" version="0.19.4.v20171108133209"/>
+      <unit id="com.gradleware.tooling.client" version="0.19.4.v20171108133209"/>
+      <unit id="com.gradleware.tooling.utils" version="0.19.4.v20171108133209"/>
+      <unit id="org.gradle.toolingapi" version="4.3.0.v20171108133209"/>
 
-      <unit id="org.eclipse.remote.core" version="3.0.0.201706052031"/>
-      <unit id="org.eclipse.remote.ui" version="2.1.0.201706052031"/>
+      <unit id="org.eclipse.remote.core" version="4.0.0.201802151600"/>
+      <unit id="org.eclipse.remote.ui" version="2.1.0.201802151600"/>
 
       <!-- m2e -->
       <unit id="org.eclipse.m2e.wtp.feature.feature.group" version="1.3.3.20170823-1905"/>
@@ -472,27 +472,27 @@
     </location>
 
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" type="InstallableUnit" includeSource="true"> <!-- includeConfigurePhase="false" ? -->
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools/S-3.9.2RC4-20171201000141/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools/M-3.9.3-20180223162338/"/>
       <unit id="org.eclipse.jpt.common.eclipselink.feature.feature.group" version="1.3.200.v201603180253"/>
       <unit id="org.eclipse.jpt.common.feature.feature.group" version="1.5.100.v201705180510"/>
       <unit id="org.eclipse.jpt.jaxb.feature.feature.group" version="1.5.100.v201603180253"/>
       <unit id="org.eclipse.jpt.jpa.eclipselink.feature.feature.group" version="3.4.100.v201603180253"/>
       <unit id="org.eclipse.jpt.jpa.feature.feature.group" version="3.5.100.v201705180510"/>
-      <unit id="org.eclipse.jsf.feature.feature.group" version="3.10.0.v201704192341"/>
+      <unit id="org.eclipse.jsf.feature.feature.group" version="3.10.0.v201802231403"/>
       <unit id="org.eclipse.jst.common.fproj.enablement.jdt.feature.group" version="3.9.1.v201710021614"/>
       <unit id="org.eclipse.jst.enterprise_core.feature.feature.group" version="3.9.0.v201711022131"/>
-      <unit id="org.eclipse.jst.enterprise_ui.feature.feature.group" version="3.9.2.v201711302141"/>
+      <unit id="org.eclipse.jst.enterprise_ui.feature.feature.group" version="3.9.2.v201802121827"/>
       <unit id="org.eclipse.jst.enterprise_userdoc.feature.feature.group" version="3.6.0.v201612121628"/>
-      <unit id="org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature.feature.group" version="2.6.0.v201410101748"/>
+      <unit id="org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature.feature.group" version="2.6.1.v201802231403"/>
       <unit id="org.eclipse.jst.server_adapters.ext.feature.feature.group" version="3.3.601.v201711301708"/>
       <unit id="org.eclipse.jst.server_adapters.feature.feature.group" version="3.2.400.v201711301708"/>
       <unit id="org.eclipse.jst.server_core.feature.feature.group" version="3.4.300.v201606081655"/>
       <unit id="org.eclipse.jst.server_ui.feature.feature.group" version="3.4.300.v201709251835"/>
       <unit id="org.eclipse.jst.server_userdoc.feature.feature.group" version="3.3.300.v201503102136"/>
-      <unit id="org.eclipse.jst.web_core.feature.feature.group" version="3.9.1.v201711302141"/>
-      <unit id="org.eclipse.jst.web_ui.feature.feature.group" version="3.9.0.v201711302141"/>
-      <unit id="org.eclipse.jst.web_userdoc.feature.feature.group" version="3.6.0.v201405070205"/>
-      <unit id="org.eclipse.jst.webpageeditor.feature.feature.group" version="2.9.0.v201704192341"/>
+      <unit id="org.eclipse.jst.web_core.feature.feature.group" version="3.9.1.v201802152012"/>
+      <unit id="org.eclipse.jst.web_ui.feature.feature.group" version="3.9.0.v201802152012"/>
+      <unit id="org.eclipse.jst.web_userdoc.feature.feature.group" version="3.6.0.v201712131442"/>
+      <unit id="org.eclipse.jst.webpageeditor.feature.feature.group" version="2.9.0.v201802231403"/>
       <unit id="org.eclipse.jst.ws.axis2tools.feature.feature.group" version="1.1.301.v201410160332"/>
       <unit id="org.eclipse.jst.ws.cxf.feature.feature.group" version="1.1.300.v201701262158"/>
       <unit id="org.eclipse.jst.ws.jaxws.dom.feature.feature.group" version="1.0.302.v201504272154"/>
@@ -502,24 +502,24 @@
       <unit id="org.eclipse.wst.common_core.feature.feature.group" version="3.9.1.v201707201954"/>
       <unit id="org.eclipse.wst.common_ui.feature.feature.group" version="3.9.1.v201707201954"/>
       <unit id="org.eclipse.wst.jsdt.chromium.debug.feature.feature.group" version="0.6.0.v201705091354"/>
-      <unit id="org.eclipse.wst.jsdt.feature.feature.group" version="2.1.0.v201706011953"/>
-      <unit id="org.eclipse.wst.jsdt.nodejs.feature.feature.group" version="1.1.0.v201705091354"/>
-      <unit id="org.eclipse.wst.json_core.feature.feature.group" version="1.1.1.v201707252002"/>
-      <unit id="org.eclipse.wst.json_ui.feature.feature.group" version="1.1.1.v201707252002"/>
+      <unit id="org.eclipse.wst.jsdt.feature.feature.group" version="2.1.1.v201711211802"/>
+      <unit id="org.eclipse.wst.jsdt.nodejs.feature.feature.group" version="1.1.0.v201711211802"/>
+      <unit id="org.eclipse.wst.json_core.feature.feature.group" version="1.1.2.v201711071522"/>
+      <unit id="org.eclipse.wst.json_ui.feature.feature.group" version="1.1.2.v201711071522"/>
       <unit id="org.eclipse.wst.server_adapters.feature.feature.group" version="3.2.601.v201711302104"/>
       <unit id="org.eclipse.wst.server_core.feature.feature.group" version="3.3.700.v201705172051"/>
       <unit id="org.eclipse.wst.server_ui.feature.feature.group" version="3.3.700.v201711152154"/>
       <unit id="org.eclipse.wst.server_userdoc.feature.feature.group" version="3.3.300.v201405011426"/>
-      <unit id="org.eclipse.wst.web_core.feature.feature.group" version="3.9.1.v201707252002"/>
-      <unit id="org.eclipse.wst.web_ui.feature.feature.group" version="3.9.1.v201711152154"/>
-      <unit id="org.eclipse.wst.web_userdoc.feature.feature.group" version="3.9.1.v201707252002"/>
+      <unit id="org.eclipse.wst.web_core.feature.feature.group" version="3.9.2.v201711211802"/>
+      <unit id="org.eclipse.wst.web_ui.feature.feature.group" version="3.9.2.v201801171858"/>
+      <unit id="org.eclipse.wst.web_userdoc.feature.feature.group" version="3.9.2.v201710252304"/>
       <unit id="org.eclipse.wst.ws_core.feature.feature.group" version="3.7.200.v201710302117"/>
-      <unit id="org.eclipse.wst.ws_ui.feature.feature.group" version="3.8.1.v201710302117"/>
+      <unit id="org.eclipse.wst.ws_ui.feature.feature.group" version="3.8.1.v201801171858"/>
       <unit id="org.eclipse.wst.ws_userdoc.feature.feature.group" version="3.1.400.v201405061938"/>
       <unit id="org.eclipse.wst.xml.xpath2.processor.feature.feature.group" version="2.0.301.v201409111854"/>
-      <unit id="org.eclipse.wst.xml_core.feature.feature.group" version="3.9.1.v201707042225"/>
-      <unit id="org.eclipse.wst.xml_ui.feature.feature.group" version="3.9.1.v201707252002"/>
-      <unit id="org.eclipse.wst.xml_userdoc.feature.feature.group" version="3.9.1.v201707252002"/>
+      <unit id="org.eclipse.wst.xml_core.feature.feature.group" version="3.9.2.v201711080222"/>
+      <unit id="org.eclipse.wst.xml_ui.feature.feature.group" version="3.9.2.v201801171858"/>
+      <unit id="org.eclipse.wst.xml_userdoc.feature.feature.group" version="3.9.2.v201711071522"/>
       <unit id="org.eclipse.wst.xsl.feature.feature.group" version="1.3.401.v201509231858"/>
     </location>
 
