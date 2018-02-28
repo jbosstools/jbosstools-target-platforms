@@ -5,7 +5,7 @@
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <!-- NOTE: As of Oxygen.0.M7, latest milestone -->
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/R20170919201930/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/M20180228194429-Oxygen.3.RC3/"/>
 
       <!-- for these IUs we need multiple versions -->
       <unit id="com.google.guava" version="15.0.0.v201403281430"/> <!-- needed by org.eclipse.recommenders.rcp.feature 2.4.10 -->
@@ -13,17 +13,17 @@
       <unit id="com.google.guava" version="21.0.0.v20170206-1425"/> <!-- needed by m2e 1.8.1 -->
       <unit id="org.apache.lucene.core" version="3.5.0.v20120725-1805"/> <!-- needed by org.jboss.tools.ws.jaxrs.core -->
       <unit id="org.apache.lucene.core" version="6.1.0.v20170814-1820"/>
-      <unit id="org.apache.lucene.misc" version="6.1.0.v20161115-1612"/>
+      <unit id="org.apache.lucene.misc" version="6.1.0.v20180206-1518"/>
       <unit id="org.apache.lucene.queryparser" version="6.1.0.v20161115-1612"/>
 
       <!-- aerogear, browsersim, livereload require 
            org.apache.aries.spifly.dynamic.bundle 1.0.2, which requires
            org.objectweb.asm.commons [5.0.0,6.0.0)' -->
-      <unit id="org.objectweb.asm.commons" version="5.2.0.v20170126-0011"/>
-      <unit id="org.objectweb.asm" version="5.2.0.v20170126-0011"/>
-      <unit id="org.objectweb.asm.analysis" version="5.2.0.v20170126-0011"/>
-      <unit id="org.objectweb.asm.tree" version="5.2.0.v20170126-0011"/>
-      <unit id="org.objectweb.asm.util" version="5.2.0.v20170126-0011"/>
+      <unit id="org.objectweb.asm.commons" version="5.2.0.v20180228-1718"/>
+      <unit id="org.objectweb.asm" version="5.2.0.v20180228-1718"/>
+      <unit id="org.objectweb.asm.analysis" version="5.2.0.v20180228-1718"/>
+      <unit id="org.objectweb.asm.tree" version="5.2.0.v20180228-1718"/>
+      <unit id="org.objectweb.asm.util" version="5.2.0.v20180228-1718"/>
       <!-- JBIDE-22620 what drags in 5.0.1? -->
 
       <!-- for these IUs we need multiple versions? -->
