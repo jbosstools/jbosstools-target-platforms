@@ -4,14 +4,14 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jboss.tools.targetplatforms</groupId>
 	<artifactId>root</artifactId>
-	<version>4.73.0.Final-SNAPSHOT</version>
+	<version>4.73.0.Final</version>
 	<name>JBoss Tools + Devstudio Target Platform Root</name>
 	<packaging>pom</packaging>
 
 	<properties>
 		<tychoVersion>1.1.0</tychoVersion>
 		<tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
-		<jbossTychoPluginsVersion>1.1.0-SNAPSHOT</jbossTychoPluginsVersion>
+		<jbossTychoPluginsVersion>1.1.0</jbossTychoPluginsVersion>
 		<!-- if https://issues.jboss.org/browse/JBIDE-22248 comes back, use <jbossNexus>origin-repository.jboss.org</jbossNexus> -->
 		<jbossNexus>repository.jboss.org</jbossNexus>
 		<!-- JBIDE-21120 when deploying a non-SNAPSHOT, override these values in Jenkins or via commandline using values in distributionManagement below -->
