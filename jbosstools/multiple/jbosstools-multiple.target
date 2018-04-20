@@ -593,10 +593,10 @@
 
     <!-- Eclipse Docker Tooling (see Orbit section above for dependencies) -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/4.0.0.201804162200/"/>
-      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="4.0.0.201804162200"/>
-      <unit id="org.eclipse.linuxtools.vagrant.feature.feature.group" version="4.0.0.201804162200"/>
-      <unit id="org.eclipse.linuxtools.docker.tests.feature.feature.group" version="4.0.0.201804162200"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/4.0.0.201804201600/"/>
+      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="4.0.0.201804201600"/>
+      <unit id="org.eclipse.linuxtools.vagrant.feature.feature.group" version="4.0.0.201804201600"/>
+      <unit id="org.eclipse.linuxtools.docker.tests.feature.feature.group" version="4.0.0.201804201600"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
