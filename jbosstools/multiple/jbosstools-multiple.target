@@ -593,10 +593,10 @@
 
     <!-- Eclipse Docker Tooling (see Orbit section above for dependencies) -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/4.0.0.201804201600/"/>
-      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="4.0.0.201804201600"/>
-      <unit id="org.eclipse.linuxtools.vagrant.feature.feature.group" version="4.0.0.201804201600"/>
-      <unit id="org.eclipse.linuxtools.docker.tests.feature.feature.group" version="4.0.0.201804201600"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/4.0.0.201804250400/"/>
+      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="4.0.0.201804250400"/>
+      <unit id="org.eclipse.linuxtools.vagrant.feature.feature.group" version="4.0.0.201804250400"/>
+      <unit id="org.eclipse.linuxtools.docker.tests.feature.feature.group" version="4.0.0.201804250400"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
@@ -644,6 +644,12 @@
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/springide/3.8.3.201612191259-RELEASE/"/>
       <unit id="org.dadacoalition.yedit" version="1.0.18.201602092025-RELEASE-SIGNED"/>
       <unit id="org.yaml.snakeyaml" version="1.14.0.v201604211500"/>
+    </location>
+
+    <!-- JBIDE-25979 Apache Camel Language Server -->
+    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/camel-lsp-client/1.0.0.201804251003/"/>
+      <unit id="com.github.cameltooling.lsp.eclipse.client.feature.feature.group" version="1.0.0.201804251003"/>
     </location>
 
   </locations>
