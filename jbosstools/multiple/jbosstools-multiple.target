@@ -441,25 +441,25 @@
 
     <!-- Jetty 9 -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/jetty/9.4.9.v20180320/"/>
-      <unit id="org.eclipse.jetty.client" version="9.4.9.v20180320"/>
-      <unit id="org.eclipse.jetty.continuation" version="9.4.9.v20180320"/>
-      <unit id="org.eclipse.jetty.http" version="9.4.9.v20180320"/>
-      <unit id="org.eclipse.jetty.io" version="9.4.9.v20180320"/>
-      <unit id="org.eclipse.jetty.proxy" version="9.4.9.v20180320"/>
-      <unit id="org.eclipse.jetty.rewrite" version="9.4.9.v20180320"/>
-      <unit id="org.eclipse.jetty.security" version="9.4.9.v20180320"/>
-      <unit id="org.eclipse.jetty.server" version="9.4.9.v20180320"/>
-      <unit id="org.eclipse.jetty.servlet" version="9.4.9.v20180320"/>
-      <unit id="org.eclipse.jetty.servlets" version="9.4.9.v20180320"/>
-      <unit id="org.eclipse.jetty.util" version="9.4.9.v20180320"/>
-      <unit id="org.eclipse.jetty.webapp" version="9.4.9.v20180320"/>
-      <unit id="org.eclipse.jetty.websocket.api" version="9.4.9.v20180320"/>
-      <unit id="org.eclipse.jetty.websocket.client" version="9.4.9.v20180320"/>
-      <unit id="org.eclipse.jetty.websocket.common" version="9.4.9.v20180320"/>
-      <unit id="org.eclipse.jetty.websocket.server" version="9.4.9.v20180320"/>
-      <unit id="org.eclipse.jetty.websocket.servlet" version="9.4.9.v20180320"/>
-      <unit id="org.eclipse.jetty.xml" version="9.4.9.v20180320"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/jetty/9.4.10.RC1/"/>
+      <unit id="org.eclipse.jetty.client" version="9.4.10.RC1"/>
+      <unit id="org.eclipse.jetty.continuation" version="9.4.10.RC1"/>
+      <unit id="org.eclipse.jetty.http" version="9.4.10.RC1"/>
+      <unit id="org.eclipse.jetty.io" version="9.4.10.RC1"/>
+      <unit id="org.eclipse.jetty.proxy" version="9.4.10.RC1"/>
+      <unit id="org.eclipse.jetty.rewrite" version="9.4.10.RC1"/>
+      <unit id="org.eclipse.jetty.security" version="9.4.10.RC1"/>
+      <unit id="org.eclipse.jetty.server" version="9.4.10.RC1"/>
+      <unit id="org.eclipse.jetty.servlet" version="9.4.10.RC1"/>
+      <unit id="org.eclipse.jetty.servlets" version="9.4.10.RC1"/>
+      <unit id="org.eclipse.jetty.util" version="9.4.10.RC1"/>
+      <unit id="org.eclipse.jetty.webapp" version="9.4.10.RC1"/>
+      <unit id="org.eclipse.jetty.websocket.api" version="9.4.10.RC1"/>
+      <unit id="org.eclipse.jetty.websocket.client" version="9.4.10.RC1"/>
+      <unit id="org.eclipse.jetty.websocket.common" version="9.4.10.RC1"/>
+      <unit id="org.eclipse.jetty.websocket.server" version="9.4.10.RC1"/>
+      <unit id="org.eclipse.jetty.websocket.servlet" version="9.4.10.RC1"/>
+      <unit id="org.eclipse.jetty.xml" version="9.4.10.RC1"/>
     </location>
 
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" type="InstallableUnit" includeSource="true"> <!-- includeConfigurePhase="false" ? -->
@@ -610,19 +610,19 @@
       <unit id="org.hamcrest.library" version="1.3.0.v201505072020"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/reddeer/2.1.0.Final/"/>
-      <unit id="org.eclipse.reddeer.codegen.feature.feature.group" version="2.1.0.Final"/>
-      <unit id="org.eclipse.reddeer.eclipse.feature.feature.group" version="2.1.0.Final"/>
-      <unit id="org.eclipse.reddeer.gef.spy.feature.feature.group" version="2.1.0.Final"/>
-      <unit id="org.eclipse.reddeer.graphiti.feature.feature.group" version="2.1.0.Final"/>
-      <unit id="org.eclipse.reddeer.logparser.feature.feature.group" version="2.1.0.Final"/>
-      <unit id="org.eclipse.reddeer.recorder.feature.feature.group" version="2.1.0.Final"/>
-      <unit id="org.eclipse.reddeer.selenium.feature.feature.group" version="2.1.0.Final"/>
-      <unit id="org.eclipse.reddeer.spy.feature.feature.group" version="2.1.0.Final"/>
-      <unit id="org.eclipse.reddeer.swt.feature.feature.group" version="2.1.0.Final"/>
-      <unit id="org.eclipse.reddeer.tests.feature.feature.group" version="2.1.0.Final"/>
-      <unit id="org.eclipse.reddeer.ui.feature.feature.group" version="2.1.0.Final"/>
-      <unit id="org.eclipse.reddeer.jdt.junit" version="2.1.0.Final"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/reddeer/2.1.1.CI-v20180502-1037/"/>
+      <unit id="org.eclipse.reddeer.codegen.feature.feature.group" version="2.1.1.CI-v20180502-1037"/>
+      <unit id="org.eclipse.reddeer.eclipse.feature.feature.group" version="2.1.1.CI-v20180502-1037"/>
+      <unit id="org.eclipse.reddeer.gef.spy.feature.feature.group" version="2.1.1.CI-v20180502-1037"/>
+      <unit id="org.eclipse.reddeer.graphiti.feature.feature.group" version="2.1.1.CI-v20180502-1037"/>
+      <unit id="org.eclipse.reddeer.logparser.feature.feature.group" version="2.1.1.CI-v20180502-1037"/>
+      <unit id="org.eclipse.reddeer.recorder.feature.feature.group" version="2.1.1.CI-v20180502-1037"/>
+      <unit id="org.eclipse.reddeer.selenium.feature.feature.group" version="2.1.1.CI-v20180502-1037"/>
+      <unit id="org.eclipse.reddeer.spy.feature.feature.group" version="2.1.1.CI-v20180502-1037"/>
+      <unit id="org.eclipse.reddeer.swt.feature.feature.group" version="2.1.1.CI-v20180502-1037"/>
+      <unit id="org.eclipse.reddeer.tests.feature.feature.group" version="2.1.1.CI-v20180502-1037"/>
+      <unit id="org.eclipse.reddeer.ui.feature.feature.group" version="2.1.1.CI-v20180502-1037"/>
+      <unit id="org.eclipse.reddeer.jdt.junit" version="2.1.1.CI-v20180502-1037"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
