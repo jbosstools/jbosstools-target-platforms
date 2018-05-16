@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><?pde version="3.6"?>
-<target includeMode="feature" name="jbosstoolstarget-4.80.0.AM1-SNAPSHOT">
+<target includeMode="feature" name="jbosstoolstarget-4.80.0.AM2-SNAPSHOT">
   <locations>
     <!-- don't forget to increment these files when moving up a version: build.xml, *.target -->
 
@@ -17,14 +17,13 @@
       <unit id="org.apache.lucene.misc" version="7.1.0.v20180220-1923"/>
       <unit id="org.apache.lucene.queryparser" version="6.1.0.v20161115-1612"/> <!-- required by org.eclipse.datatools.sqltools.result, org.eclipse.m2e.wtp.jpa.feature -->
 
-      <!-- aerogear, browsersim, livereload require 
-           org.apache.aries.spifly.dynamic.bundle 1.0.2, which requires
-           org.objectweb.asm.commons [5.0.0,6.0.0)' -->
-      <unit id="org.objectweb.asm.commons" version="5.0.1.v201404251740"/>
-      <unit id="org.objectweb.asm" version="5.0.1.v201404251740"/>
-      <unit id="org.objectweb.asm.analysis" version="5.0.1.v201505121915"/>
-      <unit id="org.objectweb.asm.tree" version="5.0.1.v201404251740"/>
-      <unit id="org.objectweb.asm.util" version="5.0.1.v201404251740"/>
+      <!-- livereload requires org.apache.aries.spifly.dynamic.bundle 1.0.10, which requires
+           org.objectweb.asm.commons [5.0.0,7)' -->
+      <unit id="org.objectweb.asm.commons" version="6.1.1.v20180414-0329"/>
+      <unit id="org.objectweb.asm" version="6.1.1.v20180414-0329"/>
+      <unit id="org.objectweb.asm.analysis" version="6.1.1.v20180414-0329"/>
+      <unit id="org.objectweb.asm.tree" version="6.1.1.v20180414-0329"/>
+      <unit id="org.objectweb.asm.util" version="6.1.1.v20180414-0329"/>
 
       <!-- for these IUs we need multiple versions? -->
       <unit id="javax.wsdl" version="1.6.2.v201012040545"/>
@@ -139,13 +138,13 @@
     </location>
 
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-        <repository location="http://repository.jboss.org/nexus/content/unzip/unzip/org/jboss/tools/locus/jbosstools-locus/1.6.0.Final/jbosstools-locus-1.6.0.Final-updatesite.zip-unzip/"/>
+        <repository location="http://repository.jboss.org/nexus/content/unzip/unzip/org/jboss/tools/locus/jbosstools-locus/1.7.0-SNAPSHOT/jbosstools-locus-1.7.0-SNAPSHOT-updatesite.zip-unzip/"/>
         <!-- Test dependencies -->
         <unit id="org.jboss.tools.locus.mockito" version="1.9.5.v20131024-0922"/>
         <unit id="org.assertj.core" version="2.1.0"/>
         <!-- For Jetty websocket 9.2.13 -->
-        <unit id="org.apache.aries.util" version="1.1.1"/>
-        <unit id="org.apache.aries.spifly.dynamic.bundle" version="1.0.2"/>
+        <unit id="org.apache.aries.util" version="1.1.3"/>
+        <unit id="org.apache.aries.spifly.dynamic.bundle" version="1.0.10"/>
         <!-- For Fuse Tooling -->
         <unit id="org.jboss.tools.locus.jsonschema2pojo.jsonschema2pojo-core" version="0.4.13.v20160122-1745"/>
         <unit id="org.jboss.tools.locus.jaxb-core" version="2.2.7.v20160127-1545"/>
