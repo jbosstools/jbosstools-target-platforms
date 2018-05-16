@@ -291,6 +291,8 @@
       <unit id="org.eclipse.sapphire.ui.feature.group" version="9.1.0.201609301330"/>
       <unit id="org.eclipse.sapphire.ui.swt.gef.feature.group" version="9.1.0.201609301330"/>
       <unit id="org.eclipse.sapphire.ui.swt.xml.editor.feature.group" version="9.1.0.201609301330"/>
+      <!-- Batch requires Sapphire, which requires ASM 5. We could update to 9.1.1 or 10.0.CI but both are released with ASM 5.2 so that's not much better -->
+      <unit id="org.objectweb.asm" version="5.0.1.v201404251740"/>
 
       <!-- Graphiti required by JBoss Fuse Tooling -->
       <unit id="org.eclipse.graphiti.feature.feature.group" version="0.15.0.201803140900"/>
