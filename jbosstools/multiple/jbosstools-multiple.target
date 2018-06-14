@@ -176,10 +176,10 @@
       <unit id="org.sonatype.m2e.mavenarchiver.feature.feature.group" version="0.17.2.201606141937-signed-20160830073346"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2e/1.8.2.20171007-0217/"/>
-      <unit id="org.eclipse.m2e.feature.feature.group" version="1.8.2.20171007-0217"/>
-      <unit id="org.eclipse.m2e.tests.common" version="1.8.2.20171007-0217"/>
-      <unit id="org.eclipse.m2e.importer" version="1.8.2.20171007-0217"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2e/1.8.3.20180227-2137/"/>
+      <unit id="org.eclipse.m2e.feature.feature.group" version="1.8.3.20180227-2137"/>
+      <unit id="org.eclipse.m2e.tests.common" version="1.8.3.20180227-2137"/>
+      <unit id="org.eclipse.m2e.importer" version="1.8.3.20180227-2137"/>
     </location>
     <!-- now in Oxygen.2 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
