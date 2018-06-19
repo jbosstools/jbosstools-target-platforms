@@ -182,7 +182,7 @@
 
     <!-- SimRel -->
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/photon/201806121200-Photon.0.RC3/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/photon/201806191120-Photon.0.RC4a/"/>
 
       <!-- p2.discovery -->
       <unit id="org.eclipse.equinox.p2.discovery" version="1.1.0.v20180222-0922"/>
@@ -328,23 +328,23 @@
       <unit id="org.eclipse.m2e.wtp.jsf.feature.feature.group" version="1.4.0.20180606-2005"/>
 
       <!-- egit -->
-      <unit id="org.eclipse.egit.mylyn.feature.group" version="5.0.0.201806050710-rc3"/>
-      <unit id="org.eclipse.egit.feature.group" version="5.0.0.201806050710-rc3"/>
-      <unit id="org.eclipse.egit.ui.smartimport" version="5.0.0.201806050710-rc3"/>
-      <unit id="org.eclipse.jgit.feature.group" version="5.0.0.201806050710-rc3"/>
-      <unit id="org.eclipse.mylyn.github.feature.feature.group" version="5.0.0.201806050710-rc3"/>
+      <unit id="org.eclipse.egit.mylyn.feature.group" version="5.0.0.201806131550-r"/>
+      <unit id="org.eclipse.egit.feature.group" version="5.0.0.201806131550-r"/>
+      <unit id="org.eclipse.egit.ui.smartimport" version="5.0.0.201806131550-r"/>
+      <unit id="org.eclipse.jgit.feature.group" version="5.0.0.201806131550-r"/>
+      <unit id="org.eclipse.mylyn.github.feature.feature.group" version="5.0.0.201806131550-r"/>
 
       <!-- launchbar -->
       <unit id="org.eclipse.launchbar.feature.group" version="2.2.0.201805041956"/>
 
       <!-- JBIDE-17686 Required by rse.terminals, but not in the new RSE 4.0 M7 site -->
-      <unit id="org.eclipse.cdt.native.feature.group" version="9.5.0.201806111759"/>
+      <unit id="org.eclipse.cdt.native.feature.group" version="9.5.0.201806131938"/>
       <!-- <unit id="org.eclipse.core.expressions" version="3.6.100.v20171130-1004"/> -->
 
       <!-- mylyn + git stuff -->
       <unit id="org.eclipse.mylyn.bugzilla_feature.feature.group" version="3.24.0.v20180221-1812"/>
       <unit id="org.eclipse.mylyn.builds.feature.group" version="1.16.0.v20170629-2231"/>
-      <unit id="org.eclipse.mylyn.commons.feature.group" version="3.24.0.v20170629-1728"/>
+      <unit id="org.eclipse.mylyn.commons.feature.group" version="3.24.0.v20180613-1658"/>
       <unit id="org.eclipse.mylyn.commons.identity.feature.group" version="1.16.0.v20170629-1728"/>
       <unit id="org.eclipse.mylyn.commons.net" version="3.24.0.v20170629-1728"/>
       <unit id="org.eclipse.mylyn.commons.notifications.feature.group" version="1.16.0.v20170629-1728"/>
