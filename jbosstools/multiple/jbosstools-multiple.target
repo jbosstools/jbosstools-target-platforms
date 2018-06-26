@@ -7,9 +7,9 @@
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/R20180606145124/"/>
 
       <!-- for these IUs we need multiple versions -->
-      <unit id="com.google.guava" version="15.0.0.v201403281430"/> <!-- needed by org.eclipse.recommenders.injection 2.5.2.v20180401-1226 -->
+      <unit id="com.google.guava" version="15.0.0.v201403281430"/> <!-- needed by org.eclipse.recommenders.injection 2.5.3.v20180609-1554 -->
       <unit id="com.google.guava" version="21.0.0.v20170206-1425"/> <!-- needed by m2e 1.8.1 -->
-      <unit id="org.apache.lucene.core" version="3.5.0.v20120725-1805"/> <!-- org.eclipse.recommenders.models 2.5.2.v201804 requires org.apache.lucene.core 3.5 -->
+      <unit id="org.apache.lucene.core" version="3.5.0.v20120725-1805"/> <!-- org.eclipse.recommenders.models 2.5.3.v20180609-1554 requires org.apache.lucene.core 3.5 -->
       <unit id="org.apache.lucene.core" version="6.1.0.v20170814-1820"/> <!-- required by org.eclipse.epp.logging.aeri.feature 2.0.7.v20170906-1327 -->
       <unit id="org.apache.lucene.core" version="7.1.0.v20171214-1510"/>
       <unit id="org.apache.lucene.analyzers-common" version="6.1.0.v20161115-1612"/>
@@ -30,7 +30,6 @@
       <unit id="javax.xml.bind" version="2.2.0.v201105210648"/>
       <unit id="javax.xml.soap" version="1.2.0.v201005080501"/>
 
-      <!-- 1.0+ needed by livereload: but why need both versions? -->
       <!-- qos.logback 1.1.2 requires org.slf4j.spi [1.7.10,1.8.0) -->
       <unit id="ch.qos.logback.classic" version="1.1.2.v20171220-1825"/> 
       <unit id="ch.qos.logback.core" version="1.1.2.v20160208-0839"/>
@@ -44,13 +43,13 @@
       <unit id="javax.transaction" version="1.1.1.v201105210645"/>
       <unit id="net.sourceforge.lpg.lpgjavaruntime" version="1.1.0.v201004271650"/>
       <unit id="org.apache.axis" version="1.4.0.v201411182030"/>
-      <unit id="org.apache.commons.codec" version="1.10.0.v20180409-1845"/>
+      <!-- <unit id="org.apache.commons.codec" version="1.10.0.v20180409-1845"/> -->
       <unit id="org.apache.commons.discovery" version="0.2.0.v201004190315"/>
       <unit id="org.apache.commons.httpclient" version="3.1.0.v201012070820"/>
       <unit id="org.apache.commons.httpclient" version="3.1.0.v201012070820"/>
       <unit id="org.apache.commons.io" version="2.2.0.v201405211200"/>
       <unit id="org.apache.commons.lang" version="2.6.0.v201404270220"/>
-      <unit id="org.apache.commons.logging" version="1.2.0.v20180409-1502"/>
+      <!-- <unit id="org.apache.commons.logging" version="1.2.0.v20180409-1502"/> -->
       <unit id="org.apache.oro" version="2.0.8.v201005080400"/>
       <unit id="org.apache.wsil4j" version="1.0.0.v20180522-1857"/>
       <unit id="org.jdom" version="1.1.1.v201101151400"/>
