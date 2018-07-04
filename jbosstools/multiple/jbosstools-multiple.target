@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><?pde version="3.6"?>
-<target includeMode="feature" name="jbosstoolstarget-4.80.0.Final">
+<target includeMode="feature" name="jbosstoolstarget-4.80.1.Final">
   <locations>
     <!-- don't forget to increment these files when moving up a version: build.xml, *.target -->
 
@@ -156,7 +156,13 @@
         <unit id="org.jboss.tools.locus.jaxb-xjc" version="2.2.7.v20160125-1950"/>
     </location>
 
-    <!-- m2e family, not included in SimRel site; see also Central TP for more -->
+    <!-- m2e family, not included in SimRel site (or newer versions); see also simrel site below, and Central TP for more -->
+    <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2e/1.9.1_patch_536402-addjansiLib-github/"/>
+      <unit id="org.eclipse.m2e.feature.feature.group" version="1.9.1.20180704-1406"/>
+      <unit id="org.eclipse.m2e.tests.common" version="1.9.1.20180704-1406"/>
+      <unit id="org.eclipse.m2e.importer" version="1.9.1.20180704-1406"/>
+    </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/1.5.0-2018-04-06_03-47-50-H10/"/>
       <unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.5.0.201804060341"/>
@@ -314,11 +320,6 @@
 
       <unit id="org.eclipse.remote.core" version="4.0.0.201803121903"/>
       <unit id="org.eclipse.remote.ui" version="2.1.0.201803121903"/>
-
-      <!-- m2e -->
-      <unit id="org.eclipse.m2e.feature.feature.group" version="1.9.0.20180606-2036"/>
-      <unit id="org.eclipse.m2e.tests.common" version="1.9.0.20180606-2036"/>
-      <unit id="org.eclipse.m2e.importer" version="1.9.0.20180606-2036"/>
 
       <!-- m2e.wtp -->
       <unit id="org.eclipse.m2e.wtp.feature.feature.group" version="1.4.0.20180606-2005"/>
