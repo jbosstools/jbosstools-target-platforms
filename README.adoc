@@ -17,14 +17,14 @@ and then clone your fork:
     $ cd jbosstools-target-platforms
     $ git remote add upstream git://github.com/jbosstools/jbosstools-target-platforms.git
 
-At any time, you can pull changes from the upstream and merge them onto your 4.80.x branch:
+At any time, you can pull changes from the upstream and merge them onto your master branch:
 
-    $ git checkout 4.80.x               # switches to the '4.80.x' branch
-    $ git pull upstream 4.80.x          # fetches all 'upstream' changes and merges 'upstream/4.80.x' onto your '4.80.x' branch
+    $ git checkout master               # switches to the 'master' branch
+    $ git pull upstream master          # fetches all 'upstream' changes and merges 'upstream/master' onto your 'master' branch
     $ git push origin                  # pushes all the updates to your fork, which should be in-sync with 'upstream'
 
-The general idea is to keep your '4.80.x' branch in-sync with the
-'upstream/4.80.x'.
+The general idea is to keep your 'master' branch in-sync with the
+'upstream/master'.
 
 
 === Build target platform(s) locally
@@ -59,11 +59,11 @@ tests) runs successfully, commit your changes on your topic branch
 (with good comments). Then it's time to check for any recent changes
 that were made in the official repository:
 
-    $ git checkout 4.80.x               # switches to the '4.80.x' branch
-    $ git pull upstream 4.80.x          # fetches all 'upstream' changes and merges 'upstream/4.80.x' onto your '4.80.x' branch
+    $ git checkout master               # switches to the 'master' branch
+    $ git pull upstream master          # fetches all 'upstream' changes and merges 'upstream/master' onto your 'master' branch
     $ git checkout jbide-1234           # switches to your topic branch
-    $ git rebase 4.80.x                 # reapplies your changes on top of the latest in 4.80.x
-                                        (i.e., the latest from 4.80.x will be the new base for your changes)
+    $ git rebase master                 # reapplies your changes on top of the latest in master
+                                        (i.e., the latest from master will be the new base for your changes)
 
 If the pull grabbed a lot of changes, you should rerun your build with
 tests enabled to make sure your changes are still good.
@@ -93,7 +93,7 @@ Here's how that works.
 
 (This could be done by a sed script.)
 
-* Run https://github.com/jbosstools/jbosstools-build-ci/blob/jbosstools-4.4.x/util/verifyTarget.sh[verifyTarget.sh] to also update the versions of IUs, not just the URLs, in jbosstools/ folder and verify there are no duplicates / conflicts. This could take up to an hour depending on your network speed.
+* Run https://github.com/jbosstools/jbosstools-build-ci/blob/master/util/verifyTarget.sh[verifyTarget.sh] to also update the versions of IUs, not just the URLs, in jbosstools/ folder and verify there are no duplicates / conflicts. This could take up to an hour depending on your network speed.
 
 (Both runs can be done in parallel if you stagger them about 5 mins apart, but COULD result in maven errors, so just run it again if that happens.)
 
