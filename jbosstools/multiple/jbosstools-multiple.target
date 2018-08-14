@@ -171,8 +171,8 @@
       <unit id="org.eclipse.m2e.importer" version="1.9.1.20180704-1406"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/1.5.0-2018-04-06_03-47-50-H10/"/>
-      <unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.5.0.201804060341"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/1.5.0-2018-08-14_20-24-39-H12/"/>
+      <unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.5.0.201808142018"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2e-buildhelper/0.15.0.201405280027/"/>
@@ -344,29 +344,37 @@
       <!-- launchbar -->
       <unit id="org.eclipse.launchbar.feature.group" version="2.2.1.201807231911"/>
 
+      <!-- mylyn docs / extras -->
+      <unit id="org.eclipse.mylyn.wikitext_feature.feature.group" version="3.0.25.201806201740"/>
+
+    </location>
+
+    <!-- pull newer mylyn stuff than what's in simrel, so we have the same version as in Nodeclipse. This lets the install test job pass in 
+    https://dev-platform-jenkins.rhev-ci-vms.eng.rdu2.redhat.com/view/Devstudio/view/devstudio_master/job/jbosstools-install-p2director.install-tests.matrix_master/ -->
+    <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/mylyn/3.24.1.v20180619-2131/"/>
       <!-- mylyn + git stuff -->
-      <unit id="org.eclipse.mylyn.bugzilla_feature.feature.group" version="3.24.0.v20180221-1812"/>
-      <unit id="org.eclipse.mylyn.builds.feature.group" version="1.16.0.v20170629-2231"/>
-      <unit id="org.eclipse.mylyn.commons.feature.group" version="3.24.0.v20180613-1658"/>
-      <unit id="org.eclipse.mylyn.commons.identity.feature.group" version="1.16.0.v20170629-1728"/>
-      <unit id="org.eclipse.mylyn.commons.net" version="3.24.0.v20170629-1728"/>
-      <unit id="org.eclipse.mylyn.commons.notifications.feature.group" version="1.16.0.v20170629-1728"/>
-      <unit id="org.eclipse.mylyn.commons.repositories.feature.group" version="1.16.0.v20170629-1728"/>
-      <unit id="org.eclipse.mylyn.commons.repositories.http.feature.group" version="1.16.0.v20170629-1728"/>
-      <unit id="org.eclipse.mylyn.commons.xmlrpc" version="3.24.0.v20170629-1728"/>
-      <unit id="org.eclipse.mylyn.context_feature.feature.group" version="3.24.0.v20170629-2230"/>
-      <unit id="org.eclipse.mylyn.discovery.feature.group" version="3.24.0.v20170629-1728"/>
+      <unit id="org.eclipse.mylyn.bugzilla_feature.feature.group" version="3.24.1.v20180619-2132"/>
+      <unit id="org.eclipse.mylyn.builds.feature.group" version="1.16.0.v20180619-2131"/>
+      <unit id="org.eclipse.mylyn.commons.feature.group" version="3.24.1.v20180619-2131"/>
+      <unit id="org.eclipse.mylyn.commons.identity.feature.group" version="1.16.0.v20180619-2131"/>
+      <unit id="org.eclipse.mylyn.commons.net" version="3.24.1.v20180619-2131"/>
+      <unit id="org.eclipse.mylyn.commons.notifications.feature.group" version="1.16.0.v20180619-2131"/>
+      <unit id="org.eclipse.mylyn.commons.repositories.feature.group" version="1.16.0.v20180619-2131"/>
+      <unit id="org.eclipse.mylyn.commons.repositories.http.feature.group" version="1.16.0.v20180619-2131"/>
+      <unit id="org.eclipse.mylyn.commons.xmlrpc" version="3.24.1.v20180619-2131"/>
+      <unit id="org.eclipse.mylyn.context_feature.feature.group" version="3.24.1.v20180619-2131"/>
+      <unit id="org.eclipse.mylyn.discovery.feature.group" version="3.24.1.v20180619-2131"/>
       <unit id="org.eclipse.mylyn.git.feature.group" version="1.16.0.v20170629-1738"/>
       <unit id="org.eclipse.mylyn.hudson.feature.group" version="1.16.0.v20180403-2055"/>
-      <unit id="org.eclipse.mylyn.ide_feature.feature.group" version="3.24.0.v20170629-2230"/>
-      <unit id="org.eclipse.mylyn.java_feature.feature.group" version="3.24.0.v20170629-2230"/>
-      <unit id="org.eclipse.mylyn.monitor.feature.group" version="3.24.0.v20170629-1728"/>
-      <unit id="org.eclipse.mylyn.pde_feature.feature.group" version="3.24.0.v20170629-2230"/>
-      <unit id="org.eclipse.mylyn.tasks.ide.feature.group" version="3.24.0.v20170629-1737"/>
-      <unit id="org.eclipse.mylyn.team_feature.feature.group" version="3.24.0.v20170629-2230"/>
+      <unit id="org.eclipse.mylyn.ide_feature.feature.group" version="3.24.1.v20180619-2131"/>
+      <unit id="org.eclipse.mylyn.java_feature.feature.group" version="3.24.1.v20180619-2131"/>
+      <unit id="org.eclipse.mylyn.monitor.feature.group" version="3.24.1.v20180619-2131"/>
+      <unit id="org.eclipse.mylyn.pde_feature.feature.group" version="3.24.1.v20180619-2131"/>
+      <unit id="org.eclipse.mylyn.tasks.ide.feature.group" version="3.24.1.v20180619-2132"/>
+      <unit id="org.eclipse.mylyn.team_feature.feature.group" version="3.24.1.v20180619-2131"/>
       <unit id="org.eclipse.mylyn.versions.feature.group" version="1.16.0.v20170629-1738"/>
-      <unit id="org.eclipse.mylyn.wikitext_feature.feature.group" version="3.0.25.201806201740"/>
-      <unit id="org.eclipse.mylyn_feature.feature.group" version="3.24.0.v20180227-0955"/>
+      <unit id="org.eclipse.mylyn_feature.feature.group" version="3.24.1.v20180619-2132"/>
     </location>
 
     <!-- DTP -->
