@@ -2,7 +2,21 @@
 <target includeMode="feature" name="jbosstoolstarget-4.9.0.AM2-SNAPSHOT">
   <locations>
     <!-- don't forget to increment these files when moving up a version: build.xml, *.target -->
-
+	
+	
+	<location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/I20180809175338/"/>
+      
+      <!-- livereload requires org.apache.aries.spifly.dynamic.bundle 1.0.10, which requires
+           org.objectweb.asm.commons [5.0.0,7)' -->
+      <unit id="org.objectweb.asm.commons" version="6.2.0.v20180807-1520"/>
+      <unit id="org.objectweb.asm" version="6.2.0.v20180807-1520"/>
+      <unit id="org.objectweb.asm.analysis" version="6.2.0.v20180807-1520"/>
+      <unit id="org.objectweb.asm.tree" version="6.2.0.v20180807-1520"/>
+      <unit id="org.objectweb.asm.util" version="6.2.0.v20180807-1520"/>
+      
+	</location>
+	
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/S20180730183850/"/>
 
@@ -16,14 +30,6 @@
       <unit id="org.apache.lucene.misc" version="7.1.0.v20180220-1923"/>
       <unit id="org.apache.lucene.queryparser" version="6.1.0.v20161115-1612"/> <!-- required by org.eclipse.datatools.sqltools.result, org.eclipse.m2e.wtp.jpa.feature -->
       <unit id="org.apache.lucene.core" version="6.1.0.v20170814-1820"/>  <!-- required by org.apache.lucene.queryparser -->
-
-      <!-- livereload requires org.apache.aries.spifly.dynamic.bundle 1.0.10, which requires
-           org.objectweb.asm.commons [5.0.0,7)' -->
-      <unit id="org.objectweb.asm.commons" version="6.2.0.v20180723-2102"/>
-      <unit id="org.objectweb.asm" version="6.2.0.v20180723-2102"/>
-      <unit id="org.objectweb.asm.analysis" version="6.2.0.v20180723-2102"/>
-      <unit id="org.objectweb.asm.tree" version="6.2.0.v20180723-2102"/>
-      <unit id="org.objectweb.asm.util" version="6.2.0.v20180723-2102"/>
 
       <!-- for these IUs we need multiple versions? -->
       <unit id="javax.wsdl" version="1.6.2.v201012040545"/>
