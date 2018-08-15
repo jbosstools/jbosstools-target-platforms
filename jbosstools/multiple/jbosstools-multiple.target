@@ -142,7 +142,7 @@
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/tern/1.2.1.201611022209/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/tern/1.3.0.201803012316/"/>
       <unit id="javax.websocket-api" version="1.1.0"/>
       <!-- Required by FeedHenry module -->
       <unit id="minimal-json" version="0.9.4"/>
@@ -334,19 +334,24 @@
       <unit id="org.eclipse.m2e.wtp.jpa.feature.feature.group" version="1.4.0.20180606-2005"/>
       <unit id="org.eclipse.m2e.wtp.jsf.feature.feature.group" version="1.4.0.20180606-2005"/>
 
-      <!-- egit -->
-      <unit id="org.eclipse.egit.mylyn.feature.group" version="5.0.0.201806131550-r"/>
-      <unit id="org.eclipse.egit.feature.group" version="5.0.0.201806131550-r"/>
-      <unit id="org.eclipse.egit.ui.smartimport" version="5.0.0.201806131550-r"/>
-      <unit id="org.eclipse.jgit.feature.group" version="5.0.0.201806131550-r"/>
-      <unit id="org.eclipse.mylyn.github.feature.feature.group" version="5.0.0.201806131550-r"/>
-
       <!-- launchbar -->
       <unit id="org.eclipse.launchbar.feature.group" version="2.2.1.201807231911"/>
 
       <!-- mylyn docs / extras -->
       <unit id="org.eclipse.mylyn.wikitext_feature.feature.group" version="3.0.25.201806201740"/>
 
+      <!-- mylyn github -->
+      <unit id="org.eclipse.mylyn.github.feature.feature.group" version="5.0.0.201806131550-r"/>
+
+    </location>
+
+    <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/egit/5.0.2.201807311906-r/"/>
+      <!-- egit -->
+      <unit id="org.eclipse.egit.mylyn.feature.group" version="5.0.2.201807311906-r"/>
+      <unit id="org.eclipse.egit.feature.group" version="5.0.2.201807311906-r"/>
+      <unit id="org.eclipse.egit.ui.smartimport" version="5.0.2.201807311906-r"/>
+      <unit id="org.eclipse.jgit.feature.group" version="5.0.2.201807311906-r"/>
     </location>
 
     <!-- pull newer mylyn stuff than what's in simrel, so we have the same version as in Nodeclipse. This lets the install test job pass in 
