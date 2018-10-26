@@ -248,6 +248,8 @@
       <unit id="org.eclipse.pde.feature.group" version="3.13.300.v20181010-1800"/>
       <unit id="org.eclipse.platform.feature.group" version="4.10.0.v20181010-1800"/>
       <unit id="org.eclipse.rcp.feature.group" version="4.10.0.v20181010-1800"/>
+      <!-- Needed to start org.eclipse.ui.ide.workbench, see https://github.com/eclipse/reddeer/issues/1967 -->
+      <unit id="org.eclipse.equinox.ds" version="1.5.200.v20180827-1235"/>
 
       <!-- Recommenders for Java (and deps) -->
       <unit id="com.google.inject" version="3.0.0.v201312141243"/>
