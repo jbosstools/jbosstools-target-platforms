@@ -166,10 +166,10 @@
 
     <!-- m2e family, not included in SimRel site (or newer versions); see also simrel site below, and Central TP for more -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2e/1.9.1.20180912-1601/"/>
-      <unit id="org.eclipse.m2e.feature.feature.group" version="1.9.1.20180912-1601"/>
-      <unit id="org.eclipse.m2e.tests.common" version="1.9.1.20180912-1601"/>
-      <unit id="org.eclipse.m2e.importer" version="1.9.1.20180912-1601"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2e/1.10.0.20181127-2120/"/>
+      <unit id="org.eclipse.m2e.feature.feature.group" version="1.10.0.20181127-2120"/>
+      <unit id="org.eclipse.m2e.tests.common" version="1.10.0.20181127-2120"/>
+      <unit id="org.eclipse.m2e.importer" version="1.10.0.20181127-2120"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/1.5.1-2018-11-16_19-54-26-H16/"/>
