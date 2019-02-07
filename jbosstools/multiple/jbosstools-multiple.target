@@ -680,8 +680,8 @@
 
     <!-- JBIDE-25979 Apache Camel Language Server -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/camel-lsp-client/1.0.0.201812030843/camel-lsp-client-eclipse-update-site-master/updatesite/nightly/"/>
-      <unit id="com.github.cameltooling.lsp.eclipse.client.feature.feature.group" version="1.0.0.201812030843"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/camel-lsp-client/1.0.0.201902050715/camel-lsp-client-eclipse-update-site-master/updatesite/nightly/"/>
+      <unit id="com.github.cameltooling.lsp.eclipse.client.feature.feature.group" version="1.0.0.201902050715"/>
     </location>
 
   </locations>
