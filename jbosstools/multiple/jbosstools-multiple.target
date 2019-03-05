@@ -645,19 +645,19 @@
       <unit id="org.eclipse.swtbot.generator.feature.feature.group" version="2.6.0.201706141832"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/reddeer/2.4.0.Final/"/>
-      <unit id="org.eclipse.reddeer.codegen.feature.feature.group" version="2.4.0.v20181212-1430"/>
-      <unit id="org.eclipse.reddeer.eclipse.feature.feature.group" version="2.4.0.v20181212-1430"/>
-      <unit id="org.eclipse.reddeer.gef.spy.feature.feature.group" version="2.4.0.v20181212-1430"/>
-      <unit id="org.eclipse.reddeer.graphiti.feature.feature.group" version="2.4.0.v20181212-1430"/>
-      <unit id="org.eclipse.reddeer.logparser.feature.feature.group" version="2.4.0.v20181212-1430"/>
-      <unit id="org.eclipse.reddeer.recorder.feature.feature.group" version="2.4.0.v20181212-1430"/>
-      <unit id="org.eclipse.reddeer.selenium.feature.feature.group" version="2.4.0.v20181212-1430"/>
-      <unit id="org.eclipse.reddeer.spy.feature.feature.group" version="2.4.0.v20181212-1430"/>
-      <unit id="org.eclipse.reddeer.swt.feature.feature.group" version="2.4.0.v20181212-1430"/>
-      <unit id="org.eclipse.reddeer.tests.feature.feature.group" version="2.4.0.v20181212-1430"/>
-      <unit id="org.eclipse.reddeer.ui.feature.feature.group" version="2.4.0.v20181212-1430"/>
-      <unit id="org.eclipse.reddeer.jdt.junit" version="2.4.0.v20181212-1430"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/reddeer/2.5.0.M3/"/>
+      <unit id="org.eclipse.reddeer.codegen.feature.feature.group" version="2.5.0.v20190227-1725"/>
+      <unit id="org.eclipse.reddeer.eclipse.feature.feature.group" version="2.5.0.v20190227-1725"/>
+      <unit id="org.eclipse.reddeer.gef.spy.feature.feature.group" version="2.5.0.v20190227-1725"/>
+      <unit id="org.eclipse.reddeer.graphiti.feature.feature.group" version="2.5.0.v20190227-1725"/>
+      <unit id="org.eclipse.reddeer.logparser.feature.feature.group" version="2.5.0.v20190227-1725"/>
+      <unit id="org.eclipse.reddeer.recorder.feature.feature.group" version="2.5.0.v20190227-1725"/>
+      <unit id="org.eclipse.reddeer.selenium.feature.feature.group" version="2.5.0.v20190227-1725"/>
+      <unit id="org.eclipse.reddeer.spy.feature.feature.group" version="2.5.0.v20190227-1725"/>
+      <unit id="org.eclipse.reddeer.swt.feature.feature.group" version="2.5.0.v20190227-1725"/>
+      <unit id="org.eclipse.reddeer.tests.feature.feature.group" version="2.5.0.v20190227-1725"/>
+      <unit id="org.eclipse.reddeer.ui.feature.feature.group" version="2.5.0.v20190227-1725"/>
+      <unit id="org.eclipse.reddeer.jdt.junit" version="2.5.0.v20190227-1725"/>
     </location>
 
     <!-- <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
