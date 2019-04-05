@@ -100,6 +100,9 @@
       <unit id="org.apache.jasper.glassfish" version="2.2.2.v201501141630"/>
 
       <!-- Docker Tooling deps -->
+      <unit id="net.bytebuddy.byte-buddy" version="1.9.0.v20181107-1410"/>
+      <unit id="net.bytebuddy.byte-buddy-agent" version="1.9.0.v20181106-1534"/>
+      <unit id="org.objenesis" version="2.6.0.v20180420-1519"/>
       <unit id="com.fasterxml.jackson.core.jackson-annotations" version="2.9.2.v20180207-1730"/>
       <unit id="com.fasterxml.jackson.core.jackson-core" version="2.9.2.v20180207-1730"/>
       <unit id="com.fasterxml.jackson.core.jackson-databind" version="2.9.2.v20180207-1730"/>
@@ -631,10 +634,11 @@
 
     <!-- Eclipse Docker Tooling (see Orbit section above for dependencies) -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/4.2.0.201903191440/"/>
-      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="4.2.0.201903191440"/>
-      <unit id="org.eclipse.linuxtools.vagrant.feature.feature.group" version="4.2.0.201903191440"/>
-      <unit id="org.eclipse.linuxtools.docker.tests.feature.feature.group" version="4.2.0.201903191440"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/4.3.0.201904031802/"/>
+      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="4.3.0.201904031802"/>
+      <unit id="org.eclipse.linuxtools.vagrant.feature.feature.group" version="4.3.0.201904031802"/>
+      <unit id="org.eclipse.linuxtools.docker.tests.feature.feature.group" version="4.3.0.201904031802"/>
+      <unit id="org.mockito" version="2.13.0.v20180426-1843"/>
     </location>
 
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
