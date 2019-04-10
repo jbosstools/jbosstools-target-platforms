@@ -449,36 +449,30 @@
     <!-- TODO: merge TM.Terminal and RSE builds and upversion stuff -->
     <!-- TM and RSE are in Simrel but this way we get sources too -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/tm/4.5.100.201901312305/"/>
-      <unit id="org.eclipse.rse.terminals.feature.group" version="4.5.100.201901312305"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/tm/4.5.100.201903081602/"/>
+      <unit id="org.eclipse.rse.terminals.feature.group" version="4.5.100.201903081602"/>
       <unit id="org.eclipse.rse.connectorservice.ssh" version="4.5.100.201901312252"/>
       <unit id="org.eclipse.rse.core" version="4.5.100.201901312252"/>
       <unit id="org.eclipse.rse.services" version="4.5.100.201901312252"/>
       <unit id="org.eclipse.rse.services.ssh" version="4.5.100.201901312252"/>
       <unit id="org.eclipse.rse.ui" version="4.5.100.201901312252"/>
 
-      <unit id="org.eclipse.rse.feature.group" version="4.5.100.201901312305"/>
-      <unit id="org.eclipse.rse.ftp.feature.group" version="4.5.100.201901312305"/>
-      <unit id="org.eclipse.rse.local.feature.group" version="4.5.100.201901312305"/>
-      <unit id="org.eclipse.rse.ssh.feature.group" version="4.5.100.201901312305"/>
-      <unit id="org.eclipse.rse.telnet.feature.group" version="4.5.100.201901312305"/>
-      <unit id="org.eclipse.rse.useractions.feature.group" version="4.5.100.201901312305"/>
+      <unit id="org.eclipse.rse.feature.group" version="4.5.100.201903081602"/>
+      <unit id="org.eclipse.rse.ftp.feature.group" version="4.5.100.201903081602"/>
+      <unit id="org.eclipse.rse.local.feature.group" version="4.5.100.201903081602"/>
+      <unit id="org.eclipse.rse.ssh.feature.group" version="4.5.100.201903081602"/>
+      <unit id="org.eclipse.rse.telnet.feature.group" version="4.5.100.201903081602"/>
+      <unit id="org.eclipse.rse.useractions.feature.group" version="4.5.100.201903081602"/>
 
-      <unit id="org.eclipse.tm.terminal.connector.local.feature.feature.group" version="4.5.100.201901312305"/>
-      <unit id="org.eclipse.tm.terminal.connector.ssh.feature.feature.group" version="4.5.100.201901312305"/>
-      <unit id="org.eclipse.tm.terminal.connector.telnet.feature.feature.group" version="4.5.100.201901312305"/>
-      <unit id="org.eclipse.tm.terminal.control.feature.feature.group" version="4.5.100.201901312305"/>
+      <unit id="org.eclipse.tm.terminal.connector.local.feature.feature.group" version="4.5.100.201903081602"/>
+      <unit id="org.eclipse.tm.terminal.connector.ssh.feature.feature.group" version="4.5.100.201903081602"/>
+      <unit id="org.eclipse.tm.terminal.connector.telnet.feature.feature.group" version="4.5.100.201903081602"/>
+      <unit id="org.eclipse.tm.terminal.control.feature.feature.group" version="4.5.100.201903081602"/>
       <unit id="org.eclipse.tm.terminal.view.core" version="4.5.100.201901312304"/>
       <unit id="org.eclipse.tm.terminal.view.ui" version="4.5.100.201901312304"/>
       <unit id="org.eclipse.tm.terminal.view.ui.rse" version="4.5.100.201901312304"/>
+      <unit id="org.eclipse.cdt.native.feature.group" version="9.7.0.201901082014"/>
     </location>
-    <!-- TODO pull this from simrel after Photon is released -->
-    <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/tm/cdt_9.5.0.201806170908/"/>
-      <!-- JBIDE-17686 Required by rse.terminals, but not in the new RSE site -->
-      <unit id="org.eclipse.cdt.native.feature.group" version="9.5.0.201806170908"/>
-    </location>
-
 
     <!-- Jetty 9 -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
