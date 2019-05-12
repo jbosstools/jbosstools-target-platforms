@@ -23,6 +23,7 @@
       <unit id="org.apache.lucene.core" version="7.5.0.v20181003-1532"/>
       <unit id="org.apache.lucene.analyzers-common" version="6.1.0.v20161115-1612"/>
       <unit id="org.apache.lucene.analyzers-common" version="7.1.0.v20180122-2126"/>
+      <unit id="org.apache.lucene.analyzers-common" version="7.5.0.v20181003-1532"/>
       <unit id="org.apache.lucene.misc" version="7.1.0.v20180220-1923"/>
       <unit id="org.apache.lucene.misc" version="7.5.0.v20181003-1532"/>
       <unit id="org.apache.lucene.queryparser" version="7.1.0.v20180905-1540"/>
@@ -404,7 +405,7 @@
 
     <!-- DTP -->
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/dtp/1.14.104.201903081442/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/dtp/1.14.105.201905121933/"/>
       <unit id="org.eclipse.datatools.common.doc.user.feature.group" version="1.14.101.201811012051"/>
       <unit id="org.eclipse.datatools.connectivity.doc.user.feature.group" version="1.14.101.201811012051"/>
       <unit id="org.eclipse.datatools.connectivity.feature.feature.group" version="1.14.101.201811012051"/>
@@ -435,9 +436,9 @@
       <unit id="org.eclipse.datatools.sqldevtools.ddlgen.feature.feature.group" version="1.14.101.201811012051"/>
       <unit id="org.eclipse.datatools.sqldevtools.feature.feature.group" version="1.14.101.201811012051"/>
       <unit id="org.eclipse.datatools.sqldevtools.parsers.feature.feature.group" version="1.14.101.201811012051"/>
-      <unit id="org.eclipse.datatools.sqldevtools.results.feature.feature.group" version="1.14.102.201811012051"/>
+      <unit id="org.eclipse.datatools.sqldevtools.results.feature.feature.group" version="1.14.102.201905112017"/>
       <unit id="org.eclipse.datatools.sqldevtools.schemaobjecteditor.feature.feature.group" version="1.14.101.201811012051"/>
-      <unit id="org.eclipse.datatools.sqldevtools.sqlbuilder.feature.feature.group" version="1.14.102.201901091730"/>
+      <unit id="org.eclipse.datatools.sqldevtools.sqlbuilder.feature.feature.group" version="1.14.102.201905112017"/>
       <unit id="org.eclipse.datatools.sqltools.doc.user.feature.group" version="1.14.101.201811012051"/>
     </location>
 
