@@ -24,6 +24,8 @@
       <unit id="org.apache.lucene.analyzers-common" version="6.1.0.v20161115-1612"/>
       <unit id="org.apache.lucene.analyzers-common" version="7.1.0.v20180122-2126"/>
       <unit id="org.apache.lucene.analyzers-common" version="7.5.0.v20181003-1532"/>
+      <unit id="org.apache.lucene.analyzers-smartcn" version="7.1.0.v20180122-2126"/>
+      <unit id="org.apache.lucene.analyzers-smartcn" version="7.5.0.v20181003-1532"/>
       <unit id="org.apache.lucene.misc" version="7.1.0.v20180220-1923"/>
       <unit id="org.apache.lucene.misc" version="7.5.0.v20181003-1532"/>
       <unit id="org.apache.lucene.queryparser" version="7.1.0.v20180905-1540"/>
