@@ -17,7 +17,7 @@
 
       <!-- for these IUs we need multiple versions -->
       <unit id="com.google.guava" version="15.0.0.v201403281430"/> <!-- needed by org.eclipse.recommenders.injection 2.5.3.v20180609-1554 -->
-      <unit id="com.google.guava" version="21.0.0.v20170206-1425"/> <!-- needed by m2e 1.8.1 -->
+      <unit id="com.google.guava" version="27.1.0.v20190517-1946"/> <!-- needed by m2e 1.13.0.20190716-1624 -->
       <unit id="org.apache.lucene.core" version="3.5.0.v20120725-1805"/> <!-- org.eclipse.recommenders.models 2.5.3.v20180609-1554 requires org.apache.lucene.core 3.5 -->
       <unit id="org.apache.lucene.core" version="7.5.0.v20181003-1532"/>
       <unit id="org.apache.lucene.core" version="8.0.0.v20190404-1858"/>
@@ -175,10 +175,10 @@
 
     <!-- m2e family, not included in SimRel site (or newer versions); see also simrel site below, and Central TP for more -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2e/1.12.0.20190529-1916/"/>
-      <unit id="org.eclipse.m2e.feature.feature.group" version="1.12.0.20190529-1916"/>
-      <unit id="org.eclipse.m2e.tests.common" version="1.12.0.20190529-1916"/>
-      <unit id="org.eclipse.m2e.importer" version="1.12.0.20190529-1916"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2e/1.13.0.20190716-1624/"/>
+      <unit id="org.eclipse.m2e.feature.feature.group" version="1.13.0.20190716-1624"/>
+      <unit id="org.eclipse.m2e.tests.common" version="1.13.0.20190716-1624"/>
+      <unit id="org.eclipse.m2e.importer" version="1.13.0.20190716-1624"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/1.5.2-2018-12-24_15-46-05-H18/"/>
@@ -452,27 +452,27 @@
     <!-- TODO: merge TM.Terminal and RSE builds and upversion stuff -->
     <!-- TM and RSE are in Simrel but this way we get sources too -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/tm/4.5.101.201904091701/"/>
-      <unit id="org.eclipse.rse.terminals.feature.group" version="4.5.100.201904091701"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/tm/4.5.102.201907301734/"/>
+      <unit id="org.eclipse.rse.terminals.feature.group" version="4.5.100.201907301734"/>
       <unit id="org.eclipse.rse.connectorservice.ssh" version="4.5.100.201901312252"/>
       <unit id="org.eclipse.rse.core" version="4.5.100.201901312252"/>
       <unit id="org.eclipse.rse.services" version="4.5.100.201901312252"/>
       <unit id="org.eclipse.rse.services.ssh" version="4.5.100.201901312252"/>
       <unit id="org.eclipse.rse.ui" version="4.5.100.201901312252"/>
 
-      <unit id="org.eclipse.rse.feature.group" version="4.5.100.201904091701"/>
-      <unit id="org.eclipse.rse.ftp.feature.group" version="4.5.100.201904091701"/>
-      <unit id="org.eclipse.rse.local.feature.group" version="4.5.100.201904091701"/>
-      <unit id="org.eclipse.rse.ssh.feature.group" version="4.5.100.201904091701"/>
-      <unit id="org.eclipse.rse.telnet.feature.group" version="4.5.100.201904091701"/>
-      <unit id="org.eclipse.rse.useractions.feature.group" version="4.5.100.201904091701"/>
+      <unit id="org.eclipse.rse.feature.group" version="4.5.100.201907301734"/>
+      <unit id="org.eclipse.rse.ftp.feature.group" version="4.5.100.201907301734"/>
+      <unit id="org.eclipse.rse.local.feature.group" version="4.5.100.201907301734"/>
+      <unit id="org.eclipse.rse.ssh.feature.group" version="4.5.100.201907301734"/>
+      <unit id="org.eclipse.rse.telnet.feature.group" version="4.5.100.201907301734"/>
+      <unit id="org.eclipse.rse.useractions.feature.group" version="4.5.100.201907301734"/>
 
-      <unit id="org.eclipse.tm.terminal.connector.local.feature.feature.group" version="4.5.100.201904091701"/>
-      <unit id="org.eclipse.tm.terminal.connector.ssh.feature.feature.group" version="4.5.100.201904091701"/>
-      <unit id="org.eclipse.tm.terminal.connector.telnet.feature.feature.group" version="4.5.100.201904091701"/>
-      <unit id="org.eclipse.tm.terminal.control.feature.feature.group" version="4.5.100.201904091701"/>
+      <unit id="org.eclipse.tm.terminal.connector.local.feature.feature.group" version="4.5.100.201907301734"/>
+      <unit id="org.eclipse.tm.terminal.connector.ssh.feature.feature.group" version="4.5.100.201907301734"/>
+      <unit id="org.eclipse.tm.terminal.connector.telnet.feature.feature.group" version="4.5.100.201907301734"/>
+      <unit id="org.eclipse.tm.terminal.control.feature.feature.group" version="4.5.102.201907301734"/>
       <unit id="org.eclipse.tm.terminal.view.core" version="4.5.100.201901312304"/>
-      <unit id="org.eclipse.tm.terminal.view.ui" version="4.5.100.201901312304"/>
+      <unit id="org.eclipse.tm.terminal.view.ui" version="4.5.102.201907301733"/>
       <unit id="org.eclipse.tm.terminal.view.ui.rse" version="4.5.100.201901312304"/>
       <unit id="org.eclipse.cdt.native.feature.group" version="9.7.0.201901082014"/>
     </location>
@@ -632,10 +632,10 @@
 
     <!-- Eclipse Docker Tooling (see Orbit section above for dependencies) -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/4.3.0.201906121603/"/>
-      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="4.3.0.201906121603"/>
-      <unit id="org.eclipse.linuxtools.vagrant.feature.feature.group" version="4.3.0.201906121603"/>
-      <unit id="org.eclipse.linuxtools.docker.tests.feature.feature.group" version="4.3.0.201906121603"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/4.4.0.201907301937/"/>
+      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="4.4.0.201907301937"/>
+      <unit id="org.eclipse.linuxtools.vagrant.feature.feature.group" version="4.4.0.201907301937"/>
+      <unit id="org.eclipse.linuxtools.docker.tests.feature.feature.group" version="4.4.0.201907301937"/>
       <unit id="org.mockito" version="2.23.0.v20190527-1420"/>
     </location>
 
@@ -651,19 +651,19 @@
 
     <!-- Reddeer -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/reddeer/2.6.0/"/>
-      <unit id="org.eclipse.reddeer.codegen.feature.feature.group" version="2.6.0.v20190612-1247"/>
-      <unit id="org.eclipse.reddeer.eclipse.feature.feature.group" version="2.6.0.v20190612-1247"/>
-      <unit id="org.eclipse.reddeer.gef.spy.feature.feature.group" version="2.6.0.v20190612-1247"/>
-      <unit id="org.eclipse.reddeer.graphiti.feature.feature.group" version="2.6.0.v20190612-1247"/>
-      <unit id="org.eclipse.reddeer.logparser.feature.feature.group" version="2.6.0.v20190612-1247"/>
-      <unit id="org.eclipse.reddeer.recorder.feature.feature.group" version="2.6.0.v20190612-1247"/>
-      <unit id="org.eclipse.reddeer.selenium.feature.feature.group" version="2.6.0.v20190612-1247"/>
-      <unit id="org.eclipse.reddeer.spy.feature.feature.group" version="2.6.0.v20190612-1247"/>
-      <unit id="org.eclipse.reddeer.swt.feature.feature.group" version="2.6.0.v20190612-1247"/>
-      <unit id="org.eclipse.reddeer.tests.feature.feature.group" version="2.6.0.v20190612-1247"/>
-      <unit id="org.eclipse.reddeer.ui.feature.feature.group" version="2.6.0.v20190612-1247"/>
-      <unit id="org.eclipse.reddeer.jdt.junit" version="2.6.0.v20190612-1247"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/reddeer/2.7.0.M1/"/>
+      <unit id="org.eclipse.reddeer.codegen.feature.feature.group" version="2.7.0.v20190717-2012"/>
+      <unit id="org.eclipse.reddeer.eclipse.feature.feature.group" version="2.7.0.v20190717-2012"/>
+      <unit id="org.eclipse.reddeer.gef.spy.feature.feature.group" version="2.7.0.v20190717-2012"/>
+      <unit id="org.eclipse.reddeer.graphiti.feature.feature.group" version="2.7.0.v20190717-2012"/>
+      <unit id="org.eclipse.reddeer.logparser.feature.feature.group" version="2.7.0.v20190717-2012"/>
+      <unit id="org.eclipse.reddeer.recorder.feature.feature.group" version="2.7.0.v20190717-2012"/>
+      <unit id="org.eclipse.reddeer.selenium.feature.feature.group" version="2.7.0.v20190717-2012"/>
+      <unit id="org.eclipse.reddeer.spy.feature.feature.group" version="2.7.0.v20190717-2012"/>
+      <unit id="org.eclipse.reddeer.swt.feature.feature.group" version="2.7.0.v20190717-2012"/>
+      <unit id="org.eclipse.reddeer.tests.feature.feature.group" version="2.7.0.v20190717-2012"/>
+      <unit id="org.eclipse.reddeer.ui.feature.feature.group" version="2.7.0.v20190717-2012"/>
+      <unit id="org.eclipse.reddeer.jdt.junit" version="2.7.0.v20190717-2012"/>
     </location>
 
     <!-- LSP4E -->
