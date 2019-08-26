@@ -5,7 +5,7 @@
 	
 	
 	<location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/S20190709113129/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/S20190726194335/"/>
       
       <!-- livereload requires org.apache.aries.spifly.dynamic.bundle 1.0.10, which requires
            org.objectweb.asm.commons [5.0.0,7)' -->
@@ -16,24 +16,15 @@
       <unit id="org.objectweb.asm.util" version="7.1.0.v20190412-2143"/>
 
       <!-- for these IUs we need multiple versions -->
-      <unit id="com.google.guava" version="15.0.0.v201403281430"/> <!-- needed by org.eclipse.recommenders.injection 2.5.3.v20180609-1554 -->
       <unit id="com.google.guava" version="27.1.0.v20190517-1946"/> <!-- needed by m2e 1.13.0.20190716-1624 -->
-      <unit id="org.apache.lucene.core" version="3.5.0.v20120725-1805"/> <!-- org.eclipse.recommenders.models 2.5.3.v20180609-1554 requires org.apache.lucene.core 3.5 -->
-      <unit id="org.apache.lucene.core" version="7.5.0.v20181003-1532"/>
+      <unit id="org.apache.lucene.core" version="3.5.0.v20120725-1805"/> <!-- needed by org.eclipse.recommenders.models 2.5.3.v20180609-1554 -->
       <unit id="org.apache.lucene.core" version="8.0.0.v20190404-1858"/>
+      <unit id="org.apache.lucene.misc" version="8.0.0.v20190418-1455"/> <!-- needed by org.eclipse.reddeer.eclipse.test 2.6.0.v20190612-1247 -->
+      <unit id="org.apache.lucene.core" version="7.5.0.v20181003-1532"/>
+      <unit id="org.apache.lucene.misc" version="7.5.0.v20181003-1532"/>
       <unit id="org.apache.lucene.analyzers-common" version="7.5.0.v20181003-1532"/>
       <unit id="org.apache.lucene.analyzers-smartcn" version="7.5.0.v20181003-1532"/>
-      <unit id="org.apache.lucene.misc" version="7.5.0.v20181003-1532"/>
-      <unit id="org.apache.lucene.misc" version="8.0.0.v20190418-1455"/> <!-- needed by org.eclipse.reddeer.eclipse.test 2.6.0.v20190612-1247 -->
       <unit id="org.apache.lucene.queryparser" version="7.5.0.v20181003-1532"/>
-
-      <!-- for these IUs we need multiple versions? -->
-      <unit id="javax.wsdl" version="1.6.2.v201012040545"/>
-      <unit id="javax.xml.bind" version="2.2.0.v201105210648"/>
-      <unit id="javax.xml.soap" version="1.2.0.v201005080501"/>
-      <unit id="javax.xml.soap" version="1.3.0.v201105210645"/>
-      <unit id="javax.xml.ws" version="2.1.0.v200902101523"/>
-      <unit id="javax.xml" version="1.3.4.v201005080400"/>
 
       <!-- qos.logback 1.1.2 requires org.slf4j.spi [1.7.10,1.8.0) -->
       <unit id="ch.qos.logback.classic" version="1.1.2.v20171220-1825"/> 
@@ -41,6 +32,11 @@
       <unit id="org.slf4j.api" version="1.7.10.v20170428-1633"/>
 
       <!-- Orbit bundles -->
+      <unit id="javax.wsdl" version="1.6.2.v201012040545"/>
+      <unit id="javax.xml.bind" version="2.2.0.v201105210648"/>
+      <unit id="javax.xml.soap" version="1.2.0.v201005080501"/>
+      <unit id="javax.xml.ws" version="2.1.0.v200902101523"/>
+      <unit id="javax.xml" version="1.3.4.v201005080400"/>
       <unit id="javax.activation" version="1.1.0.v201211130549"/>
       <unit id="javax.ejb" version="3.1.1.v201204261316"/>
       <unit id="javax.mail" version="1.4.0.v201005080615"/>
@@ -49,14 +45,10 @@
       <unit id="javax.transaction" version="1.1.1.v201105210645"/>
       <unit id="net.sourceforge.lpg.lpgjavaruntime" version="1.1.0.v201004271650"/>
       <unit id="org.apache.axis" version="1.4.0.v201411182030"/>
-      <!-- <unit id="org.apache.commons.codec" version="1.10.0.v20180409-1845"/> -->
       <unit id="org.apache.commons.discovery" version="0.2.0.v201004190315"/>
       <unit id="org.apache.commons.httpclient" version="3.1.0.v201012070820"/>
       <unit id="org.apache.commons.io" version="2.2.0.v201405211200"/>
       <unit id="org.apache.commons.lang" version="2.6.0.v201404270220"/>
-      <unit id="org.apache.commons.codec" version="1.10.0.v20180409-1845"/>
-      <!-- required by org.eclipse.m2e.feature.feature.group 1.9.1.20180704-1406 via org.apache.xmlgraphics 2.2.0.v20180410-1551 -->
-      <unit id="org.apache.commons.logging" version="1.1.1.v201101211721"/> 
       <unit id="org.apache.oro" version="2.0.8.v201005080400"/>
       <unit id="org.apache.wsil4j" version="1.0.0.v20180522-1857"/>
       <unit id="org.jdom" version="1.1.1.v201101151400"/>
@@ -142,8 +134,6 @@
       <unit id="org.glassfish.jersey.media.jersey-media-json-jackson" version="2.22.1.v20161117-2005"/>
       <unit id="org.assertj" version="1.7.1.v20170413-2026"/>
       <unit id="org.json" version="1.0.0.v201011060100"/>
-      <unit id="org.mockito" version="1.9.5.v201605172210"/>
-      <unit id="org.objenesis" version="1.0.0.v201505121915"/>
       <unit id="javax.inject" version="1.0.0.v20091030"/>
       <unit id="javax.annotation" version="1.2.0.v201602091430"/>
 
@@ -204,12 +194,12 @@
 
     <!-- SimRel -->
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/simrel/20190719-1000-Simrel.2019-09.M1/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/simrel/20190809-1000-Simrel.2019-09.M2/"/>
 
       <!-- p2.discovery -->
       <unit id="org.eclipse.equinox.p2.discovery" version="1.1.200.v20190611-1008"/>
       <unit id="org.eclipse.equinox.p2.discovery.compatibility" version="1.1.200.v20190611-1008"/>
-      <unit id="org.eclipse.equinox.p2.ui.discovery" version="1.1.200.v20190611-1008"/>
+      <unit id="org.eclipse.equinox.p2.ui.discovery" version="1.1.200.v20190716-0825"/>
 
       <!-- ECF -->
       <unit id="org.eclipse.ecf.core.feature.feature.group" version="1.5.3.v20190423-0625"/>
@@ -246,34 +236,35 @@
 
       <!-- Platform: CVS, JDT, RCP, PDE, Equinox, Help -->
       <!-- <unit id="com.ibm.icu.base" version="56.1.0.v201601250100"/> -->
-      <unit id="org.eclipse.cvs.feature.group" version="1.4.1000.v20190711-1805"/>
-      <unit id="org.eclipse.equinox.executable.feature.group" version="3.8.500.v20190705-0725"/>
-      <unit id="org.eclipse.equinox.p2.discovery.feature.feature.group" version="1.2.300.v20190611-1008"/>
-      <unit id="org.eclipse.equinox.p2.user.ui.feature.group" version="2.4.500.v20190705-1223"/>
+      <unit id="org.eclipse.cvs.feature.group" version="1.4.1000.v20190801-0600"/>
+      <unit id="org.eclipse.equinox.executable.feature.group" version="3.8.500.v20190715-1310"/>
+      <unit id="org.eclipse.equinox.p2.discovery.feature.feature.group" version="1.2.300.v20190716-0825"/>
+      <unit id="org.eclipse.equinox.p2.user.ui.feature.group" version="2.4.500.v20190729-1249"/>
       <!-- <unit id="org.eclipse.equinox.http.registry" version="1.1.500.v20171221-2204"/> -->
-      <unit id="org.eclipse.equinox.server.core.feature.group" version="1.11.0.v20190708-1141"/>
-      <unit id="org.eclipse.equinox.server.jetty.feature.group" version="1.10.0.v20190610-1407"/>
-      <unit id="org.eclipse.help.feature.group" version="2.2.700.v20190711-1805"/>
-      <unit id="org.eclipse.jdt.feature.group" version="3.18.100.v20190711-1805"/>
-      <unit id="org.eclipse.pde.feature.group" version="3.14.100.v20190711-1805"/>
-      <unit id="org.eclipse.platform.feature.group" version="4.13.0.v20190711-1805"/>
-      <unit id="org.eclipse.rcp.feature.group" version="4.13.0.v20190711-1805"/>
+      <unit id="org.eclipse.equinox.server.core.feature.group" version="1.11.0.v20190725-1512"/>
+      <unit id="org.eclipse.equinox.server.jetty.feature.group" version="1.10.0.v20190714-1849"/>
+      <unit id="org.eclipse.help.feature.group" version="2.2.700.v20190801-0600"/>
+      <unit id="org.eclipse.jdt.feature.group" version="3.18.100.v20190801-0600"/>
+      <unit id="org.eclipse.pde.feature.group" version="3.14.100.v20190801-0600"/>
+      <unit id="org.eclipse.platform.feature.group" version="4.13.0.v20190801-0600"/>
+      <unit id="org.eclipse.rcp.feature.group" version="4.13.0.v20190801-0600"/>
 
       <!-- needed for JBoss Central -->
-      <unit id="org.eclipse.compare" version="3.7.700.v20190618-0916"/>
+      <unit id="org.eclipse.compare" version="3.7.700.v20190731-1350"/>
       <unit id="org.eclipse.core.filesystem" version="1.7.500.v20190620-1312"/>
       <unit id="org.eclipse.core.resources" version="3.13.500.v20190624-0953"/>
       <!-- <unit id="org.eclipse.core.runtime" version="3.14.0.v20180220-2036"/> -->
       <unit id="org.eclipse.epp.logging.aeri.feature.feature.group" version="2.0.7.v20180504-0806"/>
-      <unit id="org.eclipse.jface" version="3.17.0.v20190703-1909"/>
-      <unit id="org.eclipse.jface.text" version="3.15.300.v20190703-0728"/>
+      <unit id="org.eclipse.jface" version="3.17.0.v20190731-1949"/>
+      <unit id="org.eclipse.jface.text" version="3.15.300.v20190729-1222"/>
       <unit id="org.eclipse.team.core" version="3.8.700.v20190619-1613"/>
       <unit id="org.eclipse.team.ui" version="3.8.600.v20190701-1941"/>
-      <unit id="org.eclipse.ui" version="3.114.0.v20190702-0709"/>
-      <unit id="org.eclipse.ui.editors" version="3.11.600.v20190618-0916"/>
+      <unit id="org.eclipse.ui" version="3.114.0.v20190730-1132"/>
+      <unit id="org.eclipse.ui.editors" version="3.12.0.v20190730-1840"/>
       <unit id="org.eclipse.ui.forms" version="3.8.100.v20190625-1825"/>
-      <unit id="org.eclipse.ui.ide" version="3.16.0.v20190702-0709"/>
-      <unit id="org.eclipse.ui.workbench.texteditor" version="3.12.200.v20190703-1234"/>
+      <unit id="org.eclipse.ui.ide" version="3.16.0.v20190730-1144"/>
+      <unit id="org.eclipse.ui.workbench.texteditor" version="3.13.0.v20190730-1840"/>
+      <unit id="com.google.guava" version="21.0.0.v20170206-1425"/>
 
       <!-- Zest -->
       <unit id="org.eclipse.draw2d.feature.group" version="3.10.100.201606061308"/>
@@ -305,8 +296,8 @@
       <unit id="org.eclipse.buildship.feature.group" version="3.1.0.v20190501-0832"/>
       <unit id="org.gradle.toolingapi" version="5.4.0.v20190501-0832"/>
 
-      <unit id="org.eclipse.remote.core" version="4.0.0.201906031520"/>
-      <unit id="org.eclipse.remote.ui" version="2.1.1.201906031520"/>
+      <unit id="org.eclipse.remote.core" version="4.0.0.201906281330"/>
+      <unit id="org.eclipse.remote.ui" version="2.1.1.201906281330"/>
 
       <!-- m2e.wtp -->
       <unit id="org.eclipse.m2e.wtp.feature.feature.group" version="1.4.2.20190530-0057"/>
@@ -315,7 +306,7 @@
       <unit id="org.eclipse.m2e.wtp.jsf.feature.feature.group" version="1.4.2.20190530-0057"/>
 
       <!-- launchbar -->
-      <unit id="org.eclipse.launchbar.feature.group" version="2.3.0.201906102002"/>
+      <unit id="org.eclipse.launchbar.feature.group" version="2.4.0.201907192018"/>
 
       <!-- mylyn docs / extras -->
       <unit id="org.eclipse.mylyn.wikitext_feature.feature.group" version="3.0.29.201812180023"/>
@@ -365,10 +356,10 @@
 
     <!-- Mylyn Github moved out from SimRel as of 2018-12M3 -->
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/mylyn-github/5.4.0.201905222336"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/mylyn-github/5.4.0.201906121030"/>
 
       <!-- mylyn github -->
-      <unit id="org.eclipse.mylyn.github.feature.feature.group" version="5.4.0.201905222336"/>
+      <unit id="org.eclipse.mylyn.github.feature.feature.group" version="5.4.0.201906121030-r"/>
 
     </location>
 
@@ -479,30 +470,30 @@
 
     <!-- Jetty 9 -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/jetty/9.4.19.v20190610/"/>
-      <unit id="org.eclipse.jetty.client" version="9.4.19.v20190610"/>
-      <unit id="org.eclipse.jetty.continuation" version="9.4.19.v20190610"/>
-      <unit id="org.eclipse.jetty.http" version="9.4.19.v20190610"/>
-      <unit id="org.eclipse.jetty.io" version="9.4.19.v20190610"/>
-      <unit id="org.eclipse.jetty.proxy" version="9.4.19.v20190610"/>
-      <unit id="org.eclipse.jetty.rewrite" version="9.4.19.v20190610"/>
-      <unit id="org.eclipse.jetty.security" version="9.4.19.v20190610"/>
-      <unit id="org.eclipse.jetty.server" version="9.4.19.v20190610"/>
-      <unit id="org.eclipse.jetty.servlet" version="9.4.19.v20190610"/>
-      <unit id="org.eclipse.jetty.servlets" version="9.4.19.v20190610"/>
-      <unit id="org.eclipse.jetty.util" version="9.4.19.v20190610"/>
-      <unit id="org.eclipse.jetty.webapp" version="9.4.19.v20190610"/>
-      <unit id="org.eclipse.jetty.websocket.api" version="9.4.19.v20190610"/>
-      <unit id="org.eclipse.jetty.websocket.client" version="9.4.19.v20190610"/>
-      <unit id="org.eclipse.jetty.websocket.common" version="9.4.19.v20190610"/>
-      <unit id="org.eclipse.jetty.websocket.server" version="9.4.19.v20190610"/>
-      <unit id="org.eclipse.jetty.websocket.servlet" version="9.4.19.v20190610"/>
-      <unit id="org.eclipse.jetty.xml" version="9.4.19.v20190610"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/jetty/9.4.20.v20190813/"/>
+      <unit id="org.eclipse.jetty.client" version="9.4.20.v20190813"/>
+      <unit id="org.eclipse.jetty.continuation" version="9.4.20.v20190813"/>
+      <unit id="org.eclipse.jetty.http" version="9.4.20.v20190813"/>
+      <unit id="org.eclipse.jetty.io" version="9.4.20.v20190813"/>
+      <unit id="org.eclipse.jetty.proxy" version="9.4.20.v20190813"/>
+      <unit id="org.eclipse.jetty.rewrite" version="9.4.20.v20190813"/>
+      <unit id="org.eclipse.jetty.security" version="9.4.20.v20190813"/>
+      <unit id="org.eclipse.jetty.server" version="9.4.20.v20190813"/>
+      <unit id="org.eclipse.jetty.servlet" version="9.4.20.v20190813"/>
+      <unit id="org.eclipse.jetty.servlets" version="9.4.20.v20190813"/>
+      <unit id="org.eclipse.jetty.util" version="9.4.20.v20190813"/>
+      <unit id="org.eclipse.jetty.webapp" version="9.4.20.v20190813"/>
+      <unit id="org.eclipse.jetty.websocket.api" version="9.4.20.v20190813"/>
+      <unit id="org.eclipse.jetty.websocket.client" version="9.4.20.v20190813"/>
+      <unit id="org.eclipse.jetty.websocket.common" version="9.4.20.v20190813"/>
+      <unit id="org.eclipse.jetty.websocket.server" version="9.4.20.v20190813"/>
+      <unit id="org.eclipse.jetty.websocket.servlet" version="9.4.20.v20190813"/>
+      <unit id="org.eclipse.jetty.xml" version="9.4.20.v20190813"/>
     </location>
 
     <!-- Web Tools -->
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" type="InstallableUnit" includeSource="true"> <!-- includeConfigurePhase="false" ? -->
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools/S-3.15.0.M1-20190717080107/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools/S-3.15.0.M2-20190801034436"/>
       <unit id="org.eclipse.jem" version="2.0.600.v201903222024"/>
       <unit id="org.eclipse.jem.beaninfo" version="2.0.300.v201903222024"/>
       <unit id="org.eclipse.jem.beaninfo.vm" version="2.0.300.v201903222024"/>
@@ -526,7 +517,7 @@
       <unit id="org.eclipse.jst.ejb.ui" version="1.1.911.v201903222024"/>
       <unit id="org.eclipse.jst.ejb.ui.infopop" version="1.0.300.v201903222024"/>
       <unit id="org.eclipse.jst.enterprise_core.feature.feature.group" version="3.10.100.v201903222115"/>
-      <unit id="org.eclipse.jst.enterprise_ui.feature.feature.group" version="3.9.400.v201905212122"/>
+      <unit id="org.eclipse.jst.enterprise_ui.feature.feature.group" version="3.9.500.v201906251834"/>
       <unit id="org.eclipse.jst.enterprise_userdoc.feature.feature.group" version="3.6.100.v201903222115"/>
       <unit id="org.eclipse.jst.j2ee" version="1.2.301.v201903222025"/>
       <unit id="org.eclipse.jst.j2ee.core" version="1.4.1.v201903222024"/>
@@ -586,7 +577,7 @@
       <unit id="org.eclipse.jst.ws.doc.user" version="1.0.700.v201903222115"/>
       <unit id="org.eclipse.jst.ws.infopop" version="1.0.400.v201903050508"/>
       <unit id="org.eclipse.jst.ws.jaxrs.core" version="1.0.850.v201903050508"/>
-      <unit id="org.eclipse.jst.ws.jaxrs.ui" version="1.0.800.v201903050508"/>
+      <unit id="org.eclipse.jst.ws.jaxrs.ui" version="1.0.801.v201906251834"/>
       <unit id="org.eclipse.jst.ws.jaxws.dom.feature.feature.group" version="1.0.302.v201903021515"/>
       <unit id="org.eclipse.jst.ws.jaxws.feature.feature.group" version="1.2.500.v201903021515"/>
       <unit id="org.eclipse.jst.ws.jaxws_userdoc.feature.feature.group" version="1.0.402.v201903021515"/>
@@ -600,7 +591,7 @@
       <unit id="org.eclipse.wst.common_ui.feature.feature.group" version="3.11.0.v201905071717"/>
       <unit id="org.eclipse.wst.jsdt.chromium.debug.feature.feature.group" version="0.6.100.v201903222101"/>
       <unit id="org.eclipse.wst.jsdt.debug.rhino.ui" version="1.0.500.v201903222047"/>
-      <unit id="org.eclipse.wst.jsdt.feature.feature.group" version="2.1.1.v201903222101"/>
+      <unit id="org.eclipse.wst.jsdt.feature.feature.group" version="2.1.1.v201907191131"/>
       <unit id="org.eclipse.wst.jsdt.nodejs.feature.feature.group" version="1.1.0.v201903222101"/>
       <unit id="org.eclipse.wst.jsdt.web.support.jsp" version="1.1.0.v201901071922"/>
       <unit id="org.eclipse.wst.json_core.feature.feature.group" version="1.1.5.v201904210526"/>
@@ -626,16 +617,16 @@
       <unit id="org.eclipse.wst.xml_core.feature.feature.group" version="3.15.0.v201907091226"/>
       <unit id="org.eclipse.wst.xml_ui.feature.feature.group" version="3.15.0.v201907091226"/>
       <unit id="org.eclipse.wst.xml_userdoc.feature.feature.group" version="3.15.0.v201907091226"/>
-      <unit id="org.eclipse.wst.xsl.feature.feature.group" version="1.3.700.v201907091226"/>
+      <unit id="org.eclipse.wst.xsl.feature.feature.group" version="1.3.800.v201907231732"/>
       <unit id="com.sun.xml.bind" version="2.2.0.v201505121915"/>
     </location>
 
     <!-- Eclipse Docker Tooling (see Orbit section above for dependencies) -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/4.4.0.201907301937/"/>
-      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="4.4.0.201907301937"/>
-      <unit id="org.eclipse.linuxtools.vagrant.feature.feature.group" version="4.4.0.201907301937"/>
-      <unit id="org.eclipse.linuxtools.docker.tests.feature.feature.group" version="4.4.0.201907301937"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/docker/4.4.0.201908091806/"/>
+      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="4.4.0.201908091806"/>
+      <unit id="org.eclipse.linuxtools.vagrant.feature.feature.group" version="4.4.0.201908091806"/>
+      <unit id="org.eclipse.linuxtools.docker.tests.feature.feature.group" version="4.4.0.201908091806"/>
       <unit id="org.mockito" version="2.23.0.v20190527-1420"/>
     </location>
 
@@ -668,8 +659,8 @@
 
     <!-- LSP4E -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/lsp4e/0.11.0.201907261639"/>
-      <unit id="org.eclipse.lsp4e" version="0.11.0.201907261639"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/lsp4e/0.11.0.201908151340"/>
+      <unit id="org.eclipse.lsp4e" version="0.11.0.201908151340"/>
       <unit id="org.eclipse.lsp4j" version="0.7.2.v20190528-0933"/>
       <unit id="org.eclipse.lsp4j.jsonrpc" version="0.7.2.v20190528-0933"/>
       <unit id="org.eclipse.xtext.xbase.lib" version="2.18.0.v20190603-0326"/>
@@ -691,8 +682,8 @@
 
     <!-- JBIDE-25979 Apache Camel Language Server -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/camel-lsp-client/1.0.0.201907261207/camel-lsp-client-eclipse-update-site-master/updatesite/nightly/"/>
-      <unit id="com.github.cameltooling.lsp.eclipse.client.feature.feature.group" version="1.0.0.201907261207"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/camel-lsp-client/1.0.0.201908021412/camel-lsp-client-eclipse-update-site-master/updatesite/nightly/"/>
+      <unit id="com.github.cameltooling.lsp.eclipse.client.feature.feature.group" version="1.0.0.201908021412"/>
     </location>
 
   </locations>
