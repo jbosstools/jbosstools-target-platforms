@@ -357,15 +357,15 @@
     <!-- Mylyn Github moved out from SimRel as of 2018-12M3 -->
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/mylyn-github/5.5.0.201909041048/"/>
-
       <!-- mylyn github -->
       <unit id="org.eclipse.mylyn.github.feature.feature.group" version="5.5.0.201909041048-rc1"/>
-
     </location>
 
-    <!-- <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/egit/5.4.0.201906121030-r/"/>
-    </location> -->
+    <!-- Complete JGit, see https://issues.jboss.org/browse/JBIDE-26815-->
+    <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/jgit/5.5.0.201909041048-rc1/"/>
+      <unit id="org.eclipse.jgit.junit" version="5.5.0.201909041048-rc1"/>
+    </location>
 
     <!-- pull newer mylyn stuff than what's in simrel, so we have the same version as in Nodeclipse. This lets the install test job pass in 
     https://dev-platform-jenkins.rhev-ci-vms.eng.rdu2.redhat.com/view/Devstudio/view/devstudio_master/job/jbosstools-install-p2director.install-tests.matrix_master/ -->
