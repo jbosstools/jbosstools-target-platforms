@@ -53,6 +53,7 @@
       <unit id="org.apache.wsil4j" version="1.0.0.v20180522-1857"/>
       <unit id="org.jdom" version="1.1.1.v201101151400"/>
       <unit id="org.junit" version="4.12.0.v201504281640"/>
+      <unit id="org.junit.jupiter.api" version="5.5.1.v20190826-0900"/>
       <unit id="org.uddi4j" version="2.0.5.v200805270300"/>
       <unit id="org.hamcrest.core" version="1.3.0.v20180420-1519"/>
 
