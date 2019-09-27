@@ -487,7 +487,7 @@
 
     <!-- Web Tools -->
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" type="InstallableUnit" includeSource="true"> <!-- includeConfigurePhase="false" ? -->
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools/S-3.15.0.RC1-20190830034720/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/webtools/R-3.15.0-20190830034720/"/>
       <unit id="org.eclipse.jem" version="2.0.600.v201903222024"/>
       <unit id="org.eclipse.jem.beaninfo" version="2.0.300.v201903222024"/>
       <unit id="org.eclipse.jem.beaninfo.vm" version="2.0.300.v201903222024"/>
@@ -669,7 +669,7 @@
 
     <!-- JBIDE-21377 YAML Editor -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/springide/3.9.9.201906181741-RELEASE/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/springide/3.9.10.201909171046-RELEASE/"/>
       <unit id="org.dadacoalition.yedit" version="1.0.18.201602092025-RELEASE-SIGNED"/>
       <unit id="org.yaml.snakeyaml" version="1.14.0.v201604211500"/>
     </location>
