@@ -316,6 +316,11 @@
       <unit id="org.apache.lucene.queryparser" version="6.1.0.v20161115-1612"/>
       <unit id="org.apache.lucene.analyzers-common" version="6.1.0.v20161115-1612"/>
 
+      <!-- egit -->
+      <unit id="org.eclipse.egit.mylyn.feature.group" version="5.5.0.201909110433-r"/>
+      <unit id="org.eclipse.egit.feature.group" version="5.5.0.201909110433-r"/>
+      <unit id="org.eclipse.jgit.ssh.apache.feature.group" version="5.5.0.201909110433-r"/>
+      <unit id="org.eclipse.jgit.feature.group" version="5.5.0.201909110433-r"/>
       <unit id="org.eclipse.mylyn.github.feature.feature.group" version="5.5.0.201909110433-r"/>
 
     </location>
@@ -329,6 +334,7 @@
       <unit id="org.eclipse.recommenders.rcp.feature.feature.group" version="2.5.4.v20180909-1132"/>
       <unit id="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group" version="2.5.4.v20180909-1132"/>
       <unit id="org.eclipse.recommenders.3rd.feature.feature.group" version="2.5.4.v20180909-1132"/>
+
     </location>
 
     <!-- Sapphire moved out from SimRel as of 2018-12M3 -->
@@ -346,16 +352,7 @@
       <unit id="org.eclipse.sapphire.ui.swt.gef.feature.group" version="9.1.1.201712191343"/>
       <unit id="org.eclipse.sapphire.ui.swt.xml.editor.feature.group" version="9.1.1.201712191343"/>
       <unit id="org.objectweb.asm" version="5.2.0.v20170126-0011"/>
-    </location>
 
-    <!-- Latest EGit, Required by Nodeclipse-->
-    <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/egit/5.5.1.201910021850-r"/>
-      <!-- egit -->
-      <unit id="org.eclipse.egit.mylyn.feature.group" version="5.5.1.201910021850-r"/>
-      <unit id="org.eclipse.egit.feature.group" version="5.5.1.201910021850-r"/>
-      <unit id="org.eclipse.jgit.ssh.apache.feature.group" version="5.5.1.201910021850-r"/>
-      <unit id="org.eclipse.jgit.feature.group" version="5.5.1.201910021850-r"/>
     </location>
 
     <!-- Complete JGit, see https://issues.jboss.org/browse/JBIDE-26815-->
