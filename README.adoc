@@ -3,7 +3,7 @@
 
 === Summary
 
-JBoss Tools Target Platforms project provides the JBoss Tools Eclipse-based target platforrms used by JBoss Tools projects and Red Hat Developer Studio.
+JBoss Tools Target Platforms project provides the JBoss Tools Eclipse-based target platforms used by JBoss Tools projects and Red Hat Developer Studio.
 
 The 'master' branch only contains shared content - see the 4.x branches for the actual target platform definitions. To build them, simply run 'mvn verify' in a given target platform folder.
 
@@ -21,7 +21,7 @@ At any time, you can pull changes from the upstream and merge them onto your mas
 
     $ git checkout master               # switches to the 'master' branch
     $ git pull upstream master          # fetches all 'upstream' changes and merges 'upstream/master' onto your 'master' branch
-    $ git push origin                  # pushes all the updates to your fork, which should be in-sync with 'upstream'
+    $ git push origin                   # pushes all the updates to your fork, which should be in-sync with 'upstream'
 
 The general idea is to keep your 'master' branch in-sync with the
 'upstream/master'.
