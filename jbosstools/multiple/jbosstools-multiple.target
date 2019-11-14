@@ -316,16 +316,19 @@
       <unit id="org.apache.lucene.queryparser" version="6.1.0.v20161115-1612"/>
       <unit id="org.apache.lucene.analyzers-common" version="6.1.0.v20161115-1612"/>
 
-      <!-- egit -->
-      <unit id="org.eclipse.egit.mylyn.feature.group" version="5.5.0.201909110433-r"/>
-      <unit id="org.eclipse.egit.feature.group" version="5.5.0.201909110433-r"/>
-      <unit id="org.eclipse.jgit.ssh.apache.feature.group" version="5.5.0.201909110433-r"/>
-      <unit id="org.eclipse.jgit.feature.group" version="5.5.0.201909110433-r"/>
       <unit id="org.eclipse.mylyn.github.feature.feature.group" version="5.5.0.201909110433-r"/>
 
     </location>
 
- 
+	<!-- Egit for NodeClipse -->
+    <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/egit/5.5.1.201910021850-r/"/>
+      <unit id="org.eclipse.egit.mylyn.feature.group" version="5.5.1.201910021850-r"/>
+      <unit id="org.eclipse.egit.feature.group" version="5.5.1.201910021850-r"/>
+      <unit id="org.eclipse.jgit.ssh.apache.feature.group" version="5.5.1.201910021850-r"/>
+      <unit id="org.eclipse.jgit.feature.group" version="5.5.1.201910021850-r"/>
+    </location>
+
     <!-- Recommenders moved out from SimRel as of 2018-12 -->
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/recommenders/2.5.4/"/>
@@ -357,8 +360,8 @@
 
     <!-- Complete JGit, see https://issues.jboss.org/browse/JBIDE-26815-->
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/jgit/5.5.0.201909110433-r/"/>
-      <unit id="org.eclipse.jgit.junit" version="5.5.0.201909110433-r"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/jgit/5.5.1.201910021850-r/"/>
+      <unit id="org.eclipse.jgit.junit" version="5.5.1.201910021850-r"/>
     </location>
 
     <!-- pull newer mylyn stuff than what's in simrel, so we have the same version as in Nodeclipse. This lets the install test job pass in 
