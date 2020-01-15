@@ -323,12 +323,16 @@
       <unit id="org.eclipse.jgit.ssh.apache.feature.group" version="5.6.0.201912101111-r"/>
       <unit id="org.eclipse.mylyn.github.feature.feature.group" version="5.6.0.201912101111-r"/>
 
-     <!-- TM4E required by dockertools -->
+     <!-- TM4E required by dockertools and wild web developer-->
      <unit id="org.eclipse.tm4e.registry" version="0.4.0.201911130739"/>
      <unit id="org.eclipse.tm4e.core" version="0.4.0.201911211357"/>
      <unit id="org.eclipse.tm4e.ui" version="0.4.0.201911211357"/>
+     <unit id="org.eclipse.tm4e.languageconfiguration" version="0.3.4.201911130739"/>
      <unit id="org.jcodings" version="1.0.18.v20170306-1742"/>
      <unit id="org.joni" version="2.1.11.v20170306-1742"/>
+
+     <!-- Wild Web Developer -->
+     <unit id="org.eclipse.wildwebdeveloper.feature.feature.group" version="0.7.2.201911151547"/>
 
     </location>
 
@@ -648,10 +652,13 @@
 
     <!-- LSP4E -->
     <location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
-       <repository location="http://download.jboss.org/jbosstools/updates/requirements/lsp4e/0.13.0/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/lsp4e/0.13.0/"/>
       <unit id="org.eclipse.lsp4e" version="0.13.0.201912071343"/>
+      <unit id="org.eclipse.lsp4e.debug" version="0.11.0.201911212057"/>
       <unit id="org.eclipse.lsp4j" version="0.8.1.v20190925-0746"/>
+      <unit id="org.eclipse.lsp4j.debug" version="0.8.1.v20190925-0746"/>
       <unit id="org.eclipse.lsp4j.jsonrpc" version="0.8.1.v20190925-0746"/>
+      <unit id="org.eclipse.lsp4j.jsonrpc.debug" version="0.8.1.v20190925-0746"/>
       <unit id="org.eclipse.xtext.xbase.lib" version="2.19.0.v20190902-0728"/>
     </location>
 
