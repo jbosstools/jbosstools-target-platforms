@@ -45,6 +45,7 @@
       <unit id="net.sourceforge.lpg.lpgjavaruntime" version="1.1.0.v201004271650"/>
       <unit id="org.apache.axis" version="1.4.0.v201411182030"/>
       <unit id="org.apache.commons.discovery" version="0.2.0.v201004190315"/>
+      <unit id="org.apache.commons.exec" version="1.1.0.v201301240602"/>
       <unit id="org.apache.commons.httpclient" version="3.1.0.v201012070820"/>
       <unit id="org.apache.commons.io" version="2.2.0.v201405211200"/>
       <unit id="org.apache.commons.lang" version="2.6.0.v201404270220"/>
