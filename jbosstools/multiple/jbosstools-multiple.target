@@ -335,9 +335,6 @@
      <unit id="org.jcodings" version="1.0.18.v20170306-1742"/>
      <unit id="org.joni" version="2.1.11.v20170306-1742"/>
 
-     <!-- Wild Web Developer -->
-     <unit id="org.eclipse.wildwebdeveloper.feature.feature.group" version="0.7.2.201911151547"/>
-
     </location>
 
     <!-- Sapphire moved out from SimRel as of 2018-12M3 -->
@@ -691,6 +688,12 @@
       <repository location="https://download.jboss.org/jbosstools/updates/requirements/m2e-chromatic/1.0.1/"/>
       <unit id="m2e.chromatic.feature.feature.group" version="1.0.1.20190223-1703"/>
       <unit id="net.mihai-nita.ansicon.feature.group" version="1.3.5.201612301822"/>
+    </location>
+
+    <!-- Wild Web Developer -->
+    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/wildwebdeveloper/0.8.0/"/>
+      <unit id="org.eclipse.wildwebdeveloper.feature.feature.group" version="0.7.2.201911151547"/>
     </location>
 
   </locations>
