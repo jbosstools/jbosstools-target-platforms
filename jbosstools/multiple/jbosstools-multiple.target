@@ -692,8 +692,8 @@
 
     <!-- Wild Web Developer -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/wildwebdeveloper/0.8.0/"/>
-      <unit id="org.eclipse.wildwebdeveloper.feature.feature.group" version="0.7.2.201911151547"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/wildwebdeveloper/0.8.2/"/>
+      <unit id="org.eclipse.wildwebdeveloper.feature.feature.group" version="0.8.2.202002201922"/>
     </location>
 
   </locations>
