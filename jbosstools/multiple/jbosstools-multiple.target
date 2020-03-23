@@ -292,6 +292,10 @@
       <unit id="org.hamcrest.core" version="1.3.0.v20180420-1519"/>
       <unit id="org.hamcrest.library" version="1.3.0.v20180524-2246"/>
 
+      <!-- launchbar -->
+      <unit id="org.eclipse.remote.core" version="4.0.0.201909031456"/>
+      <unit id="org.eclipse.remote.ui" version="2.1.1.201909031456"/>
+
       <!-- m2e.wtp -->
       <unit id="org.eclipse.m2e.wtp.feature.feature.group" version="1.4.4.20200220-1005"/>
       <unit id="org.eclipse.m2e.wtp.jaxrs.feature.feature.group" version="1.4.4.20200220-1005"/>
