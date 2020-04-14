@@ -106,6 +106,7 @@
       <unit id="com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider" version="2.9.9.v20190906-1522"/>
       <unit id="org.codehaus.jackson.core" version="1.6.0.v20101005-0925"/> <!-- needed by SpringIDE -->
       <unit id="org.codehaus.jackson.mapper" version="1.6.0.v20101005-0925"/> <!-- needed by SpringIDE -->
+      <unit id="org.apache.commons.codec" version="1.6.0.v201305230611"/> <!-- needed by SpringIDE -->
       <unit id="com.github.jnr.constants" version="0.9.8.v20180207-1730"/>
       <unit id="com.github.jnr.enxio" version="0.16.0.v20180207-1730"/>
       <unit id="com.github.jnr.ffi" version="2.1.4.v20180207-1730"/>
@@ -677,7 +678,7 @@
 
     <!-- JBIDE-21377 YAML Editor -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/springide/3.9.10.201909171046-RELEASE/"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/springide/3.9.12.202003180620-RELEASE/"/>
       <unit id="org.dadacoalition.yedit" version="1.0.18.201602092025-RELEASE-SIGNED"/>
     </location>
 
