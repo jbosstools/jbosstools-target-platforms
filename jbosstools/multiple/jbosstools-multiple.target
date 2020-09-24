@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><?pde version="3.6"?>
-<target includeMode="feature" name="jbosstoolstarget-4.17.0.AM1-SNAPSHOT">
+<target includeMode="feature" name="jbosstoolstarget-4.17.0.Final-SNAPSHOT">
   <locations>
     <!-- don't forget to increment these files when moving up a version: build.xml, *.target -->
     
@@ -171,7 +171,7 @@
 
     <!-- m2e family, not included in SimRel site (or newer versions); see also simrel site below, and Central TP for more -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/m2e/1.16.1.20200710-1008/"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/m2e/1.16.2.20200902-0711/"/>
       <unit id="org.eclipse.m2e.feature.feature.group" version="1.16.1.20200710-1008"/>
       <unit id="org.eclipse.m2e.tests.common" version="1.16.0.20200514-1409"/>
       <unit id="org.eclipse.m2e.importer" version="1.16.0.20200318-0852"/>
@@ -201,7 +201,7 @@
 
     <!-- SimRel -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/simrel/20200904-1000-Simrel.2020-09.RC1/"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/simrel/20200916-1000-Simrel.2020-09/"/>
 
       <!-- p2.discovery -->
       <unit id="org.eclipse.equinox.p2.discovery" version="1.1.200.v20190611-1008"/>
@@ -241,17 +241,17 @@
       <unit id="org.eclipse.gef.feature.group" version="3.11.0.201606061308"/>
 
       <!-- Platform: CVS, JDT, RCP, PDE, Equinox, Help -->
-      <unit id="org.eclipse.cvs.feature.group" version="1.4.1500.v20200826-1800"/>
+      <unit id="org.eclipse.cvs.feature.group" version="1.4.1500.v20200902-1800"/>
       <unit id="org.eclipse.equinox.executable.feature.group" version="3.8.900.v20200819-0940"/>
       <unit id="org.eclipse.equinox.p2.discovery.feature.feature.group" version="1.2.700.v20200705-1016"/>
-      <unit id="org.eclipse.equinox.p2.user.ui.feature.group" version="2.4.900.v20200813-0739"/>
-      <unit id="org.eclipse.equinox.server.core.feature.group" version="1.13.0.v20200811-1344"/>
+      <unit id="org.eclipse.equinox.p2.user.ui.feature.group" version="2.4.900.v20200828-0839"/>
+      <unit id="org.eclipse.equinox.server.core.feature.group" version="1.13.0.v20200828-1034"/>
       <unit id="org.eclipse.equinox.server.jetty.feature.group" version="1.10.400.v20200803-1656"/>
-      <unit id="org.eclipse.help.feature.group" version="2.3.300.v20200826-1800"/>
-      <unit id="org.eclipse.jdt.feature.group" version="3.18.500.v20200826-1800"/>
-      <unit id="org.eclipse.pde.feature.group" version="3.14.500.v20200826-1800"/>
-      <unit id="org.eclipse.platform.feature.group" version="4.17.0.v20200826-1800"/>
-      <unit id="org.eclipse.rcp.feature.group" version="4.17.0.v20200826-1800"/>
+      <unit id="org.eclipse.help.feature.group" version="2.3.300.v20200902-1800"/>
+      <unit id="org.eclipse.jdt.feature.group" version="3.18.500.v20200902-1800"/>
+      <unit id="org.eclipse.pde.feature.group" version="3.14.500.v20200902-1800"/>
+      <unit id="org.eclipse.platform.feature.group" version="4.17.0.v20200902-1800"/>
+      <unit id="org.eclipse.rcp.feature.group" version="4.17.0.v20200902-1800"/>
 
       <!-- needed for JBoss Central -->
       <unit id="org.eclipse.compare" version="3.7.1100.v20200611-0145"/>
@@ -306,14 +306,14 @@
       <unit id="org.apache.lucene.queryparser" version="6.1.0.v20161115-1612"/>
 
       <!-- egit -->
-      <unit id="org.eclipse.egit.mylyn.feature.group" version="5.9.0.202008260805-m3"/>
-      <unit id="org.eclipse.egit.feature.group" version="5.9.0.202008260805-m3"/>
-      <unit id="org.eclipse.jgit.feature.group" version="5.9.0.202008260805-m3"/>
-      <unit id="org.eclipse.jgit.http.apache.feature.group" version="5.9.0.202008260805-m3"/>
-      <unit id="org.eclipse.jgit.ssh.apache.feature.group" version="5.9.0.202008260805-m3"/>
-      <unit id="org.eclipse.jgit.gpg.bc.feature.group" version="5.9.0.202008260805-m3"/>
-      <unit id="org.eclipse.jgit.ssh.jsch.feature.group" version="5.9.0.202008260805-m3"/>
-      <unit id="org.eclipse.mylyn.github.feature.feature.group" version="5.9.0.202008260805-m3"/>
+      <unit id="org.eclipse.egit.mylyn.feature.group" version="5.9.0.202009080501-r"/>
+      <unit id="org.eclipse.egit.feature.group" version="5.9.0.202009080501-r"/>
+      <unit id="org.eclipse.jgit.feature.group" version="5.9.0.202009080501-r"/>
+      <unit id="org.eclipse.jgit.http.apache.feature.group" version="5.9.0.202009080501-r"/>
+      <unit id="org.eclipse.jgit.ssh.apache.feature.group" version="5.9.0.202009080501-r"/>
+      <unit id="org.eclipse.jgit.gpg.bc.feature.group" version="5.9.0.202009080501-r"/>
+      <unit id="org.eclipse.jgit.ssh.jsch.feature.group" version="5.9.0.202009080501-r"/>
+      <unit id="org.eclipse.mylyn.github.feature.feature.group" version="5.9.0.202009080501-r"/>
 
       <!-- TM4E required by dockertools and wild web developer-->
       <unit id="org.eclipse.tm4e.registry" version="0.4.0.201911130739"/>
@@ -355,36 +355,36 @@
 
     <!-- Complete JGit, see https://issues.jboss.org/browse/JBIDE-26815-->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/jgit/5.9.0.202008260805-m3/"/>
-      <unit id="org.eclipse.jgit.junit" version="5.9.0.202008260805-m3"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/jgit/5.9.0.202009080501-r/"/>
+      <unit id="org.eclipse.jgit.junit" version="5.9.0.202009080501-r"/>
     </location>
 
     <!-- pull newer mylyn stuff than what's in simrel, so we have the same version as in Nodeclipse. This lets the install test job pass in 
     https://dev-platform-jenkins.rhev-ci-vms.eng.rdu2.redhat.com/view/Devstudio/view/devstudio_master/job/jbosstools-install-p2director.install-tests.matrix_master/ -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/mylyn/3.26.0.v20200731-0526/"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/mylyn/3.25.2.v20200831-1956/"/>
       <!-- mylyn + git stuff -->
-      <unit id="org.eclipse.mylyn.bugzilla_feature.feature.group" version="3.26.0.v20191002-0713"/>
-      <unit id="org.eclipse.mylyn.builds.feature.group" version="1.18.0.v20191222-1103"/>
-      <unit id="org.eclipse.mylyn.commons.feature.group" version="3.26.0.v20200730-0809"/>
-      <unit id="org.eclipse.mylyn.commons.identity.feature.group" version="1.18.0.v20191002-0659"/>
-      <unit id="org.eclipse.mylyn.commons.net" version="3.26.0.v20190930-2131"/>
-      <unit id="org.eclipse.mylyn.commons.notifications.feature.group" version="1.18.0.v20191002-0659"/>
-      <unit id="org.eclipse.mylyn.commons.repositories.feature.group" version="1.18.0.v20191002-0659"/>
-      <unit id="org.eclipse.mylyn.commons.repositories.http.feature.group" version="1.18.0.v20191002-0659"/>
-      <unit id="org.eclipse.mylyn.commons.xmlrpc" version="3.26.0.v20190930-2131"/>
-      <unit id="org.eclipse.mylyn.context_feature.feature.group" version="3.26.0.v20200729-0721"/>
-      <unit id="org.eclipse.mylyn.discovery.feature.group" version="3.26.0.v20191002-0659"/>
-      <unit id="org.eclipse.mylyn.git.feature.group" version="1.18.0.v20191014-0842"/>
-      <unit id="org.eclipse.mylyn.hudson.feature.group" version="1.18.0.v20191222-1103"/>
-      <unit id="org.eclipse.mylyn.ide_feature.feature.group" version="3.26.0.v20191002-0715"/>
-      <unit id="org.eclipse.mylyn.java_feature.feature.group" version="3.26.0.v20200425-1736"/>
-      <unit id="org.eclipse.mylyn.monitor.feature.group" version="3.26.0.v20191002-0659"/>
-      <unit id="org.eclipse.mylyn.pde_feature.feature.group" version="3.26.0.v20191002-0715"/>
-      <unit id="org.eclipse.mylyn.tasks.ide.feature.group" version="3.26.0.v20191002-0713"/>
-      <unit id="org.eclipse.mylyn.team_feature.feature.group" version="3.26.0.v20191002-0715"/>
-      <unit id="org.eclipse.mylyn.versions.feature.group" version="1.18.0.v20191014-0842"/>
-      <unit id="org.eclipse.mylyn_feature.feature.group" version="3.26.0.v20200730-0753"/>
+      <unit id="org.eclipse.mylyn.bugzilla_feature.feature.group" version="3.25.2.v20200814-0512"/>
+      <unit id="org.eclipse.mylyn.builds.feature.group" version="1.17.0.v20200828-1656"/>
+      <unit id="org.eclipse.mylyn.commons.feature.group" version="3.25.2.v20200813-0821"/>
+      <unit id="org.eclipse.mylyn.commons.identity.feature.group" version="1.17.2.v20200813-0821"/>
+      <unit id="org.eclipse.mylyn.commons.net" version="3.25.2.v20200813-0821"/>
+      <unit id="org.eclipse.mylyn.commons.notifications.feature.group" version="1.17.2.v20200813-0821"/>
+      <unit id="org.eclipse.mylyn.commons.repositories.feature.group" version="1.17.2.v20200813-0821"/>
+      <unit id="org.eclipse.mylyn.commons.repositories.http.feature.group" version="1.17.2.v20200813-0821"/>
+      <unit id="org.eclipse.mylyn.commons.xmlrpc" version="3.25.2.v20200813-0821"/>
+      <unit id="org.eclipse.mylyn.context_feature.feature.group" version="3.25.2.v20200828-1617"/>
+      <unit id="org.eclipse.mylyn.discovery.feature.group" version="3.25.2.v20200813-0821"/>
+      <unit id="org.eclipse.mylyn.git.feature.group" version="1.17.0.v20191002-0716"/>
+      <unit id="org.eclipse.mylyn.hudson.feature.group" version="1.17.0.v20200730-1155"/>
+      <unit id="org.eclipse.mylyn.ide_feature.feature.group" version="3.25.2.v20200828-1617"/>
+      <unit id="org.eclipse.mylyn.java_feature.feature.group" version="3.25.2.v20200828-1617"/>
+      <unit id="org.eclipse.mylyn.monitor.feature.group" version="3.25.2.v20200813-0821"/>
+      <unit id="org.eclipse.mylyn.pde_feature.feature.group" version="3.25.2.v20200828-1617"/>
+      <unit id="org.eclipse.mylyn.tasks.ide.feature.group" version="3.25.2.v20200814-0512"/>
+      <unit id="org.eclipse.mylyn.team_feature.feature.group" version="3.25.2.v20200828-1617"/>
+      <unit id="org.eclipse.mylyn.versions.feature.group" version="1.17.0.v20191002-0716"/>
+      <unit id="org.eclipse.mylyn_feature.feature.group" version="3.25.2.v20200814-0512"/>
     </location>
 
     <!-- DTP -->
@@ -454,14 +454,14 @@
 
     <!-- TM is now part of CDT-->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/cdt/10.0.0-rc1/"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/cdt/10.0.0/"/>
       <unit id="org.eclipse.tm.terminal.connector.local.feature.feature.group" version="10.0.0.202008310315"/>
       <unit id="org.eclipse.tm.terminal.connector.ssh.feature.feature.group" version="10.0.0.202008310315"/>
       <unit id="org.eclipse.tm.terminal.connector.telnet.feature.feature.group" version="10.0.0.202008310315"/>
-      <unit id="org.eclipse.tm.terminal.control.feature.feature.group" version="10.0.0.202008310315"/>
+      <unit id="org.eclipse.tm.terminal.control.feature.feature.group" version="10.0.0.202009071350"/>
       <unit id="org.eclipse.tm.terminal.view.core" version="4.7.0.202008310315"/>
       <unit id="org.eclipse.tm.terminal.view.ui" version="4.7.0.202008310315"/>
-      <unit id="org.eclipse.cdt.native.feature.group" version="10.0.0.202008310002"/>
+      <unit id="org.eclipse.cdt.native.feature.group" version="10.0.0.202009030027"/>
     </location>
 
     <!-- Jetty 9 -->
@@ -489,7 +489,7 @@
 
     <!-- Web Tools -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/webtools/S-3.19.0.RC1-20200828030223/"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/webtools/R-3.19.0-20200828030223/"/>
       <unit id="org.eclipse.jem" version="2.0.600.v201903222024"/>
       <unit id="org.eclipse.jem.beaninfo" version="2.0.300.v201903222024"/>
       <unit id="org.eclipse.jem.beaninfo.vm" version="2.0.300.v201903222024"/>
@@ -617,10 +617,10 @@
 
     <!-- Eclipse Docker Tooling (see Orbit section above for dependencies) -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/docker/5.0.0.202009020401/"/>
-      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="5.0.0.202009020401"/>
-      <unit id="org.eclipse.linuxtools.vagrant.feature.feature.group" version="5.0.0.202009020401"/>
-      <unit id="org.eclipse.linuxtools.docker.tests.feature.feature.group" version="5.0.0.202009020401"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/docker/5.0.0.202009091443/"/>
+      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="5.0.0.202009091443"/>
+      <unit id="org.eclipse.linuxtools.vagrant.feature.feature.group" version="5.0.0.202009091443"/>
+      <unit id="org.eclipse.linuxtools.docker.tests.feature.feature.group" version="5.0.0.202009091443"/>
     </location>
 
     <!-- SWT Bot -->
@@ -635,18 +635,18 @@
 
     <!-- Reddeer -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/reddeer/3.1.0.RC1/"/>
-      <unit id="org.eclipse.reddeer.codegen.feature.feature.group" version="3.1.0.v20200902-1723"/>
-      <unit id="org.eclipse.reddeer.eclipse.feature.feature.group" version="3.1.0.v20200902-1723"/>
-      <unit id="org.eclipse.reddeer.gef.spy.feature.feature.group" version="3.1.0.v20200902-1723"/>
-      <unit id="org.eclipse.reddeer.graphiti.feature.feature.group" version="3.1.0.v20200902-1723"/>
-      <unit id="org.eclipse.reddeer.logparser.feature.feature.group" version="3.1.0.v20200902-1723"/>
-      <unit id="org.eclipse.reddeer.recorder.feature.feature.group" version="3.1.0.v20200902-1723"/>
-      <unit id="org.eclipse.reddeer.spy.feature.feature.group" version="3.1.0.v20200902-1723"/>
-      <unit id="org.eclipse.reddeer.swt.feature.feature.group" version="3.1.0.v20200902-1723"/>
-      <unit id="org.eclipse.reddeer.tests.feature.feature.group" version="3.1.0.v20200902-1723"/>
-      <unit id="org.eclipse.reddeer.ui.feature.feature.group" version="3.1.0.v20200902-1723"/>
-      <unit id="org.eclipse.reddeer.jdt.junit" version="3.1.0.v20200902-1723"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/reddeer/3.1.0/"/>
+      <unit id="org.eclipse.reddeer.codegen.feature.feature.group" version="3.1.0.v20200909-1907"/>
+      <unit id="org.eclipse.reddeer.eclipse.feature.feature.group" version="3.1.0.v20200909-1907"/>
+      <unit id="org.eclipse.reddeer.gef.spy.feature.feature.group" version="3.1.0.v20200909-1907"/>
+      <unit id="org.eclipse.reddeer.graphiti.feature.feature.group" version="3.1.0.v20200909-1907"/>
+      <unit id="org.eclipse.reddeer.logparser.feature.feature.group" version="3.1.0.v20200909-1907"/>
+      <unit id="org.eclipse.reddeer.recorder.feature.feature.group" version="3.1.0.v20200909-1907"/>
+      <unit id="org.eclipse.reddeer.spy.feature.feature.group" version="3.1.0.v20200909-1907"/>
+      <unit id="org.eclipse.reddeer.swt.feature.feature.group" version="3.1.0.v20200909-1907"/>
+      <unit id="org.eclipse.reddeer.tests.feature.feature.group" version="3.1.0.v20200909-1907"/>
+      <unit id="org.eclipse.reddeer.ui.feature.feature.group" version="3.1.0.v20200909-1907"/>
+      <unit id="org.eclipse.reddeer.jdt.junit" version="3.1.0.v20200909-1907"/>
     </location>
 
     <!-- LSP4E -->
@@ -662,16 +662,23 @@
 
     <!-- LSP4MP -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/lsp4mp/0.9.0.20200903-1505/"/>
-      <unit id="org.eclipse.lsp4mp.jdt.core" version="0.9.0.20200903-1505"/>
-      <unit id="org.eclipse.lsp4mp.jdt.test" version="0.9.0.20200903-1505"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/lsp4mp/0.1.0/"/>
+      <unit id="org.eclipse.lsp4mp.jdt.core" version="0.1.0"/>
+      <unit id="org.eclipse.lsp4mp.jdt.test" version="0.1.0"/>
     </location>
 
     <!-- JDT LS -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/jdtls/0.60.0.202008311720/"/>
-      <unit id="org.eclipse.jdt.ls.core" version="0.60.0.202008311720"/>
-      <unit id="org.eclipse.jdt.ls.tests" version="0.60.0.202008311720"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/jdtls/0.61.0.202009152130/"/>
+      <unit id="org.eclipse.jdt.ls.core" version="0.61.0.202009152130"/>
+      <unit id="org.eclipse.jdt.ls.tests" version="0.61.0.202009152130"/>
+    </location>
+
+    <!-- Microprofile -->
+    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/quarkus-jdt/0.9.0"/>
+      <unit id="com.redhat.microprofile.jdt.quarkus" version="0.9.0"/>
+      <unit id="com.redhat.microprofile.jdt.quarkus.test" version="0.9.0"/>
     </location>
 
     <!-- Mockito required by JDT LS Tests-->
@@ -690,8 +697,8 @@
 
     <!-- JBIDE-25979 Apache Camel Language Server -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/camel-lsp-client/1.0.0.202008201348/"/>
-      <unit id="com.github.cameltooling.lsp.eclipse.client.feature.feature.group" version="1.0.0.202008201348"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/camel-lsp-client/1.0.0.202009180725/"/>
+      <unit id="com.github.cameltooling.lsp.eclipse.client.feature.feature.group" version="1.0.0.202009180725"/>
     </location>
 
     <!-- JBDS-4807 m2e-chromatic -->
@@ -703,9 +710,9 @@
 
     <!-- Wild Web Developer -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/wildwebdeveloper/0.11.1/"/>
-      <unit id="org.eclipse.wildwebdeveloper.feature.feature.group" version="0.10.2.202008281220"/>
-      <unit id="org.eclipse.wildwebdeveloper.embedder.node" version="0.1.1.202007171000"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/wildwebdeveloper/0.11.3/"/>
+      <unit id="org.eclipse.wildwebdeveloper.feature.feature.group" version="0.10.4.202009212151"/>
+      <unit id="org.eclipse.wildwebdeveloper.embedder.node" version="0.2.0.202009081414"/>
     </location>
 
   </locations>
