@@ -635,18 +635,18 @@
 
     <!-- Reddeer -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/reddeer/3.1.0/"/>
-      <unit id="org.eclipse.reddeer.codegen.feature.feature.group" version="3.1.0.v20200909-1907"/>
-      <unit id="org.eclipse.reddeer.eclipse.feature.feature.group" version="3.1.0.v20200909-1907"/>
-      <unit id="org.eclipse.reddeer.gef.spy.feature.feature.group" version="3.1.0.v20200909-1907"/>
-      <unit id="org.eclipse.reddeer.graphiti.feature.feature.group" version="3.1.0.v20200909-1907"/>
-      <unit id="org.eclipse.reddeer.logparser.feature.feature.group" version="3.1.0.v20200909-1907"/>
-      <unit id="org.eclipse.reddeer.recorder.feature.feature.group" version="3.1.0.v20200909-1907"/>
-      <unit id="org.eclipse.reddeer.spy.feature.feature.group" version="3.1.0.v20200909-1907"/>
-      <unit id="org.eclipse.reddeer.swt.feature.feature.group" version="3.1.0.v20200909-1907"/>
-      <unit id="org.eclipse.reddeer.tests.feature.feature.group" version="3.1.0.v20200909-1907"/>
-      <unit id="org.eclipse.reddeer.ui.feature.feature.group" version="3.1.0.v20200909-1907"/>
-      <unit id="org.eclipse.reddeer.jdt.junit" version="3.1.0.v20200909-1907"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/reddeer/3.2.0.M3/"/>
+      <unit id="org.eclipse.reddeer.codegen.feature.feature.group" version="3.2.0.v20201125-1533"/>
+      <unit id="org.eclipse.reddeer.eclipse.feature.feature.group" version="3.2.0.v20201125-1533"/>
+      <unit id="org.eclipse.reddeer.gef.spy.feature.feature.group" version="3.2.0.v20201125-1533"/>
+      <unit id="org.eclipse.reddeer.graphiti.feature.feature.group" version="3.2.0.v20201125-1533"/>
+      <unit id="org.eclipse.reddeer.logparser.feature.feature.group" version="3.2.0.v20201125-1533"/>
+      <unit id="org.eclipse.reddeer.recorder.feature.feature.group" version="3.2.0.v20201125-1533"/>
+      <unit id="org.eclipse.reddeer.spy.feature.feature.group" version="3.2.0.v20201125-1533"/>
+      <unit id="org.eclipse.reddeer.swt.feature.feature.group" version="3.2.0.v20201125-1533"/>
+      <unit id="org.eclipse.reddeer.tests.feature.feature.group" version="3.2.0.v20201125-1533"/>
+      <unit id="org.eclipse.reddeer.ui.feature.feature.group" version="3.2.0.v20201125-1533"/>
+      <unit id="org.eclipse.reddeer.jdt.junit" version="3.2.0.v20201125-1533"/>
     </location>
 
     <!-- LSP4E -->
@@ -716,5 +716,5 @@
     </location>
 
   </locations>
-  <targetJRE path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+  <targetJRE path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11"/>
 </target>
