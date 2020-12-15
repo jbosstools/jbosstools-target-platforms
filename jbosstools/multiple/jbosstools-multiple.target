@@ -697,8 +697,8 @@
 
     <!-- JBIDE-25979 Apache Camel Language Server -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/camel-lsp-client/1.0.0.202011270758/"/>
-      <unit id="com.github.cameltooling.lsp.eclipse.client.feature.feature.group" version="1.0.0.202011270758"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/camel-lsp-client/1.0.0.202012141849/"/>
+      <unit id="com.github.cameltooling.lsp.eclipse.client.feature.feature.group" version="1.0.0.202012141849"/>
     </location>
 
     <!-- JBDS-4807 m2e-chromatic -->
