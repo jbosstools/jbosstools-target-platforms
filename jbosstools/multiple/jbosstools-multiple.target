@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><?pde version="3.6"?>
-<target includeMode="feature" name="jbosstoolstarget-4.18.0.AM1-SNAPSHOT">
+<target includeMode="feature" name="jbosstoolstarget-4.18.0.Final-SNAPSHOT">
   <locations>
     <!-- don't forget to increment these files when moving up a version: build.xml, *.target -->
     
@@ -625,7 +625,7 @@
 
     <!-- SWT Bot -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/swtbot/3.0.0.202006031738/"/>	
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/swtbot/3.0.0.202006031738/"/>
       <unit id="org.eclipse.swtbot.eclipse.feature.group" version="3.0.0.202006031738"/>
       <unit id="org.eclipse.swtbot.eclipse.gef.feature.group" version="3.0.0.202006031738"/>
       <unit id="org.eclipse.swtbot.feature.group" version="3.0.0.202006031738"/>
@@ -635,18 +635,18 @@
 
     <!-- Reddeer -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/reddeer/3.2.0.RC1/"/>
-      <unit id="org.eclipse.reddeer.codegen.feature.feature.group" version="3.2.0.v20201202-1456"/>
-      <unit id="org.eclipse.reddeer.eclipse.feature.feature.group" version="3.2.0.v20201202-1456"/>
-      <unit id="org.eclipse.reddeer.gef.spy.feature.feature.group" version="3.2.0.v20201202-1456"/>
-      <unit id="org.eclipse.reddeer.graphiti.feature.feature.group" version="3.2.0.v20201202-1456"/>
-      <unit id="org.eclipse.reddeer.logparser.feature.feature.group" version="3.2.0.v20201202-1456"/>
-      <unit id="org.eclipse.reddeer.recorder.feature.feature.group" version="3.2.0.v20201202-1456"/>
-      <unit id="org.eclipse.reddeer.spy.feature.feature.group" version="3.2.0.v20201202-1456"/>
-      <unit id="org.eclipse.reddeer.swt.feature.feature.group" version="3.2.0.v20201202-1456"/>
-      <unit id="org.eclipse.reddeer.tests.feature.feature.group" version="3.2.0.v20201202-1456"/>
-      <unit id="org.eclipse.reddeer.ui.feature.feature.group" version="3.2.0.v20201202-1456"/>
-      <unit id="org.eclipse.reddeer.jdt.junit" version="3.2.0.v20201202-1456"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/reddeer/3.2.0/"/>
+      <unit id="org.eclipse.reddeer.codegen.feature.feature.group" version="3.2.0.v20201209-2101"/>
+      <unit id="org.eclipse.reddeer.eclipse.feature.feature.group" version="3.2.0.v20201209-2101"/>
+      <unit id="org.eclipse.reddeer.gef.spy.feature.feature.group" version="3.2.0.v20201209-2101"/>
+      <unit id="org.eclipse.reddeer.graphiti.feature.feature.group" version="3.2.0.v20201209-2101"/>
+      <unit id="org.eclipse.reddeer.logparser.feature.feature.group" version="3.2.0.v20201209-2101"/>
+      <unit id="org.eclipse.reddeer.recorder.feature.feature.group" version="3.2.0.v20201209-2101"/>
+      <unit id="org.eclipse.reddeer.spy.feature.feature.group" version="3.2.0.v20201209-2101"/>
+      <unit id="org.eclipse.reddeer.swt.feature.feature.group" version="3.2.0.v20201209-2101"/>
+      <unit id="org.eclipse.reddeer.tests.feature.feature.group" version="3.2.0.v20201209-2101"/>
+      <unit id="org.eclipse.reddeer.ui.feature.feature.group" version="3.2.0.v20201209-2101"/>
+      <unit id="org.eclipse.reddeer.jdt.junit" version="3.2.0.v20201209-2101"/>
     </location>
 
     <!-- LSP4E -->
@@ -697,8 +697,8 @@
 
     <!-- JBIDE-25979 Apache Camel Language Server -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/camel-lsp-client/1.0.0.202012141849/"/>
-      <unit id="com.github.cameltooling.lsp.eclipse.client.feature.feature.group" version="1.0.0.202012141849"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/camel-lsp-client/1.0.0.202101051524/"/>
+      <unit id="com.github.cameltooling.lsp.eclipse.client.feature.feature.group" version="1.0.0.202101051524"/>
     </location>
 
     <!-- JBDS-4807 m2e-chromatic -->
