@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.jboss.tools.targetplatforms</groupId>
 		<artifactId>jbosstools</artifactId>
-		<version>4.18.0.Final-SNAPSHOT</version>
+		<version>4.19.0.AM1-SNAPSHOT</version>
 	</parent>
 	<artifactId>jbosstools-multiple</artifactId>
 	<name>JBoss Tools Multiple (Composite) Target Platform</name>
@@ -23,6 +23,7 @@
 		<mirror-target-to-repo.includeFeature>true</mirror-target-to-repo.includeFeature>
 		<mirror-target-to-repo.includeOptional>true</mirror-target-to-repo.includeOptional>
 		<mirror-target-to-repo.latestVersionOnly>false</mirror-target-to-repo.latestVersionOnly>
+		<mirror-target-to-repo.executionEnvironment>JavaSE-11</mirror-target-to-repo.executionEnvironment>
 	</properties>
 
 	<build>

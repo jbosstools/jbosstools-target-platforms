@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><?pde version="3.6"?>
-<target includeMode="feature" name="jbosstoolstarget-4.18.0.Final-SNAPSHOT">
+<target includeMode="feature" name="jbosstoolstarget-4.19.0.AM1-SNAPSHOT">
   <locations>
     <!-- don't forget to increment these files when moving up a version: build.xml, *.target -->
     
@@ -162,11 +162,6 @@
       <unit id="org.assertj.core" version="2.1.0"/>
       <!-- For Jetty -->
       <unit id="org.apache.aries.spifly.dynamic.bundle" version="1.2.0"/>
-      <!-- For Fuse Tooling -->
-      <unit id="org.jboss.tools.locus.jsonschema2pojo.jsonschema2pojo-core" version="0.4.13.v20160122-1745"/>
-      <unit id="org.jboss.tools.locus.jaxb-core" version="2.2.7.v20160127-1545"/>
-      <unit id="org.jboss.tools.locus.jaxb-impl" version="2.2.7.v20160113-1915"/>
-      <unit id="org.jboss.tools.locus.jaxb-xjc" version="2.2.7.v20160125-1950"/>
     </location>
 
     <!-- m2e family, not included in SimRel site (or newer versions); see also simrel site below, and Central TP for more -->
@@ -713,7 +708,7 @@
       <repository location="https://download.jboss.org/jbosstools/updates/requirements/wildwebdeveloper/0.11.4/"/>
       <unit id="org.eclipse.wildwebdeveloper.feature.feature.group" version="0.10.5.202012011111"/>
       <unit id="org.eclipse.wildwebdeveloper.embedder.node" version="0.2.1.202011222154"/>
-      <unit id="org.eclipse.wildwebdeveloper.xml.feature.feature.group" version="0.10.3.202011132012"/>>
+      <unit id="org.eclipse.wildwebdeveloper.xml.feature.feature.group" version="0.10.3.202011132012"/>
     </location>
 
     <!-- JDK15 support for JDT 4.17 (https://marketplace.eclipse.org/content/java-15-support-eclipse-2020-09-417) -->
@@ -724,5 +719,5 @@
     </location>
 
   </locations>
-  <targetJRE path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+  <targetJRE path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11"/>
 </target>

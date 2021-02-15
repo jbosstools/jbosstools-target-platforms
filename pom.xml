@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jboss.tools.targetplatforms</groupId>
 	<artifactId>root</artifactId>
-	<version>4.18.0.Final-SNAPSHOT</version>
+	<version>4.19.0.AM1-SNAPSHOT</version>
 	<name>JBoss Tools + Devstudio Target Platform Root</name>
 	<packaging>pom</packaging>
 
@@ -107,9 +107,9 @@
 								<url>http://download.jboss.org/jbosstools/updates/requirements/p2diff/20160508-2315/</url>
 							</repository>
 							<repository>
-								<id>mars</id>
+								<id>simrel</id>
 								<layout>p2</layout>
-								<url>http://download.jboss.org/jbosstools/updates/requirements/mars/201509161958-SR1.RC4/</url>
+								<url>https://download.jboss.org/jbosstools/updates/requirements/simrel/20200916-1000-Simrel.2020-09/</url>
 							</repository>
 						</repositories>
 						<dependencies>
