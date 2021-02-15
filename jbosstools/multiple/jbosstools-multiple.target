@@ -162,6 +162,11 @@
       <unit id="org.assertj.core" version="2.1.0"/>
       <!-- For Jetty -->
       <unit id="org.apache.aries.spifly.dynamic.bundle" version="1.2.0"/>
+      <!-- For Fuse Tooling -->
+      <unit id="org.jboss.tools.locus.jsonschema2pojo.jsonschema2pojo-core" version="0.4.13.v20160122-1745"/>
+      <unit id="org.jboss.tools.locus.jaxb-core" version="2.2.7.v20160127-1545"/>
+      <unit id="org.jboss.tools.locus.jaxb-impl" version="2.2.7.v20160113-1915"/>
+      <unit id="org.jboss.tools.locus.jaxb-xjc" version="2.2.7.v20160125-1950"/>
     </location>
 
     <!-- m2e family, not included in SimRel site (or newer versions); see also simrel site below, and Central TP for more -->
