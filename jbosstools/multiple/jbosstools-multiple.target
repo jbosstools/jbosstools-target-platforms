@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><?pde version="3.6"?>
-<target includeMode="feature" name="jbosstoolstarget-4.18.0.Final-SNAPSHOT">
+<target includeMode="feature" name="jbosstoolstarget-4.19.0.AM1-SNAPSHOT">
   <locations>
     <!-- don't forget to increment these files when moving up a version: build.xml, *.target -->
     
@@ -713,7 +713,7 @@
       <repository location="https://download.jboss.org/jbosstools/updates/requirements/wildwebdeveloper/0.11.4/"/>
       <unit id="org.eclipse.wildwebdeveloper.feature.feature.group" version="0.10.5.202012011111"/>
       <unit id="org.eclipse.wildwebdeveloper.embedder.node" version="0.2.1.202011222154"/>
-      <unit id="org.eclipse.wildwebdeveloper.xml.feature.feature.group" version="0.10.3.202011132012"/>>
+      <unit id="org.eclipse.wildwebdeveloper.xml.feature.feature.group" version="0.10.3.202011132012"/>
     </location>
 
     <!-- JDK15 support for JDT 4.17 (https://marketplace.eclipse.org/content/java-15-support-eclipse-2020-09-417) -->
@@ -724,5 +724,5 @@
     </location>
 
   </locations>
-  <targetJRE path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+  <targetJRE path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11"/>
 </target>
