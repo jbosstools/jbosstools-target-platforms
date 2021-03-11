@@ -45,6 +45,7 @@
 							<failOnError>${validate-target-platform.failOnError}</failOnError>
 							<checkDependencies>true</checkDependencies>
 							<checkProvisioning>true</checkProvisioning>
+							<executionEnvironment>JavaSE-11</executionEnvironment>
 						</configuration>
 					</execution>
 				</executions>
