@@ -11,7 +11,7 @@
 	<properties>
 		<tychoVersion>2.3.0-SNAPSHOT</tychoVersion>
 		<tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
-		<jbossTychoPluginsVersion>2.2.0</jbossTychoPluginsVersion>
+		<jbossTychoPluginsVersion>2.3.0-SNAPSHOT</jbossTychoPluginsVersion>
 		<!-- if https://issues.jboss.org/browse/JBIDE-22248 comes back, use <jbossNexus>origin-repository.jboss.org</jbossNexus> -->
 		<jbossNexus>repository.jboss.org</jbossNexus>
 		<!-- JBIDE-21120 when deploying a non-SNAPSHOT, override these values in Jenkins or via commandline using values in distributionManagement below -->
