@@ -334,6 +334,9 @@
       <unit id="org.eclipse.xtext.xbase.lib" version="2.25.0.v20210301-0821"/>
       <unit id="org.eclipse.xtend.lib.macro" version="2.25.0.v20210301-0821"/>
 
+      <unit id="com.sun.jna" version="5.6.0.v20200716-0148"/>
+      <unit id="com.sun.jna.platform" version="5.6.0.v20200722-0209"/>
+
     </location>
 
     <!-- Sapphire moved out from SimRel as of 2018-12M3 -->
