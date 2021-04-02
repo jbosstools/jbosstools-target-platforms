@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><?pde version="3.6"?>
-<target includeMode="feature" name="jbosstoolstarget-4.19.0.AM1-SNAPSHOT">
+<target includeMode="feature" name="jbosstoolstarget-4.19.0.Final-SNAPSHOT">
   <locations>
     <!-- don't forget to increment these files when moving up a version: build.xml, *.target -->
     
@@ -646,18 +646,18 @@
 
     <!-- Reddeer -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/reddeer/3.3.0.RC2/"/>
-      <unit id="org.eclipse.reddeer.codegen.feature.feature.group" version="3.3.0.v20210310-1951"/>
-      <unit id="org.eclipse.reddeer.eclipse.feature.feature.group" version="3.3.0.v20210310-1951"/>
-      <unit id="org.eclipse.reddeer.gef.spy.feature.feature.group" version="3.3.0.v20210310-1951"/>
-      <unit id="org.eclipse.reddeer.graphiti.feature.feature.group" version="3.3.0.v20210310-1951"/>
-      <unit id="org.eclipse.reddeer.logparser.feature.feature.group" version="3.3.0.v20210310-1951"/>
-      <unit id="org.eclipse.reddeer.recorder.feature.feature.group" version="3.3.0.v20210310-1951"/>
-      <unit id="org.eclipse.reddeer.spy.feature.feature.group" version="3.3.0.v20210310-1951"/>
-      <unit id="org.eclipse.reddeer.swt.feature.feature.group" version="3.3.0.v20210310-1951"/>
-      <unit id="org.eclipse.reddeer.tests.feature.feature.group" version="3.3.0.v20210310-1951"/>
-      <unit id="org.eclipse.reddeer.ui.feature.feature.group" version="3.3.0.v20210310-1951"/>
-      <unit id="org.eclipse.reddeer.jdt.junit" version="3.3.0.v20210310-1951"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/reddeer/3.3.0/"/>
+      <unit id="org.eclipse.reddeer.codegen.feature.feature.group" version="3.3.0.v20210310-2044"/>
+      <unit id="org.eclipse.reddeer.eclipse.feature.feature.group" version="3.3.0.v20210310-2044"/>
+      <unit id="org.eclipse.reddeer.gef.spy.feature.feature.group" version="3.3.0.v20210310-2044"/>
+      <unit id="org.eclipse.reddeer.graphiti.feature.feature.group" version="3.3.0.v20210310-2044"/>
+      <unit id="org.eclipse.reddeer.logparser.feature.feature.group" version="3.3.0.v20210310-2044"/>
+      <unit id="org.eclipse.reddeer.recorder.feature.feature.group" version="3.3.0.v20210310-2044"/>
+      <unit id="org.eclipse.reddeer.spy.feature.feature.group" version="3.3.0.v20210310-2044"/>
+      <unit id="org.eclipse.reddeer.swt.feature.feature.group" version="3.3.0.v20210310-2044"/>
+      <unit id="org.eclipse.reddeer.tests.feature.feature.group" version="3.3.0.v20210310-2044"/>
+      <unit id="org.eclipse.reddeer.ui.feature.feature.group" version="3.3.0.v20210310-2044"/>
+      <unit id="org.eclipse.reddeer.jdt.junit" version="3.3.0.v20210310-2044"/>
     </location>
 
     <!-- LSP4E -->
@@ -674,16 +674,16 @@
 
     <!-- LSP4MP -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/lsp4mp/0.2.0.20210121-0809/"/>
-      <unit id="org.eclipse.lsp4mp.jdt.core" version="0.2.0.20210121-0809"/>
-      <unit id="org.eclipse.lsp4mp.jdt.test" version="0.2.0.20210121-0809"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/lsp4mp/0.2.1.20210401-1824/"/>
+      <unit id="org.eclipse.lsp4mp.jdt.core" version="0.2.1.20210401-1824"/>
+      <unit id="org.eclipse.lsp4mp.jdt.test" version="0.2.1.20210401-1824"/>
     </location>
 
     <!-- JDT LS -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/jdtls/0.69.0.202102120513/"/>
-      <unit id="org.eclipse.jdt.ls.core" version="0.69.0.202102120513"/>
-      <unit id="org.eclipse.jdt.ls.tests" version="0.69.0.202102120513"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/jdtls/0.70.0.202103051608/"/>
+      <unit id="org.eclipse.jdt.ls.core" version="0.70.0.202103051608"/>
+      <unit id="org.eclipse.jdt.ls.tests" version="0.70.0.202103051608"/>
     </location>
 
     <!-- Microprofile -->
@@ -722,9 +722,9 @@
 
     <!-- Wild Web Developer -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/wildwebdeveloper/0.11.5/"/>
-      <unit id="org.eclipse.wildwebdeveloper.feature.feature.group" version="0.10.6.202102181620"/>
-      <unit id="org.eclipse.wildwebdeveloper.embedder.node" version="0.2.2.202102092209"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/wildwebdeveloper/0.11.6/"/>
+      <unit id="org.eclipse.wildwebdeveloper.feature.feature.group" version="0.10.7.202103151818"/>
+      <unit id="org.eclipse.wildwebdeveloper.embedder.node.feature.feature.group" version="0.2.3.202103081410"/>
       <unit id="org.eclipse.wildwebdeveloper.xml.feature.feature.group" version="0.10.4.202102250843"/>
     </location>
 
