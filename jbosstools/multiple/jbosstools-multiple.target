@@ -688,9 +688,9 @@
 
     <!-- Microprofile -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/quarkus-jdt/0.9.0"/>
-      <unit id="com.redhat.microprofile.jdt.quarkus" version="0.9.0"/>
-      <unit id="com.redhat.microprofile.jdt.quarkus.test" version="0.9.0"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/quarkus-jdt/0.10.0"/>
+      <unit id="com.redhat.microprofile.jdt.quarkus" version="0.10.0"/>
+      <unit id="com.redhat.microprofile.jdt.quarkus.test" version="0.10.0"/>
     </location>
 
     <!-- Mockito required by JDT LS Tests-->
