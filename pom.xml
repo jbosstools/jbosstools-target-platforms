@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jboss.tools.targetplatforms</groupId>
 	<artifactId>root</artifactId>
-	<version>4.19.0.AM1-SNAPSHOT</version>
+	<version>4.19.0.Final-SNAPSHOT</version>
 	<name>JBoss Tools + Devstudio Target Platform Root</name>
 	<packaging>pom</packaging>
 
 	<properties>
-		<tychoVersion>2.3.0-SNAPSHOT</tychoVersion>
+		<tychoVersion>2.3.0</tychoVersion>
 		<tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
 		<jbossTychoPluginsVersion>2.3.0-SNAPSHOT</jbossTychoPluginsVersion>
 		<!-- if https://issues.jboss.org/browse/JBIDE-22248 comes back, use <jbossNexus>origin-repository.jboss.org</jbossNexus> -->
