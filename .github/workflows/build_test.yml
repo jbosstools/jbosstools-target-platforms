@@ -49,58 +49,8 @@ jobs:
     - name: Build/Compile and run unit tests
       run: |
 
-          export P2DIFFSKIP=true
-          export TARGET_PLATFORM_VERSION_MAX=""
           export WORKSPACE=$(pwd)
 
-          TPVERSION=""
-          DESTURL=""
-
-          CHECK404=""
-          check404 ()
-          {
-            TPVERSION="$1"
-            DESTURL=http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/${TPVERSION}/REPO/
-            local CHECK404=$(curl -s -k -I ${DESTURL} | egrep '404')
-            if [[ "${CHECK404}" ]]; then
-              echo "WARNING [404]: No target platform found for version = ${TPVERSION} at ${DESTURL}"
-            else
-              echo ${DESTURL}
-            fi
-          }
-
-          if [[ ${P2DIFFSKIP} == "false" ]]; then 
-            # check if target platform site exists against which to run p2diff
-            if [[ ${TARGET_PLATFORM_VERSION_MAX} ]]; then 
-              CHECK404=$(check404 ${TARGET_PLATFORM_VERSION_MAX})
-              DESTURL=${CHECK404}
-            fi
-            if [[ ! ${CHECK404}  ]] || [[ ${CHECK404} == *"[404]"* ]]; then # fall back to local pom as TP version 
-              CHECK404=$(check404 "$(cat ${WORKSPACE}/pom.xml | grep version | head -2 | tail -1 | sed -e "s#.\+<version>\(.\+\)</version>.*#\1#")")
-              DESTURL=${CHECK404}
-            fi
-
-            if [[ ${CHECK404} == *"[404]"* ]]; then # fall back to parent pom value of latest published TP MAX
-              CHECK404=$(check404 "$(curl -s -k https://raw.githubusercontent.com/jbosstools/jbosstools-build/master/parent/pom.xml | \
-                egrep "<TARGET_PLATFORM_VERSION_MAX>" | sed -e "s#.\+<TARGET_PLATFORM_VERSION_MAX>\(.\+\)</TARGET_PLATFORM_VERSION_MAX>.*#\1#")")
-              DESTURL=${CHECK404}
-            fi
-            if [[ ${CHECK404} == *"[404]"* ]]; then # fall back to parent pom value of latest published TP MIN
-              CHECK404=$(check404 "$(curl -s -k https://raw.githubusercontent.com/jbosstools/jbosstools-build/master/parent/pom.xml | \
-                egrep "<TARGET_PLATFORM_VERSION_MIN>" | sed -e "s#.\+<TARGET_PLATFORM_VERSION_MIN>\(.\+\)</TARGET_PLATFORM_VERSION_MIN>.*#\1#")")
-              DESTURL=${CHECK404}
-            fi
-            if [[ ${CHECK404} == *"[404]"* ]]; then # can't do p2diff
-              DESTURL=""
-            fi
-          fi
-
-          echo "DESTURL = ${DESTURL}"
-
-          if [[ ${DESTURL} != "" ]]; then 
-            MVNFLAGS="-Dp2diff.skip=${P2DIFFSKIP} -DtargetRepositoryUrl=${DESTURL}"
-          else
-            MVNFLAGS="-Dp2diff.skip=true"
-          fi
+          MVNFLAGS="-Dp2diff.skip=true"
           MVN="mvn -Dmaven.repo.local=${WORKSPACE}/.repository/ -U -e -fae -B --no-transfer-progress"
           ${MVN} --settings build-ci/maven-settings.xml install -Pmultiple2repo -f ${WORKSPACE}/jbosstools/multiple/pom.xml ${MVNFLAGS} 
