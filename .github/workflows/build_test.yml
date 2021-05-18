@@ -36,15 +36,6 @@ jobs:
         java-package: jdk # (jre, jdk, or jdk+fx) - defaults to jdk
         architecture: x64
 
-    # Try to find and apply jbosstools cache
-    - name: Cache local Maven repository for JBoss Tools components
-      uses: actions/cache@v2
-      with:
-        path: ~/.m2/repository
-        key: jbosstools-${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-        restore-keys: |
-          jbosstools-${{ runner.os }}-maven-
-
     # Build and compile using Maven
     - name: Build/Compile and run unit tests
       run: |
