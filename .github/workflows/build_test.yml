@@ -1,0 +1,47 @@
+name: Build and Test
+
+on:
+  pull_request:
+    branches: [master]
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }} # compiles and test on Ubuntu
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        java: ["11"]
+      fail-fast: false
+
+    steps:
+    - name: Checkout PR branch
+      uses: actions/checkout@v2
+      with:
+        ref: ${{ github.event.pull_request.head.sha }}
+        fetch-depth: 0
+
+    # Checkout global JBT settings.xml
+    - name: Checkout JBoss Tools Build CI
+      uses: actions/checkout@v2
+      with:
+        repository: jbosstools/jbosstools-build-ci
+        path: build-ci
+
+    # Java JDK 11 used for maven build
+    - name: Setup Java ${{ matrix.java }}
+      uses: actions/setup-java@v1
+      with:
+        java-version: ${{ matrix.java }}
+        java-package: jdk # (jre, jdk, or jdk+fx) - defaults to jdk
+        architecture: x64
+
+    # Build and compile using Maven
+    - name: Build/Compile and run unit tests
+      run: |
+
+          export WORKSPACE=$(pwd)
+
+          MVNFLAGS="-Dp2diff.skip=true"
+          MVN="mvn -Dmaven.repo.local=${WORKSPACE}/.repository/ -U -e -fae -B --no-transfer-progress"
+          ${MVN} --settings build-ci/maven-settings.xml install -Pmultiple2repo -f ${WORKSPACE}/jbosstools/multiple/pom.xml ${MVNFLAGS} 
