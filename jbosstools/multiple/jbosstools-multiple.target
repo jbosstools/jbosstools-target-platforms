@@ -24,6 +24,7 @@
       <unit id="org.apache.commons.lang3" version="3.1.0.v201403281430"/>
       <unit id="org.apache.commons.logging" version="1.2.0.v20180409-1502"/>
       <unit id="org.apache.httpcomponents.httpcore" version="4.4.14.v20210128-2225"/>
+      <unit id="org.apache.httpcomponents.httpclient" version="4.5.13.v20210128-2225"/>
       <unit id="org.apache.log4j" version="1.2.15.v201012070815"/>
       <unit id="org.apache.lucene.analyzers-smartcn" version="8.4.1.v20200122-1459"/>
       <unit id="org.apache.lucene.core" version="8.4.1.v20200122-1459"/>
