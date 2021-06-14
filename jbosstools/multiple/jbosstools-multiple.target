@@ -371,11 +371,9 @@
       <unit id="org.eclipse.jgit.junit" version="5.11.0.202103091610-r"/>
     </location>
 
-    <!-- pull newer mylyn stuff than what's in simrel, so we have the same version as in Nodeclipse. This lets the install test job pass in 
-    https://dev-platform-jenkins.rhev-ci-vms.eng.rdu2.redhat.com/view/Devstudio/view/devstudio_master/job/jbosstools-install-p2director.install-tests.matrix_master/ -->
+      <!-- mylyn + git stuff -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="https://download.jboss.org/jbosstools/updates/requirements/mylyn/3.25.2.v20200831-1956/"/>
-      <!-- mylyn + git stuff -->
       <unit id="org.eclipse.mylyn.bugzilla_feature.feature.group" version="3.25.2.v20200814-0512"/>
       <unit id="org.eclipse.mylyn.builds.feature.group" version="1.17.0.v20200828-1656"/>
       <unit id="org.eclipse.mylyn.commons.feature.group" version="3.25.2.v20200813-0821"/>
@@ -685,7 +683,6 @@
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="https://download.jboss.org/jbosstools/updates/requirements/jdtls/0.70.0.202103051608/"/>
       <unit id="org.eclipse.jdt.ls.core" version="0.70.0.202103051608"/>
-      <unit id="org.eclipse.jdt.ls.tests" version="0.70.0.202103051608"/>
     </location>
 
     <!-- Microprofile -->
@@ -693,12 +690,6 @@
       <repository location="https://download.jboss.org/jbosstools/updates/requirements/quarkus-jdt/0.10.0"/>
       <unit id="com.redhat.microprofile.jdt.quarkus" version="0.10.0"/>
       <unit id="com.redhat.microprofile.jdt.quarkus.test" version="0.10.0"/>
-    </location>
-
-    <!-- Mockito required by JDT LS Tests-->
-    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/scout/4.0-testing/"/>
-      <unit id="org.mockito.mockito-all" version="1.9.5"/>
     </location>
 
     <!-- TestNG -->
