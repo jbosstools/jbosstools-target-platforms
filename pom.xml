@@ -104,12 +104,12 @@
 							<repository>
 								<id>p2diff</id>
 								<layout>p2</layout>
-								<url>http://download.jboss.org/jbosstools/updates/requirements/p2diff/20160508-2315/</url>
+								<url>https://download.jboss.org/jbosstools/updates/requirements/p2diff/20210209-1541/</url>
 							</repository>
 							<repository>
-								<id>mars</id>
+								<id>eclipse-4.19</id>
 								<layout>p2</layout>
-								<url>http://download.jboss.org/jbosstools/updates/requirements/mars/201509161958-SR1.RC4/</url>
+								<url>https://download.eclipse.org/eclipse/updates/4.19/R-4.19-202103031800/</url>
 							</repository>
 						</repositories>
 						<dependencies>
