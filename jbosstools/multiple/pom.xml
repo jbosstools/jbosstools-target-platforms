@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.jboss.tools.targetplatforms</groupId>
 		<artifactId>jbosstools</artifactId>
-		<version>4.21.0.Final-SNAPSHOT</version>
+		<version>4.21.1.AM1-SNAPSHOT</version>
 	</parent>
 	<artifactId>jbosstools-multiple</artifactId>
 	<name>JBoss Tools Multiple (Composite) Target Platform</name>
@@ -104,7 +104,9 @@
 						<version>${tychoVersion}</version>
 					</plugin>
 					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-assembly-plugin</artifactId>
+						<version>3.3.0</version>
 						<configuration>
 							<descriptors>
 								<descriptor>${basedir}/../../publish-assembly.xml</descriptor>
