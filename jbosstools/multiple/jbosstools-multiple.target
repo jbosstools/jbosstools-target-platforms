@@ -175,11 +175,6 @@
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="http://repository.jboss.org/nexus/content/unzip/unzip/org/jboss/tools/locus/jbosstools-locus/1.9.0-SNAPSHOT/jbosstools-locus-1.9.0-SNAPSHOT-updatesite.zip-unzip/"/>
-      <!-- Test dependencies -->
-      <unit id="org.jboss.tools.locus.mockito" version="1.9.5.v20131024-0922"/>
-      <unit id="org.assertj.core" version="2.1.0"/>
-      <!-- For Jetty -->
-      <unit id="org.apache.aries.spifly.dynamic.bundle" version="1.2.0"/>
       <!-- For Fuse Tooling -->
       <unit id="org.jboss.tools.locus.jsonschema2pojo.jsonschema2pojo-core" version="0.4.13.v20160122-1745"/>
       <unit id="org.jboss.tools.locus.jaxb-core" version="2.2.7.v20160127-1545"/>
@@ -189,10 +184,10 @@
 
     <!-- m2e family, not included in SimRel site (or newer versions); see also simrel site below, and Central TP for more -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/m2e/1.18.1.20210618-2246/"/>
-      <unit id="org.eclipse.m2e.feature.feature.group" version="1.18.1.20210618-2246"/>
-      <unit id="org.eclipse.m2e.tests.common" version="1.17.3.20210607-0800"/>
-      <unit id="org.eclipse.m2e.importer" version="1.17.2.20210603-1006"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/m2e/1.18.2.20211011-2139/"/>
+      <unit id="org.eclipse.m2e.feature.feature.group" version="1.18.2.20211011-2139"/>
+      <unit id="org.eclipse.m2e.tests.common" version="1.17.4.20211002-1029"/>
+      <unit id="org.eclipse.m2e.importer" version="1.17.3.20211002-1029"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="https://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/1.5.3-2019-11-08_11-04-22-H22/"/>
@@ -489,26 +484,26 @@
 
     <!-- Jetty 9 -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/jetty/9.4.43.v20210629/"/>
-      <unit id="org.eclipse.jetty.client" version="9.4.43.v20210629"/>
-      <unit id="org.eclipse.jetty.continuation" version="9.4.43.v20210629"/>
-      <unit id="org.eclipse.jetty.http" version="9.4.43.v20210629"/>
-      <unit id="org.eclipse.jetty.io" version="9.4.43.v20210629"/>
-      <unit id="org.eclipse.jetty.proxy" version="9.4.43.v20210629"/>
-      <unit id="org.eclipse.jetty.rewrite" version="9.4.43.v20210629"/>
-      <unit id="org.eclipse.jetty.security" version="9.4.43.v20210629"/>
-      <unit id="org.eclipse.jetty.server" version="9.4.43.v20210629"/>
-      <unit id="org.eclipse.jetty.servlet" version="9.4.43.v20210629"/>
-      <unit id="org.eclipse.jetty.servlets" version="9.4.43.v20210629"/>
-      <unit id="org.eclipse.jetty.util" version="9.4.43.v20210629"/>
-      <unit id="org.eclipse.jetty.util.ajax" version="9.4.43.v20210629"/>
-      <unit id="org.eclipse.jetty.webapp" version="9.4.43.v20210629"/>
-      <unit id="org.eclipse.jetty.websocket.api" version="9.4.43.v20210629"/>
-      <unit id="org.eclipse.jetty.websocket.client" version="9.4.43.v20210629"/>
-      <unit id="org.eclipse.jetty.websocket.common" version="9.4.43.v20210629"/>
-      <unit id="org.eclipse.jetty.websocket.server" version="9.4.43.v20210629"/>
-      <unit id="org.eclipse.jetty.websocket.servlet" version="9.4.43.v20210629"/>
-      <unit id="org.eclipse.jetty.xml" version="9.4.43.v20210629"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/jetty/9.4.44.v20210927/"/>
+      <unit id="org.eclipse.jetty.client" version="9.4.44.v20210927"/>
+      <unit id="org.eclipse.jetty.continuation" version="9.4.44.v20210927"/>
+      <unit id="org.eclipse.jetty.http" version="9.4.44.v20210927"/>
+      <unit id="org.eclipse.jetty.io" version="9.4.44.v20210927"/>
+      <unit id="org.eclipse.jetty.proxy" version="9.4.44.v20210927"/>
+      <unit id="org.eclipse.jetty.rewrite" version="9.4.44.v20210927"/>
+      <unit id="org.eclipse.jetty.security" version="9.4.44.v20210927"/>
+      <unit id="org.eclipse.jetty.server" version="9.4.44.v20210927"/>
+      <unit id="org.eclipse.jetty.servlet" version="9.4.44.v20210927"/>
+      <unit id="org.eclipse.jetty.servlets" version="9.4.44.v20210927"/>
+      <unit id="org.eclipse.jetty.util" version="9.4.44.v20210927"/>
+      <unit id="org.eclipse.jetty.util.ajax" version="9.4.44.v20210927"/>
+      <unit id="org.eclipse.jetty.webapp" version="9.4.44.v20210927"/>
+      <unit id="org.eclipse.jetty.websocket.api" version="9.4.44.v20210927"/>
+      <unit id="org.eclipse.jetty.websocket.client" version="9.4.44.v20210927"/>
+      <unit id="org.eclipse.jetty.websocket.common" version="9.4.44.v20210927"/>
+      <unit id="org.eclipse.jetty.websocket.server" version="9.4.44.v20210927"/>
+      <unit id="org.eclipse.jetty.websocket.servlet" version="9.4.44.v20210927"/>
+      <unit id="org.eclipse.jetty.xml" version="9.4.44.v20210927"/>
     </location>
 
     <!-- Web Tools -->
@@ -675,9 +670,9 @@
 
     <!-- LSP4E -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/lsp4e/0.19.0/"/>
-      <unit id="org.eclipse.lsp4e" version="0.13.6.202108060851"/>
-      <unit id="org.eclipse.lsp4e.debug" version="0.13.0.202108060851"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/lsp4e/0.20.1/"/>
+      <unit id="org.eclipse.lsp4e" version="0.13.8.202111241523"/>
+      <unit id="org.eclipse.lsp4e.debug" version="0.13.1.202111241523"/>
       <unit id="org.eclipse.lsp4j" version="0.12.0.v20210402-1305"/>
       <unit id="org.eclipse.lsp4j.debug" version="0.12.0.v20210402-1305"/>
       <unit id="org.eclipse.lsp4j.jsonrpc" version="0.12.0.v20210402-1305"/>
@@ -715,8 +710,8 @@
 
     <!-- JBIDE-25979 Apache Camel Language Server -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/camel-lsp-client/1.0.0.202109150653/"/>
-      <unit id="com.github.cameltooling.lsp.eclipse.client.feature.feature.group" version="1.0.0.202109150653"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/camel-lsp-client/1.0.0.202111221613/"/>
+      <unit id="com.github.cameltooling.lsp.eclipse.client.feature.feature.group" version="1.0.0.202111221613"/>
     </location>
 
     <!-- JBDS-4807 m2e-chromatic -->
@@ -728,10 +723,10 @@
 
     <!-- Wild Web Developer -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/wildwebdeveloper/0.12.0/"/>
-      <unit id="org.eclipse.wildwebdeveloper.feature.feature.group" version="0.10.8.202104061435"/>
-      <unit id="org.eclipse.wildwebdeveloper.embedder.node.feature.feature.group" version="0.2.3.202103081410"/>
-      <unit id="org.eclipse.wildwebdeveloper.xml.feature.feature.group" version="0.12.0.202106200920"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/wildwebdeveloper/0.13.1/"/>
+      <unit id="org.eclipse.wildwebdeveloper.feature.feature.group" version="0.10.10.202111090852"/>
+      <unit id="org.eclipse.wildwebdeveloper.embedder.node.feature.feature.group" version="0.2.6.202110040931"/>
+      <unit id="org.eclipse.wildwebdeveloper.xml.feature.feature.group" version="0.13.1.202111081705"/>
     </location>
 
     <!-- eclipse base for tests bundles -->
