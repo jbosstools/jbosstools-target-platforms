@@ -14,7 +14,7 @@
       <unit id="jakarta.activation" version="2.0.0.v20201118-1818"/>
       <unit id="jakarta.servlet" version="5.0.0.v20210105-0527"/>
       <unit id="jakarta.websocket" version="2.0.0.v20210105-1550"/>
-      <unit id="javax.activation" version="1.1.0.v201211130549"/>
+      <unit id="javax.activation" version="1.2.2.v20201119-1642"/>
       <unit id="javax.annotation" version="1.3.5.v20200909-1856"/>
       <unit id="javax.servlet" version="3.1.0.v201410161800"/>
       <unit id="javax.servlet.jsp" version="2.2.0.v201112011158"/>
@@ -28,8 +28,8 @@
       <unit id="org.apache.httpcomponents.httpcore" version="4.4.15.v20220209-2345"/>
       <unit id="org.apache.httpcomponents.httpclient" version="4.5.13.v20210128-2225"/>
       <unit id="org.apache.log4j" version="1.2.19.v20220208-1728"/>
-      <unit id="org.apache.lucene.analyzers-smartcn" version="7.5.0.v20181003-1532"/>
-      <unit id="org.apache.lucene.core" version="7.5.0.v20181003-1532"/>
+      <unit id="org.apache.lucene.analyzers-smartcn" version="8.4.1.v20200122-1459"/>
+      <unit id="org.apache.lucene.core" version="8.4.1.v20200122-1459"/>
       <unit id="org.apache.xerces" version="2.12.2.v20220131-0835"/>
       <unit id="org.apache.xml.resolver" version="1.2.0.v201005080400"/>
       <unit id="org.apache.xml.serializer" version="2.7.1.v201005080400"/>
@@ -44,10 +44,10 @@
       <unit id="com.sun.syndication" version="0.9.0.v200803061811"/>
 
       <!-- required by jbosstools-webservices -->
-      <unit id="javax.xml.soap" version="1.2.0.v201005080501"/>
+      <unit id="javax.xml.soap" version="1.3.0.v201105210645"/>
       <unit id="org.apache.lucene.analyzers-common" version="7.5.0.v20181003-1532"/> 
-      <unit id="org.apache.lucene.analyzers-smartcn" version="8.4.1.v20200122-1459"/>
-      <unit id="org.apache.lucene.core" version="8.4.1.v20200122-1459"/>
+      <unit id="org.apache.lucene.analyzers-smartcn" version="7.5.0.v20181003-1532"/>
+      <unit id="org.apache.lucene.core" version="7.5.0.v20181003-1532"/>
       <unit id="org.apache.lucene.misc" version="7.5.0.v20181003-1532"/>
       <unit id="org.apache.lucene.queryparser" version="7.5.0.v20181003-1532"/>
 
@@ -55,12 +55,12 @@
       <unit id="com.google.javascript" version="0.0.20160315.v20161124-1903"/>
       <unit id="com.google.protobuf" version="2.4.0.v201105131100"/>
       <unit id="com.sun.el" version="2.2.0.v201303151357"/>
-      <unit id="com.sun.xml.bind" version="2.2.0.v20201118-1845"/>
+      <unit id="com.sun.xml.bind" version="2.3.3.v20201118-1818"/>
       <unit id="java_cup.runtime" version="0.10.0.v201005080400"/>
       <unit id="javax.el" version="2.2.0.v201303151357"/>
       <unit id="javax.mail" version="1.4.0.v201005080615"/>
       <unit id="javax.xml.rpc" version="1.1.0.v201209140446"/>
-      <unit id="javax.xml.soap" version="1.3.0.v201105210645"/>
+      <unit id="javax.xml.soap" version="1.2.0.v201005080501"/>
       <unit id="javax.xml.ws" version="2.1.0.v200902101523"/>
       <unit id="org.apache.axis" version="1.4.0.v201411182030"/>
       <unit id="org.apache.bcel" version="5.2.0.v201005080400"/>
@@ -72,9 +72,9 @@
       <unit id="org.uddi4j" version="2.0.5.v200805270300"/>
 
       <!-- required by Mylyn/Bugzilla -->
-      <unit id="com.sun.xml.bind" version="2.3.3.v20201118-1818"/>
+      <unit id="com.sun.xml.bind" version="2.2.0.v20201118-1845"/>
       <unit id="javax.xml.bind" version="2.2.0.v201105210648"/>
-      <unit id="javax.activation" version="1.2.2.v20201119-1642"/>
+      <unit id="javax.activation" version="1.1.0.v201211130549"/>
       <unit id="org.apache.commons.httpclient" version="3.1.0.v201012070820"/>
       <unit id="org.apache.xmlrpc" version="3.0.0.v20100427-1100"/>
       <unit id="org.apache.ws.commons.util" version="1.0.2.v20160817-1930"/>
@@ -214,7 +214,7 @@
 
     <!-- SimRel -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/simrel/20220225-1000-Simrel.2022-03-M3/"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/simrel/20220225-1000-Simrel.2022-03-M3/"/>
 
       <!-- p2.discovery -->
       <unit id="org.eclipse.equinox.p2.discovery" version="1.2.0.v20210315-2042"/>
