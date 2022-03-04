@@ -706,6 +706,7 @@
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="https://download.jboss.org/jbosstools/updates/requirements/qute-jdt/0.11.0.20220225-2358/"/>
       <unit id="com.redhat.qute.jdt" version="0.11.0.20220225-2358"/>
+      <unit id="com.redhat.qute.jdt.test" version="0.11.0.20220225-2358"/>
     </location>
 
     <!-- TestNG -->
