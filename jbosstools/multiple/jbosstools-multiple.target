@@ -697,9 +697,9 @@
 
     <!-- Microprofile -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/quarkus-jdt/0.11.0.20220225-2329"/>
-      <unit id="com.redhat.microprofile.jdt.quarkus" version="0.11.0.20220225-2329"/>
-      <unit id="com.redhat.microprofile.jdt.quarkus.test" version="0.11.0.20220225-2329"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/quarkus-jdt/0.10.1.202107211457"/>
+      <unit id="com.redhat.microprofile.jdt.quarkus" version="0.10.1.20210721-1457"/>
+      <unit id="com.redhat.microprofile.jdt.quarkus.test" version="0.10.1.20210721-1457"/>
     </location>
     
     <!-- Qute -->
