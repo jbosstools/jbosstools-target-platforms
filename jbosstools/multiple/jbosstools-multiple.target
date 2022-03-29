@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><?pde version="3.6"?>
-<target includeMode="feature" name="jbosstoolstarget-4.23.0.AM1-SNAPSHOT">
+<target includeMode="feature" name="jbosstoolstarget-4.23.0.Final-SNAPSHOT">
   <locations>
     <!-- don't forget to increment these files when moving up a version: build.xml, *.target -->
     
@@ -173,15 +173,6 @@
       <unit id="minimal-json" version="0.9.4"/>
     </location>
 
-    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://repository.jboss.org/nexus/content/unzip/unzip/org/jboss/tools/locus/jbosstools-locus/1.9.0-SNAPSHOT/jbosstools-locus-1.9.0-SNAPSHOT-updatesite.zip-unzip/"/>
-      <!-- For Fuse Tooling -->
-      <unit id="org.jboss.tools.locus.jsonschema2pojo.jsonschema2pojo-core" version="0.4.13.v20160122-1745"/>
-      <unit id="org.jboss.tools.locus.jaxb-core" version="2.2.7.v20160127-1545"/>
-      <unit id="org.jboss.tools.locus.jaxb-impl" version="2.2.7.v20160113-1915"/>
-      <unit id="org.jboss.tools.locus.jaxb-xjc" version="2.2.7.v20160125-1950"/>
-    </location>
-
     <!-- m2e family, not included in SimRel site (or newer versions); see also simrel site below, and Central TP for more -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="https://download.jboss.org/jbosstools/updates/requirements/m2e/1.20.0.20220210-1034/"/>
@@ -214,7 +205,7 @@
 
     <!-- SimRel -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/simrel/20220304-1000-Simrel.2022-03-RC1/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/simrel/20220316-1000-Simrel.2022-03/"/>
 
       <!-- p2.discovery -->
       <unit id="org.eclipse.equinox.p2.discovery" version="1.2.0.v20210315-2042"/>
@@ -238,7 +229,7 @@
       <unit id="org.eclipse.emf.ecore.editor.feature.group" version="2.18.0.v20210924-1718"/>
       <unit id="org.eclipse.emf.ecore.feature.group" version="2.27.0.v20220123-0838"/>
       <unit id="org.eclipse.emf.edit.feature.group" version="2.18.0.v20220201-1551"/>
-      <unit id="org.eclipse.emf.feature.group" version="2.29.0.v20220201-1551"/>
+      <unit id="org.eclipse.emf.feature.group" version="2.29.0.v20220226-1304"/>
       <unit id="org.eclipse.emf.transaction.feature.group" version="1.12.0.201805140824"/>
       <unit id="org.eclipse.emf.validation.feature.group" version="1.12.2.202008210805"/>
       <unit id="org.eclipse.emf.workspace.feature.group" version="1.12.0.201805140824"/>
@@ -259,11 +250,11 @@
       <unit id="org.eclipse.equinox.p2.user.ui.feature.group" version="2.4.1500.v20220223-1131"/>
       <unit id="org.eclipse.equinox.server.core.feature.group" version="1.14.500.v20220215-2237"/>
       <unit id="org.eclipse.equinox.server.jetty.feature.group" version="1.10.900.v20211021-1418"/>
-      <unit id="org.eclipse.help.feature.group" version="2.3.900.v20220223-1800"/>
-      <unit id="org.eclipse.jdt.feature.group" version="3.18.1100.v20220223-1800"/>
-      <unit id="org.eclipse.pde.feature.group" version="3.14.1100.v20220223-1800"/>
-      <unit id="org.eclipse.platform.feature.group" version="4.23.0.v20220223-1800"/>
-      <unit id="org.eclipse.rcp.feature.group" version="4.23.0.v20220223-1800"/>
+      <unit id="org.eclipse.help.feature.group" version="2.3.900.v20220308-0310"/>
+      <unit id="org.eclipse.jdt.feature.group" version="3.18.1100.v20220308-0310"/>
+      <unit id="org.eclipse.pde.feature.group" version="3.14.1100.v20220308-0310"/>
+      <unit id="org.eclipse.platform.feature.group" version="4.23.0.v20220308-0722"/>
+      <unit id="org.eclipse.rcp.feature.group" version="4.23.0.v20220308-0722"/>
       <unit id="org.eclipse.jetty.http" version="10.0.6"/>
       <unit id="org.eclipse.jetty.io" version="10.0.6"/>
       <unit id="org.eclipse.jetty.util" version="10.0.6"/>
@@ -319,17 +310,17 @@
       <unit id="org.apache.lucene.queryparser" version="6.1.0.v20161115-1612"/>
 
       <!-- egit -->
-      <unit id="org.eclipse.egit.feature.group" version="6.1.0.202203021511-rc1"/>
-      <unit id="org.eclipse.egit.gitflow.feature.feature.group" version="6.1.0.202203021511-rc1"/>
-      <unit id="org.eclipse.egit.mylyn.feature.group" version="6.1.0.202203021511-rc1"/>
-      <unit id="org.eclipse.jgit.feature.group" version="6.1.0.202203021511-rc1"/>
-      <unit id="org.eclipse.jgit.gpg.bc.feature.group" version="6.1.0.202203021511-rc1"/>
-      <unit id="org.eclipse.jgit.http.apache.feature.group" version="6.1.0.202203021511-rc1"/>
-      <unit id="org.eclipse.jgit.lfs.feature.group" version="6.1.0.202203021511-rc1"/>
-      <unit id="org.eclipse.jgit.pgm.feature.group" version="6.1.0.202203021511-rc1"/>
-      <unit id="org.eclipse.jgit.ssh.apache.feature.group" version="6.1.0.202203021511-rc1"/>
-      <unit id="org.eclipse.jgit.ssh.jsch.feature.group" version="6.1.0.202203021511-rc1"/>
-      <unit id="org.eclipse.mylyn.github.feature.feature.group" version="6.1.0.202203021511-rc1"/>
+      <unit id="org.eclipse.egit.feature.group" version="6.1.0.202203080745-r"/>
+      <unit id="org.eclipse.egit.gitflow.feature.feature.group" version="6.1.0.202203080745-r"/>
+      <unit id="org.eclipse.egit.mylyn.feature.group" version="6.1.0.202203080745-r"/>
+      <unit id="org.eclipse.jgit.feature.group" version="6.1.0.202203080745-r"/>
+      <unit id="org.eclipse.jgit.gpg.bc.feature.group" version="6.1.0.202203080745-r"/>
+      <unit id="org.eclipse.jgit.http.apache.feature.group" version="6.1.0.202203080745-r"/>
+      <unit id="org.eclipse.jgit.lfs.feature.group" version="6.1.0.202203080745-r"/>
+      <unit id="org.eclipse.jgit.pgm.feature.group" version="6.1.0.202203080745-r"/>
+      <unit id="org.eclipse.jgit.ssh.apache.feature.group" version="6.1.0.202203080745-r"/>
+      <unit id="org.eclipse.jgit.ssh.jsch.feature.group" version="6.1.0.202203080745-r"/>
+      <unit id="org.eclipse.mylyn.github.feature.feature.group" version="6.1.0.202203080745-r"/>
 
       <!-- TM4E required by dockertools and wild web developer-->
       <unit id="org.eclipse.tm4e.registry" version="0.5.0.202111180858"/>
@@ -377,8 +368,8 @@
 
     <!-- Complete JGit, see https://issues.jboss.org/browse/JBIDE-26815 -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/jgit/6.1.0.202203021511-rc1"/>
-      <unit id="org.eclipse.jgit.junit" version="6.1.0.202203021511-rc1"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/jgit/6.1.0.202203080745-r"/>
+      <unit id="org.eclipse.jgit.junit" version="6.1.0.202203080745-r"/>
     </location>
 
       <!-- mylyn + git stuff -->
@@ -474,14 +465,14 @@
 
     <!-- TM is now part of CDT-->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/cdt/10.6.0-rc1/"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/cdt/10.6.0/"/>
       <unit id="org.eclipse.tm.terminal.connector.local.feature.feature.group" version="10.6.0.202201122357"/>
       <unit id="org.eclipse.tm.terminal.connector.ssh.feature.feature.group" version="10.6.0.202201122357"/>
       <unit id="org.eclipse.tm.terminal.connector.telnet.feature.feature.group" version="10.6.0.202201122357"/>
       <unit id="org.eclipse.tm.terminal.control.feature.feature.group" version="10.6.0.202202251626"/>
       <unit id="org.eclipse.tm.terminal.view.core" version="4.8.200.202201122357"/>
       <unit id="org.eclipse.tm.terminal.view.ui" version="4.10.200.202201122357"/>
-      <unit id="org.eclipse.cdt.native.feature.group" version="10.6.0.202203020053"/>
+      <unit id="org.eclipse.cdt.native.feature.group" version="10.6.0.202203091838"/>
     </location>
 
     <!-- Jetty 9 -->
@@ -638,10 +629,10 @@
 
     <!-- Eclipse Docker Tooling (see Orbit section above for dependencies) -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/docker/5.6.0.202203012315/"/>
-      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="5.6.0.202203012315"/>
-      <unit id="org.eclipse.linuxtools.vagrant.feature.feature.group" version="5.6.0.202203012315"/>
-      <unit id="org.eclipse.linuxtools.docker.tests.feature.feature.group" version="5.6.0.202203012315"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/docker/5.6.0.202203082138/"/>
+      <unit id="org.eclipse.linuxtools.docker.feature.feature.group" version="5.6.0.202203082138"/>
+      <unit id="org.eclipse.linuxtools.vagrant.feature.feature.group" version="5.6.0.202203082138"/>
+      <unit id="org.eclipse.linuxtools.docker.tests.feature.feature.group" version="5.6.0.202203082138"/>
     </location>
 
     <!-- SWT Bot -->
@@ -656,18 +647,18 @@
 
     <!-- Reddeer -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/reddeer/4.1.0.RC1/"/>
-      <unit id="org.eclipse.reddeer.codegen.feature.feature.group" version="4.1.0.v20220302-2215"/>
-      <unit id="org.eclipse.reddeer.eclipse.feature.feature.group" version="4.1.0.v20220302-2215"/>
-      <unit id="org.eclipse.reddeer.gef.spy.feature.feature.group" version="4.1.0.v20220302-2215"/>
-      <unit id="org.eclipse.reddeer.graphiti.feature.feature.group" version="4.1.0.v20220302-2215"/>
-      <unit id="org.eclipse.reddeer.logparser.feature.feature.group" version="4.1.0.v20220302-2215"/>
-      <unit id="org.eclipse.reddeer.recorder.feature.feature.group" version="4.1.0.v20220302-2215"/>
-      <unit id="org.eclipse.reddeer.spy.feature.feature.group" version="4.1.0.v20220302-2215"/>
-      <unit id="org.eclipse.reddeer.swt.feature.feature.group" version="4.1.0.v20220302-2215"/>
-      <unit id="org.eclipse.reddeer.tests.feature.feature.group" version="4.1.0.v20220302-2215"/>
-      <unit id="org.eclipse.reddeer.ui.feature.feature.group" version="4.1.0.v20220302-2215"/>
-      <unit id="org.eclipse.reddeer.jdt.junit" version="4.1.0.v20220302-2215"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/reddeer/4.1.0/"/>
+      <unit id="org.eclipse.reddeer.codegen.feature.feature.group" version="4.1.0.v20220309-1055"/>
+      <unit id="org.eclipse.reddeer.eclipse.feature.feature.group" version="4.1.0.v20220309-1055"/>
+      <unit id="org.eclipse.reddeer.gef.spy.feature.feature.group" version="4.1.0.v20220309-1055"/>
+      <unit id="org.eclipse.reddeer.graphiti.feature.feature.group" version="4.1.0.v20220309-1055"/>
+      <unit id="org.eclipse.reddeer.logparser.feature.feature.group" version="4.1.0.v20220309-1055"/>
+      <unit id="org.eclipse.reddeer.recorder.feature.feature.group" version="4.1.0.v20220309-1055"/>
+      <unit id="org.eclipse.reddeer.spy.feature.feature.group" version="4.1.0.v20220309-1055"/>
+      <unit id="org.eclipse.reddeer.swt.feature.feature.group" version="4.1.0.v20220309-1055"/>
+      <unit id="org.eclipse.reddeer.tests.feature.feature.group" version="4.1.0.v20220309-1055"/>
+      <unit id="org.eclipse.reddeer.ui.feature.feature.group" version="4.1.0.v20220309-1055"/>
+      <unit id="org.eclipse.reddeer.jdt.junit" version="4.1.0.v20220309-1055"/>
     </location>
 
     <!-- LSP4E -->
@@ -684,9 +675,9 @@
 
     <!-- LSP4MP -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/lsp4mp/0.3.0/"/>
-      <unit id="org.eclipse.lsp4mp.jdt.core" version="0.3.0.20210719-1954"/>
-      <unit id="org.eclipse.lsp4mp.jdt.test" version="0.3.0.20210719-1954"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/lsp4mp/0.4.0/"/>
+      <unit id="org.eclipse.lsp4mp.jdt.core" version="0.4.0.20220324-1655"/>
+      <unit id="org.eclipse.lsp4mp.jdt.test" version="0.4.0.20220324-1655"/>
     </location>
 
     <!-- JDT LS -->
@@ -697,16 +688,16 @@
 
     <!-- Microprofile -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/quarkus-jdt/0.10.1.202107211457"/>
-      <unit id="com.redhat.microprofile.jdt.quarkus" version="0.10.1.20210721-1457"/>
-      <unit id="com.redhat.microprofile.jdt.quarkus.test" version="0.10.1.20210721-1457"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/quarkus-jdt/0.11.1.20220325-1620/"/>
+      <unit id="com.redhat.microprofile.jdt.quarkus" version="0.11.1.20220325-1620"/>
+      <unit id="com.redhat.microprofile.jdt.quarkus.test" version="0.11.1.20220325-1620"/>
     </location>
     
     <!-- Qute -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/qute-jdt/0.11.0.20220225-2358/"/>
-      <unit id="com.redhat.qute.jdt" version="0.11.0.20220225-2358"/>
-      <unit id="com.redhat.qute.jdt.test" version="0.11.0.20220225-2358"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/qute-jdt/0.11.1.20220325-1626"/>
+      <unit id="com.redhat.qute.jdt" version="0.11.1.20220325-1626"/>
+      <unit id="com.redhat.qute.jdt.test" version="0.11.1.20220325-1626"/>
     </location>
 
     <!-- TestNG -->
