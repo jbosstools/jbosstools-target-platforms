@@ -214,7 +214,7 @@
 
     <!-- SimRel -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/simrel/20220316-1000-Simrel.2022-03/"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/simrel/20220316-1000-Simrel.2022-03/"/>
 
       <!-- p2.discovery -->
       <unit id="org.eclipse.equinox.p2.discovery" version="1.2.0.v20210315-2042"/>
