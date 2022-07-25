@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<target includeMode="feature" name="jbosstoolstarget-4.24.0.Final-SNAPSHOT">
+<target includeMode="feature" name="jbosstoolstarget-4.25.0.AM1-SNAPSHOT">
   <locations>
     <!-- don't forget to increment these files when moving up a version: build.xml, *.target -->
     
@@ -635,12 +635,6 @@
       <repository location="https://download.jboss.org/jbosstools/updates/requirements/lsp4mp/0.4.0/"/>
       <unit id="org.eclipse.lsp4mp.jdt.core" version="0.4.0.20220324-1655"/>
       <unit id="org.eclipse.lsp4mp.jdt.test" version="0.4.0.20220324-1655"/>
-    </location>
-
-    <!-- JDT LS -->
-    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/jdtls/0.70.0.202103051608/"/>
-      <unit id="org.eclipse.jdt.ls.core" version="0.70.0.202103051608"/>
     </location>
 
     <!-- Microprofile -->
