@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.jboss.tools.targetplatforms</groupId>
 		<artifactId>jbosstools</artifactId>
-		<version>4.24.0.Final-SNAPSHOT</version>
+		<version>4.25.0.AM1-SNAPSHOT</version>
 	</parent>
 	<artifactId>jbosstools-unified</artifactId>
 	<name>JBoss Tools Unified (Aggregate) Target Platform</name>
@@ -54,7 +54,7 @@
 								<param>${project.build.directory}/${project.artifactId}.target</param>
 							</targetFiles>
 							<failOnError>${validate-target-platform.failOnError}</failOnError>
-							<executionEnvironment>JavaSE-11</executionEnvironment>
+							<executionEnvironment>JavaSE-17</executionEnvironment>
 						</configuration>
 					</execution>
 				</executions>
