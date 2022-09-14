@@ -654,11 +654,11 @@
       <unit id="org.eclipse.lsp4mp.jdt.test" version="0.5.0.20220725-1528"/>
     </location>
 
-    <!-- JDT LS
+    <!-- JDT LS -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="https://download.jboss.org/jbosstools/updates/requirements/jdtls/1.15.0.202208311644/"/>
       <unit id="org.eclipse.jdt.ls.core" version="1.15.0.202208311644"/>
-    </location> -->
+    </location>
 
     <!-- Microprofile -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
