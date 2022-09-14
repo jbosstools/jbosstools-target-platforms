@@ -108,19 +108,19 @@
 
     <!-- m2e family, not included in SimRel site (or newer versions); see also simrel site below, and Central TP for more -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/m2e/2.0.3/"/>
-      <unit id="org.eclipse.m2e.feature.feature.group" version="2.0.3.20220901-1459"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/m2e/2.0.5/"/>
+      <unit id="org.eclipse.m2e.feature.feature.group" version="2.0.5.20220912-1211"/>
       <unit id="org.eclipse.m2e.lemminx.feature.feature.group" version="2.0.0.20220729-1256"/>
       <unit id="org.eclipse.m2e.logback.feature.feature.group" version="2.0.0.20220717-0848"/>
-      <unit id="org.eclipse.m2e.pde.feature.feature.group" version="2.0.1.20220822-2010"/>
+      <unit id="org.eclipse.m2e.pde.feature.feature.group" version="2.0.1.20220912-1211"/>
       <unit id="org.eclipse.m2e.tests.common" version="2.0.1.20220901-1459"/>
-      <unit id="org.eclipse.m2e.apt.core" version="2.0.0.20220706-1958"/>
-      <unit id="org.eclipse.m2e.apt.ui" version="2.0.0.20220703-1731"/>
+      <unit id="org.eclipse.m2e.apt.core" version="2.0.1.20220912-1211"/>
+      <unit id="org.eclipse.m2e.apt.ui" version="2.0.1.20220912-1211"/>
       <unit id="org.eclipse.m2e.mavenarchiver" version="2.0.1.20220805-1816"/>
     </location>
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/m2e-wtp/1.5.1/"/>
-      <unit id="org.eclipse.m2e.wtp.feature.feature.group" version="1.5.1.20220901-1918"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/m2e-wtp/1.5.2/"/>
+      <unit id="org.eclipse.m2e.wtp.feature.feature.group" version="1.5.2.20220906-1452"/>
       <unit id="org.eclipse.m2e.wtp.jaxrs.feature.feature.group" version="1.5.0.20220805-2025"/>
       <unit id="org.eclipse.m2e.wtp.jpa.feature.feature.group" version="1.5.0.20220805-2025"/>
       <unit id="org.eclipse.m2e.wtp.jsf.feature.feature.group" version="1.5.0.20220805-2025"/>
@@ -654,11 +654,11 @@
       <unit id="org.eclipse.lsp4mp.jdt.test" version="0.5.0.20220725-1528"/>
     </location>
 
-    <!-- JDT LS -->
+    <!-- JDT LS
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="https://download.jboss.org/jbosstools/updates/requirements/jdtls/1.15.0.202208311644/"/>
       <unit id="org.eclipse.jdt.ls.core" version="1.15.0.202208311644"/>
-    </location>
+    </location> -->
 
     <!-- Microprofile -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
