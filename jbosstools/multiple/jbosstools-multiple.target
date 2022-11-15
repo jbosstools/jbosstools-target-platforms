@@ -53,7 +53,8 @@
       <unit id="com.ibm.icu" version="67.1.0.v20200706-1749"/>
 
       <!-- required by jbosstools-webservices -->
-      <unit id="org.apache.lucene.analyzers-common" version="7.5.0.v20181003-1532"/> 
+      <unit id="org.apache.lucene.analyzers-common" version="7.5.0.v20181003-1532"/>
+      <unit id="org.apache.lucene.analyzers-smartcn" version="7.5.0.v20181003-1532"/>
       <unit id="org.apache.lucene.core" version="7.5.0.v20181003-1532"/>
       <unit id="org.apache.lucene.misc" version="7.5.0.v20181003-1532"/>
       <unit id="org.apache.lucene.queryparser" version="7.5.0.v20181003-1532"/>
