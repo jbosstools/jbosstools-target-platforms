@@ -4,8 +4,8 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jboss.tools.targetplatforms</groupId>
 	<artifactId>root</artifactId>
-	<version>4.28.0.Final-SNAPSHOT</version>
-	<name>JBoss Tools + Devstudio Target Platform Root</name>
+	<version>4.29.0.Final-SNAPSHOT</version>
+	<name>JBoss Tools Target Platform Root</name>
 	<packaging>pom</packaging>
 
 	<properties>

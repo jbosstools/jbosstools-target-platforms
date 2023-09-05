@@ -5,9 +5,8 @@
 	<parent>
 		<groupId>org.jboss.tools.targetplatforms</groupId>
 		<artifactId>root</artifactId>
-		<version>4.28.0.Final-SNAPSHOT</version>
+		<version>4.29.0.Final-SNAPSHOT</version>
 	</parent>
-	<groupId>org.jboss.tools.targetplatforms</groupId>
 	<artifactId>jbosstools</artifactId>
 	<name>JBoss Tools Target Platforms</name>
 	<packaging>pom</packaging>
@@ -16,6 +15,5 @@
 	</properties>
 	<modules>
 		<module>multiple</module>
-		<module>unified</module>
 	</modules>
 </project>
