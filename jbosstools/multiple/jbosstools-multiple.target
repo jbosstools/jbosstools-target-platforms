@@ -639,9 +639,9 @@
 
     <!-- LSP4MP -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/lsp4mp/0.9.0/"/>
-      <unit id="org.eclipse.lsp4mp.jdt.core" version="0.9.0.20230808-1402"/>
-      <unit id="org.eclipse.lsp4mp.jdt.test" version="0.9.0.20230808-1402"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/lsp4mp/0.10.0/"/>
+      <unit id="org.eclipse.lsp4mp.jdt.core" version="0.10.0.20231005-1230"/>
+      <unit id="org.eclipse.lsp4mp.jdt.test" version="0.10.0.20231005-1230"/>
       <unit id="wrapped.io.smallrye.common.smallrye-common-expression" version="1.12.0"/>
       <unit id="wrapped.io.smallrye.common.smallrye-common-function" version="1.12.0"/>
       <unit id="wrapped.io.smallrye.common.smallrye-common-constraint" version="1.12.0"/>
@@ -656,16 +656,16 @@
 
     <!-- Microprofile -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/quarkus-jdt/0.16.0/"/>
-      <unit id="com.redhat.microprofile.jdt.quarkus" version="0.16.0"/>
-      <unit id="com.redhat.microprofile.jdt.quarkus.test" version="0.16.0"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/quarkus-jdt/0.17.0/"/>
+      <unit id="com.redhat.microprofile.jdt.quarkus" version="0.17.0"/>
+      <unit id="com.redhat.microprofile.jdt.quarkus.test" version="0.17.0"/>
     </location>
 
     <!-- Qute -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/qute-jdt/0.16.0/"/>
-      <unit id="com.redhat.qute.jdt" version="0.16.0"/>
-      <unit id="com.redhat.qute.jdt.test" version="0.16.0"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/qute-jdt/0.17.0/"/>
+      <unit id="com.redhat.qute.jdt" version="0.17.0"/>
+      <unit id="com.redhat.qute.jdt.test" version="0.17.0"/>
     </location>
 
     <!-- JBIDE-25979 Apache Camel Language Server -->
