@@ -437,31 +437,31 @@
 
     <!-- Jetty -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.jboss.org/jbosstools/updates/requirements/jetty/10.0.15/"/>
-      <unit id="org.eclipse.jetty.alpn.client" version="10.0.15"/>
-      <unit id="org.eclipse.jetty.client" version="10.0.15"/>
-      <unit id="org.eclipse.jetty.http" version="10.0.15"/>
-      <unit id="org.eclipse.jetty.io" version="10.0.15"/>
-      <unit id="org.eclipse.jetty.jndi" version="10.0.15"/>
-      <unit id="org.eclipse.jetty.plus" version="10.0.15"/>
-      <unit id="org.eclipse.jetty.proxy" version="10.0.15"/>
-      <unit id="org.eclipse.jetty.rewrite" version="10.0.15"/>
-      <unit id="org.eclipse.jetty.security" version="10.0.15"/>
-      <unit id="org.eclipse.jetty.server" version="10.0.15"/>
-      <unit id="org.eclipse.jetty.servlet" version="10.0.15"/>
-      <unit id="org.eclipse.jetty.servlets" version="10.0.15"/>
-      <unit id="org.eclipse.jetty.util" version="10.0.15"/>
-      <unit id="org.eclipse.jetty.util.ajax" version="10.0.15"/>
-      <unit id="org.eclipse.jetty.webapp" version="10.0.15"/>
-      <unit id="org.eclipse.jetty.websocket.api" version="10.0.15"/>
-      <unit id="org.eclipse.jetty.websocket.core.common" version="10.0.15"/>
-      <unit id="org.eclipse.jetty.websocket.core.client" version="10.0.15"/>
-      <unit id="org.eclipse.jetty.websocket.core.server" version="10.0.15"/>
-      <unit id="org.eclipse.jetty.websocket.client" version="10.0.15"/>
-      <unit id="org.eclipse.jetty.websocket.common" version="10.0.15"/>
-      <unit id="org.eclipse.jetty.websocket.server" version="10.0.15"/>
-      <unit id="org.eclipse.jetty.websocket.servlet" version="10.0.15"/>
-      <unit id="org.eclipse.jetty.xml" version="10.0.15"/>
+      <repository location="https://download.jboss.org/jbosstools/updates/requirements/jetty/10.0.17"/>
+      <unit id="org.eclipse.jetty.alpn.client" version="10.0.17"/>
+      <unit id="org.eclipse.jetty.client" version="10.0.17"/>
+      <unit id="org.eclipse.jetty.http" version="10.0.17"/>
+      <unit id="org.eclipse.jetty.io" version="10.0.17"/>
+      <unit id="org.eclipse.jetty.jndi" version="10.0.17"/>
+      <unit id="org.eclipse.jetty.plus" version="10.0.17"/>
+      <unit id="org.eclipse.jetty.proxy" version="10.0.17"/>
+      <unit id="org.eclipse.jetty.rewrite" version="10.0.17"/>
+      <unit id="org.eclipse.jetty.security" version="10.0.17"/>
+      <unit id="org.eclipse.jetty.server" version="10.0.17"/>
+      <unit id="org.eclipse.jetty.servlet" version="10.0.17"/>
+      <unit id="org.eclipse.jetty.servlets" version="10.0.17"/>
+      <unit id="org.eclipse.jetty.util" version="10.0.17"/>
+      <unit id="org.eclipse.jetty.util.ajax" version="10.0.17"/>
+      <unit id="org.eclipse.jetty.webapp" version="10.0.17"/>
+      <unit id="org.eclipse.jetty.websocket.api" version="10.0.17"/>
+      <unit id="org.eclipse.jetty.websocket.core.common" version="10.0.17"/>
+      <unit id="org.eclipse.jetty.websocket.core.client" version="10.0.17"/>
+      <unit id="org.eclipse.jetty.websocket.core.server" version="10.0.17"/>
+      <unit id="org.eclipse.jetty.websocket.client" version="10.0.17"/>
+      <unit id="org.eclipse.jetty.websocket.common" version="10.0.17"/>
+      <unit id="org.eclipse.jetty.websocket.server" version="10.0.17"/>
+      <unit id="org.eclipse.jetty.websocket.servlet" version="10.0.17"/>
+      <unit id="org.eclipse.jetty.xml" version="10.0.17"/>
     </location>
 
     <!-- Web Tools -->
